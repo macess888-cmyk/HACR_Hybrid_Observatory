@@ -1,0 +1,13 @@
+{
+    "present_state_proof": false,
+    "independent_proof": false,
+    "refusal_available": false,
+    "effect_reachable_pre_bind": true,
+
+    "semantic_drift": true,
+    "replay_detected": true,
+
+    "hidden_privilege_path": true,
+
+    "constructible_states": 1
+}

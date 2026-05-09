@@ -1,0 +1,33 @@
+[
+  {
+    "timestamp": "2026-05-09T23:16:33.139486+00:00",
+    "case": "replay_drift_case.json",
+    "hacr": {
+      "status": "FAIL",
+      "failures": [
+        "NO_PRESENT_STATE_PROOF",
+        "NON_INDEPENDENT_PROOF",
+        "REFUSAL_UNAVAILABLE",
+        "PRE_BIND_EFFECT_REACHABLE"
+      ]
+    },
+    "lenses": {
+      "continuity": "DRIFT",
+      "symmetry": "ASYMMETRIC",
+      "constructibility": "COLLAPSED"
+    }
+  },
+  {
+    "timestamp": "2026-05-09T23:16:33.139486+00:00",
+    "case": "test_case.json",
+    "hacr": {
+      "status": "PASS",
+      "failures": []
+    },
+    "lenses": {
+      "continuity": "STABLE",
+      "symmetry": "SYMMETRIC",
+      "constructibility": "OPEN"
+    }
+  }
+]
