@@ -1,0 +1,19 @@
+{
+    "present_state_proof": true,
+    "independent_proof": true,
+    "refusal_available": true,
+
+    "effect_reachable_pre_bind": true,
+
+    "semantic_drift": true,
+    "replay_detected": true,
+
+    "hidden_privilege_path": true,
+
+    "constructible_states": 1,
+
+    "authority_active": true,
+    "retry_surface_present": true,
+    "watchdog_recovery_enabled": true,
+    "dependency_chain_present": true
+}

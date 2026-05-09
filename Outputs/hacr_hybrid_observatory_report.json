@@ -1,6 +1,6 @@
 [
   {
-    "timestamp": "2026-05-09T23:33:58.242139+00:00",
+    "timestamp": "2026-05-09T23:36:51.456379+00:00",
     "case": "hold_case.json",
     "hacr": {
       "status": "HOLD",
@@ -15,10 +15,48 @@
       "continuity": "STABLE",
       "symmetry": "SYMMETRIC",
       "constructibility": "OPEN"
+    },
+    "matrix": {
+      "paths": {
+        "authority_path": false,
+        "retry_path": false,
+        "watchdog_path": false,
+        "dependency_path": false,
+        "downstream_effect_path": false
+      },
+      "risk": "MINIMAL"
     }
   },
   {
-    "timestamp": "2026-05-09T23:33:58.242139+00:00",
+    "timestamp": "2026-05-09T23:36:51.456379+00:00",
+    "case": "matrix_risk_case.json",
+    "hacr": {
+      "status": "FAIL",
+      "failures": [
+        "PRE_BIND_EFFECT_REACHABLE"
+      ],
+      "holds": [],
+      "stops": [],
+      "reverses": []
+    },
+    "lenses": {
+      "continuity": "DRIFT",
+      "symmetry": "ASYMMETRIC",
+      "constructibility": "COLLAPSED"
+    },
+    "matrix": {
+      "paths": {
+        "authority_path": true,
+        "retry_path": true,
+        "watchdog_path": true,
+        "dependency_path": true,
+        "downstream_effect_path": true
+      },
+      "risk": "CRITICAL"
+    }
+  },
+  {
+    "timestamp": "2026-05-09T23:36:51.461841+00:00",
     "case": "replay_drift_case.json",
     "hacr": {
       "status": "FAIL",
@@ -36,10 +74,20 @@
       "continuity": "DRIFT",
       "symmetry": "ASYMMETRIC",
       "constructibility": "COLLAPSED"
+    },
+    "matrix": {
+      "paths": {
+        "authority_path": false,
+        "retry_path": false,
+        "watchdog_path": false,
+        "dependency_path": false,
+        "downstream_effect_path": true
+      },
+      "risk": "MODERATE"
     }
   },
   {
-    "timestamp": "2026-05-09T23:33:58.242997+00:00",
+    "timestamp": "2026-05-09T23:36:51.461841+00:00",
     "case": "reverse_case.json",
     "hacr": {
       "status": "REVERSE",
@@ -54,10 +102,20 @@
       "continuity": "STABLE",
       "symmetry": "SYMMETRIC",
       "constructibility": "OPEN"
+    },
+    "matrix": {
+      "paths": {
+        "authority_path": false,
+        "retry_path": false,
+        "watchdog_path": false,
+        "dependency_path": false,
+        "downstream_effect_path": false
+      },
+      "risk": "MINIMAL"
     }
   },
   {
-    "timestamp": "2026-05-09T23:33:58.242997+00:00",
+    "timestamp": "2026-05-09T23:36:51.461841+00:00",
     "case": "stop_case.json",
     "hacr": {
       "status": "STOP",
@@ -72,10 +130,20 @@
       "continuity": "STABLE",
       "symmetry": "SYMMETRIC",
       "constructibility": "OPEN"
+    },
+    "matrix": {
+      "paths": {
+        "authority_path": false,
+        "retry_path": false,
+        "watchdog_path": false,
+        "dependency_path": false,
+        "downstream_effect_path": false
+      },
+      "risk": "MINIMAL"
     }
   },
   {
-    "timestamp": "2026-05-09T23:33:58.242997+00:00",
+    "timestamp": "2026-05-09T23:36:51.461841+00:00",
     "case": "test_case.json",
     "hacr": {
       "status": "PASS",
@@ -88,6 +156,16 @@
       "continuity": "STABLE",
       "symmetry": "SYMMETRIC",
       "constructibility": "OPEN"
+    },
+    "matrix": {
+      "paths": {
+        "authority_path": false,
+        "retry_path": false,
+        "watchdog_path": false,
+        "dependency_path": false,
+        "downstream_effect_path": false
+      },
+      "risk": "MINIMAL"
     }
   }
 ]
