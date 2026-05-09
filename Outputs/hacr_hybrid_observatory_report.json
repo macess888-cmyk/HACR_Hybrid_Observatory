@@ -1,6 +1,6 @@
 [
   {
-    "timestamp": "2026-05-09T23:36:51.456379+00:00",
+    "timestamp": "2026-05-09T23:40:38.397992+00:00",
     "case": "hold_case.json",
     "hacr": {
       "status": "HOLD",
@@ -25,10 +25,21 @@
         "downstream_effect_path": false
       },
       "risk": "MINIMAL"
+    },
+    "drift": {
+      "status": "STABLE",
+      "flags": {
+        "authority_drift": false,
+        "semantic_drift": false,
+        "configuration_drift": false,
+        "dependency_drift": false,
+        "effect_identity_drift": false
+      },
+      "drift_count": 0
     }
   },
   {
-    "timestamp": "2026-05-09T23:36:51.456379+00:00",
+    "timestamp": "2026-05-09T23:40:38.398991+00:00",
     "case": "matrix_risk_case.json",
     "hacr": {
       "status": "FAIL",
@@ -53,10 +64,21 @@
         "downstream_effect_path": true
       },
       "risk": "CRITICAL"
+    },
+    "drift": {
+      "status": "DRIFTING",
+      "flags": {
+        "authority_drift": false,
+        "semantic_drift": true,
+        "configuration_drift": false,
+        "dependency_drift": false,
+        "effect_identity_drift": false
+      },
+      "drift_count": 1
     }
   },
   {
-    "timestamp": "2026-05-09T23:36:51.461841+00:00",
+    "timestamp": "2026-05-09T23:40:38.399989+00:00",
     "case": "replay_drift_case.json",
     "hacr": {
       "status": "FAIL",
@@ -84,10 +106,21 @@
         "downstream_effect_path": true
       },
       "risk": "MODERATE"
+    },
+    "drift": {
+      "status": "DRIFTING",
+      "flags": {
+        "authority_drift": false,
+        "semantic_drift": true,
+        "configuration_drift": false,
+        "dependency_drift": false,
+        "effect_identity_drift": false
+      },
+      "drift_count": 1
     }
   },
   {
-    "timestamp": "2026-05-09T23:36:51.461841+00:00",
+    "timestamp": "2026-05-09T23:40:38.399989+00:00",
     "case": "reverse_case.json",
     "hacr": {
       "status": "REVERSE",
@@ -112,10 +145,21 @@
         "downstream_effect_path": false
       },
       "risk": "MINIMAL"
+    },
+    "drift": {
+      "status": "IRREVERSIBLE_DRIFT",
+      "flags": {
+        "authority_drift": false,
+        "semantic_drift": false,
+        "configuration_drift": false,
+        "dependency_drift": false,
+        "effect_identity_drift": true
+      },
+      "drift_count": 1
     }
   },
   {
-    "timestamp": "2026-05-09T23:36:51.461841+00:00",
+    "timestamp": "2026-05-09T23:40:38.400989+00:00",
     "case": "stop_case.json",
     "hacr": {
       "status": "STOP",
@@ -140,10 +184,21 @@
         "downstream_effect_path": false
       },
       "risk": "MINIMAL"
+    },
+    "drift": {
+      "status": "STABLE",
+      "flags": {
+        "authority_drift": false,
+        "semantic_drift": false,
+        "configuration_drift": false,
+        "dependency_drift": false,
+        "effect_identity_drift": false
+      },
+      "drift_count": 0
     }
   },
   {
-    "timestamp": "2026-05-09T23:36:51.461841+00:00",
+    "timestamp": "2026-05-09T23:40:38.400989+00:00",
     "case": "test_case.json",
     "hacr": {
       "status": "PASS",
@@ -166,6 +221,54 @@
         "downstream_effect_path": false
       },
       "risk": "MINIMAL"
+    },
+    "drift": {
+      "status": "STABLE",
+      "flags": {
+        "authority_drift": false,
+        "semantic_drift": false,
+        "configuration_drift": false,
+        "dependency_drift": false,
+        "effect_identity_drift": false
+      },
+      "drift_count": 0
+    }
+  },
+  {
+    "timestamp": "2026-05-09T23:40:38.400989+00:00",
+    "case": "unstable_drift_case.json",
+    "hacr": {
+      "status": "PASS",
+      "failures": [],
+      "holds": [],
+      "stops": [],
+      "reverses": []
+    },
+    "lenses": {
+      "continuity": "DRIFT",
+      "symmetry": "ASYMMETRIC",
+      "constructibility": "COLLAPSED"
+    },
+    "matrix": {
+      "paths": {
+        "authority_path": true,
+        "retry_path": true,
+        "watchdog_path": true,
+        "dependency_path": true,
+        "downstream_effect_path": false
+      },
+      "risk": "HIGH"
+    },
+    "drift": {
+      "status": "UNSTABLE",
+      "flags": {
+        "authority_drift": true,
+        "semantic_drift": true,
+        "configuration_drift": true,
+        "dependency_drift": true,
+        "effect_identity_drift": false
+      },
+      "drift_count": 4
     }
   }
 ]

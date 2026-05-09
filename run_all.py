@@ -15,6 +15,10 @@ from matrix_engine import (
     matrix_risk_score
 )
 
+from drift_engine import (
+    drift_trajectory
+)
+
 from receipt_engine import write_receipt
 
 INPUT_DIR = Path("Inputs")
@@ -30,6 +34,7 @@ def run_case(path):
 
     result = {
         "timestamp": datetime.now(UTC).isoformat(),
+
         "case": path.name,
 
         "hacr": hacr_validate(state),
@@ -43,7 +48,9 @@ def run_case(path):
         "matrix": {
             "paths": matrix,
             "risk": matrix_risk_score(matrix)
-        }
+        },
+
+        "drift": drift_trajectory(state)
     }
 
     return result
@@ -71,6 +78,9 @@ for file in sorted(INPUT_DIR.glob("*.json")):
 
     print("\n=== MATRIX RESULTS ===")
     print(result["matrix"])
+
+    print("\n=== DRIFT RESULTS ===")
+    print(result["drift"])
 
 
 output_text = json.dumps(all_results, indent=2)
