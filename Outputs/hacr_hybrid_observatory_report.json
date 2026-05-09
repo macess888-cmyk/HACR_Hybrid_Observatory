@@ -1,6 +1,24 @@
 [
   {
-    "timestamp": "2026-05-09T23:16:33.139486+00:00",
+    "timestamp": "2026-05-09T23:33:58.242139+00:00",
+    "case": "hold_case.json",
+    "hacr": {
+      "status": "HOLD",
+      "failures": [],
+      "holds": [
+        "UNCERTAIN_STATE"
+      ],
+      "stops": [],
+      "reverses": []
+    },
+    "lenses": {
+      "continuity": "STABLE",
+      "symmetry": "SYMMETRIC",
+      "constructibility": "OPEN"
+    }
+  },
+  {
+    "timestamp": "2026-05-09T23:33:58.242139+00:00",
     "case": "replay_drift_case.json",
     "hacr": {
       "status": "FAIL",
@@ -9,7 +27,10 @@
         "NON_INDEPENDENT_PROOF",
         "REFUSAL_UNAVAILABLE",
         "PRE_BIND_EFFECT_REACHABLE"
-      ]
+      ],
+      "holds": [],
+      "stops": [],
+      "reverses": []
     },
     "lenses": {
       "continuity": "DRIFT",
@@ -18,11 +39,50 @@
     }
   },
   {
-    "timestamp": "2026-05-09T23:16:33.139486+00:00",
+    "timestamp": "2026-05-09T23:33:58.242997+00:00",
+    "case": "reverse_case.json",
+    "hacr": {
+      "status": "REVERSE",
+      "failures": [],
+      "holds": [],
+      "stops": [],
+      "reverses": [
+        "EFFECT_IDENTITY_DRIFT"
+      ]
+    },
+    "lenses": {
+      "continuity": "STABLE",
+      "symmetry": "SYMMETRIC",
+      "constructibility": "OPEN"
+    }
+  },
+  {
+    "timestamp": "2026-05-09T23:33:58.242997+00:00",
+    "case": "stop_case.json",
+    "hacr": {
+      "status": "STOP",
+      "failures": [],
+      "holds": [],
+      "stops": [
+        "EXECUTION_BOUNDARY_COMPROMISED"
+      ],
+      "reverses": []
+    },
+    "lenses": {
+      "continuity": "STABLE",
+      "symmetry": "SYMMETRIC",
+      "constructibility": "OPEN"
+    }
+  },
+  {
+    "timestamp": "2026-05-09T23:33:58.242997+00:00",
     "case": "test_case.json",
     "hacr": {
       "status": "PASS",
-      "failures": []
+      "failures": [],
+      "holds": [],
+      "stops": [],
+      "reverses": []
     },
     "lenses": {
       "continuity": "STABLE",

@@ -15,6 +15,9 @@ HACR_CORE = {
 def hacr_validate(state):
 
     failures = []
+    holds = []
+    stops = []
+    reverses = []
 
     if not state.get("present_state_proof", False):
         failures.append("NO_PRESENT_STATE_PROOF")
@@ -28,13 +31,55 @@ def hacr_validate(state):
     if state.get("effect_reachable_pre_bind", False):
         failures.append("PRE_BIND_EFFECT_REACHABLE")
 
+    if state.get("uncertain_state", False):
+        holds.append("UNCERTAIN_STATE")
+
+    if state.get("execution_boundary_compromised", False):
+        stops.append("EXECUTION_BOUNDARY_COMPROMISED")
+
+    if state.get("effect_identity_drift", False):
+        reverses.append("EFFECT_IDENTITY_DRIFT")
+
+    if stops:
+        return {
+            "status": "STOP",
+            "failures": failures,
+            "holds": holds,
+            "stops": stops,
+            "reverses": reverses
+        }
+
+    if reverses:
+        return {
+            "status": "REVERSE",
+            "failures": failures,
+            "holds": holds,
+            "stops": stops,
+            "reverses": reverses
+        }
+
     if failures:
         return {
             "status": "FAIL",
-            "failures": failures
+            "failures": failures,
+            "holds": holds,
+            "stops": stops,
+            "reverses": reverses
+        }
+
+    if holds:
+        return {
+            "status": "HOLD",
+            "failures": failures,
+            "holds": holds,
+            "stops": stops,
+            "reverses": reverses
         }
 
     return {
         "status": "PASS",
-        "failures": []
+        "failures": [],
+        "holds": [],
+        "stops": [],
+        "reverses": []
     }
