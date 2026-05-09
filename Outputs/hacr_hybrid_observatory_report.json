@@ -1,6 +1,55 @@
 [
   {
-    "timestamp": "2026-05-09T23:40:38.397992+00:00",
+    "timestamp": "2026-05-09T23:45:33.762047+00:00",
+    "case": "dependency_shadow_case.json",
+    "hacr": {
+      "status": "PASS",
+      "failures": [],
+      "holds": [],
+      "stops": [],
+      "reverses": []
+    },
+    "lenses": {
+      "continuity": "STABLE",
+      "symmetry": "SYMMETRIC",
+      "constructibility": "OPEN"
+    },
+    "matrix": {
+      "paths": {
+        "authority_path": false,
+        "retry_path": false,
+        "watchdog_path": false,
+        "dependency_path": true,
+        "downstream_effect_path": false
+      },
+      "risk": "MODERATE"
+    },
+    "drift": {
+      "status": "DRIFTING",
+      "flags": {
+        "authority_drift": false,
+        "semantic_drift": false,
+        "configuration_drift": false,
+        "dependency_drift": true,
+        "effect_identity_drift": false
+      },
+      "drift_count": 1
+    },
+    "dependencies": {
+      "status": "SHADOW",
+      "dependencies": {
+        "upstream_policy_dependency": true,
+        "external_service_dependency": true,
+        "human_approval_dependency": true,
+        "queue_dependency": true,
+        "scheduler_dependency": true,
+        "hidden_dependency": true
+      },
+      "active_count": 6
+    }
+  },
+  {
+    "timestamp": "2026-05-09T23:45:33.769654+00:00",
     "case": "hold_case.json",
     "hacr": {
       "status": "HOLD",
@@ -36,10 +85,22 @@
         "effect_identity_drift": false
       },
       "drift_count": 0
+    },
+    "dependencies": {
+      "status": "INDEPENDENT",
+      "dependencies": {
+        "upstream_policy_dependency": false,
+        "external_service_dependency": false,
+        "human_approval_dependency": false,
+        "queue_dependency": false,
+        "scheduler_dependency": false,
+        "hidden_dependency": false
+      },
+      "active_count": 0
     }
   },
   {
-    "timestamp": "2026-05-09T23:40:38.398991+00:00",
+    "timestamp": "2026-05-09T23:45:33.770653+00:00",
     "case": "matrix_risk_case.json",
     "hacr": {
       "status": "FAIL",
@@ -75,10 +136,22 @@
         "effect_identity_drift": false
       },
       "drift_count": 1
+    },
+    "dependencies": {
+      "status": "INDEPENDENT",
+      "dependencies": {
+        "upstream_policy_dependency": false,
+        "external_service_dependency": false,
+        "human_approval_dependency": false,
+        "queue_dependency": false,
+        "scheduler_dependency": false,
+        "hidden_dependency": false
+      },
+      "active_count": 0
     }
   },
   {
-    "timestamp": "2026-05-09T23:40:38.399989+00:00",
+    "timestamp": "2026-05-09T23:45:33.771662+00:00",
     "case": "replay_drift_case.json",
     "hacr": {
       "status": "FAIL",
@@ -117,10 +190,22 @@
         "effect_identity_drift": false
       },
       "drift_count": 1
+    },
+    "dependencies": {
+      "status": "INDEPENDENT",
+      "dependencies": {
+        "upstream_policy_dependency": false,
+        "external_service_dependency": false,
+        "human_approval_dependency": false,
+        "queue_dependency": false,
+        "scheduler_dependency": false,
+        "hidden_dependency": false
+      },
+      "active_count": 0
     }
   },
   {
-    "timestamp": "2026-05-09T23:40:38.399989+00:00",
+    "timestamp": "2026-05-09T23:45:33.772666+00:00",
     "case": "reverse_case.json",
     "hacr": {
       "status": "REVERSE",
@@ -156,10 +241,22 @@
         "effect_identity_drift": true
       },
       "drift_count": 1
+    },
+    "dependencies": {
+      "status": "INDEPENDENT",
+      "dependencies": {
+        "upstream_policy_dependency": false,
+        "external_service_dependency": false,
+        "human_approval_dependency": false,
+        "queue_dependency": false,
+        "scheduler_dependency": false,
+        "hidden_dependency": false
+      },
+      "active_count": 0
     }
   },
   {
-    "timestamp": "2026-05-09T23:40:38.400989+00:00",
+    "timestamp": "2026-05-09T23:45:33.772666+00:00",
     "case": "stop_case.json",
     "hacr": {
       "status": "STOP",
@@ -195,10 +292,22 @@
         "effect_identity_drift": false
       },
       "drift_count": 0
+    },
+    "dependencies": {
+      "status": "INDEPENDENT",
+      "dependencies": {
+        "upstream_policy_dependency": false,
+        "external_service_dependency": false,
+        "human_approval_dependency": false,
+        "queue_dependency": false,
+        "scheduler_dependency": false,
+        "hidden_dependency": false
+      },
+      "active_count": 0
     }
   },
   {
-    "timestamp": "2026-05-09T23:40:38.400989+00:00",
+    "timestamp": "2026-05-09T23:45:33.774667+00:00",
     "case": "test_case.json",
     "hacr": {
       "status": "PASS",
@@ -232,10 +341,22 @@
         "effect_identity_drift": false
       },
       "drift_count": 0
+    },
+    "dependencies": {
+      "status": "INDEPENDENT",
+      "dependencies": {
+        "upstream_policy_dependency": false,
+        "external_service_dependency": false,
+        "human_approval_dependency": false,
+        "queue_dependency": false,
+        "scheduler_dependency": false,
+        "hidden_dependency": false
+      },
+      "active_count": 0
     }
   },
   {
-    "timestamp": "2026-05-09T23:40:38.400989+00:00",
+    "timestamp": "2026-05-09T23:45:33.774667+00:00",
     "case": "unstable_drift_case.json",
     "hacr": {
       "status": "PASS",
@@ -269,6 +390,18 @@
         "effect_identity_drift": false
       },
       "drift_count": 4
+    },
+    "dependencies": {
+      "status": "INDEPENDENT",
+      "dependencies": {
+        "upstream_policy_dependency": false,
+        "external_service_dependency": false,
+        "human_approval_dependency": false,
+        "queue_dependency": false,
+        "scheduler_dependency": false,
+        "hidden_dependency": false
+      },
+      "active_count": 0
     }
   }
 ]

@@ -19,6 +19,10 @@ from drift_engine import (
     drift_trajectory
 )
 
+from dependency_engine import (
+    dependency_observer
+)
+
 from receipt_engine import write_receipt
 
 INPUT_DIR = Path("Inputs")
@@ -50,7 +54,9 @@ def run_case(path):
             "risk": matrix_risk_score(matrix)
         },
 
-        "drift": drift_trajectory(state)
+        "drift": drift_trajectory(state),
+
+        "dependencies": dependency_observer(state)
     }
 
     return result
@@ -81,6 +87,9 @@ for file in sorted(INPUT_DIR.glob("*.json")):
 
     print("\n=== DRIFT RESULTS ===")
     print(result["drift"])
+
+    print("\n=== DEPENDENCY RESULTS ===")
+    print(result["dependencies"])
 
 
 output_text = json.dumps(all_results, indent=2)

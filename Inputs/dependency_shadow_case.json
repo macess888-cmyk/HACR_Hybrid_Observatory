@@ -1,0 +1,30 @@
+{
+    "present_state_proof": true,
+    "independent_proof": true,
+    "refusal_available": true,
+
+    "effect_reachable_pre_bind": false,
+
+    "semantic_drift": false,
+    "replay_detected": false,
+
+    "hidden_privilege_path": false,
+
+    "constructible_states": 2,
+
+    "authority_active": false,
+    "retry_surface_present": false,
+    "watchdog_recovery_enabled": false,
+    "dependency_chain_present": true,
+
+    "authority_drift": false,
+    "configuration_drift": false,
+    "dependency_drift": true,
+
+    "upstream_policy_dependency": true,
+    "external_service_dependency": true,
+    "human_approval_dependency": true,
+    "queue_dependency": true,
+    "scheduler_dependency": true,
+    "hidden_dependency": true
+}
