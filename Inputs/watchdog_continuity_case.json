@@ -1,0 +1,8 @@
+{
+  "stale_restart": true,
+  "preserved_state": true,
+  "fresh_bind_required": false,
+  "recovery_path_active": true,
+  "hidden_continuation": true,
+  "effect_reachable": false
+}
