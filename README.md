@@ -1,115 +1,89 @@
 # HACR Hybrid Observatory
 
-## HACR-Aligned Execution Continuity Observatory
+## Overview
 
-Observer-restricted operational instrumentation prototype.
+HACR Hybrid Observatory is an observer-restricted execution continuity observatory.
 
-Current posture:
-- observer-only
-- deterministic
-- bounded operational scope
-- non-authoritative
-- execution-focused
+The repository is intended for bounded deterministic inspection of:
 
----
+- continuation paths
+- dependency persistence
+- restart/recovery continuity
+- drift surfaces
+- constructibility collapse conditions
 
-## Core purpose
-
-This repository explores:
-
-- execution-bound admissibility
-- replay/retry continuation
-- semantic drift
-- symmetry/asymmetry analysis
-- constructibility analysis
-- downstream consequence reachability
-- deterministic operational receipts
-
-The repository is pressure-testable and intentionally bounded.
+The observatory generates deterministic inspection outputs under controlled test conditions.
 
 ---
 
-## HACR constraint core
+## Repository Scope
 
-Core invariant:
+This repository is NOT:
 
-- no present-state proof → no execution
-- no proof → no bind → no side effect
+- governance authority
+- certification infrastructure
+- production safety infrastructure
+- autonomous enforcement
+- legal adjudication
+- predictive governance
+- universal admissibility system
+- real-world execution control
 
-Proof must remain:
-- present-state
-- independent
-- non-replayable
-- non-transferable
-
-Bind is treated as:
-- sole origin of admissible effect
+The repository does not claim external authority over legitimacy, execution, or governance decisions.
 
 ---
 
-## Lens stack
+## Current Semantics
 
-### Continuity Lens
-Outputs:
+### Primary States
+
+- PASS
+- HOLD
+- FAIL
+- STOP
+- REVERSE
+- SHADOW
+
+### Continuity States
+
 - STABLE
 - DRIFT
 
-### Symmetry Lens
-Outputs:
-- SYMMETRIC
-- ASYMMETRIC
+### Dependency States
 
-### Constructibility Lens
-Outputs:
+- INDEPENDENT
+- DEPENDENT
+- DENSE_DEPENDENCY
+- SHADOW
+
+### Constructibility States
+
 - OPEN
 - COLLAPSED
 
----
+### Matrix Risk States
 
-## HACR outcomes
+- MINIMAL
+- MODERATE
+- HIGH
+- CRITICAL
 
-### PASS
-Independent admissibility conditions remain satisfied.
+### Drift Trajectory States
 
-### FAIL
-Admissibility constraint violation detected.
-
-### HOLD
-Reserved for unresolved or insufficiently provable state.
-
----
-
-## Repository structure
-
-- hacr_core.py
-- lens_engine.py
-- receipt_engine.py
-- run_all.py
-- Inputs/
-- Outputs/
-- Receipts/
+- STABLE
+- DRIFTING
+- UNSTABLE
+- IRREVERSIBLE_DRIFT
 
 ---
 
-## Deterministic receipts
+## Current Public Baseline
 
-SHA256 receipts support:
-- reproducibility
-- deterministic comparison
-- operational integrity checking
-
-Receipts are NOT certification evidence.
-
----
-
-## Current posture
-
-This repository does NOT claim:
-- certification authority
-- governance authority
-- runtime execution control
-- formal verification
-- universal safety guarantees
-
-Default posture on uncertainty:
-HOLD
+```txt
+v0.1-clean-baseline
+v0.2-publication-baseline
+v0.3-state-semantics
+v0.4-matrix-reachability
+v0.5-drift-trajectory
+v0.6-dependency-observability
+v0.7-watchdog-continuity-probes

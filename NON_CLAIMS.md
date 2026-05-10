@@ -1,27 +1,76 @@
-# NON_CLAIMS
+# NON CLAIMS
 
-This repository is an observer-restricted operational instrumentation prototype.
+## Repository Boundary
 
-It does NOT provide:
+HACR Hybrid Observatory is an observer-restricted deterministic inspection repository.
 
-- certification authority
-- execution authority
+The repository is intended for bounded continuity observability under controlled test conditions.
+
+---
+
+## The Repository Does NOT Claim
+
 - governance authority
-- formal verification
-- legal adjudication
-- universal admissibility guarantees
-- production deployment guarantees
-- autonomous execution control
-- complete replay prevention
-- complete security guarantees
+- execution authority
+- legal authority
+- institutional authority
+- predictive capability
+- certification capability
+- production safety guarantees
+- universal admissibility validation
+- autonomous enforcement capability
+- real-world execution legitimacy arbitration
 
-Outputs are:
-- bounded
-- observational
-- deterministic
-- pressure-testable
-- non-authoritative
+---
 
-All PASS / FAIL / HOLD states are operational classifications only.
+## Terminology Clarification
 
-No output from this repository should be treated as legal, regulatory, or execution authorization.
+Within this repository:
+
+"proof" refers to bounded proof-signals or deterministic observability assertions inside controlled test conditions.
+
+The repository does NOT claim:
+- independently validated real-world proof
+- universal correctness
+- generalized governance authority
+- external legitimacy determination
+
+Outputs are observer-oriented inspection artifacts only.
+
+---
+
+## Scope Constraints
+
+The repository currently focuses on:
+
+- execution continuity inspection
+- restart/recovery continuity
+- dependency visibility
+- drift observability
+- constructibility state inspection
+- deterministic report generation
+
+The repository intentionally avoids:
+- political interpretation systems
+- institutional legitimacy systems
+- social governance systems
+- actor-level adjudication
+- civilization-scale governance claims
+
+---
+
+## Operational Posture
+
+The repository operates under:
+
+- bounded scope
+- observer-only posture
+- deterministic outputs
+- reproducible inspection paths
+- finite semantics
+- controlled test conditions
+
+If uncertainty exists:
+- HOLD remains valid
+- no execution claim is implied
+- no authority is assumed
