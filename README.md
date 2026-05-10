@@ -87,3 +87,4 @@ v0.4-matrix-reachability
 v0.5-drift-trajectory
 v0.6-dependency-observability
 v0.7-watchdog-continuity-probes
+v0.8-topology mapping
