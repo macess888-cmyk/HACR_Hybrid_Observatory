@@ -1,0 +1,36 @@
+{
+  "nodes": [
+    {
+      "id": "request"
+    },
+    {
+      "id": "queue"
+    },
+    {
+      "id": "worker"
+    },
+    {
+      "id": "effect_target"
+    }
+  ],
+  "edges": [
+    {
+      "from": "request",
+      "to": "queue",
+      "effect_capable": false,
+      "hidden": false
+    },
+    {
+      "from": "queue",
+      "to": "worker",
+      "effect_capable": true,
+      "hidden": false
+    },
+    {
+      "from": "worker",
+      "to": "effect_target",
+      "effect_capable": true,
+      "hidden": true
+    }
+  ]
+}
