@@ -1,0 +1,25 @@
+{
+  "descendant_surfaces": [
+    {
+      "surface_id": "local_decline",
+      "surface_type": "origin_refusal",
+      "inherits_from": null,
+      "can_produce_effect": false,
+      "requires_fresh_bind": true
+    },
+    {
+      "surface_id": "async_settlement_worker",
+      "surface_type": "downstream_worker",
+      "inherits_from": "payment_request",
+      "can_produce_effect": true,
+      "requires_fresh_bind": false
+    },
+    {
+      "surface_id": "notification_callback",
+      "surface_type": "callback",
+      "inherits_from": "cached_payment_state",
+      "can_produce_effect": true,
+      "requires_fresh_bind": false
+    }
+  ]
+}
