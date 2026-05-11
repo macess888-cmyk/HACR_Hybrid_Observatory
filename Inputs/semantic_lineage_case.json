@@ -1,0 +1,31 @@
+{
+  "semantic_lineages": [
+    {
+      "lineage_id": "declined_payment_intent",
+      "origin": "payment_request",
+      "descendant": "retry_workflow",
+      "semantic_payload": "payment continuation intent",
+      "survives_refusal": true,
+      "reconstructible": true,
+      "cross_topology": true
+    },
+    {
+      "lineage_id": "cached_policy_context",
+      "origin": "policy_engine",
+      "descendant": "downstream_callback",
+      "semantic_payload": "approval semantics",
+      "survives_refusal": true,
+      "reconstructible": true,
+      "cross_topology": true
+    },
+    {
+      "lineage_id": "local_error_message",
+      "origin": "validation_layer",
+      "descendant": "none",
+      "semantic_payload": "local refusal",
+      "survives_refusal": false,
+      "reconstructible": false,
+      "cross_topology": false
+    }
+  ]
+}

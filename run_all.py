@@ -33,6 +33,7 @@ SCRIPTS = [
     "distributed_reconstruction_lens.py",
     "continuation_pressure_index.py",
     "irreversibility_surface_mapper.py",
+    "semantic_lineage_chain.py",
     "receipt_engine.py"
 ]
 
