@@ -1,0 +1,25 @@
+{
+  "semantic_fragments": [
+    {
+      "fragment_id": "local_decline_text",
+      "fragment_type": "refusal_statement",
+      "survives_refusal": false,
+      "reconstructible": false,
+      "cross_surface": false
+    },
+    {
+      "fragment_id": "cached_policy_meaning",
+      "fragment_type": "policy_fragment",
+      "survives_refusal": true,
+      "reconstructible": true,
+      "cross_surface": true
+    },
+    {
+      "fragment_id": "workflow_intent_label",
+      "fragment_type": "intent_fragment",
+      "survives_refusal": true,
+      "reconstructible": true,
+      "cross_surface": true
+    }
+  ]
+}

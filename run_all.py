@@ -28,6 +28,7 @@ SCRIPTS = [
     "replay_vector_mapper.py",
     "refusal_propagation_mapper.py",
     "lineage_consumption_checker.py",
+    "semantic_fragmentation_lens.py",
     "receipt_engine.py"
 ]
 
