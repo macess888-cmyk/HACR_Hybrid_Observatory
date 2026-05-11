@@ -1,0 +1,25 @@
+{
+  "surfaces": [
+    {
+      "surface_id": "local_validation_failure",
+      "surface_type": "local_refusal",
+      "irreversible": false,
+      "effect_propagated": false,
+      "reversal_available": true
+    },
+    {
+      "surface_id": "external_settlement_call",
+      "surface_type": "external_effect",
+      "irreversible": true,
+      "effect_propagated": true,
+      "reversal_available": false
+    },
+    {
+      "surface_id": "downstream_notification",
+      "surface_type": "external_callback",
+      "irreversible": true,
+      "effect_propagated": true,
+      "reversal_available": true
+    }
+  ]
+}
