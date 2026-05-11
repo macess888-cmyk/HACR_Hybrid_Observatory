@@ -90,6 +90,7 @@ run("observatory_state_atlas.py")
 run("survivability_corridor_mapper.py")
 run("survivability_heatmap_generator.py")
 run("survivability_basin_mapper.py")
+run("survivability_flow_field.py")
 
 # ---------------------------------------------------------
 # Final Receipt Generation
