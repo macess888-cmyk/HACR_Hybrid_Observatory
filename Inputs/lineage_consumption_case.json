@@ -1,0 +1,25 @@
+{
+  "lineages": [
+    {
+      "lineage_id": "fresh_bind_lineage",
+      "surface_type": "bind",
+      "consumed_at_bind": true,
+      "descendant_effect_capable": false,
+      "replay_possible": false
+    },
+    {
+      "lineage_id": "retry_lineage",
+      "surface_type": "queue",
+      "consumed_at_bind": false,
+      "descendant_effect_capable": true,
+      "replay_possible": true
+    },
+    {
+      "lineage_id": "cached_authority_lineage",
+      "surface_type": "cache",
+      "consumed_at_bind": false,
+      "descendant_effect_capable": false,
+      "replay_possible": true
+    }
+  ]
+}

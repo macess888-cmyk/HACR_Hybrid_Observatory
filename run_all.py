@@ -27,6 +27,7 @@ SCRIPTS = [
     "constructibility_collapse_mapper.py",
     "replay_vector_mapper.py",
     "refusal_propagation_mapper.py",
+    "lineage_consumption_checker.py",
     "receipt_engine.py"
 ]
 
