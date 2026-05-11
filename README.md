@@ -1,90 +1,43 @@
 # HACR Hybrid Observatory
 
-## Overview
+## Observer-Restricted Execution Boundary Observatory
 
-HACR Hybrid Observatory is an observer-restricted execution continuity observatory.
+HACR Hybrid Observatory is a deterministic, observer-restricted inspection framework focused on continuity, reachability, admissibility drift, and execution-bound topology analysis.
 
-The repository is intended for bounded deterministic inspection of:
+The repository is intentionally bounded and non-authoritative.
 
-- continuation paths
-- dependency persistence
-- restart/recovery continuity
-- drift surfaces
-- constructibility collapse conditions
-
-The observatory generates deterministic inspection outputs under controlled test conditions.
+Its purpose is to expose and classify continuity surfaces, dependency relationships, replay/retry persistence, semantic drift, and execution-bound reachability under controlled observational conditions.
 
 ---
 
-## Repository Scope
+# Core Orientation
 
-This repository is NOT:
+The observatory operates under several fixed constraints:
+
+- observer-only
+- non-authoritative
+- deterministic
+- reproducible
+- execution-bound
+- continuity-focused
+
+The repository does NOT provide:
 
 - governance authority
-- certification infrastructure
-- production safety infrastructure
-- autonomous enforcement
-- legal adjudication
-- predictive governance
-- universal admissibility system
-- real-world execution control
+- execution authorization
+- certification
+- compliance adjudication
+- runtime enforcement
+- production safety guarantees
+- operational approval
+- legal determination
 
-The repository does not claim external authority over legitimacy, execution, or governance decisions.
-
----
-
-## Current Semantics
-
-### Primary States
-
-- PASS
-- HOLD
-- FAIL
-- STOP
-- REVERSE
-- SHADOW
-
-### Continuity States
-
-- STABLE
-- DRIFT
-
-### Dependency States
-
-- INDEPENDENT
-- DEPENDENT
-- DENSE_DEPENDENCY
-- SHADOW
-
-### Constructibility States
-
-- OPEN
-- COLLAPSED
-
-### Matrix Risk States
-
-- MINIMAL
-- MODERATE
-- HIGH
-- CRITICAL
-
-### Drift Trajectory States
-
-- STABLE
-- DRIFTING
-- UNSTABLE
-- IRREVERSIBLE_DRIFT
+Outputs are observational classifications only.
 
 ---
 
-## Current Public Baseline
+# Core Invariant
 
-```txt
-v0.1-clean-baseline
-v0.2-publication-baseline
-v0.3-state-semantics
-v0.4-matrix-reachability
-v0.5-drift-trajectory
-v0.6-dependency-observability
-v0.7-watchdog-continuity-probes
-v0.8-topology mapping
+```text
+no present-state proof → no execution
+no proof → no bind → no effect
