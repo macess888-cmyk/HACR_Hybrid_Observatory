@@ -1,0 +1,31 @@
+{
+  "surfaces": [
+    {
+      "surface_id": "retry_queue",
+      "surface_type": "queue",
+      "effect_capable": true,
+      "replay_capable": true,
+      "semantic_reconstructible": false,
+      "survives_refusal": true,
+      "irreversible": false
+    },
+    {
+      "surface_id": "cached_authority",
+      "surface_type": "cache",
+      "effect_capable": false,
+      "replay_capable": true,
+      "semantic_reconstructible": true,
+      "survives_refusal": true,
+      "irreversible": false
+    },
+    {
+      "surface_id": "external_settlement",
+      "surface_type": "external_effect",
+      "effect_capable": true,
+      "replay_capable": false,
+      "semantic_reconstructible": false,
+      "survives_refusal": true,
+      "irreversible": true
+    }
+  ]
+}

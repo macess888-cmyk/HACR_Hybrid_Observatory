@@ -35,6 +35,7 @@ SCRIPTS = [
     "irreversibility_surface_mapper.py",
     "semantic_lineage_chain.py",
     "cross_domain_propagation_mapper.py",
+    "topology_pressure_field.py",
     "receipt_engine.py"
 ]
 
