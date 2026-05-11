@@ -12,20 +12,20 @@ run("drift_engine.py")
 run("dependency_engine.py")
 run("watchdog_engine.py")
 
-# Topology & mapping
+# Topology & structure
 run("topology_mapper.py")
 run("topology_visualizer.py")
 run("topology_drift_timeline.py")
 run("topology_pressure_field.py")
 run("topology_stability_gradient.py")
 
-# Pricing / signal / bind
+# Pricing / bind / signal
 run("pricing_scope_engine.py")
 run("signal_bridge_mapper.py")
 run("condition_trace_mapper.py")
 run("bind_freshness_checker.py")
 
-# Language / semantic
+# Language / semantics
 run("language_simplifier.py")
 run("reversal_asymmetry_lens.py")
 run("semantic_asymmetry_lens.py")
@@ -35,14 +35,14 @@ run("semantic_lineage_chain.py")
 # Receipt / traceability
 run("receipt_integrity_chain.py")
 
-# Dynamic / lineage / continuity
+# Dynamic / continuity / lineage
 run("dynamic_drift_lens.py")
 run("alpha_omega_lineage_lens.py")
 run("lineage_consumption_checker.py")
 run("lineage_consumption_auditor.py")
 run("refusal_propagation_mapper.py")
 
-# Reachability / propagation
+# Reachability / survivability
 run("superposition_reachability_mapper.py")
 run("latent_path_detector.py")
 run("cross_domain_propagation_mapper.py")
@@ -63,7 +63,10 @@ run("continuity_collapse_index.py")
 # Observatory atlas
 run("observatory_state_atlas.py")
 
-# Final receipts
+# Corridor mapping
+run("survivability_corridor_mapper.py")
+
+# Final receipt generation
 run("receipt_engine.py")
 
 print("\nHACR Hybrid Observatory full run complete.")

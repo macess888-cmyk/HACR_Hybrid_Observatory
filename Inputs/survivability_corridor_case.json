@@ -1,0 +1,31 @@
+{
+  "case_id": "survivability_corridor_case",
+  "corridors": [
+    {
+      "corridor_id": "retry_cache_callback_corridor",
+      "surfaces": [
+        "retry_queue_handle",
+        "cached_authority_snapshot",
+        "downstream_callback"
+      ],
+      "effect_capable": true,
+      "reconstructible": true,
+      "cross_domain": true,
+      "retry_enabled": true,
+      "callback_enabled": true
+    },
+    {
+      "corridor_id": "semantic_lineage_corridor",
+      "surfaces": [
+        "semantic_fragment",
+        "schema_interpretation",
+        "descendant_effect_surface"
+      ],
+      "effect_capable": true,
+      "reconstructible": true,
+      "cross_domain": false,
+      "retry_enabled": false,
+      "callback_enabled": false
+    }
+  ]
+}
