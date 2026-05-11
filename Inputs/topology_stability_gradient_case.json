@@ -1,0 +1,28 @@
+{
+  "segments": [
+    {
+      "segment_id": "request_to_queue",
+      "from": "request",
+      "to": "queue",
+      "start_pressure": 1,
+      "end_pressure": 3,
+      "effect_capable": false
+    },
+    {
+      "segment_id": "queue_to_worker",
+      "from": "queue",
+      "to": "worker",
+      "start_pressure": 3,
+      "end_pressure": 8,
+      "effect_capable": true
+    },
+    {
+      "segment_id": "worker_to_external_effect",
+      "from": "worker",
+      "to": "external_effect",
+      "start_pressure": 8,
+      "end_pressure": 11,
+      "effect_capable": true
+    }
+  ]
+}

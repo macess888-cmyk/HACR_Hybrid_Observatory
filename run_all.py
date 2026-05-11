@@ -36,6 +36,7 @@ SCRIPTS = [
     "semantic_lineage_chain.py",
     "cross_domain_propagation_mapper.py",
     "topology_pressure_field.py",
+    "topology_stability_gradient.py",
     "receipt_engine.py"
 ]
 
