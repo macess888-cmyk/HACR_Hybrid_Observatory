@@ -30,6 +30,7 @@ SCRIPTS = [
     "lineage_consumption_checker.py",
     "semantic_fragmentation_lens.py",
     "descendant_effect_mapper.py",
+    "distributed_reconstruction_lens.py",
     "receipt_engine.py"
 ]
 

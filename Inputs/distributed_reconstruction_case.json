@@ -1,0 +1,29 @@
+{
+  "composition_possible": true,
+  "fragments": [
+    {
+      "fragment_id": "cached_authority_fragment",
+      "surface": "cache",
+      "fragment_type": "authority",
+      "survives_refusal": true,
+      "reconstructible": true,
+      "effect_component": true
+    },
+    {
+      "fragment_id": "retry_payload_fragment",
+      "surface": "queue",
+      "fragment_type": "payload",
+      "survives_refusal": true,
+      "reconstructible": true,
+      "effect_component": true
+    },
+    {
+      "fragment_id": "downstream_callback_fragment",
+      "surface": "callback",
+      "fragment_type": "continuation",
+      "survives_refusal": true,
+      "reconstructible": true,
+      "effect_component": true
+    }
+  ]
+}
