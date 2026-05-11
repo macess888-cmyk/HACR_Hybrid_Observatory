@@ -1,0 +1,12 @@
+{
+  "origin_state": {
+    "authority": "fresh_bind",
+    "fresh_bind": false,
+    "effect_capable": false
+  },
+  "terminal_state": {
+    "authority": "historical_continuity",
+    "retry_path": true,
+    "effect_capable": true
+  }
+}
