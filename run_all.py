@@ -31,6 +31,7 @@ SCRIPTS = [
     "semantic_fragmentation_lens.py",
     "descendant_effect_mapper.py",
     "distributed_reconstruction_lens.py",
+    "continuation_pressure_index.py",
     "receipt_engine.py"
 ]
 
