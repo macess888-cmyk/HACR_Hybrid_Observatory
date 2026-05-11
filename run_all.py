@@ -93,6 +93,7 @@ run("survivability_basin_mapper.py")
 run("survivability_flow_field.py")
 run("survivability_vector_field_renderer.py")
 run("survivability_tensor_mapper.py")
+run("survivability_topology_projection_engine.py")
 
 # ---------------------------------------------------------
 # Final Receipt Generation
