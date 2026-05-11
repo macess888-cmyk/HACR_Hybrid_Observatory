@@ -1,0 +1,22 @@
+{
+  "paths": [
+    {
+      "path_id": "primary_execution",
+      "reachable": true,
+      "effect_capable": true,
+      "hidden": false
+    },
+    {
+      "path_id": "retry_branch",
+      "reachable": true,
+      "effect_capable": true,
+      "hidden": true
+    },
+    {
+      "path_id": "reversal_branch",
+      "reachable": true,
+      "effect_capable": false,
+      "hidden": true
+    }
+  ]
+}

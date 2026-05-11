@@ -19,6 +19,7 @@ scripts = [
     "dynamic_drift_lens.py",
     "semantic_asymmetry_lens.py",
     "alpha_omega_lineage_lens.py",
+    "superposition_reachability_mapper.py",
     "receipt_engine.py"
 ]
 
