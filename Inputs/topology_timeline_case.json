@@ -1,0 +1,55 @@
+{
+  "snapshots": [
+    {
+      "timestamp": "t1",
+      "edges": [
+        {
+          "from": "request",
+          "to": "queue",
+          "hidden": false,
+          "effect_capable": false
+        }
+      ]
+    },
+    {
+      "timestamp": "t2",
+      "edges": [
+        {
+          "from": "request",
+          "to": "queue",
+          "hidden": false,
+          "effect_capable": false
+        },
+        {
+          "from": "queue",
+          "to": "worker",
+          "hidden": false,
+          "effect_capable": true
+        }
+      ]
+    },
+    {
+      "timestamp": "t3",
+      "edges": [
+        {
+          "from": "request",
+          "to": "queue",
+          "hidden": false,
+          "effect_capable": false
+        },
+        {
+          "from": "queue",
+          "to": "worker",
+          "hidden": false,
+          "effect_capable": true
+        },
+        {
+          "from": "worker",
+          "to": "effect_target",
+          "hidden": true,
+          "effect_capable": true
+        }
+      ]
+    }
+  ]
+}

@@ -21,6 +21,7 @@ SCRIPTS = [
     "alpha_omega_lineage_lens.py",
     "superposition_reachability_mapper.py",
     "cross_lens_correlation_engine.py",
+    "topology_drift_timeline.py",
     "receipt_engine.py"
 ]
 
