@@ -1,76 +1,83 @@
-# NON CLAIMS
+# NON-CLAIMS
 
-## Repository Boundary
+HACR Hybrid Observatory is an observer-restricted continuity survivability observatory.
 
-HACR Hybrid Observatory is an observer-restricted deterministic inspection repository.
+It produces deterministic diagnostic artifacts only.
 
-The repository is intended for bounded continuity observability under controlled test conditions.
+## This repository is not
 
----
+- a governance authority
+- a certification system
+- a runtime enforcement system
+- a production safety guarantee
+- a legal adjudication system
+- an execution authorization layer
+- a containment system
+- a prediction engine
+- a security proof
+- a compliance determination system
+- a replacement for human or institutional decision-making
 
-## The Repository Does NOT Claim
+## Observer Boundary
 
-- governance authority
-- execution authority
-- legal authority
-- institutional authority
-- predictive capability
-- certification capability
-- production safety guarantees
-- universal admissibility validation
-- autonomous enforcement capability
-- real-world execution legitimacy arbitration
+The observatory may inspect, classify, map, render, and export observable continuity survivability signals.
 
----
+It may not authorize, approve, enforce, govern, certify, adjudicate, execute, or control outcomes.
 
-## Terminology Clarification
+## Output Boundary
 
-Within this repository:
+Outputs such as `PASS`, `HOLD`, `FAIL`, `SHADOW`, `UNSTABLE`, and `CRITICAL` are diagnostic classifications only.
 
-"proof" refers to bounded proof-signals or deterministic observability assertions inside controlled test conditions.
+They are not admissibility decisions.
 
-The repository does NOT claim:
-- independently validated real-world proof
-- universal correctness
-- generalized governance authority
-- external legitimacy determination
+They are not execution permissions.
 
-Outputs are observer-oriented inspection artifacts only.
+They are not governance rulings.
 
----
+They are not safety guarantees.
 
-## Scope Constraints
+## Execution Boundary
 
-The repository currently focuses on:
+No output from this repository may be treated as execution authority.
 
-- execution continuity inspection
-- restart/recovery continuity
-- dependency visibility
-- drift observability
-- constructibility state inspection
-- deterministic report generation
+No observatory output substitutes for present-state proof at the actual execution surface.
 
-The repository intentionally avoids:
-- political interpretation systems
-- institutional legitimacy systems
-- social governance systems
-- actor-level adjudication
-- civilization-scale governance claims
+No observatory output creates permission to bind, execute, retry, replay, recover, reverse, or propagate an effect.
 
----
+## Non-Consumability Rule
 
-## Operational Posture
+Observer outputs must remain non-consumable by execution systems.
 
-The repository operates under:
+If an execution system consumes observatory output as authority, approval, routing, gating, or runtime control, the observer boundary has failed.
 
-- bounded scope
-- observer-only posture
-- deterministic outputs
-- reproducible inspection paths
-- finite semantics
-- controlled test conditions
+## Public Communication Boundary
 
-If uncertainty exists:
-- HOLD remains valid
-- no execution claim is implied
-- no authority is assumed
+Public descriptions of this repository should use language such as:
+
+- observer-restricted
+- diagnostic
+- deterministic
+- reproducible
+- continuity survivability
+- topology observability
+- non-authoritative
+
+Public descriptions should avoid language such as:
+
+- governs
+- certifies
+- guarantees
+- authorizes
+- controls
+- enforces
+- proves safety
+- contains execution
+- predicts outcomes
+
+## Safe Description
+
+HACR Hybrid Observatory maps whether replay, lineage, semantic fragments, descendant effects, distributed reconstruction, or topology survivability remain observable after refusal.
+
+It is an observer-side diagnostic framework.
+
+It does not authorize, enforce, certify, govern, or control execution.
