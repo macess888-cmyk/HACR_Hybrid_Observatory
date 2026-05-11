@@ -1,0 +1,28 @@
+{
+  "surfaces": [
+    {
+      "surface_id": "local_decline_gate",
+      "surface_type": "local_refusal",
+      "refusal_received": true,
+      "effect_capable": false
+    },
+    {
+      "surface_id": "retry_queue",
+      "surface_type": "queue",
+      "refusal_received": false,
+      "effect_capable": true
+    },
+    {
+      "surface_id": "downstream_callback",
+      "surface_type": "callback",
+      "refusal_received": false,
+      "effect_capable": true
+    },
+    {
+      "surface_id": "audit_log",
+      "surface_type": "record",
+      "refusal_received": true,
+      "effect_capable": false
+    }
+  ]
+}
