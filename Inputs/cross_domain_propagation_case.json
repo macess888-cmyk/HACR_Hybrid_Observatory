@@ -1,0 +1,28 @@
+{
+  "domain_transitions": [
+    {
+      "transition_id": "semantic_to_replay",
+      "from_domain": "semantic",
+      "to_domain": "replay",
+      "propagates": true,
+      "effect_capable": true,
+      "reconstructible": true
+    },
+    {
+      "transition_id": "lineage_to_descendant",
+      "from_domain": "lineage",
+      "to_domain": "descendant_effect",
+      "propagates": true,
+      "effect_capable": true,
+      "reconstructible": true
+    },
+    {
+      "transition_id": "local_refusal_to_audit",
+      "from_domain": "refusal",
+      "to_domain": "record",
+      "propagates": true,
+      "effect_capable": false,
+      "reconstructible": false
+    }
+  ]
+}

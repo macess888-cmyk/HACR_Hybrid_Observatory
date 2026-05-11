@@ -34,6 +34,7 @@ SCRIPTS = [
     "continuation_pressure_index.py",
     "irreversibility_surface_mapper.py",
     "semantic_lineage_chain.py",
+    "cross_domain_propagation_mapper.py",
     "receipt_engine.py"
 ]
 
