@@ -1,6 +1,6 @@
-import os
+import subprocess
 
-scripts = [
+SCRIPTS = [
     "hacr_core.py",
     "lens_engine.py",
     "matrix_engine.py",
@@ -20,11 +20,15 @@ scripts = [
     "semantic_asymmetry_lens.py",
     "alpha_omega_lineage_lens.py",
     "superposition_reachability_mapper.py",
+    "cross_lens_correlation_engine.py",
     "receipt_engine.py"
 ]
 
-for script in scripts:
+def run_script(script):
     print(f"\n=== Running {script} ===")
-    os.system(f"python {script}")
+    subprocess.run(["python", script])
+
+for script in SCRIPTS:
+    run_script(script)
 
 print("\nHACR Hybrid Observatory full run complete.")
