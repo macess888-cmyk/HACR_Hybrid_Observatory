@@ -89,6 +89,7 @@ run("continuity_collapse_index.py")
 run("observatory_state_atlas.py")
 run("survivability_corridor_mapper.py")
 run("survivability_heatmap_generator.py")
+run("survivability_basin_mapper.py")
 
 # ---------------------------------------------------------
 # Final Receipt Generation
