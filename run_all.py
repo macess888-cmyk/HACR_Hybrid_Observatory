@@ -22,6 +22,7 @@ SCRIPTS = [
     "superposition_reachability_mapper.py",
     "cross_lens_correlation_engine.py",
     "topology_drift_timeline.py",
+    "latent_path_detector.py",
     "receipt_engine.py"
 ]
 

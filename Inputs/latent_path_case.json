@@ -1,0 +1,32 @@
+{
+  "declared_paths": [
+    {
+      "path_id": "payment_forward",
+      "from": "payment_request",
+      "to": "settlement_worker"
+    },
+    {
+      "path_id": "payment_reversal",
+      "from": "decline_event",
+      "to": "reversal_worker"
+    }
+  ],
+  "shared_surfaces": [
+    {
+      "surface_id": "shared_retry_queue",
+      "connects_forward": true,
+      "connects_reversal": true,
+      "connects_retry": true,
+      "connects_cache": false,
+      "effect_capable": true
+    },
+    {
+      "surface_id": "cached_payment_state",
+      "connects_forward": false,
+      "connects_reversal": true,
+      "connects_retry": true,
+      "connects_cache": true,
+      "effect_capable": true
+    }
+  ]
+}
