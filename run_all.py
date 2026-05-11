@@ -95,6 +95,7 @@ run("survivability_vector_field_renderer.py")
 run("survivability_tensor_mapper.py")
 run("survivability_topology_projection_engine.py")
 run("survivability_graph_export_engine.py")
+run("survivability_svg_renderer.py")
 
 # ---------------------------------------------------------
 # Final Receipt Generation
