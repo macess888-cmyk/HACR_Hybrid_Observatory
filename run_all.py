@@ -1,50 +1,35 @@
 import subprocess
 
-SCRIPTS = [
-    "hacr_core.py",
-    "lens_engine.py",
-    "matrix_engine.py",
-    "drift_engine.py",
-    "dependency_engine.py",
-    "watchdog_engine.py",
-    "topology_mapper.py",
-    "topology_visualizer.py",
-    "pricing_scope_engine.py",
-    "signal_bridge_mapper.py",
-    "condition_trace_mapper.py",
-    "bind_freshness_checker.py",
-    "language_simplifier.py",
-    "reversal_asymmetry_lens.py",
-    "receipt_integrity_chain.py",
-    "dynamic_drift_lens.py",
-    "semantic_asymmetry_lens.py",
-    "alpha_omega_lineage_lens.py",
-    "superposition_reachability_mapper.py",
-    "cross_lens_correlation_engine.py",
-    "topology_drift_timeline.py",
-    "latent_path_detector.py",
-    "authority_surface_mapper.py",
-    "constructibility_collapse_mapper.py",
-    "replay_vector_mapper.py",
-    "refusal_propagation_mapper.py",
-    "lineage_consumption_checker.py",
-    "semantic_fragmentation_lens.py",
-    "descendant_effect_mapper.py",
-    "distributed_reconstruction_lens.py",
-    "continuation_pressure_index.py",
-    "irreversibility_surface_mapper.py",
-    "semantic_lineage_chain.py",
-    "cross_domain_propagation_mapper.py",
-    "topology_pressure_field.py",
-    "topology_stability_gradient.py",
-    "receipt_engine.py"
-]
-
-def run_script(script):
+def run(script):
     print(f"\n=== Running {script} ===")
-    subprocess.run(["python", script])
+    subprocess.run(["python", script], check=False)
 
-for script in SCRIPTS:
-    run_script(script)
+run("hacr_core.py")
+run("lens_engine.py")
+run("matrix_engine.py")
+run("drift_engine.py")
+run("dependency_engine.py")
+run("watchdog_engine.py")
+run("topology_mapper.py")
+run("topology_visualizer.py")
+run("pricing_scope_engine.py")
+run("signal_bridge_mapper.py")
+run("condition_trace_mapper.py")
+run("bind_freshness_checker.py")
+run("language_simplifier.py")
+run("reversal_asymmetry_lens.py")
+run("receipt_integrity_chain.py")
+run("dynamic_drift_lens.py")
+run("semantic_asymmetry_lens.py")
+run("alpha_omega_lineage_lens.py")
+run("superposition_reachability_mapper.py")
+run("cross_lens_correlation_engine.py")
+run("topology_drift_timeline.py")
+run("latent_path_detector.py")
+run("authority_surface_mapper.py")
+run("constructibility_collapse_mapper.py")
+run("replay_vector_mapper.py")
+run("lineage_consumption_auditor.py")
+run("receipt_engine.py")
 
 print("\nHACR Hybrid Observatory full run complete.")

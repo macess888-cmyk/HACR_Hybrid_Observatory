@@ -1,25 +1,23 @@
 {
-  "lineages": [
+  "case_id": "refusal_lineage_consumption_case",
+  "lineage_surfaces": [
     {
-      "lineage_id": "fresh_bind_lineage",
-      "surface_type": "bind",
-      "consumed_at_bind": true,
-      "descendant_effect_capable": false,
-      "replay_possible": false
-    },
-    {
-      "lineage_id": "retry_lineage",
+      "surface_id": "retry_queue_handle",
       "surface_type": "queue",
-      "consumed_at_bind": false,
-      "descendant_effect_capable": true,
-      "replay_possible": true
+      "survives_refusal": true,
+      "consumed": false
     },
     {
-      "lineage_id": "cached_authority_lineage",
+      "surface_id": "cached_authority_snapshot",
       "surface_type": "cache",
-      "consumed_at_bind": false,
-      "descendant_effect_capable": false,
-      "replay_possible": true
+      "survives_refusal": true,
+      "consumed": false
+    },
+    {
+      "surface_id": "refusal_log",
+      "surface_type": "receipt",
+      "survives_refusal": true,
+      "consumed": true
     }
   ]
 }
