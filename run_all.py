@@ -23,6 +23,7 @@ SCRIPTS = [
     "cross_lens_correlation_engine.py",
     "topology_drift_timeline.py",
     "latent_path_detector.py",
+    "authority_surface_mapper.py",
     "receipt_engine.py"
 ]
 

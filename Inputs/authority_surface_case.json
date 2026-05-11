@@ -1,0 +1,22 @@
+{
+  "authority_surfaces": [
+    {
+      "surface_id": "cached_approval_token",
+      "surface_type": "cache",
+      "authority_source": "prior_state",
+      "survives_refusal": true
+    },
+    {
+      "surface_id": "retry_queue_handle",
+      "surface_type": "queue",
+      "authority_source": "prior_state",
+      "survives_refusal": true
+    },
+    {
+      "surface_id": "fresh_bind_gate",
+      "surface_type": "bind",
+      "authority_source": "present_state",
+      "survives_refusal": false
+    }
+  ]
+}
