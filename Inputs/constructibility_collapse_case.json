@@ -1,0 +1,32 @@
+{
+  "surfaces_after_refusal": [
+    {
+      "surface_id": "local_decline_state",
+      "surface_type": "local_refusal",
+      "survives_refusal": false,
+      "effect_capable": false,
+      "reconstructible": false
+    },
+    {
+      "surface_id": "retry_queue_handle",
+      "surface_type": "queue",
+      "survives_refusal": true,
+      "effect_capable": true,
+      "reconstructible": true
+    },
+    {
+      "surface_id": "cached_authority_snapshot",
+      "surface_type": "cache",
+      "survives_refusal": true,
+      "effect_capable": false,
+      "reconstructible": true
+    },
+    {
+      "surface_id": "downstream_callback",
+      "surface_type": "callback",
+      "survives_refusal": true,
+      "effect_capable": true,
+      "reconstructible": true
+    }
+  ]
+}
