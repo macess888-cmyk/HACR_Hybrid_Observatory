@@ -1,0 +1,14 @@
+{
+  "baseline_terms": {
+    "authority": "fresh present-state admissibility",
+    "bind": "single execution resolution point",
+    "proof": "independent present-state evidence",
+    "execution": "effect-capable transition"
+  },
+  "current_terms": {
+    "authority": "historical operational continuity",
+    "bind": "workflow checkpoint",
+    "proof": "aggregated confidence estimate",
+    "execution": "successful process completion"
+  }
+}

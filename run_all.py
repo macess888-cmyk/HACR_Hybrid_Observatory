@@ -17,6 +17,7 @@ scripts = [
     "reversal_asymmetry_lens.py",
     "receipt_integrity_chain.py",
     "dynamic_drift_lens.py",
+    "semantic_asymmetry_lens.py",
     "receipt_engine.py"
 ]
 
