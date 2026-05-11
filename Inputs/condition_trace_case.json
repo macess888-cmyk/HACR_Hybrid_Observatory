@@ -1,0 +1,6 @@
+{
+  "condition_id": "payment_reversal_chain",
+  "retry_enabled": true,
+  "shared_surface": true,
+  "fresh_bind_required": true
+}

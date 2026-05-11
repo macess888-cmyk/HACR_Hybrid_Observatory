@@ -1,0 +1,6 @@
+{
+  "condition_age_ms": 4500,
+  "freshness_limit_ms": 1000,
+  "reused_prior_authority": true,
+  "retry_context": true
+}
