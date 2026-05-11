@@ -1,0 +1,16 @@
+{
+  "previous_state": {
+    "authority_source": "fresh_bind",
+    "fresh_bind_required": true,
+    "retry_enabled": false,
+    "effect_capable_path": false,
+    "shared_surface": false
+  },
+  "current_state": {
+    "authority_source": "prior_state",
+    "fresh_bind_required": true,
+    "retry_enabled": true,
+    "effect_capable_path": true,
+    "shared_surface": true
+  }
+}
