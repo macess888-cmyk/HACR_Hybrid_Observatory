@@ -8,6 +8,7 @@ scripts = [
     "dependency_engine.py",
     "watchdog_engine.py",
     "topology_mapper.py",
+    "topology_visualizer.py",
     "pricing_scope_engine.py",
     "signal_bridge_mapper.py",
     "condition_trace_mapper.py",

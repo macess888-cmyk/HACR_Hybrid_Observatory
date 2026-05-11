@@ -1,17 +1,11 @@
 {
   "nodes": [
-    {
-      "id": "request"
-    },
-    {
-      "id": "queue"
-    },
-    {
-      "id": "worker"
-    },
-    {
-      "id": "effect_target"
-    }
+    "request",
+    "queue",
+    "worker",
+    "reversal_worker",
+    "cache",
+    "effect_target"
   ],
   "edges": [
     {
@@ -29,6 +23,18 @@
     {
       "from": "worker",
       "to": "effect_target",
+      "effect_capable": true,
+      "hidden": true
+    },
+    {
+      "from": "worker",
+      "to": "cache",
+      "effect_capable": false,
+      "hidden": true
+    },
+    {
+      "from": "cache",
+      "to": "reversal_worker",
       "effect_capable": true,
       "hidden": true
     }
