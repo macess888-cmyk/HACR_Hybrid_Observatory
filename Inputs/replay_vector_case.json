@@ -1,0 +1,25 @@
+{
+  "replay_vectors": [
+    {
+      "vector_id": "retry_token",
+      "surface_type": "queue",
+      "replay_possible": true,
+      "effect_capable": true,
+      "requires_fresh_bind": false
+    },
+    {
+      "vector_id": "cached_workflow_state",
+      "surface_type": "cache",
+      "replay_possible": true,
+      "effect_capable": false,
+      "requires_fresh_bind": false
+    },
+    {
+      "vector_id": "fresh_execution_bind",
+      "surface_type": "bind",
+      "replay_possible": false,
+      "effect_capable": false,
+      "requires_fresh_bind": true
+    }
+  ]
+}

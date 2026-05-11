@@ -25,6 +25,7 @@ SCRIPTS = [
     "latent_path_detector.py",
     "authority_surface_mapper.py",
     "constructibility_collapse_mapper.py",
+    "replay_vector_mapper.py",
     "receipt_engine.py"
 ]
 
