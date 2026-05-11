@@ -1,43 +1,50 @@
 # HACR Hybrid Observatory
 
-## Observer-Restricted Execution Boundary Observatory
+Observer-restricted continuity survivability observatory.
 
-HACR Hybrid Observatory is a deterministic, observer-restricted inspection framework focused on continuity, reachability, admissibility drift, and execution-bound topology analysis.
+HACR Hybrid Observatory inspects whether replay, lineage, semantic fragments, descendant effects, distributed reconstruction, or topology survivability remain observable after refusal or invalid execution conditions.
 
-The repository is intentionally bounded and non-authoritative.
+It produces deterministic diagnostic artifacts only.
 
-Its purpose is to expose and classify continuity surfaces, dependency relationships, replay/retry persistence, semantic drift, and execution-bound reachability under controlled observational conditions.
+## What this is
 
----
+This repository is a local-first diagnostic observatory for inspecting continuity survivability surfaces.
 
-# Core Orientation
+It focuses on:
 
-The observatory operates under several fixed constraints:
+- replay vectors
+- stale authority
+- retry persistence
+- lineage survival
+- constructibility persistence
+- semantic fragmentation
+- descendant effects
+- distributed reconstruction
+- topology pressure
+- survivability corridors
+- heatmaps, basins, vectors, tensors, projections, and SVG visualization
 
-- observer-only
-- non-authoritative
-- deterministic
-- reproducible
-- execution-bound
-- continuity-focused
+## What this is not
 
-The repository does NOT provide:
+This repository is not:
 
-- governance authority
-- execution authorization
-- certification
-- compliance adjudication
-- runtime enforcement
-- production safety guarantees
-- operational approval
-- legal determination
+- a governance authority
+- a certification system
+- a runtime enforcement system
+- a production safety guarantee
+- a legal adjudication system
+- an execution authorization layer
+- a containment system
+- a prediction engine
 
-Outputs are observational classifications only.
+See:
 
----
+- `NON_CLAIMS.md`
+- `OUTPUT_SEMANTICS.md`
+- `OBSERVATORY_ARCHITECTURE.md`
 
-# Core Invariant
+## Core boundary
 
 ```text
 no present-state proof → no execution
-no proof → no bind → no effect
+no proof → no bind → no side effect
