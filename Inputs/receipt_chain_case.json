@@ -1,0 +1,19 @@
+{
+  "receipts": [
+    {
+      "receipt_id": "r001",
+      "event": "bind_check",
+      "status": "PASS"
+    },
+    {
+      "receipt_id": "r002",
+      "event": "retry_detected",
+      "status": "HOLD"
+    },
+    {
+      "receipt_id": "r003",
+      "event": "authority_reuse",
+      "status": "FAIL"
+    }
+  ]
+}
