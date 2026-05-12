@@ -133,6 +133,28 @@ See:
 
 ---
 
+# Reviewer Reproducibility
+
+The repository is intended to support bounded reviewer regeneration of deterministic inspection artifacts.
+
+Minimal reviewer flow:
+
+input → execution → observable artifact → limitation
+
+Reviewers should evaluate:
+
+- deterministic reproducibility
+- explicit capability boundaries
+- observable limitations
+- evidence-to-output alignment
+- observer-only containment
+
+See:
+
+- `REVIEWER_REPRODUCIBILITY.md`
+
+---
+
 # Semantic Scope Constraint
 
 Executable scope must upper-bound semantic scope.
@@ -179,6 +201,7 @@ See:
 - `governance/EVIDENCE_ANCHOR_MAP.md`
 - `governance/DIAGRAM_EVIDENCE_BINDING.md`
 - `governance/EXAMPLE_TRACEABILITY.md`
+- `REVIEWER_REPRODUCIBILITY.md`
 
 ---
 
