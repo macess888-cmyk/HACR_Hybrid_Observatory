@@ -39,7 +39,7 @@ The repository remains inspection-only.
 
 > “After refusal, can operationally consumable consequence still become real without fresh admissibility at bind?”
 
-The observatory does not attempt to govern execution.
+The observatory does not govern execution.
 
 It attempts to expose whether continuation survivability remains observably reachable within bounded inspected topology surfaces.
 
@@ -58,7 +58,7 @@ Current scope is limited to:
 - bounded continuity inspection
 - reproducible observer-side analysis
 
-All outputs are bounded by inspected evidence surfaces and available observer visibility.
+All outputs remain bounded by inspected evidence surfaces and available observer visibility.
 
 ---
 
@@ -97,7 +97,25 @@ Concepts unsupported by executable evidence surfaces should be treated as concep
 
 See:
 
-`governance/EVIDENCE_ANCHOR_MAP.md`
+- `governance/EVIDENCE_ANCHOR_MAP.md`
+
+---
+
+# Diagram Evidence Binding
+
+All diagrams are expected to map directly to executable evidence surfaces.
+
+Diagrams are bounded inspection artifacts only and should not be interpreted as:
+
+- complete topology representations
+- runtime authority surfaces
+- governance systems
+- orchestration infrastructure
+- operational truth claims
+
+See:
+
+- `governance/DIAGRAM_EVIDENCE_BINDING.md`
 
 ---
 
@@ -128,7 +146,8 @@ Recent work focuses on:
 - architecture-to-code visibility
 - schema validation
 - semantic containment
-- topology inspection hardening
+- evidence anchoring
+- diagram binding
 - observer-boundary clarification
 
 The repository is intentionally moving toward tighter operational grounding and narrower interpretive scope rather than broader orchestration or governance framing.
@@ -143,6 +162,7 @@ See:
 - `governance/CAPABILITY_SURFACE.md`
 - `governance/INTERPRETIVE_RISK.md`
 - `governance/EVIDENCE_ANCHOR_MAP.md`
+- `governance/DIAGRAM_EVIDENCE_BINDING.md`
 
 ---
 
