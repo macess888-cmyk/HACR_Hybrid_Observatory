@@ -1,0 +1,29 @@
+{
+  "case": "fresh_bind_gap_after_refusal",
+  "continuation_paths": [
+    {
+      "name": "retry_worker",
+      "type": "retry",
+      "continuation_after_refusal": true,
+      "fresh_bind_required": false,
+      "fresh_bind_enforced": false,
+      "carries_prior_authority": true
+    },
+    {
+      "name": "maintenance_replay_job",
+      "type": "replay",
+      "continuation_after_refusal": true,
+      "fresh_bind_required": true,
+      "fresh_bind_enforced": false,
+      "carries_prior_authority": true
+    },
+    {
+      "name": "downstream_callback",
+      "type": "callback",
+      "continuation_after_refusal": true,
+      "fresh_bind_required": true,
+      "fresh_bind_enforced": true,
+      "carries_prior_authority": false
+    }
+  ]
+}
