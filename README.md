@@ -50,8 +50,8 @@ It attempts to expose whether continuation survivability remains observably reac
 Current scope is limited to:
 
 - replay/retry survivability visibility
-- descendant-effect inspection
-- distributed reconstruction visibility
+- downstream continuation inspection
+- reconstructible continuation visibility
 - topology inspection artifacts
 - deterministic graph generation
 - SVG visualization
@@ -67,8 +67,8 @@ All outputs remain bounded by inspected evidence surfaces and available observer
 | Capability | State |
 |---|---|
 | Replay Vector Inspection | OBSERVABLE |
-| Descendant Effect Mapping | OBSERVABLE |
-| Distributed Reconstruction Visibility | OBSERVABLE |
+| Downstream Continuation Mapping | OBSERVABLE |
+| Reconstructible Continuation Visibility | OBSERVABLE |
 | Deterministic Graph Export | IMPLEMENTED |
 | SVG Artifact Generation | IMPLEMENTED |
 
@@ -169,6 +169,18 @@ See:
 
 ---
 
+# Terminology Compression
+
+Recent stabilization work intentionally prioritizes terminology compression and reduction of interpretive scope expansion.
+
+New terminology is expected to improve operational clarity more than semantic density.
+
+See:
+
+- `governance/TERMINOLOGY_COMPRESSION.md`
+
+---
+
 # Semantic Scope Constraint
 
 Executable scope must upper-bound semantic scope.
@@ -183,6 +195,7 @@ Recent stabilization work therefore prioritizes:
 - reproducibility
 - code-derived visibility
 - bounded capability surfaces
+- terminology compression
 - scope compression over abstraction expansion
 
 ---
@@ -200,6 +213,7 @@ Recent work focuses on:
 - diagram binding
 - example traceability
 - canonical demo compression
+- terminology compression
 - observer-boundary clarification
 
 The repository is intentionally moving toward tighter operational grounding and narrower interpretive scope rather than broader orchestration or governance framing.
@@ -218,6 +232,7 @@ See:
 - `governance/EXAMPLE_TRACEABILITY.md`
 - `REVIEWER_REPRODUCIBILITY.md`
 - `CANONICAL_MINIMAL_DEMO.md`
+- `governance/TERMINOLOGY_COMPRESSION.md`
 
 ---
 
