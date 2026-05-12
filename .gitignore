@@ -1,4 +1,20 @@
-.venv/
+# Python
 __pycache__/
-Outputs/
-Receipts/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# Generated outputs
+Outputs/*.json
+Outputs/*.svg
+Outputs/*.dot
+
+# Review/demo artifacts
+HACR_v0_8_Review_Packet.zip
+Review_Packet_v0_8/
+
+# OS files
+Thumbs.db
+.DS_Store
