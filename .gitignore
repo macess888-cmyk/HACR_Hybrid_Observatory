@@ -21,6 +21,7 @@ Thumbs.db
 Outputs/
 Outputs_Normalized/
 dependency_graph_report.json
+schema_contract_report.json
 
 # Generated visual artifacts
 *.svg

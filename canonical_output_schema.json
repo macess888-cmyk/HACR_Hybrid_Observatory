@@ -1,0 +1,40 @@
+{
+  "required_fields": [
+    "lens",
+    "status",
+    "observer_mode",
+    "summary",
+    "findings",
+    "non_claims"
+  ],
+  "optional_fields": [
+    "score",
+    "derived_from",
+    "generated_at",
+    "nodes",
+    "edges",
+    "topology",
+    "metadata"
+  ],
+  "status_values": [
+    "PASS",
+    "HOLD",
+    "FAIL",
+    "STOP",
+    "REVERSE",
+    "SHADOW",
+    "UNSTABLE",
+    "CRITICAL",
+    "TRACEABLE",
+    "PROJECTED",
+    "EXPORTED",
+    "SVG_GENERATED"
+  ],
+  "observer_constraints": {
+    "observer_only": true,
+    "non_authoritative": true,
+    "non_consumable_by_execution": true
+  },
+  "non_claims_required": true,
+  "schema_version": "v0.9"
+}
