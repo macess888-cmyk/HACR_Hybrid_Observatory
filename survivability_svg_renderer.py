@@ -1,92 +1,202 @@
 import json
-from pathlib import Path
 
-INPUT = Path("Outputs/survivability_graph_export.json")
-OUTPUT = Path("Outputs/survivability_graph.svg")
+INPUT_FILE = "Outputs/survivability_graph_export.json"
+OUTPUT_FILE = "Outputs/survivability_graph.svg"
 
-STATUS_COLORS = {
-    "LOW": "#8fd19e",
-    "ELEVATED": "#ffd966",
-    "HIGH": "#f6b26b",
-    "CRITICAL": "#e06666",
-    "FAIL": "#cc0000",
-    "SHADOW": "#8e7cc3",
-    "UNSTABLE": "#c27ba0",
-    "PROJECTED": "#6fa8dc"
+with open(INPUT_FILE, "r") as f:
+    data = json.load(f)
+
+nodes = data.get("nodes", [])
+edges = data.get("edges", [])
+
+svg_width = 1600
+svg_height = 900
+
+positions = {
+    "retry_queue_handle": (220, 120),
+    "downstream_callback": (220, 320),
+    "schema_interpretation": (220, 520),
+    "cached_approval_token": (220, 720),
+    "cached_payment_state": (220, 860),
+
+    "cached_authority_snapshot": (1150, 220),
+    "semantic_fragment": (1150, 460),
+    "descendant_effect_surface": (1150, 650),
+    "shared_retry_queue": (1150, 860)
 }
 
-def load(path):
-    if not path.exists():
-        return {}
-    return json.loads(path.read_text())
+color_map = {
+    "CRITICAL": "#ff6b6b",
+    "HIGH": "#f7b267",
+    "ELEVATED": "#f4d35e",
+    "LOW": "#8fd19e"
+}
 
-def color(status):
-    return STATUS_COLORS.get(status, "#cccccc")
+svg = []
 
-def main():
-    graph = load(INPUT)
+svg.append(f'''
+<svg width="{svg_width}" height="{svg_height}"
+xmlns="http://www.w3.org/2000/svg"
+style="background:#05070d;font-family:Arial,sans-serif">
+''')
 
-    nodes = graph.get("nodes", [])
-    edges = graph.get("edges", [])
+# Title
+svg.append('''
+<text x="40" y="50"
+font-size="28"
+fill="white"
+font-weight="bold">
+HACR Survivability Graph Export
+</text>
+''')
 
-    width = 1200
-    height = max(600, 120 + len(nodes) * 90)
+# Subtitle
+svg.append('''
+<text x="40" y="85"
+font-size="18"
+fill="#cccccc">
+Observer-restricted topology visualization. Not runtime control.
+</text>
+''')
 
-    positions = {}
-    x_left = 180
-    x_right = 850
+# Demo question
+svg.append('''
+<text x="40" y="125"
+font-size="20"
+fill="#ffffff"
+font-weight="bold">
+Demo Question:
+</text>
+''')
 
-    for i, node in enumerate(nodes):
-        name = node.get("node", f"node_{i}")
-        x = x_left if i % 2 == 0 else x_right
-        y = 80 + i * 70
-        positions[name] = (x, y)
+svg.append('''
+<text x="260" y="125"
+font-size="20"
+fill="#ffcc66">
+After refusal, can consequence still become real?
+</text>
+''')
 
-    svg = []
-    svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">')
-    svg.append('<rect width="100%" height="100%" fill="#111111"/>')
-    svg.append('<text x="40" y="40" fill="white" font-size="24" font-family="Arial">HACR Survivability Graph Export</text>')
-    svg.append('<text x="40" y="68" fill="#cccccc" font-size="14" font-family="Arial">Observer-restricted topology visualization. Not runtime control.</text>')
+# Legend
+legend_y = 180
 
-    for edge in edges:
-        source = edge.get("source")
-        target = edge.get("target")
-        if source not in positions or target not in positions:
-            continue
+legend_items = [
+    ("#ff6b6b", "Critical survivability path"),
+    ("#f7b267", "Elevated continuation surface"),
+    ("#8fd19e", "Low observed pressure")
+]
 
-        x1, y1 = positions[source]
-        x2, y2 = positions[target]
-        stroke = color(edge.get("status"))
-        mag = edge.get("magnitude", 1)
-        width_px = max(1, min(8, mag // 4))
+for i, (color, label) in enumerate(legend_items):
+    y = legend_y + (i * 35)
 
-        svg.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{stroke}" stroke-width="{width_px}" marker-end="url(#arrow)"/>')
+    svg.append(f'''
+    <circle cx="60" cy="{y}" r="10"
+    fill="{color}" />
+    ''')
 
-    svg.append("""
-<defs>
-  <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
-    <path d="M0,0 L0,6 L6,3 z" fill="#ffffff" />
-  </marker>
-</defs>
-""")
+    svg.append(f'''
+    <text x="85" y="{y + 5}"
+    font-size="16"
+    fill="#dddddd">
+    {label}
+    </text>
+    ''')
 
-    for node in nodes:
-        name = node.get("node")
-        if not name or name not in positions:
-            continue
+# Draw edges
+for edge in edges:
+    source = edge["source"]
+    target = edge["target"]
 
-        x, y = positions[name]
-        status = node.get("status", "LOW")
-        weight = node.get("weight", 0)
+    if source not in positions or target not in positions:
+        continue
 
-        svg.append(f'<circle cx="{x}" cy="{y}" r="24" fill="{color(status)}" stroke="white" stroke-width="2"/>')
-        svg.append(f'<text x="{x + 34}" y="{y - 4}" fill="white" font-size="14" font-family="Arial">{name}</text>')
-        svg.append(f'<text x="{x + 34}" y="{y + 14}" fill="#cccccc" font-size="12" font-family="Arial">status={status} weight={weight}</text>')
+    x1, y1 = positions[source]
+    x2, y2 = positions[target]
 
-    svg.append("</svg>")
+    weight = edge.get("weight", 1)
 
-    OUTPUT.write_text("\n".join(svg), encoding="utf-8")
-    print("Inputs/survivability_svg_renderer -> SVG_GENERATED")
+    if weight >= 15:
+        stroke = "#ff6b6b"
+        width = 6
+    elif weight >= 8:
+        stroke = "#f7b267"
+        width = 4
+    else:
+        stroke = "#8fd19e"
+        width = 2
 
-if __name__ == "__main__":
-    main()
+    svg.append(f'''
+    <line
+    x1="{x1}"
+    y1="{y1}"
+    x2="{x2}"
+    y2="{y2}"
+    stroke="{stroke}"
+    stroke-width="{width}"
+    opacity="0.85"
+    />
+    ''')
+
+# Draw nodes
+for node in nodes:
+    node_id = node["id"]
+
+    if node_id not in positions:
+        continue
+
+    x, y = positions[node_id]
+
+    status = node.get("status", "LOW")
+    weight = node.get("weight", 1)
+
+    color = color_map.get(status, "#cccccc")
+
+    radius = 42 if weight >= 15 else 34 if weight >= 8 else 28
+
+    svg.append(f'''
+    <circle
+    cx="{x}"
+    cy="{y}"
+    r="{radius}"
+    fill="{color}"
+    stroke="white"
+    stroke-width="4"
+    />
+    ''')
+
+    svg.append(f'''
+    <text
+    x="{x + 55}"
+    y="{y - 8}"
+    font-size="16"
+    fill="white"
+    font-weight="bold">
+    {node_id}
+    </text>
+    ''')
+
+    svg.append(f'''
+    <text
+    x="{x + 55}"
+    y="{y + 18}"
+    font-size="15"
+    fill="#cccccc">
+    status={status} weight={weight}
+    </text>
+    ''')
+
+# Footer
+svg.append('''
+<text x="40" y="880"
+font-size="15"
+fill="#999999">
+Deterministic observer artifact • Non-authoritative • Reproducible topology exposure
+</text>
+''')
+
+svg.append('</svg>')
+
+with open(OUTPUT_FILE, "w") as f:
+    f.write("\n".join(svg))
+
+print(f"{OUTPUT_FILE} -> SVG_GENERATED")
