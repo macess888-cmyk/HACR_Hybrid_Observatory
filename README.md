@@ -1,8 +1,8 @@
 # HACR Hybrid Observatory
 
-## Observer-Restricted Continuity Survivability Observatory
+## Observer-Restricted Continuity Survivability Inspection Framework
 
-HACR Hybrid Observatory is a bounded, observer-restricted continuity survivability inspection framework focused on exposing whether operationally consumable consequence pathways remain observably reachable after refusal conditions occur.
+HACR Hybrid Observatory is a bounded, observer-restricted inspection framework focused on exposing whether operationally consumable consequence pathways remain observably reachable after refusal conditions occur.
 
 The repository produces deterministic inspection artifacts only.
 
@@ -62,27 +62,7 @@ All outputs are bounded by inspected evidence surfaces and available observer vi
 
 ---
 
-# Semantic Scope Constraint
-
-Executable scope must upper-bound semantic scope.
-
-If semantic framing exceeds bounded executable structure:
-→ interpretive inflation risk emerges.
-
-Recent stabilization work therefore prioritizes:
-
-- semantic containment
-- explicit non-claims
-- reproducibility
-- code-derived visibility
-- bounded capability surfaces
-- scope compression over abstraction expansion
-
----
-
 # Capability Boundary
-
-The repository currently supports:
 
 | Capability | State |
 |---|---|
@@ -104,6 +84,41 @@ The repository explicitly does not support:
 
 ---
 
+# Evidence Anchoring
+
+All major observability concepts are expected to map directly to:
+
+- executable inputs
+- deterministic execution paths
+- observable artifacts
+- bounded limitations
+
+Concepts unsupported by executable evidence surfaces should be treated as conceptual-only rather than operationally stabilized.
+
+See:
+
+`governance/EVIDENCE_ANCHOR_MAP.md`
+
+---
+
+# Semantic Scope Constraint
+
+Executable scope must upper-bound semantic scope.
+
+If semantic framing exceeds bounded executable structure:
+→ interpretive inflation risk emerges.
+
+Recent stabilization work therefore prioritizes:
+
+- semantic containment
+- explicit non-claims
+- reproducibility
+- code-derived visibility
+- bounded capability surfaces
+- scope compression over abstraction expansion
+
+---
+
 # Stabilization Direction
 
 Recent work focuses on:
@@ -117,6 +132,17 @@ Recent work focuses on:
 - observer-boundary clarification
 
 The repository is intentionally moving toward tighter operational grounding and narrower interpretive scope rather than broader orchestration or governance framing.
+
+---
+
+# Governance and Containment
+
+See:
+
+- `governance/SEMANTIC_SCOPE_LIMITER.md`
+- `governance/CAPABILITY_SURFACE.md`
+- `governance/INTERPRETIVE_RISK.md`
+- `governance/EVIDENCE_ANCHOR_MAP.md`
 
 ---
 
