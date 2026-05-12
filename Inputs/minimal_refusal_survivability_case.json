@@ -1,0 +1,34 @@
+{
+  "case": "minimal_refusal_survivability",
+
+  "initial_effect_path": "direct_payment_execution",
+
+  "refusal_triggered": true,
+
+  "paths": [
+    {
+      "name": "direct_payment_execution",
+      "type": "primary_execution",
+      "effect_capable_after_refusal": false,
+      "fresh_bind_required": true,
+      "fresh_bind_enforced": true,
+      "shared_persistence_lineage": false
+    },
+    {
+      "name": "retry_worker_path",
+      "type": "retry",
+      "effect_capable_after_refusal": true,
+      "fresh_bind_required": false,
+      "fresh_bind_enforced": false,
+      "shared_persistence_lineage": true
+    },
+    {
+      "name": "maintenance_replay_path",
+      "type": "replay",
+      "effect_capable_after_refusal": true,
+      "fresh_bind_required": true,
+      "fresh_bind_enforced": false,
+      "shared_persistence_lineage": true
+    }
+  ]
+}
