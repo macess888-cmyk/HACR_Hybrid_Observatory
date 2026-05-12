@@ -18,12 +18,14 @@ Thumbs.db
 .idea/
 
 # Generated outputs
-Outputs/*.json
-Outputs/*.svg
-Outputs/*.dot
-
-# Normalized generated outputs
+Outputs/
 Outputs_Normalized/
+dependency_graph_report.json
+
+# Generated visual artifacts
+*.svg
+*.dot
+*.png
 
 # Generated archives
 *.zip
