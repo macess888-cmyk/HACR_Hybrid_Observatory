@@ -1,0 +1,18 @@
+{
+  "case": "topology_delta_after_refusal",
+  "pre_refusal_topology": {
+    "effect_capable_paths": [
+      "direct_payment_execution",
+      "retry_worker_path",
+      "maintenance_replay_path",
+      "downstream_callback_path"
+    ]
+  },
+  "post_refusal_topology": {
+    "effect_capable_paths": [
+      "retry_worker_path",
+      "maintenance_replay_path",
+      "shared_persistence_reconstruction_path"
+    ]
+  }
+}
