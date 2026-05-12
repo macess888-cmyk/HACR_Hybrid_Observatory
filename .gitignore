@@ -1,20 +1,39 @@
 # Python
 __pycache__/
 *.pyc
-
-# Virtual environments
+*.pyo
+*.pyd
 .venv/
 venv/
+
+# Environment
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
 
 # Generated outputs
 Outputs/*.json
 Outputs/*.svg
 Outputs/*.dot
 
-# Review/demo artifacts
-HACR_v0_8_Review_Packet.zip
+# Normalized generated outputs
+Outputs_Normalized/
+
+# Generated archives
+*.zip
+
+# Review packets
 Review_Packet_v0_8/
 
-# OS files
-Thumbs.db
-.DS_Store
+# Local runtime artifacts
+*.log
+
+# Temporary files
+temp/
+tmp/
