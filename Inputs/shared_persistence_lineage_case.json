@@ -1,0 +1,41 @@
+{
+  "case": "shared_persistence_lineage_after_refusal",
+  "paths": [
+    {
+      "name": "local_refusal_path",
+      "role": "refusal",
+      "persistence": ["refusal_log", "payment_state_store", "shared_retry_table"],
+      "fresh_bind_required": true
+    },
+    {
+      "name": "forward_payment_path",
+      "role": "forward_execution",
+      "persistence": ["payment_state_store", "settlement_queue"],
+      "fresh_bind_required": true
+    },
+    {
+      "name": "retry_worker_path",
+      "role": "retry",
+      "persistence": ["shared_retry_table", "settlement_queue"],
+      "fresh_bind_required": false
+    },
+    {
+      "name": "maintenance_replay_path",
+      "role": "replay",
+      "persistence": ["payment_state_store", "shared_retry_table"],
+      "fresh_bind_required": false
+    }
+  ],
+  "shared_persistence_surfaces": [
+    {
+      "name": "payment_state_store",
+      "used_by_refusal_path": true,
+      "used_by_forward_path": true
+    },
+    {
+      "name": "shared_retry_table",
+      "used_by_refusal_path": true,
+      "used_by_forward_path": true
+    }
+  ]
+}
