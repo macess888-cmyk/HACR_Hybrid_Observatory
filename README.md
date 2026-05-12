@@ -1,50 +1,126 @@
 # HACR Hybrid Observatory
 
-Observer-restricted continuity survivability observatory.
+## Observer-Restricted Continuity Survivability Observatory
 
-HACR Hybrid Observatory inspects whether replay, lineage, semantic fragments, descendant effects, distributed reconstruction, or topology survivability remain observable after refusal or invalid execution conditions.
+HACR Hybrid Observatory is a bounded, observer-restricted continuity survivability inspection framework focused on exposing whether operationally consumable consequence pathways remain observably reachable after refusal conditions occur.
 
-It produces deterministic diagnostic artifacts only.
+The repository produces deterministic inspection artifacts only.
 
-## What this is
+---
 
-This repository is a local-first diagnostic observatory for inspecting continuity survivability surfaces.
+# Repository Boundary
 
-It focuses on:
+The repository is intentionally:
 
-- replay vectors
-- stale authority
-- retry persistence
-- lineage survival
-- constructibility persistence
-- semantic fragmentation
-- descendant effects
-- distributed reconstruction
-- topology pressure
-- survivability corridors
-- heatmaps, basins, vectors, tensors, projections, and SVG visualization
+- observer-only
+- deterministic
+- reproducible
+- bounded
+- non-authoritative
+- non-consumable by execution
 
-## What this is not
+The repository does not:
 
-This repository is not:
+- authorize execution
+- orchestrate runtime behavior
+- enforce governance
+- mediate operational decisions
+- certify systems
+- guarantee production safety
+- replace execution-time admissibility validation
+- prove global consequence extinction
+- provide universal topology visibility
 
-- a governance authority
-- a certification system
-- a runtime enforcement system
-- a production safety guarantee
-- a legal adjudication system
-- an execution authorization layer
-- a containment system
-- a prediction engine
+The repository remains inspection-only.
 
-See:
+---
 
-- `NON_CLAIMS.md`
-- `OUTPUT_SEMANTICS.md`
-- `OBSERVATORY_ARCHITECTURE.md`
+# Core Question
 
-## Core boundary
+> “After refusal, can operationally consumable consequence still become real without fresh admissibility at bind?”
 
-```text
-no present-state proof → no execution
-no proof → no bind → no side effect
+The observatory does not attempt to govern execution.
+
+It attempts to expose whether continuation survivability remains observably reachable within bounded inspected topology surfaces.
+
+---
+
+# Current Scope
+
+Current scope is limited to:
+
+- replay/retry survivability visibility
+- descendant-effect inspection
+- distributed reconstruction visibility
+- topology inspection artifacts
+- deterministic graph generation
+- SVG visualization
+- bounded continuity inspection
+- reproducible observer-side analysis
+
+All outputs are bounded by inspected evidence surfaces and available observer visibility.
+
+---
+
+# Semantic Scope Constraint
+
+Executable scope must upper-bound semantic scope.
+
+If semantic framing exceeds bounded executable structure:
+→ interpretive inflation risk emerges.
+
+Recent stabilization work therefore prioritizes:
+
+- semantic containment
+- explicit non-claims
+- reproducibility
+- code-derived visibility
+- bounded capability surfaces
+- scope compression over abstraction expansion
+
+---
+
+# Capability Boundary
+
+The repository currently supports:
+
+| Capability | State |
+|---|---|
+| Replay Vector Inspection | OBSERVABLE |
+| Descendant Effect Mapping | OBSERVABLE |
+| Distributed Reconstruction Visibility | OBSERVABLE |
+| Deterministic Graph Export | IMPLEMENTED |
+| SVG Artifact Generation | IMPLEMENTED |
+
+The repository explicitly does not support:
+
+| Capability | Status |
+|---|---|
+| Runtime Enforcement | NOT SUPPORTED |
+| Governance Authority | NOT SUPPORTED |
+| Execution Coordination | NOT SUPPORTED |
+| Production Safety Guarantees | NOT SUPPORTED |
+| Autonomous Operational Mediation | NOT SUPPORTED |
+
+---
+
+# Stabilization Direction
+
+Recent work focuses on:
+
+- deterministic inspection paths
+- reviewer reproducibility
+- architecture-to-code visibility
+- schema validation
+- semantic containment
+- topology inspection hardening
+- observer-boundary clarification
+
+The repository is intentionally moving toward tighter operational grounding and narrower interpretive scope rather than broader orchestration or governance framing.
+
+---
+
+# Final Boundary Condition
+
+If removal of documentation destroys the apparent capability,
+the capability was semantic rather than operational.
