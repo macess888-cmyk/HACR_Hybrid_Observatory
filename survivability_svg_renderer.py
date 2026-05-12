@@ -40,7 +40,6 @@ xmlns="http://www.w3.org/2000/svg"
 style="background:#05070d;font-family:Arial,sans-serif">
 ''')
 
-# Title
 svg.append('''
 <text x="40" y="50"
 font-size="28"
@@ -50,7 +49,6 @@ HACR Survivability Graph Export
 </text>
 ''')
 
-# Subtitle
 svg.append('''
 <text x="40" y="85"
 font-size="18"
@@ -59,7 +57,6 @@ Observer-restricted topology visualization. Not runtime control.
 </text>
 ''')
 
-# Demo question
 svg.append('''
 <text x="40" y="125"
 font-size="20"
@@ -77,7 +74,6 @@ After refusal, can consequence still become real?
 </text>
 ''')
 
-# Legend
 legend_y = 180
 
 legend_items = [
@@ -104,8 +100,9 @@ for i, (color, label) in enumerate(legend_items):
 
 # Draw edges
 for edge in edges:
-    source = edge["source"]
-    target = edge["target"]
+
+    source = edge.get("source")
+    target = edge.get("target")
 
     if source not in positions or target not in positions:
         continue
@@ -113,12 +110,12 @@ for edge in edges:
     x1, y1 = positions[source]
     x2, y2 = positions[target]
 
-    weight = edge.get("weight", 1)
+    magnitude = edge.get("magnitude", 1)
 
-    if weight >= 15:
+    if magnitude >= 24:
         stroke = "#ff6b6b"
         width = 6
-    elif weight >= 8:
+    elif magnitude >= 12:
         stroke = "#f7b267"
         width = 4
     else:
@@ -139,7 +136,11 @@ for edge in edges:
 
 # Draw nodes
 for node in nodes:
-    node_id = node["id"]
+
+    node_id = node.get("id") or node.get("node")
+
+    if not node_id:
+        continue
 
     if node_id not in positions:
         continue
@@ -185,7 +186,6 @@ for node in nodes:
     </text>
     ''')
 
-# Footer
 svg.append('''
 <text x="40" y="880"
 font-size="15"
