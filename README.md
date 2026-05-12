@@ -119,6 +119,20 @@ See:
 
 ---
 
+# Example Traceability
+
+Representative examples are mapped from:
+
+input → execution → output → observable state → limitation
+
+This is intended to reduce interpretive inflation and strengthen executable grounding for reviewers.
+
+See:
+
+- `governance/EXAMPLE_TRACEABILITY.md`
+
+---
+
 # Semantic Scope Constraint
 
 Executable scope must upper-bound semantic scope.
@@ -148,6 +162,7 @@ Recent work focuses on:
 - semantic containment
 - evidence anchoring
 - diagram binding
+- example traceability
 - observer-boundary clarification
 
 The repository is intentionally moving toward tighter operational grounding and narrower interpretive scope rather than broader orchestration or governance framing.
@@ -163,6 +178,7 @@ See:
 - `governance/INTERPRETIVE_RISK.md`
 - `governance/EVIDENCE_ANCHOR_MAP.md`
 - `governance/DIAGRAM_EVIDENCE_BINDING.md`
+- `governance/EXAMPLE_TRACEABILITY.md`
 
 ---
 
