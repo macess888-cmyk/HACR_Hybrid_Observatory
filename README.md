@@ -155,6 +155,20 @@ See:
 
 ---
 
+# Canonical Minimal Demo
+
+The repository includes a compressed deterministic review path intended to provide a minimal executable observatory example.
+
+The canonical demo is designed to reduce semantic interpretation pressure by grounding reviewer understanding directly in:
+
+input → execution → observable state → limitation
+
+See:
+
+- `CANONICAL_MINIMAL_DEMO.md`
+
+---
+
 # Semantic Scope Constraint
 
 Executable scope must upper-bound semantic scope.
@@ -185,6 +199,7 @@ Recent work focuses on:
 - evidence anchoring
 - diagram binding
 - example traceability
+- canonical demo compression
 - observer-boundary clarification
 
 The repository is intentionally moving toward tighter operational grounding and narrower interpretive scope rather than broader orchestration or governance framing.
@@ -202,6 +217,7 @@ See:
 - `governance/DIAGRAM_EVIDENCE_BINDING.md`
 - `governance/EXAMPLE_TRACEABILITY.md`
 - `REVIEWER_REPRODUCIBILITY.md`
+- `CANONICAL_MINIMAL_DEMO.md`
 
 ---
 
