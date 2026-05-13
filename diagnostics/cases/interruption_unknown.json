@@ -1,0 +1,9 @@
+{
+  "name": "Interruption Unknown HOLD",
+  "question": "Can interruption still occur without reconstruction-dependent continuation reversal?",
+  "interruption_available": "unknown",
+  "reconstruction_required": false,
+  "continuation_dependency_pressure": "unknown",
+  "independent_refusal_path": "unknown",
+  "notes": "Interruption viability cannot be independently established."
+}

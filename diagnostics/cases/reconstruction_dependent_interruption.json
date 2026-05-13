@@ -1,0 +1,9 @@
+{
+  "name": "Reconstruction-Dependent Interruption",
+  "question": "Can interruption still occur without reconstruction-dependent continuation reversal?",
+  "interruption_available": true,
+  "reconstruction_required": true,
+  "continuation_dependency_pressure": "high",
+  "independent_refusal_path": false,
+  "notes": "Stopping now requires reconstruction of continuation dependencies."
+}

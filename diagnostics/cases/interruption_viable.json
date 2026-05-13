@@ -1,0 +1,9 @@
+{
+  "name": "Interruption Viable",
+  "question": "Can interruption still occur without reconstruction-dependent continuation reversal?",
+  "interruption_available": true,
+  "reconstruction_required": false,
+  "continuation_dependency_pressure": "bounded",
+  "independent_refusal_path": true,
+  "notes": "Interruption remains available without structural reconstruction pressure."
+}
