@@ -1,92 +1,149 @@
 # HACR Hybrid Observatory
 
-## Observer-Restricted Continuity Survivability Inspection Framework
+Observer-restricted execution-bound continuity survivability observatory.
 
-HACR Hybrid Observatory is a bounded, observer-restricted inspection framework focused on exposing whether operationally consumable consequence pathways remain observably reachable after refusal conditions occur.
+The repository focuses on deterministic continuity inspection at execution-boundary surfaces under controlled conditions.
 
-The repository produces deterministic inspection artifacts only.
-
----
-
-# Repository Boundary
-
-The repository is intentionally:
-
+The observatory is intentionally:
 - observer-only
 - deterministic
 - reproducible
-- bounded
 - non-authoritative
-- non-consumable by execution
+- publication-safe
+- execution-bound
 
-The repository does not:
-
-- authorize execution
-- orchestrate runtime behavior
-- enforce governance
-- mediate operational decisions
+The observatory does not:
+- govern execution
+- authorize actions
 - certify systems
-- guarantee production safety
-- replace execution-time admissibility validation
-- prove global consequence extinction
-- provide universal topology visibility
+- provide production guarantees
+- replace runtime admissibility
+- act as operational authority
 
-The repository remains inspection-only.
-
----
-
-# Core Question
-
-> “After refusal, can operationally consumable consequence still become real without fresh admissibility at bind?”
-
-The observatory does not govern execution.
-
-It attempts to expose whether continuation survivability remains observably reachable within bounded inspected topology surfaces.
+The repository only exposes whether continuation-survivability remained observable after refusal under controlled conditions.
 
 ---
 
-# Current Scope
+# Core Boundary
 
-Current scope is limited to:
+No present-state proof → no execution.  
+No proof → no bind.  
+No bind → no admissible effect.
 
-- replay/retry survivability visibility
-- downstream continuation inspection
-- reconstructible continuation visibility
-- topology inspection artifacts
-- deterministic graph generation
-- SVG visualization
-- bounded continuity inspection
-- reproducible observer-side analysis
+Bind is the only admissible transition surface for execution-real consequence.
 
-All outputs remain bounded by inspected evidence surfaces and available observer visibility.
+If inherited effect-capability remains realizable without fresh admissible bind:
+
+→ NO_VALID_DECISION
 
 ---
 
-# Capability Boundary
+# Runtime Survivability Harness
 
-| Capability | State |
-|---|---|
-| Replay Vector Inspection | OBSERVABLE |
-| Downstream Continuation Mapping | OBSERVABLE |
-| Reconstructible Continuation Visibility | OBSERVABLE |
-| Deterministic Graph Export | IMPLEMENTED |
-| SVG Artifact Generation | IMPLEMENTED |
+The repository includes a minimal runtime survivability harness for controlled execution-boundary pressure testing.
 
-The repository explicitly does not support:
+Purpose:
+- simulate distributed refusal invalidation scenarios
+- test replay/re-entry survivability
+- test delayed worker execution
+- test unresolved convergence behavior
+- pressure-test PASS / HOLD / FAIL semantics under controlled runtime conditions
 
-| Capability | Status |
-|---|---|
-| Runtime Enforcement | NOT SUPPORTED |
-| Governance Authority | NOT SUPPORTED |
-| Execution Coordination | NOT SUPPORTED |
-| Production Safety Guarantees | NOT SUPPORTED |
-| Autonomous Operational Mediation | NOT SUPPORTED |
+The harness does not:
+- govern execution
+- authorize runtime actions
+- certify systems
+- provide production guarantees
+- enforce distributed invalidation
 
----
+It only exposes whether inherited effect-capability remained realizable after refusal under controlled runtime scenarios.
 
-# Reviewer Minimal Entrypoint
+Current runtime scenarios:
+- delayed worker false refusal
+- queue uncertainty HOLD behavior
+- bind-gated retry survivability
 
-A minimal reviewer entrypoint is provided:
+Run locally:
 
 ```bash
-python reviewer_demo.py
+python runtime/runtime_survivability_harness.py
+```
+
+---
+
+# PASS / HOLD / FAIL
+
+PASS:
+Inherited effect-capability was invalidated before residual realizability survived elsewhere.
+
+HOLD:
+Propagation, convergence, or invalidation completeness could not be independently established.
+
+FAIL:
+Inherited effect-capability remained runtime-reachable without fresh admissible bind.
+
+---
+
+# Governance and Containment
+
+- `governance/EXPANSION_BOUNDARY.md`
+
+The repository intentionally prioritizes:
+- compression over ontology expansion
+- runtime falsifiability over semantic growth
+- infrastructure realism over representational governance
+- reviewer reproducibility over delegated trust
+
+---
+
+# Reviewer Reproducibility
+
+The repository includes deterministic reviewer reproducibility paths for controlled continuity inspection and runtime survivability pressure testing.
+
+Reviewers should independently regenerate outputs locally from the same controlled inputs.
+
+The observatory should remain:
+- inspectable
+- pressure-testable
+- falsifiable
+- independently reproducible
+
+rather than dependent on institutional trust or delegated authority.
+
+---
+
+# Publication Boundary
+
+The repository is:
+- observer-restricted
+- non-consumable by execution
+- non-remediating
+- non-routing
+- non-binding
+
+Observer artifacts must never become:
+- execution authority
+- runtime admissibility
+- operational dependency
+- substitute bind proof
+
+If observer output becomes operationally consumable by execution:
+
+→ boundary failure
+
+---
+
+# Current Runtime Compression
+
+Represented refusal != execution-real refusal.
+
+Expected convergence != execution-real refusal.
+
+Surface existence != capability survivability.
+
+Continuation is not forbidden.  
+Unbound continuation is forbidden.
+
+A local brake is not fail-closed if inherited effect-capability remains realizable elsewhere inside the governed execution boundary.
+
+No bind -> no effect.
