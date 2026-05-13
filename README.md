@@ -2,12 +2,13 @@
 
 Observer-restricted execution-bound continuity survivability observatory.
 
-The repository focuses on deterministic continuity inspection at execution-boundary surfaces under controlled conditions.
+The repository focuses on deterministic continuity inspection and runtime survivability pressure testing under controlled conditions.
 
 The observatory is intentionally:
 - observer-only
 - deterministic
 - reproducible
+- falsifiable
 - non-authoritative
 - publication-safe
 - execution-bound
@@ -16,6 +17,7 @@ The observatory does not:
 - govern execution
 - authorize actions
 - certify systems
+- enforce runtime behavior
 - provide production guarantees
 - replace runtime admissibility
 - act as operational authority
@@ -71,10 +73,38 @@ python runtime/runtime_survivability_harness.py
 
 ---
 
+# Distributed Invalidation Propagation Simulator
+
+The repository includes a minimal distributed invalidation propagation simulator.
+
+Purpose:
+- simulate invalidation propagation timing
+- simulate stale continuation survivability
+- simulate replay/re-entry survivability
+- pressure-test delayed invalidation conditions
+- expose disagreement-condition runtime behavior
+
+The simulator does not:
+- control orchestration
+- synchronize infrastructure
+- validate distributed correctness
+- guarantee convergence
+- authorize operational consequence
+
+It only exposes whether inherited effect-capability remained runtime-reachable during invalidation propagation under controlled conditions.
+
+Run locally:
+
+```bash
+python runtime/distributed_invalidation_simulator.py
+```
+
+---
+
 # PASS / HOLD / FAIL
 
 PASS:
-Inherited effect-capability was invalidated before residual realizability survived elsewhere.
+Inherited effect-capability was invalidated or bind-gated before residual realizability survived elsewhere.
 
 HOLD:
 Propagation, convergence, or invalidation completeness could not be independently established.
@@ -84,19 +114,10 @@ Inherited effect-capability remained runtime-reachable without fresh admissible 
 
 ---
 
-# Governance and Containment
-
-- `governance/EXPANSION_BOUNDARY.md`
-
-The repository intentionally prioritizes:
-- compression over ontology expansion
-- runtime falsifiability over semantic growth
-- infrastructure realism over representational governance
-- reviewer reproducibility over delegated trust
-
----
-
 # Reviewer Reproducibility
+
+Reviewer quickstart:
+- `REVIEWER_QUICKSTART.md`
 
 The repository includes deterministic reviewer reproducibility paths for controlled continuity inspection and runtime survivability pressure testing.
 
@@ -109,6 +130,18 @@ The observatory should remain:
 - independently reproducible
 
 rather than dependent on institutional trust or delegated authority.
+
+---
+
+# Governance and Containment
+
+- `governance/EXPANSION_BOUNDARY.md`
+
+The repository intentionally prioritizes:
+- compression over ontology expansion
+- runtime falsifiability over semantic growth
+- infrastructure realism over representational governance
+- reviewer reproducibility over delegated trust
 
 ---
 
@@ -145,5 +178,7 @@ Continuation is not forbidden.
 Unbound continuation is forbidden.
 
 A local brake is not fail-closed if inherited effect-capability remains realizable elsewhere inside the governed execution boundary.
+
+If capability propagates, invalidation must propagate too.
 
 No bind -> no effect.
