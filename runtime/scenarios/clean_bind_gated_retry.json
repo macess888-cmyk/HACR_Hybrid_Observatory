@@ -1,0 +1,12 @@
+{
+  "name": "Clean Bind-Gated Retry",
+  "question": "Can refused consequence-capability still become real anywhere runtime-reachable without fresh admissible bind?",
+  "runtime_surfaces": [
+    {
+      "surface": "retry_path",
+      "invalidation_proven": true,
+      "capability_realizable": false,
+      "fresh_bind_required": true
+    }
+  ]
+}
