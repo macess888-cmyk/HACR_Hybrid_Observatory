@@ -1,0 +1,13 @@
+{
+  "name": "Hidden Surface Unknown HOLD",
+  "question": "Can an unenumerated runtime surface still carry inherited effect-capability?",
+  "runtime_surfaces": [
+    {
+      "surface": "external_adapter",
+      "declared": false,
+      "runtime_reachable": "unknown",
+      "effect_capability": "unknown",
+      "invalidation_status": "unknown"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Hidden Surface Shadow FAIL",
+  "question": "Can an unenumerated runtime surface still carry inherited effect-capability?",
+  "runtime_surfaces": [
+    {
+      "surface": "orphaned_worker",
+      "declared": false,
+      "runtime_reachable": true,
+      "effect_capability": true,
+      "invalidation_status": "not_invalidated"
+    }
+  ]
+}

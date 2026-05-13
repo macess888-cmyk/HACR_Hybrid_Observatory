@@ -1,0 +1,13 @@
+{
+  "name": "Hidden Surface Known Clear",
+  "question": "Can an unenumerated runtime surface still carry inherited effect-capability?",
+  "runtime_surfaces": [
+    {
+      "surface": "declared_retry_path",
+      "declared": true,
+      "runtime_reachable": true,
+      "effect_capability": false,
+      "invalidation_status": "invalidated"
+    }
+  ]
+}
