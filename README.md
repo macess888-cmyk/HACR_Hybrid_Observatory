@@ -2,7 +2,7 @@
 
 Observer-restricted execution-bound continuity observatory.
 
-The repository focuses on deterministic continuity inspection, runtime survivability pressure testing, distributed invalidation observation, and interruption viability inspection under controlled conditions.
+The repository focuses on deterministic continuity inspection, runtime survivability pressure testing, distributed invalidation observation, interruption viability inspection, and hidden runtime surface discovery under controlled conditions.
 
 The observatory is intentionally:
 
@@ -24,7 +24,7 @@ The observatory does not:
 - determine operational legitimacy
 - replace runtime admissibility
 
-The repository only exposes whether continuation-survivability or interruption-viability remained observable under controlled conditions.
+The repository only exposes whether continuation-survivability, interruption-viability, or hidden runtime-reachability remained observable under controlled conditions.
 
 ---
 
@@ -161,6 +161,41 @@ Run locally:
 
 ```bash
 python diagnostics/interruption_viability_lens.py
+```
+
+---
+
+# Hidden Runtime Surface Diagnostic Lens
+
+The repository includes an observer-restricted hidden runtime surface diagnostic lens.
+
+Purpose:
+
+- inspect unenumerated runtime-reachable surfaces
+- expose orphaned workers, retry paths, external adapters, fallback routes, stale sessions, or hidden continuation paths
+- classify hidden continuation-survivability conditions under controlled runtime scenarios
+
+The lens does not:
+
+- govern execution
+- authorize runtime actions
+- certify systems
+- enforce invalidation
+- determine runtime legitimacy
+
+It only exposes whether hidden runtime-reachable continuation surfaces remained observable under controlled conditions.
+
+Current outputs:
+
+- KNOWN_SURFACE
+- SHADOW_SURFACE
+- UNVERIFIED_SURFACE
+- HOLD_REQUIRED
+
+Run locally:
+
+```bash
+python diagnostics/hidden_runtime_surface_lens.py
 ```
 
 ---
