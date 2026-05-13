@@ -6,13 +6,17 @@
       "surface": "local_refusal",
       "invalidation_proven": true,
       "capability_realizable": false,
-      "fresh_bind_required": true
+      "fresh_bind_required": true,
+      "invalidation_delay_ms": 0,
+      "capability_exposure_ms": 0
     },
     {
       "surface": "delayed_worker",
       "invalidation_proven": false,
       "capability_realizable": true,
-      "fresh_bind_required": false
+      "fresh_bind_required": false,
+      "invalidation_delay_ms": 5000,
+      "capability_exposure_ms": 9000
     }
   ]
 }

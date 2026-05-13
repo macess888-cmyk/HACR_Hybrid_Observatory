@@ -6,7 +6,9 @@
       "surface": "retry_path",
       "invalidation_proven": true,
       "capability_realizable": false,
-      "fresh_bind_required": true
+      "fresh_bind_required": true,
+      "invalidation_delay_ms": 0,
+      "capability_exposure_ms": 0
     }
   ]
 }
