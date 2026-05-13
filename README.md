@@ -1,8 +1,8 @@
 # HACR Hybrid Observatory
 
-Observer-restricted execution-bound continuity survivability observatory.
+Observer-restricted execution-bound continuity observatory.
 
-The repository focuses on deterministic continuity inspection, runtime survivability pressure testing, distributed invalidation pressure, and interruption viability inspection under controlled conditions.
+The repository focuses on deterministic continuity inspection, runtime survivability pressure testing, distributed invalidation observation, and interruption viability inspection under controlled conditions.
 
 The observatory is intentionally:
 
@@ -21,8 +21,8 @@ The observatory does not:
 - certify systems
 - enforce runtime behavior
 - provide production guarantees
+- determine operational legitimacy
 - replace runtime admissibility
-- act as operational authority
 
 The repository only exposes whether continuation-survivability or interruption-viability remained observable under controlled conditions.
 
@@ -34,11 +34,11 @@ No present-state proof → no execution.
 No proof → no bind.  
 No bind → no admissible effect.
 
-Bind is the only admissible transition surface for execution-real consequence.
+Bind is treated as the only admissible transition surface for execution-real consequence under the tested conditions.
 
-If inherited effect-capability remains realizable without fresh admissible bind:
+If inherited effect-capability remained runtime-reachable without fresh admissible bind under the controlled path:
 
-→ NO_VALID_DECISION
+→ NO_VALID_DECISION observation
 
 ---
 
@@ -48,11 +48,11 @@ The repository includes a minimal runtime survivability harness for controlled e
 
 Purpose:
 
-- simulate distributed refusal invalidation scenarios
-- test replay/re-entry survivability
-- test delayed worker execution
-- test unresolved convergence behavior
-- pressure-test PASS / HOLD / FAIL semantics under controlled runtime conditions
+- simulate distributed refusal invalidation conditions
+- inspect replay/re-entry survivability
+- inspect delayed worker continuation
+- inspect unresolved convergence behavior
+- expose PASS / HOLD / FAIL runtime observations under controlled conditions
 
 The harness does not:
 
@@ -60,15 +60,15 @@ The harness does not:
 - authorize runtime actions
 - certify systems
 - provide production guarantees
-- enforce distributed invalidation
+- determine runtime legitimacy
 
-It only exposes whether inherited effect-capability remained realizable after refusal under controlled runtime scenarios.
+It only exposes whether inherited effect-capability remained observable as runtime-reachable after refusal under controlled runtime scenarios.
 
 Current runtime scenarios:
 
-- delayed worker false refusal
+- delayed worker survivability
 - queue uncertainty HOLD behavior
-- bind-gated retry survivability
+- bind-gated retry inspection
 
 Run locally:
 
@@ -84,11 +84,11 @@ The repository includes a minimal distributed invalidation propagation simulator
 
 Purpose:
 
-- simulate invalidation propagation timing
-- simulate stale continuation survivability
-- simulate replay/re-entry survivability
-- pressure-test delayed invalidation conditions
-- expose disagreement-condition runtime behavior
+- inspect invalidation propagation timing
+- inspect stale continuation survivability
+- inspect replay/re-entry survivability
+- inspect delayed invalidation conditions
+- expose disagreement-condition runtime observations
 
 The simulator does not:
 
@@ -117,7 +117,7 @@ Purpose:
 - inspect continuation dependency accumulation
 - inspect interruption viability degradation
 - expose reconstruction-dependent interruption conditions
-- pressure-test whether interruption remains independently enactable before continuation dependency accumulation dominates
+- pressure-test whether interruption remained independently enactable before continuation dependency accumulation dominated
 
 The lens does not:
 
@@ -125,8 +125,8 @@ The lens does not:
 - authorize interruption
 - predict irreversible outcomes
 - enforce admissibility
-- provide operational authority
 - determine governance legitimacy
+- provide operational authority
 
 It only exposes whether interruption viability remained independently observable under controlled conditions.
 
@@ -147,15 +147,15 @@ Current outputs:
 
 PASS:
 
-Interruption remains independently enactable without reconstruction-dependent continuation pressure.
+The tested interruption-degradation condition was not reproducible under the controlled path.
 
 HOLD:
 
-Interruption viability cannot be independently established.
+The interruption viability observation remained incomplete, ambiguous, or independently unresolved.
 
 FAIL:
 
-Continuation dependency accumulation appears to make interruption reconstruction-dependent.
+Continuation dependency accumulation remained observable as reconstruction-dependent interruption pressure under the controlled conditions.
 
 Run locally:
 
@@ -169,15 +169,25 @@ python diagnostics/interruption_viability_lens.py
 
 PASS:
 
-Inherited effect-capability was invalidated or bind-gated before residual realizability survived elsewhere.
+The tested continuation-survivability condition was not reproducible under the controlled path.
 
 HOLD:
 
-Propagation, convergence, invalidation, or interruption viability completeness could not be independently established.
+The runtime observation remained incomplete, ambiguous, or independently unresolved under the tested conditions.
 
 FAIL:
 
-Inherited effect-capability remained runtime-reachable without fresh admissible bind, or interruption viability became reconstruction-dependent.
+Continuation-survivability remained observable as runtime-reachable under the controlled conditions.
+
+PASS / HOLD / FAIL outputs are diagnostic observations only.
+
+They are not:
+
+- governance verdicts
+- certification outputs
+- operational authorization
+- admissibility determination
+- runtime legitimacy claims
 
 ---
 
@@ -191,6 +201,16 @@ The repository includes deterministic reviewer reproducibility paths for control
 
 Reviewers should independently regenerate outputs locally from the same controlled inputs.
 
+A reviewer-facing structure includes:
+
+- fixed input sets
+- deterministic run commands
+- generated receipt chains
+- continuity / survivability observations
+- PASS / HOLD / FAIL outputs
+- reviewer reproduction notes
+- explicit non-claims
+
 The observatory should remain:
 
 - inspectable
@@ -198,7 +218,7 @@ The observatory should remain:
 - falsifiable
 - independently reproducible
 
-rather than dependent on institutional trust or delegated authority.
+rather than dependent on delegated trust or governance authority.
 
 ---
 
@@ -235,7 +255,7 @@ Observer artifacts must never become:
 
 If observer output becomes operationally consumable by execution:
 
-→ boundary failure
+→ boundary failure observation
 
 ---
 
@@ -250,7 +270,7 @@ Surface existence != capability survivability.
 Continuation is not forbidden.  
 Unbound continuation is forbidden.
 
-A local brake is not fail-closed if inherited effect-capability remains realizable elsewhere inside the governed execution boundary.
+A local brake is not fail-closed if inherited effect-capability remained runtime-reachable elsewhere inside the tested execution boundary.
 
 If capability propagates, invalidation must propagate too.
 
