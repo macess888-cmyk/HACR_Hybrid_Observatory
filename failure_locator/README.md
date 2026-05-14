@@ -1,380 +1,121 @@
-# Failure Formation Locator (FFL)
+# Failure Locator
 
-Observer-only diagnostic simulator for locating where continuation pressure survives after structural validity degrades.
+## Purpose
 
----
+Failure Locator is a bounded runtime diagnostics component within HACR Hybrid Observatory.
 
-# Core Question
+It supports inspection of:
 
-> Where did stopping stop being viable before visible failure?
+- runtime continuation persistence
+- retry/replay visibility
+- dependency visibility
+- interruption persistence
+- downstream continuation reachability
+- recovery-state persistence
 
-The simulator does not attempt to determine blame, predict catastrophe, certify safety, or govern execution.
-
-Its purpose is to provide deterministic, reproducible diagnostic observations around historical failure formation conditions.
-
----
-
-# Scope
-
-The Failure Formation Locator examines:
-
-- continuation pressure
-- interruption viability
-- detection degradation
-- topology incompatibility
-- maintenance reality divergence
-- operational momentum
-- operational-control drift
-- hidden survivability conditions
-
-The focus is not only terminal failure events.
-
-The focus is where interruption viability begins degrading before visible collapse.
+under declared runtime conditions.
 
 ---
 
-# Observer Restriction
+## Diagnostic Boundary
 
-The simulator is strictly:
+Failure Locator is observer-restricted and diagnostic-only.
 
-- observer-only
-- deterministic
-- reproducible
-- non-authoritative
-- execution-external
-
-The simulator does not:
+It does not:
 
 - authorize execution
-- certify systems
-- determine legal liability
-- replace engineering review
-- replace safety analysis
-- predict future failure
-- govern operational systems
-- determine admissibility
-- control runtime environments
+- govern systems
+- certify safety
+- enforce policy
+- replace operational controls
+- control orchestration
+- provide operational guarantees
 
-Diagnostic outputs remain observational artifacts only.
+Outputs are observer-side runtime diagnostics only.
 
 ---
 
-# PASS / HOLD / FAIL Semantics
+## Diagnostic Outputs
 
-PASS:
-- no unresolved survivability pressure detected within observed scope
+PASS / HOLD / FAIL are bounded runtime diagnostic observations.
 
-HOLD:
-- insufficient information
-- unresolved topology visibility
-- unresolved interruption viability
-- unresolved continuation pressure
+Outputs may assist inspection of:
 
-FAIL:
-- continuation pressure survives after structural validity degradation
-- interruption viability degraded
-- stopping became structurally difficult
-- operational continuation remained favored despite degraded validity
+- runtime continuation reachability
+- retry persistence
+- replay persistence
+- dependency visibility
+- downstream continuation visibility
 
-FAIL is not:
-- a legal conclusion
-- a certification result
-- a governance verdict
-- proof of future catastrophe
+Outputs are not:
 
-FAIL is a bounded diagnostic observation only.
+- execution permissions
+- operational authorization
+- governance determinations
+- compliance guarantees
+- certification claims
 
 ---
 
-# Current Architecture
+## Runtime Inspection Areas
 
-```text
-external case
-->
-deterministic loader
-->
-classification
-->
-portable receipt
-->
-canonical serialization
-->
-SHA256 integrity surface
-```
+Current runtime inspection areas include:
+
+- replay persistence
+- retry persistence
+- interruption survivability
+- dependency persistence
+- downstream continuation reachability
+- recovery-state propagation
+- topology-scoped runtime visibility
 
 ---
 
-# Repository Structure
+## Human Oversight Visibility Collapse
 
-```text
-failure_locator/
-|-- cases/
-|-- receipts/
-|-- failure_locator.py
-`-- README.md
-```
+This repository may inspect conditions where human oversight visibility becomes incomplete during distributed continuation behavior.
 
----
+This inspection remains:
 
-# Current Historical Cases
+- observer-side
+- topology-scoped
+- runtime-bounded
+- reproducibility-oriented
 
-Current cases include:
-
-- Boeing 737 MAX MCAS
-- Silicon Valley Bank (2023)
-- Challenger (1986)
-- Deepwater Horizon (2010)
-
-These are used as historically inspectable operational cases only.
-
-The simulator does not perform:
-
-- live institutional scoring
-- predictive risk analysis
-- regulatory assessment
-- operational certification
+The repository does not provide operational governance or execution control.
 
 ---
 
-# Historical Case Selection Boundary
+## Automated Execution Systems
 
-Historical cases are selected for:
+The repository may inspect runtime continuation behavior involving automated execution systems under declared runtime conditions.
 
-- operational inspectability
-- publicly documented morphology
-- continuation/interruption analysis utility
+This does not imply:
 
-Case inclusion does not imply:
-
-- completeness
-- representational universality
-- comparative severity ranking
-- legal or regulatory conclusion
+- operational authorization
+- autonomous control
+- execution governance
+- enforcement capability
 
 ---
 
-# Case File Structure
+## Runtime Limitations
 
-Example:
+Known limitations include:
 
-```json
-{
-  "name": "737_max_mcas",
-  "declared_intent": "handling augmentation",
-  "validity_conditions": [
-    "sensor reliability"
-  ],
-  "drift_point": "single-sensor dependency",
-  "detection_loss": "crew visibility degraded",
-  "continuation_pressure": [
-    "certification continuity"
-  ],
-  "interruption_viability": "degraded during live execution",
-  "failure_locator": [
-    "Human-Control Window Collapse"
-  ]
-}
-```
+- incomplete runtime visibility
+- incomplete dependency visibility
+- orchestration opacity
+- distributed continuation blind spots
+- replay-path ambiguity
+- environmental variability
+
+Runtime falsification overrides representational assumptions.
 
 ---
 
-# Receipt Structure
+## Final Constraint
 
-Example:
+Failure Locator remains an observer-side runtime diagnostics component.
 
-```json
-{
-  "case": "737_max_mcas",
-  "diagnostic_verdict": "FAIL",
-  "receipt_sha256": "..."
-}
-```
-
-Receipts are:
-
-- deterministic
-- machine-readable
-- reproducible
-- integrity-checkable
-
-Receipt hashes verify artifact consistency only.
-
-Receipt hashes do not imply operational legitimacy or governance authority.
-
----
-
-# Reproducibility
-
-Run:
-
-```bash
-python failure_locator/failure_locator.py
-```
-
-The simulator:
-
-1. Loads JSON cases
-2. Validates schema structure
-3. Produces deterministic classifications
-4. Exports deterministic receipts
-5. Generates SHA256 integrity hashes
-
----
-
-# Deterministic Replay Expectation
-
-Repeated execution against unchanged case files should produce:
-
-- identical diagnostic outputs
-- identical receipts
-- identical SHA256 hashes
-
-Any divergence indicates:
-
-- code modification
-- input modification
-- environment drift
-- serialization inconsistency
-
----
-
-# Current Parser Limitations
-
-Current classification logic is intentionally bounded and simplified.
-
-The simulator currently does not:
-
-- perform probabilistic analysis
-- infer causality
-- reconstruct hidden state
-- perform semantic reasoning
-- validate historical completeness
-- model dynamic runtime evolution
-- determine legal or regulatory fault
-- establish predictive risk likelihood
-
-Classification currently depends on:
-
-- explicitly declared case structure
-- bounded keyword/state interpretation
-- deterministic rule evaluation
-
-The simulator intentionally prioritizes:
-
-- inspectability
-- reproducibility
-- bounded falsifiability
-
-over semantic sophistication.
-
----
-
-# Environment Validation
-
-Validated under:
-
-- Windows 10/11
-- Python 3.x
-- local filesystem execution
-
----
-
-# Design Constraint
-
-The simulator intentionally remains small enough to:
-
-- inspect directly
-- falsify directly
-- reproduce independently
-- pressure-test operationally
-
-Runtime falsification overrides semantic confidence.
-
----
-
-# Development Direction
-
-Current priorities:
-
-- reproducibility
-- bounded semantics
-- deterministic outputs
-- reviewer falsifiability
-- operational clarity
-- topology-bounded diagnostics
-- parser tightening
-- receipt integrity
-
-Avoided directions:
-
-- ontology inflation
-- generalized governance claims
-- predictive authority
-- universal systems theory
-- operational dependency formation
-
----
-
-# Current Stabilization Posture
-
-Current development prioritizes:
-
-- refinement
-- parser integrity
-- reproducibility
-- reviewer inspectability
-- bounded historical cases
-
-The project is intentionally avoiding:
-
-- generalized governance expansion
-- predictive operationalization
-- runtime integration
-- execution authority
-- autonomous decision systems
-
----
-
-# Release Lineage
-
-- v0.10 - initial failure formation locator
-- v0.11 - external JSON case loading
-- v0.12 - deterministic receipt export
-- v0.13 - receipt SHA256 integrity
-- v0.14 - hardened README and explicit non-claims
-- v0.15 - Silicon Valley Bank historical case
-- v0.16 - Challenger and Deepwater Horizon cross-domain historical cases
-- v0.17 - tightened interruption viability parsing
-- v0.18 - release lineage refresh
-- v0.19 - README encoding artifact fix
-- v0.20 - README ASCII-safe formatting
-- v0.21 - simulator/runtime lineage separation
-- v0.22 - reviewer hardening and stabilization notes
-
----
-
-# Current Posture
-
-The repository remains:
-
-- observer-only
-- deterministic
-- historically grounded
-- reproducible
-- execution-external
-- independently reviewable
-
-The system is intended for:
-
-- inspection
-- falsification
-- adversarial review
-- historical morphology observation
-
-It is not intended to function as:
-
-- operational governance infrastructure
-- execution authority
-- regulatory enforcement
-- institutional risk scoring
-- predictive catastrophe modeling
+It does not inherit execution authority.

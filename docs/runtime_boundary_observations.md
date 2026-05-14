@@ -1,38 +1,86 @@
 # Runtime Boundary Observations
 
-Observer-restricted notes on runtime boundary pressure surfaces.
+## Purpose
 
-This document does not define authority, enforcement, governance, or execution control.
-It records observable failure-boundary conditions only.
+This document records bounded runtime observations produced during topology-scoped diagnostic inspection.
 
-## ZERO_SIGNAL
+The document is observer-restricted and diagnostic-only.
 
-Pre-compound admissibility degradation observed before continuation escalation.
+It does not define:
+
+- execution authorization
+- governance
+- certification
+- enforcement
+- operational control
+
+---
+
+## Runtime Observation Scope
+
+The observatory may inspect:
+
+- runtime continuation persistence
+- retry persistence
+- replay persistence
+- downstream continuation visibility
+- dependency visibility
+- interruption persistence
+- recovery-state persistence
+
+under declared runtime conditions.
+
+---
+
+## Observation Summary
+
+Pre-compound execution-state visibility degradation was observed before continuation escalation.
 
 ZERO_SIGNAL is not enforcement.
+
 ZERO_SIGNAL is not authority.
-ZERO_SIGNAL is an observer-visible early failure surface.
 
-## HUMAN_EXPECTATION_DRIFT
+ZERO_SIGNAL indicates insufficient or incomplete runtime visibility under declared observation conditions.
 
-Users may implicitly expect delegated cognition, judgment, or continuity from observer-only systems.
+---
 
-This creates pressure for observer artifacts to be treated as operational substitutes.
+## Runtime Interpretation
 
-The observatory does not replace human operational responsibility.
+Complex distributed systems frequently reward continuation momentum over execution-state clarity.
 
-## NON_SEPARABLE_OPERATOR
+The observatory inspects whether continuation persistence remains observable after interruption or invalidation.
 
-Operational continuity may remain partially dependent on steward interpretation, human coherence, or runtime judgment.
+---
 
-Portability assumptions should not exceed infrastructure maturity.
+## HOLD Conditions
 
-## CONTINUATION_BIAS
+The observer-side diagnostic state remains HOLD when:
 
-Complex systems frequently reward continuation momentum over admissibility clarity.
+- topology visibility is incomplete
+- runtime visibility is incomplete
+- dependency visibility is incomplete
+- replay visibility is incomplete
+- recovery visibility is incomplete
+- downstream continuation visibility is unresolved
 
-Continuation pressure may compound before explicit failure becomes observable.
+---
 
-## Boundary Note
+## Diagnostic Boundary
 
-If authority, provenance, recovery, or containment is unclear, the correct observer state remains HOLD.
+PASS / HOLD / FAIL remain observer-side runtime diagnostic observations only.
+
+Outputs are not:
+
+- execution permissions
+- governance determinations
+- compliance guarantees
+- certification claims
+- operational authorization
+
+---
+
+## Final Constraint
+
+Runtime diagnostics remain bounded to declared runtime conditions and topology scope.
+
+The observatory does not inherit execution authority.

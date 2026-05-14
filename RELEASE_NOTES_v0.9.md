@@ -1,51 +1,71 @@
-# HACR Hybrid Observatory v0.9
+# Release Notes v0.9
 
-## Semantic Scope Containment Layer
+## Overview
 
-This release adds explicit containment around semantic inflation, interpretive overreach, and authority drift.
+This release stabilizes terminology, runtime boundaries, and interpretive constraints around observer-restricted runtime diagnostics and topology-scoped inspection.
 
-The repository remains:
+The release adds explicit containment around:
 
-- observer-restricted
-- deterministic
-- reproducible
-- non-authoritative
-- non-consumable by execution
-- inspection-only
+- semantic inflation
+- interpretive overreach
+- operational interpretation drift
+- governance-style framing drift
+- execution-dependency interpretation drift
 
-## Added
+---
 
-- `governance/SEMANTIC_SCOPE_LIMITER.md`
-- `governance/CAPABILITY_SURFACE.md`
-- `governance/INTERPRETIVE_RISK.md`
+## Stabilization Goals
 
-## Purpose
+Primary stabilization goals include:
 
-v0.9 introduces a stabilization layer ensuring that semantic framing does not exceed bounded executable scope.
+- stronger engineering readability
+- stronger audit readability
+- reproducibility-oriented framing
+- topology-scoped diagnostic clarity
+- observer-side runtime positioning
+- bounded runtime terminology
 
-Core rule:
+---
 
-> Executable scope must upper-bound semantic scope.
+## Added Constraints
 
-## Boundary
+This release reinforces:
 
-This repository does not:
+- observer-restricted positioning
+- non-authoritative outputs
+- reproducibility-oriented inspection
+- runtime-bounded diagnostics
+- operationally external positioning
 
-- authorize execution
-- enforce governance
-- coordinate runtime behavior
-- certify systems
-- guarantee production safety
-- prove global consequence extinction
+---
 
-It produces bounded inspection artifacts only.
+## Excluded Positioning
 
-## Stabilization Direction
+The repository is not:
 
-The repository is now moving from abstraction expansion toward:
+- governance infrastructure
+- execution control infrastructure
+- autonomous safety infrastructure
+- operational authorization infrastructure
+- compliance infrastructure
+- certification infrastructure
 
-- scope compression
-- reproducible inspection
-- code-derived visibility
-- explicit non-authority framing
-- bounded capability surfaces
+---
+
+## Runtime Boundary
+
+The observatory inspects runtime continuation visibility under declared runtime conditions.
+
+It does not govern or authorize execution.
+
+---
+
+## Final Constraint
+
+All outputs remain:
+
+- topology-scoped
+- runtime-bounded
+- reproducibility-oriented
+- observer-side
+- diagnostic-only

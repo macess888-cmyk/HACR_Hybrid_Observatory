@@ -1,94 +1,70 @@
-# Semantic Scope Limiter (SSL)
+# Semantic Scope Limiter
 
-Purpose:
-Prevent semantic inflation, interpretive overreach, and authority drift beyond bounded executable scope.
+## Purpose
 
-Core invariant:
+This document limits semantic expansion beyond bounded runtime diagnostics and topology-scoped inspection.
 
-Executable scope must upper-bound semantic scope.
+The repository should remain:
 
-If semantic coherence exceeds enforceable executable structure:
-→ interpretive inflation risk increases.
-
----
-
-## Capability States
-
-All concepts must exist in one of three states only:
-
-| State | Meaning |
-|---|---|
-| IMPLEMENTED | Executable + reproducible |
-| OBSERVABLE | Partially inspectable but incomplete |
-| CONCEPTUAL | Framing only / non-operational |
-
-No undocumented state allowed.
+- observer-restricted
+- reproducibility-oriented
+- runtime-bounded
+- topology-scoped
+- diagnostic-only
 
 ---
 
-## Semantic-to-Code Constraint
+## Excluded Interpretations
 
-New terminology requires:
+The repository is not:
 
-- runnable example
-- deterministic artifact
-- observable output
-- bounded test case
-- explicit limitation statement
-
-Otherwise:
-→ classify as CONCEPTUAL.
-
----
-
-## Observer Boundary Constraint
-
-Repository must never imply:
-
-- orchestration authority
-- governance control
-- runtime enforcement
-- execution mediation
-- sovereign legitimacy
-- universal topology visibility
-
-Repository remains:
-
-- observer-only
-- deterministic
-- reproducible
-- bounded
-- non-consumable by execution
+- governance infrastructure
+- execution control infrastructure
+- operational authorization infrastructure
+- compliance infrastructure
+- certification infrastructure
+- autonomous safety infrastructure
+- runtime enforcement infrastructure
 
 ---
 
-## Compression Rule
+## Allowed Framing
 
-Stabilization should reduce:
+Preferred framing includes:
 
-- ambiguity
-- terminology inflation
-- implied authority
-- abstraction drift
-- symbolic overreach
-
-System matures through compression, not semantic expansion.
-
----
-
-## Scope Collapse Rule
-
-If a concept requires repeated metaphorical or recursive explanation without executable stabilization:
-
-→ operationalize
-→ demote to conceptual
-→ or remove
-
-No symbolic middle state allowed.
+- runtime diagnostics
+- continuation visibility
+- dependency visibility
+- topology-scoped inspection
+- reproducibility-oriented diagnostics
+- bounded runtime inspection
+- observer-side diagnostics
 
 ---
 
-## Final Principle
+## Disallowed Expansion
 
-If removal of documentation destroys the apparent capability,
-the capability was semantic rather than operational.
+Avoid framing the repository as:
+
+- universal governance theory
+- operational legitimacy system
+- sovereign execution model
+- autonomous control architecture
+- enforcement platform
+- execution authorization layer
+
+---
+
+## Runtime Boundary
+
+The repository inspects runtime continuation visibility under declared observation conditions.
+
+It does not govern or authorize execution.
+
+---
+
+## Final Constraint
+
+Runtime falsification overrides semantic interpretation.
+
+Representational coherence alone does not establish continuation invalidation.

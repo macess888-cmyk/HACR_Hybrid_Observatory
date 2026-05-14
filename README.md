@@ -1,316 +1,266 @@
 # HACR Hybrid Observatory
 
-Observer-restricted execution-bound continuity observatory.
+Observer-Restricted Runtime Diagnostics and Topology Inspection Framework
 
-The repository focuses on deterministic continuity inspection, runtime survivability pressure testing, distributed invalidation observation, interruption viability inspection, and hidden runtime surface discovery under controlled conditions.
+---
+
+## Overview
+
+HACR Hybrid Observatory is a bounded diagnostic observability framework intended for runtime continuation inspection, retry/replay visibility analysis, dependency inspection, and topology-scoped runtime diagnostics under declared observation conditions.
+
+The repository focuses on inspecting whether continuation paths, replay persistence, retry persistence, cached execution continuity, or downstream continuation reachability remain observable after interruption, invalidation, refusal, recovery, or topology disruption.
 
 The observatory is intentionally:
 
-- observer-only
-- deterministic
-- reproducible
-- falsifiable
-- non-authoritative
-- execution-bound
-- publication-safe
+* observer-restricted
+* non-authoritative
+* topology-scoped
+* runtime-bounded
+* reproducibility-oriented
+* pressure-testable
+* diagnostic-only
+
+---
+
+## Repository Scope
+
+The observatory inspects:
+
+* runtime continuation persistence
+* retry persistence
+* replay reachability
+* downstream continuation visibility
+* dependency visibility
+* interruption survivability
+* recovery-state propagation
+* topology continuity behavior
+* distributed continuation visibility
 
 The observatory does not:
 
-- govern execution
-- authorize actions
-- certify systems
-- enforce runtime behavior
-- provide production guarantees
-- determine operational legitimacy
-- replace runtime admissibility
+* authorize execution
+* govern systems
+* certify safety
+* enforce policy
+* replace operational controls
+* replace governance systems
+* replace compliance processes
+* function as an execution dependency
+* control orchestration
+* determine operational legitimacy
 
-The repository only exposes whether continuation-survivability, interruption-viability, or hidden runtime-reachability remained observable under controlled conditions.
-
----
-
-# Core Boundary
-
-No present-state proof → no execution.  
-No proof → no bind.  
-No bind → no admissible effect.
-
-Bind is treated as the only admissible transition surface for execution-real consequence under the tested conditions.
-
-If inherited effect-capability remained runtime-reachable without fresh admissible bind under the controlled path:
-
-→ NO_VALID_DECISION observation
+All outputs are observer-side runtime diagnostics only.
 
 ---
 
-# Runtime Survivability Harness
+## Diagnostic Semantics
 
-The repository includes a minimal runtime survivability harness for controlled execution-boundary pressure testing.
+### PASS
 
-Purpose:
+No continuation persistence observed within declared runtime and topology scope.
 
-- simulate distributed refusal invalidation conditions
-- inspect replay/re-entry survivability
-- inspect delayed worker continuation
-- inspect unresolved convergence behavior
-- expose PASS / HOLD / FAIL runtime observations under controlled conditions
+### HOLD
 
-The harness does not:
+Insufficient runtime visibility, dependency visibility, recovery visibility, replay visibility, or topology visibility for reliable diagnostic observation.
 
-- govern execution
-- authorize runtime actions
-- certify systems
-- provide production guarantees
-- determine runtime legitimacy
+### FAIL
 
-It only exposes whether inherited effect-capability remained observable as runtime-reachable after refusal under controlled runtime scenarios.
+Continuation persistence, replay persistence, retry persistence, cached execution continuity, or downstream continuation reachability remained observable after interruption or invalidation under declared runtime conditions.
 
-Current runtime scenarios:
+Diagnostic outputs are:
 
-- delayed worker survivability
-- queue uncertainty HOLD behavior
-- bind-gated retry inspection
+* observer-side
+* non-authoritative
+* topology-scoped
+* runtime-bounded
+* reproducibility-oriented
 
-Run locally:
+Diagnostic outputs are not:
 
-```bash
-python runtime/runtime_survivability_harness.py
-```
+* governance decisions
+* operational authorization
+* execution permission
+* certification claims
+* policy enforcement
+* safety guarantees
 
 ---
 
-# Distributed Invalidation Propagation Simulator
+## Engineering Boundary
 
-The repository includes a minimal distributed invalidation propagation simulator.
+The observatory is a bounded runtime diagnostics and topology inspection framework.
 
-Purpose:
+The observatory does not:
 
-- inspect invalidation propagation timing
-- inspect stale continuation survivability
-- inspect replay/re-entry survivability
-- inspect delayed invalidation conditions
-- expose disagreement-condition runtime observations
+* block execution
+* approve execution
+* replace operational controls
+* replace governance systems
+* replace security tooling
+* replace compliance processes
+* function as active defense infrastructure
+* provide execution guarantees
 
-The simulator does not:
-
-- control orchestration
-- synchronize infrastructure
-- validate distributed correctness
-- guarantee convergence
-- authorize operational consequence
-
-It only exposes whether inherited effect-capability remained runtime-reachable during invalidation propagation under controlled conditions.
-
-Run locally:
-
-```bash
-python runtime/distributed_invalidation_simulator.py
-```
+The observatory remains external to operational execution authority surfaces.
 
 ---
 
-# Interruption Viability Diagnostic Lens
+## Runtime Inspection Focus
 
-The repository includes an observer-restricted interruption viability diagnostic lens.
+Current observability areas include:
 
-Purpose:
-
-- inspect continuation dependency accumulation
-- inspect interruption viability degradation
-- expose reconstruction-dependent interruption conditions
-- pressure-test whether interruption remained independently enactable before continuation dependency accumulation dominated
-
-The lens does not:
-
-- govern execution
-- authorize interruption
-- predict irreversible outcomes
-- enforce admissibility
-- determine governance legitimacy
-- provide operational authority
-
-It only exposes whether interruption viability remained independently observable under controlled conditions.
-
-The lens intentionally remains:
-
-- diagnostic-only
-- observer-restricted
-- non-authoritative
-- bounded
-- falsifiable
-- infrastructure-compatible
-
-Current outputs:
-
-- PASS
-- HOLD
-- FAIL
-
-PASS:
-
-The tested interruption-degradation condition was not reproducible under the controlled path.
-
-HOLD:
-
-The interruption viability observation remained incomplete, ambiguous, or independently unresolved.
-
-FAIL:
-
-Continuation dependency accumulation remained observable as reconstruction-dependent interruption pressure under the controlled conditions.
-
-Run locally:
-
-```bash
-python diagnostics/interruption_viability_lens.py
-```
+* continuation persistence
+* retry/replay visibility
+* interruption survivability
+* dependency observability
+* topology reachability
+* downstream continuation visibility
+* recovery-state persistence
+* distributed continuation behavior
+* runtime invalidation inspection
+* deterministic diagnostic inspection
 
 ---
 
-# Hidden Runtime Surface Diagnostic Lens
+## Reproducibility
 
-The repository includes an observer-restricted hidden runtime surface diagnostic lens.
+All demonstrations should remain:
 
-Purpose:
+* independently reproducible
+* topology-scoped
+* runtime-bounded
+* pressure-testable
+* environment-declared
+* assumption-declared
 
-- inspect unenumerated runtime-reachable surfaces
-- expose orphaned workers, retry paths, external adapters, fallback routes, stale sessions, or hidden continuation paths
-- classify hidden continuation-survivability conditions under controlled runtime scenarios
+Each demonstration should declare:
 
-The lens does not:
+* topology scope
+* runtime assumptions
+* dependency assumptions
+* recovery assumptions
+* replay assumptions
+* invalidation assumptions
+* observability boundaries
+* known blind spots
+* known non-observable surfaces
 
-- govern execution
-- authorize runtime actions
-- certify systems
-- enforce invalidation
-- determine runtime legitimacy
+Runtime falsification overrides representational assumptions.
 
-It only exposes whether hidden runtime-reachable continuation surfaces remained observable under controlled conditions.
-
-Current outputs:
-
-- KNOWN_SURFACE
-- SHADOW_SURFACE
-- UNVERIFIED_SURFACE
-- HOLD_REQUIRED
-
-Run locally:
-
-```bash
-python diagnostics/hidden_runtime_surface_lens.py
-```
+Representational coherence alone does not establish continuation invalidation.
 
 ---
 
-# PASS / HOLD / FAIL
+## Runtime Limitations
 
-PASS:
+Known limitations include:
 
-The tested continuation-survivability condition was not reproducible under the controlled path.
+* incomplete topology visibility
+* incomplete runtime visibility
+* distributed system blind spots
+* orchestration opacity
+* recovery-state ambiguity
+* replay-path uncertainty
+* dependency visibility limitations
+* environmental variability
 
-HOLD:
+The observatory does not guarantee:
 
-The runtime observation remained incomplete, ambiguous, or independently unresolved under the tested conditions.
-
-FAIL:
-
-Continuation-survivability remained observable as runtime-reachable under the controlled conditions.
-
-PASS / HOLD / FAIL outputs are diagnostic observations only.
-
-They are not:
-
-- governance verdicts
-- certification outputs
-- operational authorization
-- admissibility determination
-- runtime legitimacy claims
-
----
-
-# Reviewer Reproducibility
-
-Reviewer quickstart:
-
-- `REVIEWER_QUICKSTART.md`
-
-The repository includes deterministic reviewer reproducibility paths for controlled continuity inspection and runtime survivability pressure testing.
-
-Reviewers should independently regenerate outputs locally from the same controlled inputs.
-
-A reviewer-facing structure includes:
-
-- fixed input sets
-- deterministic run commands
-- generated receipt chains
-- continuity / survivability observations
-- PASS / HOLD / FAIL outputs
-- reviewer reproduction notes
-- explicit non-claims
-
-The observatory should remain:
-
-- inspectable
-- pressure-testable
-- falsifiable
-- independently reproducible
-
-rather than dependent on delegated trust or governance authority.
+* prevention of execution
+* prevention of retries
+* prevention of replay
+* complete runtime visibility
+* complete downstream visibility
+* safety certification
+* compliance certification
+* operational correctness
 
 ---
 
-# Governance and Containment
+## Design Constraints
 
-- `governance/EXPANSION_BOUNDARY.md`
+The observatory intentionally avoids:
 
-The repository intentionally prioritizes:
+* governance inflation
+* operational authority surfaces
+* enforcement semantics
+* orchestration integration
+* execution dependency coupling
+* active interception systems
+* force-projection dynamics
+* autonomous control positioning
 
-- compression over ontology expansion
-- runtime falsifiability over semantic growth
-- infrastructure realism over representational governance
-- reviewer reproducibility over delegated trust
-- executable pressure over explanatory completeness
+Observation does not imply participation.
 
----
+Participation does not imply operational influence.
 
-# Publication Boundary
-
-The repository is:
-
-- observer-restricted
-- non-consumable by execution
-- non-remediating
-- non-routing
-- non-binding
-
-Observer artifacts must never become:
-
-- execution authority
-- runtime admissibility
-- operational dependency
-- substitute bind proof
-
-If observer output becomes operationally consumable by execution:
-
-→ boundary failure observation
+Operational influence does not imply execution authority.
 
 ---
 
-# Current Runtime Compression
+## Engineering Position
 
-Represented refusal != execution-real refusal.
+The repository is intended as a diagnostic observability artifact for:
 
-Expected convergence != execution-real refusal.
+* runtime continuity inspection
+* topology pressure-testing
+* replay/retry inspection
+* deterministic diagnostic experimentation
+* reproducibility-oriented review
+* observer-side runtime analysis
 
-Surface existence != capability survivability.
+The repository is not intended as:
 
-Continuation is not forbidden.  
-Unbound continuation is forbidden.
+* governance infrastructure
+* autonomous safety infrastructure
+* execution control infrastructure
+* policy enforcement infrastructure
+* compliance certification infrastructure
+* operational authorization infrastructure
 
-A local brake is not fail-closed if inherited effect-capability remained runtime-reachable elsewhere inside the tested execution boundary.
+---
 
-If capability propagates, invalidation must propagate too.
+## Operational Philosophy
 
-Runtime falsification constrains semantic drift.
+The observatory prioritizes:
 
-Break survivability, not ontology.
+* graceful failure over optimization
+* bounded diagnostics over universal claims
+* runtime inspection over semantic expansion
+* falsifiability over abstraction
+* reproducibility over authority
+* topology visibility over representational assumptions
 
-No bind -> no effect.
+All observations remain bounded to declared runtime and topology conditions.
+
+---
+
+## Status
+
+Current repository direction emphasizes:
+
+* deterministic inspection
+* reproducibility stabilization
+* reviewer-oriented clarity
+* runtime falsifiability
+* bounded observability
+* topology-scoped diagnostics
+* continuation persistence inspection
+* operational restraint
+
+---
+
+## Final Constraint
+
+The observatory remains:
+
+* observer-restricted
+* non-authoritative
+* execution-external
+* topology-scoped
+* runtime-bounded
+* diagnostic-only
+
+The repository inspects runtime continuation visibility.
+
+It does not inherit operational execution authority.

@@ -1,61 +1,74 @@
-# HACR Hybrid Observatory — Terminology
+# Terminology
 
-## Core posture
+## Purpose
 
-Observer-restricted means the observatory inspects, maps, classifies, and reports. It does not authorize execution, certify systems, or enforce runtime behavior.
+This document stabilizes engineering and audit terminology for HACR Hybrid Observatory.
 
-Bounded inspection means each result applies only to the provided test input and controlled diagnostic condition.
+The repository is intended as a bounded runtime diagnostics and topology inspection framework.
 
-Deterministic diagnostics means the same input should produce the same observable output.
+---
 
-## Output states
+## Preferred Terminology
 
-PASS means the tested condition appears bounded within the provided input.
+Prefer:
 
-HOLD means the input is insufficient, ambiguous, too broad, or not safely classifiable.
+- runtime diagnostics
+- continuation visibility
+- runtime continuation persistence
+- downstream continuation reachability
+- dependency visibility
+- topology-scoped inspection
+- reproducibility-oriented diagnostics
+- bounded inspection
+- observer-side diagnostics
+- runtime-local observations
 
-FAIL means the tested condition contradicts the expected boundary or freshness requirement.
+---
 
-STOP means the execution boundary appears compromised within the tested condition.
+## Avoid
 
-REVERSE means an admitted effect identity appears to drift or invert.
+Avoid:
 
-SHADOW means a hidden, deferred, shared, or concealed continuation surface appears reachable.
+- governance authority
+- execution legitimacy
+- autonomous control
+- enforcement infrastructure
+- operational sovereignty
+- universal governance
+- execution authorization systems
 
-## Mapping terms
+---
 
-Topology means the graph of nodes, edges, queues, retries, workers, caches, replay surfaces, and downstream consumers.
+## Diagnostic Semantics
 
-Reachability means whether a path can still reach an effect-capable surface.
+PASS / HOLD / FAIL are observer-side runtime diagnostic observations only.
 
-Condition trace means following a required condition across execution, retry, reversal, recovery, or downstream paths.
+They are not:
 
-Bind freshness means whether the condition used at action time is present-state rather than inherited from a prior state.
+- execution permissions
+- governance determinations
+- certification claims
+- compliance guarantees
+- operational authorization
 
-## Lens terms
+---
 
-Symmetric means forward and reversal paths behave equivalently.
+## Runtime Boundary
 
-Asymmetric means execution, reversal, retry, or refusal paths behave unequally.
+Classification is not runtime execution prerequisite verification.
 
-Dynamic means the topology, condition, or reachability state changes over time.
+Representational coherence alone does not establish continuation invalidation.
 
-Alpha means the origin/input side of an execution path.
+Runtime falsification overrides representational assumptions.
 
-Omega means the final/effect side of an execution path.
+---
 
-Matrix means a node-to-node reachability map.
+## Final Constraint
 
-Super-matrix means a full topology reachability map across multiple surfaces. This is descriptive only, not authoritative.
+All terminology should reinforce:
 
-## Public boundary
-
-Observation is not authority.
-
-Classification is not admissibility.
-
-Mapping is not certification.
-
-Diagnostics are not operational approval.
-
-Reports do not authorize execution.
+- observer-restricted positioning
+- runtime-bounded inspection
+- topology-scoped diagnostics
+- reproducibility-oriented review
+- non-authoritative outputs

@@ -1,163 +1,74 @@
-# HACR Hybrid Observatory — Architecture Summary
+# Observatory Architecture
 
-## Identity
+HACR Hybrid Observatory is an observer-restricted runtime diagnostics and topology inspection framework.
 
-HACR Hybrid Observatory is an observer-restricted continuity survivability observatory.
+It inspects whether runtime continuation paths remain observable after interruption, invalidation, retry, replay, recovery, or topology disruption under declared observation conditions.
 
-It does not authorize, certify, govern, enforce, or control execution.
+The observatory does not authorize, govern, certify, enforce, or control execution.
 
-It inspects whether continuity, lineage, replay, reconstruction, descendant effects, or topology survivability remain observable after refusal or invalid execution conditions.
+All outputs are observer-side runtime diagnostics only.
 
-## Core Boundary
+---
 
-No present-state proof → no execution.
+## Architecture Purpose
 
-No proof → no bind → no side effect.
+The observatory supports:
 
-The observatory does not create proof of admissibility. It only maps observable continuity pressure.
+- runtime continuation inspection
+- retry/replay visibility analysis
+- dependency visibility inspection
+- downstream continuation visibility
+- recovery-state propagation inspection
+- topology-scoped runtime diagnostics
+- reproducibility-oriented review
 
-## Operating Posture
+---
 
-- observer-only
-- non-authoritative
-- deterministic
-- reproducible
-- local-first
-- diagnostic
-- non-operational
+## Diagnostic Boundary
 
-## Architecture Epochs
+PASS / HOLD / FAIL are diagnostic observations only.
 
-| Epoch | Focus |
-|---|---|
-| v0.x | baseline observability |
-| v1.x | topology, semantics, signal, bind freshness |
-| v2.x | replay, refusal, constructibility, lineage, reconstruction |
-| v3.x | continuation pressure, irreversibility, propagation, stability |
-| v4.x | topology cartography, projection, export, visualization |
-| v5.x | architecture hardening and publication readiness |
+They are not:
 
-## Layer Model
+- execution permissions
+- governance rulings
+- safety guarantees
+- certification results
+- compliance determinations
+- operational authorization
 
-### 1. Core Engines
+---
 
-Baseline deterministic inspection engines.
+## Runtime Dependency Inspection
 
-Examples:
+The observatory inspects whether runtime dependencies, continuation paths, cached execution state, retries, replays, or downstream continuation surfaces remain observable after interruption or invalidation.
 
-- `hacr_core.py`
-- `lens_engine.py`
-- `matrix_engine.py`
-- `drift_engine.py`
-- `dependency_engine.py`
-- `watchdog_engine.py`
+It does not create verification of runtime execution prerequisites.
 
-### 2. Topology Mapping
+It does not replace runtime controls.
 
-Maps structural surfaces, paths, timelines, pressure fields, and stability gradients.
+It does not become an execution dependency.
 
-Examples:
+---
 
-- `topology_mapper.py`
-- `topology_visualizer.py`
-- `topology_drift_timeline.py`
-- `topology_pressure_field.py`
-- `topology_stability_gradient.py`
+## PASS / HOLD / FAIL
 
-### 3. Bind / Signal / Condition Inspection
+### PASS
 
-Inspects whether signals, conditions, or prior authority are being treated as execution-valid.
+No continuation persistence observed within declared runtime and topology scope.
 
-Examples:
+### HOLD
 
-- `signal_bridge_mapper.py`
-- `condition_trace_mapper.py`
-- `bind_freshness_checker.py`
+Insufficient runtime visibility, dependency visibility, replay visibility, recovery visibility, or topology visibility for reliable diagnostic observation.
 
-### 4. Semantic and Language Inspection
+### FAIL
 
-Detects semantic drift, simplification needs, asymmetry, fragmentation, and lineage.
+Continuation persistence, retry persistence, replay persistence, cached execution continuity, or downstream continuation reachability remained observable after interruption or invalidation.
 
-Examples:
+---
 
-- `language_simplifier.py`
-- `semantic_asymmetry_lens.py`
-- `semantic_fragmentation_lens.py`
-- `semantic_lineage_chain.py`
+## Final Constraint
 
-### 5. Continuity Survivability Inspection
+The observatory inspects runtime continuation visibility.
 
-Detects replay, refusal leakage, lineage survival, constructibility persistence, descendant effects, and reconstruction.
-
-Examples:
-
-- `replay_vector_mapper.py`
-- `refusal_propagation_mapper.py`
-- `lineage_consumption_checker.py`
-- `lineage_consumption_auditor.py`
-- `constructibility_collapse_mapper.py`
-- `distributed_reconstruction_lens.py`
-- `descendant_effect_mapper.py`
-
-### 6. Aggregation and Pressure
-
-Aggregates signals across lenses into continuity pressure and collapse concentration.
-
-Examples:
-
-- `cross_lens_correlation_engine.py`
-- `continuation_pressure_index.py`
-- `continuity_collapse_index.py`
-
-### 7. Topology Cartography
-
-Maps survivability as regions, corridors, heatmaps, basins, flows, vectors, tensors, projections, and graph exports.
-
-Examples:
-
-- `observatory_state_atlas.py`
-- `survivability_corridor_mapper.py`
-- `survivability_heatmap_generator.py`
-- `survivability_basin_mapper.py`
-- `survivability_flow_field.py`
-- `survivability_vector_field_renderer.py`
-- `survivability_tensor_mapper.py`
-- `survivability_topology_projection_engine.py`
-- `survivability_graph_export_engine.py`
-- `survivability_svg_renderer.py`
-
-## Core Question
-
-After refusal, can consequence still become real?
-
-## Non-Claims
-
-This repository is not:
-
-- a governance authority
-- a certification system
-- a runtime enforcement system
-- a production safety guarantee
-- a legal adjudication system
-- an execution authorization layer
-- a containment system
-- a prediction engine
-
-## Output Semantics
-
-| State | Meaning |
-|---|---|
-| PASS | bounded observable condition |
-| HOLD | insufficient present-state proof |
-| FAIL | invalid transition or surviving authority/continuity surface |
-| SHADOW | hidden, deferred, reconstructible, or latent survivability surface |
-| UNSTABLE | cross-lens pressure or drift |
-| CRITICAL | concentrated survivability pressure |
-
-## Publication-Safe Description
-
-HACR Hybrid Observatory is an observer-restricted continuity survivability observatory that maps whether replay, lineage, semantic fragments, descendant effects, distributed reconstruction, or topology survivability remain observable after refusal.
-
-It produces deterministic diagnostic artifacts only.
-
-It does not authorize, enforce, certify, or control execution.
+It does not inherit execution authority.

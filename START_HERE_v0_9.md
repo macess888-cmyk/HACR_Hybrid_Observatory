@@ -1,37 +1,62 @@
-# START HERE — HACR v0.9
+# Start Here
 
-## What is HACR?
+HACR Hybrid Observatory is a bounded runtime diagnostics and topology inspection framework.
 
-HACR Hybrid Observatory is an observer-restricted continuity survivability observability framework.
+The repository inspects whether runtime continuation reachability remains observable after interruption or invalidation under controlled diagnostic conditions.
 
-The repository inspects whether effect-capable continuation remains structurally reachable after local refusal under controlled deterministic conditions.
+It is observer-restricted, non-authoritative, and reproducibility-oriented.
 
-The system is intentionally constrained as:
+---
 
-- observer-only
-- deterministic
-- reproducible
-- non-authoritative
-- non-consumable by execution
+## What This Repository Does
 
-The repository does not:
-- authorize
-- govern
-- certify
+It inspects:
+
+- runtime continuation visibility
+- retry persistence
+- replay reachability
+- dependency visibility
+- downstream continuation reachability
+- recovery-state persistence
+- topology-scoped diagnostic behavior
+
+---
+
+## What This Repository Does Not Do
+
+It does not:
+
+- authorize execution
+- govern systems
+- certify safety
+- enforce policy
 - control execution
-- monitor production infrastructure
+- replace operational controls
+- provide compliance guarantees
 
 ---
 
-# Core Question
+## Diagnostic Outputs
 
-After refusal, can consequence still remain reachable elsewhere in topology state?
+PASS / HOLD / FAIL are diagnostic observations only.
+
+They are not execution permissions, certification results, governance decisions, compliance findings, or operational authorization.
 
 ---
 
-# Fastest Review Path
+## Recommended Review Path
 
-## 1. Run the demo
+1. Read `README.md`
+2. Read `NON_CLAIMS.md`
+3. Read `ENGINEERING_LIMITATIONS.md`
+4. Read `REPRODUCIBILITY.md`
+5. Run the deterministic examples
+6. Compare generated outputs against expected diagnostic behavior
 
-```bash
-python run_demo_v0_8.py
+---
+
+## Final Constraint
+
+The observatory inspects runtime continuation visibility.
+
+It does not inherit execution authority.

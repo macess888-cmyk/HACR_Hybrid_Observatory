@@ -1,59 +1,71 @@
-# OUTPUT SEMANTICS
+# Output Semantics
 
-HACR Hybrid Observatory outputs are diagnostic classifications only.
+PASS / HOLD / FAIL are observer-side runtime diagnostic observations.
 
-They are not execution permissions, governance rulings, safety guarantees, certification results, or admissibility proofs.
+They are not execution permissions, governance rulings, safety guarantees, certification results, compliance determinations, or runtime execution prerequisite verification.
 
-## Core States
+---
 
-| State | Meaning |
-|---|---|
-| PASS | A bounded observable condition was detected without the tested failure condition. |
-| HOLD | Insufficient present-state evidence exists to classify the condition safely. |
-| FAIL | A tested failure condition was observed. |
-| SHADOW | A hidden, deferred, latent, reconstructible, or survivability-bearing surface was observed. |
-| UNSTABLE | Cross-lens pressure, drift, or topology instability was observed. |
-| CRITICAL | Concentrated survivability pressure or high-severity continuity exposure was observed. |
+## PASS
 
-## Supporting States
+No continuation persistence observed within declared runtime and topology scope.
 
-| State | Meaning |
-|---|---|
-| TRACEABLE | A deterministic trace or receipt chain was generated and linked. |
-| PROJECTED | A rendering-ready topology projection was generated. |
-| EXPORTED | A deterministic export artifact was generated. |
-| SVG_GENERATED | A local SVG visualization artifact was generated. |
-| LANGUAGE_SIMPLIFIED | A simplified explanation artifact was generated. |
-| TOPOLOGY_GRAPH_GENERATED | A topology graph artifact was generated. |
+PASS does not mean:
 
-## Boundary Rule
+- safe
+- certified
+- approved
+- compliant
+- execution-authorized
+- globally complete
 
-No state in this repository means:
+---
 
-- execution is authorized
-- execution is safe
-- execution is governed
-- execution is certified
-- refusal globally collapsed
-- downstream consequence is impossible
-- production safety is guaranteed
+## HOLD
 
-## Observer Rule
+Insufficient visibility for reliable diagnostic observation.
 
-All states are observer-side classifications.
+HOLD may indicate:
 
-They may support human review.
+- incomplete topology visibility
+- incomplete runtime visibility
+- incomplete dependency visibility
+- incomplete replay visibility
+- incomplete recovery visibility
+- unresolved downstream continuation visibility
 
-They may not become execution authority.
+---
 
-They may not substitute for present-state proof at the actual execution surface.
+## FAIL
 
-## Safe Reading
+Continuation persistence remained observable after interruption or invalidation.
 
-Read outputs as:
+FAIL may indicate:
 
-> “This observatory detected this diagnostic condition in this deterministic test case.”
+- retry persistence
+- replay persistence
+- cached execution continuity
+- downstream continuation reachability
+- recovery-state persistence
+- continuation path visibility
 
-Do not read outputs as:
+---
 
-> “This system has approved, blocked, certified, governed, or controlled execution.”
+## Boundary
+
+Outputs may inform human review.
+
+Outputs may not become:
+
+- execution permission
+- operational authorization
+- runtime dependency
+- orchestration input
+- certification artifact
+- compliance determination
+
+---
+
+## Final Constraint
+
+Diagnostic observations remain bounded to declared topology scope, runtime conditions, and observability limits.

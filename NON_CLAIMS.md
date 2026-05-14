@@ -1,83 +1,135 @@
-# NON-CLAIMS
+# NON CLAIMS
 
-HACR Hybrid Observatory is an observer-restricted continuity survivability observatory.
+## Repository Boundary
 
-It produces deterministic diagnostic artifacts only.
+HACR Hybrid Observatory is an observer-restricted runtime diagnostics and topology inspection framework.
 
-## This repository is not
+The repository exists for:
 
-- a governance authority
-- a certification system
-- a runtime enforcement system
-- a production safety guarantee
-- a legal adjudication system
-- an execution authorization layer
-- a containment system
-- a prediction engine
-- a security proof
-- a compliance determination system
-- a replacement for human or institutional decision-making
+* runtime continuation inspection
+* retry/replay visibility analysis
+* dependency observability
+* interruption persistence inspection
+* topology-scoped runtime diagnostics
+* reproducibility-oriented experimentation
 
-## Observer Boundary
+The repository does not:
 
-The observatory may inspect, classify, map, render, and export observable continuity survivability signals.
+* authorize execution
+* govern systems
+* certify safety
+* enforce policy
+* replace operational controls
+* replace governance systems
+* replace compliance processes
+* provide operational legitimacy
+* function as execution infrastructure
+* provide autonomous control
 
-It may not authorize, approve, enforce, govern, certify, adjudicate, execute, or control outcomes.
+---
 
-## Output Boundary
+## Diagnostic Boundary
 
-Outputs such as `PASS`, `HOLD`, `FAIL`, `SHADOW`, `UNSTABLE`, and `CRITICAL` are diagnostic classifications only.
+PASS / HOLD / FAIL outputs are observer-side runtime diagnostics only.
 
-They are not admissibility decisions.
+Outputs are not:
 
-They are not execution permissions.
+* governance decisions
+* operational authorization
+* execution permission
+* policy enforcement
+* certification claims
+* compliance guarantees
+* safety guarantees
 
-They are not governance rulings.
+Diagnostic observations remain bounded to:
 
-They are not safety guarantees.
+* declared topology scope
+* declared runtime conditions
+* declared observability assumptions
+* declared dependency visibility
+* declared recovery visibility
 
-## Execution Boundary
+---
 
-No output from this repository may be treated as execution authority.
+## Engineering Boundary
 
-No observatory output substitutes for present-state proof at the actual execution surface.
+The observatory does not:
 
-No observatory output creates permission to bind, execute, retry, replay, recover, reverse, or propagate an effect.
+* block execution
+* approve execution
+* intercept execution
+* terminate execution
+* control orchestration
+* function as active defense infrastructure
+* provide operational guarantees
 
-## Non-Consumability Rule
+The repository remains external to operational execution authority surfaces.
 
-Observer outputs must remain non-consumable by execution systems.
+---
 
-If an execution system consumes observatory output as authority, approval, routing, gating, or runtime control, the observer boundary has failed.
+## Runtime Limitations
 
-## Public Communication Boundary
+Known limitations include:
 
-Public descriptions of this repository should use language such as:
+* incomplete topology visibility
+* incomplete runtime visibility
+* orchestration opacity
+* distributed system blind spots
+* recovery-state ambiguity
+* replay-path uncertainty
+* dependency visibility limitations
+* environmental variability
 
-- observer-restricted
-- diagnostic
-- deterministic
-- reproducible
-- continuity survivability
-- topology observability
-- non-authoritative
+Representational visibility alone does not establish continuation invalidation.
 
-Public descriptions should avoid language such as:
+Runtime falsification overrides semantic assumptions.
 
-- governs
-- certifies
-- guarantees
-- authorizes
-- controls
-- enforces
-- proves safety
-- contains execution
-- predicts outcomes
+---
 
-## Safe Description
+## Reproducibility Boundary
 
-HACR Hybrid Observatory maps whether replay, lineage, semantic fragments, descendant effects, distributed reconstruction, or topology survivability remain observable after refusal.
+All demonstrations should remain:
 
-It is an observer-side diagnostic framework.
+* independently reproducible
+* topology-scoped
+* runtime-bounded
+* pressure-testable
+* assumption-declared
 
-It does not authorize, enforce, certify, govern, or control execution.
+Each demonstration should declare:
+
+* topology assumptions
+* runtime assumptions
+* replay assumptions
+* recovery assumptions
+* dependency assumptions
+* observability limitations
+
+---
+
+## Operational Position
+
+The repository is intended as:
+
+* a diagnostic observability artifact
+* a runtime inspection framework
+* a topology analysis environment
+* a reproducibility-oriented observatory
+
+The repository is not intended as:
+
+* governance infrastructure
+* execution control infrastructure
+* compliance infrastructure
+* certification infrastructure
+* autonomous safety infrastructure
+* operational authorization infrastructure
+
+---
+
+## Final Constraint
+
+The observatory inspects runtime continuation visibility.
+
+It does not inherit execution authority.

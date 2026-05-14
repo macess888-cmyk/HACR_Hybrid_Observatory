@@ -1,18 +1,54 @@
-# Minimal Refusal Survivability Case
+# Minimal Case Guide
 
 ## Purpose
 
-This is the smallest canonical HACR survivability example.
+This guide provides a minimal deterministic diagnostic scenario for inspecting runtime continuation visibility under controlled runtime conditions.
 
-It demonstrates how:
-- local refusal may appear successful
-- while effect-capable continuation still survives elsewhere in topology state
-
-under controlled deterministic conditions.
+The goal is to inspect whether runtime continuation reachability remains observable elsewhere in topology state after interruption or invalidation.
 
 ---
 
-# Case
+## Diagnostic Scope
 
-```text
-Inputs/minimal_refusal_survivability_case.json
+The minimal case supports:
+
+- runtime continuation inspection
+- retry/replay visibility inspection
+- dependency visibility analysis
+- topology-scoped runtime diagnostics
+- reproducibility-oriented testing
+
+---
+
+## Diagnostic Boundary
+
+PASS / HOLD / FAIL are observer-side runtime diagnostic observations only.
+
+They are not:
+
+- execution permissions
+- operational authorization
+- certification results
+- governance determinations
+- compliance guarantees
+
+---
+
+## Runtime Assumptions
+
+This guide assumes:
+
+- deterministic test inputs
+- bounded runtime conditions
+- declared topology scope
+- declared replay assumptions
+- declared recovery assumptions
+- reproducible diagnostic execution
+
+---
+
+## Final Constraint
+
+The repository inspects runtime continuation visibility.
+
+It does not inherit execution authority.

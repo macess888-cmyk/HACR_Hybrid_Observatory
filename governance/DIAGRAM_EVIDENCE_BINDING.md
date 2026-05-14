@@ -1,101 +1,73 @@
 # Diagram Evidence Binding
 
-Purpose:
-Prevent architecture and topology diagrams from becoming free-floating symbolic structures detached from executable evidence.
+## Purpose
 
-Core rule:
+This document describes bounded relationships between runtime diagnostic observations, topology inspection artifacts, and reproducibility-oriented evidence structures.
 
-Every diagram must map directly to:
-
-- executable source
-- deterministic run path
-- observable artifact
-- bounded interpretation scope
-
-No diagram may imply:
-
-- orchestration authority
-- runtime control
-- governance enforcement
-- universal topology visibility
-- operational completeness
+The repository remains observer-restricted and diagnostic-only.
 
 ---
 
-# Replay Vector Diagram
+## Diagnostic Scope
 
-| Surface | Mapping |
-|---|---|
-| Input | Inputs/watchdog_continuity_case.json |
-| Execution | python run_all.py |
-| Artifact | Outputs/replay_vector_graph.svg |
-| Observable State | FAIL / SHADOW |
-| Limitation | bounded observer visibility only |
+The observatory may inspect:
 
----
+- runtime continuation visibility
+- dependency visibility
+- replay/retry persistence
+- downstream continuation reachability
+- interruption persistence
+- topology-scoped runtime behavior
 
-# Descendant Effect Map
-
-| Surface | Mapping |
-|---|---|
-| Input | Inputs/distributed_reconstruction_case.json |
-| Execution | python run_all.py |
-| Artifact | Outputs/descendant_effect_map.svg |
-| Observable State | TRACEABLE |
-| Limitation | partial topology visibility |
+under declared runtime conditions.
 
 ---
 
-# Reconstruction Projection Diagram
+## Excluded Interpretations
 
-| Surface | Mapping |
-|---|---|
-| Input | Inputs/reconstruction_path_case.json |
-| Execution | python run_all.py |
-| Artifact | Outputs/reconstruction_projection.svg |
-| Observable State | PROJECTED |
-| Limitation | observer-side inference only |
+The repository does not provide:
 
----
-
-# Deterministic Export Graphs
-
-| Surface | Mapping |
-|---|---|
-| Input | deterministic topology inputs |
-| Execution | graph export pipeline |
-| Artifact | SVG / JSON graph outputs |
-| Observable State | EXPORTED |
-| Limitation | inspection artifact only |
+- operational authorization
+- execution governance
+- runtime enforcement
+- compliance determination
+- certification authority
+- operational interpretation guarantees
 
 ---
 
-# Diagram Constraint
+## Evidence Boundary
 
-Diagrams are inspection artifacts only.
+Diagnostic artifacts may support:
 
-Diagrams do not represent:
+- reproducibility review
+- runtime inspection
+- topology analysis
+- bounded engineering diagnostics
 
-- complete system topology
-- operational truth
-- runtime authority
-- governance legitimacy
-- execution control surfaces
-- production completeness
+Diagnostic artifacts may not become:
 
-All diagrams remain:
-
-- observer-restricted
-- deterministic
-- bounded
-- reproducible
-- non-authoritative
+- execution permissions
+- orchestration dependencies
+- runtime authorization artifacts
+- operational control systems
 
 ---
 
-# Interpretation Constraint
+## Operational Interpretation Risk
 
-If a diagram requires narrative explanation exceeding executable evidence support,
-the diagram should be treated as conceptual-only rather than operationally stabilized.
+Reviewers should avoid interpreting runtime diagnostics as:
 
-Executable evidence must upper-bound diagram interpretation scope.
+- execution legitimacy
+- operational authorization
+- governance infrastructure
+- compliance guarantees
+- operational control
+
+---
+
+## Final Constraint
+
+The repository remains a bounded runtime diagnostics and topology inspection framework.
+
+It does not inherit execution authority.

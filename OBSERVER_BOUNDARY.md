@@ -1,36 +1,83 @@
 # Observer Boundary
 
-The HACR Hybrid Observatory is observer-restricted.
+## Purpose
 
-It may:
+This document defines the observer-restricted boundary for runtime diagnostics and topology-scoped inspection.
 
-- inspect bounded inputs
-- classify diagnostic conditions
-- map topology and reachability surfaces
-- identify continuity, retry, reversal, recovery, and dependency risks
-- generate deterministic reports
-- generate reproducible outputs
+The observatory remains:
 
-It may not:
+- observer-side
+- runtime-bounded
+- topology-scoped
+- reproducibility-oriented
+- diagnostic-only
+
+---
+
+## Observer Restrictions
+
+The observatory may:
+
+- inspect
+- classify
+- trace
+- map
+- pressure-test
+- analyze runtime continuation visibility
+
+The observatory may not:
 
 - authorize execution
-- certify a system
-- approve production use
-- provide legal approval
-- act as governance authority
-- enforce runtime behavior
-- replace human, organizational, legal, or engineering review
+- govern systems
+- certify safety
+- enforce policy
+- control execution
+- replace operational controls
+- provide operational correctness guarantees
 
-## Non-consumability
+---
 
-Observatory outputs are not execution inputs.
+## Diagnostic Boundary
 
-A report may inform human understanding, but it must not become an execution authority, approval token, certification artifact, or runtime permission source.
+PASS / HOLD / FAIL are observer-side runtime diagnostics only.
 
-If an observer output becomes consumable by an execution system, the observer boundary has failed.
+Outputs may support human inspection.
 
-## Output limitation
+Outputs may not become:
 
-All outputs are bounded observations under controlled test conditions.
+- execution permissions
+- orchestration dependencies
+- runtime authorization artifacts
+- operational control systems
+- compliance determination systems
 
-They do not prove global safety, global correctness, legal compliance, or operational admissibility.
+---
+
+## Runtime Scope
+
+All observations remain bounded to:
+
+- declared topology scope
+- declared runtime conditions
+- declared dependency visibility
+- declared replay assumptions
+- declared recovery assumptions
+- declared observability boundaries
+
+---
+
+## Controlled Diagnostic Conditions
+
+All outputs are bounded observations under controlled diagnostic conditions.
+
+Representational visibility alone does not establish continuation invalidation.
+
+Runtime falsification overrides representational assumptions.
+
+---
+
+## Final Constraint
+
+The observatory inspects runtime continuation visibility.
+
+It does not inherit execution authority.
