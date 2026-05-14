@@ -1,0 +1,27 @@
+{
+  "authority_claim": false,
+  "blame_determination": false,
+  "case": "silicon_valley_bank_2023",
+  "certification_claim": false,
+  "core_question": "Where did stopping stop being viable before visible failure?",
+  "declared_intent": "relationship-focused banking for technology and venture-backed clients",
+  "diagnostic_signals": [
+    "interruption viability degraded",
+    "detection loss or normalization present",
+    "continuation pressure present"
+  ],
+  "drift_point": "rate-exposure and depositor-concentration risks became structurally coupled under rapid withdrawal pressure",
+  "failure_locator": [
+    "Liquidity Survivability Failure",
+    "Concentrated Dependency Topology",
+    "Withdrawal Velocity Amplification",
+    "Delayed Invalidation Recognition"
+  ],
+  "interruption_viability": "degraded once withdrawal velocity exceeded available liquidity response capacity",
+  "observer_only": true,
+  "receipt_sha256": "38540585f2fb81d82e3a4738eb676eaf8c195ae9313ab4de2804a4ed7c0e0c92",
+  "tool": "Failure Formation Locator",
+  "unresolved_signals": [],
+  "verdict": "FAIL",
+  "version": "v0.13"
+}

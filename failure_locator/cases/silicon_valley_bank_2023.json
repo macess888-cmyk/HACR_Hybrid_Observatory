@@ -1,0 +1,25 @@
+{
+  "name": "silicon_valley_bank_2023",
+  "declared_intent": "relationship-focused banking for technology and venture-backed clients",
+  "validity_conditions": [
+    "stable depositor confidence",
+    "manageable interest-rate exposure",
+    "sufficient liquidity under withdrawal pressure",
+    "deposit concentration remains survivable"
+  ],
+  "drift_point": "rate-exposure and depositor-concentration risks became structurally coupled under rapid withdrawal pressure",
+  "detection_loss": "liquidity and concentration pressure remained operationally underestimated until withdrawal velocity accelerated",
+  "continuation_pressure": [
+    "market confidence preservation",
+    "client ecosystem dependency",
+    "balance-sheet continuity",
+    "institutional reputation pressure"
+  ],
+  "interruption_viability": "degraded once withdrawal velocity exceeded available liquidity response capacity",
+  "failure_locator": [
+    "Liquidity Survivability Failure",
+    "Concentrated Dependency Topology",
+    "Withdrawal Velocity Amplification",
+    "Delayed Invalidation Recognition"
+  ]
+}
