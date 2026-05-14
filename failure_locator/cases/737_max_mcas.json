@@ -1,0 +1,22 @@
+{
+  "name": "737_max_mcas",
+  "declared_intent": "handling augmentation",
+  "validity_conditions": [
+    "sensor reliability",
+    "pilot recoverability",
+    "automation authority remains bounded"
+  ],
+  "drift_point": "single-sensor dependency and automation authority expansion",
+  "detection_loss": "crew not reliably positioned to detect/control failure mode in time",
+  "continuation_pressure": [
+    "certification continuity",
+    "market competition",
+    "fleet commonality"
+  ],
+  "interruption_viability": "degraded during live execution",
+  "failure_locator": [
+    "Human-Control Window Collapse",
+    "Runtime Authority Drift",
+    "Detection Failure"
+  ]
+}

@@ -1,131 +1,89 @@
-# Failure Formation Locator v0.1
+# Failure Formation Locator v0.11
 # Observer-only diagnostic simulator
-# Purpose: locate where continuation pressure survives after validity degrades
+# Purpose: load external case files and locate where continuation pressure survives after validity degrades
 
-CASES = {
-    "737_max_mcas": {
-        "declared_intent": "handling augmentation",
-        "validity_conditions": [
-            "sensor reliability",
-            "pilot recoverability",
-            "automation authority remains bounded",
-        ],
-        "drift_point": "single-sensor dependency and automation authority expansion",
-        "detection_loss": "crew not reliably positioned to detect/control failure mode in time",
-        "continuation_pressure": [
-            "certification continuity",
-            "market competition",
-            "fleet commonality",
-        ],
-        "interruption_viability": "degraded during live execution",
-        "failure_locator": [
-            "Human-Control Window Collapse",
-            "Runtime Authority Drift",
-            "Detection Failure",
-        ],
-    },
-    "space_shuttle": {
-        "declared_intent": "low-cost reusable space transportation",
-        "validity_conditions": [
-            "rapid turnaround",
-            "low refurbishment burden",
-            "broad mission utility",
-        ],
-        "drift_point": "reusability remained declared while maintenance reality diverged",
-        "detection_loss": "program identity preserved despite cost and turnaround mismatch",
-        "continuation_pressure": [
-            "institutional commitment",
-            "political requirements",
-            "sunk cost",
-        ],
-        "interruption_viability": "low once program infrastructure and mission dependency formed",
-        "failure_locator": [
-            "Maintenance Reality Divergence",
-            "Continuation Momentum Failure",
-            "Design Assumption Failure",
-        ],
-    },
-    "vasa": {
-        "declared_intent": "prestige warship with heavy firepower",
-        "validity_conditions": [
-            "stability margin",
-            "weight distribution",
-            "seaworthiness",
-        ],
-        "drift_point": "armament and height exceeded stability capacity",
-        "detection_loss": "visible instability warnings did not stop launch",
-        "continuation_pressure": [
-            "royal pressure",
-            "prestige",
-            "schedule momentum",
-        ],
-        "interruption_viability": "available but politically suppressed",
-        "failure_locator": [
-            "Physical Constraint Violation",
-            "Interruption Viability Collapse",
-            "Continuation Momentum Failure",
-        ],
-    },
-    "tacoma_narrows": {
-        "declared_intent": "economical long-span suspension bridge",
-        "validity_conditions": [
-            "aeroelastic stability",
-            "torsional rigidity",
-            "wind response tolerance",
-        ],
-        "drift_point": "cost-driven slenderness reduced dynamic stability",
-        "detection_loss": "oscillation behavior normalized before collapse",
-        "continuation_pressure": [
-            "cost efficiency",
-            "design confidence",
-            "operational use",
-        ],
-        "interruption_viability": "degraded once dynamic instability appeared under wind load",
-        "failure_locator": [
-            "Physical Constraint Violation",
-            "Detection Failure",
-            "Design Assumption Failure",
-        ],
-    },
-    "ulcc": {
-        "declared_intent": "maximize crude transport efficiency",
-        "validity_conditions": [
-            "port compatibility",
-            "route compatibility",
-            "market demand",
-        ],
-        "drift_point": "ship scale exceeded operational topology",
-        "detection_loss": "local transport efficiency obscured system incompatibility",
-        "continuation_pressure": [
-            "cheap transport logic",
-            "scale economics",
-            "market expectation",
-        ],
-        "interruption_viability": "low after construction and fleet commitment",
-        "failure_locator": [
-            "Topology Incompatibility",
-            "Design Assumption Failure",
-            "Continuation Momentum Failure",
-        ],
-    },
-}
+import json
+from pathlib import Path
+
+CASES_DIR = Path(__file__).parent / "cases"
+
+
+REQUIRED_FIELDS = [
+    "name",
+    "declared_intent",
+    "validity_conditions",
+    "drift_point",
+    "detection_loss",
+    "continuation_pressure",
+    "interruption_viability",
+    "failure_locator",
+]
+
+
+def validate_case(case):
+    missing = [field for field in REQUIRED_FIELDS if field not in case]
+    if missing:
+        return False, f"Missing required fields: {', '.join(missing)}"
+
+    list_fields = ["validity_conditions", "continuation_pressure", "failure_locator"]
+    for field in list_fields:
+        if not isinstance(case[field], list):
+            return False, f"Field must be a list: {field}"
+
+    return True, "valid"
+
+
+def load_cases():
+    cases = []
+
+    if not CASES_DIR.exists():
+        print(f"HOLD: cases directory not found: {CASES_DIR}")
+        return cases
+
+    for path in sorted(CASES_DIR.glob("*.json")):
+        try:
+            with open(path, "r", encoding="utf-8") as file:
+                case = json.load(file)
+
+            valid, message = validate_case(case)
+            if not valid:
+                print(f"HOLD: {path.name} invalid — {message}")
+                continue
+
+            cases.append(case)
+
+        except json.JSONDecodeError as error:
+            print(f"HOLD: {path.name} invalid JSON — {error}")
+        except OSError as error:
+            print(f"HOLD: could not read {path.name} — {error}")
+
+    return cases
 
 
 def classify(case):
     unresolved = []
     fail_signals = []
 
-    if "degraded" in case["interruption_viability"].lower():
+    interruption = case["interruption_viability"].lower()
+
+    if "degraded" in interruption:
         fail_signals.append("interruption viability degraded")
 
-    if "low" in case["interruption_viability"].lower():
+    if "low" in interruption:
         fail_signals.append("stopping became structurally difficult")
+
+    if "unknown" in interruption or "unresolved" in interruption:
+        unresolved.append("interruption viability unresolved")
 
     if case["detection_loss"]:
         fail_signals.append("detection loss or normalization present")
+    else:
+        unresolved.append("detection status unresolved")
 
     if case["continuation_pressure"]:
         fail_signals.append("continuation pressure present")
+    else:
+        unresolved.append("continuation pressure unresolved")
 
     if fail_signals:
         verdict = "FAIL"
@@ -134,17 +92,18 @@ def classify(case):
     else:
         verdict = "PASS"
 
-    return verdict, fail_signals
+    return verdict, fail_signals, unresolved
 
 
-def print_case(name, case):
-    verdict, signals = classify(case)
+def print_case(case):
+    verdict, signals, unresolved = classify(case)
 
     print("=" * 72)
-    print(f"CASE: {name}")
+    print(f"CASE: {case['name']}")
     print(f"VERDICT: {verdict}")
     print("-" * 72)
     print(f"Declared intent: {case['declared_intent']}")
+
     print("\nValidity conditions:")
     for item in case["validity_conditions"]:
         print(f"  - {item}")
@@ -163,8 +122,16 @@ def print_case(name, case):
         print(f"  - {item}")
 
     print("\nDiagnostic signals:")
-    for item in signals:
-        print(f"  - {item}")
+    if signals:
+        for item in signals:
+            print(f"  - {item}")
+    else:
+        print("  - none")
+
+    if unresolved:
+        print("\nUnresolved signals:")
+        for item in unresolved:
+            print(f"  - {item}")
 
     print("\nCore question:")
     print("  Where did stopping stop being viable before visible failure?")
@@ -173,12 +140,21 @@ def print_case(name, case):
 
 
 def main():
-    print("\nFailure Formation Locator v0.1")
+    print("\nFailure Formation Locator v0.11")
     print("Observer-only diagnostic simulator")
-    print("No authority. No certification. No blame determination.\n")
+    print("No authority. No certification. No blame determination.")
+    print("External JSON case loader enabled.\n")
 
-    for name, case in CASES.items():
-        print_case(name, case)
+    cases = load_cases()
+
+    if not cases:
+        print("HOLD: no valid case files loaded.")
+        return
+
+    for case in cases:
+        print_case(case)
+
+    print(f"Run complete: {len(cases)} case(s) loaded.")
 
 
 if __name__ == "__main__":
