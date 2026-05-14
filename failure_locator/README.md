@@ -136,6 +136,23 @@ The simulator does not perform:
 
 ---
 
+# Historical Case Selection Boundary
+
+Historical cases are selected for:
+
+- operational inspectability
+- publicly documented morphology
+- continuation/interruption analysis utility
+
+Case inclusion does not imply:
+
+- completeness
+- representational universality
+- comparative severity ranking
+- legal or regulatory conclusion
+
+---
+
 # Case File Structure
 
 Example:
@@ -168,7 +185,7 @@ Example:
 ```json
 {
   "case": "737_max_mcas",
-  "verdict": "FAIL",
+  "diagnostic_verdict": "FAIL",
   "receipt_sha256": "..."
 }
 ```
@@ -201,6 +218,64 @@ The simulator:
 3. Produces deterministic classifications
 4. Exports deterministic receipts
 5. Generates SHA256 integrity hashes
+
+---
+
+# Deterministic Replay Expectation
+
+Repeated execution against unchanged case files should produce:
+
+- identical diagnostic outputs
+- identical receipts
+- identical SHA256 hashes
+
+Any divergence indicates:
+
+- code modification
+- input modification
+- environment drift
+- serialization inconsistency
+
+---
+
+# Current Parser Limitations
+
+Current classification logic is intentionally bounded and simplified.
+
+The simulator currently does not:
+
+- perform probabilistic analysis
+- infer causality
+- reconstruct hidden state
+- perform semantic reasoning
+- validate historical completeness
+- model dynamic runtime evolution
+- determine legal or regulatory fault
+- establish predictive risk likelihood
+
+Classification currently depends on:
+
+- explicitly declared case structure
+- bounded keyword/state interpretation
+- deterministic rule evaluation
+
+The simulator intentionally prioritizes:
+
+- inspectability
+- reproducibility
+- bounded falsifiability
+
+over semantic sophistication.
+
+---
+
+# Environment Validation
+
+Validated under:
+
+- Windows 10/11
+- Python 3.x
+- local filesystem execution
 
 ---
 
@@ -240,6 +315,26 @@ Avoided directions:
 
 ---
 
+# Current Stabilization Posture
+
+Current development prioritizes:
+
+- refinement
+- parser integrity
+- reproducibility
+- reviewer inspectability
+- bounded historical cases
+
+The project is intentionally avoiding:
+
+- generalized governance expansion
+- predictive operationalization
+- runtime integration
+- execution authority
+- autonomous decision systems
+
+---
+
 # Release Lineage
 
 - v0.10 - initial failure formation locator
@@ -253,6 +348,8 @@ Avoided directions:
 - v0.18 - release lineage refresh
 - v0.19 - README encoding artifact fix
 - v0.20 - README ASCII-safe formatting
+- v0.21 - simulator/runtime lineage separation
+- v0.22 - reviewer hardening and stabilization notes
 
 ---
 
