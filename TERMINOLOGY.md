@@ -6,6 +6,8 @@ This document stabilizes engineering and audit terminology for HACR Hybrid Obser
 
 The repository is intended as a bounded runtime diagnostics and topology inspection framework.
 
+Terminology should reinforce observer-restricted, runtime-bounded, reproducibility-oriented diagnostic inspection.
+
 ---
 
 ## Preferred Terminology
@@ -17,25 +19,44 @@ Prefer:
 - runtime continuation persistence
 - downstream continuation reachability
 - dependency visibility
+- dependency persistence
 - topology-scoped inspection
 - reproducibility-oriented diagnostics
 - bounded inspection
 - observer-side diagnostics
 - runtime-local observations
+- operational centralization
+- execution interpretation risk
+- runtime execution prerequisites
+- execution-state visibility
+- interruption viability
+- recovery-state visibility
+- replay visibility
+- retry persistence
+- runtime dependency surface
+- runtime dependency persistence
+- operational interpretation risk
+- human oversight visibility
+- runtime dependency drift
+- runtime continuation reachability
 
 ---
 
-## Avoid
+## Avoided Framing
 
-Avoid:
+Avoid language that implies:
 
+- execution authorization
 - governance authority
-- execution legitimacy
+- operational command
 - autonomous control
 - enforcement infrastructure
-- operational sovereignty
 - universal governance
-- execution authorization systems
+- predictive authority
+- operational correctness guarantees
+- certification authority
+- compliance determination
+- operational dependency inheritance
 
 ---
 
@@ -50,6 +71,8 @@ They are not:
 - certification claims
 - compliance guarantees
 - operational authorization
+- safety guarantees
+- runtime execution prerequisite verification
 
 ---
 
@@ -63,6 +86,29 @@ Runtime falsification overrides representational assumptions.
 
 ---
 
+## Engineering Boundary
+
+The observatory may inspect:
+
+- runtime continuation persistence
+- retry/replay visibility
+- dependency visibility
+- downstream continuation reachability
+- recovery-state visibility
+- topology-scoped runtime behavior
+
+The observatory may not:
+
+- authorize execution
+- govern systems
+- certify safety
+- enforce policy
+- control execution
+- replace operational controls
+- provide operational correctness guarantees
+
+---
+
 ## Final Constraint
 
 All terminology should reinforce:
@@ -72,3 +118,4 @@ All terminology should reinforce:
 - topology-scoped diagnostics
 - reproducibility-oriented review
 - non-authoritative outputs
+- operationally external diagnostics

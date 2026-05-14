@@ -47,8 +47,8 @@ Preferred framing includes:
 Avoid framing the repository as:
 
 - universal governance theory
-- operational legitimacy system
-- sovereign execution model
+- operational interpretation system
+- operational centralization model
 - autonomous control architecture
 - enforcement platform
 - execution authorization layer

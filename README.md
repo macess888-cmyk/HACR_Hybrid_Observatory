@@ -6,50 +6,58 @@ Observer-Restricted Runtime Diagnostics and Topology Inspection Framework
 
 ## Overview
 
-HACR Hybrid Observatory is a bounded diagnostic observability framework intended for runtime continuation inspection, retry/replay visibility analysis, dependency inspection, and topology-scoped runtime diagnostics under declared observation conditions.
+HACR Hybrid Observatory is a bounded runtime diagnostics and topology inspection framework intended for reproducibility-oriented inspection of runtime continuation visibility under declared observation conditions.
 
-The repository focuses on inspecting whether continuation paths, replay persistence, retry persistence, cached execution continuity, or downstream continuation reachability remain observable after interruption, invalidation, refusal, recovery, or topology disruption.
+The repository focuses on inspecting whether continuation persistence, retry persistence, replay persistence, dependency visibility, downstream continuation reachability, or recovery-state persistence remain observable after interruption or invalidation under topology-scoped runtime conditions.
 
 The observatory is intentionally:
 
-* observer-restricted
-* non-authoritative
-* topology-scoped
-* runtime-bounded
-* reproducibility-oriented
-* pressure-testable
-* diagnostic-only
+- observer-restricted
+- non-authoritative
+- topology-scoped
+- runtime-bounded
+- reproducibility-oriented
+- diagnostic-only
+- operationally external
 
 ---
 
 ## Repository Scope
 
-The observatory inspects:
+The observatory supports inspection of:
 
-* runtime continuation persistence
-* retry persistence
-* replay reachability
-* downstream continuation visibility
-* dependency visibility
-* interruption survivability
-* recovery-state propagation
-* topology continuity behavior
-* distributed continuation visibility
+- runtime continuation persistence
+- retry persistence
+- replay persistence
+- dependency visibility
+- downstream continuation reachability
+- interruption persistence
+- recovery-state propagation
+- topology continuity behavior
+- distributed continuation visibility
+- deterministic runtime diagnostics
+
+---
+
+## Repository Boundary
 
 The observatory does not:
 
-* authorize execution
-* govern systems
-* certify safety
-* enforce policy
-* replace operational controls
-* replace governance systems
-* replace compliance processes
-* function as an execution dependency
-* control orchestration
-* determine operational legitimacy
+- authorize execution
+- govern systems
+- certify safety
+- enforce policy
+- replace operational controls
+- replace governance systems
+- replace compliance processes
+- provide operational guarantees
+- provide compliance guarantees
+- function as execution infrastructure
+- function as operational authorization infrastructure
+- function as execution control infrastructure
+- function as autonomous safety infrastructure
 
-All outputs are observer-side runtime diagnostics only.
+All outputs remain observer-side runtime diagnostics only.
 
 ---
 
@@ -61,64 +69,46 @@ No continuation persistence observed within declared runtime and topology scope.
 
 ### HOLD
 
-Insufficient runtime visibility, dependency visibility, recovery visibility, replay visibility, or topology visibility for reliable diagnostic observation.
+Insufficient runtime visibility, dependency visibility, replay visibility, recovery visibility, or topology visibility for reliable diagnostic observation.
 
 ### FAIL
 
-Continuation persistence, replay persistence, retry persistence, cached execution continuity, or downstream continuation reachability remained observable after interruption or invalidation under declared runtime conditions.
-
-Diagnostic outputs are:
-
-* observer-side
-* non-authoritative
-* topology-scoped
-* runtime-bounded
-* reproducibility-oriented
-
-Diagnostic outputs are not:
-
-* governance decisions
-* operational authorization
-* execution permission
-* certification claims
-* policy enforcement
-* safety guarantees
+Continuation persistence, retry persistence, replay persistence, cached execution continuity, or downstream continuation reachability remained observable after interruption or invalidation under declared runtime conditions.
 
 ---
 
-## Engineering Boundary
+## Diagnostic Boundary
 
-The observatory is a bounded runtime diagnostics and topology inspection framework.
+PASS / HOLD / FAIL are observer-side runtime diagnostic observations only.
 
-The observatory does not:
+Outputs are not:
 
-* block execution
-* approve execution
-* replace operational controls
-* replace governance systems
-* replace security tooling
-* replace compliance processes
-* function as active defense infrastructure
-* provide execution guarantees
-
-The observatory remains external to operational execution authority surfaces.
+- execution permissions
+- governance determinations
+- certification claims
+- compliance guarantees
+- operational authorization
+- orchestration dependencies
+- runtime execution prerequisite verification
+- safety guarantees
 
 ---
 
-## Runtime Inspection Focus
+## Runtime Inspection Areas
 
-Current observability areas include:
+Current runtime inspection areas include:
 
-* continuation persistence
-* retry/replay visibility
-* interruption survivability
-* dependency observability
-* topology reachability
-* downstream continuation visibility
-* recovery-state persistence
-* distributed continuation behavior
-* runtime invalidation inspection
-* deterministic diagnostic inspection
+- runtime continuation visibility
+- retry/replay visibility
+- dependency persistence
+- downstream continuation visibility
+- interruption survivability
+- recovery-state persistence
+- distributed continuation behavior
+- topology pressure diagnostics
+- deterministic runtime inspection
+- replay-path visibility
+- continuation pressure analysis
 
 ---
 
@@ -126,24 +116,25 @@ Current observability areas include:
 
 All demonstrations should remain:
 
-* independently reproducible
-* topology-scoped
-* runtime-bounded
-* pressure-testable
-* environment-declared
-* assumption-declared
+- independently reproducible
+- topology-scoped
+- runtime-bounded
+- pressure-testable
+- assumption-declared
+- observer-restricted
 
 Each demonstration should declare:
 
-* topology scope
-* runtime assumptions
-* dependency assumptions
-* recovery assumptions
-* replay assumptions
-* invalidation assumptions
-* observability boundaries
-* known blind spots
-* known non-observable surfaces
+- topology assumptions
+- runtime assumptions
+- dependency assumptions
+- replay assumptions
+- retry assumptions
+- recovery assumptions
+- interruption assumptions
+- observability limitations
+- known blind spots
+- known non-observable surfaces
 
 Runtime falsification overrides representational assumptions.
 
@@ -155,40 +146,64 @@ Representational coherence alone does not establish continuation invalidation.
 
 Known limitations include:
 
-* incomplete topology visibility
-* incomplete runtime visibility
-* distributed system blind spots
-* orchestration opacity
-* recovery-state ambiguity
-* replay-path uncertainty
-* dependency visibility limitations
-* environmental variability
+- incomplete topology visibility
+- incomplete runtime visibility
+- distributed system blind spots
+- orchestration opacity
+- replay-path uncertainty
+- recovery-state ambiguity
+- dependency visibility limitations
+- environmental variability
+- incomplete downstream visibility
+- incomplete external-system visibility
 
 The observatory does not guarantee:
 
-* prevention of execution
-* prevention of retries
-* prevention of replay
-* complete runtime visibility
-* complete downstream visibility
-* safety certification
-* compliance certification
-* operational correctness
+- prevention of execution
+- prevention of retries
+- prevention of replay
+- complete runtime visibility
+- complete downstream visibility
+- complete dependency visibility
+- operational correctness
+- compliance certification
+- safety certification
+
+---
+
+## Engineering Boundary
+
+The observatory is a bounded runtime diagnostics and topology inspection framework.
+
+It does not:
+
+- block execution
+- approve execution
+- intercept execution
+- terminate execution
+- control orchestration
+- provide runtime enforcement
+- replace security tooling
+- replace operational controls
+- provide operational correctness guarantees
+
+The repository remains external to operational dependency surfaces.
 
 ---
 
 ## Design Constraints
 
-The observatory intentionally avoids:
+The repository intentionally avoids:
 
-* governance inflation
-* operational authority surfaces
-* enforcement semantics
-* orchestration integration
-* execution dependency coupling
-* active interception systems
-* force-projection dynamics
-* autonomous control positioning
+- semantic expansion beyond diagnostic scope
+- operational dependency inheritance
+- enforcement semantics
+- orchestration integration
+- execution dependency coupling
+- active interception systems
+- force-projection dynamics
+- autonomous control positioning
+- universal governance framing
 
 Observation does not imply participation.
 
@@ -200,23 +215,24 @@ Operational influence does not imply execution authority.
 
 ## Engineering Position
 
-The repository is intended as a diagnostic observability artifact for:
+The repository is intended as:
 
-* runtime continuity inspection
-* topology pressure-testing
-* replay/retry inspection
-* deterministic diagnostic experimentation
-* reproducibility-oriented review
-* observer-side runtime analysis
+- a runtime diagnostics framework
+- a topology inspection framework
+- a reproducibility-oriented observatory
+- a continuation visibility inspection environment
+- a bounded diagnostic instrumentation artifact
+- an observer-side runtime inspection system
 
 The repository is not intended as:
 
-* governance infrastructure
-* autonomous safety infrastructure
-* execution control infrastructure
-* policy enforcement infrastructure
-* compliance certification infrastructure
-* operational authorization infrastructure
+- governance infrastructure
+- execution control infrastructure
+- operational authorization infrastructure
+- compliance infrastructure
+- certification infrastructure
+- autonomous safety infrastructure
+- policy enforcement infrastructure
 
 ---
 
@@ -224,14 +240,30 @@ The repository is not intended as:
 
 The observatory prioritizes:
 
-* graceful failure over optimization
-* bounded diagnostics over universal claims
-* runtime inspection over semantic expansion
-* falsifiability over abstraction
-* reproducibility over authority
-* topology visibility over representational assumptions
+- graceful failure over optimization
+- bounded diagnostics over universal claims
+- runtime inspection over semantic expansion
+- falsifiability over abstraction
+- reproducibility over interpretation
+- topology visibility over representational assumptions
+- runtime-local inspection over generalized inference
 
-All observations remain bounded to declared runtime and topology conditions.
+---
+
+## Runtime Boundary
+
+All observations remain bounded to:
+
+- declared runtime conditions
+- declared topology scope
+- declared dependency visibility
+- declared replay assumptions
+- declared recovery assumptions
+- declared observability limitations
+
+The observatory inspects runtime continuation visibility.
+
+It does not create or inherit execution authority.
 
 ---
 
@@ -239,28 +271,30 @@ All observations remain bounded to declared runtime and topology conditions.
 
 Current repository direction emphasizes:
 
-* deterministic inspection
-* reproducibility stabilization
-* reviewer-oriented clarity
-* runtime falsifiability
-* bounded observability
-* topology-scoped diagnostics
-* continuation persistence inspection
-* operational restraint
+- deterministic inspection
+- reproducibility stabilization
+- engineering readability
+- audit readability
+- runtime falsifiability
+- topology-scoped diagnostics
+- bounded runtime inspection
+- observer-side operational clarity
+- explicit non-claims
+- continuation persistence inspection
 
 ---
 
 ## Final Constraint
 
-The observatory remains:
+The repository remains:
 
-* observer-restricted
-* non-authoritative
-* execution-external
-* topology-scoped
-* runtime-bounded
-* diagnostic-only
+- observer-restricted
+- non-authoritative
+- execution-external
+- topology-scoped
+- runtime-bounded
+- diagnostic-only
 
-The repository inspects runtime continuation visibility.
+The repository inspects runtime continuation visibility under declared observation conditions.
 
-It does not inherit operational execution authority.
+It does not authorize, govern, certify, enforce, or control execution.

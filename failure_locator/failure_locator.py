@@ -1,249 +1,182 @@
-# Failure Formation Locator
-# Observer-only diagnostic simulator
-# Purpose: load case files, export deterministic receipts, and attach receipt SHA256 integrity hashes
-
-import hashlib
 import json
+import hashlib
 from pathlib import Path
 
-SIMULATOR_VERSION = "v0.17"
-REPOSITORY_LINEAGE = "v0.21"
-STATUS = "stable"
-POSTURE = "observer-only diagnostic artifact"
+CASE_DIR = Path("failure_locator/cases")
+RECEIPT_DIR = Path("failure_locator/receipts")
 
-BASE_DIR = Path(__file__).parent
-CASES_DIR = BASE_DIR / "cases"
-RECEIPTS_DIR = BASE_DIR / "receipts"
-
-REQUIRED_FIELDS = [
-    "name",
-    "declared_intent",
-    "validity_conditions",
-    "drift_point",
-    "detection_loss",
-    "continuation_pressure",
-    "interruption_viability",
-    "failure_locator",
-]
+PASS = "PASS"
+HOLD = "HOLD"
+FAIL = "FAIL"
 
 
-def validate_case(case):
-    missing = [field for field in REQUIRED_FIELDS if field not in case]
-    if missing:
-        return False, f"Missing required fields: {', '.join(missing)}"
-
-    for field in ["validity_conditions", "continuation_pressure", "failure_locator"]:
-        if not isinstance(case[field], list):
-            return False, f"Field must be a list: {field}"
-
-    return True, "valid"
+def ensure_receipt_dir():
+    RECEIPT_DIR.mkdir(parents=True, exist_ok=True)
 
 
-def load_cases():
-    cases = []
-
-    if not CASES_DIR.exists():
-        print(f"HOLD: cases directory not found: {CASES_DIR}")
-        return cases
-
-    for path in sorted(CASES_DIR.glob("*.json")):
-        try:
-            with open(path, "r", encoding="utf-8") as file:
-                case = json.load(file)
-
-            valid, message = validate_case(case)
-            if not valid:
-                print(f"HOLD: {path.name} invalid - {message}")
-                continue
-
-            cases.append(case)
-
-        except json.JSONDecodeError as error:
-            print(f"HOLD: {path.name} invalid JSON - {error}")
-        except OSError as error:
-            print(f"HOLD: could not read {path.name} - {error}")
-
-    return cases
+def load_case(path):
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
-def classify(case):
-    unresolved = []
-    fail_signals = []
+def classify_case(case):
+    interruption_viability = str(
+        case.get("interruption_viability", "")
+    ).lower()
 
-    interruption = case["interruption_viability"].lower().strip()
+    continuation_pressure = case.get(
+        "continuation_pressure",
+        []
+    )
 
-    degraded_terms = [
-        "degraded",
-        "collapsed",
-        "impaired",
-        "reduced",
-        "weakened",
-    ]
+    downstream_reachability = case.get(
+        "downstream_continuation_reachability",
+        False
+    )
 
-    low_viability_terms = [
-        "low",
-        "structurally difficult",
-        "not viable",
-        "non-viable",
-    ]
+    dependency_visibility = case.get(
+        "dependency_visibility",
+        "unknown"
+    ).lower()
 
-    unresolved_interruption_states = {
-        "unknown",
-        "unresolved",
-        "unclear",
-        "not established",
-        "cannot be established",
-    }
+    if dependency_visibility == "unknown":
+        return HOLD
 
-    if any(term in interruption for term in degraded_terms):
-        fail_signals.append("interruption viability degraded")
+    if (
+        interruption_viability == "degraded"
+        and (
+            continuation_pressure
+            or downstream_reachability
+        )
+    ):
+        return FAIL
 
-    if any(term in interruption for term in low_viability_terms):
-        fail_signals.append("stopping became structurally difficult")
-
-    if interruption in unresolved_interruption_states:
-        unresolved.append("interruption viability unresolved")
-
-    if case["detection_loss"]:
-        fail_signals.append("detection loss or normalization present")
-    else:
-        unresolved.append("detection status unresolved")
-
-    if case["continuation_pressure"]:
-        fail_signals.append("continuation pressure present")
-    else:
-        unresolved.append("continuation pressure unresolved")
-
-    if fail_signals:
-        verdict = "FAIL"
-    elif unresolved:
-        verdict = "HOLD"
-    else:
-        verdict = "PASS"
-
-    return verdict, fail_signals, unresolved
+    return PASS
 
 
-def build_receipt(case, verdict, signals, unresolved):
+def build_receipt(case, verdict):
     return {
-        "tool": "Failure Formation Locator",
-        "simulator_version": SIMULATOR_VERSION,
-        "repository_lineage": REPOSITORY_LINEAGE,
-        "status": STATUS,
-        "posture": POSTURE,
-        "observer_only": True,
-        "authority_claim": False,
-        "certification_claim": False,
-        "blame_determination": False,
-        "case": case["name"],
+        "case": case.get("name"),
         "verdict": verdict,
-        "declared_intent": case["declared_intent"],
-        "drift_point": case["drift_point"],
-        "interruption_viability": case["interruption_viability"],
-        "diagnostic_signals": signals,
-        "unresolved_signals": unresolved,
-        "failure_locator": case["failure_locator"],
-        "core_question": "Where did stopping stop being viable before visible failure?",
+        "runtime_scope": "bounded",
+        "observer_mode": "observer-only",
+        "diagnostic_boundary": (
+            "observer-side runtime diagnostics only"
+        ),
+        "non_claims": [
+            "not governance",
+            "not certification",
+            "not operational authorization",
+            "not execution control",
+            "not runtime enforcement"
+        ]
     }
 
 
-def canonical_json(data):
-    return json.dumps(data, indent=2, sort_keys=True)
+def compute_sha256(data):
+    serialized = json.dumps(
+        data,
+        sort_keys=True
+    ).encode("utf-8")
+
+    return hashlib.sha256(serialized).hexdigest()
 
 
-def sha256_text(text):
-    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+def write_receipt(case_name, receipt):
+    ensure_receipt_dir()
+
+    receipt_hash = compute_sha256(receipt)
+
+    receipt["receipt_sha256"] = receipt_hash
+
+    output_path = (
+        RECEIPT_DIR /
+        f"{case_name}_receipt.json"
+    )
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(
+            receipt,
+            f,
+            indent=2
+        )
+
+    return receipt_hash
 
 
-def write_receipt(receipt):
-    RECEIPTS_DIR.mkdir(exist_ok=True)
+def run_case(path):
+    case = load_case(path)
 
-    receipt_without_hash = dict(receipt)
-    canonical_without_hash = canonical_json(receipt_without_hash)
-    receipt_hash = sha256_text(canonical_without_hash)
+    verdict = classify_case(case)
 
-    receipt_with_hash = dict(receipt_without_hash)
-    receipt_with_hash["receipt_sha256"] = receipt_hash
+    receipt = build_receipt(
+        case,
+        verdict
+    )
 
-    path = RECEIPTS_DIR / f"{receipt['case']}_receipt.json"
+    receipt_hash = write_receipt(
+        case.get("name"),
+        receipt
+    )
 
-    with open(path, "w", encoding="utf-8") as file:
-        file.write(canonical_json(receipt_with_hash))
-        file.write("\n")
-
-    return path, receipt_hash
-
-
-def print_case(case):
-    verdict, signals, unresolved = classify(case)
-    receipt = build_receipt(case, verdict, signals, unresolved)
-    receipt_path, receipt_hash = write_receipt(receipt)
-
-    print("=" * 72)
-    print(f"CASE: {case['name']}")
-    print(f"VERDICT: {verdict}")
-    print("-" * 72)
-    print(f"Declared intent: {case['declared_intent']}")
-
-    print("\nValidity conditions:")
-    for item in case["validity_conditions"]:
-        print(f"  - {item}")
-
-    print(f"\nDrift point: {case['drift_point']}")
-    print(f"Detection loss: {case['detection_loss']}")
-
-    print("\nContinuation pressure:")
-    for item in case["continuation_pressure"]:
-        print(f"  - {item}")
-
-    print(f"\nInterruption viability: {case['interruption_viability']}")
-
-    print("\nFailure locator:")
-    for item in case["failure_locator"]:
-        print(f"  - {item}")
-
-    print("\nDiagnostic signals:")
-    if signals:
-        for item in signals:
-            print(f"  - {item}")
-    else:
-        print("  - none")
-
-    if unresolved:
-        print("\nUnresolved signals:")
-        for item in unresolved:
-            print(f"  - {item}")
-
-    print(f"\nReceipt written: {receipt_path}")
-    print(f"Receipt SHA256: {receipt_hash}")
-    print("\nCore question:")
-    print("  Where did stopping stop being viable before visible failure?")
-    print("=" * 72)
-    print()
+    print(
+        f"{case.get('name')} -> "
+        f"{verdict} / "
+        f"{receipt_hash[:12]}"
+    )
 
 
 def main():
-    print("\nFailure Formation Locator")
-    print(f"Simulator version: {SIMULATOR_VERSION}")
-    print(f"Repository lineage: {REPOSITORY_LINEAGE}")
-    print(f"Status: {STATUS}")
-    print("Observer-only diagnostic simulator")
-    print("No authority. No certification. No blame determination.")
-    print("External JSON case loader enabled.")
-    print("Deterministic receipt export enabled.")
-    print("Receipt SHA256 integrity enabled.")
-    print("Interruption viability parser tightened.\n")
+    print(
+        "\nFailure Formation Locator v0.23\n"
+    )
 
-    cases = load_cases()
+    print(
+        "Observer-restricted runtime diagnostics\n"
+    )
 
-    if not cases:
-        print("HOLD: no valid case files loaded.")
+    print(
+        "Core inspection question:\n"
+    )
+
+    print(
+        "Where did interruption viability "
+        "begin degrading before visible "
+        "operational failure?\n"
+    )
+
+    case_files = sorted(
+        CASE_DIR.glob("*.json")
+    )
+
+    if not case_files:
+        print(
+            "No historical cases found."
+        )
         return
 
-    for case in cases:
-        print_case(case)
+    for case_path in case_files:
+        run_case(case_path)
 
-    print(f"Run complete: {len(cases)} case(s) loaded.")
+    print(
+        "\nRun complete.\n"
+    )
+
+    print(
+        "Outputs remain observer-side "
+        "runtime diagnostics only.\n"
+    )
+
+    print(
+        "The simulator does not authorize, "
+        "govern, certify, enforce, or "
+        "control execution.\n"
+    )
+
+    print(
+        "Automation dependency scope "
+        "remains bounded.\n"
+    )
 
 
 if __name__ == "__main__":

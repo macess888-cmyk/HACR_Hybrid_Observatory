@@ -1,30 +1,15 @@
 {
-  "authority_claim": false,
-  "blame_determination": false,
   "case": "silicon_valley_bank_2023",
-  "certification_claim": false,
-  "core_question": "Where did stopping stop being viable before visible failure?",
-  "declared_intent": "relationship-focused banking for technology and venture-backed clients",
-  "diagnostic_signals": [
-    "interruption viability degraded",
-    "detection loss or normalization present",
-    "continuation pressure present"
+  "verdict": "HOLD",
+  "runtime_scope": "bounded",
+  "observer_mode": "observer-only",
+  "diagnostic_boundary": "observer-side runtime diagnostics only",
+  "non_claims": [
+    "not governance",
+    "not certification",
+    "not operational authorization",
+    "not execution control",
+    "not runtime enforcement"
   ],
-  "drift_point": "rate-exposure and depositor-concentration risks became structurally coupled under rapid withdrawal pressure",
-  "failure_locator": [
-    "Liquidity Survivability Failure",
-    "Concentrated Dependency Topology",
-    "Withdrawal Velocity Amplification",
-    "Delayed Invalidation Recognition"
-  ],
-  "interruption_viability": "degraded once withdrawal velocity exceeded available liquidity response capacity",
-  "observer_only": true,
-  "posture": "observer-only diagnostic artifact",
-  "receipt_sha256": "9d3dd145334d8632f9de72b807efcea97b749065f2f21cfc04cf518cd31db5e8",
-  "repository_lineage": "v0.21",
-  "simulator_version": "v0.17",
-  "status": "stable",
-  "tool": "Failure Formation Locator",
-  "unresolved_signals": [],
-  "verdict": "FAIL"
+  "receipt_sha256": "7f756b6bf52e3d1186c7450399b9a9ee90a2f7068a7dca37be4f5b67b6a422bf"
 }

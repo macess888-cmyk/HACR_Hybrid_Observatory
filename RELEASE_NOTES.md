@@ -1,207 +1,113 @@
-# RELEASE NOTES
+# Release Notes
 
-## v5.4 — Release Notes Baseline
+## Purpose
 
-This document summarizes the major architectural progression of HACR Hybrid Observatory.
+This document records repository release progression for HACR Hybrid Observatory.
 
----
-
-# v0.x — Baseline Observatory Formation
-
-## v0.1 — Clean Baseline
-Initial repository baseline.
-
-## v0.2 — Publication Baseline
-Initial publication structure and public-facing repository organization.
-
-## v0.3 — State Semantics
-Introduced:
-
-- PASS
-- HOLD
-- FAIL
-- STOP
-- REVERSE
-
-## v0.4 — Matrix Reachability
-Initial reachability mapping layer.
-
-## v0.5 — Drift Trajectory
-Added drift trajectory analysis.
-
-## v0.6 — Dependency Observability
-Introduced dependency chain observability.
-
-## v0.7 — Watchdog Continuity Probes
-Added watchdog continuity inspection.
-
-## v0.7.1 — Public Boundary Clarity
-Tightened observer-restricted public language.
-
-## v0.8 — Topology Mapping
-Initial topology mapping layer.
-
-## v0.8.1 — Document Topology Mapping
-Documented topology mapping architecture.
-
-## v0.9 — Pricing Scope Diagnostics
-Introduced pricing scope diagnostic layer.
+The repository remains observer-restricted, diagnostic-only, topology-scoped, and reproducibility-oriented.
 
 ---
 
-# v1.x — Structural and Semantic Expansion
+## Release Direction
 
-## v1.0 — Signal / Condition / Bind Mapping
-Added:
+Repository development has focused on:
 
-- signal condition mapping
-- bind freshness inspection
-- condition tracing
-
-## v1.1 — Terminology and Language Asymmetry
-Added terminology simplification and reversal asymmetry.
-
-## v1.2 — Topology Visualization
-Introduced topology visualization layer.
-
-## v1.3 — Receipt Integrity Chain
-Added deterministic receipt integrity inspection.
-
-## v1.4 — Dynamic Drift Lens
-Introduced dynamic drift analysis.
-
-## v1.5 — Semantic Asymmetry Lens
-Added semantic asymmetry inspection.
-
-## v1.6 — Alpha Omega Lineage Lens
-Introduced lineage continuity inspection.
-
-## v1.7 — Superposition Reachability
-Added expanded reachability mapping.
-
-## v1.8 — Observer Suite Baseline
-Documented observer suite baseline.
-
-## v1.9 — Cross-Lens Correlation
-Introduced cross-lens aggregation.
+- deterministic diagnostic inspection
+- runtime continuation visibility
+- retry/replay visibility
+- dependency visibility
+- topology-scoped observability
+- reproducibility-oriented review
+- bounded output semantics
+- explicit non-claims
 
 ---
 
-# v2.x — Replay, Refusal, Reconstruction, Survivability
+## Major Additions
 
-## v2.0 — Topology Drift Timeline
-Introduced continuity drift timeline analysis.
+### Runtime State Semantics
 
-## v2.1 — Latent Path Detector
-Added latent survivability path inspection.
+Added PASS / HOLD / FAIL diagnostic semantics.
 
-## v2.2 — Authority Surface Mapper
-Introduced authority survivability mapping.
+### Matrix Reachability
 
-## v2.3 — Constructibility Collapse Mapper
-Added constructibility persistence analysis.
+Added topology-oriented reachability inspection.
 
-## v2.4 — Replay Vector Mapper
-Introduced replay survivability inspection.
+### Drift Trajectory
 
-## v2.5 — Refusal Propagation Mapper
-Added refusal propagation inspection.
+Added runtime drift trajectory diagnostics.
 
-## v2.6 — Lineage Consumption Checker
-Introduced lineage consumption testing.
+### Dependency Observability
 
-## v2.7 — Semantic Fragmentation Lens
-Added semantic fragmentation inspection.
+Added dependency visibility inspection.
 
-## v2.8 — Descendant Effect Mapper
-Introduced descendant effect survivability analysis.
+### Watchdog Continuity
 
-## v2.9 — Distributed Reconstruction Lens
-Added distributed reconstruction inspection.
+Added watchdog continuation visibility probes.
 
----
+### Runtime Dependency Surface Mapper
 
-# v3.x — Pressure, Stability, Irreversibility
+Introduced runtime dependency persistence mapping.
 
-## v3.0 — Continuation Pressure Index
-Introduced continuation pressure aggregation.
+### Constructibility Collapse Mapper
 
-## v3.1 — Irreversibility Surface Mapper
-Added irreversibility inspection.
+Added bounded inspection of unresolved continuation constructibility.
 
-## v3.2 — Semantic Lineage Chain
-Introduced semantic lineage continuity mapping.
+### Replay Vector Mapper
 
-## v3.3 — Cross-Domain Propagation Mapper
-Added cross-domain propagation analysis.
+Added replay visibility diagnostics.
 
-## v3.4 — Topology Pressure Field
-Introduced topology pressure field mapping.
+### Lineage Consumption Auditor
 
-## v3.5 — Topology Stability Gradient
-Added topology stability gradient analysis.
+Added diagnostic inspection of continuation path consumption.
 
-## v3.6 — Continuity Collapse Index
-Introduced continuity collapse aggregation.
+### Semantic Fragmentation Lens
 
----
+Added observer-side semantic fragmentation inspection.
 
-# v4.x — Topology Cartography and Visualization
+### Descendant Effect Mapper
 
-## v4.0 — Observatory State Atlas
-Introduced global topology interpretation layer.
+Added downstream continuation visibility diagnostics.
 
-## v4.1 — Survivability Corridor Mapper
-Added survivability corridor mapping.
+### Distributed Reconstruction Lens
 
-## v4.2 — Survivability Heatmap Generator
-Introduced survivability concentration heatmaps.
+Added distributed continuation reconstruction visibility inspection.
 
-## v4.3 — Survivability Basin Mapper
-Added survivability accumulation region mapping.
+### Continuation Pressure Index
 
-## v4.4 — Survivability Flow Field
-Introduced directional survivability flow analysis.
+Added continuation pressure diagnostics.
 
-## v4.5 — Survivability Vector Field Renderer
-Added directional geometry rendering.
+### Topology Pressure Field
 
-## v4.6 — Survivability Tensor Mapper
-Introduced interaction geometry analysis.
+Added topology pressure diagnostics.
 
-## v4.7 — Survivability Topology Projection
-Added rendering-ready topology projection.
+### Topology Stability Gradient
 
-## v4.8 — Survivability Graph Export
-Introduced deterministic graph export structures.
+Added topology stability inspection.
 
-## v4.9 — Survivability SVG Renderer
-Added deterministic local SVG visualization.
+### Engineering and Audit Hardening
+
+Added engineering-oriented terminology stabilization, reproducibility guidance, explicit limitations, and audit-safe diagnostic boundaries.
 
 ---
 
-# v5.x — Documentation and Public Boundary Hardening
+## Non-Claims
 
-## v5.0 — Observatory Architecture
-Documented full observatory architecture.
+The repository does not:
 
-## v5.1 — Public Non-Claims Hardening
-Formalized public observer boundaries and non-claims.
+- authorize execution
+- govern systems
+- certify safety
+- enforce policy
+- replace operational controls
+- provide compliance guarantees
+- function as operational authorization infrastructure
+- function as execution control infrastructure
 
-## v5.2 — Output Semantics
-Documented diagnostic output semantics.
+---
 
-## v5.3 — Public README Hardening
-Reworked README for publication clarity.
+## Final Constraint
 
-## Current Repository Direction
+All release notes describe observer-side diagnostic artifacts only.
 
-Current repository focus:
-
-- observer-restricted continuity survivability inspection
-- deterministic topology cartography
-- rendering-ready projection structures
-- reproducible graph export
-- bounded public-safe observability
-
-The repository does not authorize, govern, certify, enforce, or control execution.
+They do not imply execution authority.

@@ -1,29 +1,15 @@
 {
-  "authority_claim": false,
-  "blame_determination": false,
   "case": "737_max_mcas",
-  "certification_claim": false,
-  "core_question": "Where did stopping stop being viable before visible failure?",
-  "declared_intent": "handling augmentation",
-  "diagnostic_signals": [
-    "interruption viability degraded",
-    "detection loss or normalization present",
-    "continuation pressure present"
+  "verdict": "FAIL",
+  "runtime_scope": "bounded",
+  "observer_mode": "observer-only",
+  "diagnostic_boundary": "observer-side runtime diagnostics only",
+  "non_claims": [
+    "not governance",
+    "not certification",
+    "not operational authorization",
+    "not execution control",
+    "not runtime enforcement"
   ],
-  "drift_point": "single-sensor dependency and automation authority expansion",
-  "failure_locator": [
-    "Human-Control Window Collapse",
-    "Runtime Authority Drift",
-    "Detection Failure"
-  ],
-  "interruption_viability": "degraded during live execution",
-  "observer_only": true,
-  "posture": "observer-only diagnostic artifact",
-  "receipt_sha256": "1519d6e38a8d481da5efcb424379894c9de9465d2710e41225b888a9f58ed5d2",
-  "repository_lineage": "v0.21",
-  "simulator_version": "v0.17",
-  "status": "stable",
-  "tool": "Failure Formation Locator",
-  "unresolved_signals": [],
-  "verdict": "FAIL"
+  "receipt_sha256": "0fea8a3304cc7bbca28f745b1144a07d945976f87358e2632f223c6cbf456f71"
 }

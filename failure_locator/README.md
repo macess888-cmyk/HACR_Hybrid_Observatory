@@ -1,121 +1,114 @@
-# Failure Locator
+# Failure Formation Locator (FFL)
 
-## Purpose
-
-Failure Locator is a bounded runtime diagnostics component within HACR Hybrid Observatory.
-
-It supports inspection of:
-
-- runtime continuation persistence
-- retry/replay visibility
-- dependency visibility
-- interruption persistence
-- downstream continuation reachability
-- recovery-state persistence
-
-under declared runtime conditions.
+Observer-restricted runtime diagnostics simulator for inspecting where runtime continuation persistence remained observable after interruption viability degraded under historical operational conditions.
 
 ---
 
-## Diagnostic Boundary
+# Core Question
 
-Failure Locator is observer-restricted and diagnostic-only.
+> Where did interruption viability begin degrading before visible operational failure?
 
-It does not:
+The simulator does not:
 
+- determine blame
+- certify safety
 - authorize execution
 - govern systems
-- certify safety
 - enforce policy
-- replace operational controls
-- control orchestration
-- provide operational guarantees
+- predict future failure
 
-Outputs are observer-side runtime diagnostics only.
+The simulator provides bounded, reproducible runtime diagnostic observations only.
 
 ---
 
-## Diagnostic Outputs
+# Scope
 
-PASS / HOLD / FAIL are bounded runtime diagnostic observations.
+The Failure Formation Locator inspects:
 
-Outputs may assist inspection of:
-
-- runtime continuation reachability
-- retry persistence
-- replay persistence
+- runtime continuation persistence
+- interruption viability degradation
 - dependency visibility
-- downstream continuation visibility
-
-Outputs are not:
-
-- execution permissions
-- operational authorization
-- governance determinations
-- compliance guarantees
-- certification claims
-
----
-
-## Runtime Inspection Areas
-
-Current runtime inspection areas include:
-
-- replay persistence
-- retry persistence
-- interruption survivability
-- dependency persistence
+- replay/retry persistence
+- operational momentum persistence
+- topology incompatibility
+- hidden continuation conditions
 - downstream continuation reachability
-- recovery-state propagation
-- topology-scoped runtime visibility
+- continuation normalization behavior
+
+The focus is not terminal failure events alone.
+
+The focus is where interruption viability degraded before visible operational collapse.
 
 ---
 
-## Human Oversight Visibility Collapse
+# Observer Restriction
 
-This repository may inspect conditions where human oversight visibility becomes incomplete during distributed continuation behavior.
+The simulator remains:
 
-This inspection remains:
-
-- observer-side
+- observer-only
+- deterministic
+- reproducible
+- non-authoritative
+- execution-external
 - topology-scoped
 - runtime-bounded
-- reproducibility-oriented
 
-The repository does not provide operational governance or execution control.
+The simulator does not:
 
----
+- authorize execution
+- certify systems
+- determine legal liability
+- replace engineering review
+- replace safety analysis
+- govern operational systems
+- determine runtime execution prerequisites
+- control runtime environments
+- provide operational authorization
 
-## Automated Execution Systems
-
-The repository may inspect runtime continuation behavior involving automated execution systems under declared runtime conditions.
-
-This does not imply:
-
-- operational authorization
-- autonomous control
-- execution governance
-- enforcement capability
+Diagnostic outputs remain bounded observational artifacts only.
 
 ---
 
-## Runtime Limitations
+# PASS / HOLD / FAIL Semantics
 
-Known limitations include:
+PASS:
+- no unresolved runtime continuation persistence observed within declared runtime scope
 
-- incomplete runtime visibility
+HOLD:
+- insufficient runtime visibility
+- unresolved topology visibility
+- unresolved interruption viability
+- unresolved continuation persistence
 - incomplete dependency visibility
-- orchestration opacity
-- distributed continuation blind spots
-- replay-path ambiguity
-- environmental variability
 
-Runtime falsification overrides representational assumptions.
+FAIL:
+- runtime continuation persistence remained observable after structural degradation
+- interruption viability degraded
+- operational continuation remained favored despite degraded execution-state visibility
+- downstream continuation reachability remained observable
+
+FAIL is not:
+
+- a legal conclusion
+- a certification result
+- an operational interpretation conclusion
+- proof of future failure
+
+FAIL is a bounded runtime diagnostic observation only.
 
 ---
 
-## Final Constraint
+# Current Architecture
 
-Failure Locator remains an observer-side runtime diagnostics component.
-
-It does not inherit execution authority.
+```text
+external historical case
+    |
+deterministic loader
+    |
+runtime classification
+    |
+portable receipt
+    |
+canonical serialization
+    |
+SHA256 integrity surface

@@ -1,57 +1,72 @@
-# HACR Interface Coherence — v0.8
+# Interface Coherence v0.8
 
-## Current stabilization target
+## Purpose
 
-Reduce symbolic surplus and tighten executable coherence.
+This document describes interface coherence for bounded runtime diagnostics and topology-scoped inspection.
 
-## Core review concern
+The repository remains observer-restricted, diagnostic-only, and reproducibility-oriented.
 
-The observatory should make its operative chain easier to inspect:
+---
 
-Input
-→ lens outputs
-→ pressure signals
-→ graph export
-→ SVG visualization
+## Coherence Target
 
-## Canonical demo chain
+The interface should support:
 
-Controlled input:
-`Inputs/watchdog_continuity_case.json`
+- deterministic inputs
+- deterministic outputs
+- reproducible diagnostic runs
+- topology-scoped inspection
+- runtime continuation visibility
+- dependency visibility
+- retry/replay visibility
 
-Primary outputs:
+---
 
-- `Outputs/watchdog_report.json`
-- `Outputs/replay_vector_report.json`
-- `Outputs/refusal_propagation_report.json`
-- `Outputs/authority_surface_report.json`
-- `Outputs/continuation_pressure_report.json`
-- `Outputs/survivability_graph_export.json`
-- `Outputs/survivability_graph.svg`
+## Controlled Diagnostic Input
 
-## Intended interpretation
+Controlled diagnostic inputs are used to inspect whether continuation persistence remains observable under declared runtime conditions.
 
-The demo does not prove governance.
+Controlled inputs do not imply execution control.
 
-It shows whether continuity survivability remains observable after refusal under controlled deterministic conditions.
+---
 
-## Boundary
+## Output Artifacts
 
-The observatory is:
+Diagnostic outputs may include:
 
-- observer-restricted
-- deterministic
-- reproducible
-- non-authoritative
+- runtime diagnostic reports
+- continuation visibility reports
+- dependency visibility reports
+- receipt artifacts
+- `Outputs/runtime_dependency_report.json`
+
+These outputs are observer-side diagnostic artifacts only.
+
+---
+
+## Non-Claims
+
+The demo does not prove:
+
+- governance
+- safety
+- compliance
+- operational correctness
+- execution permission
+- certification
+
+The system is:
+
 - not runtime control
 - not certification
-- not production monitoring
+- not governance
+- not policy enforcement
+- not operational authorization
 
-## Next hardening target
+---
 
-Add consistent report fields:
+## Final Constraint
 
-- status
-- observer_mode
-- derived_from
-- non_claims
+Interface coherence supports reproducible diagnostic review only.
+
+It does not create or inherit execution authority.
