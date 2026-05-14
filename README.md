@@ -52,6 +52,7 @@ The observatory does not:
 - replace compliance processes
 - provide operational guarantees
 - provide compliance guarantees
+- provide operational interpretation validity
 - function as execution infrastructure
 - function as operational authorization infrastructure
 - function as execution control infrastructure
