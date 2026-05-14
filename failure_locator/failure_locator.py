@@ -1,7 +1,8 @@
-# Failure Formation Locator v0.12
+# Failure Formation Locator v0.13
 # Observer-only diagnostic simulator
-# Purpose: load external case files and export deterministic diagnostic receipts
+# Purpose: load case files, export deterministic receipts, and attach receipt SHA256 integrity hashes
 
+import hashlib
 import json
 from pathlib import Path
 
@@ -98,7 +99,7 @@ def classify(case):
 def build_receipt(case, verdict, signals, unresolved):
     return {
         "tool": "Failure Formation Locator",
-        "version": "v0.12",
+        "version": "v0.13",
         "observer_only": True,
         "authority_claim": False,
         "certification_claim": False,
@@ -115,20 +116,37 @@ def build_receipt(case, verdict, signals, unresolved):
     }
 
 
+def canonical_json(data):
+    return json.dumps(data, indent=2, sort_keys=True)
+
+
+def sha256_text(text):
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
 def write_receipt(receipt):
     RECEIPTS_DIR.mkdir(exist_ok=True)
+
+    receipt_without_hash = dict(receipt)
+    canonical_without_hash = canonical_json(receipt_without_hash)
+    receipt_hash = sha256_text(canonical_without_hash)
+
+    receipt_with_hash = dict(receipt_without_hash)
+    receipt_with_hash["receipt_sha256"] = receipt_hash
+
     path = RECEIPTS_DIR / f"{receipt['case']}_receipt.json"
 
     with open(path, "w", encoding="utf-8") as file:
-        json.dump(receipt, file, indent=2, sort_keys=True)
+        file.write(canonical_json(receipt_with_hash))
+        file.write("\n")
 
-    return path
+    return path, receipt_hash
 
 
 def print_case(case):
     verdict, signals, unresolved = classify(case)
     receipt = build_receipt(case, verdict, signals, unresolved)
-    receipt_path = write_receipt(receipt)
+    receipt_path, receipt_hash = write_receipt(receipt)
 
     print("=" * 72)
     print(f"CASE: {case['name']}")
@@ -166,6 +184,7 @@ def print_case(case):
             print(f"  - {item}")
 
     print(f"\nReceipt written: {receipt_path}")
+    print(f"Receipt SHA256: {receipt_hash}")
     print("\nCore question:")
     print("  Where did stopping stop being viable before visible failure?")
     print("=" * 72)
@@ -173,11 +192,12 @@ def print_case(case):
 
 
 def main():
-    print("\nFailure Formation Locator v0.12")
+    print("\nFailure Formation Locator v0.13")
     print("Observer-only diagnostic simulator")
     print("No authority. No certification. No blame determination.")
     print("External JSON case loader enabled.")
-    print("Deterministic receipt export enabled.\n")
+    print("Deterministic receipt export enabled.")
+    print("Receipt SHA256 integrity enabled.\n")
 
     cases = load_cases()
 
