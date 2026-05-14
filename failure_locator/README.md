@@ -10,7 +10,7 @@ Observer-only diagnostic simulator for locating where continuation pressure surv
 
 The simulator does not attempt to determine blame, predict catastrophe, certify safety, or govern execution.
 
-Its purpose is to provide deterministic, reproducible diagnostic observations around failure formation conditions.
+Its purpose is to provide deterministic, reproducible diagnostic observations around historical failure formation conditions.
 
 ---
 
@@ -24,7 +24,7 @@ The Failure Formation Locator examines:
 - topology incompatibility
 - maintenance reality divergence
 - operational momentum
-- runtime authority drift
+- operational-control drift
 - hidden survivability conditions
 
 The focus is not only terminal failure events.
@@ -116,6 +116,25 @@ failure_locator/
 
 ---
 
+# Current Historical Cases
+
+Current cases include:
+
+- Boeing 737 MAX MCAS
+- Silicon Valley Bank (2023)
+- Challenger (1986)
+- Deepwater Horizon (2010)
+
+These are used as historically inspectable operational cases only.
+
+The simulator does not perform:
+- live institutional scoring
+- predictive risk analysis
+- regulatory assessment
+- operational certification
+
+---
+
 # Case File Structure
 
 Example:
@@ -184,27 +203,6 @@ The simulator:
 
 ---
 
-# Development Direction
-
-Current priorities:
-
-- reproducibility
-- bounded semantics
-- deterministic outputs
-- reviewer falsifiability
-- operational clarity
-- topology-bounded diagnostics
-
-Avoided directions:
-
-- ontology inflation
-- generalized governance claims
-- predictive authority
-- universal systems theory
-- operational dependency formation
-
----
-
 # Design Constraint
 
 The simulator intentionally remains small enough to:
@@ -218,15 +216,62 @@ Runtime falsification overrides semantic confidence.
 
 ---
 
-# Status
+# Development Direction
 
-Current release lineage:
+Current priorities:
+
+- reproducibility
+- bounded semantics
+- deterministic outputs
+- reviewer falsifiability
+- operational clarity
+- topology-bounded diagnostics
+- parser tightening
+- receipt integrity
+
+Avoided directions:
+
+- ontology inflation
+- generalized governance claims
+- predictive authority
+- universal systems theory
+- operational dependency formation
+
+---
+
+# Release Lineage
 
 - v0.10 — initial failure formation locator
 - v0.11 — external JSON case loading
 - v0.12 — deterministic receipt export
 - v0.13 — receipt SHA256 integrity
+- v0.14 — hardened README and explicit non-claims
+- v0.15 — Silicon Valley Bank historical case
+- v0.16 — Challenger and Deepwater Horizon cross-domain historical cases
+- v0.17 — tightened interruption viability parsing
 
-Current posture:
+---
 
-observer-side diagnostic infrastructure only.
+# Current Posture
+
+The repository remains:
+
+- observer-only
+- deterministic
+- historically grounded
+- reproducible
+- execution-external
+- independently reviewable
+
+The system is intended for:
+- inspection
+- falsification
+- adversarial review
+- historical morphology observation
+
+It is not intended to function as:
+- operational governance infrastructure
+- execution authority
+- regulatory enforcement
+- institutional risk scoring
+- predictive catastrophe modeling
