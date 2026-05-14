@@ -1,12 +1,13 @@
-# Failure Formation Locator v0.11
+# Failure Formation Locator v0.12
 # Observer-only diagnostic simulator
-# Purpose: load external case files and locate where continuation pressure survives after validity degrades
+# Purpose: load external case files and export deterministic diagnostic receipts
 
 import json
 from pathlib import Path
 
-CASES_DIR = Path(__file__).parent / "cases"
-
+BASE_DIR = Path(__file__).parent
+CASES_DIR = BASE_DIR / "cases"
+RECEIPTS_DIR = BASE_DIR / "receipts"
 
 REQUIRED_FIELDS = [
     "name",
@@ -25,8 +26,7 @@ def validate_case(case):
     if missing:
         return False, f"Missing required fields: {', '.join(missing)}"
 
-    list_fields = ["validity_conditions", "continuation_pressure", "failure_locator"]
-    for field in list_fields:
+    for field in ["validity_conditions", "continuation_pressure", "failure_locator"]:
         if not isinstance(case[field], list):
             return False, f"Field must be a list: {field}"
 
@@ -95,8 +95,40 @@ def classify(case):
     return verdict, fail_signals, unresolved
 
 
+def build_receipt(case, verdict, signals, unresolved):
+    return {
+        "tool": "Failure Formation Locator",
+        "version": "v0.12",
+        "observer_only": True,
+        "authority_claim": False,
+        "certification_claim": False,
+        "blame_determination": False,
+        "case": case["name"],
+        "verdict": verdict,
+        "declared_intent": case["declared_intent"],
+        "drift_point": case["drift_point"],
+        "interruption_viability": case["interruption_viability"],
+        "diagnostic_signals": signals,
+        "unresolved_signals": unresolved,
+        "failure_locator": case["failure_locator"],
+        "core_question": "Where did stopping stop being viable before visible failure?",
+    }
+
+
+def write_receipt(receipt):
+    RECEIPTS_DIR.mkdir(exist_ok=True)
+    path = RECEIPTS_DIR / f"{receipt['case']}_receipt.json"
+
+    with open(path, "w", encoding="utf-8") as file:
+        json.dump(receipt, file, indent=2, sort_keys=True)
+
+    return path
+
+
 def print_case(case):
     verdict, signals, unresolved = classify(case)
+    receipt = build_receipt(case, verdict, signals, unresolved)
+    receipt_path = write_receipt(receipt)
 
     print("=" * 72)
     print(f"CASE: {case['name']}")
@@ -133,6 +165,7 @@ def print_case(case):
         for item in unresolved:
             print(f"  - {item}")
 
+    print(f"\nReceipt written: {receipt_path}")
     print("\nCore question:")
     print("  Where did stopping stop being viable before visible failure?")
     print("=" * 72)
@@ -140,10 +173,11 @@ def print_case(case):
 
 
 def main():
-    print("\nFailure Formation Locator v0.11")
+    print("\nFailure Formation Locator v0.12")
     print("Observer-only diagnostic simulator")
     print("No authority. No certification. No blame determination.")
-    print("External JSON case loader enabled.\n")
+    print("External JSON case loader enabled.")
+    print("Deterministic receipt export enabled.\n")
 
     cases = load_cases()
 
