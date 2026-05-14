@@ -90,15 +90,15 @@ FAIL is a bounded diagnostic observation only.
 
 ```text
 external case
-↓
+->
 deterministic loader
-↓
+->
 classification
-↓
+->
 portable receipt
-↓
+->
 canonical serialization
-↓
+->
 SHA256 integrity surface
 ```
 
@@ -108,10 +108,10 @@ SHA256 integrity surface
 
 ```text
 failure_locator/
-├── cases/
-├── receipts/
-├── failure_locator.py
-└── README.md
+|-- cases/
+|-- receipts/
+|-- failure_locator.py
+`-- README.md
 ```
 
 ---
@@ -128,6 +128,7 @@ Current cases include:
 These are used as historically inspectable operational cases only.
 
 The simulator does not perform:
+
 - live institutional scoring
 - predictive risk analysis
 - regulatory assessment
@@ -241,15 +242,17 @@ Avoided directions:
 
 # Release Lineage
 
-- v0.10 — initial failure formation locator
-- v0.11 — external JSON case loading
-- v0.12 — deterministic receipt export
-- v0.13 — receipt SHA256 integrity
-- v0.14 — hardened README and explicit non-claims
-- v0.15 — Silicon Valley Bank historical case
-- v0.16 — Challenger and Deepwater Horizon cross-domain historical cases
-- v0.17 — tightened interruption viability parsing
-- v0.18 — release lineage refresh
+- v0.10 - initial failure formation locator
+- v0.11 - external JSON case loading
+- v0.12 - deterministic receipt export
+- v0.13 - receipt SHA256 integrity
+- v0.14 - hardened README and explicit non-claims
+- v0.15 - Silicon Valley Bank historical case
+- v0.16 - Challenger and Deepwater Horizon cross-domain historical cases
+- v0.17 - tightened interruption viability parsing
+- v0.18 - release lineage refresh
+- v0.19 - README encoding artifact fix
+- v0.20 - README ASCII-safe formatting
 
 ---
 
@@ -265,12 +268,14 @@ The repository remains:
 - independently reviewable
 
 The system is intended for:
+
 - inspection
 - falsification
 - adversarial review
 - historical morphology observation
 
 It is not intended to function as:
+
 - operational governance infrastructure
 - execution authority
 - regulatory enforcement
