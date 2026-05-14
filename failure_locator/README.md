@@ -249,6 +249,7 @@ Avoided directions:
 - v0.15 — Silicon Valley Bank historical case
 - v0.16 — Challenger and Deepwater Horizon cross-domain historical cases
 - v0.17 — tightened interruption viability parsing
+- v0.18 — release lineage refresh
 
 ---
 
