@@ -1,10 +1,15 @@
-# Failure Formation Locator v0.17
+# Failure Formation Locator
 # Observer-only diagnostic simulator
 # Purpose: load case files, export deterministic receipts, and attach receipt SHA256 integrity hashes
 
 import hashlib
 import json
 from pathlib import Path
+
+SIMULATOR_VERSION = "v0.17"
+REPOSITORY_LINEAGE = "v0.21"
+STATUS = "stable"
+POSTURE = "observer-only diagnostic artifact"
 
 BASE_DIR = Path(__file__).parent
 CASES_DIR = BASE_DIR / "cases"
@@ -48,15 +53,15 @@ def load_cases():
 
             valid, message = validate_case(case)
             if not valid:
-                print(f"HOLD: {path.name} invalid — {message}")
+                print(f"HOLD: {path.name} invalid - {message}")
                 continue
 
             cases.append(case)
 
         except json.JSONDecodeError as error:
-            print(f"HOLD: {path.name} invalid JSON — {error}")
+            print(f"HOLD: {path.name} invalid JSON - {error}")
         except OSError as error:
-            print(f"HOLD: could not read {path.name} — {error}")
+            print(f"HOLD: could not read {path.name} - {error}")
 
     return cases
 
@@ -122,7 +127,10 @@ def classify(case):
 def build_receipt(case, verdict, signals, unresolved):
     return {
         "tool": "Failure Formation Locator",
-        "version": "v0.17",
+        "simulator_version": SIMULATOR_VERSION,
+        "repository_lineage": REPOSITORY_LINEAGE,
+        "status": STATUS,
+        "posture": POSTURE,
         "observer_only": True,
         "authority_claim": False,
         "certification_claim": False,
@@ -215,7 +223,10 @@ def print_case(case):
 
 
 def main():
-    print("\nFailure Formation Locator v0.17")
+    print("\nFailure Formation Locator")
+    print(f"Simulator version: {SIMULATOR_VERSION}")
+    print(f"Repository lineage: {REPOSITORY_LINEAGE}")
+    print(f"Status: {STATUS}")
     print("Observer-only diagnostic simulator")
     print("No authority. No certification. No blame determination.")
     print("External JSON case loader enabled.")

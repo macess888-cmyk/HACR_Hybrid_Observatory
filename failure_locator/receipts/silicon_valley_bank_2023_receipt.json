@@ -19,9 +19,12 @@
   ],
   "interruption_viability": "degraded once withdrawal velocity exceeded available liquidity response capacity",
   "observer_only": true,
-  "receipt_sha256": "fac628734b1286ee9a9e3df49029d732f4e696a53454865fc3058ebfc1ab0ba6",
+  "posture": "observer-only diagnostic artifact",
+  "receipt_sha256": "9d3dd145334d8632f9de72b807efcea97b749065f2f21cfc04cf518cd31db5e8",
+  "repository_lineage": "v0.21",
+  "simulator_version": "v0.17",
+  "status": "stable",
   "tool": "Failure Formation Locator",
   "unresolved_signals": [],
-  "verdict": "FAIL",
-  "version": "v0.17"
+  "verdict": "FAIL"
 }

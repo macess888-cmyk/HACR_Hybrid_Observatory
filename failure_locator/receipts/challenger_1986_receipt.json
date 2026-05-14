@@ -19,9 +19,12 @@
   ],
   "interruption_viability": "degraded once launch authorization proceeded despite unresolved environmental risk conditions",
   "observer_only": true,
-  "receipt_sha256": "232934be04c3aca4164fd26eddf9af037582c916431cc57f355787e795968d79",
+  "posture": "observer-only diagnostic artifact",
+  "receipt_sha256": "a1af393a8da78bb996c4acc484b96feaf6ad81f5b104e913d2179d62664719a6",
+  "repository_lineage": "v0.21",
+  "simulator_version": "v0.17",
+  "status": "stable",
   "tool": "Failure Formation Locator",
   "unresolved_signals": [],
-  "verdict": "FAIL",
-  "version": "v0.17"
+  "verdict": "FAIL"
 }

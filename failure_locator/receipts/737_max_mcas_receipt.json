@@ -18,9 +18,12 @@
   ],
   "interruption_viability": "degraded during live execution",
   "observer_only": true,
-  "receipt_sha256": "a8dc132699eaa4b9406a9c5eda5be1350f4ae45812d80ef771122a85a096ba64",
+  "posture": "observer-only diagnostic artifact",
+  "receipt_sha256": "1519d6e38a8d481da5efcb424379894c9de9465d2710e41225b888a9f58ed5d2",
+  "repository_lineage": "v0.21",
+  "simulator_version": "v0.17",
+  "status": "stable",
   "tool": "Failure Formation Locator",
   "unresolved_signals": [],
-  "verdict": "FAIL",
-  "version": "v0.17"
+  "verdict": "FAIL"
 }

@@ -19,9 +19,12 @@
   ],
   "interruption_viability": "degraded once containment uncertainty persisted during active operational continuation",
   "observer_only": true,
-  "receipt_sha256": "ef055ae0f1089e526b1d23102408519ba7c7bd2c21fa1f195cf5d7ad5b6efaf4",
+  "posture": "observer-only diagnostic artifact",
+  "receipt_sha256": "ed5c73b834c3b58908b24fae9d942c8ef577c1c74767a1c798dde6565d743bf9",
+  "repository_lineage": "v0.21",
+  "simulator_version": "v0.17",
+  "status": "stable",
   "tool": "Failure Formation Locator",
   "unresolved_signals": [],
-  "verdict": "FAIL",
-  "version": "v0.17"
+  "verdict": "FAIL"
 }
