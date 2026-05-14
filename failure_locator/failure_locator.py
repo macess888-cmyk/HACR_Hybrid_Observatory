@@ -1,4 +1,4 @@
-# Failure Formation Locator v0.13
+# Failure Formation Locator v0.17
 # Observer-only diagnostic simulator
 # Purpose: load case files, export deterministic receipts, and attach receipt SHA256 integrity hashes
 
@@ -65,15 +65,38 @@ def classify(case):
     unresolved = []
     fail_signals = []
 
-    interruption = case["interruption_viability"].lower()
+    interruption = case["interruption_viability"].lower().strip()
 
-    if "degraded" in interruption:
+    degraded_terms = [
+        "degraded",
+        "collapsed",
+        "impaired",
+        "reduced",
+        "weakened",
+    ]
+
+    low_viability_terms = [
+        "low",
+        "structurally difficult",
+        "not viable",
+        "non-viable",
+    ]
+
+    unresolved_interruption_states = {
+        "unknown",
+        "unresolved",
+        "unclear",
+        "not established",
+        "cannot be established",
+    }
+
+    if any(term in interruption for term in degraded_terms):
         fail_signals.append("interruption viability degraded")
 
-    if "low" in interruption:
+    if any(term in interruption for term in low_viability_terms):
         fail_signals.append("stopping became structurally difficult")
 
-    if "unknown" in interruption or "unresolved" in interruption:
+    if interruption in unresolved_interruption_states:
         unresolved.append("interruption viability unresolved")
 
     if case["detection_loss"]:
@@ -99,7 +122,7 @@ def classify(case):
 def build_receipt(case, verdict, signals, unresolved):
     return {
         "tool": "Failure Formation Locator",
-        "version": "v0.13",
+        "version": "v0.17",
         "observer_only": True,
         "authority_claim": False,
         "certification_claim": False,
@@ -192,12 +215,13 @@ def print_case(case):
 
 
 def main():
-    print("\nFailure Formation Locator v0.13")
+    print("\nFailure Formation Locator v0.17")
     print("Observer-only diagnostic simulator")
     print("No authority. No certification. No blame determination.")
     print("External JSON case loader enabled.")
     print("Deterministic receipt export enabled.")
-    print("Receipt SHA256 integrity enabled.\n")
+    print("Receipt SHA256 integrity enabled.")
+    print("Interruption viability parser tightened.\n")
 
     cases = load_cases()
 

@@ -18,9 +18,9 @@
   ],
   "interruption_viability": "degraded during live execution",
   "observer_only": true,
-  "receipt_sha256": "3c1559a29b43a53b77a499e9c7b87dfdf334a7306b44fbcd01cf85f80bc8a799",
+  "receipt_sha256": "a8dc132699eaa4b9406a9c5eda5be1350f4ae45812d80ef771122a85a096ba64",
   "tool": "Failure Formation Locator",
   "unresolved_signals": [],
   "verdict": "FAIL",
-  "version": "v0.13"
+  "version": "v0.17"
 }
