@@ -1,0 +1,25 @@
+{
+  "name": "challenger_1986",
+  "declared_intent": "reusable crewed spaceflight mission",
+  "validity_conditions": [
+    "solid rocket booster seal integrity",
+    "temperature-compatible launch conditions",
+    "safe launch authorization process",
+    "crew survivability margins remain intact"
+  ],
+  "drift_point": "known O-ring vulnerability became operationally normalized under schedule and launch pressure",
+  "detection_loss": "engineering risk concerns were present but operational continuation pressure overrode interruption viability",
+  "continuation_pressure": [
+    "launch schedule pressure",
+    "institutional mission continuity",
+    "public program visibility",
+    "operational normalization"
+  ],
+  "interruption_viability": "degraded once launch authorization proceeded despite unresolved environmental risk conditions",
+  "failure_locator": [
+    "Normalization of Deviance",
+    "Interruption Viability Collapse",
+    "Operational Momentum Persistence",
+    "Environmental Constraint Violation"
+  ]
+}

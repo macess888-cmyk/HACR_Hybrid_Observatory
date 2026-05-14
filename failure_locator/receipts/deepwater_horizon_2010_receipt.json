@@ -1,0 +1,27 @@
+{
+  "authority_claim": false,
+  "blame_determination": false,
+  "case": "deepwater_horizon_2010",
+  "certification_claim": false,
+  "core_question": "Where did stopping stop being viable before visible failure?",
+  "declared_intent": "safe offshore drilling and well completion operations",
+  "diagnostic_signals": [
+    "interruption viability degraded",
+    "detection loss or normalization present",
+    "continuation pressure present"
+  ],
+  "drift_point": "multiple warning indicators and containment uncertainties accumulated while continuation operations proceeded",
+  "failure_locator": [
+    "Containment Survivability Failure",
+    "Hazard Normalization",
+    "Operational Continuation Pressure",
+    "Escalation Detection Breakdown"
+  ],
+  "interruption_viability": "degraded once containment uncertainty persisted during active operational continuation",
+  "observer_only": true,
+  "receipt_sha256": "614632fc789f201b65c4c55bf8e6d0c5399d47af80387faf7bd408b0febf59cf",
+  "tool": "Failure Formation Locator",
+  "unresolved_signals": [],
+  "verdict": "FAIL",
+  "version": "v0.13"
+}

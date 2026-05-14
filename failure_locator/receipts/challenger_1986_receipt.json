@@ -1,0 +1,29 @@
+{
+  "authority_claim": false,
+  "blame_determination": false,
+  "case": "challenger_1986",
+  "certification_claim": false,
+  "core_question": "Where did stopping stop being viable before visible failure?",
+  "declared_intent": "reusable crewed spaceflight mission",
+  "diagnostic_signals": [
+    "interruption viability degraded",
+    "detection loss or normalization present",
+    "continuation pressure present"
+  ],
+  "drift_point": "known O-ring vulnerability became operationally normalized under schedule and launch pressure",
+  "failure_locator": [
+    "Normalization of Deviance",
+    "Interruption Viability Collapse",
+    "Operational Momentum Persistence",
+    "Environmental Constraint Violation"
+  ],
+  "interruption_viability": "degraded once launch authorization proceeded despite unresolved environmental risk conditions",
+  "observer_only": true,
+  "receipt_sha256": "9b794ddd5f03edf1d53445be20da1315c6c7f5bde0f8dacab40b8e3bc81b816d",
+  "tool": "Failure Formation Locator",
+  "unresolved_signals": [
+    "interruption viability unresolved"
+  ],
+  "verdict": "FAIL",
+  "version": "v0.13"
+}

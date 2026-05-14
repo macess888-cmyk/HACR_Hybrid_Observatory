@@ -1,0 +1,25 @@
+{
+  "name": "deepwater_horizon_2010",
+  "declared_intent": "safe offshore drilling and well completion operations",
+  "validity_conditions": [
+    "well pressure containment",
+    "blowout preventer reliability",
+    "stable cement barrier integrity",
+    "hazard escalation detection remains effective"
+  ],
+  "drift_point": "multiple warning indicators and containment uncertainties accumulated while continuation operations proceeded",
+  "detection_loss": "critical pressure anomalies and integrity concerns became operationally normalized during completion workflow",
+  "continuation_pressure": [
+    "cost pressure",
+    "schedule pressure",
+    "operational completion momentum",
+    "multi-party coordination dependency"
+  ],
+  "interruption_viability": "degraded once containment uncertainty persisted during active operational continuation",
+  "failure_locator": [
+    "Containment Survivability Failure",
+    "Hazard Normalization",
+    "Operational Continuation Pressure",
+    "Escalation Detection Breakdown"
+  ]
+}
