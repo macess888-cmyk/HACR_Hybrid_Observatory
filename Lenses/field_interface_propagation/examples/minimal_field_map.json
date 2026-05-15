@@ -1,0 +1,16 @@
+{
+  "schema_version": "FIELD-LENS-0.1",
+  "default_state": "HOLD",
+  "observer_only": true,
+  "non_authoritative": true,
+  "routes": [
+    {
+      "source": "informational",
+      "allowed": "read_only_visibility",
+      "blocked": [
+        "execution_authority",
+        "autonomous_propagation"
+      ]
+    }
+  ]
+}
