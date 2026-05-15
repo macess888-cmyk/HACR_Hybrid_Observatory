@@ -1,74 +1,80 @@
-# Observatory Architecture
+# HACR Hybrid Observatory Architecture
 
-HACR Hybrid Observatory is an observer-restricted runtime diagnostics and topology inspection framework.
+## 1. Observer Boundary
 
-It inspects whether runtime continuation paths remain observable after interruption, invalidation, retry, replay, recovery, or topology disruption under declared observation conditions.
+The observatory is observer-only.
 
-The observatory does not authorize, govern, certify, enforce, or control execution.
+It may inspect, classify, map, trace, and pressure-test continuity surfaces.
 
-All outputs are observer-side runtime diagnostics only.
+It may not authorize, certify, govern, optimize, enforce, route execution, or provide operational permission.
 
----
+## 2. Artifact Layer
 
-## Architecture Purpose
+Artifacts provide reproducible visibility only.
 
-The observatory supports:
+Examples:
 
-- runtime continuation inspection
-- retry/replay visibility analysis
-- dependency visibility inspection
-- downstream continuation visibility
-- recovery-state propagation inspection
-- topology-scoped runtime diagnostics
-- reproducibility-oriented review
+- manifests
+- ledgers
+- receipts
+- topology maps
+- provenance records
+- deterministic outputs
 
----
+Artifacts are not authority surfaces.
 
-## Diagnostic Boundary
+## 3. Translation Layer
 
-PASS / HOLD / FAIL are diagnostic observations only.
+Translation preserves inspectability.
 
-They are not:
+Translation does not imply equivalence, validation, legitimacy, or permission.
 
-- execution permissions
-- governance rulings
-- safety guarantees
-- certification results
-- compliance determinations
-- operational authorization
+Unclear translation conditions remain HOLD.
 
----
+## 4. Harmonization Layer
 
-## Runtime Dependency Inspection
+Field harmonization holds signals without validating them.
 
-The observatory inspects whether runtime dependencies, continuation paths, cached execution state, retries, replays, or downstream continuation surfaces remain observable after interruption or invalidation.
+It routes differences without resolving them.
 
-It does not create verification of runtime execution prerequisites.
+Entry is allowed.
 
-It does not replace runtime controls.
+Propagation is gated.
 
-It does not become an execution dependency.
+## 5. Instrumentation Layer
 
----
+Instrumentation produces bounded evidence artifacts.
 
-## PASS / HOLD / FAIL
+Instrument outputs remain classified as observational unless independently proven.
 
-### PASS
+Instrumentation is not governance.
 
-No continuation persistence observed within declared runtime and topology scope.
+## 6. Verification Layer
 
-### HOLD
+Verification checks artifact integrity, reproducibility, schema consistency, and declared gates.
 
-Insufficient runtime visibility, dependency visibility, replay visibility, recovery visibility, or topology visibility for reliable diagnostic observation.
+Verification does not authorize downstream execution.
 
-### FAIL
+## 7. Exclusions
 
-Continuation persistence, retry persistence, replay persistence, cached execution continuity, or downstream continuation reachability remained observable after interruption or invalidation.
+The observatory excludes:
 
----
+- centralized control logic
+- implicit authority inheritance
+- optimization engines
+- governance orchestration
+- legitimacy claims
+- inevitability framing
+- observed-to-proven upgrades
 
-## Final Constraint
+## 8. Non-Claims
 
-The observatory inspects runtime continuation visibility.
+The observatory does not prove correctness.
 
-It does not inherit execution authority.
+It does not certify systems.
+
+It does not replace independent verification.
+
+It does not grant permission.
+
+Its role is bounded inspection only.
