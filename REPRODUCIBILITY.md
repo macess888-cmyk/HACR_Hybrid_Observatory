@@ -1,105 +1,55 @@
-# Reproducibility Guidance
+# Reproducibility
 
 ## Purpose
 
-This repository emphasizes reproducibility-oriented runtime diagnostics and topology-scoped continuation inspection.
+This repository prioritizes reproducible observer-side inspection.
 
-All demonstrations should remain:
+Reproducibility means that declared inputs, configurations, artifacts, and outputs can be independently reviewed, regenerated where applicable, and checked against declared integrity surfaces.
 
-* independently reproducible
-* topology-scoped
-* runtime-bounded
-* pressure-testable
-* assumption-declared
-* observer-restricted
+## Scope
 
----
+Reproducibility applies to:
 
-## Demonstration Requirements
+- deterministic receipts
+- manifests
+- ledgers
+- topology maps
+- provenance records
+- inspection outputs
+- verification gates
 
-Each demonstration should declare:
+## Non-Scope
 
-* topology scope
-* runtime assumptions
-* dependency assumptions
-* replay assumptions
-* retry assumptions
-* recovery assumptions
-* interruption assumptions
-* observability boundaries
-* known blind spots
-* known non-observable surfaces
+Reproducibility does not imply:
 
----
+- correctness
+- certification
+- authority
+- execution permission
+- governance validity
+- downstream admissibility
 
-## Runtime Conditions
+## Expected Review Path
 
-Diagnostic observations remain bounded to declared runtime conditions.
+1. Inspect declared input artifacts.
+2. Confirm schema and version consistency.
+3. Recompute available hashes.
+4. Compare generated outputs against stored receipts.
+5. Review HOLD / FAIL / PASS classifications within declared caps.
+6. Treat unresolved provenance, authority, recovery, or containment as HOLD.
 
-Environmental differences may alter:
+## Failure Semantics
 
-* dependency visibility
-* replay visibility
-* recovery behavior
-* orchestration behavior
-* distributed continuation visibility
-* downstream continuation reachability
+- Missing artifact: HOLD
+- Schema mismatch: FAIL
+- Hash mismatch: FAIL
+- Unclear provenance: HOLD
+- Unclear authority: HOLD
+- Unclear containment: HOLD
+- Unclear recovery path: HOLD
 
----
+## Default
 
-## Falsifiability
+No reproducible artifact may be interpreted as operational authority.
 
-Diagnostic observations should remain empirically pressure-testable through:
-
-* replay testing
-* retry testing
-* interruption testing
-* recovery testing
-* dependency disruption testing
-* downstream continuation testing
-* topology modification testing
-
-Runtime falsification overrides representational assumptions.
-
-Representational coherence alone does not establish continuation invalidation.
-
----
-
-## Diagnostic Boundary
-
-PASS / HOLD / FAIL outputs are observer-side runtime diagnostics only.
-
-Outputs are not:
-
-* governance decisions
-* execution authorization
-* certification claims
-* compliance guarantees
-* operational enforcement
-* safety guarantees
-
----
-
-## Scope Boundary
-
-The observatory inspects runtime continuation visibility under declared observation conditions.
-
-The observatory does not:
-
-* govern execution
-* replace operational controls
-* provide execution guarantees
-* function as active defense infrastructure
-* inherit execution authority
-
----
-
-## Final Constraint
-
-All observations remain:
-
-* topology-scoped
-* observer-restricted
-* runtime-bounded
-* reproducibility-oriented
-* non-authoritative
+Observation remains observation.
