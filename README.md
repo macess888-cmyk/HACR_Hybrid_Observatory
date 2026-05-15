@@ -1,10 +1,10 @@
 # HACR Hybrid Observatory
 
-Observer-restricted continuity and propagation observability framework.
+Observer-restricted continuity, propagation, routing, and semantic integrity observability framework.
 
-The HACR Hybrid Observatory does not authorize, govern, certify, orchestrate, or validate execution.
+The HACR Hybrid Observatory does not authorize, govern, certify, orchestrate, optimize, or validate execution.
 
-It exists to inspect whether operational continuity, propagation capability, or downstream consequence survivability remain observable after refusal under bounded and reproducible conditions.
+The repository exists to inspect whether operational continuity, propagation survivability, routing compatibility, semantic drift, recovery-state visibility, or observer-side dependency accumulation remain observable after refusal under bounded and reproducible conditions.
 
 ---
 
@@ -12,21 +12,25 @@ It exists to inspect whether operational continuity, propagation capability, or 
 
 > “After refusal, can consequence still become real?”
 
-The observatory investigates continuity survivability, propagation pathways, recovery visibility, and downstream operational reachability without inheriting execution authority.
+The observatory investigates continuity survivability, propagation pathways, semantic drift, interface compatibility, downstream operational reachability, and observer-side dependency accumulation without inheriting execution authority.
 
 ---
 
 # Repository Status
 
-Current direction emphasizes:
+Current stabilization direction prioritizes:
 
 - deterministic observability
 - bounded inspection
 - reproducible reviewer regeneration
 - topology and propagation visibility
-- signal routing containment
+- semantic drift visibility
+- routing containment
 - local failure visibility
 - observer-side harmonization
+- observer load containment
+- translation integrity visibility
+- propagation gating
 - explicit non-claims
 - operational boundary clarity
 
@@ -38,6 +42,8 @@ The repository intentionally avoids:
 - optimization-first framing
 - institutional legitimacy inference
 - centralized control architecture
+- inevitability framing
+- semantic authority inheritance
 
 ---
 
@@ -49,11 +55,13 @@ The observatory is intentionally:
 - read-only
 - deterministic
 - reproducible
+- bounded
+- propagation-gated
 - non-authoritative
 - non-consumable by execution
-- propagation-bounded
 - recovery-aware
 - interface-visible
+- translation-visible
 
 ---
 
@@ -70,6 +78,8 @@ The observatory does not:
 - infer authority from persistence
 - convert visibility into admissibility
 - transform observation into execution permission
+- validate semantic correctness
+- certify translation equivalence
 
 Signals never imply commands.
 
@@ -93,43 +103,82 @@ No bind → no admissible effect.
 
 Propagation visibility does not imply propagation legitimacy.
 
-Routing eligibility does not imply execution authorization.
+Routing compatibility does not imply execution authorization.
+
+Shared topology does not imply authority inheritance.
 
 ---
 
-## Recovery Invariant
+## Recovery Boundary Invariant
 
 Recovery restores observability and availability only.
 
-Recovery does not restore admissibility, authority inheritance, execution legitimacy, or downstream permission.
+Recovery does not restore:
+
+- admissibility
+- authority inheritance
+- execution legitimacy
+- operational permission
+- downstream authorization
 
 Optimization may not precede recovery-state visibility.
 
 ---
 
-## Interface Invariant
+## Visibility Boundary Invariant
 
-Docking compatibility does not imply governance compatibility.
-
-Shared topology, protocol compatibility, visibility overlap, or structural fit do not create authority inheritance.
-
----
-
-## Visibility Invariant
-
-Read-only observability may not become an execution dependency.
+Read-only observability may not become execution dependency infrastructure.
 
 Observer outputs must not become:
 
 - latent operational memory
 - orchestration substrate
 - deferred authorization substrate
+- continuity substitute
 - recovery dependency
 - survivability substrate
 
 ---
 
-## Containment Invariant
+## Observer Load Boundary Invariant
+
+Observer-side artifacts may not accumulate into operational dependency infrastructure.
+
+Repeated observability reuse must not become:
+
+- execution anchoring
+- continuity substitution
+- operational routing dependency
+- implicit authorization memory
+- downstream legitimacy substrate
+
+If observer outputs begin functioning as operational prerequisites:
+
+→ HOLD
+
+---
+
+## Translation Integrity Boundary Invariant
+
+Translation may improve readability.
+
+Translation may not introduce:
+
+- authority inheritance
+- governance implication
+- execution permission
+- routing legitimacy
+- admissibility inference
+- operational dependency
+- certification implication
+
+If translation changes operational boundary meaning:
+
+→ HOLD
+
+---
+
+## Containment Boundary Invariant
 
 Local instability may not inherit systemic authority.
 
@@ -143,23 +192,33 @@ Failure visibility remains local unless separately proven at the relevant observ
 
 Observed continuity constraints remained bounded under the declared inspection conditions.
 
+---
+
 ## HOLD
 
-Provenance, authority inheritance, recovery state, routing compatibility, propagation visibility, or operational interpretation remained unclear.
+Provenance, authority inheritance, semantic equivalence, routing compatibility, recovery visibility, dependency scope, operational interpretation, or propagation legitimacy remained unclear.
 
 Unknown defaults to HOLD.
 
+---
+
 ## FAIL
 
-Observed propagation, survivability, dependency continuation, or recovery behavior exceeded the declared containment boundary.
+Observed propagation, survivability, dependency continuation, semantic drift, recovery behavior, or observer-side operational dependency exceeded the declared containment boundary.
+
+---
 
 ## STOP
 
 Continuation inspection halted due to bounded observer restrictions or undefined operational visibility.
 
+---
+
 ## REVERSE
 
 Observed continuation behavior reduced operational survivability or propagation continuity relative to prior state.
+
+---
 
 ## SHADOW
 
@@ -180,6 +239,7 @@ This layer:
 - preserves propagation gating
 - maintains read-only visibility
 - reinforces local containment semantics
+- preserves interface separation
 
 The layer does not:
 
@@ -188,7 +248,7 @@ The layer does not:
 - create hierarchy
 - orchestrate platforms
 - validate legitimacy
-- infer authority from scale or persistence
+- infer authority from persistence
 
 Default state remains:
 
@@ -244,6 +304,52 @@ Signals never imply commands.
 
 ---
 
+## Observer Load Boundary (OLB)
+
+Observer-side inspection lens for whether observability artifacts begin accumulating operational dependency pressure.
+
+The OLB lens remains:
+
+- observer-only
+- deterministic
+- bounded
+- non-authoritative
+- non-consumable by execution
+
+The OLB lens does not:
+
+- authorize execution
+- validate legitimacy
+- infer governance authority
+- replace bind-local proof
+
+The lens only classifies whether observer-side outputs appear to be drifting toward operational dependency formation.
+
+---
+
+## Translation Integrity Layer (TIL)
+
+Observer-side inspection layer for whether semantic translation changes operational boundary meaning.
+
+The TIL remains:
+
+- observer-only
+- deterministic
+- bounded
+- non-authoritative
+- non-consumable by execution
+
+The TIL does not:
+
+- validate correctness
+- certify equivalence
+- resolve interpretation conflicts
+- authorize execution
+
+The layer only classifies whether translation appears to preserve, drift from, or authority-load observer-side boundary meaning.
+
+---
+
 ## Deterministic Artifact Generation
 
 Repository outputs prioritize:
@@ -262,23 +368,31 @@ Repository outputs prioritize:
 
 ## governance/
 
-Boundary clarification, semantic containment, non-claims, reproducibility guidance, and operational interpretation limitation layers.
+Boundary clarification, semantic containment, translation integrity, observer load containment, routing specifications, reproducibility guidance, and operational interpretation limitation layers.
+
+---
 
 ## observatory_extensions/
 
-Experimental observer-side extensions and harmonization layers.
+Experimental observer-side harmonization and propagation containment layers.
+
+---
 
 ## failure_locator/
 
 Failure Formation Locator instrumentation and deterministic case inspection tooling.
 
+---
+
 ## receipts/
 
 Deterministic generated outputs, replayable artifacts, and bounded inspection records.
 
+---
+
 ## diagrams/
 
-Topology visibility, propagation mapping, continuity routing, and observer-side structural inspection diagrams.
+Topology visibility, routing visibility, propagation mapping, continuity inspection, semantic containment, and observer-side structural inspection diagrams.
 
 ---
 
@@ -293,6 +407,8 @@ Current stabilization direction prioritizes:
 - bounded inspection
 - interface continuity visibility
 - propagation containment
+- semantic drift visibility
+- observer dependency visibility
 - local failure isolation
 - observer-side routing separation
 
@@ -330,11 +446,13 @@ All operational execution authority must remain external to the observatory.
 If:
 
 - provenance is unclear
+- semantic equivalence is unclear
 - authority inheritance is unclear
-- propagation boundaries are unclear
+- propagation legitimacy is unclear
 - recovery visibility is incomplete
 - interface compatibility is undefined
 - operational interpretation becomes unstable
+- observer-side dependency formation is unclear
 
 → HOLD
 
@@ -342,4 +460,4 @@ If:
 
 # Repository Goal
 
-Create bounded, reproducible, observer-only visibility into whether continuity, propagation capability, or downstream operational survivability remain observable after refusal without allowing the observatory itself to inherit execution authority.
+Create bounded, reproducible, observer-only visibility into whether continuity, propagation capability, semantic drift, downstream operational survivability, routing compatibility, or observer-side dependency accumulation remain observable after refusal without allowing the observatory itself to inherit execution authority.
