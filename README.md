@@ -12,7 +12,7 @@ It exists to inspect whether operational continuity, propagation capability, or 
 
 > “After refusal, can consequence still become real?”
 
-The observatory investigates continuity survivability, propagation pathways, recovery visibility, and downstream operational reachability without inheriting execution authority.
+The observatory investigates continuity survivability, propagation pathways, recovery visibility, downstream operational reachability, and observer-side dependency accumulation without inheriting execution authority.
 
 ---
 
@@ -27,6 +27,7 @@ Current direction emphasizes:
 - signal routing containment
 - local failure visibility
 - observer-side harmonization
+- observer load boundary visibility
 - explicit non-claims
 - operational boundary clarity
 
@@ -129,6 +130,24 @@ Observer outputs must not become:
 
 ---
 
+## Observer Load Boundary Invariant
+
+Observer-side artifacts may not accumulate into operational dependency infrastructure.
+
+Repeated observability reuse must not become:
+
+- execution anchoring
+- continuity substitution
+- operational routing dependency
+- implicit authorization memory
+- downstream legitimacy substrate
+
+If observer outputs begin functioning as operational prerequisites:
+
+→ HOLD
+
+---
+
 ## Containment Invariant
 
 Local instability may not inherit systemic authority.
@@ -145,13 +164,13 @@ Observed continuity constraints remained bounded under the declared inspection c
 
 ## HOLD
 
-Provenance, authority inheritance, recovery state, routing compatibility, propagation visibility, or operational interpretation remained unclear.
+Provenance, authority inheritance, recovery state, routing compatibility, propagation visibility, operational reliance, or operational interpretation remained unclear.
 
 Unknown defaults to HOLD.
 
 ## FAIL
 
-Observed propagation, survivability, dependency continuation, or recovery behavior exceeded the declared containment boundary.
+Observed propagation, survivability, dependency continuation, recovery behavior, or observer-side operational dependency exceeded the declared containment boundary.
 
 ## STOP
 
@@ -244,6 +263,29 @@ Signals never imply commands.
 
 ---
 
+## Observer Load Boundary (OLB)
+
+Observer-side inspection lens for whether observability artifacts begin accumulating operational dependency pressure.
+
+The OLB lens remains:
+
+- observer-only
+- deterministic
+- bounded
+- non-authoritative
+- non-consumable by execution
+
+The OLB lens does not:
+
+- authorize execution
+- validate legitimacy
+- infer governance authority
+- replace bind-local proof
+
+The lens only classifies whether observer-side outputs appear to be drifting toward operational dependency formation.
+
+---
+
 ## Deterministic Artifact Generation
 
 Repository outputs prioritize:
@@ -262,7 +304,7 @@ Repository outputs prioritize:
 
 ## governance/
 
-Boundary clarification, semantic containment, non-claims, reproducibility guidance, and operational interpretation limitation layers.
+Boundary clarification, semantic containment, non-claims, reproducibility guidance, observer load boundary guidance, and operational interpretation limitation layers.
 
 ## observatory_extensions/
 
@@ -293,6 +335,7 @@ Current stabilization direction prioritizes:
 - bounded inspection
 - interface continuity visibility
 - propagation containment
+- observer dependency visibility
 - local failure isolation
 - observer-side routing separation
 
@@ -335,6 +378,7 @@ If:
 - recovery visibility is incomplete
 - interface compatibility is undefined
 - operational interpretation becomes unstable
+- observer-side dependency formation is unclear
 
 → HOLD
 
@@ -342,4 +386,4 @@ If:
 
 # Repository Goal
 
-Create bounded, reproducible, observer-only visibility into whether continuity, propagation capability, or downstream operational survivability remain observable after refusal without allowing the observatory itself to inherit execution authority.
+Create bounded, reproducible, observer-only visibility into whether continuity, propagation capability, downstream operational survivability, or observer-side dependency accumulation remain observable after refusal without allowing the observatory itself to inherit execution authority.
