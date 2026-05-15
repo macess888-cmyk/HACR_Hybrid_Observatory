@@ -10,7 +10,7 @@ The repository exists to inspect whether operational continuity, propagation sur
 
 # Core Question
 
-> “After refusal, can consequence still become real?”
+"After refusal, can consequence still become real?"
 
 The observatory investigates continuity survivability, propagation pathways, semantic drift, interface compatibility, downstream operational reachability, and observer-side dependency accumulation without inheriting execution authority.
 
@@ -91,11 +91,11 @@ Observer outputs must not become operational dependencies.
 
 ## Execution Boundary Invariant
 
-No present-state proof → no execution.
+No present-state proof -> no execution.
 
-No proof → no bind.
+No proof -> no bind.
 
-No bind → no admissible effect.
+No bind -> no admissible effect.
 
 ---
 
@@ -154,7 +154,7 @@ Repeated observability reuse must not become:
 
 If observer outputs begin functioning as operational prerequisites:
 
-→ HOLD
+-> HOLD
 
 ---
 
@@ -174,7 +174,7 @@ Translation may not introduce:
 
 If translation changes operational boundary meaning:
 
-→ HOLD
+-> HOLD
 
 ---
 
@@ -280,7 +280,7 @@ Observer-only continuity degradation inspection framework.
 
 Purpose:
 
-> “Where did interruption viability begin degrading before visible operational failure?”
+"Where did interruption viability begin degrading before visible operational failure?"
 
 The FFL does not predict, certify, assign blame, or govern systems.
 
@@ -454,7 +454,7 @@ If:
 - operational interpretation becomes unstable
 - observer-side dependency formation is unclear
 
-→ HOLD
+-> HOLD
 
 ---
 
