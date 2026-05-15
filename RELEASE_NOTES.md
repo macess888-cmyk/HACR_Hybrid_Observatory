@@ -1,113 +1,252 @@
-# Release Notes
-
-## Purpose
-
-This document records repository release progression for HACR Hybrid Observatory.
-
-The repository remains observer-restricted, diagnostic-only, topology-scoped, and reproducibility-oriented.
+# HACR Hybrid Observatory — Release Notes
 
 ---
 
-## Release Direction
+# v6.1 — Translation Integrity Layer Stabilization
 
-Repository development has focused on:
+## Summary
 
-- deterministic diagnostic inspection
-- runtime continuation visibility
-- retry/replay visibility
-- dependency visibility
-- topology-scoped observability
-- reproducibility-oriented review
-- bounded output semantics
-- explicit non-claims
+This release extends observer-side semantic containment and operational interpretation stabilization.
+
+Primary additions:
+
+- Translation Integrity Layer (TIL)
+- Observer Load Boundary (OLB)
+- semantic drift visibility
+- observer dependency containment
+- routing / propagation interpretation separation
+- visibility ≠ admissibility clarification
+- translation-boundary stabilization
+
+The repository remains:
+
+- observer-only
+- deterministic
+- reproducible
+- bounded
+- non-authoritative
+- non-consumable by execution
 
 ---
 
-## Major Additions
+## Added
 
-### Runtime State Semantics
+### Translation Integrity Layer (TIL)
 
-Added PASS / HOLD / FAIL diagnostic semantics.
+Observer-side inspection layer for whether semantic translation changes operational boundary meaning.
 
-### Matrix Reachability
+The layer classifies:
 
-Added topology-oriented reachability inspection.
+- PRESERVED
+- DRIFT_DETECTED
+- AUTHORITY_INDUCING
+- HOLD
 
-### Drift Trajectory
+The TIL does not:
 
-Added runtime drift trajectory diagnostics.
+- validate correctness
+- certify equivalence
+- authorize execution
+- resolve interpretation conflicts
 
-### Dependency Observability
+Purpose:
 
-Added dependency visibility inspection.
+Inspect whether semantic translation introduces:
 
-### Watchdog Continuity
+- authority implication
+- governance drift
+- execution implication
+- operational dependency inheritance
+- admissibility implication
 
-Added watchdog continuation visibility probes.
+---
 
-### Runtime Dependency Surface Mapper
+### Observer Load Boundary (OLB)
 
-Introduced runtime dependency persistence mapping.
+Observer-side inspection layer for whether observability artifacts begin accumulating operational dependency pressure.
 
-### Constructibility Collapse Mapper
+The OLB classifies:
 
-Added bounded inspection of unresolved continuation constructibility.
+- NON_CONSUMABLE
+- PRESSURE_ACCUMULATING
+- OPERATIONALLY_REFERENCED
+- HOLD
 
-### Replay Vector Mapper
+Purpose:
 
-Added replay visibility diagnostics.
+Inspect whether observer outputs begin functioning as:
 
-### Lineage Consumption Auditor
+- execution anchors
+- orchestration substrates
+- continuity substitutes
+- deferred authorization memory
+- operational prerequisites
 
-Added diagnostic inspection of continuation path consumption.
+---
 
-### Semantic Fragmentation Lens
+## Repository Stabilization
 
-Added observer-side semantic fragmentation inspection.
+README stabilization expanded to include:
 
-### Descendant Effect Mapper
+- semantic containment clarification
+- translation integrity clarification
+- routing legitimacy separation
+- propagation containment
+- observer dependency containment
+- visibility boundary clarification
 
-Added downstream continuation visibility diagnostics.
+---
 
-### Distributed Reconstruction Lens
+## Terminology Stabilization
 
-Added distributed continuation reconstruction visibility inspection.
+Terminology updated to reinforce:
 
-### Continuation Pressure Index
+- observer-restricted positioning
+- semantic containment
+- translation-boundary preservation
+- propagation legitimacy separation
+- routing compatibility visibility
+- observer-side dependency containment
+- non-authoritative outputs
 
-Added continuation pressure diagnostics.
+Additional terminology clarifications added for:
 
-### Topology Pressure Field
+- semantic drift visibility
+- authority-inducing translation
+- observer load boundary
+- translation integrity
+- propagation containment
 
-Added topology pressure diagnostics.
+---
 
-### Topology Stability Gradient
+## Boundary Clarifications
 
-Added topology stability inspection.
+The repository now explicitly distinguishes between:
 
-### Engineering and Audit Hardening
+- visibility and admissibility
+- routing and authorization
+- propagation and legitimacy
+- translation and semantic equivalence
+- observability and operational dependency
+- topology compatibility and authority inheritance
 
-Added engineering-oriented terminology stabilization, reproducibility guidance, explicit limitations, and audit-safe diagnostic boundaries.
+---
+
+## Operational Direction
+
+Current stabilization direction prioritizes:
+
+- deterministic observability
+- bounded inspection
+- semantic containment
+- reviewer reproducibility
+- observer dependency containment
+- propagation containment
+- translation integrity visibility
+- local failure isolation
+- operational interpretation stabilization
+
+Conceptual expansion remains secondary to:
+
+- auditability
+- bounded semantics
+- deterministic regeneration
+- engineering review survivability
+- operational clarity
 
 ---
 
 ## Non-Claims
 
-The repository does not:
+The HACR Hybrid Observatory does not:
 
 - authorize execution
-- govern systems
-- certify safety
-- enforce policy
-- replace operational controls
-- provide compliance guarantees
-- function as operational authorization infrastructure
-- function as execution control infrastructure
+- certify systems
+- govern platforms
+- infer legitimacy
+- validate semantic correctness
+- provide compliance determinations
+- replace bind-local proof
+- function as operational control infrastructure
+
+The repository remains observer-restricted.
 
 ---
 
-## Final Constraint
+# v6.0 — Observer Load Boundary
 
-All release notes describe observer-side diagnostic artifacts only.
+Added Observer Load Boundary (OLB) observer-side dependency containment layer.
 
-They do not imply execution authority.
+Purpose:
+
+Inspect whether observability artifacts begin accumulating operational dependency pressure.
+
+The layer remains:
+
+- observer-only
+- bounded
+- deterministic
+- non-authoritative
+- non-consumable by execution
+
+---
+
+# v5.9 — Signal Routing and Propagation Boundaries
+
+Added observer-side signal routing and propagation boundary layer.
+
+Primary direction:
+
+- routing separation
+- propagation gating
+- interface containment
+- local failure visibility
+- observer-side harmonization
+
+Signals remain observational only.
+
+Signals never imply commands.
+
+---
+
+# v5.8 — Field Harmonization
+
+Added observer-side field harmonization stabilization and propagation visibility clarification.
+
+Focused on:
+
+- interface continuity visibility
+- routing compatibility
+- bounded harmonization
+- topology-scoped inspection
+
+---
+
+# v5.7 — Reproducibility and Instrumentation Stabilization
+
+Expanded reproducibility guidance and instrumentation containment.
+
+Included:
+
+- reviewer reproducibility hardening
+- deterministic artifact clarification
+- instrumentation boundary stabilization
+- explicit non-claims reinforcement
+
+---
+
+# Repository State
+
+Current repository state:
+
+- stabilized
+- deterministic
+- observer-restricted
+- propagation-bounded
+- semantically contained
+- reproducibility-oriented
+- audit-review survivable
+
+Default state remains:
+
+HOLD
