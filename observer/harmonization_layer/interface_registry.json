@@ -1,0 +1,30 @@
+{
+  "layer": "field_harmonization_lens",
+  "mode": "observer_side_only",
+  "default_state": "HOLD",
+  "domains": ["physical", "energetic", "informational", "social"],
+  "hard_blocks": [
+    "centralized_control_logic",
+    "implicit_hierarchy",
+    "lead_platform_authority",
+    "narrative_branding",
+    "optimization_without_recovery",
+    "time_aggregated_authority"
+  ],
+  "allowed_actions": [
+    "observe",
+    "classify",
+    "route_difference",
+    "hold_signal",
+    "identify_interface_mismatch"
+  ],
+  "forbidden_actions": [
+    "validate",
+    "authorize",
+    "resolve",
+    "govern",
+    "optimize",
+    "execute",
+    "certify"
+  ]
+}
