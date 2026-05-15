@@ -12,7 +12,7 @@ HACR Hybrid Observatory is a bounded observer-side inspection framework focused 
 - provenance divergence
 - hidden dependency persistence
 - reconstruction ambiguity
-- recursive contradiction localization
+- recursive inconsistency localization
 - deterministic audit reproducibility
 - bounded post-repair resealing workflows
 
