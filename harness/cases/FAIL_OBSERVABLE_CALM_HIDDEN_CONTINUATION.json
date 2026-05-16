@@ -1,0 +1,10 @@
+{
+  "case": "FAIL_OBSERVABLE_CALM_HIDDEN_CONTINUATION",
+  "description": "Visible calm appears after interruption, but hidden continuation remains operationally survivable.",
+  "topology_visibility": "partial",
+  "observable_calm": true,
+  "hidden_carriers": true,
+  "continuation_survivability": true,
+  "interruption_locality": "local_only",
+  "expected_state": "FAIL"
+}

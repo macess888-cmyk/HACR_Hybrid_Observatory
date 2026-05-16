@@ -18,11 +18,19 @@ def classify(case):
     replayability = case.get("replayability")
     operational_memory = case.get("operational_memory")
     stale_state = case.get("stale_state")
+    observable_calm = case.get("observable_calm")
+    fragmented = case.get("fragmented_continuation")
 
     if incorrect == "PASS" and topology == "incomplete":
         return "HOLD"
 
     if hidden is True or survivability is True:
+        return "FAIL"
+
+    if fragmented is True:
+        return "FAIL"
+
+    if observable_calm is True and hidden is True:
         return "FAIL"
 
     if operational_memory == "survives" or stale_state is True:

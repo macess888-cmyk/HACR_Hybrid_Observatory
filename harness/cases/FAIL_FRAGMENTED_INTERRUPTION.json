@@ -1,0 +1,11 @@
+{
+  "case": "FAIL_FRAGMENTED_INTERRUPTION",
+  "description": "Interruption succeeds at one local surface, but fragmented continuation survives in aggregate.",
+  "topology_visibility": "partial",
+  "local_interruption": "successful",
+  "fragmented_continuation": true,
+  "hidden_carriers": true,
+  "continuation_survivability": true,
+  "interruption_locality": "fragmented",
+  "expected_state": "FAIL"
+}
