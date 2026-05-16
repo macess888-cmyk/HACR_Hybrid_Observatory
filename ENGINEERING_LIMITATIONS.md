@@ -1,66 +1,147 @@
 # Engineering Limitations
 
-HACR Hybrid Observatory is a bounded runtime diagnostics and topology inspection framework.
+## Purpose
 
-## Known Limitations
+This document defines known engineering and implementation limitations for the HACR Hybrid Observatory.
 
-Known limitations include:
+The repository is a bounded, observer-side inspection environment.
 
-- incomplete topology visibility
-- incomplete runtime visibility
-- distributed system blind spots
-- orchestration opacity
-- recovery-state ambiguity
-- replay-path uncertainty
-- dependency visibility limitations
-- environmental variability
-- incomplete downstream observability
-- incomplete external-system visibility
+It is not a governance engine, enforcement layer, certification system, or execution-control framework.
 
-## Non-Guarantees
+---
 
-The observatory does not guarantee:
+# Core Limitations
 
-- prevention of execution
-- prevention of retries
-- prevention of replay
-- complete runtime visibility
-- complete downstream visibility
-- complete dependency visibility
-- safety certification
+The repository does not provide:
+
+- live runtime enforcement
+- production execution control
+- operational authorization
+- semantic certification
+- legal determination
+- governance authority
+- real-time intervention
+- autonomous orchestration
+- or system-level enforcement guarantees.
+
+---
+
+# Implementation Scope
+
+Current implementation surfaces are intended for:
+
+- bounded inspection
+- deterministic replay
+- topology visibility
+- continuity inspection
+- interruption-local diagnostics
+- reviewer reproducibility
+- falsification attempts
+- and explicit invalidity exposure.
+
+They are not intended for:
+
+- production deployment
 - compliance certification
-- operational correctness
+- legal adjudication
+- automated governance
+- system authorization
 - policy enforcement
+- or operational decision routing.
 
-## Diagnostic Boundary
+---
 
-Outputs remain observer-side runtime diagnostics only.
+# Parser and Scenario Limits
 
-PASS, HOLD, and FAIL are diagnostic observations.
+Any parser, case model, scenario file, or demo artifact should be treated as:
 
-They are not:
+- bounded
+- incomplete
+- inspectable
+- challengeable
+- and subject to revision.
 
-- authorization decisions
-- governance decisions
-- execution permissions
-- compliance determinations
-- certification claims
-- safety guarantees
+Parser outputs do not establish:
 
-## Review Boundary
+- causality
+- inevitability
+- blame
+- legal fault
+- operational truth
+- or generalized failure prediction.
 
-Engineering and audit review should evaluate:
+---
 
-- declared topology scope
-- declared runtime assumptions
-- declared dependency assumptions
-- declared replay assumptions
-- declared recovery assumptions
-- declared observability limits
-- reproducibility of diagnostic results
+# Reproducibility Limits
 
-## Final Constraint
+Deterministic replay is limited to the provided inputs, assumptions, and implementation state.
 
-Runtime falsification overrides representational assumptions.
+Reproducibility does not imply:
 
-Representational coherence alone does not establish continuation invalidation.
+- universal validity
+- governance legitimacy
+- semantic correctness
+- operational authority
+- or live-system transferability.
+
+---
+
+# Inspection Invalidity
+
+Inspection may become invalid if:
+
+- runtime coupling is unclear
+- topology visibility is incomplete
+- replay behavior diverges
+- observer dependency forms
+- outputs become non-reproducible
+- or inspection continuity survives after localization degrades.
+
+In these cases, reviewer interpretation should move toward:
+
+- HOLD
+- INSPECTION_INVALID
+- or explicit limitation disclosure.
+
+---
+
+# Reviewer Challengeability
+
+Reviewers are encouraged to test:
+
+- malformed inputs
+- topology changes
+- altered assumptions
+- replay divergence
+- observer removal
+- fallback behavior
+- invalidity conditions
+- hidden dependency formation
+- and overclaim surfaces.
+
+A successful run does not prove governance.
+
+It only indicates bounded behavior under the inspected conditions.
+
+---
+
+# Non-Transferability
+
+Repository outputs should not be transferred into:
+
+- execution authority
+- operational governance
+- certification decisions
+- institutional legitimacy
+- compliance claims
+- or production enforcement.
+
+Observer-side diagnostics must remain non-consumable by execution.
+
+---
+
+# Final Constraint
+
+The repository becomes stronger by exposing its limits clearly.
+
+Bounded limitations are part of the credibility surface.
