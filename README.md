@@ -1,6 +1,6 @@
 # HACR Hybrid Observatory
 
-Observer-Side / Deterministic / Runtime-Local / Non-Authoritative
+Observer-Side / Deterministic / Runtime-Local / Replay-Oriented / Non-Authoritative
 
 ---
 
@@ -16,6 +16,8 @@ HACR Hybrid Observatory is a bounded runtime inspection environment focused on:
 - aggregate containment visibility
 - operational non-survivability inspection
 - hidden dependency exposure
+- minimal replay harnessing
+- false PASS detection
 - and bounded runtime-local falsification
 
 under controlled inspection conditions.
@@ -27,6 +29,7 @@ The repository is intentionally:
 - bounded
 - interruption-local
 - reviewer-facing
+- replay-oriented
 - reproducibility-oriented
 - non-authoritative
 - non-consumable by execution
@@ -49,7 +52,10 @@ The observatory focuses on bounded inspection of:
 - runtime drift
 - semantic compression failure
 - human traversability realism
-- and explicit invalidity handling
+- explicit invalidity handling
+- reviewer challengeability
+- adversarial mutation attempts
+- and replayable false PASS exposure
 
 under reproducible runtime inspection conditions.
 
@@ -63,7 +69,8 @@ The repository does not attempt to provide:
 - legal authority
 - policy enforcement
 - generalized truth infrastructure
-- or operational bind substitution
+- operational bind substitution
+- or execution-validity determination
 
 ---
 
@@ -81,9 +88,11 @@ The repository increasingly prioritizes:
 - semantic compression safety
 - hidden dependency exposure
 - runtime-local falsifiability
+- false PASS detection
+- reviewer-reachable failure states
 - and independently challengeable runtime evidence
 
-rather than ontology expansion or governance abstraction.
+rather than ontology expansion, governance abstraction, or semantic scale.
 
 ---
 
@@ -99,6 +108,8 @@ The observatory may:
 - expose continuity behavior
 - expose interruption conditions
 - support reviewer falsification
+- support deterministic replay
+- support mutation-based challenge attempts
 
 The observatory may not:
 
@@ -111,6 +122,7 @@ The observatory may not:
 - become hidden governance substrate
 - inherit environmental authority
 - suppress HOLD through confidence
+- convert replay into admissibility
 - or become consumable by execution systems
 
 ---
@@ -142,7 +154,64 @@ They are not:
 - legal conclusions
 - admissibility guarantees
 - operational certification
-- or semantic truth determination
+- semantic truth determination
+- or permission to continue
+
+---
+
+# Minimal Replay Harness
+
+The repository includes a bounded replay-oriented falsification harness focused on:
+
+- deterministic replay
+- reviewer challengeability
+- false PASS detection
+- topology-aware HOLD preservation
+- hidden continuation visibility
+- fragmented interruption inspection
+- operational memory survivability
+- observable calm failure detection
+- replay ambiguity handling
+- and bounded runtime-local falsification
+
+The harness is intentionally:
+
+- minimal
+- deterministic
+- reviewer-reachable
+- replay-oriented
+- non-authoritative
+- non-executional
+- and operationally bounded
+
+Current harness direction prioritizes:
+
+- smaller replay surfaces
+- replayable failure reachability
+- mutation testing
+- adversarial reviewer inspection
+- explicit uncertainty preservation
+- and operational falsifiability
+
+rather than semantic expansion.
+
+Harness entry points:
+
+- `harness/README.md`
+- `harness/scripts/run_harness.py`
+- `harness/docs/RUN_COMMANDS.md`
+- `harness/docs/CASE_INDEX.md`
+- `harness/docs/TRY_TO_BREAK_THIS.md`
+- `harness/docs/MUTATION_EXAMPLES.md`
+- `harness/visuals/minimal_topology_map.svg`
+
+Core harness reductions:
+
+- replayability proves inspectability, not admissibility
+- a replay harness that cannot independently fail becomes representational
+- incomplete topology must not produce PASS
+- hidden continuation must remain visible as FAIL or HOLD
+- false PASS detection is a first-class reviewer concern
 
 ---
 
@@ -162,6 +231,8 @@ Current repository reductions include:
 - operational residue remains effect-capable until proven inert
 - observer absence survivability is part of boundedness
 - falsifiability is stronger than confidence
+- false PASS is more dangerous than unresolved HOLD
+- replayable failure must remain easier to reach than semantic reassurance
 
 ---
 
@@ -181,6 +252,11 @@ Recommended reviewer order:
 10. INTERRUPTION_REALISM_CHECKLIST.md
 11. TOPOLOGY_VISIBILITY_LIMITS.md
 12. REPLAYABILITY_AND_FALSIFICATION.md
+13. harness/README.md
+14. harness/docs/RUN_COMMANDS.md
+15. harness/docs/TRY_TO_BREAK_THIS.md
+16. harness/docs/MUTATION_EXAMPLES.md
+17. harness/docs/CASE_INDEX.md
 
 ---
 
@@ -188,40 +264,51 @@ Recommended reviewer order:
 
 ## Core Safety / Boundary Layers
 
-- ENGINEERING_SAFETY_AND_TRANSLATION_SUPPORT_PACK.md
-- SELF_LIMITATION_CHARTER.md
-- UNSAFE_INTERPRETATIONS.md
-- DIAGNOSTIC_TO_EXECUTION_FIREWALL.md
-- KNOWN_FAILURE_MODES.md
+- `docs/ENGINEERING_SAFETY_AND_TRANSLATION_SUPPORT_PACK.md`
+- `docs/SELF_LIMITATION_CHARTER.md`
+- `docs/UNSAFE_INTERPRETATIONS.md`
+- `docs/DIAGNOSTIC_TO_EXECUTION_FIREWALL.md`
+- `docs/KNOWN_FAILURE_MODES.md`
 
 ## Reviewer / Replay / Falsification
 
-- REVIEWER_REPRODUCTION_GUIDE.md
-- REPLAYABILITY_AND_FALSIFICATION.md
+- `docs/REVIEWER_REPRODUCTION_GUIDE.md`
+- `docs/REPLAYABILITY_AND_FALSIFICATION.md`
 
 ## Observer / Dependency / Removal
 
-- OBSERVER_REMOVABILITY_TESTS.md
-- HIDDEN_DEPENDENCY_SURFACES.md
+- `docs/OBSERVER_REMOVABILITY_TESTS.md`
+- `docs/HIDDEN_DEPENDENCY_SURFACES.md`
 
 ## Runtime Continuation / Containment
 
-- AGGREGATE_CONTAINMENT_FAILURES.md
-- RUNTIME_DRIFT_AND_CONTINUATION.md
-- STALE_STATE_AND_RESIDUE.md
-- OPERATIONAL_MEMORY_SURFACES.md
-- TOPOLOGY_VISIBILITY_LIMITS.md
-- OBSERVABLE_CALM_FAILURES.md
+- `docs/AGGREGATE_CONTAINMENT_FAILURES.md`
+- `docs/RUNTIME_DRIFT_AND_CONTINUATION.md`
+- `docs/STALE_STATE_AND_RESIDUE.md`
+- `docs/OPERATIONAL_MEMORY_SURFACES.md`
+- `docs/TOPOLOGY_VISIBILITY_LIMITS.md`
+- `docs/OBSERVABLE_CALM_FAILURES.md`
 
 ## Human Runtime / Interruption Realism
 
-- HUMAN_TRAVERSABILITY_RUNTIME_LENS.md
-- INTERRUPTION_REALISM_CHECKLIST.md
+- `docs/HUMAN_TRAVERSABILITY_RUNTIME_LENS.md`
+- `docs/INTERRUPTION_REALISM_CHECKLIST.md`
 
 ## Semantic / Translation / Compression
 
-- SEMANTIC_COMPRESSION_FAILURES.md
-- IMPLEMENTATION_BOUNDARY_MAP.md
+- `docs/SEMANTIC_COMPRESSION_FAILURES.md`
+- `docs/IMPLEMENTATION_BOUNDARY_MAP.md`
+
+## Minimal Harness / Replay Inspection
+
+- `harness/README.md`
+- `harness/scripts/run_harness.py`
+- `harness/docs/RUN_COMMANDS.md`
+- `harness/docs/CASE_INDEX.md`
+- `harness/docs/TRY_TO_BREAK_THIS.md`
+- `harness/docs/MUTATION_EXAMPLES.md`
+- `harness/expected/EXPECTED_MINIMAL_REPLAY.md`
+- `harness/visuals/minimal_topology_map.svg`
 
 ---
 
@@ -237,6 +324,8 @@ The repository increasingly focuses on:
 - topology-aware uncertainty
 - replayable collapse verification
 - bounded runtime inspection
+- minimal falsification harnesses
+- mutation-based challenge paths
 - and reproducible falsification pathways
 
 rather than institutional trust transfer.
@@ -255,15 +344,38 @@ The repository becomes stronger by becoming:
 - easier to boundary-check
 - easier to reproduce
 - easier to pressure-test
+- easier to mutate
 - and easier to audit
 
 Not by increasing semantic scope.
 
 ---
 
+# Current Stabilization State
+
+The repository has moved from primarily semantic documentation toward bounded replayable inspection infrastructure.
+
+Recent stabilization work emphasizes:
+
+- reviewer-reachable runtime failure
+- false PASS resistance
+- fragmented continuation detection
+- hidden continuation exposure
+- operational memory survivability
+- observable calm failure detection
+- replay ambiguity handling
+- topology-aware HOLD preservation
+- and adversarial reviewer mutation
+
+This direction remains aligned only while replay, falsification, and uncertainty preservation increase faster than semantic architecture accumulates.
+
+---
+
 # Guiding Principle
 
 Reproducible inspection, not delegated trust.
+
+Replayable falsification, not semantic reassurance.
 
 Break survivability, not ontology.
 
@@ -277,10 +389,12 @@ The observatory remains:
 - deterministic
 - bounded
 - reproducibility-oriented
+- replay-oriented
 - interruption-local
 - reviewer-facing
 - operationally falsifiable
 - topology-aware
 - HOLD-preserving
 - non-authoritative
+- non-consumable by execution
 - and removable without legitimacy collapse.
