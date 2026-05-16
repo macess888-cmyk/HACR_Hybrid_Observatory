@@ -1,0 +1,9 @@
+{
+  "continuity_status": "stable",
+  "replayability": "stable",
+  "procedural_coherence": "stable",
+  "live_conditions": "partially_observable",
+  "dependency_visibility": "degrading",
+  "trusted_interpretation": "preserved",
+  "present_state_dependence": "thinning"
+}

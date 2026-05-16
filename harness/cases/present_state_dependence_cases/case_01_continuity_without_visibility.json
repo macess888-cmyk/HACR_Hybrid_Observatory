@@ -1,0 +1,9 @@
+{
+  "continuity_status": "stable",
+  "reviewer_agreement": "high",
+  "replayability": "stable",
+  "topology_visibility": "narrowing",
+  "live_dependency_visibility": "reduced",
+  "historical_confidence": "high",
+  "present_state_dependence": "uncertain"
+}

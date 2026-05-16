@@ -1,0 +1,8 @@
+{
+  "historical_replay": "stable",
+  "operational_assumptions": "persisting",
+  "topology_visibility": "partial",
+  "live_dependency_validation": "limited",
+  "continuity_trust": "inherited",
+  "present_state_grounding": "unclear"
+}
