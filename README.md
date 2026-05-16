@@ -2,25 +2,25 @@
 
 ## Purpose
 
-HACR Hybrid Observatory is a bounded, observer-side inspection environment focused on:
+HACR Hybrid Observatory is a bounded, observer-side runtime inspection environment focused on:
 
+- replayable falsification
 - interruption realism
-- replay-oriented falsification
 - hidden continuation exposure
 - fragmented survivability
 - operational memory persistence
 - replay ambiguity
 - present-state attachment uncertainty
 - topology visibility
-- and reproducible runtime inspection
+- reviewer reachability
+- and uncertainty-preserving inspection
 
-under controlled and deterministic conditions.
+under deterministic and reproducible runtime conditions.
 
 The repository is intentionally:
 
 - observer-only
 - deterministic
-- bounded
 - replay-oriented
 - interruption-local
 - reviewer-facing
@@ -34,18 +34,19 @@ The repository is intentionally:
 
 The observatory increasingly focuses on:
 
-- replayable falsification
-- reviewer reachability
-- independently challengeable runtime seams
+- bounded replay structures
+- independently reachable falsification
+- reviewer-reachable runtime pressure
 - false PASS resistance
 - hidden continuation visibility
-- operational residue survivability
+- stale-state survivability
+- operational residue persistence
 - replay ambiguity
-- stale-state persistence
-- present-state attachment uncertainty
-- and bounded runtime inspection
+- fragmented interruption
+- present-state attachment degradation
+- and anti-semantic-dependency inspection
 
-rather than semantic expansion or governance ontology growth.
+rather than semantic expansion, governance ontology growth, or authority accumulation.
 
 ---
 
@@ -61,6 +62,7 @@ Current runtime reductions increasingly compress toward:
 - operational memory may survive beyond present-state validity
 - fragmented interruption may preserve hidden continuation
 - observable calm is not guaranteed containment
+- semantic survivability may outrun replayable falsification
 - and incomplete topology visibility preserves uncertainty
 
 ---
@@ -73,9 +75,10 @@ The observatory may:
 - classify
 - trace
 - map
-- pressure-test
 - replay
+- pressure-test
 - expose runtime survivability behavior
+- and expose replay-oriented uncertainty surfaces
 
 The observatory may not:
 
@@ -108,6 +111,7 @@ These states are:
 - interruption-local
 - reviewer-facing
 - uncertainty-preserving
+- independently challengeable
 - and operationally bounded
 
 They are not:
@@ -131,7 +135,7 @@ The replay harness increasingly pressures whether:
 - operational memory persists after invalidity
 - replay becomes representational rather than operational
 - continuity silently detaches from present-state conditions
-- and uncertainty remains honestly preserved
+- and semantic inheritance becomes hidden infrastructure
 
 Current replay corpus includes:
 
@@ -142,81 +146,36 @@ Current replay corpus includes:
 - false PASS mutation cases
 - observable calm pressure cases
 - topology uncertainty cases
-- and present-state attachment degradation cases
+- present-state attachment degradation cases
+- and reviewer independence replay tests
 
 ---
 
-# Reviewer Direction
+# Reviewer Independence Direction
 
-The repository increasingly becomes stronger when:
+The observatory increasingly pressures whether reviewers can independently reproduce:
 
-- replay surfaces shrink
-- runtime seams become locally inspectable
-- reviewer failure remains independently reachable
-- uncertainty remains visible
-- falsification becomes easier than explanation
-- and operational inspection does not require semantic inheritance
+- PASS
+- HOLD
+- FAIL
+- replay ambiguity
+- hidden continuation
+- fragmented interruption
+- false calm
+- operational memory survivability
+- incomplete topology uncertainty
+- and present-state attachment degradation
 
-The observatory becomes weaker when:
+without requiring:
 
-- semantic survivability outruns replayable falsification
-- replay becomes theater
-- continuity silently inherits authority
-- or operational claims exceed independently inspectable runtime locality
+- insider terminology
+- semantic inheritance
+- worldview fluency
+- architecture lineage familiarity
+- or author-local interpretation
 
----
+Current reviewer tools include:
 
-# Reviewer Path
-
-Recommended reviewer order:
-
-1. START_HERE.md
-2. NON_CLAIMS.md
-3. REVIEWER_QUICKSTART.md
-4. OUTPUT_SEMANTICS.md
-5. REVIEWER_CONTINUITY_LIMITS.md
-6. INSPECTION_INVALIDITY.md
-7. OBSERVER_REMOVABILITY_TESTS.md
-8. SEMANTIC_COMPRESSION_RULES.md
-9. RECURSIVE_STABILIZATION_LIMITS.md
-10. harness/docs/CASE_INDEX.md
-11. harness/docs/REVIEWER_BREAK_GUIDE.md
-
----
-
-# Stabilization Direction
-
-The observatory increasingly appears healthiest when:
-
-- replay surfaces become smaller
-- runtime claims become narrower
-- replayable falsification becomes stronger
-- uncertainty remains preserved
-- hidden survivability remains pressure-testable
-- reviewer challengeability increases
-- and semantic expansion decreases
-
-The repository does not attempt to become:
-
-- a governance authority
-- an execution substrate
-- a sovereign control architecture
-- a universal ontology
-- or a generalized truth infrastructure
-
----
-
-# Final Compression
-
-The observatory remains:
-
-- observer-only
-- replay-oriented
-- interruption-local
-- uncertainty-preserving
-- operationally falsifiable
-- reviewer-facing
-- bounded
-- deterministic
-- non-authoritative
-- and removable without legitimacy collapse.
+```text
+python harness\scripts\run_harness.py
+python harness\reviewer_tools\reviewer_independence_check.py
