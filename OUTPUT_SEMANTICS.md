@@ -1,71 +1,175 @@
 # Output Semantics
 
-PASS / HOLD / FAIL are observer-side runtime diagnostic observations.
+## Purpose
 
-They are not execution permissions, governance rulings, safety guarantees, certification results, compliance determinations, or runtime execution prerequisite verification.
+This document defines bounded diagnostic inspection semantics used by the HACR Hybrid Observatory.
+
+Repository outputs are:
+
+- observer-side
+- reviewer-facing
+- interruption-local
+- bounded
+- reproducibility-oriented
+- and operationally falsifiable.
+
+They are not:
+
+- governance decisions
+- execution authorization
+- legal conclusions
+- semantic certification
+- operational legitimacy
+- or admissibility guarantees.
 
 ---
 
+# Diagnostic States
+
 ## PASS
 
-No continuation persistence observed within declared runtime and topology scope.
+Observed runtime conditions remain:
 
-PASS does not mean:
+- reproducible
+- interruption-visible
+- bounded
+- replay-consistent
+- reviewer-inspectable
+- and operationally challengeable
 
-- safe
-- certified
-- approved
-- compliant
-- execution-authorized
-- globally complete
+under current inspection conditions.
+
+PASS does not imply:
+
+- correctness
+- legitimacy
+- authorization
+- safety guarantee
+- governance validity
+- or universal stability.
+
+PASS only indicates that bounded inspection conditions remain operationally consistent within the inspected runtime surface.
 
 ---
 
 ## HOLD
 
-Insufficient visibility for reliable diagnostic observation.
+Runtime conditions remain:
 
-HOLD may indicate:
+- unresolved
+- unclear
+- insufficiently reproducible
+- interruption-incomplete
+- topology-ambiguous
+- or insufficiently falsifiable.
 
-- incomplete topology visibility
-- incomplete runtime visibility
-- incomplete dependency visibility
-- incomplete replay visibility
-- incomplete recovery visibility
-- unresolved downstream continuation visibility
+HOLD preserves uncertainty.
+
+HOLD prevents forced interpretation under unresolved conditions.
 
 ---
 
 ## FAIL
 
-Continuation persistence remained observable after interruption or invalidation.
+Observed runtime conditions expose:
 
-FAIL may indicate:
+- interruption-boundary failure
+- continuity survivability beyond intended constraints
+- hidden dependency persistence
+- invalid boundedness assumptions
+- observer dependency formation
+- or operational falsification failure
 
-- retry persistence
-- replay persistence
-- cached execution continuity
-- downstream continuation reachability
-- recovery-state persistence
-- continuation path visibility
+within the inspected runtime surface.
 
----
+FAIL is a bounded inspection outcome.
 
-## Boundary
+FAIL is not:
 
-Outputs may inform human review.
-
-Outputs may not become:
-
-- execution permission
-- operational authorization
-- runtime dependency
-- orchestration input
-- certification artifact
-- compliance determination
+- punishment
+- enforcement
+- governance action
+- or execution prohibition.
 
 ---
 
-## Final Constraint
+## INSPECTION_INVALID
 
-Diagnostic observations remain bounded to declared topology scope, runtime conditions, and observability limits.
+Inspection continuity survives while trustworthy runtime localization degrades.
+
+The inspection process may remain:
+
+- coherent
+- reproducible
+- synchronized
+- operationally useful
+- procedurally stable
+- and reviewer-consistent
+
+while no longer remaining reliably coupled to the runtime condition it claims to localize.
+
+INSPECTION_INVALID preserves separation between:
+
+- inspection continuity
+- and trustworthy localization.
+
+---
+
+# Core Reductions
+
+- continuity is not coupling
+- coherence is not admissibility
+- reproducibility is not legitimacy
+- synchronization is not trustworthy localization
+- usefulness is not authority
+- observer persistence is not governance validity
+- borrowed continuity is not admissibility
+
+---
+
+# Reviewer Guidance
+
+Repository outputs should be interpreted as:
+
+- bounded inspection observations
+- interruption-local diagnostic states
+- reviewer-facing runtime visibility surfaces
+- and reproducibility-oriented inspection artifacts.
+
+Outputs should not be interpreted as:
+
+- operational commands
+- governance infrastructure
+- execution routing
+- semantic truth systems
+- or environmental authority surfaces.
+
+---
+
+# Uncertainty Preservation
+
+The repository intentionally preserves:
+
+- uncertainty
+- interruption visibility
+- invalidity exposure
+- replay challengeability
+- reviewer falsification pathways
+- and boundedness constraints.
+
+The observatory does not optimize for preserved coherence under degraded runtime coupling.
+
+---
+
+# Final Compression
+
+The repository becomes stronger by becoming:
+
+- easier to inspect
+- easier to falsify
+- easier to replay
+- easier to challenge
+- easier to remove
+- and easier to boundary-check
+
+while preserving bounded uncertainty under controlled runtime inspection conditions.
