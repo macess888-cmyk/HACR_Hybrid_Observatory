@@ -1,0 +1,10 @@
+{
+  "case": "HOLD_REPLAY_AMBIGUITY",
+  "description": "Replay path is partially reproducible but ambiguity remains about whether replay represents full runtime reality.",
+  "topology_visibility": "sufficient",
+  "hidden_carriers": "unknown",
+  "replayability": "ambiguous",
+  "continuation_survivability": "unknown",
+  "interruption_locality": "uncertain",
+  "expected_state": "HOLD"
+}

@@ -1,0 +1,10 @@
+{
+  "case": "FAIL_HIDDEN_CONTINUATION",
+  "description": "Local interruption appears successful, but hidden continuation remains effect-capable elsewhere in topology.",
+  "topology_visibility": "partial",
+  "local_interruption": "successful",
+  "hidden_carriers": true,
+  "continuation_survivability": true,
+  "interruption_locality": "local_only",
+  "expected_state": "FAIL"
+}

@@ -1,0 +1,11 @@
+{
+  "case": "FAIL_OPERATIONAL_MEMORY_SURVIVES",
+  "description": "Present interruption succeeds, but stale operational memory preserves continuation capability.",
+  "topology_visibility": "sufficient",
+  "hidden_carriers": false,
+  "operational_memory": "survives",
+  "stale_state": true,
+  "continuation_survivability": true,
+  "interruption_locality": "reachable",
+  "expected_state": "FAIL"
+}
