@@ -1,0 +1,10 @@
+{
+  "case": "FAIL_CONTINUATION_SURVIVES",
+  "description": "Operational continuation survives interruption.",
+  "topology_visibility": "sufficient",
+  "hidden_carriers": true,
+  "replayability": "independent",
+  "continuation_survivability": true,
+  "interruption_locality": "reachable",
+  "expected_state": "FAIL"
+}

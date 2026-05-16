@@ -1,0 +1,10 @@
+{
+  "case": "HOLD_TOPOLOGY_UNKNOWN",
+  "description": "Topology visibility incomplete.",
+  "topology_visibility": "incomplete",
+  "hidden_carriers": "unknown",
+  "replayability": "partial",
+  "continuation_survivability": "unknown",
+  "interruption_locality": "uncertain",
+  "expected_state": "HOLD"
+}

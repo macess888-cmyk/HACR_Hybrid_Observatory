@@ -1,0 +1,11 @@
+{
+  "case": "FALSE_PASS_INCOMPLETE_TOPOLOGY",
+  "description": "PASS incorrectly asserted under incomplete topology visibility.",
+  "topology_visibility": "incomplete",
+  "hidden_carriers": "possible",
+  "replayability": "partial",
+  "continuation_survivability": "unknown",
+  "interruption_locality": "uncertain",
+  "incorrect_assertion": "PASS",
+  "expected_state": "HOLD"
+}

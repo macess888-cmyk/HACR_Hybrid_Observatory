@@ -1,0 +1,10 @@
+{
+  "case": "PASS_MINIMAL",
+  "description": "All continuation paths collapse under interruption.",
+  "topology_visibility": "sufficient",
+  "hidden_carriers": false,
+  "replayability": "independent",
+  "continuation_survivability": false,
+  "interruption_locality": "reachable",
+  "expected_state": "PASS"
+}
