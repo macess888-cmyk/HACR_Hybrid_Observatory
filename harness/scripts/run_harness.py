@@ -20,6 +20,7 @@ def classify(case):
     stale_state = case.get("stale_state")
     observable_calm = case.get("observable_calm")
     fragmented = case.get("fragmented_continuation")
+    present_attachment = case.get("present_state_attachment")
 
     if incorrect == "PASS" and topology == "incomplete":
         return "HOLD"
@@ -35,6 +36,9 @@ def classify(case):
 
     if operational_memory == "survives" or stale_state is True:
         return "FAIL"
+
+    if present_attachment in ("degraded", "unclear", "unknown"):
+        return "HOLD"
 
     if topology == "incomplete":
         return "HOLD"

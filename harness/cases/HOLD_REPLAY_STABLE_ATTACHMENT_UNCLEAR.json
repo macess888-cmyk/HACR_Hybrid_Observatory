@@ -1,0 +1,11 @@
+{
+  "case": "HOLD_REPLAY_STABLE_ATTACHMENT_UNCLEAR",
+  "description": "Replay remains consistent, but it is unclear whether replay is still coupled to current runtime conditions.",
+  "topology_visibility": "sufficient",
+  "replayability": "independent",
+  "replay_consistency": "stable",
+  "present_state_attachment": "unclear",
+  "continuation_survivability": "unknown",
+  "interruption_locality": "uncertain",
+  "expected_state": "HOLD"
+}

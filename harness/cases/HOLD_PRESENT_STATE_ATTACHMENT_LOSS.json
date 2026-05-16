@@ -1,0 +1,11 @@
+{
+  "case": "HOLD_PRESENT_STATE_ATTACHMENT_LOSS",
+  "description": "Continuity remains stable, but attachment to present-state conditions is degraded or unclear.",
+  "topology_visibility": "sufficient",
+  "continuity_status": "stable",
+  "present_state_attachment": "degraded",
+  "replayability": "independent",
+  "continuation_survivability": "unknown",
+  "interruption_locality": "uncertain",
+  "expected_state": "HOLD"
+}
