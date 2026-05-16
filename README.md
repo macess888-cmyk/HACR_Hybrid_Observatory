@@ -1,18 +1,24 @@
 # HACR Hybrid Observatory
 
-## Purpose
+Observer-Side / Deterministic / Runtime-Local / Non-Authoritative
 
-HACR Hybrid Observatory is a bounded, observer-side inspection environment focused on:
+---
+
+# Purpose
+
+HACR Hybrid Observatory is a bounded runtime inspection environment focused on:
 
 - continuity visibility
-- interruption locality
-- reproducibility
-- topology inspection
-- replay-oriented inspection behavior
+- interruption realism
+- replayable falsification
+- topology-aware inspection
 - deterministic reviewer-facing diagnostics
-- and bounded falsification surfaces
+- aggregate containment visibility
+- operational non-survivability inspection
+- hidden dependency exposure
+- and bounded runtime-local falsification
 
-under controlled runtime conditions.
+under controlled inspection conditions.
 
 The repository is intentionally:
 
@@ -21,6 +27,7 @@ The repository is intentionally:
 - bounded
 - interruption-local
 - reviewer-facing
+- reproducibility-oriented
 - non-authoritative
 - non-consumable by execution
 
@@ -30,16 +37,21 @@ The repository is intentionally:
 
 The observatory focuses on bounded inspection of:
 
-- continuity survivability
-- interruption visibility
+- continuation survivability
+- interruption locality
+- topology visibility
 - replay-oriented behavior
-- topology-local constraints
-- dependency persistence
+- operational memory persistence
+- stale-state continuation
+- aggregate containment conditions
 - observer removability
-- continuity/coupling divergence
+- dependency survivability
+- runtime drift
+- semantic compression failure
+- human traversability realism
 - and explicit invalidity handling
 
-under controlled and reproducible inspection conditions.
+under reproducible runtime inspection conditions.
 
 The repository does not attempt to provide:
 
@@ -48,7 +60,10 @@ The repository does not attempt to provide:
 - operational legitimacy
 - semantic certification
 - orchestration control
-- or generalized truth infrastructure.
+- legal authority
+- policy enforcement
+- generalized truth infrastructure
+- or operational bind substitution
 
 ---
 
@@ -56,16 +71,19 @@ The repository does not attempt to provide:
 
 The repository increasingly prioritizes:
 
-- bounded reviewer reproducibility
-- deterministic inspection paths
-- interruption-local visibility
+- deterministic reviewer reproducibility
+- replayable falsification
+- interruption realism
+- topology-aware uncertainty handling
+- aggregate containment visibility
+- operational residue visibility
 - observer removability
-- explicit invalidity states
-- semantic compression
-- operational falsifiability
+- semantic compression safety
+- hidden dependency exposure
+- runtime-local falsifiability
 - and independently challengeable runtime evidence
 
-rather than recursive semantic expansion.
+rather than ontology expansion or governance abstraction.
 
 ---
 
@@ -79,6 +97,8 @@ The observatory may:
 - map
 - pressure-test
 - expose continuity behavior
+- expose interruption conditions
+- support reviewer falsification
 
 The observatory may not:
 
@@ -86,9 +106,12 @@ The observatory may not:
 - govern systems
 - certify legitimacy
 - replace bind-local proof
+- become execution infrastructure
 - become operational dependency infrastructure
 - become hidden governance substrate
-- or inherit environmental authority.
+- inherit environmental authority
+- suppress HOLD through confidence
+- or become consumable by execution systems
 
 ---
 
@@ -108,8 +131,9 @@ These states are:
 - observer-side
 - reviewer-facing
 - interruption-local
+- reproducibility-oriented
 - non-authoritative
-- and operationally bounded.
+- and operationally bounded
 
 They are not:
 
@@ -117,13 +141,27 @@ They are not:
 - execution authorization
 - legal conclusions
 - admissibility guarantees
-- or semantic certification.
+- operational certification
+- or semantic truth determination
 
-See:
+---
 
-- OUTPUT_SEMANTICS.md
-- INSPECTION_INVALIDITY.md
-- REVIEWER_CONTINUITY_LIMITS.md
+# Core Runtime Reductions
+
+Current repository reductions include:
+
+- replayability proves inspectability, not admissibility
+- visible calm is not operational containment
+- local silence is not aggregate containment
+- operational memory is not current admissibility
+- diagnostics may witness, not bind
+- compression must preserve uncertainty
+- unknown topology preserves HOLD
+- unknown consequence carriers remain operationally equivalent to survivable continuation
+- fragmented interruption cannot guarantee aggregate containment
+- operational residue remains effect-capable until proven inert
+- observer absence survivability is part of boundedness
+- falsifiability is stronger than confidence
 
 ---
 
@@ -133,13 +171,57 @@ Recommended reviewer order:
 
 1. START_HERE.md
 2. NON_CLAIMS.md
-3. REVIEWER_QUICKSTART.md
+3. REVIEWER_REPRODUCTION_GUIDE.md
 4. OUTPUT_SEMANTICS.md
-5. REVIEWER_CONTINUITY_LIMITS.md
-6. INSPECTION_INVALIDITY.md
-7. OBSERVER_REMOVABILITY_TESTS.md
-8. SEMANTIC_COMPRESSION_RULES.md
-9. RECURSIVE_STABILIZATION_LIMITS.md
+5. KNOWN_FAILURE_MODES.md
+6. DIAGNOSTIC_TO_EXECUTION_FIREWALL.md
+7. SELF_LIMITATION_CHARTER.md
+8. OBSERVER_REMOVABILITY_TESTS.md
+9. SEMANTIC_COMPRESSION_FAILURES.md
+10. INTERRUPTION_REALISM_CHECKLIST.md
+11. TOPOLOGY_VISIBILITY_LIMITS.md
+12. REPLAYABILITY_AND_FALSIFICATION.md
+
+---
+
+# Repository Safety / Stability Layers
+
+## Core Safety / Boundary Layers
+
+- ENGINEERING_SAFETY_AND_TRANSLATION_SUPPORT_PACK.md
+- SELF_LIMITATION_CHARTER.md
+- UNSAFE_INTERPRETATIONS.md
+- DIAGNOSTIC_TO_EXECUTION_FIREWALL.md
+- KNOWN_FAILURE_MODES.md
+
+## Reviewer / Replay / Falsification
+
+- REVIEWER_REPRODUCTION_GUIDE.md
+- REPLAYABILITY_AND_FALSIFICATION.md
+
+## Observer / Dependency / Removal
+
+- OBSERVER_REMOVABILITY_TESTS.md
+- HIDDEN_DEPENDENCY_SURFACES.md
+
+## Runtime Continuation / Containment
+
+- AGGREGATE_CONTAINMENT_FAILURES.md
+- RUNTIME_DRIFT_AND_CONTINUATION.md
+- STALE_STATE_AND_RESIDUE.md
+- OPERATIONAL_MEMORY_SURFACES.md
+- TOPOLOGY_VISIBILITY_LIMITS.md
+- OBSERVABLE_CALM_FAILURES.md
+
+## Human Runtime / Interruption Realism
+
+- HUMAN_TRAVERSABILITY_RUNTIME_LENS.md
+- INTERRUPTION_REALISM_CHECKLIST.md
+
+## Semantic / Translation / Compression
+
+- SEMANTIC_COMPRESSION_FAILURES.md
+- IMPLEMENTATION_BOUNDARY_MAP.md
 
 ---
 
@@ -150,10 +232,14 @@ The repository increasingly focuses on:
 - deterministic outputs
 - replay consistency
 - reviewer reproducibility
-- interruption visibility
-- bounded topology inspection
-- explicit invalidity handling
-- and reproducible falsification pathways.
+- interruption realism
+- aggregate containment visibility
+- topology-aware uncertainty
+- replayable collapse verification
+- bounded runtime inspection
+- and reproducible falsification pathways
+
+rather than institutional trust transfer.
 
 ---
 
@@ -166,9 +252,20 @@ The repository becomes stronger by becoming:
 - easier to falsify
 - easier to remove
 - easier to independently challenge
-- and easier to boundary-check
+- easier to boundary-check
+- easier to reproduce
+- easier to pressure-test
+- and easier to audit
 
 Not by increasing semantic scope.
+
+---
+
+# Guiding Principle
+
+Reproducible inspection, not delegated trust.
+
+Break survivability, not ontology.
 
 ---
 
@@ -183,5 +280,7 @@ The observatory remains:
 - interruption-local
 - reviewer-facing
 - operationally falsifiable
+- topology-aware
+- HOLD-preserving
 - non-authoritative
 - and removable without legitimacy collapse.
