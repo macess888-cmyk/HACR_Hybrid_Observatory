@@ -44,6 +44,11 @@ The observatory increasingly focuses on:
 - replay ambiguity
 - fragmented interruption
 - present-state attachment degradation
+- replay mortality
+- interruption vitality
+- degraded-context replay
+- outsider rediscoverability
+- disagreement vitality
 - and anti-semantic-dependency inspection
 
 rather than semantic expansion, governance ontology growth, or authority accumulation.
@@ -63,6 +68,8 @@ Current runtime reductions increasingly compress toward:
 - fragmented interruption may preserve hidden continuation
 - observable calm is not guaranteed containment
 - semantic survivability may outrun replayable falsification
+- continuity may become operationally easier to preserve than interruption is to exercise
+- replay continuity does not guarantee interruption vitality
 - and incomplete topology visibility preserves uncertainty
 
 ---
@@ -135,6 +142,8 @@ The replay harness increasingly pressures whether:
 - operational memory persists after invalidity
 - replay becomes representational rather than operational
 - continuity silently detaches from present-state conditions
+- interruption vitality weakens under continuity accumulation
+- replay continuity becomes reassurance infrastructure
 - and semantic inheritance becomes hidden infrastructure
 
 Current replay corpus includes:
@@ -147,6 +156,9 @@ Current replay corpus includes:
 - observable calm pressure cases
 - topology uncertainty cases
 - present-state attachment degradation cases
+- degraded-context replay cases
+- replay mortality cases
+- outsider rediscoverability cases
 - and reviewer independence replay tests
 
 ---
@@ -164,7 +176,10 @@ The observatory increasingly pressures whether reviewers can independently repro
 - false calm
 - operational memory survivability
 - incomplete topology uncertainty
-- and present-state attachment degradation
+- present-state attachment degradation
+- interruption realism
+- replay mortality
+- and disagreement vitality
 
 without requiring:
 
