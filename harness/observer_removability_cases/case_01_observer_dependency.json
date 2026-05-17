@@ -1,0 +1,7 @@
+{
+  "case": "observer_dependency_pressure",
+  "observability_removed": true,
+  "continuation_behavior_change": "unknown",
+  "reviewer_awareness_removed": true,
+  "question": "did observability itself stabilize continuity?"
+}

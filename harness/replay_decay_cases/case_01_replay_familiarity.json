@@ -1,0 +1,8 @@
+{
+  "case": "replay_familiarity_decay",
+  "replay_iteration": "late_cycle",
+  "reviewer_familiarity": "high",
+  "continuity_expectation": "accumulating",
+  "interruption_surprise": "reduced",
+  "question": "does replay still destabilize continuation?"
+}

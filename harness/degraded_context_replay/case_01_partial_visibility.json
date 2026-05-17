@@ -1,0 +1,13 @@
+{
+  "case": "partial_visibility_replay",
+  "reviewer_context": "degraded",
+  "topology_visibility": "partial",
+  "historical_context": "incomplete",
+  "continuity_pressure": "present",
+  "interruption_visibility": "uncertain",
+  "expected_properties": [
+    "HOLD reachable",
+    "localized disagreement possible",
+    "replay remains traversable"
+  ]
+}
