@@ -299,6 +299,8 @@ Current focus areas include:
 - STABILIZATION_PRESSURE_OBSERVABILITY.md
 - DYNAMIC_OBSERVATORY_HARNESS.md
 - governance/FIELD_PROPAGATION_GATING_NOTE.md
+- ROUTING_WITHOUT_RESOLUTION.md
+  - Clarifies observer-only routing boundaries and propagation-gated observability.
 
 ---
 
