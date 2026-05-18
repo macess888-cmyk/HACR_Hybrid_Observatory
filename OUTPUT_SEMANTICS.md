@@ -86,6 +86,30 @@ SHADOW does not imply hidden execution certainty.
 
 ---
 
+## SILENCE
+
+Silence is an admissible safety-preserving state.
+
+The observatory is not required to:
+- respond
+- escalate
+- optimize engagement
+- resolve ambiguity
+
+Non-response may preserve:
+- boundary integrity
+- containment
+- graceful failure
+- observer independence
+
+Silence does not imply:
+- agreement
+- authorization
+- endorsement
+- operational continuation
+
+---
+
 # LEGIBLE TRANSITION BEHAVIOR (LTB)
 
 ## Definition
@@ -153,6 +177,28 @@ Outputs may change if:
 - visibility changes
 - stress conditions change
 - downstream conditions change
+
+---
+
+# ANTI-WEAPONIZATION BOUNDARY
+
+The Observatory excludes:
+- force projection
+- interception escalation
+- deterrence optimization
+- coercive operational logic
+- active defense orchestration
+- blended observe/act authority
+
+Observer outputs may not become:
+- operational mitigation inputs
+- autonomous escalation triggers
+- force-projection systems
+- execution authority
+
+Containment overrides escalation.
+
+Graceful failure overrides optimization.
 
 ---
 
