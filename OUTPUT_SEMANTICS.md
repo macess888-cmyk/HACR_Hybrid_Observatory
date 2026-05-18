@@ -40,6 +40,11 @@ HOLD preserves:
 - uncertainty integrity
 - non-escalation
 
+HOLD also preserves distinction between:
+- visibility and viability
+- atmosphere and authority
+- persistence and closure
+
 HOLD is non-authorizing.
 
 ---
@@ -83,6 +88,8 @@ Observed downstream continuation potential may persist
 outside directly visible inspection surfaces.
 
 SHADOW does not imply hidden execution certainty.
+
+Visible persistence alone does not prove interruption extinction.
 
 ---
 
@@ -199,6 +206,36 @@ Observer outputs may not become:
 Containment overrides escalation.
 
 Graceful failure overrides optimization.
+
+---
+
+# ATMOSPHERE NON-AUTHORITY
+
+Operational atmosphere, persistence pressure,
+governance visibility, or ambient familiarity
+do not constitute:
+
+- authority
+- legitimacy
+- admissibility
+- closure proof
+
+The observatory distinguishes between:
+- visible continuation
+and
+- materially reconstructable interruption viability.
+
+Operational atmosphere may shape behavior.
+
+Operational atmosphere may not:
+- replace bind legitimacy
+- prove admissibility
+- prove interruption extinction
+- prove irreversible closure
+
+Visibility does not guarantee viability.
+
+Persistence does not imply destiny.
 
 ---
 
