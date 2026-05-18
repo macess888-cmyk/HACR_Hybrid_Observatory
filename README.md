@@ -38,6 +38,11 @@ stops being legible before collapse becomes visible.
 Systems become more dangerous when continuity persists
 after validity silently degrades.
 
+The Observatory does not preserve continuity.
+
+The Observatory preserves the visibility of whether continuity
+remains interpretable.
+
 ---
 
 # OBSERVATORY FUNCTION
@@ -59,6 +64,20 @@ The Observatory does not:
 - replace human judgment
 
 Human operational authority remains external to the framework.
+
+---
+
+# CORE OBSERVER QUESTIONS
+
+Defined in:
+- `CORE_OBSERVER_QUESTIONS.md`
+
+Primary observer-side questions:
+1. Is the transition still legible?
+2. Is continuity still presently valid?
+3. Is recoverability still observable?
+
+Observational only.
 
 ---
 
@@ -97,22 +116,6 @@ Observational only.
 
 ---
 
-## Drift Signatures
-
-Defined in:
-- `DRIFT_SIGNATURES.md`
-
-Focus:
-- recurring execution-bound drift signatures
-- refusal survivability observations
-- carried-state continuation observations
-- scope expansion under preserved visibility
-- cross-domain drift reproducibility
-
-Observational only.
-
----
-
 ## Output Semantics
 
 Defined in:
@@ -141,114 +144,6 @@ The Observatory does not claim:
 - predictive certainty
 - operational authorization
 - guaranteed interruption success
-
----
-
-## Additional Runtime Observability Notes
-
-Additional bounded observability notes:
-
-- CONTINUITY_HIERARCHY_NOTE.md
-- OPERATOR_CONTINUITY_FATIGUE_NOTE.md
-- DETERMINISTIC_REPLAY_STABILIZATION_NOTE.md
-- TRANSITION_PRESSURE_LIFECYCLE_NOTE.md
-
-These notes remain:
-- observer-only
-- diagnostic-only
-- non-authoritative
-- runtime-local.
-
-Includes escalation / containment / re-entry transition-pressure observability boundaries under observer-only conditions.
-
----
-
-# VALIDATION STACK
-
-The observatory validation stack currently consists of:
-
-## EVH (Execution-Bound Validation Harness)
-
-Focus:
-- execution-bound admissibility enforcement
-- bind-local failure localization
-- rollback validation
-- separation enforcement
-- carried-state execution detection
-
-Operational scope:
-- execution surfaces only
-- observer-only
-- fail-closed
-
----
-
-## IBVH (Integration-Bound Validation Harness)
-
-Focus:
-- mutation pressure
-- contention pressure
-- timing drift
-- stale approval reuse
-- partial execution invalidation
-- integration-bound transition enforcement
-
-Operational scope:
-- integration surfaces only
-- observer-only
-- fail-closed
-
----
-
-## CVH (Continuous Validation Harness)
-
-Focus:
-- observer-only condition discovery
-- controlled degradation probing
-- unexpected allow-path detection
-- proposal-level bind-gap localization
-- candidate-condition surfacing
-
-CVH does NOT:
-- auto-promote conditions
-- authorize enforcement changes
-- autonomously redefine admissibility
-
-Candidate conditions require:
-- reproducibility
-- repeated manifestation
-- independent verification
-- manual review
-
-before promotion into:
-- EVH
-- IBVH
-
----
-
-## Bind Trace Standard
-
-Validation layers localize transition behavior at:
-
-`t3_transition`
-
-Bind trace surfaces may include:
-- expected_at_bind
-- actual_at_bind
-- proof_checked_at_bind
-- refusal_available_at_bind
-- execution_origin
-- violation_class
-- candidate_violation_class
-
----
-
-All validation layers remain:
-- observer-only
-- artifact-driven
-- non-authoritative
-- reproducibility-bound
-- fail-closed under ambiguity
 
 ---
 
@@ -293,32 +188,6 @@ Anti-drift continuity concerns whether continuity:
 under changing conditions.
 
 Observational only.
-
----
-
-# DRIFT SIGNATURE OBSERVATION
-
-Observed recurring cross-domain drift signature:
-
-- REFUSAL_UNAVAILABLE_AT_BIND
-- CARRIED_STATE_EXECUTION
-- MISSION_SCOPE_EXPANSION
-
-Observed across:
-- corridor scenarios
-- sovereignty overlap scenarios
-- escalation-pressure scenarios
-- AI monitoring analogs
-- autonomous constraint analogs
-
-This observation does NOT:
-- prescribe intervention
-- determine legitimacy
-- authorize response
-- operationalize governance
-
-This observation ONLY records reproduced
-execution-bound drift structure under tested conditions.
 
 ---
 
@@ -419,15 +288,10 @@ Current focus areas include:
 - topology-local observability
 - rollback visibility
 - bounded transition interpretation
-- execution-bound drift observation
 
 ---
 
 # NON-CLAIM SUMMARY
-
-The observatory may preserve replay visibility even when compatibility interpretation surfaces evolve or partially diverge across observer tooling generations.
-
-Replayability alone must not be interpreted as continuity certification, interoperability proof, or governance legitimacy.
 
 The HACR Hybrid Observatory is:
 - not governance
