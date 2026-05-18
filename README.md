@@ -13,6 +13,9 @@ The Observatory exists to inspect:
 - recoverability uncertainty
 - interruption viability
 - topology-local transition behavior
+- continuity drift visibility
+- rollback observability
+- relation-validity stability
 
 under bounded observational conditions.
 
@@ -27,10 +30,13 @@ All outputs are observational only.
 
 ---
 
-# CORE PRINCIPLE
+# CORE REDUCTIONS
 
 Systems become more dangerous when transition behavior
 stops being legible before collapse becomes visible.
+
+Systems become more dangerous when continuity persists
+after validity silently degrades.
 
 ---
 
@@ -43,6 +49,7 @@ The Observatory:
 - visualizes
 - pressure-tests
 - inspects transition behavior
+- inspects continuity behavior
 
 The Observatory does not:
 - execute
@@ -64,10 +71,27 @@ Defined in:
 
 Focus:
 - legible transition behavior (LTB)
-- graceful degradation
-- recoverability visibility
-- transition uncertainty
+- graceful degradation visibility
+- recoverability corridors
+- transition-bound uncertainty
 - topology-local continuity interpretation
+
+Observational only.
+
+---
+
+## Anti-Drift Continuity
+
+Defined in:
+- `ANTI_DRIFT_CONTINUITY.md`
+
+Focus:
+- present-state validity
+- continuity drift visibility
+- rollback observability
+- invalid formation detection
+- relation-validity inspection
+- interruption-compatible continuity analysis
 
 Observational only.
 
@@ -132,6 +156,53 @@ LTB is observational only.
 
 ---
 
+# ANTI-DRIFT CONTINUITY
+
+Anti-drift continuity concerns whether continuity:
+- remains presently valid
+- avoids stale-state inheritance
+- preserves relation validity
+- maintains interruption compatibility
+- remains replay-visible
+- avoids hidden continuity drift
+
+under changing conditions.
+
+Observational only.
+
+---
+
+# INVALID FORMATION VS COLLAPSE
+
+## Collapse
+
+A previously stable continuity condition:
+- degraded
+- destabilized
+- fragmented
+- or lost recoverability
+
+under stress or topology change.
+
+---
+
+## Invalid Formation
+
+A continuity condition that:
+- appeared stable
+- propagated operationally
+- or persisted institutionally
+
+without ever establishing sufficiently valid foundations.
+
+Some systems fail because they collapse.
+
+Some systems fail because they were never validly stabilized.
+
+This distinction is observational only.
+
+---
+
 # REPRODUCIBILITY
 
 All outputs remain bounded to:
@@ -176,6 +247,8 @@ Educational examples may include:
 - geological analogies
 - degradation geometry
 - recoverability demonstrations
+- rollback illustrations
+- continuity drift examples
 
 Examples exist solely to improve interpretability
 of observer-side transition analysis concepts.
@@ -189,10 +262,12 @@ Educational examples are not operational proofs.
 Current focus areas include:
 - transition legibility
 - graceful degradation visibility
+- anti-drift continuity
 - replay survivability
 - continuity uncertainty
 - interruption viability
 - topology-local observability
+- rollback visibility
 - bounded transition interpretation
 
 ---
