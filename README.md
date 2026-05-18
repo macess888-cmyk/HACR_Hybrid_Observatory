@@ -1,196 +1,214 @@
 # HACR Hybrid Observatory
 
-## Purpose
+## PURPOSE
 
-HACR Hybrid Observatory is a bounded, observer-side runtime inspection environment focused on:
+The HACR Hybrid Observatory is an observer-only continuity
+inspection and transition analysis framework.
 
-- replayable falsification
-- interruption realism
-- hidden continuation exposure
-- fragmented survivability
-- operational memory persistence
-- replay ambiguity
-- present-state attachment uncertainty
-- topology visibility
-- reviewer reachability
-- and uncertainty-preserving inspection
+The Observatory exists to inspect:
+- continuity behavior
+- transition visibility
+- degradation topology
+- replay survivability
+- recoverability uncertainty
+- interruption viability
+- topology-local transition behavior
 
-under deterministic and reproducible runtime conditions.
+under bounded observational conditions.
 
-The repository is intentionally:
+The Observatory does not:
+- authorize
+- govern
+- certify
+- optimize
+- operationalize execution
 
+All outputs are observational only.
+
+---
+
+# CORE PRINCIPLE
+
+Systems become more dangerous when transition behavior
+stops being legible before collapse becomes visible.
+
+---
+
+# OBSERVATORY FUNCTION
+
+The Observatory:
+- observes
+- classifies
+- maps
+- visualizes
+- pressure-tests
+- inspects transition behavior
+
+The Observatory does not:
+- execute
+- approve
+- authorize
+- govern
+- replace human judgment
+
+Human operational authority remains external to the framework.
+
+---
+
+# OBSERVATIONAL LAYERS
+
+## Transition Legibility
+
+Defined in:
+- `TRANSITION_LEGIBILITY.md`
+
+Focus:
+- legible transition behavior (LTB)
+- graceful degradation
+- recoverability visibility
+- transition uncertainty
+- topology-local continuity interpretation
+
+Observational only.
+
+---
+
+## Output Semantics
+
+Defined in:
+- `OUTPUT_SEMANTICS.md`
+
+Core classifications:
+- PASS
+- HOLD
+- FAIL
+- STOP
+- REVERSE
+- SHADOW
+
+Outputs are bounded observational artifacts only.
+
+---
+
+## Non-Claims Boundary
+
+Defined in:
+- `NON_CLAIMS.md`
+
+The Observatory does not claim:
+- governance authority
+- execution validity
+- predictive certainty
+- operational authorization
+- guaranteed interruption success
+
+---
+
+# GRACEFUL FAILURE BOUNDARY (GFB)
+
+Observer-side preference:
+- early failure visibility
+- graceful degradation
+- bounded transition corridors
+- recoverability preservation
+- safe-state return potential
+
+The Observatory does not optimize systems
+toward irreversible edge behavior.
+
+---
+
+# LEGIBLE TRANSITION BEHAVIOR (LTB)
+
+LTB concerns whether transitions remain:
+- observable
+- bounded
+- interpretable
+- recoverable
+
+during stress, interruption, or topology change.
+
+LTB is observational only.
+
+---
+
+# REPRODUCIBILITY
+
+All outputs remain bounded to:
+- supplied inputs
+- visible topology
+- available evidence
+- local inspection conditions
+- reproducible execution environments
+
+Changes in:
+- topology
+- visibility
+- dependency structure
+- downstream conditions
+
+may change observational classifications.
+
+---
+
+# OBSERVER BOUNDARY
+
+The Observatory remains:
 - observer-only
-- deterministic
-- replay-oriented
-- interruption-local
-- reviewer-facing
-- uncertainty-preserving
 - non-authoritative
-- and non-consumable by execution
+- bounded
+- reproducible
+- continuity-focused
+
+The Observatory does not:
+- operationalize execution
+- validate legitimacy
+- authorize continuation
+- certify safety
+- replace human responsibility
 
 ---
 
-# Repository Direction
+# EDUCATIONAL EXAMPLES
 
-The observatory increasingly focuses on:
+Educational examples may include:
+- topology illustrations
+- geological analogies
+- degradation geometry
+- recoverability demonstrations
 
-- bounded replay structures
-- independently reachable falsification
-- reviewer-reachable runtime pressure
-- false PASS resistance
-- hidden continuation visibility
-- stale-state survivability
-- operational residue persistence
-- replay ambiguity
-- fragmented interruption
-- present-state attachment degradation
-- replay mortality
-- interruption vitality
-- degraded-context replay
-- outsider rediscoverability
-- disagreement vitality
-- and anti-semantic-dependency inspection
+Examples exist solely to improve interpretability
+of observer-side transition analysis concepts.
 
-rather than semantic expansion, governance ontology growth, or authority accumulation.
+Educational examples are not operational proofs.
 
 ---
 
-# Core Runtime Reductions
+# CURRENT STRUCTURAL FOCUS
 
-Current runtime reductions increasingly compress toward:
-
-- visible interruption is not guaranteed operational interruption
-- replayability proves inspectability, not operational closure
-- continuity does not guarantee present-state attachment
-- replay consistency does not guarantee current-state coupling
-- stable outputs do not guarantee live operational visibility
-- operational memory may survive beyond present-state validity
-- fragmented interruption may preserve hidden continuation
-- observable calm is not guaranteed containment
-- semantic survivability may outrun replayable falsification
-- continuity may become operationally easier to preserve than interruption is to exercise
-- replay continuity does not guarantee interruption vitality
-- and incomplete topology visibility preserves uncertainty
+Current focus areas include:
+- transition legibility
+- graceful degradation visibility
+- replay survivability
+- continuity uncertainty
+- interruption viability
+- topology-local observability
+- bounded transition interpretation
 
 ---
 
-# Repository Constraints
+# NON-CLAIM SUMMARY
 
-The observatory may:
+The HACR Hybrid Observatory is:
+- not governance
+- not certification
+- not legal authority
+- not operational authorization
+- not predictive certainty
 
-- inspect
-- classify
-- trace
-- map
-- replay
-- pressure-test
-- expose runtime survivability behavior
-- and expose replay-oriented uncertainty surfaces
-
-The observatory may not:
-
-- authorize execution
-- govern systems
-- certify legitimacy
-- replace bind-local proof
-- become operational dependency infrastructure
-- become hidden governance substrate
-- inherit environmental authority
-- or become execution-consumable
-
----
-
-# Diagnostic Semantics
-
-Repository outputs are bounded observer-side inspection states.
-
-Current states include:
-
-- PASS
-- HOLD
-- FAIL
-- INSPECTION_INVALID
-
-These states are:
-
-- observer-side
-- replay-oriented
-- interruption-local
-- reviewer-facing
-- uncertainty-preserving
-- independently challengeable
-- and operationally bounded
-
-They are not:
-
-- governance decisions
-- execution authorization
-- legal conclusions
-- admissibility guarantees
-- operational closure proofs
-- or semantic certification
-
----
-
-# Replay Harness Direction
-
-The replay harness increasingly pressures whether:
-
-- replayable failure remains independently reachable
-- false PASS can emerge under incomplete topology visibility
-- hidden continuation survives visible interruption
-- operational memory persists after invalidity
-- replay becomes representational rather than operational
-- continuity silently detaches from present-state conditions
-- interruption vitality weakens under continuity accumulation
-- replay continuity becomes reassurance infrastructure
-- and semantic inheritance becomes hidden infrastructure
-
-Current replay corpus includes:
-
-- hidden continuation cases
-- fragmented interruption cases
-- operational memory survivability cases
-- replay ambiguity cases
-- false PASS mutation cases
-- observable calm pressure cases
-- topology uncertainty cases
-- present-state attachment degradation cases
-- degraded-context replay cases
-- replay mortality cases
-- outsider rediscoverability cases
-- and reviewer independence replay tests
-
----
-
-# Reviewer Independence Direction
-
-The observatory increasingly pressures whether reviewers can independently reproduce:
-
-- PASS
-- HOLD
-- FAIL
-- replay ambiguity
-- hidden continuation
-- fragmented interruption
-- false calm
-- operational memory survivability
-- incomplete topology uncertainty
-- present-state attachment degradation
-- interruption realism
-- replay mortality
-- and disagreement vitality
-
-without requiring:
-
-- insider terminology
-- semantic inheritance
-- worldview fluency
-- architecture lineage familiarity
-- or author-local interpretation
-
-Current reviewer tools include:
-
-```text
-python harness\scripts\run_harness.py
-python harness\reviewer_tools\reviewer_independence_check.py
+The framework remains:
+- observer-only
+- transition-focused
+- continuity-oriented
+- reproducibility-bound
+- non-authoritative
