@@ -151,12 +151,15 @@ Additional bounded observability notes:
 - CONTINUITY_HIERARCHY_NOTE.md
 - OPERATOR_CONTINUITY_FATIGUE_NOTE.md
 - DETERMINISTIC_REPLAY_STABILIZATION_NOTE.md
+- TRANSITION_PRESSURE_LIFECYCLE_NOTE.md
 
 These notes remain:
 - observer-only
 - diagnostic-only
 - non-authoritative
 - runtime-local.
+
+Includes escalation / containment / re-entry transition-pressure observability boundaries under observer-only conditions.
 
 ---
 
