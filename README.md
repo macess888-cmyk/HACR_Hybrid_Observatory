@@ -425,6 +425,10 @@ Current focus areas include:
 
 # NON-CLAIM SUMMARY
 
+The observatory may preserve replay visibility even when compatibility interpretation surfaces evolve or partially diverge across observer tooling generations.
+
+Replayability alone must not be interpreted as continuity certification, interoperability proof, or governance legitimacy.
+
 The HACR Hybrid Observatory is:
 - not governance
 - not certification
