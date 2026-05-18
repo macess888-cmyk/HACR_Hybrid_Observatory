@@ -301,6 +301,10 @@ Current focus areas include:
 - governance/FIELD_PROPAGATION_GATING_NOTE.md
 - ROUTING_WITHOUT_RESOLUTION.md
   - Clarifies observer-only routing boundaries and propagation-gated observability.
+- governance/field_observability/ROUTING_WITHOUT_RESOLUTION_FIELD_NOTE.md
+  - Clarifies bounded routing without convergence, authority inheritance, or semantic harmonization.
+- governance/field_observability/PROPAGATION_GATING_AND_ISOLATED_VISIBILITY.md
+  - Clarifies isolated visibility, propagation gating, and non-aggregating observational boundaries.
 
 ---
 
