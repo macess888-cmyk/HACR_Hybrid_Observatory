@@ -1,175 +1,170 @@
-# Output Semantics
+# OUTPUT SEMANTICS
 
-## Purpose
+## PURPOSE
 
-This document defines bounded diagnostic inspection semantics used by the HACR Hybrid Observatory.
+The HACR Hybrid Observatory is an observer-only diagnostic and
+continuity inspection framework.
 
-Repository outputs are:
+It does not authorize, govern, certify, optimize, or enforce execution.
 
-- observer-side
-- reviewer-facing
-- interruption-local
-- bounded
-- reproducibility-oriented
-- and operationally falsifiable.
-
-They are not:
-
-- governance decisions
-- execution authorization
-- legal conclusions
-- semantic certification
-- operational legitimacy
-- or admissibility guarantees.
+Outputs represent bounded observational classifications only.
 
 ---
 
-# Diagnostic States
+# CORE SEMANTICS
 
 ## PASS
 
-Observed runtime conditions remain:
-
-- reproducible
-- interruption-visible
+Observed transition behavior remained:
 - bounded
-- replay-consistent
-- reviewer-inspectable
-- and operationally challengeable
-
-under current inspection conditions.
+- locally interpretable
+- reproducible
+- continuity-visible
 
 PASS does not imply:
-
+- safety
 - correctness
 - legitimacy
 - authorization
-- safety guarantee
-- governance validity
-- or universal stability.
-
-PASS only indicates that bounded inspection conditions remain operationally consistent within the inspected runtime surface.
+- survivability outside observed conditions
 
 ---
 
 ## HOLD
 
-Runtime conditions remain:
+Insufficient visibility, uncertainty, incomplete topology,
+or unresolved transition conditions prevent reliable classification.
 
-- unresolved
-- unclear
-- insufficiently reproducible
-- interruption-incomplete
-- topology-ambiguous
-- or insufficiently falsifiable.
+HOLD preserves:
+- interruption viability
+- uncertainty integrity
+- non-escalation
 
-HOLD preserves uncertainty.
-
-HOLD prevents forced interpretation under unresolved conditions.
+HOLD is non-authorizing.
 
 ---
 
 ## FAIL
 
-Observed runtime conditions expose:
+Observed transition behavior exceeded bounded recoverability
+or continuity visibility conditions.
 
-- interruption-boundary failure
-- continuity survivability beyond intended constraints
-- hidden dependency persistence
-- invalid boundedness assumptions
-- observer dependency formation
-- or operational falsification failure
+FAIL indicates:
+- degraded observability
+- unstable transition geometry
+- continuity uncertainty
+- recoverability degradation
 
-within the inspected runtime surface.
-
-FAIL is a bounded inspection outcome.
-
-FAIL is not:
-
-- punishment
-- enforcement
-- governance action
-- or execution prohibition.
+FAIL is observational only.
 
 ---
 
-## INSPECTION_INVALID
+## STOP
 
-Inspection continuity survives while trustworthy runtime localization degrades.
+Observer-side indication that further continuation inspection
+should not proceed under current conditions.
 
-The inspection process may remain:
-
-- coherent
-- reproducible
-- synchronized
-- operationally useful
-- procedurally stable
-- and reviewer-consistent
-
-while no longer remaining reliably coupled to the runtime condition it claims to localize.
-
-INSPECTION_INVALID preserves separation between:
-
-- inspection continuity
-- and trustworthy localization.
+STOP does not imply enforcement authority.
 
 ---
 
-# Core Reductions
+## REVERSE
 
-- continuity is not coupling
-- coherence is not admissibility
-- reproducibility is not legitimacy
-- synchronization is not trustworthy localization
-- usefulness is not authority
-- observer persistence is not governance validity
-- borrowed continuity is not admissibility
+Observed behavior indicates increasing recoverability,
+reduced propagation pressure, or restoration toward bounded transition behavior.
+
+REVERSE is observational only.
 
 ---
 
-# Reviewer Guidance
+## SHADOW
 
-Repository outputs should be interpreted as:
+Observed downstream continuation potential may persist
+outside directly visible inspection surfaces.
 
-- bounded inspection observations
-- interruption-local diagnostic states
-- reviewer-facing runtime visibility surfaces
-- and reproducibility-oriented inspection artifacts.
-
-Outputs should not be interpreted as:
-
-- operational commands
-- governance infrastructure
-- execution routing
-- semantic truth systems
-- or environmental authority surfaces.
+SHADOW does not imply hidden execution certainty.
 
 ---
 
-# Uncertainty Preservation
+# LEGIBLE TRANSITION BEHAVIOR (LTB)
 
-The repository intentionally preserves:
+## Definition
 
-- uncertainty
-- interruption visibility
-- invalidity exposure
-- replay challengeability
-- reviewer falsification pathways
-- and boundedness constraints.
+Transition behavior that remains:
+- observable
+- bounded
+- interpretable
+- recoverable
 
-The observatory does not optimize for preserved coherence under degraded runtime coupling.
+during state change or stress.
 
 ---
 
-# Final Compression
+## PURPOSE
 
-The repository becomes stronger by becoming:
+LTB is used as an observer-side diagnostic indicator for:
+- graceful degradation
+- continuity visibility
+- transition predictability
+- recovery viability
 
-- easier to inspect
-- easier to falsify
-- easier to replay
-- easier to challenge
-- easier to remove
-- and easier to boundary-check
+---
 
-while preserving bounded uncertainty under controlled runtime inspection conditions.
+## NON-CLAIM
+
+LTB does not certify:
+- safety
+- correctness
+- operational validity
+- execution admissibility
+
+LTB is observational only.
+
+---
+
+# OBSERVER BOUNDARY
+
+The Observatory:
+- inspects
+- classifies
+- visualizes
+- pressure-tests
+- maps continuity behavior
+
+The Observatory does not:
+- execute
+- authorize
+- govern
+- optimize
+- replace human judgment
+
+---
+
+# REPRODUCIBILITY
+
+All classifications are bounded to:
+- available observation surfaces
+- supplied inputs
+- local inspection conditions
+- reproducible execution environments
+
+Outputs may change if:
+- topology changes
+- visibility changes
+- stress conditions change
+- downstream conditions change
+
+---
+
+# NON-CLAIM SUMMARY
+
+The Observatory:
+- is not governance
+- is not certification
+- is not policy
+- is not legal authority
+- is not operational authorization
+- is not predictive certainty
+
+The Observatory is an observer-only continuity
+inspection and transition analysis framework.

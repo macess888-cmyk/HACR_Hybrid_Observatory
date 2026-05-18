@@ -1,167 +1,144 @@
 # NON CLAIMS
 
-## Purpose
+## OBSERVER-ONLY FRAMEWORK
 
-This repository is a bounded, observer-side inspection environment.
+The HACR Hybrid Observatory is an observer-only inspection framework.
 
-The repository exists to support:
-
-- reproducibility-oriented inspection
-- interruption-local visibility
-- continuity inspection
-- topology inspection
-- replay-oriented analysis
-- bounded falsification
-- and reviewer-facing runtime diagnostics
-
-under controlled runtime conditions.
-
-The repository does not exist to provide governance authority, execution control, or operational legitimacy.
-
----
-
-# The Repository Does Not:
-
-- authorize execution
-- govern systems
-- certify legitimacy
-- validate semantic correctness
-- provide operational permission
-- replace bind-local proof
-- determine legal admissibility
-- provide institutional authority
-- provide enforcement infrastructure
-- provide orchestration control
-- provide universal topology interpretation
-- provide generalized truth infrastructure
-- provide runtime legitimacy guarantees
-- provide semantic finality
-- provide hidden governance infrastructure
-- become operational dependency substrate
-
----
-
-# Repository Outputs Are Not:
-
-- commands
-- approvals
-- certifications
-- governance actions
-- operational directives
-- execution permissions
-- legal conclusions
-- semantic guarantees
-- runtime authorization
-- institutional rulings
-- or environmental authority surfaces.
-
----
-
-# PASS / HOLD / FAIL / INSPECTION_INVALID
-
-Repository states are bounded diagnostic inspection semantics.
-
-They are:
-
-- observer-side
-- reviewer-facing
-- interruption-local
-- reproducibility-oriented
-- operationally bounded
-- and independently challengeable.
-
-They are not:
-
-- governance decisions
-- execution authorization
-- legitimacy determination
-- legal classification
-- operational enforcement
-- or semantic certification.
-
----
-
-# Bounded Inspection Scope
-
-The repository focuses on bounded inspection of:
-
-- continuity survivability
-- interruption visibility
-- replay-oriented behavior
-- topology-local constraints
-- dependency persistence
-- observer removability
-- continuity/coupling divergence
-- and explicit invalidity handling
-
-under controlled runtime conditions.
-
----
-
-# No Hidden Authority Claims
-
-The repository does not claim:
-
-- hidden governance capability
-- implicit operational authority
-- execution-adjacent legitimacy
-- semantic superiority
-- institutional replacement
-- universal interpretive correctness
-- or environmental centrality.
-
-The repository may expose pressure surfaces.
-
-It may not become authority infrastructure.
-
----
-
-# Observer Restriction
-
-The repository may:
-
-- inspect
-- classify
-- trace
-- map
-- pressure-test
-- expose continuity behavior
-
-The repository may not:
-
-- govern
+It does not:
 - authorize
+- govern
+- certify
 - enforce
-- orchestrate
-- route execution
-- or replace operational decision surfaces.
+- optimize
+- operationalize execution
+
+All outputs are bounded observational artifacts only.
 
 ---
 
-# Uncertainty Preservation
+# NO EXECUTION AUTHORITY
 
-The repository intentionally preserves:
+The Observatory does not:
+- grant admissibility
+- validate execution
+- approve deployment
+- authorize operational continuation
+- replace human responsibility
 
-- uncertainty
-- interruption visibility
-- explicit invalidity
-- replay challengeability
-- falsification pathways
-- and boundedness constraints.
-
-The observatory does not optimize for preserved coherence under degraded runtime coupling.
+Human decision-makers remain external to the framework.
 
 ---
 
-# Final Compression
+# NO CERTAINTY CLAIM
 
-The repository becomes stronger by becoming:
+Observational visibility is incomplete by default.
 
-- easier to inspect
-- easier to falsify
-- easier to replay
-- easier to challenge
-- easier to remove
-- and easier to boundary-check
+The Observatory does not claim:
+- complete topology visibility
+- exhaustive continuity detection
+- irreversible interruption certainty
+- guaranteed containment
+- predictive omniscience
 
-Not by increasing semantic scope or authority interpretation.
+Unknown conditions remain possible.
+
+---
+
+# NO GOVERNANCE CLAIM
+
+The Observatory is not:
+- governance infrastructure
+- regulatory infrastructure
+- legal infrastructure
+- sovereign authority
+- compliance certification
+
+Outputs must not be interpreted as governance decisions.
+
+---
+
+# NO OPTIMIZATION CLAIM
+
+The Observatory does not optimize systems toward:
+- maximum efficiency
+- edge-operation behavior
+- aggressive continuation
+- irreversible thresholds
+
+The framework prioritizes:
+- bounded visibility
+- graceful degradation
+- recoverability preservation
+- interruption viability
+- legible transition behavior
+
+---
+
+# NO SAFETY CLAIM
+
+Observed bounded behavior does not guarantee:
+- safety
+- reliability
+- future survivability
+- operational correctness
+
+PASS classifications remain local and conditional only.
+
+---
+
+# NO PERSISTENCE CLAIM
+
+Observed interruption or degradation does not guarantee:
+- full collapse
+- permanent containment
+- elimination of downstream continuation potential
+
+Distributed survivability may remain possible outside observed surfaces.
+
+---
+
+# REPRODUCIBILITY BOUNDARY
+
+Outputs are bounded to:
+- supplied inputs
+- available evidence
+- observed topology
+- inspection conditions
+
+Changes in:
+- topology
+- visibility
+- dependency structure
+- downstream state
+
+may change observational results.
+
+---
+
+# EDUCATIONAL BOUNDARY
+
+Public examples, metaphors, and explanatory analogies:
+- are educational only
+- are not operational proofs
+- do not expand Observatory authority
+
+Examples exist solely to improve interpretability
+of observer-side transition analysis concepts.
+
+---
+
+# FINAL BOUNDARY
+
+The HACR Hybrid Observatory remains:
+- observer-only
+- non-authoritative
+- bounded
+- reproducible
+- continuity-focused
+
+No Observatory artifact should be interpreted as:
+- permission
+- certification
+- operational authorization
+- sovereign legitimacy
+- execution validity
