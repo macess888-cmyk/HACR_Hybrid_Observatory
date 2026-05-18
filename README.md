@@ -144,6 +144,95 @@ The Observatory does not claim:
 
 ---
 
+# VALIDATION STACK
+
+The observatory validation stack currently consists of:
+
+## EVH (Execution-Bound Validation Harness)
+
+Focus:
+- execution-bound admissibility enforcement
+- bind-local failure localization
+- rollback validation
+- separation enforcement
+- carried-state execution detection
+
+Operational scope:
+- execution surfaces only
+- observer-only
+- fail-closed
+
+---
+
+## IBVH (Integration-Bound Validation Harness)
+
+Focus:
+- mutation pressure
+- contention pressure
+- timing drift
+- stale approval reuse
+- partial execution invalidation
+- integration-bound transition enforcement
+
+Operational scope:
+- integration surfaces only
+- observer-only
+- fail-closed
+
+---
+
+## CVH (Continuous Validation Harness)
+
+Focus:
+- observer-only condition discovery
+- controlled degradation probing
+- unexpected allow-path detection
+- proposal-level bind-gap localization
+- candidate-condition surfacing
+
+CVH does NOT:
+- auto-promote conditions
+- authorize enforcement changes
+- autonomously redefine admissibility
+
+Candidate conditions require:
+- reproducibility
+- repeated manifestation
+- independent verification
+- manual review
+
+before promotion into:
+- EVH
+- IBVH
+
+---
+
+## Bind Trace Standard
+
+Validation layers localize transition behavior at:
+
+`t3_transition`
+
+Bind trace surfaces may include:
+- expected_at_bind
+- actual_at_bind
+- proof_checked_at_bind
+- refusal_available_at_bind
+- execution_origin
+- violation_class
+- candidate_violation_class
+
+---
+
+All validation layers remain:
+- observer-only
+- artifact-driven
+- non-authoritative
+- reproducibility-bound
+- fail-closed under ambiguity
+
+---
+
 # GRACEFUL FAILURE BOUNDARY (GFB)
 
 Observer-side preference:
