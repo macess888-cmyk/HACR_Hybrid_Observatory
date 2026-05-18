@@ -97,6 +97,22 @@ Observational only.
 
 ---
 
+## Drift Signatures
+
+Defined in:
+- `DRIFT_SIGNATURES.md`
+
+Focus:
+- recurring execution-bound drift signatures
+- refusal survivability observations
+- carried-state continuation observations
+- scope expansion under preserved visibility
+- cross-domain drift reproducibility
+
+Observational only.
+
+---
+
 ## Output Semantics
 
 Defined in:
@@ -169,6 +185,32 @@ Anti-drift continuity concerns whether continuity:
 under changing conditions.
 
 Observational only.
+
+---
+
+# DRIFT SIGNATURE OBSERVATION
+
+Observed recurring cross-domain drift signature:
+
+- REFUSAL_UNAVAILABLE_AT_BIND
+- CARRIED_STATE_EXECUTION
+- MISSION_SCOPE_EXPANSION
+
+Observed across:
+- corridor scenarios
+- sovereignty overlap scenarios
+- escalation-pressure scenarios
+- AI monitoring analogs
+- autonomous constraint analogs
+
+This observation does NOT:
+- prescribe intervention
+- determine legitimacy
+- authorize response
+- operationalize governance
+
+This observation ONLY records reproduced
+execution-bound drift structure under tested conditions.
 
 ---
 
@@ -269,6 +311,7 @@ Current focus areas include:
 - topology-local observability
 - rollback visibility
 - bounded transition interpretation
+- execution-bound drift observation
 
 ---
 
