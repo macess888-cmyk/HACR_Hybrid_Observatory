@@ -144,6 +144,22 @@ The Observatory does not claim:
 
 ---
 
+## Additional Runtime Observability Notes
+
+Additional bounded observability notes:
+
+- CONTINUITY_HIERARCHY_NOTE.md
+- OPERATOR_CONTINUITY_FATIGUE_NOTE.md
+- DETERMINISTIC_REPLAY_STABILIZATION_NOTE.md
+
+These notes remain:
+- observer-only
+- diagnostic-only
+- non-authoritative
+- runtime-local.
+
+---
+
 # VALIDATION STACK
 
 The observatory validation stack currently consists of:
