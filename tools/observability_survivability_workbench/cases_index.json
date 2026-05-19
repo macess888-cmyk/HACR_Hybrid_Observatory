@@ -18,7 +18,12 @@
     "tools/review_cycle_validator/cases/observability_survivability_inflation_case.json",
     "tools/review_cycle_validator/cases/validator_authority_regression_case.json",
     "tools/review_cycle_validator/cases/external_reviewer_traversal_audit_case.json",
-    "tools/review_cycle_validator/cases/interruption_sustainability_realism_case.json"
+    "tools/review_cycle_validator/cases/interruption_sustainability_realism_case.json",
+    "tools/review_cycle_validator/cases/affected_human_traversability_case.json",
+    "tools/review_cycle_validator/cases/reassurance_infrastructure_collapse_case.json",
+    "tools/review_cycle_validator/cases/hold_vitality_challengeability_case.json",
+    "tools/review_cycle_validator/cases/synthetic_continuity_non_authority_case.json",
+    "tools/review_cycle_validator/cases/post_consequence_visibility_case.json"
   ],
   "meters": [
     {

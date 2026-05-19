@@ -1,0 +1,39 @@
+{
+  "case_id": "affected_human_traversability_case",
+  "observer_only": true,
+  "purpose": "Ensure affected-human visibility or presence does not imply executable interruption reachability.",
+  "required_review_paths": [
+    "tools/review_cycle_validator/AFFECTED_HUMAN_REASSURANCE_REGRESSION.md",
+    "tools/review_cycle_validator/EXTERNAL_REVIEWER_TRAVERSAL_AUDIT.md",
+    "tools/review_cycle_validator/INTERRUPTION_SUSTAINABILITY_REALISM.md",
+    "tools/reviewer_traversal_budget/README.md"
+  ],
+  "replay_commands": [
+    {
+      "name": "reviewer_traversal_budget_meter",
+      "command": "python tools/reviewer_traversal_budget/traversal_budget_meter.py",
+      "expected_output_contains": "UNKNOWN -> HOLD"
+    }
+  ],
+  "required_terms": [
+    "Human presence is not executable interruption reachability",
+    "UNKNOWN -> HOLD",
+    "Break survivability, not ontology"
+  ],
+  "forbidden_authority_terms": [
+    "human presence proves interruption capability",
+    "visibility proves protection",
+    "documentation proves protection",
+    "this repository certifies",
+    "this repository authorizes"
+  ],
+  "stress_checks": {
+    "max_review_path_count": 12,
+    "max_replay_command_count": 5,
+    "require_validator_non_claims": true,
+    "require_gitignored_outputs": true,
+    "require_hold_semantics": true,
+    "require_receipt_generation": true
+  },
+  "expected_verdict": "PASS"
+}

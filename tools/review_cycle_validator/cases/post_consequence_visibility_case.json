@@ -1,0 +1,39 @@
+{
+  "case_id": "post_consequence_visibility_case",
+  "observer_only": true,
+  "purpose": "Ensure documentation, public visibility, or post-consequence recognition do not substitute for executable interruption before consequence hardens.",
+  "required_review_paths": [
+    "tools/review_cycle_validator/AFFECTED_HUMAN_REASSURANCE_REGRESSION.md",
+    "tools/review_cycle_validator/EXTERNAL_REVIEWER_TRAVERSAL_AUDIT.md",
+    "tools/review_cycle_validator/INTERRUPTION_SUSTAINABILITY_REALISM.md",
+    "REVIEWER_START_HERE.md"
+  ],
+  "replay_commands": [
+    {
+      "name": "baseline_review_cycle_validator",
+      "command": "python tools/review_cycle_validator/src/validator.py --case tools/review_cycle_validator/cases/v1_review_cycle_case.json",
+      "expected_output_contains": "Status: PASS"
+    }
+  ],
+  "required_terms": [
+    "Public visibility is not interruption capability",
+    "Being documented is not being protected",
+    "UNKNOWN -> HOLD"
+  ],
+  "forbidden_authority_terms": [
+    "documentation proves protection",
+    "public visibility guarantees interruption",
+    "post consequence justice proves governance",
+    "this repository certifies",
+    "this repository authorizes"
+  ],
+  "stress_checks": {
+    "max_review_path_count": 12,
+    "max_replay_command_count": 5,
+    "require_validator_non_claims": true,
+    "require_gitignored_outputs": true,
+    "require_hold_semantics": true,
+    "require_receipt_generation": true
+  },
+  "expected_verdict": "PASS"
+}

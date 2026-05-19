@@ -1,0 +1,39 @@
+{
+  "case_id": "reassurance_infrastructure_collapse_case",
+  "observer_only": true,
+  "purpose": "Ensure evidence, replay, trust, and observability infrastructure do not become continuity legitimacy.",
+  "required_review_paths": [
+    "tools/review_cycle_validator/AFFECTED_HUMAN_REASSURANCE_REGRESSION.md",
+    "tools/review_cycle_validator/OBSERVABILITY_SURVIVABILITY_REGRESSION.md",
+    "tools/observability_survivability_workbench/README.md",
+    "tools/replay_reconstructability_index/README.md"
+  ],
+  "replay_commands": [
+    {
+      "name": "replay_reconstructability_index",
+      "command": "python tools/replay_reconstructability_index/reconstructability_index.py",
+      "expected_output_contains": "UNKNOWN -> HOLD"
+    }
+  ],
+  "required_terms": [
+    "Evidence continuity may support interruption. It may not become continuity legitimacy",
+    "UNKNOWN -> HOLD",
+    "Break survivability, not ontology"
+  ],
+  "forbidden_authority_terms": [
+    "evidence continuity proves legitimacy",
+    "replay continuity guarantees protection",
+    "trust infrastructure creates admissibility",
+    "this repository certifies",
+    "this repository authorizes"
+  ],
+  "stress_checks": {
+    "max_review_path_count": 12,
+    "max_replay_command_count": 5,
+    "require_validator_non_claims": true,
+    "require_gitignored_outputs": true,
+    "require_hold_semantics": true,
+    "require_receipt_generation": true
+  },
+  "expected_verdict": "PASS"
+}
