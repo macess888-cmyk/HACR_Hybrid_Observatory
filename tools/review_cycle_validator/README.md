@@ -14,6 +14,27 @@ This validator checks:
 - HOLD ambiguity preservation
 - interruption measurability regression
 
+---
+
+# HOLD Regression Testing
+
+The validator includes ambiguity regression cases intended to ensure unresolved replay, reconstruction, traversal, or containment ambiguity does not silently normalize into PASS.
+
+Regression cases may intentionally:
+
+- fail replay commands
+- reference nonexistent replay surfaces
+- simulate reconstruction ambiguity
+- pressure-test HOLD enforcement
+
+The purpose is not to create certainty.
+
+The purpose is to preserve bounded uncertainty under unresolved runtime conditions.
+
+UNKNOWN -> HOLD.
+
+---
+
 This validator does NOT:
 
 - govern
