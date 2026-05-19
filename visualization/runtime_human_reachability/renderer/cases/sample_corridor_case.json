@@ -1,0 +1,59 @@
+{
+  "case_id": "sample_corridor_case",
+  "title": "Sample Interruption Corridor Case",
+  "observer_only": true,
+  "nodes": [
+    {
+      "id": "visibility",
+      "label": "Visible Consequence",
+      "x": 80,
+      "y": 120
+    },
+    {
+      "id": "comprehension",
+      "label": "Human Comprehension",
+      "x": 260,
+      "y": 120
+    },
+    {
+      "id": "coordination",
+      "label": "Coordination",
+      "x": 440,
+      "y": 120
+    },
+    {
+      "id": "interruption",
+      "label": "Executable Interruption",
+      "x": 620,
+      "y": 120
+    }
+  ],
+  "edges": [
+    {
+      "from": "visibility",
+      "to": "comprehension",
+      "status": "PASS",
+      "pressure": 0.2
+    },
+    {
+      "from": "comprehension",
+      "to": "coordination",
+      "status": "HOLD",
+      "pressure": 0.55
+    },
+    {
+      "from": "coordination",
+      "to": "interruption",
+      "status": "FAIL",
+      "pressure": 0.85
+    }
+  ],
+  "non_claims": [
+    "does not govern",
+    "does not authorize",
+    "does not certify",
+    "does not determine legitimacy",
+    "does not infer inevitability",
+    "does not operationalize consequence"
+  ]
+}
