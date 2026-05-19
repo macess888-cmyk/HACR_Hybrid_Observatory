@@ -305,6 +305,7 @@ Current focus areas include:
   - Clarifies bounded routing without convergence, authority inheritance, or semantic harmonization.
 - governance/field_observability/PROPAGATION_GATING_AND_ISOLATED_VISIBILITY.md
   - Clarifies isolated visibility, propagation gating, and non-aggregating observational boundaries.
+- diagnostic_boundaries/SEARCH_EXPANSION_WITHOUT_SCORE_BINDING.md
 
 ---
 
