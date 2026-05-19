@@ -1,3 +1,4 @@
+import argparse
 import json
 import hashlib
 from pathlib import Path
@@ -5,7 +6,7 @@ from datetime import datetime, timezone
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CASE_PATH = ROOT / "cases" / "demo_case.json"
+DEFAULT_CASE_PATH = ROOT / "cases" / "demo_case.json"
 OUTPUT_DIR = ROOT / "outputs"
 
 
@@ -88,11 +89,12 @@ def score_case(case: dict) -> dict:
     }
 
 
-def make_receipt(case: dict, result: dict) -> dict:
+def make_receipt(case: dict, result: dict, source_case_path: Path) -> dict:
     receipt = {
         "tool": "interruption_viability_instrumentation_harness",
-        "version": "0.1",
+        "version": "0.2",
         "generated_at": datetime.now(timezone.utc).isoformat(),
+        "source_case_path": str(source_case_path),
         "case_id": case.get("case_id"),
         "result": result,
         "non_claims": [
@@ -100,7 +102,10 @@ def make_receipt(case: dict, result: dict) -> dict:
             "Measurement is not admissibility.",
             "Observability does not create interruption.",
             "Evidence does not create bind.",
-            "Metrics do not create legitimacy."
+            "Metrics do not create legitimacy.",
+            "FAIL does not determine governance invalidity.",
+            "PASS does not certify governance sufficiency.",
+            "HOLD preserves unresolved runtime determination."
         ],
         "case": case
     }
@@ -113,8 +118,9 @@ def make_receipt(case: dict, result: dict) -> dict:
 def write_outputs(receipt: dict) -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    json_path = OUTPUT_DIR / "demo_receipt.json"
-    md_path = OUTPUT_DIR / "demo_receipt.md"
+    case_id = receipt["case_id"] or "unnamed_case"
+    json_path = OUTPUT_DIR / f"{case_id}_receipt.json"
+    md_path = OUTPUT_DIR / f"{case_id}_receipt.md"
 
     with json_path.open("w", encoding="utf-8") as f:
         json.dump(receipt, f, indent=2)
@@ -124,21 +130,38 @@ def write_outputs(receipt: dict) -> None:
         f.write(f"Case ID: `{receipt['case_id']}`\n\n")
         f.write(f"Status: **{receipt['result']['status']}**\n\n")
         f.write(f"Reason: {receipt['result']['reason']}\n\n")
+        f.write(f"Source Case: `{receipt['source_case_path']}`\n\n")
         f.write(f"SHA256: `{receipt['sha256']}`\n\n")
         f.write("## Non-Claims\n\n")
         for claim in receipt["non_claims"]:
             f.write(f"- {claim}\n")
 
+    print("Artifacts written:")
+    print(f" - {json_path}")
+    print(f" - {md_path}")
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Observer-only interruption viability instrumentation harness."
+    )
+    parser.add_argument(
+        "--case",
+        default=str(DEFAULT_CASE_PATH),
+        help="Path to JSON case file."
+    )
+    return parser.parse_args()
+
 
 def main():
-    case = load_case(CASE_PATH)
+    args = parse_args()
+    case_path = Path(args.case)
+
+    case = load_case(case_path)
     result = score_case(case)
-    receipt = make_receipt(case, result)
+    receipt = make_receipt(case, result, case_path)
     write_outputs(receipt)
 
-    print("Artifacts written:")
-    print(" - tools/interruption_viability_harness/outputs/demo_receipt.json")
-    print(" - tools/interruption_viability_harness/outputs/demo_receipt.md")
     print(f"Status: {result['status']}")
 
 

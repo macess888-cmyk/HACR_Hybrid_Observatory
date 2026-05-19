@@ -1,0 +1,24 @@
+{
+  "case_id": "pass_interruption_executable_within_window",
+  "governance_visibility": {
+    "audit_trail_visible": true,
+    "review_path_visible": true,
+    "replay_available": true,
+    "escalation_path_documented": true
+  },
+  "interruption_executability": {
+    "estimated_reconstruction_minutes": 30,
+    "required_actor_count": 2,
+    "cross_system_dependencies": 3,
+    "manual_coordination_required": true,
+    "human_response_window_minutes": 90,
+    "interruption_latency_minutes": 45
+  },
+  "continuation_hardening": {
+    "elapsed_persistence_minutes": 60,
+    "distributed_nodes_active": 3,
+    "workflow_familiarity_high": false,
+    "rollback_complexity": "low",
+    "ambient_dependency_density": "low"
+  }
+}

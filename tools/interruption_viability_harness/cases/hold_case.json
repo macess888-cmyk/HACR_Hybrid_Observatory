@@ -1,0 +1,24 @@
+{
+  "case_id": "hold_insufficient_runtime_measurement",
+  "governance_visibility": {
+    "audit_trail_visible": true,
+    "review_path_visible": true,
+    "replay_available": true,
+    "escalation_path_documented": true
+  },
+  "interruption_executability": {
+    "estimated_reconstruction_minutes": null,
+    "required_actor_count": 5,
+    "cross_system_dependencies": null,
+    "manual_coordination_required": true,
+    "human_response_window_minutes": 60,
+    "interruption_latency_minutes": null
+  },
+  "continuation_hardening": {
+    "elapsed_persistence_minutes": 240,
+    "distributed_nodes_active": 12,
+    "workflow_familiarity_high": true,
+    "rollback_complexity": "high",
+    "ambient_dependency_density": "high"
+  }
+}
