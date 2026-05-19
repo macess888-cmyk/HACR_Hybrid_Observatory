@@ -1,0 +1,51 @@
+{
+  "case_id": "v1_review_cycle_case",
+  "observer_only": true,
+  "required_review_paths": [
+    "REVIEWER_START_HERE.md",
+    "STABILIZATION_V1_RUNTIME_REACHABILITY.md",
+    "ARCHITECTURE_TRAVERSAL_MAP.md",
+    "SEMANTIC_COMPRESSION_BOUNDARY.md",
+    "RELEASE_NOTES_V1_RUNTIME_REACHABILITY.md",
+    "REVIEWER_REPRODUCIBILITY_GUIDE.md",
+    "REPOSITORY_BOUNDARY_NON_CLAIMS.md",
+    "governance/runtime_human_reachability/RUNTIME_HUMAN_REACHABILITY_INDEX.md",
+    "visualization/runtime_human_reachability/renderer/RENDERER_ARCHITECTURE.md",
+    "governance/reviewer_traversability/README.md"
+  ],
+  "replay_commands": [
+    {
+      "name": "runtime_human_reachability_harness",
+      "command": "python harnesses/runtime_human_reachability/practical_human_interruption_reachability.py",
+      "expected_output_contains": "PASS"
+    },
+    {
+      "name": "runtime_human_reachability_renderer",
+      "command": "python visualization/runtime_human_reachability/renderer/src/render_interruption_corridor.py --case visualization/runtime_human_reachability/renderer/cases/sample_corridor_case.json",
+      "expected_output_contains": "SVG SHA256"
+    },
+    {
+      "name": "governance_theater_survivability_harness",
+      "command": "python harnesses/governance_theater_survivability/src/harness.py --case harnesses/governance_theater_survivability/cases/sample_governance_theater_case.json",
+      "expected_output_contains": "Status: FAIL"
+    }
+  ],
+  "hold_ambiguity_required": true,
+  "required_terms": [
+    "UNKNOWN -> HOLD",
+    "Visibility is not reachability",
+    "Asymmetry does not imply destiny",
+    "Persistence is not legitimacy",
+    "Measurement is not admissibility",
+    "Break survivability, not ontology"
+  ],
+  "forbidden_authority_terms": [
+    "this repository certifies",
+    "this repository authorizes",
+    "this repository determines legitimacy",
+    "guarantees legitimacy",
+    "proves governance truth",
+    "inevitable outcome",
+    "institutional destiny"
+  ]
+}

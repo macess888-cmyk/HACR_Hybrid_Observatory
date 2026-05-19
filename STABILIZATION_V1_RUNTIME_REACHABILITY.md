@@ -1,106 +1,198 @@
-# Stabilization v1: Runtime Human Reachability
+# STABILIZATION V1 — RUNTIME REACHABILITY
 
-## Status
+## Purpose
 
-This repository branch has reached a bounded stabilization point for runtime-human reachability observability.
+This stabilization cycle compresses the HACR Hybrid Observatory runtime-human-reachability branch into a bounded, reviewer-traversable, observer-restricted runtime inspection framework.
 
-The stabilized stack includes:
+The branch remains intentionally:
 
-- semantic survivability gravity inspection
-- runtime-human interruption reachability
-- interruption sustainability metrics
-- topology observability
-- cross-layer coupling inspection
-- deterministic visualization specifications
-- deterministic SVG rendering
-- reviewer traversability inspection
+- runtime-local
+- interruption-centered
+- replay-safe
+- deterministic where measurable
+- anti-authoritative
+- anti-ontological
+- non-governance
+- non-adjudicative
 
-This stabilization does not create:
+The purpose of this repository is not to determine governance truth.
 
-- governance authority
-- institutional legitimacy
-- admissibility
-- certification
-- enforcement capability
-- inevitability claims
-- ontology expansion
+The purpose is to inspect whether practical interruption viability remains materially reachable under runtime continuation pressure.
 
 ---
 
-# Core Stabilized Object
-
-The stabilized object is:
-
-runtime-local observability of practical interruption reachability under continuation survivability pressure.
-
-The observatory asks:
-
-Can interruption remain materially reachable, reconstructable, and sustainable before continuation persistence hardens beyond practical recovery?
-
-If measurable:
-inspect.
-
-If not measurable:
-UNKNOWN -> HOLD.
-
----
-
-# Stabilized Locks
+# Core Runtime Locks
 
 - UNKNOWN -> HOLD
-- Visibility is not reachability.
-- Persistence is not closure.
 - Asymmetry does not imply destiny.
-- Human fatigue is not consent.
+- Visibility is not viability.
+- Persistence is not legitimacy.
+- Persistence is not closure.
 - Instrumentation is not authority.
 - Measurement is not admissibility.
-- Visualization is not proof.
 - Replayability does not create legitimacy.
 - Evidence does not create bind.
+- Governance theater is not interruption capability.
+- Renderer output is not proof.
+- Reviewer traversal is not authority.
+- Reproducibility is not legitimacy.
 - Break survivability, not ontology.
 
 ---
 
-# Stabilized Non-Claims
+# Observatory Boundary
 
-The observatory does not:
+The Observatory may:
+
+- inspect
+- replay
+- localize
+- classify
+- pressure-test
+- instrument
+- map
+- trace
+- preserve bounded uncertainty
+
+The Observatory does not:
 
 - govern
 - authorize
 - adjudicate
-- enforce
 - certify
 - determine legitimacy
-- determine governance truth
 - infer inevitability
-- infer hidden authority
 - operationalize consequence
-- replace institutional authority
+- replace institutional review
 - replace bind proof
+- establish governance truth
 
 ---
 
-# Stabilized Traversability Requirement
+# Runtime Human Reachability
 
-The observatory must remain materially traversable.
+The runtime human reachability branch inspects:
 
-If reviewers cannot materially locate, understand, reconstruct, and pressure-test the observability stack, then observability complexity itself becomes a runtime pressure surface.
+- interruption reachability
+- synchronization burden
+- continuation acceleration
+- recovery delay momentum
+- interruption corridor stability
+- reviewer traversability
+- reconstruction timing realism
+- continuation survivability asymmetry
 
-Reviewer traversability is therefore part of stabilization.
+while preserving strict separation between:
+
+- visibility and viability
+- persistence and legitimacy
+- survivability and governance legitimacy
+- observability and execution
+- instrumentation and authority
+- asymmetry and inevitability
 
 ---
 
-# Stabilization Boundary
+# Reviewer Traversability Stabilization
 
-This is a stabilization marker, not a final authority claim.
+Reviewer complexity must remain materially traversable.
 
-The correct posture remains:
+If reviewers cannot:
 
-inspect,
-localize,
-reconstruct,
-pressure-test,
-classify,
-preserve bounded uncertainty.
+- replay,
+- reconstruct,
+- falsify,
+- or pressure-test
+
+the observability architecture itself risks reproducing hidden survivability hardening surfaces.
+
+Reviewer traversal therefore remains runtime-local and bounded.
+
+Reviewer traversal is not authority.
+
+---
+
+# Deterministic Replay Boundary
+
+All replay-oriented tooling remains:
+
+- observer-only
+- bounded
+- deterministic where measurable
+- reproducible
+- interruption-local
+
+Replay artifacts do not establish:
+
+- legitimacy
+- admissibility
+- authority
+- governance truth
+- operational permission
+
+---
+
+# HOLD Boundary
+
+HOLD is a stabilization boundary.
+
+HOLD indicates:
+
+- unresolved ambiguity
+- incomplete reconstructability
+- unresolved runtime locality
+- unverifiable interruption conditions
+- unresolved semantic drift risk
+
+HOLD does not imply:
+
+- failure
+- success
+- legitimacy
+- inevitability
+- continuity destiny
+
+---
+
+# Semantic Compression Boundary
+
+The architecture remains healthiest when compressed downward into:
+
+- executable interruption realism
+- runtime locality
+- measurable asymmetry
+- interruption sustainability
+- reconstruction realism
+- continuation pressure observability
+
+and not expanded upward into:
+
+- governance cosmology
+- survivability metaphysics
+- inevitability inheritance
+- institutional permanence mythology
+- recursive ontology expansion
+
+---
+
+# Stabilization Status
+
+Current stabilization direction:
+
+- compress
+- tighten
+- replay
+- validate
+- falsify
+- reduce semantic duplication
+- preserve reviewer traversability
+- preserve runtime-local interruption realism
+
+not:
+
+- ontology expansion
+- legitimacy inference
+- authority inheritance
+- primitive proliferation
 
 UNKNOWN -> HOLD.

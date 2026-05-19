@@ -125,6 +125,26 @@ Inspect whether the observability stack itself remains materially traversable.
 
 ---
 
+## Review Cycle Validator
+
+Path:
+
+tools/review_cycle_validator/
+
+Purpose:
+
+Validate:
+
+- reviewer traversal
+- deterministic replay
+- renderer reproducibility
+- HOLD ambiguity preservation
+- interruption measurability stability
+
+without ontology expansion.
+
+---
+
 # Stabilized Verdicts
 
 PASS:
@@ -133,11 +153,21 @@ Runtime conditions remain materially inspectable and interruption remains reacha
 
 HOLD:
 
-Runtime conditions cannot be materially measured, reconstructed, or falsified.
+Runtime conditions cannot be materially measured, reconstructed, replayed, or falsified.
 
 FAIL:
 
 Interruption reachability materially collapses under continuation pressure.
+
+FAIL is an observability classification only.
+
+FAIL is not:
+
+- legitimacy determination
+- governance truth
+- institutional judgment
+- authority assignment
+- inevitability proof
 
 ---
 
@@ -145,14 +175,17 @@ Interruption reachability materially collapses under continuation pressure.
 
 - UNKNOWN -> HOLD
 - Visibility is not reachability.
+- Persistence is not legitimacy.
 - Persistence is not closure.
 - Asymmetry does not imply destiny.
 - Human fatigue is not consent.
 - Instrumentation is not authority.
 - Measurement is not admissibility.
-- Visualization is not proof.
+- Renderer output is not proof.
 - Replayability does not create legitimacy.
 - Evidence does not create bind.
+- Reviewer traversal is not authority.
+- Reproducibility is not legitimacy.
 - Break survivability, not ontology.
 
 ---
@@ -168,4 +201,16 @@ Further work should prioritize:
 - naming consistency
 - deterministic examples
 - semantic duplication reduction
+- replay validation
+- HOLD ambiguity testing
 - boundary hardening
+- reviewer traversability realism
+
+not:
+
+- ontology expansion
+- authority inheritance
+- legitimacy recursion
+- inevitability normalization
+
+UNKNOWN -> HOLD.
