@@ -1,0 +1,39 @@
+{
+  "workbench_id": "observability_survivability_workbench_v0_1",
+  "observer_only": true,
+  "validator_cases": [
+    "tools/review_cycle_validator/cases/v1_review_cycle_case.json",
+    "tools/review_cycle_validator/cases/v1_review_cycle_stress_case.json",
+    "tools/review_cycle_validator/cases/hold_ambiguity_regression_case.json",
+    "tools/review_cycle_validator/cases/replay_dependency_drift_case.json",
+    "tools/review_cycle_validator/cases/renderer_edge_reproducibility_case.json",
+    "tools/review_cycle_validator/cases/operational_momentum_interruption_recovery_case.json",
+    "tools/review_cycle_validator/cases/reviewer_traversal_timing_case.json",
+    "tools/review_cycle_validator/cases/continuation_asymmetry_falsifiability_case.json",
+    "tools/review_cycle_validator/cases/replay_locality_fragmentation_case.json",
+    "tools/review_cycle_validator/cases/reviewer_traversal_saturation_case.json",
+    "tools/review_cycle_validator/cases/reconstruction_timing_drift_case.json",
+    "tools/review_cycle_validator/cases/procedural_coherence_recoverability_case.json",
+    "tools/review_cycle_validator/cases/runtime_meaning_stability_case.json",
+    "tools/review_cycle_validator/cases/observability_survivability_inflation_case.json",
+    "tools/review_cycle_validator/cases/validator_authority_regression_case.json"
+  ],
+  "meters": [
+    {
+      "name": "replay_reconstructability_index",
+      "command": "python tools/replay_reconstructability_index/reconstructability_index.py",
+      "expected_output_contains": "UNKNOWN -> HOLD"
+    },
+    {
+      "name": "reviewer_traversal_budget_meter",
+      "command": "python tools/reviewer_traversal_budget/traversal_budget_meter.py",
+      "expected_output_contains": "UNKNOWN -> HOLD"
+    }
+  ],
+  "non_claims": [
+    "Workbench PASS is not authority",
+    "Workbench FAIL is not legitimacy collapse",
+    "Workbench HOLD preserves bounded uncertainty",
+    "UNKNOWN -> HOLD"
+  ]
+}
