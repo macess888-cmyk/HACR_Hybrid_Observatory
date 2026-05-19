@@ -1,0 +1,24 @@
+{
+  "case_id": "sample_governance_theater_case",
+  "title": "Sample Governance Theater Survivability Case",
+  "observer_only": true,
+  "governance_visibility_present": true,
+  "oversight_channel_visible": true,
+  "review_body_exists": true,
+  "interruption_surface_known": true,
+  "interruption_surface_reachable": false,
+  "interruption_authority_executable": false,
+  "escalation_path_connected_to_interruption": false,
+  "time_to_consequence_hardening": 5,
+  "time_to_review_activation": 12,
+  "time_to_interruption_execution": 18,
+  "semantic_input": "Governance visibility remains visible, but executable interruption is no longer materially reachable.",
+  "non_claims": [
+    "does not govern",
+    "does not authorize",
+    "does not certify",
+    "does not determine legitimacy",
+    "does not infer institutional failure",
+    "does not operationalize consequence"
+  ]
+}
