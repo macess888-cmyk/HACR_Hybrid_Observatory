@@ -34,6 +34,14 @@ Tests whether review traversal remains materially bounded.
 
 Tests whether continuation asymmetry remains measurable, falsifiable, and HOLD-safe.
 
+## replay_locality_fragmentation_case
+
+Tests whether replay reconstructability remains materially traversable when replay surfaces become distributed across renderer, validator, reviewer traversal, and runtime reachability layers.
+
+The purpose is to ensure replay locality fragmentation does not silently degrade executable interruption falsifiability.
+
+Replay availability is not practical reconstructability.
+
 ---
 
 # Non-Claims
