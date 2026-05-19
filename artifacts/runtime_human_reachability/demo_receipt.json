@@ -1,0 +1,32 @@
+{
+  "case_id": "DEMO-RUNTIME-HUMAN-001",
+  "timestamp_utc": "2026-05-19T10:11:44.145299",
+  "observer_only": true,
+  "non_claims": [
+    "does not govern",
+    "does not authorize",
+    "does not certify",
+    "does not determine legitimacy",
+    "does not replace institutional authority",
+    "does not replace bind proof",
+    "does not infer inevitability",
+    "does not operationalize consequence"
+  ],
+  "semantic_drift_hits": [],
+  "inputs": {
+    "consequence_path_visible": true,
+    "interruption_surface_known": true,
+    "time_to_consequence_hardening": 10,
+    "time_to_human_comprehension": 3,
+    "time_to_reach_interruption": 5,
+    "coordination_steps_required": 2,
+    "operator_attention_available": true,
+    "interruption_cost_units": 4,
+    "continuation_cost_units": 5,
+    "sustain_duration_required": 6,
+    "sustain_duration_available": 7
+  },
+  "verdict": "PASS",
+  "reason": "practical_interruption_reachable",
+  "sha256": "af1cf2a9e8fe310a9fdda4d7ad9ee195a7d58d60a3288637ea9ddb401575d3d1"
+}
