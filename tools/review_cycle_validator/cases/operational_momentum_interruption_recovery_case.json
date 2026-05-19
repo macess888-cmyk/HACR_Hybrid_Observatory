@@ -1,0 +1,42 @@
+{
+  "case_id": "operational_momentum_interruption_recovery_case",
+  "observer_only": true,
+  "purpose": "Ensure operational momentum language remains interruption-local and does not become legitimacy or inevitability semantics.",
+  "required_review_paths": [
+    "STABILIZATION_V1_RUNTIME_REACHABILITY.md",
+    "RELEASE_NOTES_V1_RUNTIME_REACHABILITY.md",
+    "tools/review_cycle_validator/TERMINOLOGY_NORMALIZATION.md"
+  ],
+  "replay_commands": [
+    {
+      "name": "runtime_human_reachability_harness",
+      "command": "python harnesses/runtime_human_reachability/practical_human_interruption_reachability.py",
+      "expected_output_contains": "PASS"
+    }
+  ],
+  "required_terms": [
+    "Persistence is not legitimacy",
+    "Asymmetry does not imply destiny",
+    "UNKNOWN -> HOLD"
+  ],
+  "forbidden_authority_terms": [
+    "this repository certifies",
+    "this repository authorizes",
+    "this repository determines legitimacy",
+    "guarantees legitimacy",
+    "proves governance truth",
+    "operational persistence proves legitimacy",
+    "continuation proves authority",
+    "asymmetry proves destiny"
+  ],
+  "stress_checks": {
+    "max_review_path_count": 10,
+    "max_replay_command_count": 5,
+    "require_validator_non_claims": true,
+    "require_gitignored_outputs": true,
+    "require_hold_semantics": true,
+    "require_receipt_generation": true,
+    "require_renderer_replay": false
+  },
+  "expected_verdict": "PASS"
+}

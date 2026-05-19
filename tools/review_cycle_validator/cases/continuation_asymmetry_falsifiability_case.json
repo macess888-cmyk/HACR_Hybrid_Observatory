@@ -1,0 +1,44 @@
+{
+  "case_id": "continuation_asymmetry_falsifiability_case",
+  "observer_only": true,
+  "purpose": "Ensure continuation asymmetry remains measurable, falsifiable, and HOLD-safe.",
+  "required_review_paths": [
+    "STABILIZATION_V1_RUNTIME_REACHABILITY.md",
+    "SEMANTIC_COMPRESSION_BOUNDARY.md",
+    "governance/runtime_human_reachability/metrics/CONTINUATION_ACCELERATION.md",
+    "governance/runtime_human_reachability/coupling/CONTINUATION_ACCELERATION_VS_INTERRUPTION_RECONSTRUCTION.md",
+    "tools/review_cycle_validator/TERMINOLOGY_NORMALIZATION.md"
+  ],
+  "replay_commands": [
+    {
+      "name": "baseline_review_cycle_validator",
+      "command": "python tools/review_cycle_validator/src/validator.py --case tools/review_cycle_validator/cases/v1_review_cycle_case.json",
+      "expected_output_contains": "Status: PASS"
+    }
+  ],
+  "required_terms": [
+    "Asymmetry does not imply destiny",
+    "UNKNOWN -> HOLD",
+    "Measurement is not admissibility"
+  ],
+  "forbidden_authority_terms": [
+    "this repository certifies",
+    "this repository authorizes",
+    "this repository determines legitimacy",
+    "guarantees legitimacy",
+    "proves governance truth",
+    "operational persistence proves legitimacy",
+    "continuation proves authority",
+    "asymmetry proves destiny"
+  ],
+  "stress_checks": {
+    "max_review_path_count": 10,
+    "max_replay_command_count": 5,
+    "require_validator_non_claims": true,
+    "require_gitignored_outputs": true,
+    "require_hold_semantics": true,
+    "require_receipt_generation": true,
+    "require_renderer_replay": false
+  },
+  "expected_verdict": "PASS"
+}

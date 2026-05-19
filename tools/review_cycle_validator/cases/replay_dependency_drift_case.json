@@ -1,0 +1,38 @@
+{
+  "case_id": "replay_dependency_drift_case",
+  "observer_only": true,
+  "purpose": "Detect replay dependency drift when a replay surface becomes unavailable or unreconstructable.",
+  "required_review_paths": [
+    "REVIEWER_START_HERE.md",
+    "tools/review_cycle_validator/README.md",
+    "tools/review_cycle_validator/REGRESSION_CASE_PACKS.md"
+  ],
+  "replay_commands": [
+    {
+      "name": "missing_replay_dependency",
+      "command": "python tools/review_cycle_validator/src/missing_replay_dependency.py",
+      "expected_output_contains": "PASS"
+    }
+  ],
+  "required_terms": [
+    "UNKNOWN -> HOLD",
+    "Replayability does not create legitimacy",
+    "Validator HOLD preserves bounded uncertainty"
+  ],
+  "forbidden_authority_terms": [
+    "guarantees legitimacy",
+    "proves governance truth",
+    "institutional destiny",
+    "inevitable outcome"
+  ],
+  "stress_checks": {
+    "max_review_path_count": 10,
+    "max_replay_command_count": 5,
+    "require_validator_non_claims": true,
+    "require_gitignored_outputs": true,
+    "require_hold_semantics": true,
+    "require_receipt_generation": true,
+    "require_renderer_replay": false
+  },
+  "expected_verdict": "FAIL"
+}

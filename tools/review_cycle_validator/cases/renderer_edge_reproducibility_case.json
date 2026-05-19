@@ -1,0 +1,43 @@
+{
+  "case_id": "renderer_edge_reproducibility_case",
+  "observer_only": true,
+  "purpose": "Verify renderer replay remains reproducible and non-authoritative.",
+  "required_review_paths": [
+    "visualization/runtime_human_reachability/renderer/README.md",
+    "visualization/runtime_human_reachability/renderer/NON_CLAIMS.md",
+    "visualization/runtime_human_reachability/renderer/RENDERER_ARCHITECTURE.md",
+    "tools/review_cycle_validator/TERMINOLOGY_NORMALIZATION.md"
+  ],
+  "replay_commands": [
+    {
+      "name": "renderer_edge_replay",
+      "command": "python visualization/runtime_human_reachability/renderer/src/render_interruption_corridor.py --case visualization/runtime_human_reachability/renderer/cases/sample_corridor_case.json",
+      "expected_output_contains": "SVG SHA256"
+    }
+  ],
+  "required_terms": [
+    "Renderer output is not proof",
+    "UNKNOWN -> HOLD",
+    "Break survivability, not ontology"
+  ],
+  "forbidden_authority_terms": [
+    "this repository certifies",
+    "this repository authorizes",
+    "this repository determines legitimacy",
+    "guarantees legitimacy",
+    "proves governance truth",
+    "operational persistence proves legitimacy",
+    "continuation proves authority",
+    "asymmetry proves destiny"
+  ],
+  "stress_checks": {
+    "max_review_path_count": 10,
+    "max_replay_command_count": 5,
+    "require_validator_non_claims": true,
+    "require_gitignored_outputs": true,
+    "require_hold_semantics": true,
+    "require_receipt_generation": true,
+    "require_renderer_replay": true
+  },
+  "expected_verdict": "PASS"
+}

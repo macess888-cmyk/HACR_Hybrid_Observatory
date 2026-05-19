@@ -1,0 +1,40 @@
+{
+  "case_id": "reviewer_traversal_timing_case",
+  "observer_only": true,
+  "purpose": "Ensure reviewer traversal remains bounded and does not become a hidden continuity dependency.",
+  "required_review_paths": [
+    "REVIEWER_START_HERE.md",
+    "ARCHITECTURE_TRAVERSAL_MAP.md",
+    "governance/reviewer_traversability/README.md",
+    "tools/review_cycle_validator/README.md",
+    "tools/review_cycle_validator/VALIDATOR_HARDENING_ROADMAP.md"
+  ],
+  "replay_commands": [
+    {
+      "name": "baseline_review_cycle_validator",
+      "command": "python tools/review_cycle_validator/src/validator.py --case tools/review_cycle_validator/cases/v1_review_cycle_case.json",
+      "expected_output_contains": "Status: PASS"
+    }
+  ],
+  "required_terms": [
+    "Reviewer traversal is not authority",
+    "UNKNOWN -> HOLD",
+    "Break survivability, not ontology"
+  ],
+  "forbidden_authority_terms": [
+    "reviewer traversal certifies",
+    "reviewability proves legitimacy",
+    "institutional destiny",
+    "inevitable outcome"
+  ],
+  "stress_checks": {
+    "max_review_path_count": 10,
+    "max_replay_command_count": 5,
+    "require_validator_non_claims": true,
+    "require_gitignored_outputs": true,
+    "require_hold_semantics": true,
+    "require_receipt_generation": true,
+    "require_renderer_replay": false
+  },
+  "expected_verdict": "PASS"
+}
