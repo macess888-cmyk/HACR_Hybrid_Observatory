@@ -300,12 +300,15 @@ Current focus areas include:
 - DYNAMIC_OBSERVATORY_HARNESS.md
 - governance/FIELD_PROPAGATION_GATING_NOTE.md
 - ROUTING_WITHOUT_RESOLUTION.md
-  - Clarifies observer-only routing boundaries and propagation-gated observability.
+- Clarifies observer-only routing boundaries and propagation-gated observability.
 - governance/field_observability/ROUTING_WITHOUT_RESOLUTION_FIELD_NOTE.md
-  - Clarifies bounded routing without convergence, authority inheritance, or semantic harmonization.
+- Clarifies bounded routing without convergence, authority inheritance, or semantic harmonization.
 - governance/field_observability/PROPAGATION_GATING_AND_ISOLATED_VISIBILITY.md
-  - Clarifies isolated visibility, propagation gating, and non-aggregating observational boundaries.
+- Clarifies isolated visibility, propagation gating, and non-aggregating observational boundaries.
 - diagnostic_boundaries/SEARCH_EXPANSION_WITHOUT_SCORE_BINDING.md
+- corridor_observability/INVARIANT_CORRIDOR_CONTRACTION_NOTE.md
+- Defines bounded admissible corridor contraction under measurable stress.
+- Preserves recoverability, graceful degradation, and non-collapse observability semantics.
 
 ---
 
