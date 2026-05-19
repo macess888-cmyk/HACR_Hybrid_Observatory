@@ -16,7 +16,9 @@
     "tools/review_cycle_validator/cases/procedural_coherence_recoverability_case.json",
     "tools/review_cycle_validator/cases/runtime_meaning_stability_case.json",
     "tools/review_cycle_validator/cases/observability_survivability_inflation_case.json",
-    "tools/review_cycle_validator/cases/validator_authority_regression_case.json"
+    "tools/review_cycle_validator/cases/validator_authority_regression_case.json",
+    "tools/review_cycle_validator/cases/external_reviewer_traversal_audit_case.json",
+    "tools/review_cycle_validator/cases/interruption_sustainability_realism_case.json"
   ],
   "meters": [
     {
