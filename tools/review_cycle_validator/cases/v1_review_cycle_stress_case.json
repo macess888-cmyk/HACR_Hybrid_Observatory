@@ -1,0 +1,65 @@
+{
+  "case_id": "v1_review_cycle_stress_case",
+  "observer_only": true,
+  "purpose": "Stress-test reviewability, replayability, validator self-containment, HOLD behavior, renderer reproducibility, and semantic containment without introducing new primitives.",
+  "required_review_paths": [
+    "REVIEWER_START_HERE.md",
+    "STABILIZATION_V1_RUNTIME_REACHABILITY.md",
+    "RELEASE_NOTES_V1_RUNTIME_REACHABILITY.md",
+    "REVIEWER_REPRODUCIBILITY_GUIDE.md",
+    "REPOSITORY_BOUNDARY_NON_CLAIMS.md",
+    "ARCHITECTURE_TRAVERSAL_MAP.md",
+    "SEMANTIC_COMPRESSION_BOUNDARY.md",
+    "tools/review_cycle_validator/README.md",
+    "tools/review_cycle_validator/NON_CLAIMS.md",
+    "tools/review_cycle_validator/src/validator.py",
+    "visualization/runtime_human_reachability/renderer/RENDERER_ARCHITECTURE.md",
+    "governance/reviewer_traversability/README.md"
+  ],
+  "replay_commands": [
+    {
+      "name": "runtime_human_reachability_harness",
+      "command": "python harnesses/runtime_human_reachability/practical_human_interruption_reachability.py",
+      "expected_output_contains": "PASS"
+    },
+    {
+      "name": "runtime_human_reachability_renderer",
+      "command": "python visualization/runtime_human_reachability/renderer/src/render_interruption_corridor.py --case visualization/runtime_human_reachability/renderer/cases/sample_corridor_case.json",
+      "expected_output_contains": "SVG SHA256"
+    },
+    {
+      "name": "governance_theater_survivability_harness",
+      "command": "python harnesses/governance_theater_survivability/src/harness.py --case harnesses/governance_theater_survivability/cases/sample_governance_theater_case.json",
+      "expected_output_contains": "Status: FAIL"
+    }
+  ],
+  "required_terms": [
+    "UNKNOWN -> HOLD",
+    "Asymmetry does not imply destiny",
+    "Visibility is not reachability",
+    "Persistence is not legitimacy",
+    "Measurement is not admissibility",
+    "Reviewer traversal is not authority",
+    "Reproducibility is not legitimacy",
+    "Renderer output is not proof",
+    "Break survivability, not ontology"
+  ],
+  "forbidden_authority_terms": [
+    "this repository certifies",
+    "this repository authorizes",
+    "this repository determines legitimacy",
+    "guarantees legitimacy",
+    "proves governance truth",
+    "inevitable outcome",
+    "institutional destiny"
+  ],
+  "stress_checks": {
+    "max_review_path_count": 20,
+    "max_replay_command_count": 8,
+    "require_validator_non_claims": true,
+    "require_gitignored_outputs": true,
+    "require_hold_semantics": true,
+    "require_receipt_generation": true,
+    "require_renderer_replay": true
+  }
+}

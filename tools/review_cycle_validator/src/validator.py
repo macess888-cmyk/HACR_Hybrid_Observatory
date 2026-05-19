@@ -24,6 +24,16 @@ NON_CLAIMS = [
 ]
 
 
+CORE_LOCKS = [
+    "reviewer traversal is not authority",
+    "reproducibility is not legitimacy",
+    "renderer output is not proof",
+    "measurement is not admissibility",
+    "UNKNOWN -> HOLD",
+    "break survivability, not ontology"
+]
+
+
 def sha256_text(text):
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
@@ -58,13 +68,9 @@ def check_review_paths(paths):
     missing = [path for path in paths if not Path(path).exists()]
 
     if missing:
-        return FAIL, {
-            "missing_paths": missing
-        }
+        return FAIL, {"missing_paths": missing}
 
-    return PASS, {
-        "missing_paths": []
-    }
+    return PASS, {"missing_paths": []}
 
 
 def run_command(command):
@@ -94,7 +100,6 @@ def check_replay_commands(commands):
     for item in commands:
         result = run_command(item["command"])
         expected = item.get("expected_output_contains", "")
-
         output_contains_expected = expected in result["combined"]
 
         status = PASS
@@ -129,10 +134,9 @@ def check_required_terms(case):
     repo_text, missing = read_repo_text(paths)
     normalized = normalize_text(repo_text)
 
-    required_terms = case.get("required_terms", [])
     missing_terms = []
 
-    for term in required_terms:
+    for term in case.get("required_terms", []):
         if normalize_text(term) not in normalized:
             missing_terms.append(term)
 
@@ -159,17 +163,14 @@ def check_forbidden_terms(case):
     repo_text, missing = read_repo_text(paths)
     normalized = normalize_text(repo_text)
 
-    forbidden_terms = case.get("forbidden_authority_terms", [])
     hits = []
 
-    for term in forbidden_terms:
+    for term in case.get("forbidden_authority_terms", []):
         if normalize_text(term) in normalized:
             hits.append(term)
 
     if hits:
-        return FAIL, {
-            "forbidden_hits": hits
-        }
+        return FAIL, {"forbidden_hits": hits}
 
     if missing:
         return HOLD, {
@@ -177,9 +178,136 @@ def check_forbidden_terms(case):
             "missing_paths": missing
         }
 
-    return PASS, {
-        "forbidden_hits": []
+    return PASS, {"forbidden_hits": []}
+
+
+def check_gitignored_outputs():
+    required_ignores = {
+        "tools/review_cycle_validator/.gitignore": [
+            "outputs/*.json",
+            "outputs/*.md"
+        ],
+        "harnesses/governance_theater_survivability/.gitignore": [
+            "outputs/*.json",
+            "outputs/*.md"
+        ],
+        "visualization/runtime_human_reachability/renderer/.gitignore": [
+            "outputs/*.svg",
+            "outputs/*.json"
+        ]
     }
+
+    missing_files = []
+    missing_patterns = {}
+
+    for path, patterns in required_ignores.items():
+        p = Path(path)
+
+        if not p.exists():
+            missing_files.append(path)
+            continue
+
+        text = p.read_text(encoding="utf-8", errors="ignore")
+
+        for pattern in patterns:
+            if pattern not in text:
+                missing_patterns.setdefault(path, []).append(pattern)
+
+    if missing_files or missing_patterns:
+        return HOLD, {
+            "missing_gitignore_files": missing_files,
+            "missing_patterns": missing_patterns
+        }
+
+    return PASS, {
+        "missing_gitignore_files": [],
+        "missing_patterns": {}
+    }
+
+
+def check_validator_self_containment(case):
+    paths = [
+        "tools/review_cycle_validator/README.md",
+        "tools/review_cycle_validator/NON_CLAIMS.md",
+        "tools/review_cycle_validator/src/validator.py"
+    ]
+
+    repo_text, missing = read_repo_text(paths)
+    normalized = normalize_text(repo_text)
+
+    required_phrases = [
+        "does not govern",
+        "does not authorize",
+        "does not certify",
+        "does not determine legitimacy",
+        "UNKNOWN -> HOLD",
+        "break survivability, not ontology"
+    ]
+
+    missing_phrases = []
+
+    for phrase in required_phrases:
+        if normalize_text(phrase) not in normalized:
+            missing_phrases.append(phrase)
+
+    if missing or missing_phrases:
+        return HOLD, {
+            "missing_paths": missing,
+            "missing_phrases": missing_phrases
+        }
+
+    return PASS, {
+        "missing_paths": [],
+        "missing_phrases": []
+    }
+
+
+def check_stress_bounds(case):
+    stress = case.get("stress_checks", {})
+
+    max_review_paths = stress.get("max_review_path_count")
+    max_replay_commands = stress.get("max_replay_command_count")
+
+    review_paths = case.get("required_review_paths", [])
+    replay_commands = case.get("replay_commands", [])
+
+    violations = []
+
+    if max_review_paths is not None and len(review_paths) > max_review_paths:
+        violations.append(
+            f"review_path_count_exceeds_bound:{len(review_paths)}>{max_review_paths}"
+        )
+
+    if max_replay_commands is not None and len(replay_commands) > max_replay_commands:
+        violations.append(
+            f"replay_command_count_exceeds_bound:{len(replay_commands)}>{max_replay_commands}"
+        )
+
+    if violations:
+        return HOLD, {"bound_violations": violations}
+
+    return PASS, {"bound_violations": []}
+
+
+def check_receipt_generation(receipt_preview):
+    required_keys = [
+        "case_id",
+        "timestamp_utc",
+        "observer_only",
+        "tool",
+        "verdict",
+        "reason",
+        "checks",
+        "non_claims",
+        "core_locks"
+    ]
+
+    missing = [key for key in required_keys if key not in receipt_preview]
+
+    if missing:
+        return HOLD, {"missing_receipt_keys": missing}
+
+    return PASS, {"missing_receipt_keys": []}
 
 
 def evaluate(case):
@@ -213,6 +341,25 @@ def evaluate(case):
         "details": forbidden_details
     }
 
+    if case.get("stress_checks"):
+        gitignore_status, gitignore_details = check_gitignored_outputs()
+        checks["gitignored_output_containment"] = {
+            "status": gitignore_status,
+            "details": gitignore_details
+        }
+
+        self_status, self_details = check_validator_self_containment(case)
+        checks["validator_self_containment"] = {
+            "status": self_status,
+            "details": self_details
+        }
+
+        bounds_status, bounds_details = check_stress_bounds(case)
+        checks["stress_bounds"] = {
+            "status": bounds_status,
+            "details": bounds_details
+        }
+
     statuses = [item["status"] for item in checks.values()]
 
     if FAIL in statuses:
@@ -240,15 +387,18 @@ def build_receipt(case):
         "reason": reason,
         "checks": checks,
         "non_claims": NON_CLAIMS,
-        "core_locks": [
-            "reviewer traversal is not authority",
-            "reproducibility is not legitimacy",
-            "renderer output is not proof",
-            "measurement is not admissibility",
-            "UNKNOWN -> HOLD",
-            "break survivability, not ontology"
-        ]
+        "core_locks": CORE_LOCKS
     }
+
+    receipt_status, receipt_details = check_receipt_generation(receipt)
+    receipt["checks"]["receipt_generation_shape"] = {
+        "status": receipt_status,
+        "details": receipt_details
+    }
+
+    if receipt_status == HOLD and receipt["verdict"] == PASS:
+        receipt["verdict"] = HOLD
+        receipt["reason"] = "receipt_generation_shape_cannot_be_fully_reconstructed"
 
     receipt_text = json.dumps(receipt, indent=2, sort_keys=True)
     receipt["receipt_sha256"] = sha256_text(receipt_text)
@@ -294,13 +444,13 @@ def write_outputs(receipt, outdir):
     md_lines.extend([
         "",
         "## Core Locks",
-        "",
-        "- Reviewer traversal is not authority.",
-        "- Reproducibility is not legitimacy.",
-        "- Renderer output is not proof.",
-        "- Measurement is not admissibility.",
-        "- UNKNOWN -> HOLD.",
-        "- Break survivability, not ontology.",
+        ""
+    ])
+
+    for lock in CORE_LOCKS:
+        md_lines.append(f"- {lock}.")
+
+    md_lines.extend([
         "",
         f"Receipt SHA256: {receipt['receipt_sha256']}",
         ""
@@ -313,7 +463,7 @@ def write_outputs(receipt, outdir):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Validate v1 review cycle traversability and reproducibility."
+        description="Validate review cycle traversability, reproducibility, and containment."
     )
     parser.add_argument("--case", required=True, help="Path to review cycle case JSON")
     parser.add_argument(
