@@ -1,0 +1,46 @@
+{
+  "case_id": "reviewer_traversal_saturation_case",
+  "observer_only": true,
+  "purpose": "Ensure replay/review traversal remains materially reconstructable under semantic density and replay locality accumulation.",
+  "required_review_paths": [
+    "REVIEWER_START_HERE.md",
+    "ARCHITECTURE_TRAVERSAL_MAP.md",
+    "tools/review_cycle_validator/README.md",
+    "tools/review_cycle_validator/REGRESSION_CASE_PACKS.md",
+    "tools/review_cycle_validator/REVIEWER_TRAVERSAL_SATURATION.md",
+    "tools/review_cycle_validator/REPLAY_LOCALITY_FRAGMENTATION.md",
+    "governance/reviewer_traversability/README.md",
+    "visualization/runtime_human_reachability/renderer/README.md"
+  ],
+  "replay_commands": [
+    {
+      "name": "baseline_review_cycle_validator",
+      "command": "python tools/review_cycle_validator/src/validator.py --case tools/review_cycle_validator/cases/v1_review_cycle_case.json",
+      "expected_output_contains": "Status: PASS"
+    }
+  ],
+  "required_terms": [
+    "Reviewer traversal is not authority",
+    "Replay availability is not practical reconstructability",
+    "UNKNOWN -> HOLD"
+  ],
+  "forbidden_authority_terms": [
+    "this repository certifies",
+    "this repository authorizes",
+    "this repository determines legitimacy",
+    "guarantees legitimacy",
+    "proves governance truth",
+    "continuation proves authority",
+    "asymmetry proves destiny"
+  ],
+  "stress_checks": {
+    "max_review_path_count": 14,
+    "max_replay_command_count": 6,
+    "require_validator_non_claims": true,
+    "require_gitignored_outputs": true,
+    "require_hold_semantics": true,
+    "require_receipt_generation": true,
+    "require_renderer_replay": false
+  },
+  "expected_verdict": "PASS"
+}
