@@ -1,8 +1,38 @@
-# HACR Hybrid Observatory — START HERE
+# HACR Hybrid Observatory
 
-# Easiest Possible Review Path
+## Start Here
 
-From repository root run:
+The HACR Hybrid Observatory is a deterministic, observer-only runtime inspection repository.
 
-```bat
-RUN_FULL_REVIEW.bat
+The repository focuses on:
+
+- runtime traversal
+- interruption/recovery observability
+- deterministic repair clarity
+- bounded falsifiability
+- renderer-independent inspection
+- ambiguity localization
+- and reviewer accessibility under degraded runtime conditions.
+
+The repository does NOT:
+
+- govern
+- authorize
+- certify
+- determine legitimacy
+- operationalize interruption
+- create execution authority
+- automate sovereignty
+- replace human judgment
+- or create autonomous recovery infrastructure.
+
+---
+
+# Fastest Review Paths
+
+## Minimal Traversal Review
+
+Run:
+
+```text
+RUN_TEXT_ONLY_REVIEW.bat
