@@ -1,16 +1,18 @@
 # HACR Hybrid Observatory
 
-## Runtime Reduction Compression and Operational Clarity Observatory
+## Runtime Reduction Compression, Interruption Realism, and Operational Clarity Observatory
 
 The HACR Hybrid Observatory is a deterministic, observer-only runtime inspection repository focused on:
 
 - interruption/recovery observability
-- runtime traversability
+- executable interruption realism
 - reconstructability realism
+- runtime traversability
 - ambiguity localization
 - runtime reduction compression
 - semantic deduplication
-- renderer-independent operational clarity
+- operational clarity density
+- renderer-independent comprehension
 - human-machine co-traversability
 - deterministic review survivability
 - and bounded falsifiability under degraded runtime conditions
@@ -21,8 +23,9 @@ The observatory pressures whether:
 - operational coherence,
 - governance visibility,
 - replay persistence,
+- telemetry continuity,
+- remediation appearance,
 - auditability,
-- recovery appearance,
 - and representational continuity
 
 can survive after executable interruption realism has already degraded beneath continuation pressure.
@@ -65,16 +68,17 @@ deterministic interruption/recovery observability instrumentation under bounded 
 
 Current mature-runtime stabilization increasingly focuses on:
 
-- reduction compression quality
-- reduction relationship locality
+- runtime reduction compression
+- semantic deduplication
 - ambiguity minimization
 - operational clarity density
 - reconstructability realism
+- executable interruption realism
 - interruption locality
 - representational survivability
 - continuation momentum
+- operational coherence camouflage
 - renderer-independent comprehension
-- human-machine traversability
 - deterministic onboarding survivability
 - and runtime-local falsifiability density
 
@@ -178,6 +182,21 @@ operational atmosphere replacing operational clarity.
 
 ---
 
+# Hostile Runtime Pressure Directions
+
+Current hostile/runtime testing increasingly pressures whether:
+
+- executable interruption realism can collapse while governance representation still appears healthy
+- operational coherence can camouflage interruption degradation
+- machine-speed continuation asymmetrically outscales human interruption reconstruction
+- representational governance surfaces can survive after executable interruption viability materially weakens
+- formal interruptibility can survive after reconstructable interruption realism probabilistically degrades
+- operational continuity infrastructure itself becomes a survivability multiplier
+
+without reopening ontology or drifting into authority infrastructure.
+
+---
+
 # Core Runtime Reductions
 
 observable
@@ -217,15 +236,18 @@ renderer smoothness
 operational coherence
 != executable interruption locality
 
+formal interruptibility
+!= reconstructable interruption realism
+
 continuation survives passively
 while interruption reconstructs viability actively
-
-formal interruptibility
-!= practical reconstructability
 
 representation persistence
 does not prove
 interruption locality survived
+
+controls may survive representationally
+while executable interruption becomes operationally improbable
 
 modern systems increasingly preserve representation longer than executable interruption realism
 
@@ -254,6 +276,7 @@ Healthy maturity should:
 - preserve operational locality
 - preserve renderer-independent clarity
 - preserve reconstructability realism
+- preserve executable interruption realism visibility
 - preserve bounded falsifiability
 - preserve deterministic comprehension
 - and improve runtime reduction compression quality
@@ -275,6 +298,8 @@ renderer-independent comprehension
 runtime-local falsifiability
 +
 ambiguity minimization
++
+runtime reduction locality
 
 ---
 
