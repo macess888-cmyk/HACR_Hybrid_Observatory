@@ -2,31 +2,86 @@
 
 ## Start Here
 
-The HACR Hybrid Observatory is a deterministic, observer-only runtime inspection repository focused on:
+The HACR Hybrid Observatory is a hostile-runtime interruption realism observatory.
 
-- interruption/recovery observability
-- reconstructability realism
-- runtime traversability
-- ambiguity localization
-- runtime reduction compression
-- renderer-independent operational clarity
-- and bounded falsifiability under degraded runtime conditions.
+The repository pressures one bounded runtime question:
 
-The repository does NOT:
-
-- govern
-- authorize
-- certify
-- operationalize interruption
-- create execution authority
-- automate sovereignty
-- or replace human judgment.
+Can executable interruption still materially arrive before continuation hardens?
 
 ---
 
-# Fastest Review Path
+# Strong Runtime Concern
 
-Run:
+Modern systems may increasingly preserve:
 
-```text
-RUN_TEXT_ONLY_REVIEW.bat
+- representation
+- replay
+- telemetry
+- observability
+- operational smoothness
+- governance visibility
+- accountability
+- escalation surfaces
+- and procedural coherence
+
+after executable interruption realism has already materially degraded.
+
+---
+
+# Strong Runtime Reductions
+
+representation
+!=
+execution
+
+visibility
+!=
+reachability
+
+replay
+!=
+recoverability
+
+explanation
+!=
+interruption
+
+governance representation
+!=
+runtime governability
+
+operational coherence
+!=
+executable interruption realism
+
+visible escalation
+!=
+reachable interruption
+
+being seen
+!=
+being protected
+
+---
+
+# Strongest Compression
+
+Runtime governability exists only where executable interruption can still materially affect consequence before hardening.
+
+---
+
+# Repository Boundaries
+
+Observer-only.
+
+Runtime-local.
+
+No governance authority.
+
+No sovereignty claims.
+
+No ontology reopening.
+
+Break survivability, not ontology.
+
+UNKNOWN -> HOLD.

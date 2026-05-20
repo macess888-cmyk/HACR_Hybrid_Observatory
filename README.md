@@ -1,311 +1,422 @@
 # HACR Hybrid Observatory
 
-## Runtime Reduction Compression, Interruption Realism, and Operational Clarity Observatory
+## Hostile-Runtime Interruption Realism Observatory
 
 The HACR Hybrid Observatory is a deterministic, observer-only runtime inspection repository focused on:
 
-- interruption/recovery observability
 - executable interruption realism
-- reconstructability realism
-- runtime traversability
-- ambiguity localization
+- interruption arrival realism
+- reconstructability asymmetry
+- runtime governability realism
+- continuation hardening
+- operational reachability
+- interruption locality
+- representation scaling asymmetry
 - runtime reduction compression
-- semantic deduplication
+- hostile-runtime falsifiability
+- renderer-independent traversal
+- ambiguity minimization
 - operational clarity density
-- renderer-independent comprehension
-- human-machine co-traversability
-- deterministic review survivability
-- and bounded falsifiability under degraded runtime conditions
+- and bounded runtime inspection under practical conditions
 
-The observatory pressures whether:
+The repository increasingly pressures one bounded runtime question:
 
-- continuation survivability,
-- operational coherence,
-- governance visibility,
-- replay persistence,
-- telemetry continuity,
-- remediation appearance,
-- auditability,
-- and representational continuity
+Can executable interruption still materially arrive before continuation hardens?
 
-can survive after executable interruption realism has already degraded beneath continuation pressure.
-
-The repository remains:
+The observatory remains:
 
 - observer-only
 - runtime-local
 - deterministic
-- reproducibility-focused
-- falsifiability-oriented
 - anti-authoritative
-- anti-inevitability
 - anti-ontology
 - anti-mythological
+- falsifiability-oriented
+- and bounded to practical runtime conditions.
 
 The repository explicitly does NOT:
 
 - govern
 - authorize
 - certify
-- determine legitimacy
 - operationalize interruption
-- create execution authority
-- automate sovereignty
-- create AGI governance infrastructure
-- create autonomous repair systems
+- create sovereign authority
+- determine legitimacy
 - replace human judgment
-- or operationalize governance mythology
+- or reopen ontology.
 
 All outputs remain bounded observational artifacts only.
 
 ---
 
-# Repository State
+# Current Repository State
 
-Current repository state increasingly compresses toward:
+The repository increasingly stabilizes around:
 
-deterministic interruption/recovery observability instrumentation under bounded replay/review/traversal/rendering conditions.
+hostile-runtime interruption realism inspection under continuation pressure.
 
-Current mature-runtime stabilization increasingly focuses on:
+Recent stabilization cycles intentionally moved away from:
 
-- runtime reduction compression
-- semantic deduplication
-- ambiguity minimization
-- operational clarity density
-- reconstructability realism
-- executable interruption realism
-- interruption locality
-- representational survivability
-- continuation momentum
-- operational coherence camouflage
-- renderer-independent comprehension
-- deterministic onboarding survivability
-- and runtime-local falsifiability density
-
-instead of semantic expansion.
-
----
-
-# Five Core Runtime Reduction Families
-
-## 1. Representation != Execution
-
-Compresses:
-
-- observability != interruptibility
-- replay != recoverability
-- auditability != intervention
-- dashboards != executable interruption
-- governance visibility != governability
-- explanation != executable interruption
-- emotional acknowledgement != executable protection
-- support continuity != consequence-bound reachability
-
-Primary runtime risk:
-
-representational survivability camouflage.
-
----
-
-## 2. Continuation Survives Passively / Interruption Reconstructs Actively
-
-Compresses:
-
-- continuation momentum
-- interruption reconstruction burden
-- synchronization asymmetry
-- interruption fatigue
-- machine-speed continuation
-- coordination collapse
-- interruption improbability
-- distributed continuation
-- operational embeddedness
-- governance lag
-
-Primary runtime risk:
-
-reconstructability collapse.
-
----
-
-## 3. Locality != Visibility
-
-Compresses:
-
-- remote override illusion
-- distributed continuation
-- orchestration locality collapse
-- global oversight / local interruption asymmetry
-- governance visibility persistence
-- representational governability
-
-Primary runtime risk:
-
-visibility surviving after executable locality degradation.
-
----
-
-## 4. Survivability != Legitimacy
-
-Compresses:
-
-- continuity camouflage
-- operational coherence
-- healthy runtime camouflage
-- institutional persistence
-- embedded continuation
+- semantic expansion
+- conceptual inflation
+- governance abstraction
 - resilience mythology
-- deterministic confidence illusion
+- orchestration legitimacy
+- and representational authority inheritance
 
-Primary runtime risk:
+and toward:
 
-continuation legitimacy inheritance.
-
----
-
-## 5. Clarity != Smoothness
-
-Compresses:
-
-- beautiful audit trails
-- renderer smoothness
-- dashboard coherence
-- onboarding smoothness
-- replay reassurance
-- operational sophistication camouflage
-- visual reassurance inheritance
-- observability atmosphere
-
-Primary runtime risk:
-
-operational atmosphere replacing operational clarity.
+- executable runtime locality
+- interruption arrival realism
+- runtime reduction compression
+- operational falsifiability
+- reconstructability realism
+- representation scaling asymmetry
+- interruption reachability
+- continuation asymmetry
+- synchronization burden
+- and operational clarity density.
 
 ---
 
-# Hostile Runtime Pressure Directions
+# Core Runtime Question
 
-Current hostile/runtime testing increasingly pressures whether:
+The Observatory increasingly pressures:
 
-- executable interruption realism can collapse while governance representation still appears healthy
-- operational coherence can camouflage interruption degradation
-- machine-speed continuation asymmetrically outscales human interruption reconstruction
-- representational governance surfaces can survive after executable interruption viability materially weakens
-- formal interruptibility can survive after reconstructable interruption realism probabilistically degrades
-- operational continuity infrastructure itself becomes a survivability multiplier
+Can interruption still materially affect consequence before continuation hardens?
 
-without reopening ontology or drifting into authority infrastructure.
+Because modern systems may increasingly preserve:
+
+- dashboards
+- observability
+- replay continuity
+- telemetry
+- procedural smoothness
+- governance visibility
+- accountability
+- escalation surfaces
+- simulation continuity
+- transparency
+- and operational coherence
+
+after executable interruption realism has already degraded beneath continuation pressure.
 
 ---
 
-# Core Runtime Reductions
+# Strong Runtime Reductions
 
 observable
-!= inspectable
-!= traversable
-!= interruptible
-!= destabilizable
-!= recoverable
+!=
+inspectable
 
-visibility
-!= reachability
+inspectable
+!=
+traversable
+
+traversable
+!=
+interruptible
+
+interruptible
+!=
+destabilizable
+
+destabilizable
+!=
+recoverable
 
 representation
-!= execution
+!=
+execution
 
-explanation
-!= executable interruption
-
-auditability
-!= intervention
+visibility
+!=
+reachability
 
 replay
-!= recoverability
+!=
+recoverability
 
-governance visibility
-!= governability
+explanation
+!=
+interruption
 
-support continuity
-!= consequence-bound reachability
+simulation realism
+!=
+runtime interruption realism
 
-emotional visibility
-!= operational interruptibility
-
-renderer smoothness
-!= recoverability
+governance representation
+!=
+runtime governability
 
 operational coherence
-!= executable interruption locality
+!=
+executable interruption realism
 
-formal interruptibility
-!= reconstructable interruption realism
+visible escalation
+!=
+reachable interruption
+
+being seen
+!=
+being protected
 
 continuation survives passively
 while interruption reconstructs viability actively
 
-representation persistence
-does not prove
-interruption locality survived
+interruption that arrives after continuation hardens
+is not interruption
 
-controls may survive representationally
-while executable interruption becomes operationally improbable
+representation can survive
+after executable interruption realism degrades
 
 modern systems increasingly preserve representation longer than executable interruption realism
 
 ---
 
-# Repository Invariants
+# Strongest Compression
 
-## Primary Invariant
-
-Break survivability, not ontology.
-
-## Runtime Boundary
-
-UNKNOWN -> HOLD.
-
-## Mature Runtime Stability Invariant
-
-Healthy maturity should:
-
-- reduce onboarding burden
-- reduce semantic duplication
-- reduce ambiguity accumulation
-- reduce traversal friction
-- reduce atmospheric understanding
-- reduce reassurance inheritance
-- preserve operational locality
-- preserve renderer-independent clarity
-- preserve reconstructability realism
-- preserve executable interruption realism visibility
-- preserve bounded falsifiability
-- preserve deterministic comprehension
-- and improve runtime reduction compression quality
-
-without reopening ontology.
-
-## Strong Runtime Compression
-
-minimal reviewer burden
-+
-maximum operational clarity density
-+
-deterministic repair traversal
-+
-bounded onboarding survivability
-+
-renderer-independent comprehension
-+
-runtime-local falsifiability
-+
-ambiguity minimization
-+
-runtime reduction locality
+Runtime governability exists only where executable interruption can still materially affect consequence before hardening.
 
 ---
 
-# Operational Review Paths
+# Runtime Pressure Surfaces
 
-## Fastest Review Path
+Current hostile/runtime pressure surfaces increasingly include:
+
+- operational coherence camouflage
+- representational survivability
+- interruption arrival realism
+- reconstruction dependency
+- synchronization fragility
+- escalation reachability collapse
+- replay/recovery divergence
+- distributed continuation asymmetry
+- continuation hardening
+- governance representation persistence
+- interruption locality fragmentation
+- accountability theater
+- simulation continuity camouflage
+- representation scaling asymmetry
+- visible escalation vs reachable interruption
+- operational smoothness camouflage
+- human-runtime interruption asymmetry
+- reassurance infrastructure pressure
+- and consequence-hardening preemption.
+
+---
+
+# Representation Scaling Asymmetry
+
+One major stabilization direction increasingly appears central:
+
+modern systems may preserve:
+
+- transparency
+- accountability
+- observability
+- replay
+- telemetry
+- governance visibility
+- escalation representation
+- simulation coherence
+- and operational smoothness
+
+faster than executable interruption realism scales operationally.
+
+This creates a hostile-runtime asymmetry where:
+
+representation survives
+after interruption reachability degrades.
+
+---
+
+# Runtime Governability
+
+The Observatory increasingly distinguishes between:
+
+- representation of governance
+and
+- executable runtime governability.
+
+A system may remain:
+
+- observable
+- explainable
+- replayable
+- auditable
+- procedurally coherent
+- psychologically governable-looking
+- operationally smooth
+- and institutionally represented
+
+while executable interruption increasingly becomes:
+
+- reconstruction-dependent
+- synchronization-fragile
+- locality-constrained
+- operationally delayed
+- continuation-preempted
+- practically unreachable
+- or unable to materially arrive before consequence hardens.
+
+---
+
+# Human Runtime Conditions
+
+Recent hostile/runtime stabilization also increasingly pressures:
+
+real human operational conditions.
+
+Including:
+
+- dependency gravity
+- emotional volatility
+- concealment incentives
+- interruption impracticality
+- continuation pressure
+- synchronization burden
+- escalation fragility
+- operational exhaustion
+- and representational protection asymmetry.
+
+The Observatory therefore increasingly pressures:
+
+being seen
+!=
+being protected.
+
+---
+
+# Runtime Arrival Realism
+
+The repository increasingly pressures:
+
+whether interruption can still materially arrive before continuation hardens.
+
+Because:
+
+- visible escalation
+- represented authority
+- accountability visibility
+- replay continuity
+- and governance representation
+
+may survive after executable interruption arrival realism has already degraded operationally.
+
+---
+
+# Operational Boundary
+
+The repository remains:
+
+- observer-only
+- runtime-local
+- interruption-bound
+- falsifiability-oriented
+- and anti-authoritative.
+
+The Observatory does NOT:
+
+- operationalize governance
+- authorize interruption
+- create bind authority
+- determine legitimacy
+- operationalize sovereignty
+- or create consequence authority.
+
+---
+
+# Compression Hardening Direction
+
+Current stabilization work increasingly focuses on:
+
+- reduction compression hardening
+- interruption arrival realism
+- runtime governability realism
+- executable interruption locality
+- representation scaling asymmetry
+- replay/recovery divergence
+- escalation reachability realism
+- and hostile-runtime falsifiability stabilization.
+
+The repository increasingly favors:
+
+- fewer reductions
+- tighter reductions
+- stronger locality
+- stronger traversability
+- stronger runtime grounding
+- stronger falsifiability
+- and stronger interruption realism visibility
+
+instead of semantic expansion.
+
+---
+
+# Current Repository Infrastructure
+
+## Runtime Reduction Infrastructure
+
+- governance/runtime_reductions/
+- governance/compression_hardening/
+- governance/hostile_runtime_testing/
+- governance/traversability/
+- governance/mature_runtime_clarity/
+- governance/human_runtime_conditions/
+
+Including:
+
+- reduction equivalence mapping
+- interruption arrival realism
+- reconstructability realism
+- runtime governability realism
+- representation scaling asymmetry
+- operational coherence camouflage
+- escalation reachability realism
+- replay/recovery divergence
+- human interruption localization
+- and compression hardening stabilization.
+
+---
+
+## Runtime Tooling
+
+- tools/interruption_arrival_visualization/
+- tools/interruption_realism_pressure/
+- tools/runtime_graph_projection/
+- tools/reduction_localization/
+- tools/ambiguity_localization/
+- tools/text_first_runtime_review/
+- tools/human_interruption_localization/
+- tools/react_error_recovery_auditor/
+- tools/stabilization_cycle_auditor/
+- tools/observatory_traversability_audit/
+
+---
+
+## Public Explainers
+
+- docs/public_explainers/
+- docs/runtime_dictionary/
+- docs/simple_runtime_guides/
+- docs/review_maps/
+- docs/runtime_failure_modes/
+- docs/canonical_runtime_reductions/
+
+Including:
+
+- executable interruption realism
+- interruption arrival realism
+- representation scaling asymmetry
+- replay/recovery divergence
+- operational coherence camouflage
+- representational survivability
+- and runtime governability realism.
+
+---
+
+# Fastest Review Path
 
 Run:
 
