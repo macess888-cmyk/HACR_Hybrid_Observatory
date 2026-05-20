@@ -1,0 +1,16 @@
+{
+  "case_id": "green_surface_dead_recovery_001",
+  "surface_continuity": "GREEN",
+  "classification": "RECOVERY_EXHAUSTED",
+  "effective_recovery_time_minutes": 86,
+  "consequence_hardening_window_minutes": 45,
+  "reduction": "Recovery visibility is not recovery viability",
+  "layers": {
+    "observable": "survives",
+    "inspectable": "survives",
+    "traversable": "partial",
+    "interruptible": "degraded",
+    "destabilizable": "degraded",
+    "recoverable": "collapsed"
+  }
+}

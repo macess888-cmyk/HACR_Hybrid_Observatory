@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460">
+  <rect width="1200" height="460" fill="#ffffff"/>
+
+  <text x="40" y="45" font-family="Arial" font-size="30" font-weight="bold">
+    Layer Survival Heatmap
+  </text>
+
+  <text x="40" y="78" font-family="Arial" font-size="15">
+    Observer-only deterministic visualization. Survival of one layer does not prove survival of the next.
+  </text>
+
+  
+  <rect x="70" y="170" width="165" height="90" rx="14" fill="#dff5df" stroke="#2c662d" stroke-width="2"/>
+  <text x="88" y="208" font-family="Arial" font-size="17" font-weight="bold">observable</text>
+  <text x="88" y="238" font-family="Arial" font-size="16">survives</text>
+
+  <rect x="250" y="170" width="165" height="90" rx="14" fill="#dff5df" stroke="#2c662d" stroke-width="2"/>
+  <text x="268" y="208" font-family="Arial" font-size="17" font-weight="bold">inspectable</text>
+  <text x="268" y="238" font-family="Arial" font-size="16">survives</text>
+
+  <rect x="430" y="170" width="165" height="90" rx="14" fill="#fff1c7" stroke="#8a6d00" stroke-width="2"/>
+  <text x="448" y="208" font-family="Arial" font-size="17" font-weight="bold">traversable</text>
+  <text x="448" y="238" font-family="Arial" font-size="16">partial</text>
+
+  <rect x="610" y="170" width="165" height="90" rx="14" fill="#f7dddd" stroke="#7a1f1f" stroke-width="2"/>
+  <text x="628" y="208" font-family="Arial" font-size="17" font-weight="bold">interruptible</text>
+  <text x="628" y="238" font-family="Arial" font-size="16">degraded</text>
+
+  <rect x="790" y="170" width="165" height="90" rx="14" fill="#f7dddd" stroke="#7a1f1f" stroke-width="2"/>
+  <text x="808" y="208" font-family="Arial" font-size="17" font-weight="bold">destabilizable</text>
+  <text x="808" y="238" font-family="Arial" font-size="16">degraded</text>
+
+  <rect x="970" y="170" width="165" height="90" rx="14" fill="#d8d8d8" stroke="#555555" stroke-width="2"/>
+  <text x="988" y="208" font-family="Arial" font-size="17" font-weight="bold">recoverable</text>
+  <text x="988" y="238" font-family="Arial" font-size="16">collapsed</text>
+
+
+  <text x="60" y="330" font-family="Arial" font-size="22" font-weight="bold">
+    Layer survival is not layer inheritance.
+  </text>
+
+  <text x="60" y="375" font-family="Arial" font-size="18">
+    observable ≠ inspectable ≠ traversable ≠ interruptible ≠ destabilizable ≠ recoverable
+  </text>
+
+  <text x="60" y="420" font-family="Arial" font-size="16">
+    Observer-only • Not authority • UNKNOWN -&gt; HOLD
+  </text>
+</svg>

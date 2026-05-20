@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <rect width="1200" height="620" fill="#ffffff"/>
+
+  <text x="40" y="45" font-family="Arial" font-size="30" font-weight="bold">
+    Green Surface / Dead Recovery
+  </text>
+
+  <text x="40" y="78" font-family="Arial" font-size="15">
+    Observer-only deterministic visualization. Does not govern, authorize, certify, or determine legitimacy.
+  </text>
+
+  <rect x="60" y="130" width="470" height="320" rx="18" fill="#dff5df" stroke="#2c662d" stroke-width="2"/>
+  <text x="90" y="175" font-family="Arial" font-size="24" font-weight="bold">
+    Surface Continuity
+  </text>
+  <text x="100" y="240" font-family="Arial" font-size="22">Status: GREEN</text>
+  <text x="100" y="285" font-family="Arial" font-size="18">Dashboard stable</text>
+  <text x="100" y="325" font-family="Arial" font-size="18">Replay available</text>
+  <text x="100" y="365" font-family="Arial" font-size="18">Validator passing</text>
+  <text x="100" y="405" font-family="Arial" font-size="18">Procedure coherent</text>
+
+  <rect x="650" y="130" width="470" height="320" rx="18" fill="#f7dddd" stroke="#7a1f1f" stroke-width="2"/>
+  <text x="690" y="175" font-family="Arial" font-size="24" font-weight="bold">
+    Recovery Viability
+  </text>
+  <text x="690" y="240" font-family="Arial" font-size="22">Classification: RECOVERY_EXHAUSTED</text>
+  <text x="690" y="295" font-family="Arial" font-size="18">Effective recovery time: 86 min</text>
+  <text x="690" y="340" font-family="Arial" font-size="18">Hardening window: 45 min</text>
+  <text x="690" y="385" font-family="Arial" font-size="18">Recovery viability exhausted before consequence boundary.</text>
+
+  <line x1="530" y1="290" x2="650" y2="290" stroke="#333" stroke-width="3"/>
+  <polygon points="650,290 635,280 635,300" fill="#333"/>
+
+  <text x="60" y="520" font-family="Arial" font-size="22" font-weight="bold">
+    Recovery visibility is not recovery viability
+  </text>
+
+  <text x="60" y="565" font-family="Arial" font-size="16">
+    Case: green_surface_dead_recovery_001 | Observer-only • Not authority • UNKNOWN -&gt; HOLD
+  </text>
+</svg>

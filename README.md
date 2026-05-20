@@ -2,9 +2,9 @@
 
 ## Purpose
 
-The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, traversal realism, interruption reconstructability, continuation destabilizability, and recoverability realism observability framework.
+The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, traversal realism, interruption reconstructability, continuation destabilizability, recoverability realism, and deterministic visualization framework.
 
-The Observatory exists to inspect whether continuity, replayability, synchronization, validation, procedural coherence, institutional persistence, operational smoothness, observability, interruption pathways, destabilization pathways, and recovery pathways remain materially traversable, interrupt-compatible, destabilizable, reconstructable, and recoverable under bounded runtime conditions.
+The Observatory exists to inspect whether continuity, replayability, synchronization, validation, procedural coherence, institutional persistence, operational smoothness, interruption pathways, destabilization pathways, and recovery pathways remain materially traversable, interrupt-compatible, destabilizable, reconstructable, and recoverable under bounded runtime conditions.
 
 The Observatory does not:
 
@@ -77,6 +77,7 @@ These questions remain observer-only and runtime-local.
 - Seen is not protected.
 - Green is not viable.
 - Interrupted is not recovered.
+- Deterministic output should become deterministic visualization.
 - UNKNOWN -> HOLD.
 - Break survivability, not ontology.
 
@@ -107,6 +108,8 @@ The Observatory:
 - inspects recoverability exhaustion pressure
 - inspects layer survival divergence
 - inspects governable-looking drift
+- renders deterministic visual artifacts
+- renders reviewer-readable SVG outputs
 
 The Observatory does not:
 
@@ -151,6 +154,7 @@ Output semantics preserve:
 - traversal realism
 - continuation destabilizability realism
 - recoverability realism
+- deterministic reproducibility
 - and anti-authority containment
 
 Key clarifications:
@@ -177,16 +181,18 @@ Defined in:
 - `governance/traversability_realism/CONTINUATION_DESTABILIZABILITY_REALISM.md`
 - `governance/traversability_realism/REASSURANCE_INFRASTRUCTURE_FORMATION.md`
 
-This layer pressures whether continuation remains materially:
+Core runtime pressure surfaces include:
 
-- traversable
-- interruptible
-- reconstructable
-- reversible
-- haltable
-- destabilizable
-
-before consequence hardens.
+- replay locality fragmentation
+- replay survivability vs replay traversability
+- reviewer traversal realism
+- synchronization survivability asymmetry
+- reconstruction timing exhaustion
+- continuation destabilizability
+- reassurance infrastructure formation
+- operational smoothness camouflage
+- inspectable vs traversable separation
+- and affected-human interruption realism
 
 ---
 
@@ -348,6 +354,28 @@ Core reduction:
 
 ---
 
+# Recovery Demo Renderer
+
+Defined in:
+
+- `tools/recovery_demo_renderer/README.md`
+- `tools/recovery_demo_renderer/sample_input.json`
+- `tools/recovery_demo_renderer/render_green_surface_svg.py`
+- `tools/recovery_demo_renderer/render_recovery_heatmap.py`
+- `tools/recovery_demo_renderer/green_surface_dead_recovery_output.svg`
+- `tools/recovery_demo_renderer/layer_survival_heatmap_output.svg`
+- `tools/recovery_demo_renderer/REVIEWER_WALKTHROUGH.md`
+
+This renderer converts deterministic recovery demo outputs into reviewer-readable SVG artifacts.
+
+Core reductions:
+
+- Deterministic output should become deterministic visualization.
+- Green surface does not imply recoverable control.
+- Layer survival is not layer inheritance.
+
+---
+
 # Current Structural Focus
 
 Current stabilization focus includes:
@@ -369,6 +397,8 @@ Current stabilization focus includes:
 - independent layer degradation asymmetry
 - recoverability exhaustion pressure
 - governable-looking drift
+- deterministic visualization
+- reviewer traversability
 - bounded uncertainty preservation
 - anti-ontology stabilization compression
 
