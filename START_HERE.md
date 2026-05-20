@@ -2,17 +2,15 @@
 
 ## Start Here
 
-The HACR Hybrid Observatory is a deterministic, observer-only runtime inspection repository.
+The HACR Hybrid Observatory is a deterministic, observer-only runtime inspection repository focused on:
 
-The repository focuses on:
-
-- runtime traversal
 - interruption/recovery observability
-- deterministic repair clarity
-- bounded falsifiability
-- renderer-independent inspection
+- runtime traversability
+- reconstructability realism
 - ambiguity localization
-- and reviewer accessibility under degraded runtime conditions.
+- renderer-independent clarity
+- bounded falsifiability
+- and operational clarity under degraded runtime conditions.
 
 The repository does NOT:
 
@@ -23,14 +21,11 @@ The repository does NOT:
 - operationalize interruption
 - create execution authority
 - automate sovereignty
-- replace human judgment
-- or create autonomous recovery infrastructure.
+- or replace human judgment.
 
 ---
 
-# Fastest Review Paths
-
-## Minimal Traversal Review
+# Fastest Review Path
 
 Run:
 
