@@ -2,39 +2,41 @@
 
 ## Purpose
 
-The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, and interruption reconstructability observability framework.
+The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, traversal realism, and interruption reconstructability observability framework.
 
-The Observatory exists to inspect whether continuity, replayability, validation, procedural coherence, synchronization, institutional persistence, and observability remain materially traversable under bounded operational conditions.
+The Observatory exists to inspect whether continuity, replayability, synchronization, procedural coherence, institutional persistence, validation, and observability remain materially traversable and interrupt-compatible under bounded runtime conditions.
 
 The Observatory does not:
 
 - govern
 - authorize
 - certify
-- execute interruption
+- operationalize execution
 - determine legitimacy
 - enforce policy
 - replace bind-time proof
-- operationalize execution
+- automate interruption
 - replace human responsibility
+- create execution authority
 
-All outputs are observational only.
+All outputs remain observational only.
 
 ---
 
 # Core Runtime Questions
 
-The Observatory increasingly pressures a bounded family of runtime questions:
+The Observatory increasingly pressures a bounded family of operational questions:
 
 - Can consequence remain reachable after authority changes, revocation, refusal, replay, retry, orchestration, or continuity persistence emerge downstream?
 - Can interruption still be materially reconstructed before consequence hardens?
-- Can continuation still be materially destabilized under bounded traversal conditions?
-- Does replay remain materially traversable?
-- Can affected humans still realistically interrupt, escalate, recover, or refuse?
-- Does visibility survive after interruption capability collapses?
-- Does reassurance infrastructure silently camouflage interruption degradation?
+- Can replay still be materially traversed under bounded reviewer conditions?
+- Can continuation still be materially destabilized?
+- Can affected humans still interrupt, escalate, recover, or refuse in time?
+- Does observability survive after interruption capability degrades?
+- Does reassurance infrastructure camouflage interruption collapse?
+- Does machine-speed continuation exceed bounded human interpretation and interruption capacity?
 
-These questions remain observational only.
+These questions remain observer-only and runtime-local.
 
 ---
 
@@ -53,10 +55,14 @@ These questions remain observational only.
 - Validator PASS is not authority.
 - Validator FAIL is not legitimacy collapse.
 - Validator HOLD preserves bounded uncertainty.
+- Human compensation is not system coherence.
+- Glue hours are not resilience.
+- Interpretation visibility is not interruption capability.
 - Reassurance infrastructure is not recoverable control.
-- Being documented is not being protected.
 - Human presence is not executable interruption reachability.
+- Being documented is not being protected.
 - Operational smoothness may camouflage interruption collapse.
+- Machine-speed continuity can outrun human interruption.
 - UNKNOWN -> HOLD.
 - Break survivability, not ontology.
 
@@ -75,10 +81,12 @@ The Observatory:
 - inspects traversal realism
 - inspects interruption reconstructability
 - inspects continuation destabilizability
-- inspects synchronization degradation
 - inspects replay locality fragmentation
+- inspects synchronization degradation
 - inspects reviewer traversal burden
 - inspects reassurance infrastructure formation
+- inspects operational smoothness camouflage
+- inspects interpretive buffering pressure
 - inspects affected-human interruption realism
 
 The Observatory does not:
@@ -102,7 +110,7 @@ Defined in:
 
 - `OUTPUT_SEMANTICS.md`
 
-Core classifications:
+Core classifications include:
 
 - PASS
 - HOLD
@@ -114,19 +122,20 @@ Core classifications:
 Output semantics preserve:
 
 - bounded uncertainty
-- operational falsifiability
 - runtime locality
-- replay/review realism
+- operational falsifiability
 - interruption reconstructability realism
+- replay/review realism
+- traversal realism
 - and anti-authority containment
 
-Recent semantic clarifications include:
+Key clarifications:
 
 - PASS is not authority.
 - FAIL is not legitimacy collapse.
 - FAIL is not tool failure.
 - HOLD preserves bounded uncertainty.
-- Replay survivability alone is insufficient for PASS if traversal realism collapses.
+- Replay survivability alone is insufficient for PASS if traversal realism degrades.
 - UNKNOWN -> HOLD.
 
 Outputs remain bounded observational artifacts only.
@@ -142,14 +151,14 @@ Defined in:
 - `governance/traversability_realism/CONTINUATION_DESTABILIZABILITY_REALISM.md`
 - `governance/traversability_realism/REASSURANCE_INFRASTRUCTURE_FORMATION.md`
 
-This layer pressure-tests whether continuation remains materially:
+This layer pressures whether continuation remains materially:
 
+- traversable
 - interruptible
 - reconstructable
 - reversible
 - haltable
 - destabilizable
-- or operationally traversable
 
 before consequence hardens.
 
@@ -158,20 +167,15 @@ Primary pressure surfaces include:
 - replay locality fragmentation
 - replay survivability vs replay traversability
 - reviewer traversal realism
-- reconstruction timing exhaustion
 - synchronization survivability asymmetry
+- reconstruction timing exhaustion
 - continuation destabilizability
 - reassurance infrastructure formation
 - operational smoothness camouflage
-- audit-layer survivability illusion
 - inspectable vs traversable separation
 - and affected-human interruption realism
 
-Boundary:
-
 This layer remains observer-only and diagnostic.
-
-It does not authorize interruption or determine governance adequacy.
 
 ---
 
@@ -193,7 +197,7 @@ This tooling visualizes distinctions between:
 - interruptible
 - destabilizable
 
-The tooling also visualizes:
+The tooling additionally visualizes:
 
 - replay locality fragmentation
 - traversal saturation
@@ -227,22 +231,68 @@ This deterministic demo layer illustrates how systems may remain:
 - visible
 - replayable
 - validator-backed
-- dashboard-stable
+- synchronized
 - procedurally coherent
 - institutionally continuous
-- and operationally smooth
+- operationally smooth
+- psychologically governable-looking
 
-while practical interruption reachability degrades underneath:
+while interruption capability progressively degrades underneath:
 
 - replay locality fragmentation
+- synchronization compression
 - dependency layering
-- synchronization pressure
 - reviewer traversal overload
+- escalation delay
 - and reconstruction timing exhaustion
 
 Core reduction:
 
 - Clear evidence is not reachable interruption.
+
+---
+
+# Interpretive Buffer Collapse Tooling
+
+Defined in:
+
+- `tools/interpretive_buffer_collapse/INTERPRETIVE_BUFFER_COLLAPSE_LENS.md`
+- `tools/interpretive_buffer_collapse/HUMAN_INTERPRETIVE_BUFFER_TESTER.md`
+- `tools/interpretive_buffer_collapse/INTERPRETATION_WINDOW_MODEL.md`
+- `tools/interpretive_buffer_collapse/GLUE_HOURS_AND_COMPENSATION_LOAD.md`
+- `tools/interpretive_buffer_collapse/MACHINE_SPEED_PROPAGATION_PRESSURE.md`
+- `tools/interpretive_buffer_collapse/MINIMAL_CASE_INTERPRETATION_OUTPACED.md`
+
+This tooling pressures whether machine-speed continuation begins exceeding bounded human:
+
+- interpretation
+- interruption
+- escalation
+- recovery
+- reconstructability
+- and traversal capacity
+
+before consequence hardens.
+
+Primary pressure surfaces include:
+
+- interpretive buffering
+- hidden compensation layers
+- glue-hour accumulation
+- synchronization compression
+- propagation acceleration
+- interruption window collapse
+- operational smoothness persistence
+- and machine-speed continuation pressure
+
+Core reductions:
+
+- Human compensation is not system coherence.
+- Glue hours are not resilience.
+- Interpretation visibility is not interruption capability.
+- Machine-speed continuity can outrun human interruption.
+
+This tooling remains observer-only and operationally bounded.
 
 ---
 
@@ -259,14 +309,14 @@ Current stabilization focus includes:
 - synchronization degradation realism
 - operational acceleration asymmetry
 - reassurance infrastructure formation
-- audit-layer survivability illusion
 - operational smoothness camouflage
+- audit survivability illusion
+- interpretive buffering pressure
 - affected-human interruption realism
-- consequence-boundary availability
 - bounded uncertainty preservation
 - anti-ontology stabilization compression
 
-The repository increasingly pressures whether replay, validation, observability, procedural coherence, and institutional continuity themselves become reassurance infrastructure under continuation pressure.
+The repository increasingly pressures whether replay, validation, observability, procedural coherence, synchronization, institutional continuity, dashboards, and reviewer visibility themselves become reassurance infrastructure under continuation pressure.
 
 ---
 
@@ -277,28 +327,38 @@ The repository increasingly treats:
 - replay
 - observability
 - procedural coherence
-- reviewer visibility
 - validator continuity
+- reviewer visibility
 - institutional continuity
+- synchronization persistence
 - dashboard stability
-- and audit survivability
+- audit survivability
+- and interpretive buffering
 
 as pressure surfaces themselves.
 
-A system may remain:
+Systems may remain:
 
 - visible
 - replayable
 - synchronized
-- emotionally compelling
 - procedurally coherent
 - validator-backed
 - institutionally continuous
+- operationally smooth
 - and psychologically governable-looking
 
-while executable interruption capability progressively collapses underneath continuation pressure.
+while executable interruption capability progressively collapses underneath:
 
-The Observatory therefore pressures whether systems remain materially traversable and interruptible under bounded operational conditions rather than symbolically governable through visibility persistence alone.
+- propagation speed
+- synchronization pressure
+- dependency layering
+- traversal overload
+- escalation delay
+- reconstruction timing exhaustion
+- and machine-speed continuation pressure
+
+The Observatory therefore pressures whether interruption remains materially reachable before consequence hardens rather than inferring recoverability from continuity persistence alone.
 
 ---
 
@@ -318,6 +378,7 @@ Primary observer-side questions include:
 6. Can continuation still be materially destabilized?
 7. Can affected humans still materially reach interruption pathways?
 8. Does reassurance survive after interruption collapses?
+9. Does machine-speed propagation exceed bounded human interruption capacity?
 
 Observational only.
 
@@ -384,11 +445,27 @@ Focus:
 
 - dashboard reassurance
 - validator reassurance
-- procedural reassurance
 - replay reassurance
+- procedural reassurance
 - audit survivability illusion
 - operational smoothness camouflage
 - psychologically governable appearance
+
+Observational only.
+
+---
+
+## Interpretive Buffer Pressure
+
+Focus:
+
+- hidden compensation layers
+- glue-hour accumulation
+- runtime translation burden
+- interruption-window compression
+- escalation delay accumulation
+- machine-speed propagation pressure
+- human interruption reachability degradation
 
 Observational only.
 
@@ -415,10 +492,10 @@ A continuity condition that:
 
 - appeared stable
 - propagated operationally
-- persisted institutionally
-- or remained procedurally coherent
+- remained synchronized
+- or persisted institutionally
 
-without ever establishing sufficiently valid interruption compatibility or reconstructability conditions.
+without ever establishing materially reachable interruption compatibility.
 
 Some systems fail because they collapse.
 
@@ -434,21 +511,22 @@ All outputs remain bounded to:
 
 - supplied inputs
 - visible topology
-- available evidence
 - replay/review assumptions
 - bounded traversal conditions
-- reproducible execution environments
 - observable dependency conditions
+- reproducible execution environments
+- available evidence
+- runtime-local inspection conditions
 
 Changes in:
 
 - topology
-- visibility
-- dependency structure
 - synchronization state
 - replay locality
+- dependency structure
 - reviewer traversal burden
 - downstream continuation pressure
+- escalation timing
 - or operational acceleration
 
 may change observational classifications.
@@ -465,20 +543,20 @@ The Observatory remains:
 - reproducible
 - runtime-local
 - replay/review focused
-- continuity-focused
 - interruption-reconstructability focused
+- continuity-focused
 - anti-inevitability
 - anti-ontology
 
 The Observatory does not:
 
 - operationalize execution
-- validate legitimacy
 - authorize continuation
+- validate legitimacy
 - certify safety
+- determine governance adequacy
 - replace human responsibility
 - create execution authority
-- determine governance adequacy
 - or operationalize interruption
 
 ---
@@ -521,8 +599,8 @@ The framework remains:
 - transition-focused
 - continuity-oriented
 - replay/review focused
-- reproducibility-bound
 - interruption-reconstructability focused
+- reproducibility-bound
 - non-authoritative
 
 Break survivability, not ontology.
