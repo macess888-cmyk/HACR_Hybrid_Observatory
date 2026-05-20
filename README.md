@@ -2,9 +2,9 @@
 
 ## Purpose
 
-The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, traversal realism, interruption reconstructability, continuation destabilizability, recoverability realism, deterministic visualization, reviewer-traversability, onboarding ergonomics, and public-safe observability instrumentation framework.
+The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, traversal realism, interruption reconstructability, continuation destabilizability, recoverability realism, deterministic visualization, reviewer-traversability, onboarding ergonomics, renderer refinement, and public-safe observability instrumentation framework.
 
-The Observatory exists to inspect whether continuity, replayability, synchronization, validation, procedural coherence, institutional persistence, operational smoothness, interruption pathways, destabilization pathways, recovery pathways, reviewer traversal pathways, onboarding pathways, and deterministic visualization pathways remain materially traversable, interrupt-compatible, destabilizable, reconstructable, and recoverable under bounded runtime conditions.
+The Observatory exists to inspect whether continuity, replayability, synchronization, validation, procedural coherence, institutional persistence, operational smoothness, interruption pathways, destabilization pathways, recovery pathways, reviewer traversal pathways, onboarding pathways, deterministic visualization pathways, and renderer traversal pathways remain materially traversable, interrupt-compatible, destabilizable, reconstructable, and recoverable under bounded runtime conditions.
 
 The Observatory does not:
 
@@ -40,6 +40,7 @@ The Observatory pressures a bounded family of runtime questions:
 - Can deterministic visualization preserve reviewer traversability without inheriting authority assumptions?
 - Can onboarding visuals improve reproducibility without creating legitimacy inheritance?
 - Can reviewer ergonomics reduce traversal burden without reducing falsifiability?
+- Can renderer polish improve traversal clarity without increasing semantic authority?
 
 These questions remain observer-only and runtime-local.
 
@@ -86,6 +87,7 @@ These questions remain observer-only and runtime-local.
 - Visual coherence is not interruption viability.
 - Reproducible visuals improve inspection, not authority.
 - Visual clarity improves traversal, not authority.
+- Visual polish improves traversal, not authority.
 - UNKNOWN -> HOLD.
 - Break survivability, not ontology.
 
@@ -122,6 +124,7 @@ The Observatory:
 - generates deterministic case-pack outputs
 - supports reviewer onboarding traversal
 - supports visual traversal ergonomics
+- supports renderer refinement normalization
 
 The Observatory does not:
 
