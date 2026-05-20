@@ -19,7 +19,9 @@ The repository focuses on:
 - stabilization health pressure-testing
 - one-click bounded reproducibility
 - observatory traversability
-- and bounded reviewer verification
+- bounded reviewer verification
+- deterministic repair-path inspection
+- and runtime failure recoverability auditing
 
 The Observatory exists to inspect whether systems remain materially:
 
@@ -29,7 +31,8 @@ The Observatory exists to inspect whether systems remain materially:
 - reconstructable
 - recoverable
 - reviewer-reachable
-- and operationally falsifiable
+- operationally falsifiable
+- and repair-path inspectable
 
 under bounded runtime conditions.
 

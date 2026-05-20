@@ -1,0 +1,11 @@
+{
+  "error_code": "185",
+  "error_text": "Maximum update depth exceeded",
+  "signals": {
+    "set_state_in_render": false,
+    "effect_updates_watched_dependency": true,
+    "effect_without_dependency_array_updates_state": false,
+    "unstable_dependency_identity": false,
+    "parent_child_recursive_update": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "decision": "FIX",
+  "likely_cause": "useEffect updates a dependency it also watches",
+  "fix_path": [
+    "Inspect useEffect dependency array",
+    "Find state updated inside effect",
+    "Remove circular dependency or add guard",
+    "Re-run app"
+  ],
+  "runtime_reduction": "State updates must not recursively recreate their own trigger."
+}
