@@ -1,114 +1,47 @@
-# START HERE
+# HACR Hybrid Observatory — START HERE
 
 ## Purpose
 
-This repository is a bounded, observer-side inspection environment focused on continuity visibility, interruption locality, reproducibility, and reviewer-facing falsifiability under controlled runtime conditions.
+This repository provides:
 
-The repository is intentionally:
+deterministic interruption/recovery observability instrumentation under bounded replay/review/traversal/rendering conditions.
+
+The Observatory is:
 
 - observer-only
-- deterministic
-- bounded
-- interruption-local
-- reviewer-facing
+- runtime-local
 - non-authoritative
-- non-consumable by execution
+- reproducibility-focused
+- anti-inevitability
+- anti-ontology
+
+The repository does NOT:
+
+- govern
+- authorize
+- certify
+- operationalize interruption
+- determine legitimacy
+- replace human judgment
+- create execution authority
+
+All outputs remain bounded observational artifacts only.
 
 ---
 
-# Recommended Reviewer Path
+# Fastest Reviewer Path
 
-## 1. Repository Overview
+Goal:
 
-Read:
-
-- README.md
-
----
-
-## 2. Repository Boundaries
-
-Read:
-
-- NON_CLAIMS.md
-- ENGINEERING_LIMITATIONS.md
+Run one deterministic case.
+Render one SVG.
+Inspect one bounded runtime reduction.
 
 ---
 
-## 3. Reviewer Entry
+# Step 1 — Open Terminal
 
-Read:
+From repository root:
 
-- REVIEWER_QUICKSTART.md
-
----
-
-## 4. Output Interpretation
-
-Read:
-
-- OUTPUT_SEMANTICS.md
-- INSPECTION_INVALIDITY.md
-
----
-
-## 5. Continuity & Coupling Limits
-
-Read:
-
-- REVIEWER_CONTINUITY_LIMITS.md
-- OBSERVER_REMOVABILITY_TESTS.md
-
----
-
-## 6. Stabilization & Compression
-
-Read:
-
-- SEMANTIC_COMPRESSION_RULES.md
-- RECURSIVE_STABILIZATION_LIMITS.md
-
----
-
-# Reviewer Focus
-
-Reviewer inspection should focus on:
-
-- bounded inspection behavior
-- deterministic outputs
-- interruption visibility
-- replay consistency
-- explicit invalidity handling
-- observer removability
-- falsification pathways
-- and reproducibility surfaces
-
-rather than semantic expansion or governance interpretation.
-
----
-
-# Non-Claims
-
-The repository does not provide:
-
-- governance authority
-- execution permission
-- operational legitimacy
-- semantic certification
-- universal topology interpretation
-- or generalized truth infrastructure.
-
----
-
-# Final Compression
-
-The repository becomes stronger by becoming:
-
-- easier to inspect
-- easier to challenge
-- easier to falsify
-- easier to remove
-- easier to replay
-- and easier to boundary-check
-
-Not by increasing semantic scope.
+```bat id="t1ib4g"
+cd tools\recovery_case_pack_renderer
