@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420">
+  <rect width="1100" height="420" fill="#ffffff"/>
+
+  <text x="40" y="45" font-family="Arial" font-size="26" font-weight="bold">Traversal Topology: Visibility Is Not Interruption</text>
+  <text x="40" y="75" font-family="Arial" font-size="15">Observer-only diagram. Does not govern, authorize, certify, or determine legitimacy.</text>
+
+  <g font-family="Arial" font-size="16">
+    <rect x="55" y="130" width="160" height="70" rx="12" fill="#f2f2f2" stroke="#333"/>
+    <text x="92" y="172">Visible</text>
+
+    <rect x="255" y="130" width="160" height="70" rx="12" fill="#f2f2f2" stroke="#333"/>
+    <text x="293" y="172">Inspectable</text>
+
+    <rect x="455" y="130" width="160" height="70" rx="12" fill="#f2f2f2" stroke="#333"/>
+    <text x="493" y="172">Traversable</text>
+
+    <rect x="655" y="130" width="160" height="70" rx="12" fill="#f2f2f2" stroke="#333"/>
+    <text x="693" y="172">Interruptible</text>
+
+    <rect x="855" y="130" width="190" height="70" rx="12" fill="#f2f2f2" stroke="#333"/>
+    <text x="900" y="172">Destabilizable</text>
+
+    <line x1="215" y1="165" x2="255" y2="165" stroke="#333" stroke-width="2"/>
+    <line x1="415" y1="165" x2="455" y2="165" stroke="#333" stroke-width="2"/>
+    <line x1="615" y1="165" x2="655" y2="165" stroke="#333" stroke-width="2"/>
+    <line x1="815" y1="165" x2="855" y2="165" stroke="#333" stroke-width="2"/>
+
+    <text x="72" y="260" font-size="15">Replay survives</text>
+    <text x="270" y="260" font-size="15">Evidence exists</text>
+    <text x="457" y="260" font-size="15">Reviewer burden may saturate</text>
+    <text x="650" y="260" font-size="15">Interruption may fail</text>
+    <text x="842" y="260" font-size="15">Consequence may harden</text>
+
+    <text x="40" y="340" font-size="18" font-weight="bold">Core reduction:</text>
+    <text x="190" y="340" font-size="18">Clear evidence is not reachable interruption.</text>
+
+    <text x="40" y="375" font-size="15">UNKNOWN -&gt; HOLD. Break survivability, not ontology.</text>
+  </g>
+</svg>
