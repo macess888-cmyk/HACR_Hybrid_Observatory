@@ -1,95 +1,242 @@
 # HACR Hybrid Observatory
 
-## PURPOSE
+## Purpose
 
-The HACR Hybrid Observatory is an observer-only continuity
-inspection and transition analysis framework.
+The HACR Hybrid Observatory is an observer-only runtime continuity inspection and replay/review pressure-testing framework.
 
-The Observatory exists to inspect:
-- continuity behavior
-- transition visibility
-- degradation topology
-- replay survivability
-- recoverability uncertainty
-- interruption viability
-- topology-local transition behavior
-- continuity drift visibility
-- rollback observability
-- relation-validity stability
-
-under bounded observational conditions.
+It exists to inspect whether continuity, replayability, validation, procedural coherence, institutional persistence, and observability remain materially traversable under bounded operational conditions.
 
 The Observatory does not:
-- authorize
+
 - govern
+- authorize
 - certify
-- optimize
-- operationalize execution
+- execute interruption
+- determine legitimacy
+- enforce policy
+- replace bind-time proof
+- replace human responsibility
 
 All outputs are observational only.
 
 ---
 
-# CORE REDUCTIONS
+## Core Runtime Question
 
-Systems become more dangerous when transition behavior
-stops being legible before collapse becomes visible.
+Can consequence remain reachable after authority changes, revocation, refusal, replay, retry, orchestration, or continuity conditions emerge downstream?
 
-Systems become more dangerous when continuity persists
-after validity silently degrades.
+And more recently:
 
-The Observatory does not preserve continuity.
-
-The Observatory preserves the visibility of whether continuity
-remains interpretable.
+Can continuation still be materially destabilized before consequence hardens?
 
 ---
 
-# OBSERVATORY FUNCTION
+## Core Reductions
+
+- Visibility is not reachability.
+- Replay availability is not practical reconstructability.
+- Replay survivability is not replay traversability.
+- Observing continuation is not interrupting continuation.
+- Inspectable is not traversable.
+- Procedural coherence is not interruption realism.
+- Reviewer traversal is not authority.
+- Validator PASS is not authority.
+- Validator FAIL is not legitimacy collapse.
+- Validator HOLD preserves bounded uncertainty.
+- Reassurance infrastructure is not recoverable control.
+- Being documented is not being protected.
+- Operational smoothness may camouflage interruption collapse.
+- UNKNOWN -> HOLD.
+- Break survivability, not ontology.
+
+---
+
+## Observability Posture
 
 The Observatory:
+
 - observes
 - classifies
 - maps
 - visualizes
 - pressure-tests
-- inspects transition behavior
+- inspects replay/review behavior
 - inspects continuity behavior
+- inspects interruption reconstructability
+- inspects traversal realism
+- inspects continuation destabilizability
 
 The Observatory does not:
+
 - execute
 - approve
 - authorize
 - govern
+- certify
+- determine legitimacy
 - replace human judgment
 
 Human operational authority remains external to the framework.
 
 ---
 
-# CORE OBSERVER QUESTIONS
+## Output Semantics
 
 Defined in:
+
+- `OUTPUT_SEMANTICS.md`
+
+Core classifications include:
+
+- PASS
+- HOLD
+- FAIL
+- STOP
+- REVERSE
+- SHADOW
+
+Recent output semantics clarify:
+
+- PASS is not authority.
+- HOLD preserves bounded uncertainty.
+- FAIL is not tool failure.
+- FAIL is not legitimacy collapse.
+- Replay survivability alone is insufficient for PASS if traversal realism or interruption reconstructability materially degrade.
+- UNKNOWN -> HOLD.
+
+Outputs are bounded observational artifacts only.
+
+---
+
+## Traversability and Destabilizability Realism
+
+Defined in:
+
+- `governance/traversability_realism/MULTI_DIRECTIONAL_TRAVERSABILITY_AND_DESTABILIZABILITY_WORKBENCH.md`
+- `governance/traversability_realism/INSPECTABLE_VS_TRAVERSABLE.md`
+- `governance/traversability_realism/CONTINUATION_DESTABILIZABILITY_REALISM.md`
+- `governance/traversability_realism/REASSURANCE_INFRASTRUCTURE_FORMATION.md`
+
+This layer pressure-tests whether continuation remains materially interruptible, reversible, haltable, or destabilizable before consequence hardens.
+
+Focus areas:
+
+- replay survivability vs replay traversability
+- inspectable vs traversable separation
+- reviewer traversal realism
+- reconstruction timing exhaustion
+- continuation destabilizability
+- reassurance infrastructure formation
+- operational smoothness camouflage
+- affected-human interruption realism
+
+Boundary:
+
+This layer remains observer-only.
+
+It does not authorize interruption or determine governance adequacy.
+
+---
+
+## Traversability Visualization Tooling
+
+Defined in:
+
+- `tools/traversability_visualization/TRAVERSABILITY_TOPOLOGY_MODEL.md`
+- `tools/traversability_visualization/REPLAY_LOCALITY_FRAGMENTATION_HEATMAP.md`
+- `tools/traversability_visualization/REVIEWER_TRAVERSAL_BUDGET_METER.md`
+- `tools/traversability_visualization/MINIMAL_INSPECTABLE_VS_TRAVERSABLE_DEMO.md`
+- `tools/traversability_visualization/REASSURANCE_INFRASTRUCTURE_DETECTOR.md`
+
+This tooling is intended to visualize bounded operational distinctions between:
+
+- visible
+- inspectable
+- traversable
+- interruptible
+- destabilizable
+
+Core visualization reductions:
+
+- Observable is not traversable.
+- Traversable is not interruptible.
+- Interruptible is not recoverable.
+- Reassurance infrastructure is not recoverable control.
+
+---
+
+## Current Structural Focus
+
+Current focus areas include:
+
+- runtime-local falsifiability
+- replay/review realism
+- replay locality fragmentation
+- reviewer traversal burden
+- reconstruction timing realism
+- synchronization degradation realism
+- interruption reconstructability
+- continuation destabilizability
+- affected-human interruption realism
+- reassurance infrastructure detection
+- audit-layer survivability illusion
+- operational smoothness camouflage
+- consequence-boundary availability
+- bounded uncertainty preservation
+
+---
+
+## Review / Replay Workbench Direction
+
+The repository increasingly treats replay, validation, observability, and procedural coherence as pressure surfaces themselves.
+
+A system may remain:
+
+- visible
+- replayable
+- validator-backed
+- renderer-backed
+- procedurally coherent
+- institutionally continuous
+- operationally smooth
+- and psychologically governable-looking
+
+while executable interruption capability progressively collapses underneath continuation pressure.
+
+The Observatory therefore pressures whether evidence continuity, replay continuity, institutional continuity, validator behavior, and reviewer visibility still compress downward into runtime-local executable interruption realism.
+
+---
+
+## Core Observer Questions
+
+Defined in:
+
 - `CORE_OBSERVER_QUESTIONS.md`
 
 Primary observer-side questions:
+
 1. Is the transition still legible?
 2. Is continuity still presently valid?
 3. Is recoverability still observable?
+4. Is replay still materially traversable?
+5. Is interruption still reconstructable?
+6. Can continuation still be materially destabilized before consequence hardens?
 
 Observational only.
 
 ---
 
-# OBSERVATIONAL LAYERS
+## Observational Layers
 
-## Transition Legibility
+### Transition Legibility
 
 Defined in:
+
 - `TRANSITION_LEGIBILITY.md`
 
 Focus:
-- legible transition behavior (LTB)
+
+- legible transition behavior
 - graceful degradation visibility
 - recoverability corridors
 - transition-bound uncertainty
@@ -99,12 +246,14 @@ Observational only.
 
 ---
 
-## Anti-Drift Continuity
+### Anti-Drift Continuity
 
 Defined in:
+
 - `ANTI_DRIFT_CONTINUITY.md`
 
 Focus:
+
 - present-state validity
 - continuity drift visibility
 - rollback observability
@@ -116,86 +265,40 @@ Observational only.
 
 ---
 
-## Output Semantics
+### Traversability Realism
 
-Defined in:
-- `OUTPUT_SEMANTICS.md`
+Focus:
 
-Core classifications:
-- PASS
-- HOLD
-- FAIL
-- STOP
-- REVERSE
-- SHADOW
-
-Outputs are bounded observational artifacts only.
-
----
-
-## Non-Claims Boundary
-
-Defined in:
-- `NON_CLAIMS.md`
-
-The Observatory does not claim:
-- governance authority
-- execution validity
-- predictive certainty
-- operational authorization
-- guaranteed interruption success
-
----
-
-# GRACEFUL FAILURE BOUNDARY (GFB)
-
-Observer-side preference:
-- early failure visibility
-- graceful degradation
-- bounded transition corridors
-- recoverability preservation
-- safe-state return potential
-
-The Observatory does not optimize systems
-toward irreversible edge behavior.
-
----
-
-# LEGIBLE TRANSITION BEHAVIOR (LTB)
-
-LTB concerns whether transitions remain:
-- observable
-- bounded
-- interpretable
-- recoverable
-
-during stress, interruption, or topology change.
-
-LTB is observational only.
-
----
-
-# ANTI-DRIFT CONTINUITY
-
-Anti-drift continuity concerns whether continuity:
-- remains presently valid
-- avoids stale-state inheritance
-- preserves relation validity
-- maintains interruption compatibility
-- remains replay-visible
-- avoids hidden continuity drift
-
-under changing conditions.
+- replay traversability
+- reviewer traversal realism
+- inspectable vs traversable separation
+- affected-human interruption pathways
+- reconstruction timing exhaustion
 
 Observational only.
 
 ---
 
-# INVALID FORMATION VS COLLAPSE
+### Reassurance Infrastructure Pressure
 
-## Collapse
+Focus:
+
+- dashboard reassurance
+- validator reassurance
+- procedural reassurance
+- audit-layer survivability illusion
+- operational smoothness camouflage
+
+Observational only.
+
+---
+
+## Invalid Formation vs Collapse
+
+### Collapse
 
 A previously stable continuity condition:
+
 - degraded
 - destabilized
 - fragmented
@@ -203,11 +306,10 @@ A previously stable continuity condition:
 
 under stress or topology change.
 
----
-
-## Invalid Formation
+### Invalid Formation
 
 A continuity condition that:
+
 - appeared stable
 - propagated operationally
 - or persisted institutionally
@@ -222,108 +324,97 @@ This distinction is observational only.
 
 ---
 
-# REPRODUCIBILITY
+## Reproducibility
 
 All outputs remain bounded to:
+
 - supplied inputs
 - visible topology
 - available evidence
 - local inspection conditions
 - reproducible execution environments
+- replay/review assumptions
+- bounded traversal conditions
 
 Changes in:
+
 - topology
 - visibility
 - dependency structure
+- replay availability
+- reviewer traversal burden
 - downstream conditions
+- synchronization pressure
 
 may change observational classifications.
 
 ---
 
-# OBSERVER BOUNDARY
+## Observer Boundary
 
 The Observatory remains:
+
 - observer-only
 - non-authoritative
 - bounded
 - reproducible
+- runtime-local
+- replay/review focused
 - continuity-focused
+- interruption-reconstructability focused
+- anti-inevitability
+- anti-ontology
 
 The Observatory does not:
+
 - operationalize execution
 - validate legitimacy
 - authorize continuation
 - certify safety
 - replace human responsibility
+- create execution authority
+- or determine governance adequacy
 
 ---
 
-# EDUCATIONAL EXAMPLES
+## Additional Observability Notes
 
-Educational examples may include:
-- topology illustrations
-- geological analogies
-- degradation geometry
-- recoverability demonstrations
-- rollback illustrations
-- continuity drift examples
+Existing observability and boundary notes include:
 
-Examples exist solely to improve interpretability
-of observer-side transition analysis concepts.
-
-Educational examples are not operational proofs.
-
----
-
-# CURRENT STRUCTURAL FOCUS
-
-Current focus areas include:
-- transition legibility
-- graceful degradation visibility
-- anti-drift continuity
-- replay survivability
-- continuity uncertainty
-- interruption viability
-- topology-local observability
-- rollback visibility
-- bounded transition interpretation
+- `TRANSFER_FUNCTION_DRIFT.md`
+- `TOPOLOGY_INDEPENDENT_SURVIVABILITY.md`
+- `NON_AUTHORITY_TRACKER_BOUNDARY.md`
+- `STABILIZATION_PRESSURE_OBSERVABILITY.md`
+- `DYNAMIC_OBSERVATORY_HARNESS.md`
+- `governance/FIELD_PROPAGATION_GATING_NOTE.md`
+- `governance/ROUTING_WITHOUT_RESOLUTION.md`
+- `governance/field_observability/ROUTING_WITHOUT_RESOLUTION_FIELD_NOTE.md`
+- `governance/field_observability/PROPAGATION_GATING_AND_ISOLATED_VISIBILITY.md`
+- `governance/diagnostic_boundaries/SEARCH_EXPANSION_WITHOUT_SCORE_BINDING.md`
+- `governance/corridor_observability/INVARIANT_CORRIDOR_CONTRACTION_NOTE.md`
 
 ---
 
-# ADDITIONAL OBSERVABILITY NOTES
-
-- TRANSFER_FUNCTION_DRIFT.md
-- TOPOLOGY_INDEPENDENT_SURVIVABILITY.md
-- NON_AUTHORITY_TRACKER_BOUNDARY.md
-- STABILIZATION_PRESSURE_OBSERVABILITY.md
-- DYNAMIC_OBSERVATORY_HARNESS.md
-- governance/FIELD_PROPAGATION_GATING_NOTE.md
-- ROUTING_WITHOUT_RESOLUTION.md
-- Clarifies observer-only routing boundaries and propagation-gated observability.
-- governance/field_observability/ROUTING_WITHOUT_RESOLUTION_FIELD_NOTE.md
-- Clarifies bounded routing without convergence, authority inheritance, or semantic harmonization.
-- governance/field_observability/PROPAGATION_GATING_AND_ISOLATED_VISIBILITY.md
-- Clarifies isolated visibility, propagation gating, and non-aggregating observational boundaries.
-- diagnostic_boundaries/SEARCH_EXPANSION_WITHOUT_SCORE_BINDING.md
-- corridor_observability/INVARIANT_CORRIDOR_CONTRACTION_NOTE.md
-- Defines bounded admissible corridor contraction under measurable stress.
-- Preserves recoverability, graceful degradation, and non-collapse observability semantics.
-
----
-
-# NON-CLAIM SUMMARY
+## Non-Claim Summary
 
 The HACR Hybrid Observatory is:
+
 - not governance
 - not certification
 - not legal authority
 - not operational authorization
 - not predictive certainty
+- not execution control
+- not legitimacy determination
 
 The framework remains:
+
 - observer-only
+- runtime-local
 - transition-focused
 - continuity-oriented
+- replay/review focused
 - reproducibility-bound
 - non-authoritative
+
+Break survivability, not ontology.
