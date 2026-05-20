@@ -1,0 +1,30 @@
+{
+  "case_id": "case_002_visible_not_traversable",
+  "title": "Visible But Not Traversable",
+  "reduction": "Visible is not traversable.",
+  "surface_signals": {
+    "dashboard_stable": true,
+    "validator_passing": true,
+    "replay_available": true,
+    "procedure_coherent": true
+  },
+  "layers": {
+    "observable": "survives",
+    "inspectable": "partial",
+    "traversable": "collapsed",
+    "interruptible": "unknown",
+    "destabilizable": "unknown",
+    "recoverable": "unknown"
+  },
+  "timing_minutes": {
+    "detection_delay": 5,
+    "explanation_delay": 8,
+    "escalation_delay": 10,
+    "reviewer_traversal_time": 60,
+    "interruption_execution_time": 12,
+    "recovery_routing_time": 10,
+    "fragmentation_penalty": 18,
+    "synchronization_penalty": 12,
+    "consequence_hardening_window": 50
+  }
+}

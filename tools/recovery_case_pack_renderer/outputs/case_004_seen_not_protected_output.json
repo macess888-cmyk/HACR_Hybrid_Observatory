@@ -1,0 +1,18 @@
+{
+  "case_id": "case_004_seen_not_protected",
+  "classification": "RECOVERY_EXHAUSTED",
+  "consequence_hardening_window_minutes": 55,
+  "effective_recovery_time_minutes": 120,
+  "layers": {
+    "destabilizable": "collapsed",
+    "inspectable": "survives",
+    "interruptible": "collapsed",
+    "observable": "survives",
+    "recoverable": "collapsed",
+    "traversable": "partial"
+  },
+  "reduction": "Being seen is not being protected.",
+  "sha256_receipt": "7da32323055bbe89fc3754813f90a8918e40e928802be4cdce4f61ec7b7a30b7",
+  "surface_continuity": "GREEN",
+  "title": "Seen But Not Protected"
+}

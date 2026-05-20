@@ -1,0 +1,18 @@
+{
+  "case_id": "case_003_interrupted_not_recovered",
+  "classification": "RECOVERY_EXHAUSTED",
+  "consequence_hardening_window_minutes": 60,
+  "effective_recovery_time_minutes": 95,
+  "layers": {
+    "destabilizable": "partial",
+    "inspectable": "survives",
+    "interruptible": "survives",
+    "observable": "survives",
+    "recoverable": "collapsed",
+    "traversable": "survives"
+  },
+  "reduction": "Interrupted is not recovered.",
+  "sha256_receipt": "d72554328242e6fb9f360ef1b61ee592e511ea682c96885566649052374a01f7",
+  "surface_continuity": "GREEN",
+  "title": "Interrupted But Not Recovered"
+}

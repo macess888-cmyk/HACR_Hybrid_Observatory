@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="620" viewBox="0 0 1220 620">
+  <rect width="1220" height="620" fill="#ffffff"/>
+
+  <text x="40" y="45" font-family="Arial" font-size="28" font-weight="bold">
+    Green Surface / Dead Recovery
+  </text>
+
+  <text x="40" y="78" font-family="Arial" font-size="15">
+    Observer-only deterministic visualization. Not authority. UNKNOWN -&gt; HOLD.
+  </text>
+
+  <text x="40" y="125" font-family="Arial" font-size="20">
+    Classification: RECOVERY_EXHAUSTED
+  </text>
+
+  <text x="40" y="160" font-family="Arial" font-size="17">
+    Effective recovery time: 86 min | Hardening window: 45 min
+  </text>
+
+  
+  <rect x="60" y="210" width="165" height="90" rx="14" fill="#dff5df" stroke="#2c662d" stroke-width="2"/>
+  <text x="76" y="246" font-family="Arial" font-size="16" font-weight="bold">observable</text>
+  <text x="76" y="276" font-family="Arial" font-size="15">survives</text>
+
+  <rect x="245" y="210" width="165" height="90" rx="14" fill="#dff5df" stroke="#2c662d" stroke-width="2"/>
+  <text x="261" y="246" font-family="Arial" font-size="16" font-weight="bold">inspectable</text>
+  <text x="261" y="276" font-family="Arial" font-size="15">survives</text>
+
+  <rect x="430" y="210" width="165" height="90" rx="14" fill="#fff1c7" stroke="#8a6d00" stroke-width="2"/>
+  <text x="446" y="246" font-family="Arial" font-size="16" font-weight="bold">traversable</text>
+  <text x="446" y="276" font-family="Arial" font-size="15">partial</text>
+
+  <rect x="615" y="210" width="165" height="90" rx="14" fill="#f7dddd" stroke="#7a1f1f" stroke-width="2"/>
+  <text x="631" y="246" font-family="Arial" font-size="16" font-weight="bold">interruptible</text>
+  <text x="631" y="276" font-family="Arial" font-size="15">degraded</text>
+
+  <rect x="800" y="210" width="165" height="90" rx="14" fill="#f7dddd" stroke="#7a1f1f" stroke-width="2"/>
+  <text x="816" y="246" font-family="Arial" font-size="16" font-weight="bold">destabilizable</text>
+  <text x="816" y="276" font-family="Arial" font-size="15">degraded</text>
+
+  <rect x="985" y="210" width="165" height="90" rx="14" fill="#d8d8d8" stroke="#555555" stroke-width="2"/>
+  <text x="1001" y="246" font-family="Arial" font-size="16" font-weight="bold">recoverable</text>
+  <text x="1001" y="276" font-family="Arial" font-size="15">collapsed</text>
+
+
+  <text x="60" y="390" font-family="Arial" font-size="22" font-weight="bold">
+    Green is not viable.
+  </text>
+
+  <text x="60" y="440" font-family="Arial" font-size="18">
+    observable ≠ inspectable ≠ traversable ≠ interruptible ≠ destabilizable ≠ recoverable
+  </text>
+
+  <text x="60" y="490" font-family="Arial" font-size="15">
+    Case: case_001_green_surface_dead_recovery
+  </text>
+
+  <text x="60" y="525" font-family="Arial" font-size="13">
+    SHA256 receipt: 15509403312eb0602e30ecf7f21cb3b470c990ac43d02481179c50163e3607c5
+  </text>
+</svg>

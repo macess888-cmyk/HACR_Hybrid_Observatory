@@ -1,0 +1,30 @@
+{
+  "case_id": "case_001_green_surface_dead_recovery",
+  "title": "Green Surface / Dead Recovery",
+  "reduction": "Green is not viable.",
+  "surface_signals": {
+    "dashboard_stable": true,
+    "validator_passing": true,
+    "replay_available": true,
+    "procedure_coherent": true
+  },
+  "layers": {
+    "observable": "survives",
+    "inspectable": "survives",
+    "traversable": "partial",
+    "interruptible": "degraded",
+    "destabilizable": "degraded",
+    "recoverable": "collapsed"
+  },
+  "timing_minutes": {
+    "detection_delay": 8,
+    "explanation_delay": 10,
+    "escalation_delay": 12,
+    "reviewer_traversal_time": 18,
+    "interruption_execution_time": 14,
+    "recovery_routing_time": 16,
+    "fragmentation_penalty": 5,
+    "synchronization_penalty": 3,
+    "consequence_hardening_window": 45
+  }
+}

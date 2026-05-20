@@ -1,0 +1,30 @@
+{
+  "case_id": "case_004_seen_not_protected",
+  "title": "Seen But Not Protected",
+  "reduction": "Being seen is not being protected.",
+  "surface_signals": {
+    "dashboard_stable": true,
+    "validator_passing": true,
+    "replay_available": true,
+    "procedure_coherent": true
+  },
+  "layers": {
+    "observable": "survives",
+    "inspectable": "survives",
+    "traversable": "partial",
+    "interruptible": "collapsed",
+    "destabilizable": "collapsed",
+    "recoverable": "collapsed"
+  },
+  "timing_minutes": {
+    "detection_delay": 3,
+    "explanation_delay": 25,
+    "escalation_delay": 22,
+    "reviewer_traversal_time": 20,
+    "interruption_execution_time": 18,
+    "recovery_routing_time": 20,
+    "fragmentation_penalty": 5,
+    "synchronization_penalty": 7,
+    "consequence_hardening_window": 55
+  }
+}

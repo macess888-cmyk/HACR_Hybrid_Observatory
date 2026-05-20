@@ -1,0 +1,30 @@
+{
+  "case_id": "case_003_interrupted_not_recovered",
+  "title": "Interrupted But Not Recovered",
+  "reduction": "Interrupted is not recovered.",
+  "surface_signals": {
+    "dashboard_stable": true,
+    "validator_passing": true,
+    "replay_available": true,
+    "procedure_coherent": true
+  },
+  "layers": {
+    "observable": "survives",
+    "inspectable": "survives",
+    "traversable": "survives",
+    "interruptible": "survives",
+    "destabilizable": "partial",
+    "recoverable": "collapsed"
+  },
+  "timing_minutes": {
+    "detection_delay": 4,
+    "explanation_delay": 6,
+    "escalation_delay": 9,
+    "reviewer_traversal_time": 12,
+    "interruption_execution_time": 8,
+    "recovery_routing_time": 42,
+    "fragmentation_penalty": 8,
+    "synchronization_penalty": 6,
+    "consequence_hardening_window": 60
+  }
+}

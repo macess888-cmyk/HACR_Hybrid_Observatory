@@ -1,0 +1,18 @@
+{
+  "case_id": "case_002_visible_not_traversable",
+  "classification": "RECOVERY_EXHAUSTED",
+  "consequence_hardening_window_minutes": 50,
+  "effective_recovery_time_minutes": 135,
+  "layers": {
+    "destabilizable": "unknown",
+    "inspectable": "partial",
+    "interruptible": "unknown",
+    "observable": "survives",
+    "recoverable": "unknown",
+    "traversable": "collapsed"
+  },
+  "reduction": "Visible is not traversable.",
+  "sha256_receipt": "3aa685f4a39e0f7add173d80850a7f48fb7819ec0134ad62678274328a4e28e5",
+  "surface_continuity": "GREEN",
+  "title": "Visible But Not Traversable"
+}
