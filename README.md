@@ -2,9 +2,9 @@
 
 ## Purpose
 
-The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, traversal realism, interruption reconstructability, and continuation destabilizability observability framework.
+The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, traversal realism, interruption reconstructability, continuation destabilizability, and recoverability realism observability framework.
 
-The Observatory exists to inspect whether continuity, replayability, synchronization, validation, procedural coherence, institutional persistence, observability, and operational smoothness remain materially traversable, interrupt-compatible, destabilizable, and reconstructable under bounded runtime conditions.
+The Observatory exists to inspect whether continuity, replayability, synchronization, validation, procedural coherence, institutional persistence, operational smoothness, observability, and recovery pathways remain materially traversable, interrupt-compatible, destabilizable, reconstructable, and recoverable under bounded runtime conditions.
 
 The Observatory does not:
 
@@ -36,6 +36,7 @@ The Observatory increasingly pressures a bounded family of operational questions
 - Does reassurance infrastructure camouflage interruption collapse?
 - Does machine-speed continuation exceed bounded human interpretation and interruption capacity?
 - Can continuity layers independently survive or collapse under runtime pressure?
+- Can visible continuity persist after recoverability viability collapses?
 
 These questions remain observer-only and runtime-local.
 
@@ -54,6 +55,7 @@ These questions remain observer-only and runtime-local.
 - Interruptible is not destabilizable.
 - Destabilizable is not recoverable.
 - Layer survival is not layer inheritance.
+- Governable-looking is not governable.
 - Procedural coherence is not interruption realism.
 - Reviewer traversal is not authority.
 - Validator PASS is not authority.
@@ -62,10 +64,13 @@ These questions remain observer-only and runtime-local.
 - Human compensation is not system coherence.
 - Glue hours are not resilience.
 - Interpretation visibility is not interruption capability.
+- Recovery visibility is not recovery viability.
 - Reassurance infrastructure is not recoverable control.
 - Human presence is not executable interruption reachability.
 - Being documented is not being protected.
 - Operational smoothness may camouflage interruption collapse.
+- Calm continuity is not preserved control.
+- Smooth continuity can outlive recoverable control.
 - Machine-speed continuity can outrun human interruption.
 - UNKNOWN -> HOLD.
 - Break survivability, not ontology.
@@ -92,7 +97,9 @@ The Observatory:
 - inspects operational smoothness camouflage
 - inspects interpretive buffering pressure
 - inspects affected-human interruption realism
+- inspects affected-human recovery realism
 - inspects independent layer degradation asymmetry
+- inspects recoverability exhaustion pressure
 
 The Observatory does not:
 
@@ -133,6 +140,7 @@ Output semantics preserve:
 - replay/review realism
 - traversal realism
 - continuation destabilizability realism
+- recoverability realism
 - and anti-authority containment
 
 Key clarifications:
@@ -283,17 +291,6 @@ This tooling pressures whether machine-speed continuation begins exceeding bound
 
 before consequence hardens.
 
-Primary pressure surfaces include:
-
-- interpretive buffering
-- hidden compensation layers
-- glue-hour accumulation
-- synchronization compression
-- propagation acceleration
-- interruption window collapse
-- operational smoothness persistence
-- and machine-speed continuation pressure
-
 Core reductions:
 
 - Human compensation is not system coherence.
@@ -328,19 +325,33 @@ Core reductions:
 - Interruptible is not destabilizable.
 - Destabilizable is not recoverable.
 
-Primary pressure surfaces include:
-
-- independent layer degradation
-- replay locality fragmentation
-- replay traversability realism
-- reviewer traversal saturation
-- synchronization survivability asymmetry
-- interruption reconstruction timing exhaustion
-- reassurance infrastructure formation
-- operational smoothness camouflage
-- and observatory self-pressure realism
-
 This tooling remains observer-only and adversarially bounded.
+
+---
+
+# Governable-Looking Collapse Gradient Tooling
+
+Defined in:
+
+- `tools/governable_looking_collapse_gradient/GOVERNABLE_LOOKING_COLLAPSE_GRADIENT.md`
+- `tools/governable_looking_collapse_gradient/INTERRUPTION_DESTABILIZATION_RECOVERY_SPLIT.md`
+- `tools/governable_looking_collapse_gradient/RECOVERY_VIABILITY_EXHAUSTION.md`
+- `tools/governable_looking_collapse_gradient/CALM_CONTINUITY_CAMOUFLAGE.md`
+- `tools/governable_looking_collapse_gradient/AFFECTED_HUMAN_RECOVERY_LAYER.md`
+- `tools/governable_looking_collapse_gradient/MINIMAL_CASE_GREEN_SURFACE_DEAD_RECOVERY.md`
+
+This tooling pressures whether systems continue appearing operationally governable while interruption reachability, destabilizability, and recoverability progressively collapse underneath continuation pressure.
+
+Core reductions:
+
+- Governable-looking is not governable.
+- Interruption is not destabilization.
+- Destabilization is not recovery.
+- Recovery visibility is not recovery viability.
+- Calm continuity is not preserved control.
+- Smooth continuity can outlive recoverable control.
+
+This tooling remains observer-only and operationally bounded.
 
 ---
 
@@ -361,11 +372,13 @@ Current stabilization focus includes:
 - audit survivability illusion
 - interpretive buffering pressure
 - affected-human interruption realism
+- affected-human recovery realism
 - independent layer degradation asymmetry
+- recoverability exhaustion pressure
 - bounded uncertainty preservation
 - anti-ontology stabilization compression
 
-The repository increasingly pressures whether replay, validation, observability, procedural coherence, synchronization, institutional continuity, dashboards, reviewer visibility, and operational smoothness themselves become reassurance infrastructure under continuation pressure.
+The repository increasingly pressures whether replay, validation, observability, procedural coherence, synchronization, institutional continuity, dashboards, reviewer visibility, operational smoothness, and recovery acknowledgment themselves become reassurance infrastructure under continuation pressure.
 
 ---
 
@@ -383,7 +396,8 @@ The repository increasingly treats:
 - dashboard stability
 - audit survivability
 - interpretive buffering
-- and operational smoothness
+- operational smoothness
+- and recovery acknowledgment
 
 as pressure surfaces themselves.
 
@@ -396,9 +410,9 @@ Systems may remain:
 - validator-backed
 - institutionally continuous
 - operationally smooth
-- and psychologically governable-looking
+- psychologically governable-looking
 
-while executable interruption capability progressively collapses underneath:
+while executable interruption capability, destabilizability, and recoverability progressively collapse underneath:
 
 - propagation speed
 - synchronization pressure
@@ -409,197 +423,7 @@ while executable interruption capability progressively collapses underneath:
 - continuation pressure
 - and machine-speed acceleration
 
-The Observatory therefore pressures whether interruption remains materially reachable before consequence hardens rather than inferring recoverability from continuity persistence alone.
-
----
-
-# Core Observer Questions
-
-Defined in:
-
-- `CORE_OBSERVER_QUESTIONS.md`
-
-Primary observer-side questions include:
-
-1. Is the transition still legible?
-2. Is continuity still presently valid?
-3. Is recoverability still observable?
-4. Is replay still materially traversable?
-5. Is interruption still reconstructable?
-6. Can continuation still be materially destabilized?
-7. Can affected humans still materially reach interruption pathways?
-8. Does reassurance survive after interruption collapses?
-9. Does machine-speed propagation exceed bounded human interruption capacity?
-10. Can continuity layers independently survive or collapse?
-
-Observational only.
-
----
-
-# Observational Layers
-
-## Transition Legibility
-
-Defined in:
-
-- `TRANSITION_LEGIBILITY.md`
-
-Focus:
-
-- legible transition behavior
-- graceful degradation visibility
-- recoverability corridors
-- transition-bound uncertainty
-- topology-local continuity interpretation
-
-Observational only.
-
----
-
-## Anti-Drift Continuity
-
-Defined in:
-
-- `ANTI_DRIFT_CONTINUITY.md`
-
-Focus:
-
-- present-state validity
-- continuity drift visibility
-- rollback observability
-- invalid formation detection
-- relation-validity inspection
-- interruption-compatible continuity analysis
-
-Observational only.
-
----
-
-## Traversability Realism
-
-Focus:
-
-- replay traversability
-- reviewer traversal realism
-- inspectable vs traversable separation
-- reconstruction timing realism
-- synchronization degradation realism
-- continuation destabilizability
-- affected-human interruption pathways
-
-Observational only.
-
----
-
-## Reassurance Infrastructure Pressure
-
-Focus:
-
-- dashboard reassurance
-- validator reassurance
-- replay reassurance
-- procedural reassurance
-- audit survivability illusion
-- operational smoothness camouflage
-- psychologically governable appearance
-
-Observational only.
-
----
-
-## Interpretive Buffer Pressure
-
-Focus:
-
-- hidden compensation layers
-- glue-hour accumulation
-- runtime translation burden
-- interruption-window compression
-- escalation delay accumulation
-- machine-speed propagation pressure
-- human interruption reachability degradation
-
-Observational only.
-
----
-
-## Layer Survival Asymmetry
-
-Focus:
-
-- independent layer degradation
-- replay persistence asymmetry
-- traversal asymmetry
-- interruption asymmetry
-- destabilization asymmetry
-- recovery asymmetry
-- observatory self-pressure realism
-
-Observational only.
-
----
-
-# Invalid Formation vs Collapse
-
-## Collapse
-
-A previously stable continuity condition:
-
-- degraded
-- destabilized
-- fragmented
-- or lost reconstructability
-
-under stress or topology change.
-
----
-
-## Invalid Formation
-
-A continuity condition that:
-
-- appeared stable
-- propagated operationally
-- remained synchronized
-- persisted institutionally
-- or remained procedurally coherent
-
-without ever establishing materially reachable interruption compatibility.
-
-Some systems fail because they collapse.
-
-Some systems fail because interruption compatibility was never materially reachable.
-
-This distinction remains observational only.
-
----
-
-# Reproducibility
-
-All outputs remain bounded to:
-
-- supplied inputs
-- visible topology
-- replay/review assumptions
-- bounded traversal conditions
-- observable dependency conditions
-- reproducible execution environments
-- available evidence
-- runtime-local inspection conditions
-
-Changes in:
-
-- topology
-- synchronization state
-- replay locality
-- dependency structure
-- reviewer traversal burden
-- downstream continuation pressure
-- escalation timing
-- operational acceleration
-- or interruption timing windows
-
-may change observational classifications.
+The Observatory therefore pressures whether interruption and recovery remain materially reachable before consequence hardens rather than inferring recoverability from continuity persistence alone.
 
 ---
 
@@ -614,7 +438,8 @@ The Observatory remains:
 - runtime-local
 - replay/review focused
 - interruption-reconstructability focused
-- continuity-focused
+- continuation-destabilizability focused
+- recoverability-focused
 - anti-inevitability
 - anti-ontology
 
@@ -628,24 +453,6 @@ The Observatory does not:
 - replace human responsibility
 - create execution authority
 - or operationalize interruption
-
----
-
-# Additional Observability Notes
-
-Existing observability and boundary notes include:
-
-- `TRANSFER_FUNCTION_DRIFT.md`
-- `TOPOLOGY_INDEPENDENT_SURVIVABILITY.md`
-- `NON_AUTHORITY_TRACKER_BOUNDARY.md`
-- `STABILIZATION_PRESSURE_OBSERVABILITY.md`
-- `DYNAMIC_OBSERVATORY_HARNESS.md`
-- `governance/FIELD_PROPAGATION_GATING_NOTE.md`
-- `governance/ROUTING_WITHOUT_RESOLUTION.md`
-- `governance/field_observability/ROUTING_WITHOUT_RESOLUTION_FIELD_NOTE.md`
-- `governance/field_observability/PROPAGATION_GATING_AND_ISOLATED_VISIBILITY.md`
-- `governance/diagnostic_boundaries/SEARCH_EXPANSION_WITHOUT_SCORE_BINDING.md`
-- `governance/corridor_observability/INVARIANT_CORRIDOR_CONTRACTION_NOTE.md`
 
 ---
 
