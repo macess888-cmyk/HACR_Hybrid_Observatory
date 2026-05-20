@@ -1,0 +1,13 @@
+{
+  "runtime_reduction_family": "",
+  "derived_reductions": [],
+  "primary_runtime_risk": "",
+  "runtime_surface": "",
+  "falsifiability_condition": "",
+  "camouflage_risk": "",
+  "renderer_dependence": "",
+  "reviewer_traversal_cost": "",
+  "ambiguity_density": "",
+  "operational_locality": "",
+  "hold_condition": ""
+}

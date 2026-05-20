@@ -8,9 +8,9 @@ The HACR Hybrid Observatory is a deterministic, observer-only runtime inspection
 - runtime traversability
 - reconstructability realism
 - ambiguity localization
+- runtime reduction compression
 - renderer-independent clarity
-- bounded falsifiability
-- and operational clarity under degraded runtime conditions.
+- and operational falsifiability under degraded runtime conditions.
 
 The repository does NOT:
 

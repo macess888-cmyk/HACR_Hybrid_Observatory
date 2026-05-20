@@ -1,6 +1,6 @@
 # HACR Hybrid Observatory
 
-## Runtime Traversability, Reconstructability, and Operational Clarity Observatory
+## Runtime Reduction Compression and Operational Clarity Observatory
 
 The HACR Hybrid Observatory is a deterministic, observer-only runtime inspection repository focused on:
 
@@ -9,10 +9,11 @@ The HACR Hybrid Observatory is a deterministic, observer-only runtime inspection
 - reconstructability realism
 - ambiguity localization
 - runtime reduction compression
-- renderer-independent operational clarity
-- bounded falsifiability
 - semantic deduplication
-- and human-machine co-traversability
+- renderer-independent operational clarity
+- human-machine co-traversability
+- deterministic review survivability
+- and bounded falsifiability under degraded runtime conditions
 
 The observatory pressures whether:
 
@@ -24,7 +25,7 @@ The observatory pressures whether:
 - recovery appearance,
 - and representational continuity
 
-can survive after executable interruption realism has already degraded beneath runtime continuation pressure.
+can survive after executable interruption realism has already degraded beneath continuation pressure.
 
 The repository remains:
 
@@ -62,24 +63,26 @@ Current repository state increasingly compresses toward:
 
 deterministic interruption/recovery observability instrumentation under bounded replay/review/traversal/rendering conditions.
 
-Current mature-runtime direction increasingly focuses on:
+Current mature-runtime stabilization increasingly focuses on:
 
-- runtime reduction compression
-- semantic deduplication
-- ambiguity localization
+- reduction compression quality
+- reduction relationship locality
+- ambiguity minimization
+- operational clarity density
 - reconstructability realism
 - interruption locality
 - representational survivability
 - continuation momentum
-- renderer-independent operational clarity
+- renderer-independent comprehension
 - human-machine traversability
-- and bounded falsifiability density
+- deterministic onboarding survivability
+- and runtime-local falsifiability density
 
 instead of semantic expansion.
 
 ---
 
-# Core Runtime Reduction Families
+# Five Core Runtime Reduction Families
 
 ## 1. Representation != Execution
 
@@ -88,7 +91,7 @@ Compresses:
 - observability != interruptibility
 - replay != recoverability
 - auditability != intervention
-- dashboards != local interruptibility
+- dashboards != executable interruption
 - governance visibility != governability
 - explanation != executable interruption
 - emotional acknowledgement != executable protection
@@ -117,7 +120,7 @@ Compresses:
 
 Primary runtime risk:
 
-interruption reconstructability collapse.
+reconstructability collapse.
 
 ---
 
@@ -127,14 +130,14 @@ Compresses:
 
 - remote override illusion
 - distributed continuation
-- global oversight / local interruption asymmetry
-- physical interruptibility gaps
 - orchestration locality collapse
+- global oversight / local interruption asymmetry
+- governance visibility persistence
 - representational governability
 
 Primary runtime risk:
 
-governance visibility persistence after executable interruption degradation.
+visibility surviving after executable locality degradation.
 
 ---
 
@@ -164,8 +167,8 @@ Compresses:
 - renderer smoothness
 - dashboard coherence
 - onboarding smoothness
-- operational sophistication camouflage
 - replay reassurance
+- operational sophistication camouflage
 - visual reassurance inheritance
 - observability atmosphere
 
@@ -187,26 +190,26 @@ observable
 visibility
 != reachability
 
-explanation
-!= interruption
-
-recovery visibility
-!= recovery viability
-
-auditability
-!= executable interruption
-
 representation
 != execution
+
+explanation
+!= executable interruption
+
+auditability
+!= intervention
+
+replay
+!= recoverability
+
+governance visibility
+!= governability
 
 support continuity
 != consequence-bound reachability
 
 emotional visibility
 != operational interruptibility
-
-governance visibility
-!= governability
 
 renderer smoothness
 != recoverability
@@ -223,6 +226,8 @@ formal interruptibility
 representation persistence
 does not prove
 interruption locality survived
+
+modern systems increasingly preserve representation longer than executable interruption realism
 
 ---
 
@@ -244,12 +249,14 @@ Healthy maturity should:
 - reduce semantic duplication
 - reduce ambiguity accumulation
 - reduce traversal friction
+- reduce atmospheric understanding
 - reduce reassurance inheritance
 - preserve operational locality
 - preserve renderer-independent clarity
-- preserve bounded falsifiability
 - preserve reconstructability realism
-- and improve deterministic comprehension
+- preserve bounded falsifiability
+- preserve deterministic comprehension
+- and improve runtime reduction compression quality
 
 without reopening ontology.
 
@@ -266,6 +273,8 @@ bounded onboarding survivability
 renderer-independent comprehension
 +
 runtime-local falsifiability
++
+ambiguity minimization
 
 ---
 
