@@ -2,9 +2,9 @@
 
 ## Purpose
 
-The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, traversal realism, interruption reconstructability, continuation destabilizability, recoverability realism, deterministic visualization, reviewer-traversability, onboarding ergonomics, renderer refinement, visual reassurance pressure-testing, and public-safe observability instrumentation framework.
+The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, traversal realism, interruption reconstructability, continuation destabilizability, recoverability realism, deterministic visualization, reviewer-traversability, onboarding ergonomics, renderer refinement, visual reassurance pressure-testing, differential survivability visualization, and public-safe observability instrumentation framework.
 
-The Observatory exists to inspect whether continuity, replayability, synchronization, validation, procedural coherence, institutional persistence, operational smoothness, interruption pathways, destabilization pathways, recovery pathways, reviewer traversal pathways, onboarding pathways, deterministic visualization pathways, renderer traversal pathways, and reassurance-survivability pathways remain materially traversable, interrupt-compatible, destabilizable, reconstructable, and recoverable under bounded runtime conditions.
+The Observatory exists to inspect whether continuity, replayability, synchronization, validation, procedural coherence, institutional persistence, operational smoothness, interruption pathways, destabilization pathways, recovery pathways, reviewer traversal pathways, onboarding pathways, deterministic visualization pathways, renderer traversal pathways, reassurance-survivability pathways, and differential survivability pathways remain materially traversable, interrupt-compatible, destabilizable, reconstructable, and recoverable under bounded runtime conditions.
 
 The Observatory does not:
 
@@ -42,6 +42,7 @@ The Observatory pressures a bounded family of runtime questions:
 - Can reviewer ergonomics reduce traversal burden without reducing falsifiability?
 - Can renderer polish improve traversal clarity without increasing semantic authority?
 - Can visual reassurance remain falsifiable under polished review conditions?
+- Can differential survivability gradients reveal hidden operational collapse beneath surviving representation layers?
 
 These questions remain observer-only and runtime-local.
 
@@ -92,6 +93,8 @@ These questions remain observer-only and runtime-local.
 - Renderer smoothness is not recoverability.
 - Screenshot consistency is not runtime stability.
 - Onboarding smoothness is not traversability.
+- Survival of representation does not prove survival of operational reachability.
+- Differential survivability is not recoverability inheritance.
 - Visual reassurance must remain falsifiable.
 - UNKNOWN -> HOLD.
 - Break survivability, not ontology.
@@ -123,9 +126,11 @@ The Observatory:
 - inspects recoverability exhaustion pressure
 - inspects layer survival divergence
 - inspects governable-looking drift
+- inspects differential survivability gradients
 - renders deterministic visual artifacts
 - renders reviewer-readable SVG outputs
 - renders bounded replay/recovery visualizations
+- renders differential collapse heatmaps
 - generates deterministic case-pack outputs
 - supports reviewer onboarding traversal
 - supports visual traversal ergonomics
@@ -178,6 +183,8 @@ Output semantics preserve:
 - deterministic reproducibility
 - reviewer traversability
 - visual traversability
+- reassurance falsifiability
+- differential survivability realism
 - and anti-authority containment
 
 Key clarifications:

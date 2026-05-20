@@ -1,0 +1,13 @@
+<svg width="1200" height="700" xmlns="http://www.w3.org/2000/svg">
+
+<rect width="1200" height="700" fill="#111111"/>
+
+<text x="40" y="60" fill="white" font-size="36">
+Differential Collapse Heatmap
+</text>
+
+<text x="40" y="100" fill="#bbbbbb" font-size="18">
+Survival of representation does not prove survival of operational reachability
+</text>
+
+</svg>
