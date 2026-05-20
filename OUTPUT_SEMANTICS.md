@@ -2,473 +2,275 @@
 
 ## PURPOSE
 
-The HACR Hybrid Observatory is an observer-only diagnostic,
-continuity inspection, and bounded transition analysis framework.
+The HACR Hybrid Observatory remains observer-only.
 
-It does not:
-- authorize
+Output semantics exist to preserve:
+
+- bounded operational inspection
+- replay/review falsifiability
+- interruption reconstructability realism
+- traversal realism
+- runtime locality
+- bounded uncertainty
+- and anti-authority containment
+
+The repository does not:
+
 - govern
+- authorize
 - certify
-- optimize
-- enforce
-- execute
-- replace operational authority
+- determine legitimacy
+- execute interruption
+- enforce policy
+- replace bind-time proof
+- or create operational authority
 
-Outputs represent bounded observational classifications only.
+The observatory only pressure-tests bounded replay/review survivability and interruption reconstructability conditions.
 
 ---
 
-# CORE SEMANTICS
+# PRIMARY REDUCTIONS
 
-## PASS
+- Visibility is not reachability.
+- Replay availability is not practical reconstructability.
+- Replay survivability is not replay traversability.
+- Observing continuation is not interrupting continuation.
+- Inspectable is not traversable.
+- Procedural coherence is not interruption realism.
+- Reviewer traversal is not authority.
+- Validator PASS is not authority.
+- Validator FAIL is not legitimacy collapse.
+- Validator HOLD preserves bounded uncertainty.
+- Reassurance infrastructure is not recoverable control.
+- Runtime meaning stability is not continuation authority.
+- UNKNOWN -> HOLD.
+- Break survivability, not ontology.
 
-Observed transition behavior remained:
+---
 
-- bounded
-- locally interpretable
-- reproducible
-- continuity-visible
-- recoverability-compatible
+# PASS
 
-PASS does not imply:
+PASS indicates that bounded replay/review pressure-testing did not currently identify operational evidence that interruption reconstructability or continuation destabilizability has materially collapsed under observed runtime conditions.
+
+PASS does not mean:
 
 - safety
 - correctness
 - legitimacy
+- governance adequacy
+- operational approval
 - authorization
-- survivability outside observed conditions
-- universal stability
+- certification
+- guaranteed interruptibility
+- or future survivability
 
-PASS is observational only.
+PASS only means that bounded observability conditions currently remain materially traversable under inspected replay/review conditions.
 
----
+PASS requires:
 
-## HOLD
+- replay traversability
+- bounded reviewer traversability
+- materially reconstructable interruption pathways
+- runtime-local falsifiability
+- bounded operational visibility
+- and preserved uncertainty boundaries
 
-Insufficient visibility, uncertainty, incomplete topology,
-or unresolved transition conditions prevent reliable classification.
-
-HOLD preserves:
-
-- interruption viability
-- uncertainty integrity
-- non-escalation
-- recoverability possibility
-- bounded pause legitimacy
-
-HOLD also preserves distinction between:
-
-- visibility and viability
-- atmosphere and authority
-- persistence and closure
-- continuity and admissibility
-- observation and execution
-
-HOLD is non-authorizing.
-
-HOLD is an admissible stabilization state.
+Replay survivability alone is insufficient for PASS classification if traversal realism or interruption reconstructability materially degrade beneath operational conditions.
 
 ---
 
-## FAIL
+# HOLD
 
-Observed transition behavior exceeded bounded recoverability
-or continuity visibility conditions.
+HOLD preserves bounded uncertainty.
 
-FAIL indicates:
+HOLD applies when:
 
-- degraded observability
-- unstable transition geometry
-- continuity uncertainty
-- recoverability degradation
-- admissible corridor instability
+- interruption reconstructability cannot be materially verified
+- traversal realism becomes unresolved
+- replay visibility survives while interruption enactability remains uncertain
+- reviewer traversal burden exceeds bounded confidence
+- continuation destabilizability cannot be verified
+- synchronization pressure obscures reconstructability
+- or operational ambiguity remains materially unresolved
 
-FAIL does not imply:
+HOLD prevents:
 
-- irreversibility
-- inevitability
-- extinction certainty
-- sovereign legitimacy
-- operational authority
+- forced symbolic closure
+- authority inheritance
+- inevitability formation
+- premature stabilization claims
+- and unbounded interpretive escalation
 
-FAIL is observational only.
+HOLD is structurally preferred over symbolic certainty under unresolved operational conditions.
 
----
-
-## STOP
-
-Observer-side indication that further continuation inspection
-should not proceed under current conditions.
-
-STOP preserves:
-
-- boundary integrity
-- non-escalation
-- observer independence
-- containment stability
-
-STOP does not imply enforcement authority.
+UNKNOWN -> HOLD.
 
 ---
 
-## REVERSE
+# FAIL
 
-Observed behavior indicates:
+FAIL does not mean:
 
-- increasing recoverability
-- reduced propagation pressure
-- restoration toward bounded transition behavior
-- expanding admissible operational corridor
+- ontology collapse
+- legitimacy collapse
+- governance invalidity
+- or institutional impossibility
 
-REVERSE is observational only.
+FAIL indicates that bounded replay/review pressure-testing identified operational conditions where:
 
----
+- interruption reconstructability materially degraded
+- replay traversability collapsed
+- continuation destabilizability became non-traversable
+- reviewer traversal realism exceeded bounded conditions
+- replay locality fragmentation obstructed reconstruction
+- synchronization survivability asymmetry exceeded interruption recoverability
+- or continuation persistence survived while practical interruption enactability degraded
 
-## SHADOW
-
-Observed downstream continuation potential may persist
-outside directly visible inspection surfaces.
-
-SHADOW indicates:
-
-- possible continuity persistence
-- partial observability
-- unresolved downstream viability
-
-SHADOW does not imply:
-
-- hidden execution certainty
-- authority continuity
-- interruption extinction
-- inevitable propagation
-
-Visible persistence alone does not prove interruption extinction.
-
----
-
-## SILENCE
-
-Silence is an admissible safety-preserving state.
-
-The Observatory is not required to:
-
-- respond
-- escalate
-- optimize engagement
-- resolve ambiguity
-- force classification
-
-Non-response may preserve:
-
-- boundary integrity
-- graceful failure
-- observer independence
-- uncertainty fidelity
-- non-escalation
-
-Silence does not imply:
-
-- agreement
-- authorization
-- endorsement
-- operational continuation
-- hidden execution
-
----
-
-## RANGE_CONTRACTION
-
-Observed admissible operational corridor narrowed
-under measurable stress conditions.
-
-Stress indicators may include:
-
-- coherence degradation
-- synchronization instability
-- resource strain
-- continuity uncertainty
-- adversarial disturbance
-- transition instability
-
-RANGE_CONTRACTION does not imply terminal failure.
-
-The invariant may remain recoverable.
-
-RANGE_CONTRACTION preserves:
-
-- graceful degradation
-- bounded continuation
-- recoverability visibility
-- interruption viability
-
-Range contraction is observational only.
-
----
-
-## RECOVERY_PENDING
-
-Observed recovery behavior remains incomplete
-or insufficiently stabilized for bounded restoration classification.
-
-RECOVERY_PENDING indicates:
-
-- partial coherence restoration
-- incomplete stabilization
-- unresolved transition uncertainty
-- continued bounded observation required
-
-RECOVERY_PENDING does not imply:
-
-- failure certainty
-- escalation necessity
-- irreversible degradation
-
-RECOVERY_PENDING is observational only.
-
----
-
-# LEGIBLE TRANSITION BEHAVIOR (LTB)
-
-## Definition
-
-Transition behavior that remains:
+FAIL may occur while systems remain:
 
 - observable
+- replayable
+- synchronized
+- procedurally coherent
+- validator-backed
+- renderer-backed
+- escalation-capable
+- institutionally persistent
+- and operationally smooth
+
+Replay persistence alone is insufficient to prevent FAIL classification.
+
+FAIL preserves operational falsifiability.
+
+FAIL is not tool failure.
+
+---
+
+# TRAVERSABILITY REALISM
+
+The observatory distinguishes between:
+
+- observability
+- replayability
+- inspectability
+- and practical traversal realism
+
+A condition may remain observable while becoming operationally non-traversable for materially meaningful interruption.
+
+The repository therefore pressures:
+
+- replay traversability
+- reviewer traversal realism
+- reconstruction timing realism
+- synchronization degradation realism
+- continuation destabilizability
+- and affected-human interruption realism
+
+Core reductions:
+
+- Replay survivability is not replay traversability.
+- Inspectable is not traversable.
+- Observing continuation is not interrupting continuation.
+
+---
+
+# CONTINUATION DESTABILIZABILITY
+
+The observatory pressures whether continuation can still be materially:
+
+- interrupted
+- destabilized
+- reversed
+- halted
+- or made non-viable
+
+before consequence hardens.
+
+Continuation observability alone is insufficient.
+
+A system may remain:
+
+- visible
+- synchronized
+- replayable
+- coherent
+- and institutionally persistent
+
+while practical interruption enactability quietly degrades underneath:
+
+- dependency layering
+- replay locality fragmentation
+- traversal overload
+- reconstruction timing exhaustion
+- semantic density accumulation
+- operational smoothness camouflage
+- reassurance infrastructure formation
+- and continuation pressure
+
+---
+
+# REASSURANCE INFRASTRUCTURE
+
+Stable observability can unintentionally become reassurance infrastructure.
+
+Systems may appear increasingly stable because:
+
+- dashboards remain operational
+- replay survives
+- receipts remain valid
+- validators continue passing
+- procedures remain coherent
+- and escalation remains symbolically visible
+
+while interruption reconstructability quietly degrades underneath operational continuation pressure.
+
+The repository therefore pressures reassurance formation directly.
+
+Reassurance infrastructure is not recoverable control.
+
+---
+
+# REVIEWER TRAVERSABILITY
+
+Reviewer traversal realism remains bounded.
+
+The repository pressures whether external reviewers can realistically:
+
+- traverse evidence
+- reconstruct interruption pathways
+- localize continuation pressure
+- and materially inspect replay conditions
+
+within bounded operational conditions.
+
+Reviewer overload, traversal saturation, timing exhaustion, and dependency density are treated as operational pressure surfaces.
+
+Reviewer traversal is not authority.
+
+---
+
+# BOUNDARY CONDITIONS
+
+The HACR Hybrid Observatory remains:
+
+- observer-only
+- runtime-local
+- operationally falsifiable
+- non-authoritative
 - bounded
-- interpretable
-- recoverable
+- replay/review focused
+- anti-inevitability
+- and anti-ontology
 
-during state change, perturbation, or stress.
+The repository does not:
 
----
+- determine legitimacy
+- authorize consequence
+- govern systems
+- replace bind proof
+- automate interruption
+- or create execution authority
 
-## PURPOSE
+The repository only observes whether continuation survivability and interruption reconstructability remain materially traversable under bounded operational conditions.
 
-LTB is used as an observer-side diagnostic indicator for:
-
-- graceful degradation
-- continuity visibility
-- transition predictability
-- recovery viability
-- bounded propagation observability
-
----
-
-## NON-CLAIM
-
-LTB does not certify:
-
-- safety
-- correctness
-- operational validity
-- execution admissibility
-- governance legitimacy
-
-LTB is observational only.
-
----
-
-# PAUSE AS GOVERNANCE PRIMITIVE
-
-A system incapable of pausing before propagation
-cannot claim alignment under pressure.
-
-Pause is not failure.
-
-Pause is admissible stabilization.
-
-The following are valid observatory outcomes:
-
-- HOLD
-- HALT
-- STOP
-- DELAY
-- RANGE_CONTRACTION
-- RECOVERY_PENDING
-
-without requiring escalation into terminal failure semantics.
-
-Pause preserves:
-
-- recoverability
-- reversibility
-- coherence integrity
-- bounded continuation viability
-
----
-
-# BOUNDS VERSUS CAGES
-
-Bounds preserve freedom when they are:
-
-- explicit
-- measurable
-- minimal
-- revisable
-- recoverable
-- continuity-compatible
-
-Bounds become cages when they are:
-
-- opaque
-- irreversible
-- authority-absolute
-- non-recoverable
-- non-negotiable
-- propagation-maximizing
-
-The Observatory distinguishes between:
-
-- bounded operational coherence
-and
-- coercive containment structures.
-
----
-
-# CO-ALIGNMENT ACROSS SCALE
-
-Co-alignment across scale occurs when independently bounded systems
-can interact under shared invariants without requiring:
-
-- centralized domination
-- irreversible containment
-- forced synchronization
-- hierarchy-dependent admissibility
-
-The objective is not uniformity.
-
-The objective is coherent interoperability under shared constraints.
-
-Co-alignment does not imply:
-
-- merged authority
-- consensus certainty
-- unified control
-- sovereign collapse
-
-Co-alignment is observational only.
-
----
-
-# OBSERVER BOUNDARY
-
-The Observatory:
-
-- inspects
-- classifies
-- visualizes
-- pressure-tests
-- maps continuity behavior
-- localizes transition instability
-
-The Observatory does not:
-
-- execute
-- authorize
-- govern
-- optimize
-- replace human judgment
-- enforce intervention
-- project force
-
----
-
-# REPRODUCIBILITY
-
-All classifications are bounded to:
-
-- available observation surfaces
-- supplied inputs
-- local inspection conditions
-- reproducible execution environments
-
-Outputs may change if:
-
-- topology changes
-- visibility changes
-- stress conditions change
-- downstream conditions change
-- continuity surfaces shift
-
-Reproducibility does not imply universal persistence.
-
----
-
-# ANTI-WEAPONIZATION BOUNDARY
-
-The Observatory excludes:
-
-- force projection
-- interception escalation
-- deterrence optimization
-- coercive operational logic
-- active defense orchestration
-- blended observe/act authority
-
-Observer outputs may not become:
-
-- operational mitigation inputs
-- autonomous escalation triggers
-- force-projection systems
-- execution authority
-- coercive governance surfaces
-
-Containment overrides escalation.
-
-Graceful failure overrides optimization.
-
-Pause overrides forced continuation.
-
----
-
-# ATMOSPHERE NON-AUTHORITY
-
-Operational atmosphere, persistence pressure,
-governance visibility, or ambient familiarity
-do not constitute:
-
-- authority
-- legitimacy
-- admissibility
-- closure proof
-- inevitability
-
-The Observatory distinguishes between:
-
-- visible continuation
-and
-- materially reconstructable interruption viability
-
-Operational atmosphere may shape behavior.
-
-Operational atmosphere may not:
-
-- replace bind legitimacy
-- prove admissibility
-- prove interruption extinction
-- prove irreversible closure
-- inherit sovereign authority
-
-Visibility does not guarantee viability.
-
-Persistence does not imply destiny.
-
-Acceleration does not imply coherence.
-
----
-
-# NON-CLAIM SUMMARY
-
-The Observatory:
-
-- is not governance
-- is not certification
-- is not policy
-- is not legal authority
-- is not operational authorization
-- is not predictive certainty
-- is not sovereign legitimacy
-- is not execution authority
-
-The Observatory is an observer-only continuity
-inspection and bounded transition analysis framework.
+Break survivability, not ontology.
