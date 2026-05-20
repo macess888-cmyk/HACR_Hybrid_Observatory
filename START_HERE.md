@@ -18,11 +18,14 @@ The repository focuses on:
 - differential survivability visualization
 - operational smoothness camouflage
 - bounded reproducibility
+- stabilization health pressure-testing
+- and observatory traversability itself
 
 The Observatory remains:
 
 - observer-only
 - runtime-local
+- deterministic
 - reproducibility-focused
 - anti-authoritative
 - anti-inevitability
@@ -49,12 +52,13 @@ Goal:
 Run one deterministic case.
 Generate one SVG.
 Inspect one bounded runtime reduction.
+Pressure-test stabilization health.
 
 ---
 
-# One-Click Demo
+# One-Click Runtime Demo
 
 From repository root:
 
-```bat id="n4a0y4"
+```bat id="9s1f3r"
 RUN_DEMO.bat
