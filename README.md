@@ -2,9 +2,9 @@
 
 ## Purpose
 
-The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, traversal realism, interruption reconstructability, continuation destabilizability, recoverability realism, deterministic visualization, and reviewer-traversability instrumentation framework.
+The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, traversal realism, interruption reconstructability, continuation destabilizability, recoverability realism, deterministic visualization, reviewer-traversability, and public-safe observability instrumentation framework.
 
-The Observatory exists to inspect whether continuity, replayability, synchronization, validation, procedural coherence, institutional persistence, operational smoothness, interruption pathways, destabilization pathways, and recovery pathways remain materially traversable, interrupt-compatible, destabilizable, reconstructable, and recoverable under bounded runtime conditions.
+The Observatory exists to inspect whether continuity, replayability, synchronization, validation, procedural coherence, institutional persistence, operational smoothness, interruption pathways, destabilization pathways, recovery pathways, reviewer traversal pathways, and deterministic visualization pathways remain materially traversable, interrupt-compatible, destabilizable, reconstructable, and recoverable under bounded runtime conditions.
 
 The Observatory does not:
 
@@ -38,6 +38,7 @@ The Observatory pressures a bounded family of runtime questions:
 - Can continuity layers independently survive or collapse under runtime pressure?
 - Can visible continuity persist after recoverability viability collapses?
 - Can deterministic visualization preserve reviewer traversability without inheriting authority assumptions?
+- Can onboarding visuals improve reproducibility without creating legitimacy inheritance?
 
 These questions remain observer-only and runtime-local.
 
@@ -82,6 +83,7 @@ These questions remain observer-only and runtime-local.
 - Reviewer readability is not authority.
 - SVG clarity is not recoverability.
 - Visual coherence is not interruption viability.
+- Reproducible visuals improve inspection, not authority.
 - UNKNOWN -> HOLD.
 - Break survivability, not ontology.
 
@@ -116,6 +118,7 @@ The Observatory:
 - renders reviewer-readable SVG outputs
 - renders bounded replay/recovery visualizations
 - generates deterministic case-pack outputs
+- supports reviewer onboarding traversal
 
 The Observatory does not:
 
