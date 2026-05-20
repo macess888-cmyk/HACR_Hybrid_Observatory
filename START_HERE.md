@@ -2,16 +2,29 @@
 
 ## Purpose
 
-This repository provides:
+The HACR Hybrid Observatory provides:
 
 deterministic interruption/recovery observability instrumentation under bounded replay/review/traversal/rendering conditions.
 
-The Observatory is:
+The repository focuses on:
+
+- replay/review realism
+- traversal realism
+- interruption reconstructability
+- continuation destabilizability
+- recoverability realism
+- reviewer traversal ergonomics
+- reassurance falsifiability
+- differential survivability visualization
+- operational smoothness camouflage
+- bounded reproducibility
+
+The Observatory remains:
 
 - observer-only
 - runtime-local
-- non-authoritative
 - reproducibility-focused
+- anti-authoritative
 - anti-inevitability
 - anti-ontology
 
@@ -34,14 +47,14 @@ All outputs remain bounded observational artifacts only.
 Goal:
 
 Run one deterministic case.
-Render one SVG.
+Generate one SVG.
 Inspect one bounded runtime reduction.
 
 ---
 
-# Step 1 — Open Terminal
+# One-Click Demo
 
 From repository root:
 
-```bat id="t1ib4g"
-cd tools\recovery_case_pack_renderer
+```bat id="n4a0y4"
+RUN_DEMO.bat

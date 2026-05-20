@@ -1,0 +1,5 @@
+{
+  "decision": "SIMPLIFY",
+  "reduction": "Useful but operationally heavy under bounded reviewer conditions.",
+  "preserve": "Reviewer traversability realism"
+}

@@ -2,7 +2,22 @@
 
 ## Purpose
 
-The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, traversal realism, interruption reconstructability, continuation destabilizability, recoverability realism, deterministic visualization, reviewer-traversability, onboarding ergonomics, renderer refinement, visual reassurance pressure-testing, differential survivability visualization, and bounded reproducibility instrumentation framework.
+The HACR Hybrid Observatory is an observer-only deterministic interruption/recovery observability instrumentation framework operating under bounded replay/review/traversal/rendering conditions.
+
+The repository focuses on:
+
+- replay/review realism
+- traversal realism
+- interruption reconstructability
+- continuation destabilizability
+- recoverability realism
+- reviewer traversal ergonomics
+- reassurance falsifiability
+- deterministic visualization
+- differential survivability gradients
+- operational smoothness camouflage
+- one-click bounded reproducibility
+- and observatory traversability itself
 
 The Observatory exists to inspect whether systems remain materially:
 
@@ -16,6 +31,20 @@ The Observatory exists to inspect whether systems remain materially:
 
 under bounded runtime conditions.
 
+---
+
+# Boundary
+
+The Observatory is:
+
+- observer-only
+- runtime-local
+- deterministic
+- reproducibility-focused
+- anti-authoritative
+- anti-inevitability
+- anti-ontology
+
 The Observatory does NOT:
 
 - govern
@@ -25,8 +54,8 @@ The Observatory does NOT:
 - determine legitimacy
 - replace human judgment
 - create execution authority
-- enforce policy
-- operationalize sovereignty
+- enforce sovereignty
+- operationalize governance
 
 All outputs remain bounded observational artifacts only.
 
@@ -34,24 +63,43 @@ All outputs remain bounded observational artifacts only.
 
 # Core Runtime Questions
 
-The Observatory pressures a bounded family of runtime questions:
+The Observatory pressures whether systems may preserve:
 
-- Can interruption still be materially reconstructed before consequence hardens?
-- Can replay still be materially traversed under bounded reviewer conditions?
-- Can continuation still be materially destabilized?
-- Can affected humans still materially interrupt, escalate, recover, or refuse?
-- Does observability survive after interruption capability degrades?
-- Does reassurance infrastructure camouflage interruption collapse?
-- Does machine-speed continuation exceed bounded human interruption capacity?
-- Can continuity layers independently survive or collapse under runtime pressure?
-- Can visible continuity persist after recoverability viability collapses?
-- Can visual coherence silently inherit recoverability assumptions?
-- Can reviewer accessibility silently inherit interruption assumptions?
-- Can onboarding smoothness silently inherit traversability assumptions?
-- Can representation survive after operational reachability collapses?
-- Can the observatory itself remain reviewer-traversable under bounded operational conditions?
+- replay
+- dashboards
+- procedural coherence
+- onboarding smoothness
+- visual coherence
+- emotional explanation
+- institutional continuity
+- reviewer accessibility
+- psychologically governable appearance
 
-These questions remain observer-only and runtime-local.
+while:
+
+- interruption reachability
+- destabilizability
+- recoverability
+- escalation viability
+- traversal realism
+- human reachability
+- or operational reconstructability
+
+progressively collapse underneath continuation pressure.
+
+Additional pressure surfaces include:
+
+- replay locality fragmentation
+- synchronization survivability asymmetry
+- interruption reconstruction timing exhaustion
+- reviewer traversal saturation
+- reassurance inheritance formation
+- renderer reassurance formation
+- operational smoothness camouflage
+- onboarding reassurance inflation
+- screenshot consistency camouflage
+- differential survivability collapse
+- observatory traversability burden
 
 ---
 
@@ -71,23 +119,23 @@ Additional reductions:
 - Replay availability is not replay reconstructability.
 - Replay survivability is not replay traversability.
 - Recovery visibility is not recovery viability.
-- Emotional acknowledgement is not operational reachability.
 - Explanation is not interruption.
+- Emotional acknowledgement is not operational reachability.
 - Being seen is not being protected.
 - Procedural coherence is not interruption realism.
 - Layer survival is not layer inheritance.
 - Governable-looking is not governable.
 - Calm continuity is not preserved control.
 - Smooth continuity can outlive recoverable control.
-- Human compensation is not resilience.
+- Renderer smoothness is not recoverability.
+- Onboarding smoothness is not traversability.
+- Screenshot consistency is not runtime stability.
+- Visual coherence is not interruption viability.
 - More tooling is not more traversability.
 - More visuals are not more clarity.
-- Renderer smoothness is not recoverability.
-- Screenshot consistency is not runtime stability.
-- Onboarding smoothness is not traversability.
-- Visual coherence is not interruption viability.
 - Visual reassurance must remain falsifiable.
 - Survival of representation does not prove survival of operational reachability.
+- A mature observatory must remain traversable.
 - UNKNOWN -> HOLD.
 - Break survivability, not ontology.
 
@@ -111,85 +159,9 @@ This compression is currently the healthiest stabilization state.
 
 ---
 
-# Observatory Function
-
-The Observatory:
-
-- observes
-- classifies
-- maps
-- visualizes
-- pressure-tests
-- inspects replay/review realism
-- inspects traversal realism
-- inspects interruption reconstructability
-- inspects continuation destabilizability
-- inspects recoverability realism
-- inspects replay locality fragmentation
-- inspects synchronization degradation
-- inspects reviewer traversal burden
-- inspects reassurance infrastructure formation
-- inspects operational smoothness camouflage
-- inspects affected-human interruption realism
-- inspects affected-human recovery realism
-- inspects differential survivability gradients
-- renders deterministic visual artifacts
-- renders reviewer-readable SVG outputs
-- generates deterministic runtime cases
-- supports reviewer onboarding traversal
-- pressure-tests reassurance inheritance risk
-- pressure-tests observatory traversability
-
-The Observatory does NOT:
-
-- execute
-- approve
-- authorize
-- govern
-- certify
-- determine legitimacy
-- replace human judgment
-- create operational authority
-
-Human operational authority remains external to the framework.
-
----
-
-# Output Semantics
-
-Defined in:
-
-- `OUTPUT_SEMANTICS.md`
-
-Core classifications include:
-
-- PASS
-- HOLD
-- FAIL
-- STOP
-- REVERSE
-- SHADOW
-- RECOVERABLE
-- PARTIAL_RECOVERY
-- RECOVERY_EXHAUSTED
-
-Key clarifications:
-
-- PASS is not authority.
-- FAIL is not legitimacy collapse.
-- HOLD preserves bounded uncertainty.
-- RECOVERABLE is not guaranteed persistence.
-- RECOVERY_EXHAUSTED is not inevitability.
-- Replay survivability alone is insufficient if traversal realism collapses.
-- UNKNOWN -> HOLD.
-
-Outputs remain bounded observational artifacts only.
-
----
-
-# START HERE
+# Quick Start
 
 Open:
 
-```text id="5ifc5o"
+```text id="0pxxux"
 START_HERE.md
