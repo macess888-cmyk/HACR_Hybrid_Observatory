@@ -2,9 +2,9 @@
 
 ## Purpose
 
-The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, traversal realism, and interruption reconstructability observability framework.
+The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, traversal realism, interruption reconstructability, and continuation destabilizability observability framework.
 
-The Observatory exists to inspect whether continuity, replayability, synchronization, procedural coherence, institutional persistence, validation, and observability remain materially traversable and interrupt-compatible under bounded runtime conditions.
+The Observatory exists to inspect whether continuity, replayability, synchronization, validation, procedural coherence, institutional persistence, observability, and operational smoothness remain materially traversable, interrupt-compatible, destabilizable, and reconstructable under bounded runtime conditions.
 
 The Observatory does not:
 
@@ -16,8 +16,8 @@ The Observatory does not:
 - enforce policy
 - replace bind-time proof
 - automate interruption
-- replace human responsibility
 - create execution authority
+- replace human responsibility
 
 All outputs remain observational only.
 
@@ -31,10 +31,11 @@ The Observatory increasingly pressures a bounded family of operational questions
 - Can interruption still be materially reconstructed before consequence hardens?
 - Can replay still be materially traversed under bounded reviewer conditions?
 - Can continuation still be materially destabilized?
-- Can affected humans still interrupt, escalate, recover, or refuse in time?
+- Can affected humans still materially interrupt, escalate, recover, or refuse?
 - Does observability survive after interruption capability degrades?
 - Does reassurance infrastructure camouflage interruption collapse?
 - Does machine-speed continuation exceed bounded human interpretation and interruption capacity?
+- Can continuity layers independently survive or collapse under runtime pressure?
 
 These questions remain observer-only and runtime-local.
 
@@ -47,9 +48,12 @@ These questions remain observer-only and runtime-local.
 - Replay survivability is not replay traversability.
 - Replay existence is not replay reachability.
 - Observing continuation is not interrupting continuation.
+- Observable is not inspectable.
 - Inspectable is not traversable.
 - Traversable is not interruptible.
 - Interruptible is not destabilizable.
+- Destabilizable is not recoverable.
+- Layer survival is not layer inheritance.
 - Procedural coherence is not interruption realism.
 - Reviewer traversal is not authority.
 - Validator PASS is not authority.
@@ -88,6 +92,7 @@ The Observatory:
 - inspects operational smoothness camouflage
 - inspects interpretive buffering pressure
 - inspects affected-human interruption realism
+- inspects independent layer degradation asymmetry
 
 The Observatory does not:
 
@@ -127,6 +132,7 @@ Output semantics preserve:
 - interruption reconstructability realism
 - replay/review realism
 - traversal realism
+- continuation destabilizability realism
 - and anti-authority containment
 
 Key clarifications:
@@ -191,11 +197,12 @@ Defined in:
 
 This tooling visualizes distinctions between:
 
-- visible
+- observable
 - inspectable
 - traversable
 - interruptible
 - destabilizable
+- recoverable
 
 The tooling additionally visualizes:
 
@@ -204,13 +211,15 @@ The tooling additionally visualizes:
 - synchronization degradation
 - interruption reconstruction burden
 - reassurance infrastructure formation
-- and operational smoothness camouflage
+- operational smoothness camouflage
+- and continuation survivability asymmetry
 
 Core visualization reductions:
 
 - Observable is not traversable.
 - Traversable is not interruptible.
 - Interruptible is not destabilizable.
+- Destabilizable is not recoverable.
 - Reassurance infrastructure is not recoverable control.
 
 ---
@@ -296,6 +305,45 @@ This tooling remains observer-only and operationally bounded.
 
 ---
 
+# Layer Survival Asymmetry Tooling
+
+Defined in:
+
+- `tools/layer_survival_asymmetry/LAYER_SURVIVAL_ASYMMETRY_TEST_PACK.md`
+- `tools/layer_survival_asymmetry/OBSERVABLE_NOT_INSPECTABLE.md`
+- `tools/layer_survival_asymmetry/INSPECTABLE_NOT_TRAVERSABLE.md`
+- `tools/layer_survival_asymmetry/TRAVERSABLE_NOT_INTERRUPTIBLE.md`
+- `tools/layer_survival_asymmetry/INTERRUPTIBLE_NOT_DESTABILIZABLE.md`
+- `tools/layer_survival_asymmetry/DESTABILIZABLE_NOT_RECOVERABLE.md`
+- `tools/layer_survival_asymmetry/OBSERVATORY_SELF_PRESSURE_CHECK.md`
+
+This tooling pressures whether earlier continuity layers silently inherit survival assumptions into later operational layers.
+
+Core reductions:
+
+- Layer survival is not layer inheritance.
+- Observable is not inspectable.
+- Inspectable is not traversable.
+- Traversable is not interruptible.
+- Interruptible is not destabilizable.
+- Destabilizable is not recoverable.
+
+Primary pressure surfaces include:
+
+- independent layer degradation
+- replay locality fragmentation
+- replay traversability realism
+- reviewer traversal saturation
+- synchronization survivability asymmetry
+- interruption reconstruction timing exhaustion
+- reassurance infrastructure formation
+- operational smoothness camouflage
+- and observatory self-pressure realism
+
+This tooling remains observer-only and adversarially bounded.
+
+---
+
 # Current Structural Focus
 
 Current stabilization focus includes:
@@ -313,10 +361,11 @@ Current stabilization focus includes:
 - audit survivability illusion
 - interpretive buffering pressure
 - affected-human interruption realism
+- independent layer degradation asymmetry
 - bounded uncertainty preservation
 - anti-ontology stabilization compression
 
-The repository increasingly pressures whether replay, validation, observability, procedural coherence, synchronization, institutional continuity, dashboards, and reviewer visibility themselves become reassurance infrastructure under continuation pressure.
+The repository increasingly pressures whether replay, validation, observability, procedural coherence, synchronization, institutional continuity, dashboards, reviewer visibility, and operational smoothness themselves become reassurance infrastructure under continuation pressure.
 
 ---
 
@@ -333,7 +382,8 @@ The repository increasingly treats:
 - synchronization persistence
 - dashboard stability
 - audit survivability
-- and interpretive buffering
+- interpretive buffering
+- and operational smoothness
 
 as pressure surfaces themselves.
 
@@ -356,7 +406,8 @@ while executable interruption capability progressively collapses underneath:
 - traversal overload
 - escalation delay
 - reconstruction timing exhaustion
-- and machine-speed continuation pressure
+- continuation pressure
+- and machine-speed acceleration
 
 The Observatory therefore pressures whether interruption remains materially reachable before consequence hardens rather than inferring recoverability from continuity persistence alone.
 
@@ -379,6 +430,7 @@ Primary observer-side questions include:
 7. Can affected humans still materially reach interruption pathways?
 8. Does reassurance survive after interruption collapses?
 9. Does machine-speed propagation exceed bounded human interruption capacity?
+10. Can continuity layers independently survive or collapse?
 
 Observational only.
 
@@ -471,6 +523,22 @@ Observational only.
 
 ---
 
+## Layer Survival Asymmetry
+
+Focus:
+
+- independent layer degradation
+- replay persistence asymmetry
+- traversal asymmetry
+- interruption asymmetry
+- destabilization asymmetry
+- recovery asymmetry
+- observatory self-pressure realism
+
+Observational only.
+
+---
+
 # Invalid Formation vs Collapse
 
 ## Collapse
@@ -493,7 +561,8 @@ A continuity condition that:
 - appeared stable
 - propagated operationally
 - remained synchronized
-- or persisted institutionally
+- persisted institutionally
+- or remained procedurally coherent
 
 without ever establishing materially reachable interruption compatibility.
 
@@ -527,7 +596,8 @@ Changes in:
 - reviewer traversal burden
 - downstream continuation pressure
 - escalation timing
-- or operational acceleration
+- operational acceleration
+- or interruption timing windows
 
 may change observational classifications.
 
