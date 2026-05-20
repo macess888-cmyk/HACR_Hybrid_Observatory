@@ -176,21 +176,6 @@ This layer pressures whether continuation remains materially:
 
 before consequence hardens.
 
-Primary pressure surfaces include:
-
-- replay locality fragmentation
-- replay survivability vs replay traversability
-- reviewer traversal realism
-- synchronization survivability asymmetry
-- reconstruction timing exhaustion
-- continuation destabilizability
-- reassurance infrastructure formation
-- operational smoothness camouflage
-- inspectable vs traversable separation
-- and affected-human interruption realism
-
-This layer remains observer-only and diagnostic.
-
 ---
 
 # Traversability Visualization Tooling
@@ -203,26 +188,7 @@ Defined in:
 - `tools/traversability_visualization/MINIMAL_INSPECTABLE_VS_TRAVERSABLE_DEMO.md`
 - `tools/traversability_visualization/REASSURANCE_INFRASTRUCTURE_DETECTOR.md`
 
-This tooling visualizes distinctions between:
-
-- observable
-- inspectable
-- traversable
-- interruptible
-- destabilizable
-- recoverable
-
-The tooling additionally visualizes:
-
-- replay locality fragmentation
-- traversal saturation
-- synchronization degradation
-- interruption reconstruction burden
-- reassurance infrastructure formation
-- operational smoothness camouflage
-- and continuation survivability asymmetry
-
-Core visualization reductions:
+Core reductions:
 
 - Observable is not traversable.
 - Traversable is not interruptible.
@@ -243,26 +209,6 @@ Defined in:
 - `tools/deterministic_traversal_demo/PUBLIC_REVIEWER_ONBOARDING.md`
 - `tools/deterministic_traversal_demo/TRAVERSAL_TOPOLOGY.svg`
 
-This deterministic demo layer illustrates how systems may remain:
-
-- visible
-- replayable
-- validator-backed
-- synchronized
-- procedurally coherent
-- institutionally continuous
-- operationally smooth
-- psychologically governable-looking
-
-while interruption capability progressively degrades underneath:
-
-- replay locality fragmentation
-- synchronization compression
-- dependency layering
-- reviewer traversal overload
-- escalation delay
-- and reconstruction timing exhaustion
-
 Core reduction:
 
 - Clear evidence is not reachable interruption.
@@ -280,25 +226,12 @@ Defined in:
 - `tools/interpretive_buffer_collapse/MACHINE_SPEED_PROPAGATION_PRESSURE.md`
 - `tools/interpretive_buffer_collapse/MINIMAL_CASE_INTERPRETATION_OUTPACED.md`
 
-This tooling pressures whether machine-speed continuation begins exceeding bounded human:
-
-- interpretation
-- interruption
-- escalation
-- recovery
-- reconstructability
-- and traversal capacity
-
-before consequence hardens.
-
 Core reductions:
 
 - Human compensation is not system coherence.
 - Glue hours are not resilience.
 - Interpretation visibility is not interruption capability.
 - Machine-speed continuity can outrun human interruption.
-
-This tooling remains observer-only and operationally bounded.
 
 ---
 
@@ -314,8 +247,6 @@ Defined in:
 - `tools/layer_survival_asymmetry/DESTABILIZABLE_NOT_RECOVERABLE.md`
 - `tools/layer_survival_asymmetry/OBSERVATORY_SELF_PRESSURE_CHECK.md`
 
-This tooling pressures whether earlier continuity layers silently inherit survival assumptions into later operational layers.
-
 Core reductions:
 
 - Layer survival is not layer inheritance.
@@ -324,8 +255,6 @@ Core reductions:
 - Traversable is not interruptible.
 - Interruptible is not destabilizable.
 - Destabilizable is not recoverable.
-
-This tooling remains observer-only and adversarially bounded.
 
 ---
 
@@ -340,8 +269,6 @@ Defined in:
 - `tools/governable_looking_collapse_gradient/AFFECTED_HUMAN_RECOVERY_LAYER.md`
 - `tools/governable_looking_collapse_gradient/MINIMAL_CASE_GREEN_SURFACE_DEAD_RECOVERY.md`
 
-This tooling pressures whether systems continue appearing operationally governable while interruption reachability, destabilizability, and recoverability progressively collapse underneath continuation pressure.
-
 Core reductions:
 
 - Governable-looking is not governable.
@@ -351,7 +278,25 @@ Core reductions:
 - Calm continuity is not preserved control.
 - Smooth continuity can outlive recoverable control.
 
-This tooling remains observer-only and operationally bounded.
+---
+
+# Recovery Collapse Visualization Tooling
+
+Defined in:
+
+- `tools/recovery_collapse_visuals/RECOVERY_COLLAPSE_TIMELINE.md`
+- `tools/recovery_collapse_visuals/INTERRUPTION_DESTABILIZATION_RECOVERY_DIAGRAM.md`
+- `tools/recovery_collapse_visuals/AFFECTED_HUMAN_RECOVERY_PATHWAY_EXAMPLE.md`
+- `tools/recovery_collapse_visuals/GREEN_SURFACE_DEAD_RECOVERY.svg`
+
+This tooling pressures whether visible continuity persists after interruption reachability, destabilizability, and recoverability progressively collapse underneath continuation pressure.
+
+Core reductions:
+
+- Interruption is not destabilization.
+- Destabilization is not recovery.
+- Recovery visibility is not recovery viability.
+- Smooth continuity can outlive recoverable control.
 
 ---
 
@@ -378,28 +323,9 @@ Current stabilization focus includes:
 - bounded uncertainty preservation
 - anti-ontology stabilization compression
 
-The repository increasingly pressures whether replay, validation, observability, procedural coherence, synchronization, institutional continuity, dashboards, reviewer visibility, operational smoothness, and recovery acknowledgment themselves become reassurance infrastructure under continuation pressure.
-
 ---
 
 # Review / Replay Workbench Direction
-
-The repository increasingly treats:
-
-- replay
-- observability
-- procedural coherence
-- validator continuity
-- reviewer visibility
-- institutional continuity
-- synchronization persistence
-- dashboard stability
-- audit survivability
-- interpretive buffering
-- operational smoothness
-- and recovery acknowledgment
-
-as pressure surfaces themselves.
 
 Systems may remain:
 
@@ -423,7 +349,7 @@ while executable interruption capability, destabilizability, and recoverability 
 - continuation pressure
 - and machine-speed acceleration
 
-The Observatory therefore pressures whether interruption and recovery remain materially reachable before consequence hardens rather than inferring recoverability from continuity persistence alone.
+The Observatory pressures whether interruption and recovery remain materially reachable before consequence hardens rather than inferring recoverability from continuity persistence alone.
 
 ---
 

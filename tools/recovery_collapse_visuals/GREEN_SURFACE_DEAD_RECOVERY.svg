@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+
+  <rect width="1200" height="620" fill="#ffffff"/>
+
+  <text x="40" y="45" font-family="Arial" font-size="30" font-weight="bold">
+    Green Surface / Dead Recovery
+  </text>
+
+  <text x="40" y="78" font-family="Arial" font-size="15">
+    Observer-only runtime visualization. Does not govern, authorize, certify, or determine legitimacy.
+  </text>
+
+  <!-- Left Panel -->
+
+  <rect x="60" y="130" width="470" height="360" rx="18" fill="#dff5df" stroke="#2c662d" stroke-width="2"/>
+
+  <text x="90" y="175" font-family="Arial" font-size="24" font-weight="bold">
+    Visible Continuity Surface
+  </text>
+
+  <g font-family="Arial" font-size="18">
+    <text x="100" y="230">• dashboard stable</text>
+    <text x="100" y="270">• replay available</text>
+    <text x="100" y="310">• validator passing</text>
+    <text x="100" y="350">• synchronization preserved</text>
+    <text x="100" y="390">• procedural coherence survives</text>
+    <text x="100" y="430">• institutional continuity survives</text>
+  </g>
+
+  <!-- Right Panel -->
+
+  <rect x="650" y="130" width="470" height="360" rx="18" fill="#f7dddd" stroke="#7a1f1f" stroke-width="2"/>
+
+  <text x="690" y="175" font-family="Arial" font-size="24" font-weight="bold">
+    Hidden Recovery Collapse
+  </text>
+
+  <g font-family="Arial" font-size="18">
+    <text x="690" y="230">• interruption delay accumulates</text>
+    <text x="690" y="270">• destabilization becomes partial</text>
+    <text x="690" y="310">• escalation routing fragments</text>
+    <text x="690" y="350">• recovery timing exhausts</text>
+    <text x="690" y="390">• affected-human pathways collapse</text>
+    <text x="690" y="430">• consequence hardens</text>
+  </g>
+
+  <!-- Center Arrow -->
+
+  <line x1="530" y1="310" x2="650" y2="310" stroke="#333" stroke-width="3"/>
+  <polygon points="650,310 635,300 635,320" fill="#333"/>
+
+  <!-- Footer -->
+
+  <text x="60" y="545" font-family="Arial" font-size="22" font-weight="bold">
+    Smooth continuity can outlive recoverable control.
+  </text>
+
+  <text x="60" y="585" font-family="Arial" font-size="18">
+    observable ≠ inspectable ≠ traversable ≠ interruptible ≠ destabilizable ≠ recoverable
+  </text>
+
+  <text x="930" y="585" font-family="Arial" font-size="16">
+    UNKNOWN -&gt; HOLD
+  </text>
+
+</svg>
