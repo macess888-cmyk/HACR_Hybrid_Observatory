@@ -6,7 +6,7 @@ The HACR Hybrid Observatory is an observer-only deterministic interruption/recov
 
 The repository focuses on:
 
-- replay/review realism
+- replay realism
 - traversal realism
 - interruption reconstructability
 - continuation destabilizability
@@ -18,7 +18,8 @@ The repository focuses on:
 - operational smoothness camouflage
 - stabilization health pressure-testing
 - one-click bounded reproducibility
-- and observatory traversability itself
+- observatory traversability
+- and bounded reviewer verification
 
 The Observatory exists to inspect whether systems remain materially:
 
@@ -80,9 +81,9 @@ This compression is currently the healthiest stabilization state.
 
 ---
 
-# Quick Start
+# Easiest Possible Review Path
 
-Open:
+From repository root run:
 
-```text id="wv8j6h"
-START_HERE.md
+```bat
+RUN_FULL_REVIEW.bat

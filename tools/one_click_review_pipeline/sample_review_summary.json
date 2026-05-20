@@ -1,0 +1,5 @@
+{
+  "decision": "PROCEED",
+  "core_reduction": "A reviewer should not need to understand the whole repository to verify one bounded claim.",
+  "runtime_boundary": "Observer-only. Not authority. UNKNOWN -> HOLD."
+}
