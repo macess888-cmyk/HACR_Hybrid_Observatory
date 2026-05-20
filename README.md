@@ -4,7 +4,7 @@
 
 The HACR Hybrid Observatory is an observer-only runtime continuity inspection, replay/review pressure-testing, traversal realism, interruption reconstructability, continuation destabilizability, and recoverability realism observability framework.
 
-The Observatory exists to inspect whether continuity, replayability, synchronization, validation, procedural coherence, institutional persistence, operational smoothness, observability, and recovery pathways remain materially traversable, interrupt-compatible, destabilizable, reconstructable, and recoverable under bounded runtime conditions.
+The Observatory exists to inspect whether continuity, replayability, synchronization, validation, procedural coherence, institutional persistence, operational smoothness, observability, interruption pathways, destabilization pathways, and recovery pathways remain materially traversable, interrupt-compatible, destabilizable, reconstructable, and recoverable under bounded runtime conditions.
 
 The Observatory does not:
 
@@ -25,7 +25,7 @@ All outputs remain observational only.
 
 # Core Runtime Questions
 
-The Observatory increasingly pressures a bounded family of operational questions:
+The Observatory pressures a bounded family of runtime questions:
 
 - Can consequence remain reachable after authority changes, revocation, refusal, replay, retry, orchestration, or continuity persistence emerge downstream?
 - Can interruption still be materially reconstructed before consequence hardens?
@@ -72,6 +72,11 @@ These questions remain observer-only and runtime-local.
 - Calm continuity is not preserved control.
 - Smooth continuity can outlive recoverable control.
 - Machine-speed continuity can outrun human interruption.
+- Explanation is not interruption.
+- Being seen is not being protected.
+- Seen is not protected.
+- Green is not viable.
+- Interrupted is not recovered.
 - UNKNOWN -> HOLD.
 - Break survivability, not ontology.
 
@@ -100,6 +105,8 @@ The Observatory:
 - inspects affected-human recovery realism
 - inspects independent layer degradation asymmetry
 - inspects recoverability exhaustion pressure
+- inspects layer survival divergence
+- inspects governable-looking drift
 
 The Observatory does not:
 
@@ -130,6 +137,9 @@ Core classifications include:
 - STOP
 - REVERSE
 - SHADOW
+- RECOVERABLE
+- PARTIAL_RECOVERY
+- RECOVERY_EXHAUSTED
 
 Output semantics preserve:
 
@@ -149,6 +159,8 @@ Key clarifications:
 - FAIL is not legitimacy collapse.
 - FAIL is not tool failure.
 - HOLD preserves bounded uncertainty.
+- RECOVERABLE is not guarantee persistence.
+- RECOVERY_EXHAUSTED is not inevitability.
 - Replay survivability alone is insufficient for PASS if traversal realism degrades.
 - UNKNOWN -> HOLD.
 
@@ -175,6 +187,19 @@ This layer pressures whether continuation remains materially:
 - destabilizable
 
 before consequence hardens.
+
+Core runtime pressure surfaces include:
+
+- replay locality fragmentation
+- replay survivability vs replay traversability
+- reviewer traversal realism
+- synchronization survivability asymmetry
+- reconstruction timing exhaustion
+- continuation destabilizability
+- reassurance infrastructure formation
+- operational smoothness camouflage
+- inspectable vs traversable separation
+- and affected-human interruption realism
 
 ---
 
@@ -289,13 +314,34 @@ Defined in:
 - `tools/recovery_collapse_visuals/AFFECTED_HUMAN_RECOVERY_PATHWAY_EXAMPLE.md`
 - `tools/recovery_collapse_visuals/GREEN_SURFACE_DEAD_RECOVERY.svg`
 
-This tooling pressures whether visible continuity persists after interruption reachability, destabilizability, and recoverability progressively collapse underneath continuation pressure.
+This tooling visualizes whether visible continuity survives after interruption reachability, destabilizability, and recoverability progressively collapse underneath continuation pressure.
 
 Core reductions:
 
 - Interruption is not destabilization.
 - Destabilization is not recovery.
 - Recovery visibility is not recovery viability.
+- Smooth continuity can outlive recoverable control.
+
+---
+
+# Recovery Viability Simulator Tooling
+
+Defined in:
+
+- `tools/recovery_viability_simulator/RECOVERY_VIABILITY_EXHAUSTION_SIMULATOR.md`
+- `tools/recovery_viability_simulator/LAYER_SURVIVAL_HEATMAP.md`
+- `tools/recovery_viability_simulator/HUMAN_RECOVERY_WINDOW_METER.md`
+- `tools/recovery_viability_simulator/CALM_CONTINUITY_CAMOUFLAGE_DETECTOR.md`
+- `tools/recovery_viability_simulator/OBSERVATORY_RECOVERY_SELF_PRESSURE.md`
+
+This tooling pressures whether recovery remains materially reachable before consequence hardens under continuation pressure.
+
+Core reductions:
+
+- Recovery visibility is not recovery viability.
+- Layer survival is not layer inheritance.
+- Being seen is not being protected.
 - Smooth continuity can outlive recoverable control.
 
 ---
@@ -320,8 +366,11 @@ Current stabilization focus includes:
 - affected-human recovery realism
 - independent layer degradation asymmetry
 - recoverability exhaustion pressure
+- governable-looking drift
 - bounded uncertainty preservation
 - anti-ontology stabilization compression
+
+The repository increasingly pressures whether replay, validation, observability, procedural coherence, synchronization, institutional continuity, dashboards, reviewer visibility, operational smoothness, emotional explanation, and recovery acknowledgement themselves become reassurance infrastructure under continuation pressure.
 
 ---
 
@@ -336,6 +385,7 @@ Systems may remain:
 - validator-backed
 - institutionally continuous
 - operationally smooth
+- emotionally explainable
 - psychologically governable-looking
 
 while executable interruption capability, destabilizability, and recoverability progressively collapse underneath:
@@ -349,7 +399,7 @@ while executable interruption capability, destabilizability, and recoverability 
 - continuation pressure
 - and machine-speed acceleration
 
-The Observatory pressures whether interruption and recovery remain materially reachable before consequence hardens rather than inferring recoverability from continuity persistence alone.
+The Observatory therefore pressures whether interruption and recovery remain materially reachable before consequence hardens rather than inferring recoverability from continuity persistence alone.
 
 ---
 
@@ -403,6 +453,7 @@ The framework remains:
 - continuity-oriented
 - replay/review focused
 - interruption-reconstructability focused
+- recoverability-focused
 - reproducibility-bound
 - non-authoritative
 
