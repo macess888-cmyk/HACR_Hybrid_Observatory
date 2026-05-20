@@ -1,0 +1,22 @@
+{
+  "case_id": "green_surface_dead_recovery_001",
+  "surface_signals": {
+    "dashboard_stable": true,
+    "validator_passing": true,
+    "replay_available": true,
+    "procedure_coherent": true,
+    "institution_continuous": true
+  },
+  "timing_minutes": {
+    "detection_delay": 8,
+    "explanation_delay": 10,
+    "escalation_delay": 12,
+    "reviewer_traversal_time": 18,
+    "interruption_execution_time": 14,
+    "recovery_routing_time": 16,
+    "fragmentation_penalty": 5,
+    "synchronization_penalty": 3,
+    "consequence_hardening_window": 45
+  },
+  "expected_reduction": "Recovery visibility is not recovery viability"
+}

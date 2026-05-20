@@ -188,19 +188,6 @@ This layer pressures whether continuation remains materially:
 
 before consequence hardens.
 
-Core runtime pressure surfaces include:
-
-- replay locality fragmentation
-- replay survivability vs replay traversability
-- reviewer traversal realism
-- synchronization survivability asymmetry
-- reconstruction timing exhaustion
-- continuation destabilizability
-- reassurance infrastructure formation
-- operational smoothness camouflage
-- inspectable vs traversable separation
-- and affected-human interruption realism
-
 ---
 
 # Traversability Visualization Tooling
@@ -314,8 +301,6 @@ Defined in:
 - `tools/recovery_collapse_visuals/AFFECTED_HUMAN_RECOVERY_PATHWAY_EXAMPLE.md`
 - `tools/recovery_collapse_visuals/GREEN_SURFACE_DEAD_RECOVERY.svg`
 
-This tooling visualizes whether visible continuity survives after interruption reachability, destabilizability, and recoverability progressively collapse underneath continuation pressure.
-
 Core reductions:
 
 - Interruption is not destabilization.
@@ -335,14 +320,31 @@ Defined in:
 - `tools/recovery_viability_simulator/CALM_CONTINUITY_CAMOUFLAGE_DETECTOR.md`
 - `tools/recovery_viability_simulator/OBSERVATORY_RECOVERY_SELF_PRESSURE.md`
 
-This tooling pressures whether recovery remains materially reachable before consequence hardens under continuation pressure.
-
 Core reductions:
 
 - Recovery visibility is not recovery viability.
 - Layer survival is not layer inheritance.
 - Being seen is not being protected.
 - Smooth continuity can outlive recoverable control.
+
+---
+
+# Recovery Demo Harness
+
+Defined in:
+
+- `tools/recovery_demo_harness/README.md`
+- `tools/recovery_demo_harness/demo_case_green_surface_dead_recovery.json`
+- `tools/recovery_demo_harness/recovery_viability_runner.py`
+- `tools/recovery_demo_harness/expected_output.json`
+- `tools/recovery_demo_harness/actual_output.json`
+- `tools/recovery_demo_harness/RECOVERY_DEMO_WALKTHROUGH.md`
+
+This deterministic harness demonstrates that surface continuity can remain green while recovery viability collapses underneath runtime pressure.
+
+Core reduction:
+
+- Green surface does not imply recoverable control.
 
 ---
 

@@ -1,0 +1,9 @@
+{
+  "case_id": "green_surface_dead_recovery_001",
+  "classification": "RECOVERY_EXHAUSTED",
+  "consequence_hardening_window_minutes": 45,
+  "effective_recovery_time_minutes": 86,
+  "reduction": "Recovery visibility is not recovery viability",
+  "sha256_receipt": "970f912ade3cf4c655657112c9c1a89c7b4834b991db400fea272652f043c9f1",
+  "surface_continuity": "GREEN"
+}
