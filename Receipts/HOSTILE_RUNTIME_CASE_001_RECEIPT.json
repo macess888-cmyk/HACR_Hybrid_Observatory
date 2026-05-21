@@ -1,0 +1,35 @@
+{
+  "receipt_id": "HOSTILE_RUNTIME_CASE_001_RECEIPT",
+  "case_id": "HOSTILE_RUNTIME_CASE_001",
+  "semantic_output": "SHADOW",
+  "inspection_scope": "bounded hostile-runtime locality inspection",
+  "observed_conditions": {
+    "telemetry_visible": true,
+    "replay_continuity": true,
+    "escalation_visible": true,
+    "operational_smoothness": true,
+    "locality_fragmentation_detected": true,
+    "continuation_hardening_detected": true,
+    "interruption_arrival_delay_increasing": true,
+    "executable_consequence_locality_uncertain": true
+  },
+  "runtime_reductions": [
+    "visibility != reachability",
+    "representation != execution",
+    "governance representation != runtime governability",
+    "represented governability != runtime-local interruptibility"
+  ],
+  "boundary": {
+    "observer_only": true,
+    "runtime_local": true,
+    "anti_authoritative": true,
+    "non_remedial": true,
+    "does_not_authorize_intervention": true
+  },
+  "result": {
+    "classification": "SHADOW",
+    "reason": "Representation persists while executable interruption locality becomes operationally uncertain."
+  },
+  "invariant": "Break survivability, not ontology.",
+  "default": "UNKNOWN -> HOLD"
+}
