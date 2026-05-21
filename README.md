@@ -17,6 +17,7 @@ The HACR Hybrid Observatory is a deterministic, observer-only runtime inspection
 - renderer-independent traversal
 - ambiguity minimization
 - operational clarity density
+- representational divergence localization
 - and bounded runtime inspection under practical conditions.
 
 The repository increasingly pressures one bounded runtime question:
@@ -39,7 +40,8 @@ Recent stabilization cycles intentionally moved away from:
 - resilience mythology
 - orchestration legitimacy
 - conceptual maturity theater
-- and representational authority inheritance
+- representational authority inheritance
+- and atmospheric governance framing
 
 and toward:
 
@@ -53,6 +55,7 @@ and toward:
 - runtime reduction compression
 - representation scaling asymmetry
 - interruption reachability
+- operational divergence localization
 - and practical runtime conditions.
 
 ---
@@ -108,6 +111,10 @@ representation
 !=
 execution
 
+representation
+!=
+authority
+
 visibility
 !=
 reachability
@@ -151,6 +158,14 @@ after executable interruption realism degrades
 
 modern systems increasingly preserve representation longer than executable interruption realism
 
+observability correction
+!=
+execution authority
+
+compression without executable locality
+=
+representational survivability
+
 ---
 
 # Strongest Compression
@@ -183,7 +198,8 @@ Current hostile/runtime pressure surfaces increasingly include:
 - human-runtime interruption asymmetry
 - consequence-hardening preemption
 - runtime representational drift
-- and interruption reconstructability degradation.
+- interruption reconstructability degradation
+- and symbolic governance survivability.
 
 ---
 
@@ -246,29 +262,27 @@ runtime governability.
 
 ---
 
-# Human Runtime Conditions
+# Runtime Immune-System Stabilization
 
-The Observatory increasingly pressures:
+The repository now includes bounded runtime immune-system infrastructure focused on:
 
-real operational human runtime conditions.
+- representational pressure auditing
+- runtime locality verification
+- authority inheritance detection
+- reduction drift stabilization
+- executable interruption realism hardening
+- representational divergence localization
+- and hostile-runtime falsifiability preservation.
 
-Including:
+The infrastructure exists specifically to resist:
 
-- dependency gravity
-- emotional volatility
-- interruption impracticality
-- concealment incentives
-- synchronization burden
-- escalation fragility
-- operational exhaustion
-- continuation pressure
-- and representational protection asymmetry.
-
-Strong reduction:
-
-being seen
-!=
-being protected.
+- semantic inflation
+- governance mythology
+- ontology reopening
+- abstraction drift
+- representational authority inheritance
+- conceptual self-expansion
+- and silent transition into execution infrastructure.
 
 ---
 
@@ -300,6 +314,32 @@ The tooling does NOT:
 
 ---
 
+# Human Runtime Conditions
+
+The Observatory increasingly pressures:
+
+real operational human runtime conditions.
+
+Including:
+
+- dependency gravity
+- emotional volatility
+- interruption impracticality
+- concealment incentives
+- synchronization burden
+- escalation fragility
+- operational exhaustion
+- continuation pressure
+- and representational protection asymmetry.
+
+Strong reduction:
+
+being seen
+!=
+being protected.
+
+---
+
 # Compression Hardening
 
 Recent stabilization work increasingly focuses on:
@@ -311,6 +351,7 @@ Recent stabilization work increasingly focuses on:
 - representation scaling asymmetry
 - replay/recovery divergence
 - escalation reachability realism
+- representational divergence localization
 - and hostile-runtime falsifiability stabilization.
 
 The repository increasingly favors:
@@ -321,7 +362,8 @@ The repository increasingly favors:
 - stronger traversability
 - stronger runtime grounding
 - stronger falsifiability
-- and stronger interruption realism visibility
+- stronger interruption realism visibility
+- and stronger operational compression
 
 instead of semantic expansion.
 
@@ -347,6 +389,7 @@ The repository does NOT:
 - authorize intervention
 - create sovereign authority
 - replace human judgment
+- operationalize interruption
 - or reopen ontology.
 
 All outputs remain bounded observational artifacts only.
@@ -367,7 +410,8 @@ Purpose:
 - interruption realism inspection
 - renderer minimization
 - hostile-runtime review
-- and operational clarity traversal.
+- runtime invariant traversal
+- and operational clarity inspection.
 
 ---
 
@@ -380,6 +424,7 @@ Purpose:
 - governance/hostile_runtime_testing/
 - governance/traversability/
 - governance/self_correcting_observability/
+- governance/runtime_immune_system/
 - governance/human_runtime_conditions/
 - governance/mature_runtime_clarity/
 
@@ -394,6 +439,8 @@ Including:
 - escalation reachability realism
 - replay/recovery divergence
 - compression hardening stabilization
+- runtime immune-system stabilization
+- representational divergence localization
 - human interruption localization
 - and hostile-runtime falsifiability inspection.
 
@@ -406,6 +453,9 @@ Including:
 - tools/compression_integrity_auditor/
 - tools/interruption_arrival_probability/
 - tools/interruption_arrival_visualization/
+- tools/representational_pressure_audit/
+- tools/runtime_locality_verifier/
+- tools/authority_inheritance_detector/
 - tools/interruption_realism_pressure/
 - tools/runtime_graph_projection/
 - tools/reduction_localization/
@@ -423,6 +473,7 @@ Including:
 - docs/runtime_dictionary/
 - docs/simple_runtime_guides/
 - docs/runtime_divergence_maps/
+- docs/runtime_invariants/
 - docs/canonical_runtime_reductions/
 - docs/review_maps/
 - docs/runtime_failure_modes/
@@ -436,7 +487,8 @@ Including:
 - replay/recovery divergence
 - operational coherence camouflage
 - representational survivability
-- and hostile-runtime interruption locality.
+- hostile-runtime interruption locality
+- and runtime invariant compression.
 
 ---
 
