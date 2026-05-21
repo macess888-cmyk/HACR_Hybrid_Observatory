@@ -1,0 +1,18 @@
+{
+  "case_id": "CARE_ASRO_SEAM_CASE_001",
+  "evidence_continuity": "preserved",
+  "replay_continuity": "preserved",
+  "provenance_persistence": "preserved",
+  "observability_density": "high",
+  "escalation_visibility": "visible",
+  "executable_interruption_legitimacy": "not_inherited",
+  "consequence_bind_status": "unconfirmed",
+  "classification": "HOLD",
+  "reduction": "evidence continuity != executable interruption legitimacy",
+  "boundary": {
+    "asro_preserves_evidence": true,
+    "care_determines_bind": true,
+    "evidence_does_not_authorize_interruption": true,
+    "observer_only": true
+  }
+}
