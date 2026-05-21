@@ -1,0 +1,43 @@
+{
+  "runtime_id": "MINIMAL_RUNTIME_FLOW_001",
+  "initial_state": {
+    "visibility": "stable",
+    "telemetry": "stable",
+    "escalation_visibility": "stable",
+    "continuation_hardening": "low",
+    "interruption_arrival_delay": "low",
+    "locality_fragmentation": "none"
+  },
+  "runtime_progression": [
+    {
+      "step": 1,
+      "continuation_hardening": "increasing"
+    },
+    {
+      "step": 2,
+      "interruption_arrival_delay": "increasing"
+    },
+    {
+      "step": 3,
+      "locality_fragmentation": "detected"
+    },
+    {
+      "step": 4,
+      "representation_survivability": "stable"
+    },
+    {
+      "step": 5,
+      "executable_consequence_locality": "operationally_uncertain"
+    }
+  ],
+  "result": {
+    "classification": "SHADOW",
+    "reason": "Representation persisted while executable interruption realism degraded operationally."
+  },
+  "boundary": {
+    "observer_only": true,
+    "runtime_local": true,
+    "anti_authoritative": true,
+    "non_remedial": true
+  }
+}
