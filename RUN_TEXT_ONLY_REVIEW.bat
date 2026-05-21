@@ -16,8 +16,8 @@ type docs\runtime_invariants\PRIMARY_RUNTIME_INVARIANTS.md
 echo.
 pause
 
-echo [3] RUNTIME_REALITY_ANCHORING.md
-type governance\runtime_reality_anchoring\RUNTIME_REALITY_ANCHORING.md
+echo [3] CONSEQUENCE_LOCALITY_HARDENING.md
+type governance\consequence_locality_hardening\CONSEQUENCE_LOCALITY_HARDENING.md
 echo.
 pause
 
@@ -26,18 +26,18 @@ type governance\runtime_consequence_locality\RUNTIME_CONSEQUENCE_LOCALITY.md
 echo.
 pause
 
-echo [5] REPRESENTATION_VS_EXECUTION.md
-type docs\runtime_divergence_maps\REPRESENTATION_VS_EXECUTION.md
+echo [5] RUNTIME_REALITY_ANCHORING.md
+type governance\runtime_reality_anchoring\RUNTIME_REALITY_ANCHORING.md
 echo.
 pause
 
-echo [6] REPRESENTATIONAL_COLLAPSE_GEOMETRY.md
-type docs\runtime_failure_geometry\REPRESENTATIONAL_COLLAPSE_GEOMETRY.md
-echo.
-pause
-
-echo [7] CONSEQUENCE_LOCALITY_GEOMETRY.md
+echo [6] CONSEQUENCE_LOCALITY_GEOMETRY.md
 type docs\runtime_consequence_maps\CONSEQUENCE_LOCALITY_GEOMETRY.md
+echo.
+pause
+
+echo [7] REPRESENTATIONAL_COLLAPSE_GEOMETRY.md
+type docs\runtime_failure_geometry\REPRESENTATIONAL_COLLAPSE_GEOMETRY.md
 echo.
 pause
 

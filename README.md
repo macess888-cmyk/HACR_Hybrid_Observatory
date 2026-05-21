@@ -225,6 +225,10 @@ interruption visibility
 !=
 consequence locality
 
+consequence visibility
+!=
+consequence reachability
+
 represented governability may survive
 after executable consequence locality collapses operationally
 
@@ -265,7 +269,8 @@ Current hostile/runtime pressure surfaces increasingly include:
 - symbolic governance survivability
 - runtime reality divergence
 - false governability persistence
-- and executable consequence locality collapse.
+- executable consequence locality collapse
+- and consequence visibility substitution.
 
 ---
 
@@ -312,11 +317,41 @@ The repository therefore increasingly focuses on:
 - interruption locality realism
 - executable consequence reachability
 - runtime consequence locality
+- consequence visibility substitution
 - and hostile-runtime operational falsifiability.
 
 Strong reduction:
 
 Represented governability may survive after executable consequence locality collapses operationally.
+
+Additional reduction:
+
+Consequence visibility is not consequence reachability.
+
+---
+
+# Consequence Locality Hardening
+
+The repository now includes consequence locality hardening infrastructure focused on:
+
+- consequence locality verification
+- symbolic stabilization detection
+- representation-to-consequence gap inspection
+- consequence reachability realism
+- interruption arrival realism
+- and hostile-runtime consequence falsifiability.
+
+The infrastructure exists specifically to resist:
+
+- symbolic stabilization
+- governance atmosphere
+- representational legitimacy
+- consequence visibility substitution
+- and false governability persistence.
+
+Strong reduction:
+
+Consequence visibility is not consequence reachability.
 
 ---
 
@@ -482,6 +517,8 @@ Recent stabilization work increasingly focuses on:
 - representation scaling asymmetry
 - replay/recovery divergence
 - escalation reachability realism
+- consequence reachability realism
+- representation-to-consequence gap inspection
 - representational divergence localization
 - runtime reality anchoring
 - and hostile-runtime falsifiability stabilization.
@@ -495,6 +532,7 @@ The repository increasingly favors:
 - stronger runtime grounding
 - stronger falsifiability
 - stronger interruption realism visibility
+- stronger consequence-locality inspection
 - and stronger operational compression
 
 instead of semantic expansion.

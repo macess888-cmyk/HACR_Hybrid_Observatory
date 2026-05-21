@@ -1,3 +1,7 @@
+
+Replace `START_HERE.md` with this:
+
+```markdown
 # HACR Hybrid Observatory
 
 ## Start Here
@@ -169,6 +173,10 @@ interruption visibility
 !=
 consequence locality
 
+consequence visibility
+!=
+consequence reachability
+
 represented governability may survive
 after executable consequence locality collapses operationally
 
@@ -188,15 +196,18 @@ The Observatory increasingly stabilizes around:
 - executable interruption locality
 - runtime consequence locality
 - runtime governability realism
+- consequence reachability realism
 - representation scaling asymmetry
 - continuation hardening
 - reconstructability asymmetry
 - operational coherence camouflage
 - replay/recovery divergence
+- consequence visibility inspection
 - runtime reality anchoring
 - false governability localization
 - runtime claim collapse
 - representational collapse geometry
+- consequence locality hardening
 - and hostile-runtime falsifiability.
 
 Recent stabilization cycles intentionally moved away from:
@@ -217,6 +228,7 @@ and toward:
 - interruption arrival realism
 - runtime consequence locality
 - operational locality
+- consequence reachability realism
 - reduction compression
 - synchronization burden
 - operational reachability
@@ -269,11 +281,38 @@ The repository therefore increasingly focuses on:
 - interruption locality realism
 - executable consequence reachability
 - runtime consequence locality
+- consequence visibility substitution
 - and hostile-runtime operational falsifiability.
 
 Strong reduction:
 
 Represented governability may survive after executable consequence locality collapses operationally.
+
+Additional reduction:
+
+Consequence visibility is not consequence reachability.
+
+---
+
+# Consequence Locality Hardening
+
+The Observatory increasingly pressures whether consequence visibility is being mistaken for consequence reachability.
+
+A system may preserve:
+
+- representation
+- replay
+- telemetry
+- escalation visibility
+- governance appearance
+- accountability visibility
+- and operational coherence
+
+after executable consequence locality has already weakened.
+
+Strong reduction:
+
+Consequence visibility is not consequence reachability.
 
 ---
 
