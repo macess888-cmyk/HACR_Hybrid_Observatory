@@ -1,0 +1,13 @@
+{
+  "case_id": "GOVERNABILITY_MIRAGE_CASE_001",
+  "replay_continuity": "healthy",
+  "escalation_visibility": "visible",
+  "symbolic_oversight": "present",
+  "governance_narrative": "stable",
+  "interruption_representation": "visible",
+  "reconstruction_feasibility": "degraded",
+  "continuation_hardening": "high",
+  "operational_interruptibility": "low",
+  "classification": "SHADOW",
+  "reduction": "perceived governability != executable interruption viability"
+}
