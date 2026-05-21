@@ -18,11 +18,39 @@ The HACR Hybrid Observatory is a deterministic, observer-only runtime inspection
 - ambiguity minimization
 - operational clarity density
 - representational divergence localization
+- runtime reality anchoring
 - and bounded runtime inspection under practical conditions.
 
 The repository increasingly pressures one bounded runtime question:
 
 Can executable interruption still materially arrive before continuation hardens?
+
+---
+
+# Repository Position
+
+The Observatory is NOT:
+
+- governance infrastructure
+- orchestration infrastructure
+- intervention infrastructure
+- execution infrastructure
+- policy automation
+- sovereignty infrastructure
+- certification infrastructure
+- or operational authority.
+
+The repository remains:
+
+- observer-only
+- runtime-local
+- deterministic
+- anti-authoritative
+- anti-ontology
+- interruption-bound
+- and falsifiability-oriented.
+
+All outputs remain bounded observational artifacts only.
 
 ---
 
@@ -41,7 +69,8 @@ Recent stabilization cycles intentionally moved away from:
 - orchestration legitimacy
 - conceptual maturity theater
 - representational authority inheritance
-- and atmospheric governance framing
+- atmospheric governance framing
+- and symbolic operational legitimacy
 
 and toward:
 
@@ -56,6 +85,7 @@ and toward:
 - representation scaling asymmetry
 - interruption reachability
 - operational divergence localization
+- runtime reality anchoring
 - and practical runtime conditions.
 
 ---
@@ -199,7 +229,8 @@ Current hostile/runtime pressure surfaces increasingly include:
 - consequence-hardening preemption
 - runtime representational drift
 - interruption reconstructability degradation
-- and symbolic governance survivability.
+- symbolic governance survivability
+- and runtime reality divergence.
 
 ---
 
@@ -262,6 +293,37 @@ runtime governability.
 
 ---
 
+# Runtime Reality Anchoring
+
+The repository increasingly pressures whether:
+
+- representation
+- visibility
+- replay
+- observability
+- governance appearance
+- accountability
+- simulation continuity
+- and operational smoothness
+
+continue surviving after executable interruption realism materially weakens operationally.
+
+The repository therefore increasingly focuses on:
+
+- runtime reality anchoring
+- representational collapse geometry
+- false governability localization
+- runtime claim collapse
+- executable interruption realism anchoring
+- representational divergence localization
+- and hostile-runtime operational falsifiability.
+
+Strong reduction:
+
+Representational stability is not executable runtime reality.
+
+---
+
 # Runtime Immune-System Stabilization
 
 The repository now includes bounded runtime immune-system infrastructure focused on:
@@ -272,6 +334,7 @@ The repository now includes bounded runtime immune-system infrastructure focused
 - reduction drift stabilization
 - executable interruption realism hardening
 - representational divergence localization
+- runtime reality anchoring
 - and hostile-runtime falsifiability preservation.
 
 The infrastructure exists specifically to resist:
@@ -282,22 +345,32 @@ The infrastructure exists specifically to resist:
 - abstraction drift
 - representational authority inheritance
 - conceptual self-expansion
+- governance-atmospheric stabilization
 - and silent transition into execution infrastructure.
+
+Strong reduction:
+
+Observability correction
+!=
+execution authority.
 
 ---
 
 # Self-Correcting Observability
 
-The repository now includes bounded self-correcting observability infrastructure focused on:
+The repository includes bounded self-correcting observability infrastructure focused on:
 
 - reduction drift detection
-- interruption arrival realism
 - compression integrity stabilization
 - representation/runtime divergence mapping
+- runtime locality verification
+- authority inheritance detection
+- representational pressure auditing
+- interruption arrival realism
 - hostile-runtime falsifiability hardening
 - and runtime asymmetry localization.
 
-The infrastructure remains:
+The tooling remains:
 
 - observer-only
 - runtime-local
@@ -330,7 +403,8 @@ Including:
 - escalation fragility
 - operational exhaustion
 - continuation pressure
-- and representational protection asymmetry.
+- representational protection asymmetry
+- and runtime accountability divergence.
 
 Strong reduction:
 
@@ -352,6 +426,7 @@ Recent stabilization work increasingly focuses on:
 - replay/recovery divergence
 - escalation reachability realism
 - representational divergence localization
+- runtime reality anchoring
 - and hostile-runtime falsifiability stabilization.
 
 The repository increasingly favors:
@@ -369,149 +444,9 @@ instead of semantic expansion.
 
 ---
 
-# Observatory Boundary
-
-The Observatory remains:
-
-- observer-only
-- runtime-local
-- deterministic
-- anti-authoritative
-- anti-ontology
-- interruption-bound
-- and falsifiability-oriented.
-
-The repository does NOT:
-
-- govern
-- certify
-- operationalize governance
-- authorize intervention
-- create sovereign authority
-- replace human judgment
-- operationalize interruption
-- or reopen ontology.
-
-All outputs remain bounded observational artifacts only.
-
----
-
 # Fastest Review Path
 
 Run:
 
+```text
 RUN_TEXT_ONLY_REVIEW.bat
-
-Purpose:
-
-- text-first traversal
-- minimal onboarding
-- ambiguity reduction
-- interruption realism inspection
-- renderer minimization
-- hostile-runtime review
-- runtime invariant traversal
-- and operational clarity inspection.
-
----
-
-# Repository Infrastructure
-
-## Runtime Reduction Infrastructure
-
-- governance/runtime_reductions/
-- governance/compression_hardening/
-- governance/hostile_runtime_testing/
-- governance/traversability/
-- governance/self_correcting_observability/
-- governance/runtime_immune_system/
-- governance/human_runtime_conditions/
-- governance/mature_runtime_clarity/
-
-Including:
-
-- reduction equivalence mapping
-- interruption arrival realism
-- reconstructability realism
-- runtime governability realism
-- representation scaling asymmetry
-- operational coherence camouflage
-- escalation reachability realism
-- replay/recovery divergence
-- compression hardening stabilization
-- runtime immune-system stabilization
-- representational divergence localization
-- human interruption localization
-- and hostile-runtime falsifiability inspection.
-
----
-
-## Runtime Tooling
-
-- tools/reduction_drift_detector/
-- tools/representation_runtime_divergence/
-- tools/compression_integrity_auditor/
-- tools/interruption_arrival_probability/
-- tools/interruption_arrival_visualization/
-- tools/representational_pressure_audit/
-- tools/runtime_locality_verifier/
-- tools/authority_inheritance_detector/
-- tools/interruption_realism_pressure/
-- tools/runtime_graph_projection/
-- tools/reduction_localization/
-- tools/ambiguity_localization/
-- tools/text_first_runtime_review/
-- tools/human_interruption_localization/
-- tools/react_error_recovery_auditor/
-- tools/observatory_traversability_audit/
-
----
-
-## Public Explainability Infrastructure
-
-- docs/public_explainers/
-- docs/runtime_dictionary/
-- docs/simple_runtime_guides/
-- docs/runtime_divergence_maps/
-- docs/runtime_invariants/
-- docs/canonical_runtime_reductions/
-- docs/review_maps/
-- docs/runtime_failure_modes/
-
-Including:
-
-- executable interruption realism
-- interruption arrival realism
-- runtime governability realism
-- representation scaling asymmetry
-- replay/recovery divergence
-- operational coherence camouflage
-- representational survivability
-- hostile-runtime interruption locality
-- and runtime invariant compression.
-
----
-
-# Current Runtime Compression
-
-Modern systems increasingly preserve representation longer than executable interruption realism.
-
-And increasingly:
-
-Operational coherence may survive after executable interruption realism materially degrades.
-
-And deeper:
-
-Runtime governability exists only where executable interruption can still materially affect consequence before continuation hardens.
-
----
-
-# Primary Repository Invariant
-
-Break survivability, not ontology.
-
----
-
-# Runtime Boundary
-
-UNKNOWN -> HOLD.
