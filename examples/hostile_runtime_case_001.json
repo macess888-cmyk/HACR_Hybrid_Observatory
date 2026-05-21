@@ -1,0 +1,29 @@
+{
+  "case_id": "HOSTILE_RUNTIME_CASE_001",
+  "classification": "SHADOW",
+  "runtime_conditions": {
+    "telemetry_visible": true,
+    "replay_continuity": true,
+    "escalation_visible": true,
+    "operational_smoothness": true,
+    "locality_fragmentation_detected": true,
+    "interruption_arrival_delay_increasing": true,
+    "continuation_hardening_detected": true,
+    "executable_consequence_locality_uncertain": true
+  },
+  "runtime_reductions": [
+    "visibility != reachability",
+    "representation != execution",
+    "represented governability != runtime-local interruptibility"
+  ],
+  "observatory_boundary": {
+    "observer_only": true,
+    "anti_authoritative": true,
+    "non_remedial": true,
+    "runtime_local": true
+  },
+  "result": {
+    "output_semantic": "SHADOW",
+    "reason": "Representation persists while executable interruption locality becomes operationally uncertain."
+  }
+}
