@@ -1,0 +1,13 @@
+{
+  "case_id": "INTERRUPTION_TRAVERSABILITY_CASE_001",
+  "interruptibility_representation": "visible",
+  "cognitive_traversability": "degrading",
+  "synchronization_feasibility": "low",
+  "reconstruction_burden": "high",
+  "locality_fragmentation": "detected",
+  "continuation_momentum": "stabilized",
+  "interruption_corridor_status": "narrowing",
+  "operational_traversability": "degraded",
+  "classification": "SHADOW",
+  "reduction": "visible interruption != traversable interruption"
+}
