@@ -1,0 +1,23 @@
+{
+  "pipeline_id": "HOSTILE_RUNTIME_PIPELINE_001",
+  "runtime_sequence_id": "RUNTIME_STATE_SEQUENCE_001",
+  "receipt_id": "HOSTILE_RUNTIME_CASE_001_RECEIPT",
+  "verification_status": "PASS",
+  "semantic_outputs_observed": [
+    "PASS",
+    "HOLD",
+    "SHADOW",
+    "FAIL"
+  ],
+  "final_runtime_classification": "FAIL",
+  "verified_receipt_semantic_output": "SHADOW",
+  "boundary_status": {
+    "observer_only": true,
+    "runtime_local": true,
+    "anti_authoritative": true,
+    "non_remedial": true,
+    "does_not_authorize_intervention": true
+  },
+  "invariant": "Break survivability, not ontology.",
+  "default": "UNKNOWN -> HOLD"
+}
