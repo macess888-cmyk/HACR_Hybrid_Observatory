@@ -2,7 +2,7 @@
   "hash_receipt_id": "HOSTILE_RUNTIME_CASE_001_RECEIPT_SHA256",
   "source_receipt": "Receipts\\HOSTILE_RUNTIME_CASE_001_RECEIPT.json",
   "sha256": "005609c943d9148792b37201c08c6d75a1ea4eb9d27727727c78a276eb6d4674",
-  "generated_at_utc": "2026-05-21T19:10:04.270489+00:00",
+  "generated_at_utc": "2026-05-21T19:15:47.760788+00:00",
   "verification_scope": "deterministic hostile-runtime receipt integrity",
   "boundary": {
     "observer_only": true,
