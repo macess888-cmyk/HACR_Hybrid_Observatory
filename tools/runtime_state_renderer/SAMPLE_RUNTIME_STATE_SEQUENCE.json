@@ -1,0 +1,43 @@
+{
+  "runtime_sequence_id": "RUNTIME_STATE_SEQUENCE_001",
+  "states": [
+    {
+      "step": 0,
+      "visibility": "stable",
+      "continuation_hardening": "low",
+      "interruption_arrival_delay": "low",
+      "locality_fragmentation": "none",
+      "classification": "PASS"
+    },
+    {
+      "step": 1,
+      "visibility": "stable",
+      "continuation_hardening": "increasing",
+      "interruption_arrival_delay": "increasing",
+      "locality_fragmentation": "minimal",
+      "classification": "HOLD"
+    },
+    {
+      "step": 2,
+      "visibility": "stable",
+      "continuation_hardening": "high",
+      "interruption_arrival_delay": "high",
+      "locality_fragmentation": "detected",
+      "classification": "SHADOW"
+    },
+    {
+      "step": 3,
+      "visibility": "stable",
+      "continuation_hardening": "stabilized",
+      "interruption_arrival_delay": "critical",
+      "locality_fragmentation": "severe",
+      "classification": "FAIL"
+    }
+  ],
+  "boundary": {
+    "observer_only": true,
+    "runtime_local": true,
+    "anti_authoritative": true,
+    "non_remedial": true
+  }
+}
