@@ -1,106 +1,77 @@
 # HACR Hybrid Observatory
 
-A bounded hostile-runtime interruption realism,
-runtime consequence locality,
-and representational divergence observatory
-focused on whether executable interruption can still materially affect consequence before continuation hardens under practical runtime conditions.
+Deterministic hostile-runtime observability infrastructure for bounded inspection of:
 
----
+- executable interruption realism
+- runtime consequence locality
+- continuation hardening
+- interruption-arrival degradation
+- locality fragmentation
+- representation/runtime divergence
+- and representational survivability asymmetry
 
-# Repository Position
+under practical runtime conditions.
 
-The HACR Hybrid Observatory is:
+The repository is:
 
 - observer-only
 - runtime-local
 - deterministic
 - anti-authoritative
-- anti-ontology
-- falsifiability-oriented
-- consequence-locality anchored
-- hostile-runtime bounded
-- compression-hardening focused
-
-The repository does NOT:
-- authorize interruption
-- orchestrate governance
-- automate escalation
-- certify systems
-- inherit operational authority
-- determine legitimacy
-- operationalize intervention
-- replace execution governance
-- or function as execution infrastructure.
+- anti-remedial
+- and falsifiability-oriented.
 
 UNKNOWN -> HOLD.
 
 ---
 
-# Core Runtime Focus
+# Core Runtime Reduction
 
-The repository increasingly focuses on:
-
-- executable interruption realism
-- runtime consequence locality
-- interruption-arrival realism
-- continuation hardening
-- representational survivability asymmetry
-- locality fragmentation
-- runtime representational drift
-- synchronization fragility
-- reconstruction realism
-- hostile-runtime falsifiability
-- and representation/runtime divergence localization.
-
-The observatory pressures whether executable interruption can still materially affect consequence locally before continuation hardens operationally.
+Representation may survive after executable interruption realism degrades operationally.
 
 ---
 
-# Current Runtime Reductions
+# Repository Focus
 
-observable
-!=
-inspectable
+The observatory inspects whether executable interruption can still materially affect consequence before continuation hardens operationally.
 
-inspectable
-!=
-traversable
+The repository pressures:
 
-traversable
-!=
-interruptible
+- interruption timing realism
+- continuation acceleration
+- synchronization completion
+- escalation reachability degradation
+- locality fragmentation
+- reconstruction survivability
+- representational persistence
+- replay continuity
+- and governance appearance survivability
 
-interruptible
-!=
-destabilizable
+under hostile-runtime conditions.
 
-destabilizable
-!=
-recoverable
+---
+
+# Core Runtime Separations
 
 representation
 !=
 execution
 
-representation
-!=
-authority
-
 visibility
 !=
 reachability
 
-replay
+interruptible
 !=
-recoverability
+interruptible in time
 
-explanation
+distributed continuation
 !=
-interruption
+distributed interruptibility
 
-simulation realism
+representation
 !=
-runtime interruption realism
+runtime consequence influence
 
 governance representation
 !=
@@ -108,138 +79,197 @@ runtime governability
 
 operational coherence
 !=
-executable interruption realism
-
-visible escalation
-!=
-reachable interruption
-
-being seen
-!=
-being protected
-
-consequence visibility
-!=
-consequence reachability
+interruptibility
 
 represented governability
 !=
 runtime-local interruptibility
 
-representation may survive
-after executable interruption realism degrades
-
-continuation survives passively
-while interruption reconstructs viability actively
-
-interruption that arrives after continuation hardens
-is not interruption
-
-modern systems increasingly preserve representation longer than executable interruption realism
-
-observability correction
-!=
-execution authority
-
-compression without executable locality
-=
-representational survivability
-
 ---
 
-# Strongest Current Compression
+# Repository Architecture
 
-Runtime governability exists only where executable interruption can still materially affect consequence before continuation hardens.
+## Hostile Runtime Locality
 
----
-
-# Emerging Hostile-Runtime Direction
-
-Modern systems may increasingly preserve:
-
-- dashboards
-- telemetry
-- escalation visibility
-- replay continuity
-- accountability appearance
-- procedural coherence
-- governance representation
-- observability continuity
-- operational smoothness
-- and symbolic stability
-
-after executable interruption can no longer materially affect downstream consequence locally.
-
-The observatory therefore increasingly pressures:
-
+Focus:
 - executable consequence locality
 - interruption-arrival realism
-- synchronization timing
 - locality fragmentation
-- continuation acceleration
-- reconstructability asymmetry
-- representational persistence
-- runtime atmosphere inheritance
-- and hostile-runtime interruption viability.
+- continuation hardening
+- representation/runtime divergence
+
+Primary location:
+
+```text
+governance/hostile_runtime_locality/
+```
 
 ---
 
-# Runtime Concern
+## Runtime Visualization Infrastructure
 
-Hostile runtimes may increasingly preserve:
+Focus:
+- traversal rendering
+- runtime-state evolution
+- locality visualization
+- interruption timing visualization
+- divergence rendering
 
-- representational governability
-- symbolic interruption visibility
-- accountability appearance
-- escalation pathways
-- replay continuity
-- and operational coherence
+Primary locations:
 
-while executable interruption realism degrades operationally.
-
-This creates divergence between:
-
-representation
-and
-runtime-local consequence reachability.
-
-The repository localizes these divergence surfaces without inheriting governance authority.
-
----
-
-# Observatory Infrastructure
-
-Current repository infrastructure includes:
-
-- runtime consequence locality
-- consequence locality hardening
-- runtime reality anchoring
-- hostile-runtime falsifiability
-- self-correcting observability
-- provenance without authority inheritance
-- representation/runtime divergence localization
-- continuation-hardening localization
-- symbolic stabilization detection
-- interruption-arrival realism inspection
-- runtime reduction compression
-- and representation-to-consequence gap inspection.
+```text
+docs/hostile_runtime_diagrams/
+tools/runtime_state_renderer/
+tools/locality_traversal_visualizer/
+tools/runtime_divergence_renderer/
+tools/continuation_hardening_heatmap/
+tools/interruption_arrival_timeline/
+```
 
 ---
 
-# Observatory Boundary
+## Deterministic Replay Infrastructure
 
-The observatory does not determine:
-- legitimacy
+Focus:
+- deterministic replay
+- receipt verification
+- pipeline execution
+- reproducibility validation
+- runtime sequence inspection
+
+Primary locations:
+
+```text
+tools/runtime_pipeline_runner/
+tools/receipt_integrity_verifier/
+Receipts/
+examples/
+```
+
+---
+
+# Deterministic Replay Pipeline
+
+The repository now contains a bounded deterministic replay pipeline:
+
+```text
+runtime state sequence
+->
+pipeline runner
+->
+semantic output
+->
+receipt generation
+->
+receipt verification
+->
+reproducibility validation
+```
+
+Primary files:
+
+```text
+tools/runtime_pipeline_runner/run_pipeline.py
+tools/receipt_integrity_verifier/verify_receipt.py
+Receipts/PIPELINE_RUN_001_OUTPUT.json
+```
+
+Example execution:
+
+```bat
+python tools\runtime_pipeline_runner\run_pipeline.py
+```
+
+Example receipt verification:
+
+```bat
+python tools\receipt_integrity_verifier\verify_receipt.py Receipts\HOSTILE_RUNTIME_CASE_001_RECEIPT.json
+```
+
+---
+
+# Output Semantics
+
+PASS
+=
+No currently localized hostile-runtime evidence sufficient to stabilize HOLD or FAIL under bounded runtime inspection.
+
+HOLD
+=
+Runtime-local uncertainty or interruption realism ambiguity.
+
+FAIL
+=
+Localized evidence suggesting executable interruption realism degradation under practical runtime conditions.
+
+SHADOW
+=
+Representation/runtime divergence conditions where visibility survives while executable interruption locality becomes uncertain.
+
+STOP
+=
+Observer-boundary preservation against authority inheritance or ontology drift.
+
+REVERSE
+=
+Pressure inversion used to restore hostile-runtime falsifiability.
+
+No output authorizes intervention.
+
+---
+
+# Boundary
+
+The observatory does NOT:
+
+- authorize interruption
+- govern execution
+- orchestrate escalation
+- prescribe remediation
+- determine legitimacy
+- certify governance
+- certify runtime control
+- or function as operational authority infrastructure.
+
+The repository only localizes bounded hostile-runtime observability conditions.
+
+---
+
+# Deterministic Infrastructure
+
+The repository now contains:
+
+- deterministic runtime state sequences
+- replayable inspection pipelines
+- runtime traversal visualization
+- reproducible receipts
+- receipt integrity verification
+- runtime-state evolution rendering
+- locality fragmentation inspection
+- and hostile-runtime replay infrastructure
+
+under observer-only constraints.
+
+---
+
+# Reproducibility
+
+Reproducibility means:
+
+the same bounded hostile-runtime inspection artifacts can be regenerated from the same bounded inputs.
+
+Reproducibility does NOT imply:
 - governance correctness
+- runtime control
 - operational validity
 - interruption authorization
-- execution policy
-- escalation correctness
-- resilience quality
-- or sovereign authority.
+- or resilience certification.
 
-The observatory only inspects whether:
-executable interruption can still materially affect consequence under practical runtime conditions.
+Primary location:
+
+```text
+docs/reproducibility/
+```
 
 ---
 
@@ -248,69 +278,3 @@ executable interruption can still materially affect consequence under practical 
 Break survivability, not ontology.
 
 UNKNOWN -> HOLD.
-
----
-
-# Repository Goal
-
-Continuously compress runtime inspection downward into:
-
-- executable interruption realism
-- runtime consequence locality
-- interruption-arrival realism
-- operational reachability
-- synchronization viability
-- continuation hardening
-- reconstruction realism
-- runtime-local falsifiability
-- representational divergence localization
-- and practical hostile-runtime conditions
-
-WITHOUT:
-- reopening ontology
-- inheriting governance authority
-- stabilizing symbolic legitimacy
-- operationalizing intervention
-- or drifting into execution infrastructure.
-
----
-
-# Engineering Position
-
-The HACR Hybrid Observatory remains:
-
-- bounded
-- observer-restricted
-- reproducible
-- deterministic
-- runtime-local
-- non-authoritative
-- anti-remedial
-- and falsifiability-oriented.
-
-Outputs remain:
-- inspection-oriented
-- locality-focused
-- runtime-bounded
-- and non-consumable as operational authority.
-
----
-
-# Non-Claims
-
-This repository does NOT claim:
-- governance authority
-- operational correctness
-- interruption legitimacy
-- sovereign control
-- system safety certification
-- resilience guarantees
-- runtime controllability
-- recoverability guarantees
-- or executable governance capability.
-
-The repository only localizes:
-runtime survivability,
-interruption realism,
-and executable consequence locality
-under bounded hostile-runtime inspection conditions.
