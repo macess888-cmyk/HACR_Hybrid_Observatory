@@ -1,29 +1,25 @@
 # HACR Hybrid Observatory — Architecture Tools Map
 
-This map links hostile-runtime pressures to current observer-only instrumentation.
+Observer-only hostile-runtime observability architecture for inspecting executable interruption realism under continuation pressure.
 
-## Core Runtime Question
+The repository remains:
 
-Can executable interruption still:
+- observer-only
+- runtime-local
+- hostile-runtime testable
+- execution-boundary grounded
+- non-authoritative
+- falsifiability-oriented
+- non-ontological
+- compression-disciplined
 
-- arrive
-- synchronize
-- reconstruct
-- localize
-- and materially affect consequence
+UNKNOWN -> HOLD
 
-before continuation hardens under practical runtime conditions?
-
-If not:
-
-UNKNOWN -> HOLD.
+Break survivability, not ontology.
 
 ---
 
-## 1. Runtime Replay
-
-Tool:
+# FULL OBSERVATORY STACK
 
 ```text
-tools/runtime_pipeline_runner/
-RUN_PIPELINE.bat
+RUN_FULL_OBSERVATORY_PIPELINE.bat
