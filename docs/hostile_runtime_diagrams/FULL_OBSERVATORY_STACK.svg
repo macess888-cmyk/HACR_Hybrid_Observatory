@@ -1,0 +1,59 @@
+<svg width="1600" height="900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f7f7f7"/>
+
+  <text x="60" y="70" font-size="34" font-family="Arial" fill="#000">
+    HACR HYBRID OBSERVATORY — HOSTILE-RUNTIME STACK
+  </text>
+
+  <text x="60" y="120" font-size="18" font-family="Arial" fill="#000">
+    Observer-only instrumentation for testing executable interruption realism under continuation hardening.
+  </text>
+
+  <rect x="80" y="190" width="300" height="90" fill="#d9e6f2" stroke="#000" stroke-width="2"/>
+  <text x="115" y="242" font-size="18" font-family="Arial">Runtime Replay</text>
+
+  <rect x="470" y="190" width="300" height="90" fill="#efe5d2" stroke="#000" stroke-width="2"/>
+  <text x="500" y="242" font-size="18" font-family="Arial">Reconstruction Viability</text>
+
+  <rect x="860" y="190" width="300" height="90" fill="#f2dede" stroke="#000" stroke-width="2"/>
+  <text x="895" y="242" font-size="18" font-family="Arial">Governability Mirage</text>
+
+  <rect x="1250" y="190" width="300" height="90" fill="#e7dced" stroke="#000" stroke-width="2"/>
+  <text x="1290" y="242" font-size="18" font-family="Arial">CARE / ASRO Seam</text>
+
+  <line x1="380" y1="235" x2="470" y2="235" stroke="#000" stroke-width="4"/>
+  <line x1="770" y1="235" x2="860" y2="235" stroke="#000" stroke-width="4"/>
+  <line x1="1160" y1="235" x2="1250" y2="235" stroke="#000" stroke-width="4"/>
+
+  <rect x="270" y="390" width="300" height="90" fill="#e8f5e9" stroke="#000" stroke-width="2"/>
+  <text x="300" y="442" font-size="18" font-family="Arial">Governability Decay</text>
+
+  <rect x="650" y="390" width="300" height="90" fill="#fffde7" stroke="#000" stroke-width="2"/>
+  <text x="690" y="442" font-size="18" font-family="Arial">Topology Hardening</text>
+
+  <rect x="1030" y="390" width="300" height="90" fill="#ede7f6" stroke="#000" stroke-width="2"/>
+  <text x="1065" y="442" font-size="18" font-family="Arial">Traversability Mapping</text>
+
+  <line x1="570" y1="435" x2="650" y2="435" stroke="#000" stroke-width="4"/>
+  <line x1="950" y1="435" x2="1030" y2="435" stroke="#000" stroke-width="4"/>
+
+  <text x="100" y="590" font-size="22" font-family="Arial" fill="#000">
+    Core Compression:
+  </text>
+
+  <text x="100" y="640" font-size="20" font-family="Arial" fill="#000">
+    Governability collapses where executable interruption corridors become non-traversable under continuation pressure.
+  </text>
+
+  <text x="100" y="700" font-size="20" font-family="Arial" fill="#000">
+    Visible interruption surviving != traversable interruption surviving.
+  </text>
+
+  <text x="100" y="790" font-size="26" font-family="Arial" fill="#000">
+    UNKNOWN -> HOLD
+  </text>
+
+  <text x="100" y="840" font-size="26" font-family="Arial" fill="#000">
+    Break survivability, not ontology.
+  </text>
+</svg>
