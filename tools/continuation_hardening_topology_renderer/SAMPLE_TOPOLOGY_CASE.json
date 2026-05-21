@@ -1,0 +1,27 @@
+{
+  "case_id": "CONTINUATION_HARDENING_TOPOLOGY_001",
+  "topology_regions": [
+    {
+      "region": "A",
+      "continuation_hardening": "low",
+      "interruptibility": "high"
+    },
+    {
+      "region": "B",
+      "continuation_hardening": "moderate",
+      "interruptibility": "degrading"
+    },
+    {
+      "region": "C",
+      "continuation_hardening": "high",
+      "interruptibility": "low"
+    },
+    {
+      "region": "D",
+      "continuation_hardening": "stabilized",
+      "interruptibility": "non_arrivable"
+    }
+  ],
+  "classification": "SHADOW",
+  "reduction": "continuation scaling != interruption scaling"
+}
