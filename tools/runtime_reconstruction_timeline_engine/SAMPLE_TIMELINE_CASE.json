@@ -1,0 +1,27 @@
+{
+  "case_id": "RUNTIME_RECONSTRUCTION_TIMELINE_001",
+  "timeline": [
+    {
+      "step": 0,
+      "representation_continuity": "stable",
+      "interruptibility": "high"
+    },
+    {
+      "step": 1,
+      "representation_continuity": "stable",
+      "interruptibility": "degrading"
+    },
+    {
+      "step": 2,
+      "representation_continuity": "healthy",
+      "interruptibility": "low"
+    },
+    {
+      "step": 3,
+      "representation_continuity": "healthy",
+      "interruptibility": "non_arrivable"
+    }
+  ],
+  "classification": "SHADOW",
+  "reduction": "represented interruption surviving != reconstructable interruption surviving"
+}
