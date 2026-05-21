@@ -1,0 +1,23 @@
+{
+  "case_id": "COMPRESSION_BOUNDARY_CASE_001",
+  "observation": "coherence remains smooth while executable interruption viability degrades underneath",
+  "recurrence": "repeated",
+  "existing_surfaces_checked": [
+    "representation_persistence",
+    "coherence_camouflage",
+    "interruption_degradation",
+    "traversability_decay",
+    "reconstruction_realism",
+    "governability_mirage"
+  ],
+  "compression_status": "still_compressible",
+  "expansion_pressure": "low",
+  "classification": "COMPRESS",
+  "reduction": "persistent survivability != new object",
+  "boundary": {
+    "observer_only": true,
+    "anti_inflation": true,
+    "non_ontological": true,
+    "runtime_local": true
+  }
+}
