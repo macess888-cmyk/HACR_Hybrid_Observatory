@@ -1,0 +1,14 @@
+{
+  "case_id": "RUNTIME_GOVERNABILITY_DECAY_CASE_001",
+  "representation_continuity": "high",
+  "symbolic_governability": "stable",
+  "replay_continuity": "healthy",
+  "escalation_visibility": "visible",
+  "interruption_reconstruction_viability": "degraded",
+  "synchronization_feasibility": "low",
+  "continuation_hardening": "high",
+  "locality_fragmentation": "detected",
+  "governability_mirage_pressure": "elevated",
+  "classification": "SHADOW",
+  "reduction": "governability may fail operationally before it fails semantically"
+}
