@@ -6,6 +6,7 @@ The HACR Hybrid Observatory is a deterministic, observer-only runtime inspection
 
 - executable interruption realism
 - interruption arrival realism
+- runtime consequence locality
 - runtime governability realism
 - reconstructability asymmetry
 - continuation hardening
@@ -88,13 +89,15 @@ Recent stabilization cycles intentionally moved away from:
 - conceptual maturity theater
 - representational authority inheritance
 - atmospheric governance framing
-- and symbolic operational legitimacy
+- symbolic operational legitimacy
+- and governance mythology
 
 and toward:
 
 - runtime-local falsifiability
 - executable interruption realism
 - interruption arrival realism
+- runtime consequence locality
 - operational locality
 - continuation asymmetry
 - reconstructability realism
@@ -218,6 +221,13 @@ attribution
 !=
 authority inheritance
 
+interruption visibility
+!=
+consequence locality
+
+represented governability may survive
+after executable consequence locality collapses operationally
+
 ---
 
 # Strongest Compression
@@ -232,6 +242,7 @@ Current hostile/runtime pressure surfaces increasingly include:
 
 - operational coherence camouflage
 - interruption arrival realism
+- runtime consequence locality
 - representation scaling asymmetry
 - representational survivability
 - reconstruction dependency
@@ -253,7 +264,8 @@ Current hostile/runtime pressure surfaces increasingly include:
 - interruption reconstructability degradation
 - symbolic governance survivability
 - runtime reality divergence
-- and false governability persistence.
+- false governability persistence
+- and executable consequence locality collapse.
 
 ---
 
@@ -285,6 +297,26 @@ while executable interruption increasingly becomes:
 - continuation-preempted
 - practically unreachable
 - or unable to materially arrive before consequence hardens.
+
+---
+
+# Runtime Consequence Locality
+
+The repository increasingly pressures whether executable interruption can still materially affect runtime consequence locally before continuation hardens operationally.
+
+The repository therefore increasingly focuses on:
+
+- consequence arrival pressure
+- continuation hardening localization
+- runtime consequence divergence
+- interruption locality realism
+- executable consequence reachability
+- runtime consequence locality
+- and hostile-runtime operational falsifiability.
+
+Strong reduction:
+
+Represented governability may survive after executable consequence locality collapses operationally.
 
 ---
 
@@ -427,7 +459,8 @@ Including:
 - operational exhaustion
 - continuation pressure
 - representational protection asymmetry
-- and runtime accountability divergence.
+- runtime accountability divergence
+- and consequence-locality degradation.
 
 Strong reduction:
 
@@ -444,6 +477,7 @@ Recent stabilization work increasingly focuses on:
 - compression hardening
 - interruption arrival realism
 - executable interruption locality
+- runtime consequence locality
 - runtime governability realism
 - representation scaling asymmetry
 - replay/recovery divergence

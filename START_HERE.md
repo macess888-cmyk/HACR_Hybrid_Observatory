@@ -165,6 +165,13 @@ attribution
 !=
 authority inheritance
 
+interruption visibility
+!=
+consequence locality
+
+represented governability may survive
+after executable consequence locality collapses operationally
+
 ---
 
 # Strongest Compression
@@ -179,6 +186,7 @@ The Observatory increasingly stabilizes around:
 
 - interruption arrival realism
 - executable interruption locality
+- runtime consequence locality
 - runtime governability realism
 - representation scaling asymmetry
 - continuation hardening
@@ -207,6 +215,7 @@ and toward:
 - runtime-local falsifiability
 - executable interruption realism
 - interruption arrival realism
+- runtime consequence locality
 - operational locality
 - reduction compression
 - synchronization burden
@@ -245,6 +254,26 @@ while executable interruption increasingly becomes:
 - continuation-preempted
 - practically unreachable
 - or unable to materially arrive before consequence hardens.
+
+---
+
+# Runtime Consequence Locality
+
+The repository increasingly pressures whether executable interruption can still materially affect runtime consequence locally before continuation hardens operationally.
+
+The repository therefore increasingly focuses on:
+
+- consequence arrival pressure
+- continuation hardening localization
+- runtime consequence divergence
+- interruption locality realism
+- executable consequence reachability
+- runtime consequence locality
+- and hostile-runtime operational falsifiability.
+
+Strong reduction:
+
+Represented governability may survive after executable consequence locality collapses operationally.
 
 ---
 
@@ -387,7 +416,8 @@ Including:
 - operational exhaustion
 - continuation pressure
 - representational protection asymmetry
-- and runtime accountability divergence.
+- runtime accountability divergence
+- and consequence-locality degradation.
 
 Strong reduction:
 
