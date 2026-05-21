@@ -8,6 +8,8 @@ ROOT = Path(__file__).resolve().parents[2]
 STATE_FILE = ROOT / "tools" / "runtime_state_renderer" / "SAMPLE_RUNTIME_STATE_SEQUENCE.json"
 RECEIPT_FILE = ROOT / "Receipts" / "HOSTILE_RUNTIME_CASE_001_RECEIPT.json"
 VERIFY_SCRIPT = ROOT / "tools" / "receipt_integrity_verifier" / "verify_receipt.py"
+HASH_SCRIPT = ROOT / "tools" / "receipt_hashing" / "generate_receipt_hash.py"
+HASH_FILE = ROOT / "Receipts" / "HOSTILE_RUNTIME_CASE_001_RECEIPT_SHA256.json"
 PIPELINE_OUTPUT_FILE = ROOT / "Receipts" / "PIPELINE_RUN_001_OUTPUT.json"
 
 PIPELINE_ID = "HOSTILE_RUNTIME_PIPELINE_001"
@@ -23,6 +25,25 @@ def load_json(path: Path) -> dict:
     except json.JSONDecodeError as exc:
         print(f"FAIL: invalid JSON in {path}: {exc}")
         sys.exit(1)
+
+
+def run_subprocess(args: list[str], failure_message: str) -> subprocess.CompletedProcess:
+    result = subprocess.run(
+        args,
+        capture_output=True,
+        text=True
+    )
+
+    if result.stdout:
+        print(result.stdout)
+
+    if result.returncode != 0:
+        if result.stderr:
+            print(result.stderr)
+        print(failure_message)
+        sys.exit(1)
+
+    return result
 
 
 def main() -> None:
@@ -51,20 +72,21 @@ def main() -> None:
     print("Verifying receipt...")
     print()
 
-    result = subprocess.run(
+    run_subprocess(
         [sys.executable, str(VERIFY_SCRIPT), str(RECEIPT_FILE)],
-        capture_output=True,
-        text=True
+        "Pipeline receipt verification FAILED."
     )
 
-    print(result.stdout)
+    print("Generating receipt SHA256 seal...")
+    print()
 
-    if result.returncode != 0:
-        print(result.stderr)
-        print("Pipeline verification FAILED.")
-        sys.exit(1)
+    run_subprocess(
+        [sys.executable, str(HASH_SCRIPT), str(RECEIPT_FILE), str(HASH_FILE)],
+        "Pipeline hash generation FAILED."
+    )
 
     receipt_data = load_json(RECEIPT_FILE)
+    hash_data = load_json(HASH_FILE)
 
     semantic_outputs = [
         state["classification"] for state in state_data["states"]
@@ -74,7 +96,10 @@ def main() -> None:
         "pipeline_id": PIPELINE_ID,
         "runtime_sequence_id": state_data["runtime_sequence_id"],
         "receipt_id": receipt_data["receipt_id"],
+        "receipt_sha256": hash_data["sha256"],
+        "hash_receipt_id": hash_data["hash_receipt_id"],
         "verification_status": "PASS",
+        "hash_generation_status": "PASS",
         "semantic_outputs_observed": semantic_outputs,
         "final_runtime_classification": semantic_outputs[-1],
         "verified_receipt_semantic_output": receipt_data["semantic_output"],
@@ -95,6 +120,7 @@ def main() -> None:
     )
 
     print("Pipeline verification PASSED.")
+    print("Pipeline hash generation PASSED.")
     print()
     print("Pipeline output written:")
     print(f"  {PIPELINE_OUTPUT_FILE}")

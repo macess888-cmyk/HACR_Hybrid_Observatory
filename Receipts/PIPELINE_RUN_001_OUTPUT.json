@@ -2,7 +2,10 @@
   "pipeline_id": "HOSTILE_RUNTIME_PIPELINE_001",
   "runtime_sequence_id": "RUNTIME_STATE_SEQUENCE_001",
   "receipt_id": "HOSTILE_RUNTIME_CASE_001_RECEIPT",
+  "receipt_sha256": "005609c943d9148792b37201c08c6d75a1ea4eb9d27727727c78a276eb6d4674",
+  "hash_receipt_id": "HOSTILE_RUNTIME_CASE_001_RECEIPT_SHA256",
   "verification_status": "PASS",
+  "hash_generation_status": "PASS",
   "semantic_outputs_observed": [
     "PASS",
     "HOLD",
