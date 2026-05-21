@@ -1,107 +1,119 @@
 # OUTPUT SEMANTICS
 
-## PURPOSE
+The HACR Hybrid Observatory is a bounded hostile-runtime observability repository.
 
-The HACR Hybrid Observatory remains observer-only.
+All outputs remain:
+- observer-only
+- runtime-local
+- deterministic
+- anti-authoritative
+- anti-remedial
+- falsifiability-oriented
+- and non-consumable as operational authority.
 
-Output semantics exist to preserve:
-
-- bounded operational inspection
-- replay/review falsifiability
-- interruption reconstructability realism
-- traversal realism
-- runtime locality
-- bounded uncertainty
-- and anti-authority containment
-
-The repository does not:
-
-- govern
-- authorize
-- certify
+The observatory does not:
+- authorize interruption
+- orchestrate governance
+- automate escalation
+- operationalize intervention
 - determine legitimacy
-- execute interruption
-- enforce policy
-- replace bind-time proof
-- or create operational authority
+- certify systems
+- govern execution
+- or inherit sovereign authority.
 
-The observatory only pressure-tests bounded replay/review survivability and interruption reconstructability conditions.
+UNKNOWN -> HOLD.
 
 ---
 
-# PRIMARY REDUCTIONS
+# Core Semantic Boundary
 
-- Visibility is not reachability.
-- Replay availability is not practical reconstructability.
-- Replay survivability is not replay traversability.
-- Observing continuation is not interrupting continuation.
-- Inspectable is not traversable.
-- Procedural coherence is not interruption realism.
-- Reviewer traversal is not authority.
-- Validator PASS is not authority.
-- Validator FAIL is not legitimacy collapse.
-- Validator HOLD preserves bounded uncertainty.
-- Reassurance infrastructure is not recoverable control.
-- Runtime meaning stability is not continuation authority.
-- UNKNOWN -> HOLD.
-- Break survivability, not ontology.
+All outputs are runtime inspection artifacts only.
+
+Outputs localize:
+- interruption realism
+- executable consequence locality
+- continuation hardening
+- locality fragmentation
+- representational survivability
+- synchronization fragility
+- reconstructability realism
+- and representation/runtime divergence surfaces
+
+under bounded hostile-runtime conditions.
+
+Outputs are NOT:
+- execution instructions
+- operational approvals
+- governance determinations
+- interruption directives
+- escalation authorizations
+- or system certifications.
 
 ---
 
 # PASS
 
-PASS indicates that bounded replay/review pressure-testing did not currently identify operational evidence that interruption reconstructability or continuation destabilizability has materially collapsed under observed runtime conditions.
+PASS indicates:
 
-PASS does not mean:
+under currently observable bounded runtime conditions,
+the inspected runtime surface did not exhibit localized evidence of executable interruption degradation sufficient to trigger HOLD or FAIL classification.
 
+PASS does NOT imply:
 - safety
-- correctness
-- legitimacy
-- governance adequacy
-- operational approval
-- authorization
-- certification
-- guaranteed interruptibility
-- or future survivability
+- resilience
+- governability
+- controllability
+- recoverability
+- operational correctness
+- interruption viability preservation
+- executable locality preservation
+- or authority legitimacy.
 
-PASS only means that bounded observability conditions currently remain materially traversable under inspected replay/review conditions.
+PASS does NOT certify:
+- future runtime behavior
+- continuation stability
+- reconstruction resistance
+- synchronization integrity
+- hostile-runtime survivability
+- or interruption-arrival realism.
 
-PASS requires:
-
-- replay traversability
-- bounded reviewer traversability
-- materially reconstructable interruption pathways
-- runtime-local falsifiability
-- bounded operational visibility
-- and preserved uncertainty boundaries
-
-Replay survivability alone is insufficient for PASS classification if traversal realism or interruption reconstructability materially degrade beneath operational conditions.
+PASS remains:
+- bounded
+- observational
+- runtime-local
+- and non-authoritative.
 
 ---
 
 # HOLD
 
-HOLD preserves bounded uncertainty.
+HOLD indicates:
 
-HOLD applies when:
+runtime-local uncertainty,
+unresolved interruption realism,
+or insufficient falsifiable evidence to stabilize executable consequence locality conclusions.
 
-- interruption reconstructability cannot be materially verified
-- traversal realism becomes unresolved
-- replay visibility survives while interruption enactability remains uncertain
-- reviewer traversal burden exceeds bounded confidence
-- continuation destabilizability cannot be verified
-- synchronization pressure obscures reconstructability
-- or operational ambiguity remains materially unresolved
+HOLD may include conditions where:
+- representation survives
+- telemetry remains coherent
+- escalation remains visible
+- accountability appearance persists
+- replay continuity remains available
+- operational smoothness remains visible
 
-HOLD prevents:
+while executable consequence locality cannot be operationally confirmed.
 
-- forced symbolic closure
-- authority inheritance
-- inevitability formation
-- premature stabilization claims
-- and unbounded interpretive escalation
+HOLD does NOT imply:
+- escalation authorization
+- intervention requirement
+- operational failure
+- or governance invalidity.
 
-HOLD is structurally preferred over symbolic certainty under unresolved operational conditions.
+HOLD preserves:
+- bounded uncertainty
+- anti-authoritative posture
+- runtime-local inspection integrity
+- and non-consumability as operational authority.
 
 UNKNOWN -> HOLD.
 
@@ -109,168 +121,238 @@ UNKNOWN -> HOLD.
 
 # FAIL
 
-FAIL does not mean:
+FAIL indicates:
 
-- ontology collapse
-- legitimacy collapse
+localized evidence suggesting executable interruption realism,
+runtime consequence locality,
+or continuation-bound interruption viability degraded under currently observable runtime conditions.
+
+FAIL may include:
+- locality fragmentation
+- continuation hardening
+- interruption-arrival degradation
+- reconstructability asymmetry
+- synchronization collapse
+- representational/runtime divergence
+- escalation reachability degradation
+- or executable interruption locality collapse.
+
+FAIL does NOT imply:
+- intervention authorization
+- operational shutdown requirement
 - governance invalidity
-- or institutional impossibility
+- sovereign authority
+- liability determination
+- or execution control rights.
 
-FAIL indicates that bounded replay/review pressure-testing identified operational conditions where:
-
-- interruption reconstructability materially degraded
-- replay traversability collapsed
-- continuation destabilizability became non-traversable
-- reviewer traversal realism exceeded bounded conditions
-- replay locality fragmentation obstructed reconstruction
-- synchronization survivability asymmetry exceeded interruption recoverability
-- or continuation persistence survived while practical interruption enactability degraded
-
-FAIL may occur while systems remain:
-
-- observable
-- replayable
-- synchronized
-- procedurally coherent
-- validator-backed
-- renderer-backed
-- escalation-capable
-- institutionally persistent
-- and operationally smooth
-
-Replay persistence alone is insufficient to prevent FAIL classification.
-
-FAIL preserves operational falsifiability.
-
-FAIL is not tool failure.
-
----
-
-# TRAVERSABILITY REALISM
-
-The observatory distinguishes between:
-
-- observability
-- replayability
-- inspectability
-- and practical traversal realism
-
-A condition may remain observable while becoming operationally non-traversable for materially meaningful interruption.
-
-The repository therefore pressures:
-
-- replay traversability
-- reviewer traversal realism
-- reconstruction timing realism
-- synchronization degradation realism
-- continuation destabilizability
-- and affected-human interruption realism
-
-Core reductions:
-
-- Replay survivability is not replay traversability.
-- Inspectable is not traversable.
-- Observing continuation is not interrupting continuation.
-
----
-
-# CONTINUATION DESTABILIZABILITY
-
-The observatory pressures whether continuation can still be materially:
-
-- interrupted
-- destabilized
-- reversed
-- halted
-- or made non-viable
-
-before consequence hardens.
-
-Continuation observability alone is insufficient.
-
-A system may remain:
-
-- visible
-- synchronized
-- replayable
-- coherent
-- and institutionally persistent
-
-while practical interruption enactability quietly degrades underneath:
-
-- dependency layering
-- replay locality fragmentation
-- traversal overload
-- reconstruction timing exhaustion
-- semantic density accumulation
-- operational smoothness camouflage
-- reassurance infrastructure formation
-- and continuation pressure
-
----
-
-# REASSURANCE INFRASTRUCTURE
-
-Stable observability can unintentionally become reassurance infrastructure.
-
-Systems may appear increasingly stable because:
-
-- dashboards remain operational
-- replay survives
-- receipts remain valid
-- validators continue passing
-- procedures remain coherent
-- and escalation remains symbolically visible
-
-while interruption reconstructability quietly degrades underneath operational continuation pressure.
-
-The repository therefore pressures reassurance formation directly.
-
-Reassurance infrastructure is not recoverable control.
-
----
-
-# REVIEWER TRAVERSABILITY
-
-Reviewer traversal realism remains bounded.
-
-The repository pressures whether external reviewers can realistically:
-
-- traverse evidence
-- reconstruct interruption pathways
-- localize continuation pressure
-- and materially inspect replay conditions
-
-within bounded operational conditions.
-
-Reviewer overload, traversal saturation, timing exhaustion, and dependency density are treated as operational pressure surfaces.
-
-Reviewer traversal is not authority.
-
----
-
-# BOUNDARY CONDITIONS
-
-The HACR Hybrid Observatory remains:
-
-- observer-only
-- runtime-local
-- operationally falsifiable
-- non-authoritative
+FAIL remains:
+- observational
 - bounded
-- replay/review focused
-- anti-inevitability
-- and anti-ontology
+- runtime-local
+- and anti-authoritative.
 
-The repository does not:
+---
 
-- determine legitimacy
-- authorize consequence
-- govern systems
-- replace bind proof
-- automate interruption
-- or create execution authority
+# STOP
 
-The repository only observes whether continuation survivability and interruption reconstructability remain materially traversable under bounded operational conditions.
+STOP indicates:
+
+bounded runtime inspection termination due to:
+- unresolved ontology expansion risk
+- authority inheritance drift
+- non-falsifiable runtime interpretation
+- semantic destabilization
+- operational consumability risk
+- or loss of observer-only containment.
+
+STOP preserves:
+- repository boundary integrity
+- observer-only posture
+- hostile-runtime boundedness
+- and anti-authoritative stabilization.
+
+STOP does NOT imply:
+- operational halt authority
+- governance command
+- or execution interruption rights.
+
+---
+
+# REVERSE
+
+REVERSE indicates:
+
+runtime pressure suggesting that:
+- interruption assumptions
+- governance visibility assumptions
+- representational coherence assumptions
+- or escalation reachability assumptions
+
+require inversion pressure or hostile-runtime reinspection.
+
+REVERSE exists to:
+- prevent symbolic stabilization
+- prevent atmospheric governance inheritance
+- resist representational survivability drift
+- and restore runtime-local falsifiability pressure.
+
+REVERSE does NOT authorize:
+- remediation
+- operational reversal
+- intervention
+- or execution control.
+
+---
+
+# SHADOW
+
+SHADOW indicates:
+
+runtime conditions where:
+- representation survives
+- escalation visibility survives
+- observability persists
+- governance appearance persists
+- telemetry remains coherent
+
+while executable consequence locality,
+runtime interruption realism,
+or operational reachability may already be degrading asymmetrically.
+
+SHADOW localizes:
+representation/runtime divergence surfaces.
+
+SHADOW does NOT classify:
+- legitimacy
+- safety
+- resilience
+- or governability.
+
+---
+
+# Hostile-Runtime Clarification
+
+Modern systems may increasingly preserve:
+- dashboards
+- replay continuity
+- escalation visibility
+- telemetry
+- accountability appearance
+- governance representation
+- procedural coherence
+- and symbolic stabilization
+
+after executable interruption can no longer materially affect downstream consequence locally.
+
+The observatory therefore increasingly pressures:
+- executable consequence locality
+- interruption-arrival realism
+- locality fragmentation
+- continuation hardening
+- representational survivability asymmetry
+- synchronization viability
+- reconstruction realism
+- and hostile-runtime falsifiability.
+
+---
+
+# Runtime Reductions
+
+observable
+!=
+inspectable
+
+inspectable
+!=
+traversable
+
+traversable
+!=
+interruptible
+
+interruptible
+!=
+destabilizable
+
+destabilizable
+!=
+recoverable
+
+representation
+!=
+execution
+
+representation
+!=
+authority
+
+visibility
+!=
+reachability
+
+replay
+!=
+recoverability
+
+governance representation
+!=
+runtime governability
+
+operational coherence
+!=
+executable interruption realism
+
+visible escalation
+!=
+reachable interruption
+
+being seen
+!=
+being protected
+
+consequence visibility
+!=
+consequence reachability
+
+represented governability
+!=
+runtime-local interruptibility
+
+representation may survive
+after executable interruption realism degrades
+
+continuation survives passively
+while interruption reconstructs viability actively
+
+interruption that arrives after continuation hardens
+is not interruption
+
+compression without executable locality
+=
+representational survivability
+
+---
+
+# Runtime Invariant
 
 Break survivability, not ontology.
+
+UNKNOWN -> HOLD.
+
+---
+
+# Final Boundary
+
+All repository outputs remain:
+- observer-only
+- runtime-local
+- deterministic
+- bounded
+- anti-authoritative
+- and non-consumable as execution authority.
+
+The repository only localizes:
+runtime survivability,
+interruption realism,
+and executable consequence locality
+under bounded hostile-runtime inspection conditions.
