@@ -1,0 +1,28 @@
+{
+  "case_id": "JUDGEMENT_FORMATION_CASE_001",
+  "scenario": "reviewer receives AI-generated recommendation after interpretive framing already narrowed",
+  "runtime_conditions": {
+    "review_visible": true,
+    "alternative_positions_available": false,
+    "hesitation_legitimacy": "weak",
+    "reassessment_capacity": "compressed",
+    "continuation_pressure": "high",
+    "authority_to_reopen_frame": false
+  },
+  "observed_surfaces": [
+    "category_pre_shaping",
+    "role_position_divergence",
+    "review_without_authority",
+    "continuation_hardening",
+    "interpretive_narrowing"
+  ],
+  "formation_status": "PRE_SHAPED",
+  "classification": "RATIFICATION_ONLY",
+  "reduction": "visible review surviving != judgement formation surviving",
+  "boundary": {
+    "observer_only": true,
+    "runtime_local": true,
+    "anti_authority": true,
+    "non_ontological": true
+  }
+}

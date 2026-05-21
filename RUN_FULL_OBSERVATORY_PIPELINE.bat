@@ -37,6 +37,14 @@ echo [8] Interruption traversability mapper
 python tools\interruption_traversability_mapper\run_traversability_mapper.py
 
 echo.
+echo [9] Compression failure boundary tester
+python tools\compression_failure_boundary_tester\run_compression_boundary_test.py
+
+echo.
+echo [10] Judgement formation localizer
+python tools\judgement_formation_localizer\run_judgement_localizer.py
+
+echo.
 echo ============================================
 echo FULL OBSERVATORY PIPELINE COMPLETE
 echo ============================================
