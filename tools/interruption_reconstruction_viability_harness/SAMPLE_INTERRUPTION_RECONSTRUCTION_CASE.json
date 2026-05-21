@@ -1,0 +1,18 @@
+{
+  "case_id": "INTERRUPTION_RECONSTRUCTION_CASE_001",
+  "representation_status": "healthy",
+  "interruption_representation": "visible",
+  "reconstruction_latency": "high",
+  "synchronization_feasibility": "degraded",
+  "locality_fragmentation": "detected",
+  "continuation_hardening": "stabilizing",
+  "executable_effect_window": "closing",
+  "classification": "HOLD",
+  "reduction": "represented interruption != reconstructable interruption",
+  "boundary": {
+    "observer_only": true,
+    "runtime_local": true,
+    "anti_authoritative": true,
+    "non_remedial": true
+  }
+}
