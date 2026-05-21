@@ -54,6 +54,24 @@ All outputs remain bounded observational artifacts only.
 
 ---
 
+# Repository Continuity
+
+Current repository continuity maintained by:
+
+Jake Macdonald
+
+Hybrid Systems Architect
+
+Observer-only hostile-runtime interruption realism inspection.
+
+Strong reduction:
+
+Authorship
+!=
+authority.
+
+---
+
 # Current Repository State
 
 The Observatory increasingly stabilizes around:
@@ -196,6 +214,10 @@ compression without executable locality
 =
 representational survivability
 
+attribution
+!=
+authority inheritance
+
 ---
 
 # Strongest Compression
@@ -230,7 +252,8 @@ Current hostile/runtime pressure surfaces increasingly include:
 - runtime representational drift
 - interruption reconstructability degradation
 - symbolic governance survivability
-- and runtime reality divergence.
+- runtime reality divergence
+- and false governability persistence.
 
 ---
 
