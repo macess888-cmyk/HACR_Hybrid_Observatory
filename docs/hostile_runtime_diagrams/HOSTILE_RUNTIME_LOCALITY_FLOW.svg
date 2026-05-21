@@ -1,0 +1,63 @@
+<svg width="1200" height="700" xmlns="http://www.w3.org/2000/svg">
+
+<rect width="1200" height="700" fill="white"/>
+
+<text x="40" y="50" font-size="28" font-family="Arial">
+HOSTILE RUNTIME LOCALITY FLOW
+</text>
+
+<text x="40" y="90" font-size="16" font-family="Arial">
+Representation may survive after executable interruption realism degrades.
+</text>
+
+<!-- Boxes -->
+
+<rect x="60" y="160" width="220" height="80" fill="#e3f2fd" stroke="black"/>
+<text x="80" y="205" font-size="18" font-family="Arial">
+Visible Governance Layer
+</text>
+
+<rect x="340" y="160" width="220" height="80" fill="#fff3e0" stroke="black"/>
+<text x="365" y="205" font-size="18" font-family="Arial">
+Operational Continuation
+</text>
+
+<rect x="620" y="160" width="220" height="80" fill="#ffebee" stroke="black"/>
+<text x="640" y="205" font-size="18" font-family="Arial">
+Locality Fragmentation
+</text>
+
+<rect x="900" y="160" width="220" height="80" fill="#f3e5f5" stroke="black"/>
+<text x="925" y="205" font-size="18" font-family="Arial">
+Interruption Arrival Decay
+</text>
+
+<!-- Arrows -->
+
+<line x1="280" y1="200" x2="340" y2="200" stroke="black" stroke-width="3"/>
+<line x1="560" y1="200" x2="620" y2="200" stroke="black" stroke-width="3"/>
+<line x1="840" y1="200" x2="900" y2="200" stroke="black" stroke-width="3"/>
+
+<!-- Lower Notes -->
+
+<text x="70" y="340" font-size="18" font-family="Arial">
+Visibility != Reachability
+</text>
+
+<text x="70" y="390" font-size="18" font-family="Arial">
+Representation != Executable Consequence Influence
+</text>
+
+<text x="70" y="440" font-size="18" font-family="Arial">
+Governance Representation != Runtime Governability
+</text>
+
+<text x="70" y="490" font-size="18" font-family="Arial">
+Interruption that arrives after continuation hardens is not interruption
+</text>
+
+<text x="70" y="560" font-size="22" font-family="Arial">
+Break survivability, not ontology.
+</text>
+
+</svg>

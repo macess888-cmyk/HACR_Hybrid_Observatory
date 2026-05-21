@@ -1,0 +1,50 @@
+{
+  "case_id": "LOCALITY_TRAVERSAL_CASE_001",
+  "classification": "FAIL",
+  "runtime_layers": [
+    {
+      "layer": "visibility",
+      "status": "stable"
+    },
+    {
+      "layer": "telemetry",
+      "status": "stable"
+    },
+    {
+      "layer": "escalation_representation",
+      "status": "stable"
+    },
+    {
+      "layer": "continuation_hardening",
+      "status": "increasing"
+    },
+    {
+      "layer": "interruption_arrival_realism",
+      "status": "degrading"
+    },
+    {
+      "layer": "locality_fragmentation",
+      "status": "detected"
+    },
+    {
+      "layer": "executable_consequence_locality",
+      "status": "operationally_uncertain"
+    }
+  ],
+  "runtime_reductions": [
+    "visibility != reachability",
+    "representation != execution",
+    "interruptible != interruptible in time",
+    "distributed continuation != distributed interruptibility"
+  ],
+  "result": {
+    "semantic_output": "FAIL",
+    "reason": "Executable interruption can no longer materially affect consequence before continuation hardens."
+  },
+  "boundary": {
+    "observer_only": true,
+    "anti_authoritative": true,
+    "non_remedial": true,
+    "runtime_local": true
+  }
+}
