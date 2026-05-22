@@ -7,21 +7,24 @@ HACR Hybrid Observatory outputs represent bounded runtime observations under con
 Outputs exist to support:
 
 - deterministic replay
-- bounded runtime localization
+- runtime-local localization
 - interruption survivability inspection
-- synchronization pressure inspection
-- continuation topology analysis
-- consequence-space traversal inspection
+- synchronization pressure analysis
+- continuation hardening inspection
+- interruption traversal realism
 - hostile-runtime observability
+- bounded topology rendering
+- consequence-space compression inspection
 
 Outputs do NOT represent:
-- operational authority
-- governance legitimacy
-- predictive certainty
-- executable intervention capability
+
+- governance authority
+- operational legitimacy
 - escalation authorization
-- admissibility determination
+- executable intervention capability
+- predictive certainty
 - remediation instruction
+- admissible execution
 
 ---
 
@@ -33,22 +36,27 @@ Inspection does not inherit governability.
 
 Localization does not inherit execution capability.
 
+Traversal visibility does not inherit interruption constructability.
+
+Representational governability does not inherit executable governability.
+
 ---
 
-# Output Classification Scope
+# Output Scope
 
-Outputs may describe:
+Outputs may localize:
 
 - interruption traversal pressure
-- synchronization density
-- continuation survivability
-- escalation arrival delay
-- dependency gravity
 - interruption locality decay
-- runtime veto locality
+- synchronization exhaustion
+- continuation hardening pressure
 - consequence arrival compression
+- escalation traversal delay
+- dependency gravity
+- runtime veto locality
+- interruption constructability decay
 - representational governability camouflage
-- continuation hardening topology
+- executable consequence-space reachability
 
 under bounded runtime assumptions.
 
@@ -86,13 +94,25 @@ visibility surviving
 !=
 governability surviving
 
+continuation survivability
+!=
+interruption survivability
+
 semantic interruptibility
 !=
 operational interruption constructability
 
-continuation survivability
-!=
-interruption survivability
+continuation acceleration
+may outpace
+interruption constructability
+
+representational governability
+may survive
+after executable interruption locality collapses
+
+asymmetry
+does not imply
+destiny
 
 ---
 
@@ -101,15 +121,17 @@ interruption survivability
 Hostile-runtime outputs do NOT imply:
 
 - interruption feasibility
-- successful intervention
+- interruption success
 - executable veto capability
 - escalation effectiveness
 - governance survivability
 - synchronization sufficiency
 - operational control
 - interruption arrival viability
+- remediation correctness
+- intervention necessity
 
-Outputs localize observable runtime conditions only.
+Outputs localize bounded runtime conditions only.
 
 ---
 
@@ -132,6 +154,7 @@ The observatory may NOT:
 - enforce escalation
 - operationalize interruption
 - replace human accountability
+- provide offensive capability
 
 ---
 
@@ -140,12 +163,13 @@ The observatory may NOT:
 All outputs remain:
 
 - runtime-local
-- bounded
 - deterministic
 - replay-oriented
 - observer-only
+- bounded
 - non-remediative
 - falsifiability-oriented
+- non-authoritative
 
 Outputs do not generalize beyond inspected runtime conditions.
 
@@ -158,22 +182,51 @@ Where applicable, outputs may include:
 - deterministic receipts
 - SHA256 integrity hashes
 - replay-local inspection artifacts
-- bounded traversal renderings
-- topology-local observability maps
-- synchronization pressure visualizations
+- bounded topology renderings
+- synchronization pressure maps
+- interruption locality visualizations
+- continuation hardening render outputs
+- consequence compression render artifacts
 
 These exist to support reproducibility only.
+
+---
+
+# Continuation Hardening Renderer Semantics
+
+Continuation hardening renderer outputs localize:
+
+- continuation pressure
+- interruption constructability decay
+- synchronization exhaustion
+- escalation traversal compression
+- consequence hardening topology
+
+under supplied bounded runtime assumptions.
+
+Renderer outputs do NOT imply:
+
+- interruption impossibility
+- governance invalidity
+- escalation authorization
+- intervention necessity
+- operational certainty
+- predictive inevitability
+
+The renderer exists solely for deterministic hostile-runtime topology inspection.
 
 ---
 
 # Anti-Predictive Boundary
 
 The observatory does not:
+
 - predict inevitability
 - determine future outcomes
-- guarantee interruption success
 - certify escalation viability
+- guarantee interruption success
 - infer destiny from asymmetry
+- operationalize continuation trajectories
 
 Important stabilization:
 
@@ -188,18 +241,22 @@ Acceleration pressure does not imply inevitability.
 Representational governability may survive after executable governability collapses.
 
 Outputs therefore do NOT imply that:
+
 - visible governance
-- visible escalation
 - visible interruption pathways
-- visible review systems
-- visible veto structures
+- visible escalation systems
+- visible review structures
+- visible veto systems
 
 remain operationally executable under acceleration conditions.
 
 The observatory only localizes bounded divergence between:
+
 - representational visibility
 and
 - executable interruption constructability
+
+under supplied runtime assumptions.
 
 ---
 
@@ -207,17 +264,21 @@ and
 
 Consequence-space may harden faster than interruption-space can synchronize.
 
-Outputs localize:
+Outputs may localize:
+
 - synchronization exhaustion
 - traversal delay
 - interruption arrival decay
 - escalation compression
-- consequence hardening pressure
+- continuation hardening
+- runtime-local veto decay
 
 without:
+
 - optimizing interruption
 - directing escalation
 - recommending intervention
+- authorizing governance operations
 
 ---
 

@@ -1,0 +1,30 @@
+{
+  "case_id": "sample_continuation_hardening_001",
+  "description": "Bounded sample for continuation hardening topology inspection.",
+  "nodes": [
+    {
+      "id": "intake",
+      "continuation_pressure": 2,
+      "interruption_constructability": 8,
+      "synchronization_load": 1
+    },
+    {
+      "id": "routing",
+      "continuation_pressure": 5,
+      "interruption_constructability": 5,
+      "synchronization_load": 4
+    },
+    {
+      "id": "execution_queue",
+      "continuation_pressure": 8,
+      "interruption_constructability": 3,
+      "synchronization_load": 7
+    },
+    {
+      "id": "consequence_surface",
+      "continuation_pressure": 10,
+      "interruption_constructability": 1,
+      "synchronization_load": 9
+    }
+  ]
+}

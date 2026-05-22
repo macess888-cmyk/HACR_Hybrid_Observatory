@@ -2,51 +2,55 @@
 
 ## Overview
 
-HACR Hybrid Observatory is a deterministic, observer-only runtime observability framework focused on bounded inspection of:
+HACR Hybrid Observatory is a deterministic, observer-only runtime observability framework for bounded inspection of:
 
 - interruption constructability
 - continuation survivability
 - synchronization pressure
-- dependency gravity
 - escalation traversal realism
-- runtime-local interruption feasibility
 - consequence arrival compression
-- hostile-runtime interruption topology
+- runtime veto locality
+- interruption latency
+- continuation hardening topology
+- dependency gravity
+- hostile-runtime interruption feasibility
 
 under controlled runtime conditions.
 
-The repository is designed for:
+The repository focuses on:
 
-- bounded replay
-- deterministic localization
-- reproducible inspection
-- runtime pressure visualization
-- interruption survivability analysis
-- continuation topology inspection
+- deterministic replay
+- bounded topology inspection
+- interruption survivability localization
+- synchronization pressure analysis
+- hostile-runtime observability
+- continuation hardening inspection
+- runtime-local traversal analysis
 
 without inheriting:
 
-- execution authority
 - governance authority
-- legitimacy determination
+- execution authority
+- operational legitimacy
 - predictive enforcement
 - remediation automation
-- operational optimization
+- escalation orchestration
 
 ---
 
-# Core Runtime Focus
+# Core Runtime Center
 
 The repository increasingly stabilizes around:
 
 > Governability survives only where executable interruption remains operationally constructable before consequence hardens under acceleration conditions.
 
 The observatory does NOT determine:
+
 - what should happen
-- what is legitimate
+- what deserves continuation
 - what must be interrupted
-- who should govern
-- whether systems deserve continuation
+- what governance is legitimate
+- what intervention is correct
 
 The observatory only localizes bounded runtime conditions.
 
@@ -94,6 +98,14 @@ continuation acceleration
 may outpace
 interruption constructability
 
+representational governability
+may survive
+after executable interruption locality collapses
+
+asymmetry
+does not imply
+destiny
+
 ---
 
 # Repository Boundaries
@@ -101,58 +113,58 @@ interruption constructability
 The HACR Hybrid Observatory remains:
 
 - observer-only
-- non-authoritative
-- runtime-local
 - deterministic
+- runtime-local
 - replay-oriented
-- falsifiability-oriented
+- non-authoritative
+- non-remediative
 - anti-ontological
+- falsifiability-oriented
 - defensive-only
 - non-predictive
-- non-remediative
 
-The repository may:
+The observatory may:
 - inspect
 - localize
 - replay
 - trace
 - map
 - pressure-test
-- visualize bounded runtime topology
+- render bounded topology
 
-The repository may NOT:
+The observatory may NOT:
 - authorize execution
 - optimize governance
 - automate intervention
 - determine legitimacy
 - operationalize escalation
-- enforce interruption
-- replace human accountability
 - provide offensive capability
+- replace human accountability
 
 ---
 
 # Hostile Runtime Observability
 
-Recent stabilization work focuses on:
+Current hostile-runtime stabilization work focuses on:
 
 - interruption latency localization
 - runtime veto locality decay
-- representational governability camouflage
 - consequence arrival compression
-- synchronization exhaustion pressure
 - continuation hardening topology
-- interruption traversal realism
-- escalation arrival feasibility
+- synchronization exhaustion pressure
+- escalation traversal realism
+- dependency gravity inspection
+- interruption constructability decay
+- representational governability camouflage
 - executable consequence-space reachability inspection
 
-under bounded hostile-runtime conditions.
+under bounded runtime assumptions.
 
-The observatory focuses on whether executable interruption remains operationally constructable before consequence-space hardens under acceleration conditions.
+The repository focuses on whether executable interruption remains operationally constructable before consequence-space hardens under acceleration conditions.
 
 ---
 
-# Current Observatory Center
+# Current Observatory Principle
 
 Break survivability, not ontology.
 
@@ -164,48 +176,83 @@ UNKNOWN -> HOLD.
 
 ## governance/
 
-Boundary definitions, observability restrictions, stabilization reductions, runtime-local inspection notes, and semantic containment infrastructure.
+Observer-only runtime boundary definitions and stabilization infrastructure.
 
 Includes:
-- hostile-runtime observability
-- interruption locality
-- synchronization pressure
-- continuation topology
-- dependency gravity
-- escalation traversal realism
-- observability containment
-- semantic scope stabilization
+
+- hostile runtime observability boundaries
+- interruption locality reductions
+- synchronization pressure boundaries
+- consequence compression semantics
+- runtime veto locality inspection
+- continuation topology stabilization
+- semantic containment infrastructure
+- representational camouflage boundaries
+- escalation traversal realism notes
+
+Governance notes remain:
+- non-authoritative
+- runtime-local
+- deterministic
+- observer-only
 
 ---
 
 ## tools/
 
-Deterministic observer-only instrumentation.
+Deterministic observer-only instrumentation and replay-safe topology inspection.
 
-Examples include:
+Current tooling direction includes:
+
 - interruption latency mapping
-- continuation topology inspection
-- runtime veto locality localization
-- consequence arrival compression inspection
+- continuation hardening rendering
 - synchronization pressure localization
-- survivability traversal rendering
-- deterministic replay harnesses
-- bounded topology visualization
+- runtime veto locality inspection
+- consequence arrival compression inspection
+- traversal topology rendering
+- dependency gravity mapping
+- bounded replay harnesses
+- deterministic receipt generation
 
-Tooling remains:
+All tooling remains:
+
 - observer-only
-- replay-safe
 - deterministic
+- replay-safe
 - bounded
 - non-remediative
+- non-authoritative
+
+---
+
+## continuation_hardening_renderer
+
+Deterministic observer-only renderer for bounded continuation hardening topology inspection.
+
+The renderer localizes:
+
+- continuation hardening pressure
+- interruption constructability decay
+- synchronization exhaustion
+- escalation traversal compression
+- consequence arrival hardening
+
+without:
+- optimizing interruption
+- authorizing escalation
+- determining governance legitimacy
+- automating remediation
+
+Outputs remain bounded runtime-local observability artifacts only.
 
 ---
 
 # Output Semantics
 
-Outputs represent bounded runtime observations only.
+Repository outputs represent bounded runtime observations only.
 
 Outputs do NOT imply:
+
 - governance validity
 - interruption feasibility
 - escalation success
@@ -213,6 +260,7 @@ Outputs do NOT imply:
 - predictive certainty
 - admissible execution
 - institutional legitimacy
+- remediation correctness
 
 Outputs localize observable runtime conditions under bounded inspection assumptions only.
 
@@ -221,20 +269,23 @@ Outputs localize observable runtime conditions under bounded inspection assumpti
 # Reproducibility
 
 The repository prioritizes:
+
 - deterministic outputs
-- bounded replay
-- reproducible localization
+- replay-safe inspection
+- bounded runtime localization
 - stable receipt generation
-- controlled runtime inspection
-- reviewer-safe observability
+- topology-local observability
+- reviewer reproducibility
+- deterministic traversal rendering
 
 Where applicable:
 - SHA256 receipt integrity
-- deterministic traversal outputs
-- topology-local inspection receipts
-- bounded visualization artifacts
+- deterministic runtime artifacts
+- replay-local receipts
+- topology render outputs
+- synchronization pressure visualizations
 
-are used to support reproducibility.
+support reproducibility.
 
 ---
 
@@ -243,17 +294,21 @@ are used to support reproducibility.
 The repository maintains a defensive-only observability posture.
 
 The observatory does NOT:
-- operationalize exploitation
-- automate intervention
+
+- automate exploitation
+- operationalize escalation
 - optimize disruption
-- provide offensive tooling
-- enable autonomous escalation
+- enable offensive execution
+- coordinate intervention
+- provide autonomous governance capability
 
 Inspection remains bounded to:
 - localization
-- traversal inspection
-- runtime topology analysis
-- deterministic observability
+- replay
+- topology analysis
+- synchronization inspection
+- continuation survivability analysis
+- interruption constructability localization
 
 ---
 
@@ -263,33 +318,36 @@ HACR Hybrid Observatory is NOT:
 
 - a governance authority
 - a certification framework
+- an interruption orchestration platform
 - a predictive engine
-- an enforcement mechanism
-- a remediation platform
-- an interruption orchestration system
+- a remediation system
 - an operational command layer
-- an autonomous governance system
+- an escalation automation framework
+- an autonomous governance architecture
 
-The repository exists solely for bounded runtime observability and interruption survivability inspection under controlled conditions.
+The repository exists solely for bounded runtime observability and interruption survivability inspection under controlled runtime conditions.
 
 ---
 
-# Stabilization Principle
+# Stabilization Direction
 
 The repository continuously stabilizes toward:
 
 - tighter runtime locality
-- stronger observer-only boundaries
+- stronger observer-only containment
+- deterministic instrumentation
+- bounded hostile-runtime realism
+- replay-safe topology inspection
 - reduced semantic inheritance
 - minimized authority drift
-- deterministic inspection
-- bounded hostile-runtime realism
+- geometric/runtime-local inspection
 
 without reopening:
 - ontology
-- legitimacy
-- authority inheritance
-- autonomous governance semantics
+- legitimacy authority
+- execution authority
+- inevitability semantics
+- autonomous governance
 
 ---
 
