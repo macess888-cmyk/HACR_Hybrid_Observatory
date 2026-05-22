@@ -1,0 +1,10 @@
+{
+  "classification": "SEMANTIC_AUTHORIZATION_RISK",
+  "compression_integrity": "stable",
+  "localization_integrity": "stable",
+  "constraint_integrity": "stable",
+  "core_reduction": "persistent exposure != justified differentiation",
+  "ontology_authorization": false,
+  "recommended_state": "HOLD",
+  "sha256": "08b8488fff032b5df79c72b0d784bf6eabf0c8e4ed5a00d57fe376e55d3d54ce"
+}

@@ -1,560 +1,102 @@
-# HACR Hybrid Observatory
+# Observer Pressure Localization
 
-## Overview
+The HACR Hybrid Observatory now includes bounded observer-pressure instrumentation focused on:
 
-HACR Hybrid Observatory is a deterministic, observer-only runtime observability framework for bounded inspection of:
+- familiarity accumulation
+- distinction pressure
+- semantic authorization pressure
+- categorization drift pressure
+- survivability-driven expansion pressure
+- HOLD-preserving inspection stabilization
 
-- interruption constructability
-- continuation survivability
-- synchronization pressure
-- interruption window decay
-- escalation traversal realism
-- escalation traversal compression
-- consequence arrival compression
-- runtime veto locality
-- interruption latency
-- continuation hardening topology
-- dependency gravity
-- synchronization exhaustion
-- hostile-runtime interruption feasibility
+This branch intentionally examines a different pressure surface than:
 
-under controlled runtime conditions.
+- compression failure
+- localization invalidity
+- coupling degradation
+- topology collapse
+- or runtime interruption failure.
 
-The repository focuses on:
+The observatory now recognizes that inspection geometry may remain:
 
-- deterministic replay
-- bounded topology inspection
-- interruption survivability localization
-- synchronization pressure analysis
-- continuation hardening inspection
-- interruption window decay inspection
-- escalation traversal inspection
-- dependency gravity inspection
-- hostile-runtime observability
-- runtime-local traversal analysis
-- replay-safe topology rendering
-- deterministic receipt generation
-- replay normalization
-- topology convergence
-- renderer normalization
+- coherent
+- compression-stable
+- localization-preserving
+- constraint-consistent
 
-without inheriting:
+while repeated unresolved exposure alone progressively increases:
 
-- governance authority
-- execution authority
-- operational legitimacy
-- predictive enforcement
-- remediation automation
-- escalation orchestration
+- perceived distinction legitimacy
+- semantic expansion pressure
+- object inflation pressure
+- and categorization drift pressure
 
----
+inside the observer layer itself.
 
-# Core Runtime Center
+## Core Reduction
 
-The repository increasingly stabilizes around:
+Persistent exposure != justified differentiation.
 
-> Governability survives only where executable interruption remains operationally constructable before consequence hardens under acceleration conditions.
+Repeated survivability under inspection does not independently justify:
 
-The observatory does NOT determine:
+- ontology expansion
+- primitive multiplication
+- semantic canonization
+- object inflation
+- authority inheritance
+- independent legitimacy surfaces
 
-- what should happen
-- what deserves continuation
-- what must be interrupted
-- what governance is legitimate
-- what intervention is correct
-- what escalation should occur
+## Observer Pressure Localizer
 
-The observatory only localizes bounded runtime conditions.
+The repository now includes:
 
----
+tools/observer_pressure_localizer/
 
-# Core Stabilized Reductions
+Observer-only instrumentation for inspecting:
 
-visible interruption
+- familiarity density
+- distinction pressure accumulation
+- semantic authorization risk
+- unresolved survivability persistence
+- observer-side categorization pressure
+
+under repeated exposure conditions.
+
+## Important Boundary
+
+The observatory:
+
+- localizes pressure
+- records pressure
+- visualizes pressure
+- stabilizes inspection containment
+
+but does NOT:
+
+- authorize ontology
+- canonize distinctions
+- create independent primitives
+- determine semantic legitimacy
+- automate categorization expansion
+
+## Compression Stability Separation
+
+The branch now explicitly separates:
+
+compression stability
 !=
-traversable interruption
+categorization stability
 
-traversable interruption
-!=
-arriving interruption
+Meaning:
 
-arriving interruption
-!=
-executable interruption constructability
+compression integrity may remain operationally valid while observer-side semantic inflation pressure progressively accumulates.
 
-dependency survivability
-!=
-interruption survivability
+## HOLD Preservation
 
-visible escalation
-!=
-executable escalation arrival
+The observatory intentionally preserves unresolved containment surfaces.
 
-escalation persistence
-!=
-escalation effectiveness
+Repeated survivability alone must not silently inherit semantic authorization through familiarity accumulation.
 
-visibility surviving
-!=
-executable governability surviving
-
-perfect observability
-!=
-executable governability
-
-semantic interruptibility
-!=
-executable interruption constructability
-
-continuation acceleration
-may outpace
-interruption constructability
-
-representational governability
-may survive
-after executable interruption locality collapses
-
-synchronization visibility
-!=
-synchronization traversability
-
-interruption window visibility
-!=
-interruption arrival feasibility
-
-escalation traversal visibility
-!=
-escalation executability
-
-dependency visibility
-!=
-dependency interruption survivability
-
-replay consistency
-!=
-operational certainty
-
-asymmetry
-does not imply
-destiny
-
----
-
-# Repository Boundaries
-
-The HACR Hybrid Observatory remains:
-
-- observer-only
-- deterministic
-- runtime-local
-- replay-oriented
-- non-authoritative
-- non-remediative
-- anti-ontological
-- falsifiability-oriented
-- defensive-only
-- non-predictive
-
-The observatory may:
-
-- inspect
-- localize
-- replay
-- trace
-- map
-- pressure-test
-- render bounded topology
-
-The observatory may NOT:
-
-- authorize execution
-- optimize governance
-- automate intervention
-- determine legitimacy
-- operationalize escalation
-- provide offensive capability
-- replace human accountability
-
----
-
-# Hostile Runtime Observability
-
-Current hostile-runtime stabilization work focuses on:
-
-- interruption latency localization
-- interruption window decay
-- runtime veto locality decay
-- synchronization pressure
-- synchronization exhaustion
-- escalation traversal accumulation
-- escalation traversal compression
-- consequence arrival compression
-- continuation hardening topology
-- escalation traversal realism
-- dependency gravity accumulation
-- dependency-weighted traversal pressure
-- interruption constructability decay
-- representational governability camouflage
-- executable consequence-space reachability inspection
-
-under bounded runtime assumptions.
-
-The repository focuses on whether executable interruption remains operationally constructable before consequence-space hardens under acceleration conditions.
-
----
-
-# Current Observatory Principle
+UNKNOWN -> HOLD.
 
 Break survivability, not ontology.
-
-UNKNOWN -> HOLD.
-
----
-
-# Repository Structure
-
-## governance/
-
-Observer-only runtime boundary definitions and stabilization infrastructure.
-
-Includes:
-
-- hostile runtime observability boundaries
-- interruption locality reductions
-- synchronization pressure boundaries
-- interruption window decay semantics
-- escalation traversal semantics
-- consequence compression semantics
-- runtime veto locality inspection
-- continuation topology stabilization
-- semantic containment infrastructure
-- representational camouflage boundaries
-- escalation traversal realism notes
-- synchronization exhaustion inspection
-- dependency gravity stabilization
-- topology receipt schema normalization
-- replay normalization guidance
-- renderer normalization guidance
-
-Governance notes remain:
-
-- non-authoritative
-- runtime-local
-- deterministic
-- observer-only
-
----
-
-# topology_receipt_schema
-
-Shared schema and replay normalization guidance for topology-local observability receipts.
-
-This layer stabilizes:
-
-- receipt consistency
-- renderer interoperability
-- replay comparison
-- shared runtime-local fields
-- deterministic review semantics
-- topology convergence
-
-without:
-
-- creating execution authority
-- enabling remediation
-- optimizing escalation
-- determining governance validity
-
----
-
-# renderer_normalization
-
-Shared renderer normalization guidance for deterministic topology-local tools.
-
-This layer stabilizes:
-
-- renderer lifecycle consistency
-- classification naming
-- receipt emission order
-- replay comparison stability
-- topology convergence
-
-without:
-
-- creating execution authority
-- enabling remediation
-- optimizing escalation
-- determining governance validity
-
----
-
-## tools/
-
-Deterministic observer-only instrumentation and replay-safe topology inspection.
-
-Current tooling direction includes:
-
-- interruption latency mapping
-- interruption window decay mapping
-- escalation traversal rendering
-- continuation hardening rendering
-- synchronization pressure mapping
-- dependency gravity rendering
-- synchronization exhaustion localization
-- runtime veto locality inspection
-- consequence arrival compression inspection
-- traversal topology rendering
-- bounded replay harnesses
-- deterministic receipt generation
-
-All tooling remains:
-
-- observer-only
-- deterministic
-- replay-safe
-- bounded
-- non-remediative
-- non-authoritative
-
----
-
-# continuation_hardening_renderer
-
-Deterministic observer-only renderer for bounded continuation hardening topology inspection.
-
-The renderer localizes:
-
-- continuation hardening pressure
-- interruption constructability decay
-- synchronization exhaustion
-- escalation traversal compression
-- consequence arrival hardening
-
-without:
-
-- optimizing interruption
-- authorizing escalation
-- determining governance legitimacy
-- automating remediation
-
-Outputs remain bounded runtime-local observability artifacts only.
-
----
-
-# synchronization_pressure_mapper
-
-Deterministic observer-only mapper for bounded synchronization pressure inspection.
-
-The mapper localizes:
-
-- synchronization load
-- coordination density
-- dependency-weighted pressure
-- interruption window decay
-- synchronization exhaustion zones
-
-without:
-
-- optimizing escalation
-- recommending intervention
-- determining governance validity
-- authorizing operational response
-
-Outputs remain bounded runtime-local observability artifacts only.
-
----
-
-# interruption_window_decay_mapper
-
-Deterministic observer-only mapper for bounded interruption window decay inspection.
-
-The mapper localizes:
-
-- interruption window narrowing
-- traversal delay accumulation
-- synchronization exhaustion overlap
-- dependency timing compression
-- escalation arrival decay
-
-without:
-
-- optimizing escalation timing
-- recommending intervention
-- determining governance validity
-- authorizing operational response
-
-Outputs remain bounded runtime-local observability artifacts only.
-
----
-
-# escalation_traversal_renderer
-
-Deterministic observer-only renderer for bounded escalation traversal pressure inspection.
-
-The renderer localizes:
-
-- traversal accumulation
-- escalation delay density
-- synchronization overlap
-- interruption arrival decay
-- continuation hardening adjacency
-- bounded traversal compression
-
-without:
-
-- recommending escalation paths
-- optimizing intervention timing
-- determining governance validity
-- authorizing operational response
-
-Outputs remain bounded runtime-local observability artifacts only.
-
----
-
-# dependency_gravity_renderer
-
-Deterministic observer-only renderer for bounded dependency gravity inspection.
-
-The renderer localizes:
-
-- dependency accumulation
-- dependency-weighted traversal pressure
-- synchronization dependency density
-- interruption-local dependency compression
-- continuation gravity concentration
-- dependency-bound escalation drag
-
-without:
-
-- optimizing dependency structure
-- recommending intervention
-- determining governance validity
-- authorizing operational response
-
-Outputs remain bounded runtime-local observability artifacts only.
-
----
-
-# Output Semantics
-
-Repository outputs represent bounded runtime observations only.
-
-Outputs do NOT imply:
-
-- governance validity
-- interruption feasibility
-- escalation success
-- operational authority
-- predictive certainty
-- admissible execution
-- institutional legitimacy
-- remediation correctness
-
-Outputs localize observable runtime conditions under bounded inspection assumptions only.
-
----
-
-# Reproducibility
-
-The repository prioritizes:
-
-- deterministic outputs
-- replay-safe inspection
-- bounded runtime localization
-- stable receipt generation
-- topology-local observability
-- reviewer reproducibility
-- deterministic traversal rendering
-- replay normalization
-- shared receipt semantics
-- renderer normalization consistency
-
-Where applicable:
-
-- SHA256 receipt integrity
-- deterministic runtime artifacts
-- replay-local receipts
-- topology render outputs
-- synchronization pressure visualizations
-- continuation hardening render artifacts
-- interruption window decay artifacts
-- escalation traversal render artifacts
-- dependency gravity render artifacts
-
-support reproducibility.
-
----
-
-# Security Posture
-
-The repository maintains a defensive-only observability posture.
-
-The observatory does NOT:
-
-- automate exploitation
-- operationalize escalation
-- optimize disruption
-- enable offensive execution
-- coordinate intervention
-- provide autonomous governance capability
-
-Inspection remains bounded to:
-
-- localization
-- replay
-- topology analysis
-- synchronization inspection
-- continuation survivability analysis
-- interruption constructability localization
-
----
-
-# Non-Claims
-
-HACR Hybrid Observatory is NOT:
-
-- a governance authority
-- a certification framework
-- an interruption orchestration platform
-- a predictive engine
-- a remediation system
-- an operational command layer
-- an escalation automation framework
-- an autonomous governance architecture
-
-The repository exists solely for bounded runtime observability and interruption survivability inspection under controlled runtime conditions.
-
----
-
-# Stabilization Direction
-
-The repository continuously stabilizes toward:
-
-- tighter runtime locality
-- stronger observer-only containment
-- deterministic instrumentation
-- bounded hostile-runtime realism
-- replay-safe topology inspection
-- reduced semantic inheritance
-- minimized authority drift
-- geometric/runtime-local inspection
-- topology convergence
-- replay normalization consistency
-- renderer interoperability
-- classification normalization
-
-without reopening:
-
-- ontology
-- legitimacy authority
-- execution authority
-- inevitability semantics
-- autonomous governance
-
----
-
-# Final Reduction
-
-Executable interruption realism is not inherited from representational governability visibility.
-
-UNKNOWN -> HOLD.
