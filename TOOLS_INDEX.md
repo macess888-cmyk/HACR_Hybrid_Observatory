@@ -1,6 +1,6 @@
 # HACR Hybrid Observatory — Tools Index
 
-Observer-only hostile-runtime observability instrumentation for inspecting executable interruption realism, continuation hardening, synchronization collapse, and governability camouflage under acceleration-constrained runtime conditions.
+Observer-only hostile-runtime observability instrumentation for inspecting executable interruption realism, constructability, continuation hardening, synchronization collapse, and governability camouflage under acceleration-constrained runtime conditions.
 
 The repository remains:
 

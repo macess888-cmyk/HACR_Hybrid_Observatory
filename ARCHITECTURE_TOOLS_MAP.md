@@ -1,6 +1,6 @@
 # HACR Hybrid Observatory — Architecture Tools Map
 
-Observer-only hostile-runtime observability architecture for inspecting executable interruption realism under continuation pressure, acceleration asymmetry, and governability camouflage conditions.
+Observer-only hostile-runtime observability architecture for inspecting executable interruption realism, interruption constructability, continuation hardening, synchronization collapse, escalation arrival decay, and governability camouflage under acceleration-constrained runtime conditions.
 
 The repository remains:
 
