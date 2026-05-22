@@ -45,6 +45,10 @@ echo [10] Judgement formation localizer
 python tools\judgement_formation_localizer\run_judgement_localizer.py
 
 echo.
+echo [11] XSS surface exposure detector
+python tools\xss_surface_exposure_detector\xss_surface_detector.py
+
+echo.
 echo ============================================
 echo FULL OBSERVATORY PIPELINE COMPLETE
 echo ============================================
