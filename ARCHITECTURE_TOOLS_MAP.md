@@ -1,6 +1,6 @@
 # HACR Hybrid Observatory — Architecture Tools Map
 
-Observer-only hostile-runtime observability architecture for inspecting executable interruption realism under continuation pressure.
+Observer-only hostile-runtime observability architecture for inspecting executable interruption realism under continuation pressure, acceleration asymmetry, and governability camouflage conditions.
 
 The repository remains:
 
@@ -10,7 +10,7 @@ The repository remains:
 - execution-boundary grounded
 - non-authoritative
 - falsifiability-oriented
-- non-ontological
+- anti-ontological
 - compression-disciplined
 
 UNKNOWN -> HOLD

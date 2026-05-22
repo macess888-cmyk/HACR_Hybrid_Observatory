@@ -1,8 +1,8 @@
 # HACR Hybrid Observatory — Tools Index
 
-Observer-only hostile-runtime instrumentation for inspecting executable interruption realism under continuation hardening pressure.
+Observer-only hostile-runtime observability instrumentation for inspecting executable interruption realism, continuation hardening, synchronization collapse, and governability camouflage under acceleration-constrained runtime conditions.
 
-The observatory remains:
+The repository remains:
 
 - observer-only
 - runtime-local
@@ -10,6 +10,8 @@ The observatory remains:
 - execution-boundary grounded
 - non-authoritative
 - falsifiability-oriented
+- anti-ontological
+- compression-disciplined
 
 UNKNOWN -> HOLD
 
@@ -19,7 +21,7 @@ Break survivability, not ontology.
 
 # FULL OBSERVATORY PIPELINE
 
-Run the complete integrated hostile-runtime stack:
+Run the complete hostile-runtime observability stack:
 
 ```bat
 RUN_FULL_OBSERVATORY_PIPELINE.bat
