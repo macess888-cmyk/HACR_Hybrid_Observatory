@@ -29,6 +29,7 @@ The repository focuses on:
 - continuation hardening inspection
 - interruption window decay inspection
 - escalation traversal inspection
+- dependency gravity inspection
 - hostile-runtime observability
 - runtime-local traversal analysis
 - replay-safe topology rendering
@@ -118,6 +119,10 @@ interruption window visibility
 !=
 interruption arrival feasibility
 
+escalation traversal visibility
+!=
+escalation executability
+
 asymmetry
 does not imply
 destiny
@@ -175,7 +180,8 @@ Current hostile-runtime stabilization work focuses on:
 - consequence arrival compression
 - continuation hardening topology
 - escalation traversal realism
-- dependency gravity inspection
+- dependency gravity accumulation
+- dependency-weighted traversal pressure
 - interruption constructability decay
 - representational governability camouflage
 - executable consequence-space reachability inspection
@@ -214,6 +220,7 @@ Includes:
 - representational camouflage boundaries
 - escalation traversal realism notes
 - synchronization exhaustion inspection
+- dependency gravity stabilization
 
 Governance notes remain:
 
@@ -235,11 +242,11 @@ Current tooling direction includes:
 - escalation traversal rendering
 - continuation hardening rendering
 - synchronization pressure mapping
+- dependency gravity rendering
 - synchronization exhaustion localization
 - runtime veto locality inspection
 - consequence arrival compression inspection
 - traversal topology rendering
-- dependency gravity mapping
 - bounded replay harnesses
 - deterministic receipt generation
 
@@ -347,6 +354,30 @@ Outputs remain bounded runtime-local observability artifacts only.
 
 ---
 
+# dependency_gravity_renderer
+
+Deterministic observer-only renderer for bounded dependency gravity inspection.
+
+The renderer localizes:
+
+- dependency accumulation
+- dependency-weighted traversal pressure
+- synchronization dependency density
+- interruption-local dependency compression
+- continuation gravity concentration
+- dependency-bound escalation drag
+
+without:
+
+- optimizing dependency structure
+- recommending intervention
+- determining governance validity
+- authorizing operational response
+
+Outputs remain bounded runtime-local observability artifacts only.
+
+---
+
 # Output Semantics
 
 Repository outputs represent bounded runtime observations only.
@@ -388,6 +419,7 @@ Where applicable:
 - continuation hardening render artifacts
 - interruption window decay artifacts
 - escalation traversal render artifacts
+- dependency gravity render artifacts
 
 support reproducibility.
 
@@ -446,6 +478,7 @@ The repository continuously stabilizes toward:
 - reduced semantic inheritance
 - minimized authority drift
 - geometric/runtime-local inspection
+- topology convergence
 
 without reopening:
 

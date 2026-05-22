@@ -1,0 +1,38 @@
+{
+  "case_id": "sample_dependency_gravity_001",
+  "description": "Bounded sample for dependency gravity inspection.",
+  "nodes": [
+    {
+      "id": "entry_surface",
+      "dependency_count": 1,
+      "dependency_weight": 1,
+      "sync_density": 1,
+      "traversal_drag": 1,
+      "interruption_locality": 8
+    },
+    {
+      "id": "routing_layer",
+      "dependency_count": 3,
+      "dependency_weight": 4,
+      "sync_density": 3,
+      "traversal_drag": 3,
+      "interruption_locality": 6
+    },
+    {
+      "id": "coordination_cluster",
+      "dependency_count": 6,
+      "dependency_weight": 7,
+      "sync_density": 6,
+      "traversal_drag": 5,
+      "interruption_locality": 3
+    },
+    {
+      "id": "execution_adjacency",
+      "dependency_count": 9,
+      "dependency_weight": 9,
+      "sync_density": 8,
+      "traversal_drag": 8,
+      "interruption_locality": 1
+    }
+  ]
+}

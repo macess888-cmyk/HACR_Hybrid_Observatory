@@ -13,6 +13,7 @@ Outputs exist to support:
 - interruption window decay inspection
 - continuation hardening inspection
 - escalation traversal inspection
+- dependency gravity inspection
 - interruption traversal realism
 - hostile-runtime observability
 - bounded topology rendering
@@ -49,6 +50,8 @@ Interruption window visibility does not inherit interruption executability.
 
 Escalation traversal visibility does not inherit escalation effectiveness.
 
+Dependency visibility does not inherit interruption locality survivability.
+
 ---
 
 # Output Scope
@@ -63,9 +66,10 @@ Outputs may localize:
 - continuation hardening pressure
 - escalation traversal accumulation
 - escalation traversal compression
+- dependency gravity accumulation
+- dependency-weighted traversal pressure
 - consequence arrival compression
 - escalation traversal delay
-- dependency gravity
 - runtime veto locality
 - interruption constructability decay
 - representational governability camouflage
@@ -134,6 +138,10 @@ interruption arrival feasibility
 escalation traversal visibility
 !=
 escalation executability
+
+dependency visibility
+!=
+dependency interruption survivability
 
 asymmetry
 does not imply
@@ -215,6 +223,7 @@ Where applicable, outputs may include:
 - continuation hardening render outputs
 - interruption window decay render outputs
 - escalation traversal render outputs
+- dependency gravity render outputs
 - consequence compression render artifacts
 - synchronization exhaustion render artifacts
 
@@ -323,6 +332,32 @@ The renderer exists solely for deterministic runtime-local escalation traversal 
 
 ---
 
+# Dependency Gravity Renderer Semantics
+
+Dependency gravity renderer outputs localize:
+
+- dependency accumulation
+- dependency-weighted traversal pressure
+- synchronization dependency density
+- interruption-local dependency compression
+- continuation gravity concentration
+- dependency-bound escalation drag
+
+under supplied bounded runtime assumptions.
+
+Renderer outputs do NOT imply:
+
+- dependency optimization
+- intervention recommendation
+- governance invalidity
+- escalation authority
+- remediation instruction
+- predictive inevitability
+
+The renderer exists solely for deterministic runtime-local dependency gravity inspection.
+
+---
+
 # Anti-Predictive Boundary
 
 The observatory does not:
@@ -377,6 +412,7 @@ Outputs may localize:
 - interruption arrival decay
 - interruption window narrowing
 - escalation traversal compression
+- dependency gravity accumulation
 - continuation hardening
 - runtime-local veto decay
 
