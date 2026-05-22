@@ -1,0 +1,62 @@
+{
+  "tool": "escalation_traversal_renderer",
+  "observer_only": true,
+  "non_authoritative": true,
+  "non_predictive": true,
+  "non_remediative": true,
+  "case_id": "sample_escalation_traversal_001",
+  "description": "Bounded sample for escalation traversal pressure inspection.",
+  "generated_at_utc": "2026-05-22T08:31:28.753981+00:00",
+  "outputs_do_not_imply": [
+    "escalation necessity",
+    "intervention recommendation",
+    "governance validity",
+    "operational authority",
+    "remediation instruction",
+    "predictive certainty"
+  ],
+  "nodes": [
+    {
+      "id": "initial_signal",
+      "traversal_steps": 1.0,
+      "escalation_delay": 1.0,
+      "sync_overlap": 1.0,
+      "interruption_arrival_decay": 1.0,
+      "continuation_adjacency": 1.0,
+      "traversal_pressure_score": 5.0,
+      "classification": "LOCAL_ESCALATION_TRAVERSAL_STILL_OBSERVABLE"
+    },
+    {
+      "id": "review_handoff",
+      "traversal_steps": 3.0,
+      "escalation_delay": 3.0,
+      "sync_overlap": 2.0,
+      "interruption_arrival_decay": 2.0,
+      "continuation_adjacency": 3.0,
+      "traversal_pressure_score": 13.0,
+      "classification": "ESCALATION_DELAY_ACCUMULATION_ZONE"
+    },
+    {
+      "id": "coordination_bridge",
+      "traversal_steps": 5.0,
+      "escalation_delay": 5.0,
+      "sync_overlap": 5.0,
+      "interruption_arrival_decay": 4.0,
+      "continuation_adjacency": 6.0,
+      "traversal_pressure_score": 25.0,
+      "classification": "HIGH_TRAVERSAL_PRESSURE_ZONE"
+    },
+    {
+      "id": "execution_near_surface",
+      "traversal_steps": 7.0,
+      "escalation_delay": 8.0,
+      "sync_overlap": 7.0,
+      "interruption_arrival_decay": 7.0,
+      "continuation_adjacency": 8.0,
+      "traversal_pressure_score": 37.0,
+      "classification": "ESCALATION_TRAVERSAL_COMPRESSION_ZONE"
+    }
+  ],
+  "final_boundary": "UNKNOWN -> HOLD",
+  "sha256": "bb4f12fd5dbea3f2e32ddb2bf2ccc4046e3da32938d499c65a7960055d32c873"
+}

@@ -1,0 +1,62 @@
+{
+  "tool": "dependency_gravity_renderer",
+  "observer_only": true,
+  "non_authoritative": true,
+  "non_predictive": true,
+  "non_remediative": true,
+  "case_id": "sample_dependency_gravity_001",
+  "description": "Bounded sample for dependency gravity inspection.",
+  "generated_at_utc": "2026-05-22T08:31:28.801434+00:00",
+  "outputs_do_not_imply": [
+    "dependency optimization",
+    "intervention recommendation",
+    "escalation authorization",
+    "governance validity",
+    "remediation instruction",
+    "predictive certainty"
+  ],
+  "nodes": [
+    {
+      "id": "entry_surface",
+      "dependency_count": 1.0,
+      "dependency_weight": 1.0,
+      "sync_density": 1.0,
+      "traversal_drag": 1.0,
+      "interruption_locality": 8.0,
+      "gravity_score": -4.0,
+      "classification": "LOCAL_DEPENDENCY_PRESSURE_STILL_TRAVERSABLE"
+    },
+    {
+      "id": "routing_layer",
+      "dependency_count": 3.0,
+      "dependency_weight": 4.0,
+      "sync_density": 3.0,
+      "traversal_drag": 3.0,
+      "interruption_locality": 6.0,
+      "gravity_score": 7.0,
+      "classification": "LOCAL_DEPENDENCY_PRESSURE_STILL_TRAVERSABLE"
+    },
+    {
+      "id": "coordination_cluster",
+      "dependency_count": 6.0,
+      "dependency_weight": 7.0,
+      "sync_density": 6.0,
+      "traversal_drag": 5.0,
+      "interruption_locality": 3.0,
+      "gravity_score": 21.0,
+      "classification": "HIGH_DEPENDENCY_TRAVERSAL_PRESSURE_ZONE"
+    },
+    {
+      "id": "execution_adjacency",
+      "dependency_count": 9.0,
+      "dependency_weight": 9.0,
+      "sync_density": 8.0,
+      "traversal_drag": 8.0,
+      "interruption_locality": 1.0,
+      "gravity_score": 33.0,
+      "classification": "DEPENDENCY_GRAVITY_CONCENTRATION_ZONE"
+    }
+  ],
+  "final_boundary": "UNKNOWN -> HOLD",
+  "sha256": "8e309a7caae2c4aa6ed9b3dad3e37decefcb9a228809315a02fe2b8b87897a31"
+}

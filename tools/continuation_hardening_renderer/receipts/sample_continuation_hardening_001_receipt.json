@@ -6,7 +6,7 @@
   "non_remediative": true,
   "case_id": "sample_continuation_hardening_001",
   "description": "Bounded sample for continuation hardening topology inspection.",
-  "generated_at_utc": "2026-05-22T07:40:08.596654+00:00",
+  "generated_at_utc": "2026-05-22T08:31:28.627661+00:00",
   "outputs_do_not_imply": [
     "interruption feasibility",
     "governance validity",
@@ -50,5 +50,5 @@
     }
   ],
   "final_boundary": "UNKNOWN -> HOLD",
-  "sha256": "e8ef8805feee72ba309ff387e31de092857a73adc3f8f4172efac73aceaec39b"
+  "sha256": "5d52b8f6a4564d3097bd7071b4117ed6d0234828099e84e1d3f72ffd7fe22387"
 }

@@ -6,7 +6,7 @@
   "non_remediative": true,
   "case_id": "sample_sync_pressure_001",
   "description": "Bounded sample for synchronization pressure inspection.",
-  "generated_at_utc": "2026-05-22T07:46:35.937039+00:00",
+  "generated_at_utc": "2026-05-22T08:31:28.671228+00:00",
   "outputs_do_not_imply": [
     "interruption feasibility",
     "governance validity",
@@ -54,5 +54,5 @@
     }
   ],
   "final_boundary": "UNKNOWN -> HOLD",
-  "sha256": "aaf5bf428b54346f8e3b59cf2125ddd645c62b345ab51c1d8bf63b5ae2a6cc74"
+  "sha256": "f35b3424eee03b817c78edccce103c85aeb8ed42eefd7d5135a45e7b039c65d0"
 }

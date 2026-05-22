@@ -1,0 +1,62 @@
+{
+  "tool": "interruption_window_decay_mapper",
+  "observer_only": true,
+  "non_authoritative": true,
+  "non_predictive": true,
+  "non_remediative": true,
+  "case_id": "sample_interruption_window_decay_001",
+  "description": "Bounded sample for interruption window decay inspection.",
+  "generated_at_utc": "2026-05-22T08:31:28.702933+00:00",
+  "outputs_do_not_imply": [
+    "interruption infeasibility",
+    "intervention necessity",
+    "escalation authorization",
+    "governance invalidity",
+    "remediation instruction",
+    "predictive certainty"
+  ],
+  "nodes": [
+    {
+      "id": "initial_review",
+      "available_window": 10.0,
+      "traversal_delay": 1.0,
+      "sync_exhaustion": 1.0,
+      "dependency_compression": 1.0,
+      "escalation_arrival_delay": 1.0,
+      "decay_score": -6.0,
+      "classification": "LOCAL_INTERRUPTION_WINDOW_STILL_OBSERVABLE"
+    },
+    {
+      "id": "coordination_layer",
+      "available_window": 7.0,
+      "traversal_delay": 3.0,
+      "sync_exhaustion": 3.0,
+      "dependency_compression": 2.0,
+      "escalation_arrival_delay": 2.0,
+      "decay_score": 3.0,
+      "classification": "LOCAL_INTERRUPTION_WINDOW_STILL_OBSERVABLE"
+    },
+    {
+      "id": "routing_surface",
+      "available_window": 5.0,
+      "traversal_delay": 5.0,
+      "sync_exhaustion": 5.0,
+      "dependency_compression": 4.0,
+      "escalation_arrival_delay": 4.0,
+      "decay_score": 13.0,
+      "classification": "HIGH_WINDOW_DECAY_ZONE"
+    },
+    {
+      "id": "execution_adjacency",
+      "available_window": 3.0,
+      "traversal_delay": 7.0,
+      "sync_exhaustion": 8.0,
+      "dependency_compression": 7.0,
+      "escalation_arrival_delay": 6.0,
+      "decay_score": 25.0,
+      "classification": "INTERRUPTION_WINDOW_COLLAPSE_ZONE"
+    }
+  ],
+  "final_boundary": "UNKNOWN -> HOLD",
+  "sha256": "d5ad9cac6b439c54a863eed107283ff42da8d37e023b14530ba970e0062febca"
+}
