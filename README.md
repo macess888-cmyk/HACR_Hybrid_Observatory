@@ -1,102 +1,172 @@
-# Observer Pressure Localization
+# HACR Hybrid Observatory
 
-The HACR Hybrid Observatory now includes bounded observer-pressure instrumentation focused on:
+Observer-only continuity survivability observability under contested runtime conditions.
 
-- familiarity accumulation
-- distinction pressure
-- semantic authorization pressure
-- categorization drift pressure
-- survivability-driven expansion pressure
-- HOLD-preserving inspection stabilization
+This repository focuses on bounded inspection of:
 
-This branch intentionally examines a different pressure surface than:
+- continuity survivability
+- synchronization survivability
+- dependency survivability topology
+- runtime degradation pressure
+- reconstruction feasibility
+- interruption viability
+- operational continuity pressure
+- visibility-to-exposure relationships
+- operational dependency concentration
+- contested-runtime coordination survivability
 
-- compression failure
-- localization invalidity
-- coupling degradation
-- topology collapse
-- or runtime interruption failure.
+The repository does not:
+- govern
+- authorize
+- orchestrate execution
+- certify legitimacy
+- operationalize command authority
+- provide military execution capability
+- perform strategic targeting
+- replace operational decision-making
 
-The observatory now recognizes that inspection geometry may remain:
+The repository remains:
 
-- coherent
-- compression-stable
-- localization-preserving
-- constraint-consistent
+- observer-only
+- runtime-local
+- operationally bounded
+- continuity-inspection-oriented
+- non-authoritative
+- reproducibility-oriented
 
-while repeated unresolved exposure alone progressively increases:
+---
 
-- perceived distinction legitimacy
-- semantic expansion pressure
-- object inflation pressure
-- and categorization drift pressure
+# Emerging Observatory Directions
 
-inside the observer layer itself.
+Recent stabilization work increasingly focuses on operational ecosystem survivability under contested execution conditions.
 
-## Core Reduction
+Emerging observability directions include:
 
-Persistent exposure != justified differentiation.
+- dependency survivability mapping
+- synchronization survivability analysis
+- operational continuity degradation localization
+- visibility-to-exposure pressure inspection
+- runtime trust drift inspection
+- continuity reconstruction pressure analysis
+- coordination survivability geometry
+- legacy-overlay operational mismatch inspection
+- dependency sovereignty exposure mapping
+- contested-runtime continuity topology inspection
 
-Repeated survivability under inspection does not independently justify:
+---
 
-- ontology expansion
-- primitive multiplication
-- semantic canonization
-- object inflation
-- authority inheritance
-- independent legitimacy surfaces
+# Operational Ecosystem Reduction
 
-## Observer Pressure Localizer
+Traditional lifecycle optimization does not automatically produce operational ecosystem survivability.
 
-The repository now includes:
+Operational continuity increasingly depends upon:
 
-tools/observer_pressure_localizer/
+- synchronization continuity
+- degraded coordination survivability
+- communications resilience
+- industrial fallback capability
+- dependency survivability
+- reconstruction feasibility
+- interruption viability
+- continuity restoration capability
 
-Observer-only instrumentation for inspecting:
+Modern operational ecosystems increasingly become:
 
-- familiarity density
-- distinction pressure accumulation
-- semantic authorization risk
-- unresolved survivability persistence
-- observer-side categorization pressure
+- interconnected
+- synchronization-sensitive
+- dependency-dense
+- visibility-exposed
+- operationally compressed
+- continuity-fragile
+- machine-assisted
 
-under repeated exposure conditions.
+Meaning survivability may increasingly depend not only upon system capability itself, but whether surrounding operational conditions remain survivable under degradation pressure.
 
-## Important Boundary
+---
 
-The observatory:
+# Emerging Tooling Directions
 
-- localizes pressure
-- records pressure
-- visualizes pressure
-- stabilizes inspection containment
+## dependency_survivability_mapper
 
-but does NOT:
+Observer-only operational dependency topology inspection tooling.
 
-- authorize ontology
-- canonize distinctions
-- create independent primitives
-- determine semantic legitimacy
-- automate categorization expansion
+Potential future observability surfaces may include:
 
-## Compression Stability Separation
+- continuity concentration mapping
+- survivability corridor localization
+- reconstruction cost visualization
+- dependency survivability topology inspection
+- operational chokepoint observability
 
-The branch now explicitly separates:
+---
 
-compression stability
-!=
-categorization stability
+## visibility_exposure_harness
 
-Meaning:
+Observer-only visibility-to-exposure pressure observability tooling.
 
-compression integrity may remain operationally valid while observer-side semantic inflation pressure progressively accumulates.
+Potential future observability surfaces may include:
 
-## HOLD Preservation
+- operational visibility concentration
+- exposure amplification mapping
+- dependency inference pressure
+- continuity attack-surface inspection
+- reconstruction visibility pressure
 
-The observatory intentionally preserves unresolved containment surfaces.
+Core reduction:
 
-Repeated survivability alone must not silently inherit semantic authorization through familiarity accumulation.
+visibility optimization != survivability optimization
 
-UNKNOWN -> HOLD.
+---
+
+## legacy_overlay_detector
+
+Observer-only operational topology mismatch inspection tooling.
+
+Core reduction:
+
+AI terminology layered onto legacy operational assumptions does not automatically produce operational redesign.
+
+Potential future observability surfaces may include:
+
+- fragmented visibility inheritance
+- delayed coordination inheritance
+- legacy synchronization persistence
+- isolated maintenance topology persistence
+- operational topology mismatch
+
+---
+
+## coordination_collapse_geometry
+
+Observer-only synchronization survivability observability tooling.
+
+Potential future observability surfaces may include:
+
+- synchronization survivability mapping
+- degraded coordination visualization
+- coordination collapse corridor localization
+- timing asymmetry inspection
+- reconstruction feasibility geometry
+- interruption-arrival survivability analysis
+
+Core reduction:
+
+coordination failure may emerge before node failure becomes externally visible.
+
+---
+
+# Observatory Stabilization Boundary
+
+This repository observes survivability pressure.
+
+This repository does not operationalize authority.
+
+Survivability persistence alone does not produce legitimacy.
+
+Compression stability != categorization stability
+
+Persistent exposure != justified differentiation
 
 Break survivability, not ontology.
+
+UNKNOWN -> HOLD.
