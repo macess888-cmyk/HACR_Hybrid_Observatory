@@ -10,6 +10,7 @@ Outputs exist to support:
 - runtime-local localization
 - interruption survivability inspection
 - synchronization pressure analysis
+- interruption window decay inspection
 - continuation hardening inspection
 - interruption traversal realism
 - hostile-runtime observability
@@ -43,6 +44,8 @@ Representational governability does not inherit executable governability.
 
 Synchronization visibility does not inherit interruption feasibility.
 
+Interruption window visibility does not inherit interruption executability.
+
 ---
 
 # Output Scope
@@ -51,6 +54,7 @@ Outputs may localize:
 
 - interruption traversal pressure
 - interruption locality decay
+- interruption window decay
 - synchronization exhaustion
 - synchronization pressure
 - continuation hardening pressure
@@ -117,6 +121,10 @@ after executable interruption locality collapses
 synchronization visibility
 !=
 synchronization traversability
+
+interruption window visibility
+!=
+interruption arrival feasibility
 
 asymmetry
 does not imply
@@ -196,6 +204,7 @@ Where applicable, outputs may include:
 - synchronization pressure maps
 - interruption locality visualizations
 - continuation hardening render outputs
+- interruption window decay render outputs
 - consequence compression render artifacts
 - synchronization exhaustion render artifacts
 
@@ -253,6 +262,31 @@ The mapper exists solely for deterministic runtime-local synchronization pressur
 
 ---
 
+# Interruption Window Decay Mapper Semantics
+
+Interruption window decay mapper outputs localize:
+
+- interruption window narrowing
+- traversal delay accumulation
+- synchronization exhaustion overlap
+- dependency timing compression
+- escalation arrival delay
+
+under supplied bounded runtime assumptions.
+
+Mapper outputs do NOT imply:
+
+- interruption impossibility
+- escalation necessity
+- governance invalidity
+- intervention requirement
+- operational certainty
+- predictive inevitability
+
+The mapper exists solely for deterministic runtime-local interruption window decay inspection.
+
+---
+
 # Anti-Predictive Boundary
 
 The observatory does not:
@@ -305,6 +339,7 @@ Outputs may localize:
 - synchronization exhaustion
 - traversal delay
 - interruption arrival decay
+- interruption window narrowing
 - escalation compression
 - continuation hardening
 - runtime-local veto decay

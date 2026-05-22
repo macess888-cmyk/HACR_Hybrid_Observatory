@@ -7,6 +7,7 @@ HACR Hybrid Observatory is a deterministic, observer-only runtime observability 
 - interruption constructability
 - continuation survivability
 - synchronization pressure
+- interruption window decay
 - escalation traversal realism
 - consequence arrival compression
 - runtime veto locality
@@ -25,6 +26,7 @@ The repository focuses on:
 - interruption survivability localization
 - synchronization pressure analysis
 - continuation hardening inspection
+- interruption window decay inspection
 - hostile-runtime observability
 - runtime-local traversal analysis
 - replay-safe topology rendering
@@ -106,6 +108,10 @@ representational governability
 may survive
 after executable interruption locality collapses
 
+synchronization visibility
+!=
+synchronization traversability
+
 asymmetry
 does not imply
 destiny
@@ -128,6 +134,7 @@ The HACR Hybrid Observatory remains:
 - non-predictive
 
 The observatory may:
+
 - inspect
 - localize
 - replay
@@ -137,6 +144,7 @@ The observatory may:
 - render bounded topology
 
 The observatory may NOT:
+
 - authorize execution
 - optimize governance
 - automate intervention
@@ -152,6 +160,7 @@ The observatory may NOT:
 Current hostile-runtime stabilization work focuses on:
 
 - interruption latency localization
+- interruption window decay
 - runtime veto locality decay
 - synchronization pressure
 - synchronization exhaustion
@@ -188,6 +197,7 @@ Includes:
 - hostile runtime observability boundaries
 - interruption locality reductions
 - synchronization pressure boundaries
+- interruption window decay semantics
 - consequence compression semantics
 - runtime veto locality inspection
 - continuation topology stabilization
@@ -212,6 +222,7 @@ Deterministic observer-only instrumentation and replay-safe topology inspection.
 Current tooling direction includes:
 
 - interruption latency mapping
+- interruption window decay mapping
 - continuation hardening rendering
 - synchronization pressure mapping
 - synchronization exhaustion localization
@@ -279,6 +290,29 @@ Outputs remain bounded runtime-local observability artifacts only.
 
 ---
 
+# interruption_window_decay_mapper
+
+Deterministic observer-only mapper for bounded interruption window decay inspection.
+
+The mapper localizes:
+
+- interruption window narrowing
+- traversal delay accumulation
+- synchronization exhaustion overlap
+- dependency timing compression
+- escalation arrival decay
+
+without:
+
+- optimizing escalation timing
+- recommending intervention
+- determining governance validity
+- authorizing operational response
+
+Outputs remain bounded runtime-local observability artifacts only.
+
+---
+
 # Output Semantics
 
 Repository outputs represent bounded runtime observations only.
@@ -318,6 +352,7 @@ Where applicable:
 - topology render outputs
 - synchronization pressure visualizations
 - continuation hardening render artifacts
+- interruption window decay artifacts
 
 support reproducibility.
 

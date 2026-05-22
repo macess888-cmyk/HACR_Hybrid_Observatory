@@ -1,0 +1,38 @@
+{
+  "case_id": "sample_interruption_window_decay_001",
+  "description": "Bounded sample for interruption window decay inspection.",
+  "nodes": [
+    {
+      "id": "initial_review",
+      "available_window": 10,
+      "traversal_delay": 1,
+      "sync_exhaustion": 1,
+      "dependency_compression": 1,
+      "escalation_arrival_delay": 1
+    },
+    {
+      "id": "coordination_layer",
+      "available_window": 7,
+      "traversal_delay": 3,
+      "sync_exhaustion": 3,
+      "dependency_compression": 2,
+      "escalation_arrival_delay": 2
+    },
+    {
+      "id": "routing_surface",
+      "available_window": 5,
+      "traversal_delay": 5,
+      "sync_exhaustion": 5,
+      "dependency_compression": 4,
+      "escalation_arrival_delay": 4
+    },
+    {
+      "id": "execution_adjacency",
+      "available_window": 3,
+      "traversal_delay": 7,
+      "sync_exhaustion": 8,
+      "dependency_compression": 7,
+      "escalation_arrival_delay": 6
+    }
+  ]
+}
