@@ -15,6 +15,7 @@ Outputs exist to support:
 - hostile-runtime observability
 - bounded topology rendering
 - consequence-space compression inspection
+- synchronization exhaustion inspection
 
 Outputs do NOT represent:
 
@@ -40,6 +41,8 @@ Traversal visibility does not inherit interruption constructability.
 
 Representational governability does not inherit executable governability.
 
+Synchronization visibility does not inherit interruption feasibility.
+
 ---
 
 # Output Scope
@@ -49,6 +52,7 @@ Outputs may localize:
 - interruption traversal pressure
 - interruption locality decay
 - synchronization exhaustion
+- synchronization pressure
 - continuation hardening pressure
 - consequence arrival compression
 - escalation traversal delay
@@ -110,6 +114,10 @@ representational governability
 may survive
 after executable interruption locality collapses
 
+synchronization visibility
+!=
+synchronization traversability
+
 asymmetry
 does not imply
 destiny
@@ -138,6 +146,7 @@ Outputs localize bounded runtime conditions only.
 # Observer Restriction
 
 The observatory may:
+
 - inspect
 - localize
 - replay
@@ -147,6 +156,7 @@ The observatory may:
 - render bounded topology
 
 The observatory may NOT:
+
 - authorize execution
 - automate governance
 - optimize intervention
@@ -187,6 +197,7 @@ Where applicable, outputs may include:
 - interruption locality visualizations
 - continuation hardening render outputs
 - consequence compression render artifacts
+- synchronization exhaustion render artifacts
 
 These exist to support reproducibility only.
 
@@ -214,6 +225,31 @@ Renderer outputs do NOT imply:
 - predictive inevitability
 
 The renderer exists solely for deterministic hostile-runtime topology inspection.
+
+---
+
+# Synchronization Pressure Mapper Semantics
+
+Synchronization pressure mapper outputs localize:
+
+- synchronization load
+- coordination density
+- dependency-weighted pressure
+- interruption window decay
+- synchronization exhaustion
+
+under supplied bounded runtime assumptions.
+
+Mapper outputs do NOT imply:
+
+- interruption infeasibility
+- escalation necessity
+- governance invalidity
+- intervention requirement
+- operational certainty
+- predictive inevitability
+
+The mapper exists solely for deterministic runtime-local synchronization pressure inspection.
 
 ---
 

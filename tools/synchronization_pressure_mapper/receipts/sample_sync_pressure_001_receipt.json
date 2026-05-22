@@ -1,0 +1,58 @@
+{
+  "tool": "synchronization_pressure_mapper",
+  "observer_only": true,
+  "non_authoritative": true,
+  "non_predictive": true,
+  "non_remediative": true,
+  "case_id": "sample_sync_pressure_001",
+  "description": "Bounded sample for synchronization pressure inspection.",
+  "generated_at_utc": "2026-05-22T07:46:35.937039+00:00",
+  "outputs_do_not_imply": [
+    "interruption feasibility",
+    "governance validity",
+    "escalation effectiveness",
+    "remediation instruction",
+    "operational authority",
+    "predictive certainty"
+  ],
+  "nodes": [
+    {
+      "id": "review_entry",
+      "sync_load": 2.0,
+      "coordination_density": 2.0,
+      "dependency_weight": 1.0,
+      "interruption_window": 8.0,
+      "pressure_score": -3.0,
+      "classification": "LOCAL_SYNCHRONIZATION_STILL_TRAVERSABLE"
+    },
+    {
+      "id": "handoff_layer",
+      "sync_load": 5.0,
+      "coordination_density": 4.0,
+      "dependency_weight": 4.0,
+      "interruption_window": 5.0,
+      "pressure_score": 8.0,
+      "classification": "INTERRUPTION_WINDOW_DECAY_ZONE"
+    },
+    {
+      "id": "escalation_bridge",
+      "sync_load": 8.0,
+      "coordination_density": 7.0,
+      "dependency_weight": 6.0,
+      "interruption_window": 3.0,
+      "pressure_score": 18.0,
+      "classification": "HIGH_COORDINATION_PRESSURE_ZONE"
+    },
+    {
+      "id": "execution_surface",
+      "sync_load": 10.0,
+      "coordination_density": 9.0,
+      "dependency_weight": 8.0,
+      "interruption_window": 1.0,
+      "pressure_score": 26.0,
+      "classification": "SYNCHRONIZATION_EXHAUSTION_ZONE"
+    }
+  ],
+  "final_boundary": "UNKNOWN -> HOLD",
+  "sha256": "aaf5bf428b54346f8e3b59cf2125ddd645c62b345ab51c1d8bf63b5ae2a6cc74"
+}

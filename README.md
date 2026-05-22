@@ -13,6 +13,7 @@ HACR Hybrid Observatory is a deterministic, observer-only runtime observability 
 - interruption latency
 - continuation hardening topology
 - dependency gravity
+- synchronization exhaustion
 - hostile-runtime interruption feasibility
 
 under controlled runtime conditions.
@@ -23,9 +24,11 @@ The repository focuses on:
 - bounded topology inspection
 - interruption survivability localization
 - synchronization pressure analysis
-- hostile-runtime observability
 - continuation hardening inspection
+- hostile-runtime observability
 - runtime-local traversal analysis
+- replay-safe topology rendering
+- deterministic receipt generation
 
 without inheriting:
 
@@ -51,6 +54,7 @@ The observatory does NOT determine:
 - what must be interrupted
 - what governance is legitimate
 - what intervention is correct
+- what escalation should occur
 
 The observatory only localizes bounded runtime conditions.
 
@@ -149,9 +153,10 @@ Current hostile-runtime stabilization work focuses on:
 
 - interruption latency localization
 - runtime veto locality decay
+- synchronization pressure
+- synchronization exhaustion
 - consequence arrival compression
 - continuation hardening topology
-- synchronization exhaustion pressure
 - escalation traversal realism
 - dependency gravity inspection
 - interruption constructability decay
@@ -189,8 +194,10 @@ Includes:
 - semantic containment infrastructure
 - representational camouflage boundaries
 - escalation traversal realism notes
+- synchronization exhaustion inspection
 
 Governance notes remain:
+
 - non-authoritative
 - runtime-local
 - deterministic
@@ -206,7 +213,8 @@ Current tooling direction includes:
 
 - interruption latency mapping
 - continuation hardening rendering
-- synchronization pressure localization
+- synchronization pressure mapping
+- synchronization exhaustion localization
 - runtime veto locality inspection
 - consequence arrival compression inspection
 - traversal topology rendering
@@ -225,7 +233,7 @@ All tooling remains:
 
 ---
 
-## continuation_hardening_renderer
+# continuation_hardening_renderer
 
 Deterministic observer-only renderer for bounded continuation hardening topology inspection.
 
@@ -238,10 +246,34 @@ The renderer localizes:
 - consequence arrival hardening
 
 without:
+
 - optimizing interruption
 - authorizing escalation
 - determining governance legitimacy
 - automating remediation
+
+Outputs remain bounded runtime-local observability artifacts only.
+
+---
+
+# synchronization_pressure_mapper
+
+Deterministic observer-only mapper for bounded synchronization pressure inspection.
+
+The mapper localizes:
+
+- synchronization load
+- coordination density
+- dependency-weighted pressure
+- interruption window decay
+- synchronization exhaustion zones
+
+without:
+
+- optimizing escalation
+- recommending intervention
+- determining governance validity
+- authorizing operational response
 
 Outputs remain bounded runtime-local observability artifacts only.
 
@@ -279,11 +311,13 @@ The repository prioritizes:
 - deterministic traversal rendering
 
 Where applicable:
+
 - SHA256 receipt integrity
 - deterministic runtime artifacts
 - replay-local receipts
 - topology render outputs
 - synchronization pressure visualizations
+- continuation hardening render artifacts
 
 support reproducibility.
 
@@ -303,6 +337,7 @@ The observatory does NOT:
 - provide autonomous governance capability
 
 Inspection remains bounded to:
+
 - localization
 - replay
 - topology analysis
@@ -343,6 +378,7 @@ The repository continuously stabilizes toward:
 - geometric/runtime-local inspection
 
 without reopening:
+
 - ontology
 - legitimacy authority
 - execution authority

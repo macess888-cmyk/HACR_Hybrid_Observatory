@@ -1,0 +1,34 @@
+{
+  "case_id": "sample_sync_pressure_001",
+  "description": "Bounded sample for synchronization pressure inspection.",
+  "nodes": [
+    {
+      "id": "review_entry",
+      "sync_load": 2,
+      "coordination_density": 2,
+      "dependency_weight": 1,
+      "interruption_window": 8
+    },
+    {
+      "id": "handoff_layer",
+      "sync_load": 5,
+      "coordination_density": 4,
+      "dependency_weight": 4,
+      "interruption_window": 5
+    },
+    {
+      "id": "escalation_bridge",
+      "sync_load": 8,
+      "coordination_density": 7,
+      "dependency_weight": 6,
+      "interruption_window": 3
+    },
+    {
+      "id": "execution_surface",
+      "sync_load": 10,
+      "coordination_density": 9,
+      "dependency_weight": 8,
+      "interruption_window": 1
+    }
+  ]
+}
