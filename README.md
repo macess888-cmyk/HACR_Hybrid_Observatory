@@ -36,6 +36,7 @@ The repository focuses on:
 - deterministic receipt generation
 - replay normalization
 - topology convergence
+- renderer normalization
 
 without inheriting:
 
@@ -128,6 +129,10 @@ escalation executability
 dependency visibility
 !=
 dependency interruption survivability
+
+replay consistency
+!=
+operational certainty
 
 asymmetry
 does not imply
@@ -229,6 +234,7 @@ Includes:
 - dependency gravity stabilization
 - topology receipt schema normalization
 - replay normalization guidance
+- renderer normalization guidance
 
 Governance notes remain:
 
@@ -250,6 +256,27 @@ This layer stabilizes:
 - replay comparison
 - shared runtime-local fields
 - deterministic review semantics
+- topology convergence
+
+without:
+
+- creating execution authority
+- enabling remediation
+- optimizing escalation
+- determining governance validity
+
+---
+
+# renderer_normalization
+
+Shared renderer normalization guidance for deterministic topology-local tools.
+
+This layer stabilizes:
+
+- renderer lifecycle consistency
+- classification naming
+- receipt emission order
+- replay comparison stability
 - topology convergence
 
 without:
@@ -440,6 +467,7 @@ The repository prioritizes:
 - deterministic traversal rendering
 - replay normalization
 - shared receipt semantics
+- renderer normalization consistency
 
 Where applicable:
 
@@ -513,6 +541,7 @@ The repository continuously stabilizes toward:
 - topology convergence
 - replay normalization consistency
 - renderer interoperability
+- classification normalization
 
 without reopening:
 

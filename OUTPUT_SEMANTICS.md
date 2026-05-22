@@ -21,6 +21,7 @@ Outputs exist to support:
 - synchronization exhaustion inspection
 - replay normalization
 - topology convergence
+- renderer normalization
 
 Outputs do NOT represent:
 
@@ -55,6 +56,8 @@ Escalation traversal visibility does not inherit escalation effectiveness.
 Dependency visibility does not inherit interruption locality survivability.
 
 Replay consistency does not inherit operational truth.
+
+Renderer consistency does not inherit governance validity.
 
 ---
 
@@ -150,6 +153,10 @@ dependency interruption survivability
 replay consistency
 !=
 operational certainty
+
+renderer normalization
+!=
+governance legitimacy
 
 asymmetry
 does not imply
@@ -261,6 +268,33 @@ They do NOT imply:
 - predictive certainty
 
 Receipts remain observability artifacts only.
+
+UNKNOWN -> HOLD.
+
+---
+
+# Renderer Normalization Semantics
+
+Renderer normalization guidance defines shared lifecycle, classification, and receipt-emission expectations only.
+
+It supports:
+
+- deterministic renderer consistency
+- replay comparison stability
+- classification containment
+- topology convergence
+- reviewer reproducibility
+
+It does NOT imply:
+
+- governance authority
+- escalation validity
+- remediation correctness
+- operational truth
+- interruption feasibility
+- predictive certainty
+
+Renderer normalization remains observability infrastructure only.
 
 UNKNOWN -> HOLD.
 
