@@ -34,6 +34,8 @@ The repository focuses on:
 - runtime-local traversal analysis
 - replay-safe topology rendering
 - deterministic receipt generation
+- replay normalization
+- topology convergence
 
 without inheriting:
 
@@ -122,6 +124,10 @@ interruption arrival feasibility
 escalation traversal visibility
 !=
 escalation executability
+
+dependency visibility
+!=
+dependency interruption survivability
 
 asymmetry
 does not imply
@@ -221,6 +227,8 @@ Includes:
 - escalation traversal realism notes
 - synchronization exhaustion inspection
 - dependency gravity stabilization
+- topology receipt schema normalization
+- replay normalization guidance
 
 Governance notes remain:
 
@@ -228,6 +236,28 @@ Governance notes remain:
 - runtime-local
 - deterministic
 - observer-only
+
+---
+
+# topology_receipt_schema
+
+Shared schema and replay normalization guidance for topology-local observability receipts.
+
+This layer stabilizes:
+
+- receipt consistency
+- renderer interoperability
+- replay comparison
+- shared runtime-local fields
+- deterministic review semantics
+- topology convergence
+
+without:
+
+- creating execution authority
+- enabling remediation
+- optimizing escalation
+- determining governance validity
 
 ---
 
@@ -408,6 +438,8 @@ The repository prioritizes:
 - topology-local observability
 - reviewer reproducibility
 - deterministic traversal rendering
+- replay normalization
+- shared receipt semantics
 
 Where applicable:
 
@@ -479,6 +511,8 @@ The repository continuously stabilizes toward:
 - minimized authority drift
 - geometric/runtime-local inspection
 - topology convergence
+- replay normalization consistency
+- renderer interoperability
 
 without reopening:
 

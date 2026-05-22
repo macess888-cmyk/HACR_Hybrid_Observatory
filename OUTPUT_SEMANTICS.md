@@ -19,6 +19,8 @@ Outputs exist to support:
 - bounded topology rendering
 - consequence-space compression inspection
 - synchronization exhaustion inspection
+- replay normalization
+- topology convergence
 
 Outputs do NOT represent:
 
@@ -51,6 +53,8 @@ Interruption window visibility does not inherit interruption executability.
 Escalation traversal visibility does not inherit escalation effectiveness.
 
 Dependency visibility does not inherit interruption locality survivability.
+
+Replay consistency does not inherit operational truth.
 
 ---
 
@@ -143,6 +147,10 @@ dependency visibility
 !=
 dependency interruption survivability
 
+replay consistency
+!=
+operational certainty
+
 asymmetry
 does not imply
 destiny
@@ -228,6 +236,33 @@ Where applicable, outputs may include:
 - synchronization exhaustion render artifacts
 
 These exist to support reproducibility only.
+
+---
+
+# Topology Receipt Schema Semantics
+
+Topology receipt schema outputs and guidance define shared receipt expectations only.
+
+They support:
+
+- replay consistency
+- deterministic comparison
+- renderer interoperability
+- bounded runtime-local review
+- shared topology semantics
+
+They do NOT imply:
+
+- governance authority
+- escalation validity
+- remediation correctness
+- operational truth
+- interruption feasibility
+- predictive certainty
+
+Receipts remain observability artifacts only.
+
+UNKNOWN -> HOLD.
 
 ---
 
@@ -355,6 +390,27 @@ Renderer outputs do NOT imply:
 - predictive inevitability
 
 The renderer exists solely for deterministic runtime-local dependency gravity inspection.
+
+---
+
+# Replay Normalization Boundary
+
+Replay normalization exists to support:
+
+- deterministic comparison
+- renderer interoperability
+- bounded review consistency
+- topology convergence
+
+Replay normalization does NOT imply:
+
+- operational correctness
+- escalation validity
+- interruption feasibility
+- governance legitimacy
+- predictive certainty
+
+Replay-safe outputs remain bounded observability artifacts only.
 
 ---
 
