@@ -1,0 +1,38 @@
+{
+  "case_id": "sample_escalation_traversal_001",
+  "description": "Bounded sample for escalation traversal pressure inspection.",
+  "nodes": [
+    {
+      "id": "initial_signal",
+      "traversal_steps": 1,
+      "escalation_delay": 1,
+      "sync_overlap": 1,
+      "interruption_arrival_decay": 1,
+      "continuation_adjacency": 1
+    },
+    {
+      "id": "review_handoff",
+      "traversal_steps": 3,
+      "escalation_delay": 3,
+      "sync_overlap": 2,
+      "interruption_arrival_decay": 2,
+      "continuation_adjacency": 3
+    },
+    {
+      "id": "coordination_bridge",
+      "traversal_steps": 5,
+      "escalation_delay": 5,
+      "sync_overlap": 5,
+      "interruption_arrival_decay": 4,
+      "continuation_adjacency": 6
+    },
+    {
+      "id": "execution_near_surface",
+      "traversal_steps": 7,
+      "escalation_delay": 8,
+      "sync_overlap": 7,
+      "interruption_arrival_decay": 7,
+      "continuation_adjacency": 8
+    }
+  ]
+}

@@ -9,6 +9,7 @@ HACR Hybrid Observatory is a deterministic, observer-only runtime observability 
 - synchronization pressure
 - interruption window decay
 - escalation traversal realism
+- escalation traversal compression
 - consequence arrival compression
 - runtime veto locality
 - interruption latency
@@ -27,6 +28,7 @@ The repository focuses on:
 - synchronization pressure analysis
 - continuation hardening inspection
 - interruption window decay inspection
+- escalation traversal inspection
 - hostile-runtime observability
 - runtime-local traversal analysis
 - replay-safe topology rendering
@@ -112,6 +114,10 @@ synchronization visibility
 !=
 synchronization traversability
 
+interruption window visibility
+!=
+interruption arrival feasibility
+
 asymmetry
 does not imply
 destiny
@@ -164,6 +170,8 @@ Current hostile-runtime stabilization work focuses on:
 - runtime veto locality decay
 - synchronization pressure
 - synchronization exhaustion
+- escalation traversal accumulation
+- escalation traversal compression
 - consequence arrival compression
 - continuation hardening topology
 - escalation traversal realism
@@ -198,6 +206,7 @@ Includes:
 - interruption locality reductions
 - synchronization pressure boundaries
 - interruption window decay semantics
+- escalation traversal semantics
 - consequence compression semantics
 - runtime veto locality inspection
 - continuation topology stabilization
@@ -223,6 +232,7 @@ Current tooling direction includes:
 
 - interruption latency mapping
 - interruption window decay mapping
+- escalation traversal rendering
 - continuation hardening rendering
 - synchronization pressure mapping
 - synchronization exhaustion localization
@@ -313,6 +323,30 @@ Outputs remain bounded runtime-local observability artifacts only.
 
 ---
 
+# escalation_traversal_renderer
+
+Deterministic observer-only renderer for bounded escalation traversal pressure inspection.
+
+The renderer localizes:
+
+- traversal accumulation
+- escalation delay density
+- synchronization overlap
+- interruption arrival decay
+- continuation hardening adjacency
+- bounded traversal compression
+
+without:
+
+- recommending escalation paths
+- optimizing intervention timing
+- determining governance validity
+- authorizing operational response
+
+Outputs remain bounded runtime-local observability artifacts only.
+
+---
+
 # Output Semantics
 
 Repository outputs represent bounded runtime observations only.
@@ -353,6 +387,7 @@ Where applicable:
 - synchronization pressure visualizations
 - continuation hardening render artifacts
 - interruption window decay artifacts
+- escalation traversal render artifacts
 
 support reproducibility.
 

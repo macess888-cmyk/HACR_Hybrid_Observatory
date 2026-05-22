@@ -12,6 +12,7 @@ Outputs exist to support:
 - synchronization pressure analysis
 - interruption window decay inspection
 - continuation hardening inspection
+- escalation traversal inspection
 - interruption traversal realism
 - hostile-runtime observability
 - bounded topology rendering
@@ -46,6 +47,8 @@ Synchronization visibility does not inherit interruption feasibility.
 
 Interruption window visibility does not inherit interruption executability.
 
+Escalation traversal visibility does not inherit escalation effectiveness.
+
 ---
 
 # Output Scope
@@ -58,6 +61,8 @@ Outputs may localize:
 - synchronization exhaustion
 - synchronization pressure
 - continuation hardening pressure
+- escalation traversal accumulation
+- escalation traversal compression
 - consequence arrival compression
 - escalation traversal delay
 - dependency gravity
@@ -125,6 +130,10 @@ synchronization traversability
 interruption window visibility
 !=
 interruption arrival feasibility
+
+escalation traversal visibility
+!=
+escalation executability
 
 asymmetry
 does not imply
@@ -205,6 +214,7 @@ Where applicable, outputs may include:
 - interruption locality visualizations
 - continuation hardening render outputs
 - interruption window decay render outputs
+- escalation traversal render outputs
 - consequence compression render artifacts
 - synchronization exhaustion render artifacts
 
@@ -287,6 +297,32 @@ The mapper exists solely for deterministic runtime-local interruption window dec
 
 ---
 
+# Escalation Traversal Renderer Semantics
+
+Escalation traversal renderer outputs localize:
+
+- traversal accumulation
+- escalation delay density
+- synchronization overlap
+- interruption arrival decay
+- continuation hardening adjacency
+- bounded traversal compression
+
+under supplied bounded runtime assumptions.
+
+Renderer outputs do NOT imply:
+
+- escalation necessity
+- intervention recommendation
+- governance invalidity
+- operational authority
+- remediation instruction
+- predictive inevitability
+
+The renderer exists solely for deterministic runtime-local escalation traversal inspection.
+
+---
+
 # Anti-Predictive Boundary
 
 The observatory does not:
@@ -340,7 +376,7 @@ Outputs may localize:
 - traversal delay
 - interruption arrival decay
 - interruption window narrowing
-- escalation compression
+- escalation traversal compression
 - continuation hardening
 - runtime-local veto decay
 
