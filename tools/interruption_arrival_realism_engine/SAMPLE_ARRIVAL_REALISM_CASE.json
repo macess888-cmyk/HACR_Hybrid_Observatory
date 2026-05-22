@@ -1,0 +1,12 @@
+{
+  "case_id": "ARRIVAL_REALISM_CASE_001",
+  "interruption_representation": "visible",
+  "arrival_latency": "high",
+  "synchronization_feasibility": "degraded",
+  "locality_reachability": "fragmented",
+  "reconstruction_feasibility": "low",
+  "continuation_acceleration": "high",
+  "consequence_space_reachability": "degraded",
+  "classification": "ARRIVAL_OPERATIONALLY_IMPROBABLE",
+  "reduction": "interruption representation != interruption arrival realism"
+}

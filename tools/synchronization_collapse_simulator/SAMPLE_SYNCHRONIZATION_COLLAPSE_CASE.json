@@ -1,0 +1,11 @@
+{
+  "case_id": "SYNCHRONIZATION_COLLAPSE_CASE_001",
+  "machine_speed_continuation": "accelerating",
+  "human_reconstruction_latency": "high",
+  "escalation_arrival": "delayed",
+  "synchronization_window": "closing",
+  "interruption_timing": "late",
+  "continuation_pressure": "high",
+  "classification": "SYNCHRONIZATION_COLLAPSE",
+  "reduction": "human oversight surviving != synchronization viability surviving"
+}

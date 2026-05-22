@@ -1,0 +1,13 @@
+{
+  "case_id": "GOVERNABILITY_CAMOUFLAGE_CASE_001",
+  "observability": "high",
+  "replay_continuity": "preserved",
+  "accountability_visibility": "present",
+  "challengeability": "visible",
+  "symbolic_oversight": "stable",
+  "executable_interruption_realism": "degraded",
+  "arrival_realism": "non_arrivable",
+  "camouflage_pressure": "elevated",
+  "classification": "CAMOUFLAGE_DETECTED",
+  "reduction": "visibility surviving != executable governability surviving"
+}

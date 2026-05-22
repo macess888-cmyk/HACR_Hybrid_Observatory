@@ -49,8 +49,25 @@ echo [11] XSS surface exposure detector
 python tools\xss_surface_exposure_detector\xss_surface_detector.py
 
 echo.
+echo [12] Interruption arrival realism engine
+python tools\interruption_arrival_realism_engine\run_arrival_realism.py
+
+echo.
+echo [13] Governability camouflage detector
+python tools\governability_camouflage_detector\run_camouflage_detector.py
+
+echo.
+echo [14] Synchronization collapse simulator
+python tools\synchronization_collapse_simulator\run_synchronization_collapse.py
+
+echo.
 echo ============================================
 echo FULL OBSERVATORY PIPELINE COMPLETE
 echo ============================================
+
+echo.
+echo Current hostile-runtime compression:
+echo Governability collapses where executable interruption corridors become non-traversable under continuation pressure.
+echo.
 
 pause
