@@ -14,8 +14,14 @@ This repository focuses on bounded inspection of:
 - visibility-to-exposure relationships
 - operational dependency concentration
 - contested-runtime coordination survivability
+- replay reconstructability pressure
+- observer-pressure accumulation
+- semantic survivability drift
+- reconstruction timing realism
+- traversal feasibility under operational pressure
 
 The repository does not:
+
 - govern
 - authorize
 - orchestrate execution
@@ -24,6 +30,9 @@ The repository does not:
 - provide military execution capability
 - perform strategic targeting
 - replace operational decision-making
+- determine ontology
+- convert persistence into legitimacy
+- operationalize semantic authority
 
 The repository remains:
 
@@ -32,6 +41,8 @@ The repository remains:
 - operationally bounded
 - continuity-inspection-oriented
 - non-authoritative
+- falsifiable
+- uncertainty-preserving
 - reproducibility-oriented
 
 ---
@@ -52,6 +63,11 @@ Emerging observability directions include:
 - legacy-overlay operational mismatch inspection
 - dependency sovereignty exposure mapping
 - contested-runtime continuity topology inspection
+- replay reconstructability inspection
+- traversal budget realism
+- observer familiarity pressure containment
+- semantic authorization drift inspection
+- persistent exposure stabilization analysis
 
 ---
 
@@ -69,6 +85,9 @@ Operational continuity increasingly depends upon:
 - reconstruction feasibility
 - interruption viability
 - continuity restoration capability
+- replay reconstructability
+- reviewer traversability
+- operational timing realism
 
 Modern operational ecosystems increasingly become:
 
@@ -81,6 +100,36 @@ Modern operational ecosystems increasingly become:
 - machine-assisted
 
 Meaning survivability may increasingly depend not only upon system capability itself, but whether surrounding operational conditions remain survivable under degradation pressure.
+
+---
+
+# Observer Pressure Stabilization
+
+Recent observer-pressure stabilization work includes:
+
+- inspection continuity without authority inheritance
+- persistent exposure != justified differentiation
+- observer familiarity != epistemic gain
+- compression stability != categorization stability
+
+The observer layer may localize pressure.
+
+It may not convert:
+
+- familiarity
+- persistence
+- survivability repetition
+- semantic density
+- visibility continuity
+- or replay continuity
+
+into legitimacy, executable standing, or ontology inheritance.
+
+Persistent exposure alone does not justify semantic differentiation.
+
+Inspection continuity does not inherit authority.
+
+UNKNOWN remains operationally stable without forced determination pressure.
 
 ---
 
@@ -163,9 +212,15 @@ This repository does not operationalize authority.
 
 Survivability persistence alone does not produce legitimacy.
 
+Replay persistence is not proof of executable interruption reconstructability.
+
+Inspection continuity does not inherit authority.
+
 Compression stability != categorization stability
 
 Persistent exposure != justified differentiation
+
+Observer familiarity != epistemic gain
 
 Break survivability, not ontology.
 
