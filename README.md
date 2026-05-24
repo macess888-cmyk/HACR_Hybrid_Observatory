@@ -2,13 +2,13 @@
 
 Observer-only runtime continuity inspection.
 
-The HACR Hybrid Observatory is a bounded observability framework focused on:
+The HACR Hybrid Observatory is a bounded semantic observability and runtime continuity inspection framework focused on:
 
 - interruption realism degradation
 - continuation persistence
 - survivability pressure
-- semantic survivability
 - topology pressure
+- semantic survivability
 - runtime-local reversibility degradation
 - operational embedding
 - normalization pressure
@@ -27,8 +27,8 @@ It does not:
 - determine legitimacy
 - validate truth
 - provide intervention authority
-- replace operational review
 - create admissibility
+- replace operational review
 
 UNKNOWN -> HOLD.
 
@@ -36,27 +36,34 @@ Break survivability, not ontology.
 
 ---
 
-# Current Runtime Posture
+# Current Runtime State
 
-The repository is currently in a bounded stabilization phase.
+The repository is currently operating in a bounded stabilization and semantic QA phase.
 
-The current focus is:
+Current priorities:
 
 - semantic cooling
-- visual authority containment
+- reviewer clarity
 - falsifiability preservation
+- visual authority containment
 - external interpretation localization
 - recursive importance drift detection
-- receipt hygiene
-- regression visibility
-- reviewer legibility
 - deterministic reproducibility
+- runtime separation
+- regression visibility
+- operational hygiene
 
-The current focus is not ontology expansion.
+The repository does not currently prioritize:
+
+- ontology expansion
+- governance infrastructure
+- predictive systems
+- intervention systems
+- authority inheritance
 
 ---
 
-# Core Reductions
+# Core Runtime Reductions
 
 governance visibility
 !=
@@ -78,25 +85,13 @@ continuation persistence
 !=
 preserved future maneuverability
 
-observer instability
-!=
-object instability
-
 stable HOLD
 !=
 prolonged HOLD
 
 visual coherence
 !=
-truth authority
-
-observability utility
-!=
-historical necessity
-
-coherent explanation
-!=
-disconfirmable claim
+authority legitimacy
 
 public readability
 !=
@@ -110,11 +105,19 @@ semantic observability
 !=
 semantic governance
 
+coherent explanation
+!=
+truth closure
+
+semantic hardening
+!=
+semantic enforcement
+
 ---
 
 # Cooling / Stabilization Stack
 
-The observatory includes bounded semantic QA and interpretive hardening infrastructure.
+The repository includes bounded semantic QA and interpretive hardening infrastructure.
 
 Current diagnostic layers:
 
@@ -126,15 +129,21 @@ Current diagnostic layers:
 - Cooling Stack Runner
 - Cooling Regression Verifier
 
-These systems are diagnostic only.
+Cooling outputs are diagnostic only.
 
 PASS, COOL, HOLD, STOP, and REWRITE do not authorize or invalidate artifacts.
 
-COOL means:
-semantic pressure localized.
+---
 
-STOP means:
-bounded review recommended before broader public use.
+# Calibration
+
+See:
+
+- `COOLING_CALIBRATION_GUIDE.md`
+- `STABILIZATION_STATUS.md`
+- `SYSTEM_RUNTIME_MAP.md`
+
+Cooling outputs are observational semantics, not governance decisions.
 
 ---
 
