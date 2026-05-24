@@ -1,0 +1,20 @@
+{
+  "tool": "semantic_cooling_auditor",
+  "status": "COOL",
+  "input_file": "tools\\semantic_cooling_auditor\\sample_input.txt",
+  "input_sha256": "172fc93df3f767999e7a3232a87ffc0dd8b10708e364fa599d3af694402d4281",
+  "word_count": 31,
+  "findings": [
+    {
+      "type": "AUTHORITY_DRIFT",
+      "term": "necessary"
+    },
+    {
+      "type": "AUTHORITY_DRIFT",
+      "term": "civilization-scale governance"
+    }
+  ],
+  "boundary": "observer-only, runtime-local, non-authoritative, non-ontological",
+  "timestamp_utc": "2026-05-24T06:08:22.963545+00:00",
+  "closure": "UNKNOWN -> HOLD. Break survivability, not ontology."
+}
