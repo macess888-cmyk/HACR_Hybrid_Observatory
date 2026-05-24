@@ -1,0 +1,16 @@
+{
+  "tool": "external_interpretation_risk_scanner",
+  "status": "COOL",
+  "input_file": "C:\\Users\\maces\\Desktop\\HACR_Hybrid_Observatory\\README.md",
+  "input_sha256": "e16dbdf48431fb9b043cbe3d62336b92e4461357bcea49f3872e05322c9f5808",
+  "word_count": 660,
+  "findings": [
+    {
+      "type": "PUBLIC_DENSITY_LOAD",
+      "term": "660 words"
+    }
+  ],
+  "boundary": "public interpretation risk is diagnostic only and does not determine intent or truth",
+  "timestamp_utc": "2026-05-24T06:50:00.456277+00:00",
+  "closure": "UNKNOWN -> HOLD. Break survivability, not ontology."
+}

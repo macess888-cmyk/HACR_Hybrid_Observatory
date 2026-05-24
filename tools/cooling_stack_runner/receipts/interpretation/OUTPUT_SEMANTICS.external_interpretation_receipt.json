@@ -1,0 +1,20 @@
+{
+  "tool": "external_interpretation_risk_scanner",
+  "status": "STOP",
+  "input_file": "C:\\Users\\maces\\Desktop\\HACR_Hybrid_Observatory\\OUTPUT_SEMANTICS.md",
+  "input_sha256": "d10113e40a15927d6e866c16371ee7ddc88f1d5fd678a649844c541b6b372c7b",
+  "word_count": 326,
+  "findings": [
+    {
+      "type": "GOVERNANCE_AUTHORITY_MISREAD_RISK",
+      "term": "governance authority"
+    },
+    {
+      "type": "PUBLIC_DENSITY_LOAD",
+      "term": "326 words"
+    }
+  ],
+  "boundary": "public interpretation risk is diagnostic only and does not determine intent or truth",
+  "timestamp_utc": "2026-05-24T06:50:00.645079+00:00",
+  "closure": "UNKNOWN -> HOLD. Break survivability, not ontology."
+}

@@ -1,0 +1,11 @@
+{
+  "tool": "falsifiability_preservation_harness",
+  "status": "PASS",
+  "input_file": "C:\\Users\\maces\\Desktop\\HACR_Hybrid_Observatory\\OBSERVATORY_ARCHITECTURE.md",
+  "input_sha256": "29cd13afe137556d4f44a3f4bc0bdc7f43762f44e5a37ce423c2802af8daf32d",
+  "word_count": 213,
+  "findings": [],
+  "boundary": "claims must remain bounded, locally testable, and disconfirmable",
+  "timestamp_utc": "2026-05-24T06:50:00.994662+00:00",
+  "closure": "UNKNOWN -> HOLD. Break survivability, not ontology."
+}
