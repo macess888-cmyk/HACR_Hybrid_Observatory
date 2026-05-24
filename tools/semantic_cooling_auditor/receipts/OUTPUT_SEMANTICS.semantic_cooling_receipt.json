@@ -1,0 +1,16 @@
+{
+  "tool": "semantic_cooling_auditor",
+  "status": "COOL",
+  "input_file": "OUTPUT_SEMANTICS.md",
+  "input_sha256": "d10113e40a15927d6e866c16371ee7ddc88f1d5fd678a649844c541b6b372c7b",
+  "word_count": 326,
+  "findings": [
+    {
+      "type": "AUTHORITY_DRIFT",
+      "term": "must"
+    }
+  ],
+  "boundary": "observer-only, runtime-local, non-authoritative, non-ontological",
+  "timestamp_utc": "2026-05-24T06:11:43.067410+00:00",
+  "closure": "UNKNOWN -> HOLD. Break survivability, not ontology."
+}

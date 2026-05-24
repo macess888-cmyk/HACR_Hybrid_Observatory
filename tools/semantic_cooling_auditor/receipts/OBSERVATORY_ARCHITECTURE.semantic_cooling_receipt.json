@@ -1,0 +1,11 @@
+{
+  "tool": "semantic_cooling_auditor",
+  "status": "PASS",
+  "input_file": "OBSERVATORY_ARCHITECTURE.md",
+  "input_sha256": "29cd13afe137556d4f44a3f4bc0bdc7f43762f44e5a37ce423c2802af8daf32d",
+  "word_count": 213,
+  "findings": [],
+  "boundary": "observer-only, runtime-local, non-authoritative, non-ontological",
+  "timestamp_utc": "2026-05-24T06:11:43.162062+00:00",
+  "closure": "UNKNOWN -> HOLD. Break survivability, not ontology."
+}
