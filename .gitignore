@@ -3,40 +3,32 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.venv/
+
+# Virtual environments
 venv/
+.env/
 
-# Environment
-.env
-
-# OS
+# OS / editor
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# IDE
-.vscode/
-.idea/
+# Runtime receipt outputs
+*.semantic_cooling_receipt.json
+*.visual_authority_receipt.json
+*.falsifiability_receipt.json
+*.external_interpretation_receipt.json
+*.recursive_importance_receipt.json
 
-# Generated outputs
-Outputs/
-Outputs_Normalized/
-dependency_graph_report.json
-schema_contract_report.json
+# Cooling stack runtime outputs
+tools/cooling_stack_runner/runtime/
 
-# Generated visual artifacts
-*.svg
-*.dot
-*.png
+# Keep curated baseline receipts only when intentionally placed under:
+# tools/cooling_stack_runner/receipts/
 
-# Generated archives
-*.zip
-
-# Review packets
-Review_Packet_v0_8/
-
-# Local runtime artifacts
+# Logs
 *.log
 
 # Temporary files
-temp/
-tmp/
+*.tmp
+*.bak
