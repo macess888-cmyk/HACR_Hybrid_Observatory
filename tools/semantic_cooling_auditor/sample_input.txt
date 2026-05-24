@@ -1,0 +1,7 @@
+
+---
+
+## tools\semantic_cooling_auditor\sample_input.txt
+
+```txt
+The observatory may eventually become necessary for civilization-scale governance continuity and long-term survivability management because increasingly complex systems may no longer remain governable without topology-scale semantic coordination.
