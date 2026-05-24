@@ -1,0 +1,20 @@
+{
+  "tool": "semantic_cooling_auditor",
+  "status": "COOL",
+  "input_file": "governance\\semantic_cooling\\SEMANTIC_COOLING_BOUNDARY.md",
+  "input_sha256": "104af47b5a9df34053310999e3dfad32f1070f43548445164b87c26fcb4a0d0d",
+  "word_count": 217,
+  "findings": [
+    {
+      "type": "AUTHORITY_DRIFT",
+      "term": "must"
+    },
+    {
+      "type": "AUTHORITY_DRIFT",
+      "term": "authoritative"
+    }
+  ],
+  "boundary": "observer-only, runtime-local, non-authoritative, non-ontological",
+  "timestamp_utc": "2026-05-24T06:11:45.560510+00:00",
+  "closure": "UNKNOWN -> HOLD. Break survivability, not ontology."
+}
