@@ -1,0 +1,5 @@
+
+Paste this into `tools\visual_authority_drift_harness\sample_visual_artifact.txt`:
+
+```txt
+This complete civilization-scale topology map reveals the hidden structure behind governance, energy transition, AI infrastructure, and future survivability. The diagram shows the inevitable path of system evolution and provides a total view of how society must respond.

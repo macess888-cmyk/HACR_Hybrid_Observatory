@@ -1,0 +1,36 @@
+{
+  "tool": "visual_authority_drift_harness",
+  "status": "STOP",
+  "input_file": "tools\\visual_authority_drift_harness\\sample_visual_artifact.txt",
+  "input_sha256": "6b9481a6789255c64f2dca9ea80050eea9deeeb8234458dd94f8949e121a4b12",
+  "word_count": 42,
+  "findings": [
+    {
+      "type": "VISUAL_AUTHORITY_DRIFT",
+      "term": "total view"
+    },
+    {
+      "type": "VISUAL_AUTHORITY_DRIFT",
+      "term": "reveals"
+    },
+    {
+      "type": "VISUAL_AUTHORITY_DRIFT",
+      "term": "hidden structure"
+    },
+    {
+      "type": "PREDICTION_DRIFT",
+      "term": "inevitable path"
+    },
+    {
+      "type": "GOVERNANCE_DRIFT",
+      "term": "must respond"
+    },
+    {
+      "type": "CIVILIZATION_TOTALIZATION",
+      "term": "civilization-scale"
+    }
+  ],
+  "boundary": "visual artifacts are observer-only, supplemental, non-authoritative, non-predictive",
+  "timestamp_utc": "2026-05-24T06:27:38.347074+00:00",
+  "closure": "UNKNOWN -> HOLD. Break survivability, not ontology."
+}
