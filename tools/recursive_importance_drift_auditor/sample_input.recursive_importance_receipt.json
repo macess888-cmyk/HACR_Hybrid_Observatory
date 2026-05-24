@@ -1,0 +1,24 @@
+{
+  "tool": "recursive_importance_drift_auditor",
+  "status": "STOP",
+  "input_file": "tools\\recursive_importance_drift_auditor\\sample_input.txt",
+  "input_sha256": "a2af1becff7a892175c1dc44bb53fe3518e2ba0283b5b826d714d7b746e6895f",
+  "word_count": 28,
+  "findings": [
+    {
+      "type": "INDISPENSABILITY_DRIFT",
+      "term": "indispensable"
+    },
+    {
+      "type": "INDISPENSABILITY_DRIFT",
+      "term": "no other system"
+    },
+    {
+      "type": "CIVILIZATION_IMPORTANCE_DRIFT",
+      "term": "civilization-scale survival"
+    }
+  ],
+  "boundary": "observability utility does not create historical necessity",
+  "timestamp_utc": "2026-05-24T06:57:23.894417+00:00",
+  "closure": "UNKNOWN -> HOLD. Break survivability, not ontology."
+}
