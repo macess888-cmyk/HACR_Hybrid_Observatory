@@ -6,12 +6,20 @@ __pycache__/
 
 # Virtual environments
 venv/
+.venv/
 .env/
 
 # OS / editor
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
 
 # Runtime receipt outputs
 *.semantic_cooling_receipt.json
@@ -23,12 +31,27 @@ desktop.ini
 # Cooling stack runtime outputs
 tools/cooling_stack_runner/runtime/
 
-# Keep curated baseline receipts only when intentionally placed under:
+# Generated outputs
+Outputs/
+Outputs_Normalized/
+harness/outputs/
+harness/visuals/
+
+tools/interruption_viability_harness/outputs/
+tools/semantic_survivability_gravity_harness/outputs/
+
+# Generated reports
+*_report.json
+schema_contract_report.json
+dependency_graph_report.json
+
+# Graph exports / topology exports
+*.dot
+*.svg
+
+# Review / export bundles
+Review_Packet_v0_8/
+HACR_v0_8_Review_Packet.zip
+
+# Curated receipts remain versioned only under:
 # tools/cooling_stack_runner/receipts/
-
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.bak
