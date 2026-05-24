@@ -1,0 +1,5 @@
+
+Paste into `tools\recursive_importance_drift_auditor\sample_input.txt`:
+
+```txt
+The observatory is becoming an indispensable framework for civilization-scale survival because no other system can explain modern infrastructure drift with this level of completeness.
