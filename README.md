@@ -135,15 +135,18 @@ PASS, COOL, HOLD, STOP, and REWRITE do not authorize or invalidate artifacts.
 
 ---
 
-# Calibration
+# Calibration / Stabilization
 
 See:
 
 - `COOLING_CALIBRATION_GUIDE.md`
 - `STABILIZATION_STATUS.md`
 - `SYSTEM_RUNTIME_MAP.md`
+- `STABILIZATION_FREEZE.md`
 
 Cooling outputs are observational semantics, not governance decisions.
+
+The repository is currently operating under bounded stabilization discipline.
 
 ---
 
