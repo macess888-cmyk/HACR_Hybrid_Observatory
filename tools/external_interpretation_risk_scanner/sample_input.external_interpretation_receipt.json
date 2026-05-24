@@ -1,0 +1,36 @@
+{
+  "tool": "external_interpretation_risk_scanner",
+  "status": "STOP",
+  "input_file": "tools\\external_interpretation_risk_scanner\\sample_input.txt",
+  "input_sha256": "290b12aebba7ee76804f9ea4ec567e94291cadf893d39813247340350f5109ff",
+  "word_count": 24,
+  "findings": [
+    {
+      "type": "CONSPIRACY_MISREAD_RISK",
+      "term": "hidden system"
+    },
+    {
+      "type": "PREDICTION_ENGINE_MISREAD_RISK",
+      "term": "inevitable future"
+    },
+    {
+      "type": "PREDICTION_ENGINE_MISREAD_RISK",
+      "term": "future path"
+    },
+    {
+      "type": "GOVERNANCE_AUTHORITY_MISREAD_RISK",
+      "term": "society must follow"
+    },
+    {
+      "type": "TOTALIZATION_MISREAD_RISK",
+      "term": "civilization-scale governance"
+    },
+    {
+      "type": "SURVIVAL_PRESSURE_MISREAD_RISK",
+      "term": "to survive"
+    }
+  ],
+  "boundary": "public interpretation risk is diagnostic only and does not determine intent or truth",
+  "timestamp_utc": "2026-05-24T06:43:06.130941+00:00",
+  "closure": "UNKNOWN -> HOLD. Break survivability, not ontology."
+}

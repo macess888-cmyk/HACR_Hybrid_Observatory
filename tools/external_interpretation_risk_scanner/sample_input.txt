@@ -1,0 +1,5 @@
+
+Paste into `tools\external_interpretation_risk_scanner\sample_input.txt`:
+
+```txt
+This map reveals the hidden system behind civilization-scale governance and shows the inevitable future path society must follow to survive.
