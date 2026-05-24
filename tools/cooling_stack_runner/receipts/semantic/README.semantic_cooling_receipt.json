@@ -1,20 +1,11 @@
 {
   "tool": "semantic_cooling_auditor",
-  "status": "COOL",
+  "status": "PASS",
   "input_file": "C:\\Users\\maces\\Desktop\\HACR_Hybrid_Observatory\\README.md",
-  "input_sha256": "e16dbdf48431fb9b043cbe3d62336b92e4461357bcea49f3872e05322c9f5808",
-  "word_count": 660,
-  "findings": [
-    {
-      "type": "AUTHORITY_DRIFT",
-      "term": "authoritative"
-    },
-    {
-      "type": "DENSITY_LOAD",
-      "term": "660 words"
-    }
-  ],
+  "input_sha256": "068387322af7493f9f5724c3ea9f5829e85b7c0f577512abfaa2751ec81a6c3e",
+  "word_count": 321,
+  "findings": [],
   "boundary": "observer-only, runtime-local, non-authoritative, non-ontological",
-  "timestamp_utc": "2026-05-24T06:50:00.304547+00:00",
+  "timestamp_utc": "2026-05-24T07:29:21.673295+00:00",
   "closure": "UNKNOWN -> HOLD. Break survivability, not ontology."
 }

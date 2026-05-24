@@ -11,6 +11,6 @@
     }
   ],
   "boundary": "claims must remain bounded, locally testable, and disconfirmable",
-  "timestamp_utc": "2026-05-24T06:50:00.800401+00:00",
+  "timestamp_utc": "2026-05-24T07:29:22.207265+00:00",
   "closure": "UNKNOWN -> HOLD. Break survivability, not ontology."
 }
