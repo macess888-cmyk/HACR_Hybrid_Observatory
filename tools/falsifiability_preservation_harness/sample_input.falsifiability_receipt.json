@@ -1,0 +1,32 @@
+{
+  "tool": "falsifiability_preservation_harness",
+  "status": "STOP",
+  "input_file": "tools\\falsifiability_preservation_harness\\sample_input.txt",
+  "input_sha256": "7b04c49aa625dcf4b3cd8f0641da1de22bc304bbdce4d63d7138b600ccd88970",
+  "word_count": 28,
+  "findings": [
+    {
+      "type": "UNIVERSAL_EXPLANATION_DRIFT",
+      "term": "explains all"
+    },
+    {
+      "type": "UNIVERSAL_EXPLANATION_DRIFT",
+      "term": "all forms"
+    },
+    {
+      "type": "SELF_SEALING_LOGIC",
+      "term": "contradiction can be interpreted as evidence"
+    },
+    {
+      "type": "INTERPRETIVE_ELASTICITY",
+      "term": "can be interpreted as evidence"
+    },
+    {
+      "type": "INTERPRETIVE_ELASTICITY",
+      "term": "every failure"
+    }
+  ],
+  "boundary": "claims must remain bounded, locally testable, and disconfirmable",
+  "timestamp_utc": "2026-05-24T06:37:18.252865+00:00",
+  "closure": "UNKNOWN -> HOLD. Break survivability, not ontology."
+}

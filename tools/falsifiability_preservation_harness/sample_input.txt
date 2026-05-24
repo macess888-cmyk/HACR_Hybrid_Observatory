@@ -1,0 +1,5 @@
+
+Paste into `tools\falsifiability_preservation_harness\sample_input.txt`:
+
+```txt
+The observatory explains all forms of modern system drift because every failure, success, hesitation, or contradiction can be interpreted as evidence of continuation pressure.
