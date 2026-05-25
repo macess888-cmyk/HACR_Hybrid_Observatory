@@ -32,8 +32,8 @@
   ],
   "observer_mode": "marine_continuity_recoverability_topology",
   "reason": "Continuity persists while biological recoverability corridor is degraded.",
-  "receipt_sha256": "82f0e1fc3451ed9f599a1edd2259e32aa323d9ecd83804b0e2a0dd10f867b6be",
-  "timestamp_utc": "2026-05-25T23:40:07.669053+00:00",
+  "receipt_sha256": "e80f0a9631c2936c568286d474f26849e9c9b25f8c18e9a4d5c8c04b84bb2cd2",
+  "timestamp_utc": "2026-05-25T23:46:18.511780+00:00",
   "tool": "marine_recoverability_observatory",
   "version": "v1.4"
 }
