@@ -1,0 +1,39 @@
+{
+  "authority": "none",
+  "case_id": "sample_marine_recoverability_case_001",
+  "claim_scope": "diagnostic_only",
+  "classification": "FAIL",
+  "core_reduction": "continued ocean function is not proof of preserved ecological recovery",
+  "input_snapshot": {
+    "acidification_stress": 0.61,
+    "case_id": "sample_marine_recoverability_case_001",
+    "habitat_condition": 0.41,
+    "migration_displacement": 0.69,
+    "notes": "Sample bounded diagnostic input. Not real-world certification or ecological advice.",
+    "observer_mode": "marine_continuity_recoverability_topology",
+    "oxygen_stress": 0.72,
+    "productivity_continuity": 0.81,
+    "recovery_corridor_evidence": 0.31,
+    "recruitment_viability": 0.34,
+    "species_presence": 0.76,
+    "stratification_stress": 0.66,
+    "temperature_anomaly": 2.1,
+    "trophic_coupling": 0.38
+  },
+  "non_claims": [
+    "not ecological certification",
+    "not conservation authority",
+    "not fisheries guidance",
+    "not climate-policy instruction",
+    "not species-risk classification",
+    "not intervention authorization",
+    "not prediction",
+    "not mission control"
+  ],
+  "observer_mode": "marine_continuity_recoverability_topology",
+  "reason": "Continuity persists while biological recoverability corridor is degraded.",
+  "receipt_sha256": "82f0e1fc3451ed9f599a1edd2259e32aa323d9ecd83804b0e2a0dd10f867b6be",
+  "timestamp_utc": "2026-05-25T23:40:07.669053+00:00",
+  "tool": "marine_recoverability_observatory",
+  "version": "v1.4"
+}

@@ -1,0 +1,16 @@
+{
+  "case_id": "sample_marine_recoverability_case_001",
+  "observer_mode": "marine_continuity_recoverability_topology",
+  "temperature_anomaly": 2.1,
+  "oxygen_stress": 0.72,
+  "acidification_stress": 0.61,
+  "stratification_stress": 0.66,
+  "productivity_continuity": 0.81,
+  "species_presence": 0.76,
+  "recruitment_viability": 0.34,
+  "habitat_condition": 0.41,
+  "trophic_coupling": 0.38,
+  "migration_displacement": 0.69,
+  "recovery_corridor_evidence": 0.31,
+  "notes": "Sample bounded diagnostic input. Not real-world certification or ecological advice."
+}
