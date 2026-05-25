@@ -1,0 +1,9 @@
+{
+  "event_id": "demo_001",
+  "inspection_result": "HOLD",
+  "reason": "continuity preserved under uncertain coupling conditions",
+  "localization_fidelity": "degraded",
+  "runtime_grounding": "uncertain",
+  "observer_scope": "bounded_observer_local",
+  "receipt_sha256": "c0f0e39b377e675ea53ff101cd208c72cc4df40b6c2ab94c436f6a90d7e407e7"
+}

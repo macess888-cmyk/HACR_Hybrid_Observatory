@@ -1,0 +1,11 @@
+{
+  "event_id": "demo_001",
+  "inspection_result": "HOLD",
+  "reason": "observer-local continuity inspection",
+  "continuity_status": "operational",
+  "coupling_status": "uncertain",
+  "interruptibility": "degraded",
+  "runtime_grounding": "uncertain",
+  "observer_scope": "bounded_observer_local",
+  "receipt_sha256": "e402dff70f96cb357a7e16013f36aef7c475f0fac77fbecf72c1f44b36acda2f"
+}

@@ -1,0 +1,11 @@
+{
+  "event_id": "demo_002",
+  "inspection_result": "PASS",
+  "reason": "observer-local continuity inspection",
+  "continuity_status": "operational",
+  "coupling_status": "stable",
+  "interruptibility": "stable",
+  "runtime_grounding": "grounded",
+  "observer_scope": "bounded_observer_local",
+  "receipt_sha256": "960fa8c213df4d142d5f2203eac984fe4b7a8f35c82c207dba8df98a8a4efbd9"
+}

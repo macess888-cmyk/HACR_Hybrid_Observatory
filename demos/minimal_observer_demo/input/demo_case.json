@@ -1,0 +1,8 @@
+{
+  "event_id": "demo_001",
+  "runtime_state": "stale_dependency_detected",
+  "continuity_status": "operational",
+  "observer_visibility": true,
+  "interruptibility": "degraded",
+  "coupling_status": "uncertain"
+}
