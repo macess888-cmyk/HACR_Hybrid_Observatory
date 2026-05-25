@@ -1,0 +1,15 @@
+{
+  "case_id": "orbit_demo_001",
+  "expected_position_km": [7000.0, 0.0, 0.0],
+  "observed_position_km": [7002.4, 1.8, 0.6],
+  "uncertainty_margin_km": 2.0,
+  "fuel_margin_percent": 18,
+  "maneuver_window_minutes": 42,
+  "perturbations": {
+    "drag": true,
+    "third_body": false,
+    "sensor_noise": true,
+    "thrust_miscalibration": false,
+    "debris_proximity": false
+  }
+}

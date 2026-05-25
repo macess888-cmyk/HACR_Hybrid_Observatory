@@ -1,0 +1,15 @@
+{
+  "case_id": "orbit_demo_001",
+  "inspection_result": "HOLD",
+  "reason": "orbital continuity persists but recoverability or coupling is uncertain",
+  "drift_km": 3.0594,
+  "uncertainty_margin_km": 2.0,
+  "fuel_margin_percent": 18,
+  "maneuver_window_minutes": 42,
+  "active_perturbations": [
+    "drag",
+    "sensor_noise"
+  ],
+  "observer_scope": "bounded_orbital_observer_local",
+  "receipt_sha256": "c4002f3a0bfb7174fc85f6cdf0092bf6bb64783dc6574f935fd3531c7e5c8647"
+}
