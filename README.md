@@ -1,217 +1,164 @@
 # HACR Hybrid Observatory
 
-## Observer-Restricted Runtime Continuity Inspection
+## Observer-Local Runtime Continuity Inspection
 
-The HACR Hybrid Observatory is a bounded, observer-local runtime continuity inspection framework focused on:
+The HACR Hybrid Observatory is a bounded, observer-local runtime inspection and continuity localization framework focused on:
 
-- continuity survivability
-- degradation localization
-- replay visibility
+- runtime continuity visibility
 - interruption realism
-- topology inspection
-- runtime coupling analysis
-- and uncertainty preservation under constrained observational conditions
+- localization fidelity
+- replay-bounded inspection
+- deterministic runtime observability
+- continuity topology mapping
+- uncertainty preservation
+- inheritance drift localization
+- and pressure-surface inspection under constrained observational semantics
 
-The observatory does not function as an execution authority, deployment controller, or sovereign governance layer.
+The observatory is intentionally non-authoritative.
 
-Its purpose is runtime inspection and structural visibility.
+It does not claim:
 
----
+- sovereign governance authority
+- autonomous execution control
+- universal runtime validity
+- institutional enforcement ownership
+- or consequence-boundary sovereignty
 
-# Core Boundary
-
-The observatory intentionally separates:
+The repository preserves explicit separation between:
 
 - claims
 - observability
-- reproducibility
-- and enforcement
+- enforcement
+- replay
+- continuity
+- admissibility
+- and runtime consequence formation
 
-because different governance layers solve different failure surfaces.
-
-The repository focuses on:
-
-- observer-local runtime inspection
-- continuity topology analysis
-- replay/review instrumentation
-- localization fidelity analysis
-- degradation mapping
-- bounded runtime traversal
-- deterministic inspection surfaces
-- and reproducibility-oriented observational tooling
-
-The repository does not claim:
-
-- universal governance authority
-- sovereign execution control
-- institutional deployment authority
-- autonomous consequence authorization
-- integrated global enforcement infrastructure
-- operational legality determination
-- or runtime sovereignty over external systems
-
-Visibility is not enforcement.
-Claims are not proof.
-Continuity is not validity.
+because different layers answer different failure questions.
 
 ---
 
-# Core Distinctions
-
-The observatory preserves explicit separation between several important runtime concepts:
-
-coherence != validity
+# Core Reductions
 
 continuity != coupling
+
+coherence != grounding
 
 visibility != enforcement
 
 claims != proof
 
-observability != consequence prevention
+replayability != admissibility
+
+artifact density != runtime validity
 
 persistent continuity != preserved localization fidelity
 
-stable appearance != runtime grounding
+stable appearance != preserved interruption realism
 
-documentation != runtime constraint
-
-artifact density != proof
-
-continuation != admissibility
-
-These distinctions exist to prevent category collapse across governance, observability, continuity, and enforcement systems.
-
----
-
-# Runtime Focus
-
-The observatory investigates conditions where systems may remain:
-
-- coherent
-- operational
-- inspectable
-- explainable
-- stable-looking
-- and infrastructure-continuous
-
-while underlying coupling, localization quality, interruption viability, or grounding progressively degrade underneath preserved continuity.
-
-The dangerous surface is often not visible collapse.
-
-It is:
-
-stable-looking continuation under progressively degraded localization fidelity.
-
----
-
-# Current Repository Areas
-
-Current repository areas include:
-
-- runtime continuity inspection
-- topology analysis
-- degradation localization
-- deterministic replay instrumentation
-- continuity survivability mapping
-- observer-local runtime analysis
-- bounded replay/review tooling
-- continuity pressure inspection
-- interruption realism analysis
-- semantic boundary stabilization
-- and reproducibility-focused inspection surfaces
-
-The repository contains:
-
-- markdown governance notes
-- bounded runtime analysis tooling
-- JSON-driven case structures
-- deterministic receipt generation
-- replay/review instrumentation
-- SVG and topology rendering surfaces
-- observer-local inspection tools
-- and reproducibility-oriented analysis workflows
-
----
-
-# Reproducibility
-
-The observatory emphasizes:
-
-- bounded reproducibility
-- deterministic outputs
-- replay visibility
-- observer-local inspection
-- explicit non-claims
-- and constrained operational semantics
-
-Where possible, inspection surfaces are designed to support:
-
-- replayability
-- deterministic review
-- topology traversal
-- and independently inspectable runtime analysis
-
-without implying enforcement authority.
-
----
-
-# Observer Scope Limits
-
-The HACR Hybrid Observatory does not claim:
-
-- sovereign governance authority
-- universal execution control
-- integrated institutional enforcement
-- runtime execution ownership
-- consequence authorization authority
-- autonomous governance replacement
-- deployment certification
-- operational legality determination
-
-The observatory remains:
-
-- observer-local
-- bounded
-- reproducible
-- inspection-oriented
-- non-authoritative
-- and visibility-preserving
-
-Its purpose is runtime continuity inspection and degradation localization under constrained observational conditions.
-
-Visibility is not enforcement.
-Inspection is not authority.
-Observability is not consequence prevention.
-
----
-
-# Structural Focus
-
-The observatory focuses on preserving visibility into:
-
-- degradation
-- localization drift
-- continuity survivability
-- interruption realism
-- observer adaptation
-- normalization pressure
-- continuity/coupling divergence
-- and uncertainty surfaces
-
-under bounded runtime conditions.
-
-Many systems fail not through visible collapse,
-but through:
-
-stable-looking continuation under degraded grounding.
-
----
-
-# Central Reduction
-
-Sometimes visible uncertainty is healthier than silently preserved coherence.
-
-UNKNOWN -> HOLD.
+UNKNOWN -> HOLD
 
 Break survivability, not ontology.
+
+---
+
+# Repository Purpose
+
+The repository exists to explore bounded runtime continuity inspection under observer-local constraints.
+
+Current focus areas include:
+
+- continuity topology inspection
+- runtime localization visibility
+- deterministic replay analysis
+- bounded replay/review surfaces
+- runtime degradation mapping
+- observer adaptation pressure
+- inheritance drift localization
+- uncertainty preservation
+- topology-oriented discovery surfaces
+- and continuity/interruption divergence analysis
+
+The project intentionally preserves explicit distinction between:
+
+- visibility surfaces
+- enforcement surfaces
+- and proof surfaces
+
+to avoid false inheritance between architectural layers.
+
+---
+
+# Current Repository Structure
+
+## governance/
+
+Observer-boundary notes, runtime-local inspection reductions, continuity/localization distinctions, and semantic containment infrastructure.
+
+Includes:
+
+- observer surface boundaries
+- inheritance drift notes
+- topology discovery notes
+- runtime continuity reductions
+- continuity/localization boundary analysis
+- observability vs enforcement distinctions
+- claims vs proof separations
+
+---
+
+## tools/
+
+Observer-local runtime inspection tooling and bounded reproducibility instrumentation.
+
+Current tooling includes:
+
+- inheritance drift detector
+- replay/localization inspection tooling
+- deterministic receipt generation
+- continuity topology instrumentation
+- bounded runtime inspection utilities
+- replay-bounded analysis surfaces
+
+---
+
+## demos/
+
+Minimal reproducible observer-local runtime inspection demonstrations.
+
+Current demos include:
+
+- deterministic PASS/HOLD replay cases
+- runtime continuity inspection examples
+- JSON-driven inspection cases
+- deterministic SHA256 receipt generation
+- observer-local replay surfaces
+
+---
+
+# Minimal Observer Demo
+
+The repository includes a runnable minimal observer-local runtime inspection demo.
+
+The demo demonstrates:
+
+- deterministic replay inspection
+- runtime continuity visibility
+- HOLD/PASS differentiation
+- localization fidelity states
+- runtime grounding visibility
+- deterministic SHA256 receipts
+- bounded observer semantics
+
+The demo intentionally remains:
+
+- minimal
+- reproducible
+- bounded
+- inspectable
+- and non-authoritative
+
+Run:
+
+```bash
+python demos/minimal_observer_demo/run_demo.py
