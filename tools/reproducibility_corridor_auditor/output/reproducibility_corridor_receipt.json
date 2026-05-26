@@ -32,8 +32,8 @@
   ],
   "observer_mode": "reproducibility_corridor_topology",
   "reason": "Technical continuity persists while reproducibility recoverability corridor is degraded.",
-  "receipt_sha256": "637fac7fdf74154a2786043ba0f95fe1b3b8fb82b9cce0af184d93b4cc0c4e62",
-  "timestamp_utc": "2026-05-26T00:23:06.964888+00:00",
+  "receipt_sha256": "5fe9ebfde4ff500e57a2d3f3dd3c27699a985ebdd086a6b4962b426529fc9af8",
+  "timestamp_utc": "2026-05-26T00:26:05.949348+00:00",
   "tool": "reproducibility_corridor_auditor",
   "version": "v1.7"
 }

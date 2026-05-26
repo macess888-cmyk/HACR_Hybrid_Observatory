@@ -31,8 +31,8 @@
   ],
   "observer_mode": "citation_continuity_drift_topology",
   "reason": "Citation continuity persists while evidence recoverability corridor is degraded.",
-  "receipt_sha256": "5fc748b5b4e87aa333407eb9c12f98c74d46804f06399d4bb4b01b9ac7deb06f",
-  "timestamp_utc": "2026-05-26T00:23:08.224019+00:00",
+  "receipt_sha256": "68c2c8bf8f0c1c9e3a54ab68641d3a0f585c17a0b2411769a57b62b4a5b90864",
+  "timestamp_utc": "2026-05-26T00:26:07.163772+00:00",
   "tool": "citation_continuity_drift_mapper",
   "version": "v1.7"
 }
