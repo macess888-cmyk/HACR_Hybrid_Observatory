@@ -35,10 +35,10 @@
   "observer_mode": "hybrid_bridge_finding_topology",
   "proposed_bridge": "reproducibility_to_runtime_receipt_lineage",
   "reason": "Bridge appears bounded, useful, observer-only, and containment-preserving under supplied evidence.",
-  "receipt_sha256": "972a4b8f14b1fc789193fa2896957a406ccf5c2d25f0acc59daf3959fa07e171",
+  "receipt_sha256": "a6512a3a22deeee22308894f6a1e69fba94a915437be212015b8cfb516ba3664",
   "source_layer": "sts_technical_continuity",
   "target_layer": "runtime_continuity",
-  "timestamp_utc": "2026-05-26T00:33:29.442541+00:00",
+  "timestamp_utc": "2026-05-26T00:34:56.444435+00:00",
   "tool": "hybrid_bridge_finder",
   "version": "v1.8"
 }
