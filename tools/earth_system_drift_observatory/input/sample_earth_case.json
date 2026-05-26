@@ -1,0 +1,15 @@
+{
+  "case_id": "sample_earth_system_drift_case_001",
+  "observer_mode": "earth_system_drift_topology",
+  "hydrological_continuity": 0.81,
+  "atmospheric_continuity": 0.77,
+  "geological_stability_appearance": 0.74,
+  "soil_viability": 0.38,
+  "groundwater_recharge_viability": 0.32,
+  "biome_coupling": 0.41,
+  "thermal_accumulation": 0.69,
+  "chemical_accumulation": 0.62,
+  "erosion_pressure": 0.57,
+  "regeneration_corridor_evidence": 0.35,
+  "notes": "Sample bounded diagnostic input. Not environmental certification or policy advice."
+}

@@ -1,0 +1,15 @@
+{
+  "case_id": "sample_biological_recoverability_case_001",
+  "observer_mode": "biological_recoverability_topology",
+  "population_continuity": 0.78,
+  "species_presence": 0.82,
+  "reproductive_viability": 0.36,
+  "habitat_viability": 0.42,
+  "resource_continuity": 0.64,
+  "trophic_dependency": 0.39,
+  "mutation_pressure": 0.58,
+  "temperature_stress": 0.67,
+  "oxygen_stress": 0.55,
+  "regeneration_corridor_evidence": 0.33,
+  "notes": "Sample bounded diagnostic input. Not biological certification or ecological advice."
+}
