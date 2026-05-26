@@ -4,7 +4,7 @@ Observer-only runtime continuity inspection.
 
 ---
 
-## Core Purpose
+# Core Purpose
 
 The HACR Hybrid Observatory is a bounded observability framework for inspecting:
 
@@ -12,27 +12,27 @@ The HACR Hybrid Observatory is a bounded observability framework for inspecting:
 * interruption realism
 * dependency persistence
 * recoverability degradation
-* topology-scoped operational pressure
 * inheritance drift
-* replay divergence
+* replay survivability
+* topology-scoped operational pressure
 * hidden continuation pressure
 * operational reconvergence behavior
 
 under deterministic and reproducible conditions.
 
-The repository focuses on:
+The observatory prioritizes:
 
 * bounded runtime diagnostics
-* topology-local inspection
+* observer-local inspection
+* topology-scoped analysis
 * reproducibility-oriented review
-* operational interoperability
 * deterministic replay framing
-* observer-local analysis
+* operational interoperability
 * explicit NON_CLAIMS architecture
 
 ---
 
-## What This Is NOT
+# What This Is NOT
 
 The observatory does NOT:
 
@@ -42,12 +42,13 @@ The observatory does NOT:
 * optimize
 * rank humans
 * control behavior
-* enforce policy
-* provide legitimacy
-* replace human judgment
 * predict futures
+* enforce policy
+* replace human judgment
+* provide legitimacy
 * execute intervention authority
 * provide operational command
+* function as sovereign infrastructure
 
 The repository intentionally avoids:
 
@@ -56,13 +57,13 @@ The repository intentionally avoids:
 * ontology centralization
 * behavioral scoring
 * psychometric inference
-* sovereign execution routing
 * autonomous action authority
 * optimization absolutism
+* total observability architectures
 
 ---
 
-## Core Operating Constraint
+# Core Operating Constraint
 
 ```text
 UNKNOWN -> HOLD
@@ -72,7 +73,7 @@ No proof -> no bind -> no effect-capable path -> no effect.
 
 ---
 
-## Core Design Philosophy
+# Core Design Philosophy
 
 Small enough to inspect.
 
@@ -93,11 +94,13 @@ coherence != correctness
 
 observability != authority
 
-replayability != grounding
-
-continued operation != preserved recoverability
-
 visibility != governance
+
+continuation != recoverability
+
+manual compensation != resilience
+
+replayability != grounding
 
 capability != wisdom
 ```
@@ -115,9 +118,9 @@ HACR_Hybrid_Observatory/
 ├── receipts/
 ├── diagrams/
 ├── docs/
-├── reproducibility/
 ├── observatory_layers/
 ├── diagnostics/
+├── reproducibility/
 └── artifacts/
 ```
 
@@ -129,7 +132,7 @@ HACR_Hybrid_Observatory/
 
 * docs/public_orientation/START_HERE.md
 
-## Boundedness
+## Why Boundedness Matters
 
 * docs/boundedness/WHY_BOUNDEDNESS_MATTERS.md
 
@@ -137,9 +140,25 @@ HACR_Hybrid_Observatory/
 
 * docs/cross_domain_translation/CROSS_DOMAIN_TRANSLATION_INDEX.md
 
-## Recoverability
+## Small Business Recoverability
 
 * docs/recoverability/SMALL_BUSINESS_RECOVERABILITY.md
+
+## Failure Patterns
+
+* docs/failure_patterns/OBSERVED_FAILURE_PATTERNS.md
+
+## Boundary Constraints
+
+* docs/boundaries/BOUNDARY_CONSTRAINTS.md
+
+## Demo Cases
+
+* docs/demo_cases/RECOVERABILITY_DEMO_CASE.md
+
+## Public Topology Atlas
+
+* docs/topology_atlas/PUBLIC_OBSERVATORY_TOPOLOGY.md
 
 ---
 
@@ -149,13 +168,13 @@ HACR_Hybrid_Observatory/
 
 Inspects:
 
-* continuity survivability
 * interruption realism
+* continuation survivability
 * dependency persistence
-* continuation gravity
 * localization degradation
 * recoverability collapse
-* replayability divergence
+* replay divergence
+* continuation gravity
 * interruption corridor degradation
 
 Core reduction:
@@ -170,12 +189,12 @@ continued operation != preserved interruption viability
 
 Inspects:
 
-* orbital continuity realism
 * maneuver-window degradation
+* orbital recoverability
 * perturbation survivability
 * orbital anomaly geometry
-* recovery corridor collapse
-* orbital calibration drift
+* calibration drift
+* trajectory pressure
 
 Core reduction:
 
@@ -190,10 +209,10 @@ orbital continuity != trajectory validity
 Inspects:
 
 * biological recoverability
-* trophic dependency topology
 * oxygen corridor viability
-* habitat regeneration viability
+* trophic dependency topology
 * ecological survivability pressure
+* habitat regeneration viability
 
 Core reduction:
 
@@ -208,10 +227,10 @@ ocean continuity != ecological recoverability
 Inspects:
 
 * Earth-system drift
-* regeneration corridor viability
-* atmospheric continuity
-* hydrological recoverability
 * biosphere/geosphere coupling pressure
+* hydrological recoverability
+* atmospheric continuity
+* regeneration corridor viability
 
 Core reduction:
 
@@ -226,12 +245,11 @@ planetary continuity != biological recoverability
 Inspects:
 
 * reproducibility continuity
-* citation dependency drift
 * benchmark inheritance
-* method fragility
-* tooling dependency
-* peer-review survivability
+* citation dependency drift
+* tooling fragility
 * technical legitimacy drift
+* peer-review survivability
 
 Core reduction:
 
@@ -246,12 +264,11 @@ technical continuity != epistemic recoverability
 Inspects:
 
 * cross-domain topology gaps
-* bridge necessity
+* interoperability pressure
 * ambiguity reduction
 * observer-only fit
-* authority drift risk
-* governance expansion risk
 * semantic expansion pressure
+* governance drift risk
 
 Core reduction:
 
@@ -287,22 +304,20 @@ Its purpose is bounded operational interoperability only.
 
 ---
 
-# Reproducibility
+# Observed Failure Patterns
 
-The observatory prioritizes:
+The observatory repeatedly localizes several recurring operational asymmetries:
 
-* deterministic outputs
-* replayable inspection conditions
-* reproducible receipts
-* bounded review surfaces
-* independently reviewable artifacts
+* visible continuity != preserved recoverability
+* coherence != grounding
+* continuation != legitimacy
+* replayability != correctness
+* visibility != executable governance
+* manual compensation != structural resilience
 
-Outputs should remain:
+The observatory does not eliminate these pressures.
 
-* inspectable
-* falsifiable
-* externally reviewable
-* operationally bounded
+It localizes them under bounded and reproducible inspection conditions.
 
 ---
 
@@ -317,7 +332,7 @@ The observatory recognizes that:
 
 The repository does NOT attempt to govern humans.
 
-However, it intentionally preserves:
+It intentionally preserves:
 
 * uncertainty visibility
 * recoverability awareness
@@ -326,6 +341,26 @@ However, it intentionally preserves:
 * consequence visibility
 
 without collapsing into behavioral authority.
+
+---
+
+# Reproducibility
+
+The observatory prioritizes:
+
+* deterministic outputs
+* replayable inspection conditions
+* reproducible receipts
+* bounded review surfaces
+* externally inspectable artifacts
+
+Outputs should remain:
+
+* falsifiable
+* inspectable
+* reproducible
+* operationally bounded
+* independently reviewable
 
 ---
 
@@ -356,7 +391,7 @@ Direct human-behavior observatory expansion is intentionally held.
 
 Total observability is intentionally rejected.
 
-Observer locality is intentionally preserved.
+Observer-locality is intentionally preserved.
 
 Bounded inspection is intentional.
 
