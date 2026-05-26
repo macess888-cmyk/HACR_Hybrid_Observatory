@@ -2,7 +2,7 @@
 
 Observer-only runtime continuity inspection.
 
-The HACR Hybrid Observatory is a deterministic diagnostic observability framework for inspecting continuity persistence, recoverability degradation, interruption realism, topology inheritance, localization degradation, regeneration viability, epistemic recoverability, perturbation survivability, bridge necessity, and corridor collapse under continued operational continuity.
+The HACR Hybrid Observatory is a deterministic diagnostic observability framework for inspecting continuity persistence, recoverability degradation, interruption realism, topology inheritance, localization degradation, regeneration viability, epistemic recoverability, bridge necessity, perturbation survivability, and corridor collapse under continued operational continuity.
 
 The repository does not govern, authorize, certify, predict, control, execute, rank, validate, optimize, or operationally manage systems, institutions, scientific fields, ecosystems, or humans.
 
@@ -46,6 +46,8 @@ The repository focuses on:
 - cross-domain bridge topology
 - authority drift inspection
 - ambiguity reduction topology
+- integration hardening
+- expansion containment inspection
 
 The repository intentionally avoids:
 
@@ -145,6 +147,8 @@ topology gap != domain authorization
 conceptual adjacency != safe integration
 
 layer usefulness != operational legitimacy
+
+bridge discovery != expansion authority
 ```
 
 ---
@@ -421,6 +425,8 @@ Reason:
 human behavior inspection can drift into prediction, persuasion, scoring, manipulation, governance, or authority semantics
 ```
 
+Medical and clinical authority expansion also remains held unless observer-only containment can be proven without intervention semantics.
+
 Current safe focus:
 
 - reviewer reproducibility
@@ -433,6 +439,7 @@ Current safe focus:
 - reproducibility stabilization
 - cross-domain continuity/recoverability alignment
 - bridge containment inspection
+- integration hardening
 
 The repository does not provide:
 
@@ -444,6 +451,10 @@ The repository does not provide:
 - psychometric inference
 - behavioral governance
 - intervention authority
+- medical diagnosis
+- treatment recommendation
+- clinical authority
+- health prediction infrastructure
 
 ---
 
@@ -482,6 +493,8 @@ No tool may assign:
 - research ranking authority
 - benchmark legitimacy
 - bridge expansion authority
+- medical legitimacy
+- clinical authority
 
 ---
 
@@ -524,7 +537,9 @@ governance/
 │
 ├─ sts_technical_continuity/
 │
-└─ hybrid_bridge_finding/
+├─ hybrid_bridge_finding/
+│
+└─ expansion_control/
 ```
 
 Documentation:
@@ -534,8 +549,37 @@ docs/
 │
 ├─ reviewer_guides/
 │
-└─ topology_maps/
+├─ topology_maps/
+│
+└─ integration/
 ```
+
+Integration documents:
+
+```text
+docs/integration/
+│
+├─ OBSERVATORY_STACK_INDEX.md
+├─ RECEIPT_LINEAGE_INDEX.md
+├─ BRANCH_STABILIZATION_HISTORY.md
+└─ TOOL_TO_GOVERNANCE_MAP.md
+```
+
+---
+
+# Integration Index
+
+The repository includes integration documents for reviewer orientation and expansion control.
+
+Expansion is controlled by:
+
+```text
+A new layer may proceed only if it improves observer-local recoverability inspection without introducing authority, prediction, certification, intervention, human-control, or operational-command semantics.
+```
+
+Bridge discovery remains diagnostic-only.
+
+No bridge may override observer-only containment.
 
 ---
 
@@ -611,6 +655,9 @@ The repository does not:
 - assign institutional legitimacy
 - authorize observatory expansion
 - certify bridge necessity
+- diagnose disease
+- prescribe treatment
+- authorize clinical action
 
 ---
 
@@ -655,6 +702,7 @@ The repository prioritizes:
 - cross-domain reduction consistency
 - topology-local interpretation
 - reproducibility hardening
+- integration stability
 
 Reviewers should verify that outputs do not silently inherit:
 
@@ -669,6 +717,7 @@ Reviewers should verify that outputs do not silently inherit:
 - benchmark legitimacy
 - institutional legitimacy
 - expansion legitimacy
+- medical authority
 
 ---
 
@@ -699,6 +748,8 @@ This repository is not:
 - research ranking infrastructure
 - institutional legitimacy infrastructure
 - expansion authorization infrastructure
+- medical infrastructure
+- clinical decision infrastructure
 
 No consequence legitimacy is produced by repository outputs.
 
@@ -728,6 +779,7 @@ The repository attempts to preserve:
 - semantic containment
 - epistemic recoverability locality
 - bridge containment locality
+- integration stability
 
 ---
 
