@@ -1,0 +1,18 @@
+{
+  "case_id": "sample_hybrid_bridge_case_001",
+  "observer_mode": "hybrid_bridge_finding_topology",
+  "source_layer": "sts_technical_continuity",
+  "target_layer": "runtime_continuity",
+  "proposed_bridge": "reproducibility_to_runtime_receipt_lineage",
+  "topology_gap_severity": 0.72,
+  "reproducibility_benefit": 0.81,
+  "ambiguity_reduction": 0.76,
+  "observer_only_fit": 0.88,
+  "authority_drift_risk": 0.19,
+  "human_behavior_risk": 0.08,
+  "certification_risk": 0.14,
+  "prediction_risk": 0.11,
+  "governance_risk": 0.16,
+  "existing_layer_coverage": 0.34,
+  "notes": "Sample bounded diagnostic input. Not expansion authority, certification, prediction, or governance advice."
+}
