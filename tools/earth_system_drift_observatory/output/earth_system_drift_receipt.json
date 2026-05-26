@@ -1,0 +1,37 @@
+{
+  "authority": "none",
+  "case_id": "sample_earth_system_drift_case_001",
+  "claim_scope": "diagnostic_only",
+  "classification": "FAIL",
+  "core_reduction": "environmental observability is not proof of regeneration viability",
+  "input_snapshot": {
+    "atmospheric_continuity": 0.77,
+    "biome_coupling": 0.41,
+    "case_id": "sample_earth_system_drift_case_001",
+    "chemical_accumulation": 0.62,
+    "erosion_pressure": 0.57,
+    "geological_stability_appearance": 0.74,
+    "groundwater_recharge_viability": 0.32,
+    "hydrological_continuity": 0.81,
+    "notes": "Sample bounded diagnostic input. Not environmental certification or policy advice.",
+    "observer_mode": "earth_system_drift_topology",
+    "regeneration_corridor_evidence": 0.35,
+    "soil_viability": 0.38,
+    "thermal_accumulation": 0.69
+  },
+  "non_claims": [
+    "not environmental certification",
+    "not climate-policy instruction",
+    "not geological safety certification",
+    "not ecological management",
+    "not intervention authorization",
+    "not prediction",
+    "not operational command software"
+  ],
+  "observer_mode": "earth_system_drift_topology",
+  "reason": "Earth-system continuity persists while regeneration corridor is degraded.",
+  "receipt_sha256": "efc36b6608733cde14a1b0cc277187b6c00d35ab6ce5f707c2219aad11813982",
+  "timestamp_utc": "2026-05-26T00:00:54.869292+00:00",
+  "tool": "earth_system_drift_observatory",
+  "version": "v1.5"
+}
