@@ -1,0 +1,38 @@
+{
+  "authority": "none",
+  "case_id": "sample_citation_continuity_case_001",
+  "claim_scope": "diagnostic_only",
+  "classification": "FAIL",
+  "core_reduction": "citation continuity is not proof of evidence continuity",
+  "input_snapshot": {
+    "benchmark_inheritance_pressure": 0.69,
+    "case_id": "sample_citation_continuity_case_001",
+    "citation_density": 0.86,
+    "correction_corridor_evidence": 0.32,
+    "dataset_lineage_clarity": 0.39,
+    "evidence_grounding": 0.37,
+    "field_adoption": 0.74,
+    "normalization_pressure": 0.71,
+    "notes": "Sample bounded diagnostic input. Not truth determination, ranking, certification, or policy advice.",
+    "observer_mode": "citation_continuity_drift_topology",
+    "publication_velocity": 0.78,
+    "replication_locality": 0.35,
+    "source_recoverability": 0.42
+  },
+  "non_claims": [
+    "not truth determination",
+    "not expert legitimacy assignment",
+    "not research ranking",
+    "not institutional authority",
+    "not scientific certification",
+    "not technical certification",
+    "not policy instruction",
+    "not prediction"
+  ],
+  "observer_mode": "citation_continuity_drift_topology",
+  "reason": "Citation continuity persists while evidence recoverability corridor is degraded.",
+  "receipt_sha256": "5fc748b5b4e87aa333407eb9c12f98c74d46804f06399d4bb4b01b9ac7deb06f",
+  "timestamp_utc": "2026-05-26T00:23:08.224019+00:00",
+  "tool": "citation_continuity_drift_mapper",
+  "version": "v1.7"
+}

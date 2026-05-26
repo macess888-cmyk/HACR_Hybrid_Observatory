@@ -1,0 +1,15 @@
+{
+  "case_id": "sample_citation_continuity_case_001",
+  "observer_mode": "citation_continuity_drift_topology",
+  "citation_density": 0.86,
+  "publication_velocity": 0.78,
+  "field_adoption": 0.74,
+  "evidence_grounding": 0.37,
+  "source_recoverability": 0.42,
+  "dataset_lineage_clarity": 0.39,
+  "replication_locality": 0.35,
+  "correction_corridor_evidence": 0.32,
+  "benchmark_inheritance_pressure": 0.69,
+  "normalization_pressure": 0.71,
+  "notes": "Sample bounded diagnostic input. Not truth determination, ranking, certification, or policy advice."
+}

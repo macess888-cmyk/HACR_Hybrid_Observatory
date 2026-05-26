@@ -1,0 +1,39 @@
+{
+  "authority": "none",
+  "case_id": "sample_reproducibility_corridor_case_001",
+  "claim_scope": "diagnostic_only",
+  "classification": "FAIL",
+  "core_reduction": "technical continuity is not proof of epistemic recoverability",
+  "input_snapshot": {
+    "case_id": "sample_reproducibility_corridor_case_001",
+    "citation_continuity": 0.79,
+    "dataset_availability": 0.36,
+    "environment_reproducibility": 0.31,
+    "independent_replication": 0.34,
+    "method_specificity": 0.44,
+    "notes": "Sample bounded diagnostic input. Not truth determination, certification, ranking, or policy advice.",
+    "observer_mode": "reproducibility_corridor_topology",
+    "publication_continuity": 0.83,
+    "reproducibility_corridor_evidence": 0.33,
+    "source_availability": 0.41,
+    "technical_adoption": 0.72,
+    "toolchain_recoverability": 0.38,
+    "version_drift": 0.67
+  },
+  "non_claims": [
+    "not truth determination",
+    "not scientific certification",
+    "not technical certification",
+    "not research ranking",
+    "not policy instruction",
+    "not expert legitimacy assignment",
+    "not prediction",
+    "not governance authority"
+  ],
+  "observer_mode": "reproducibility_corridor_topology",
+  "reason": "Technical continuity persists while reproducibility recoverability corridor is degraded.",
+  "receipt_sha256": "637fac7fdf74154a2786043ba0f95fe1b3b8fb82b9cce0af184d93b4cc0c4e62",
+  "timestamp_utc": "2026-05-26T00:23:06.964888+00:00",
+  "tool": "reproducibility_corridor_auditor",
+  "version": "v1.7"
+}

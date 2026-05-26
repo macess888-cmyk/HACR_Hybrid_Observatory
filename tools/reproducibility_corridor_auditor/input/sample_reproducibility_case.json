@@ -1,0 +1,16 @@
+{
+  "case_id": "sample_reproducibility_corridor_case_001",
+  "observer_mode": "reproducibility_corridor_topology",
+  "publication_continuity": 0.83,
+  "citation_continuity": 0.79,
+  "technical_adoption": 0.72,
+  "source_availability": 0.41,
+  "dataset_availability": 0.36,
+  "method_specificity": 0.44,
+  "environment_reproducibility": 0.31,
+  "toolchain_recoverability": 0.38,
+  "independent_replication": 0.34,
+  "version_drift": 0.67,
+  "reproducibility_corridor_evidence": 0.33,
+  "notes": "Sample bounded diagnostic input. Not truth determination, certification, ranking, or policy advice."
+}
