@@ -1,790 +1,267 @@
 # HACR Hybrid Observatory
 
-Observer-only runtime continuity inspection.
+## Observer-Only Runtime Continuity Inspection
 
-The HACR Hybrid Observatory is a deterministic diagnostic observability framework for inspecting continuity persistence, recoverability degradation, interruption realism, topology inheritance, localization degradation, regeneration viability, epistemic recoverability, bridge necessity, perturbation survivability, and corridor collapse under continued operational continuity.
+The HACR Hybrid Observatory is a deterministic, observer-only runtime inspection framework for analyzing survivability pressure, interruption realism degradation, continuity persistence, reconstruction viability, and execution-bound admissibility conditions under bounded operational conditions.
 
-The repository does not govern, authorize, certify, predict, control, execute, rank, validate, optimize, or operationally manage systems, institutions, scientific fields, ecosystems, or humans.
+The observatory does not govern systems.
+The observatory does not authorize execution.
+The observatory does not determine legitimacy.
+The observatory does not replace bind-time proof.
 
-The observatory inspects whether continuity persistence can remain observable after recoverability, maneuverability, regeneration viability, interruption viability, reproducibility viability, habitat viability, bridge locality, or localization grounding have materially degraded.
-
----
-
-# Repository Scope
-
-The repository focuses on:
-
-- continuity survivability
-- interruption realism
-- recoverability topology
-- regeneration viability
-- epistemic recoverability
-- bridge necessity inspection
-- dependency persistence
-- topology inheritance
-- localization degradation
-- corridor narrowing
-- hidden continuity pressure
-- replayability divergence
-- deterministic observability
-- observer-local diagnostic inspection
-- continuity/recoverability separation
-- delayed consequence geometry
-- perturbation survivability
-- bounded runtime inspection
-- environmental survivability topology
-- biological recoverability topology
-- Earth-system drift inspection
-- topology-local reasoning
-- deterministic receipt lineage
-- reproducibility hardening
-- technical continuity drift
-- citation continuity drift
-- reproducibility corridor inspection
-- benchmark inheritance pressure
-- toolchain recoverability inspection
-- cross-domain bridge topology
-- authority drift inspection
-- ambiguity reduction topology
-- integration hardening
-- expansion containment inspection
-
-The repository intentionally avoids:
-
-- governance authority
-- operational command
-- maneuver authorization
-- ecological certification
-- mission-control semantics
-- intervention legitimacy
-- prediction systems
-- sovereign execution routing
-- autonomous action systems
-- consequence ownership
-- operational certification
-- execution governance
-- environmental management authority
-- climate-policy instruction
-- biological certification
-- human behavior control
-- psychometric inference
-- persuasion optimization
-- behavioral scoring
-- scientific truth determination
-- research ranking
-- institutional legitimacy assignment
-- benchmark certification
-- expert authority assignment
-- expansion authority
-- domain authorization
-- bridge-legitimacy authority
+UNKNOWN -> HOLD.
 
 ---
 
-# Core Operating Reduction
+# Core Invariant
 
-```text
-continuity != recoverability
-```
+No present-state proof -> no bind -> no effect.
 
-Additional stabilized reductions include:
+Execution admissibility must be independently reconstructed at bind.
 
-```text
-observability != interruption realism
-
-telemetry != maneuverability
-
-continued motion != preserved recoverability
-
-replayability != recoverability
-
-trajectory continuity != trajectory legitimacy
-
-stable appearance != preserved correction corridor
-
-prediction != present-state coupling
-
-ocean continuity != ecological recoverability
-
-water movement != ecosystem health
-
-species presence != trophic stability
-
-continuity persistence != admissible intervention viability
-
-orbital continuity != trajectory validity
-
-continued ocean function != preserved ecological recovery
-
-planetary continuity != biological recoverability
-
-observable persistence != regeneration viability
-
-life persistence != biological recoverability
-
-environmental observability != regeneration viability
-
-habitat continuity != habitat viability
-
-technical continuity != epistemic recoverability
-
-publication continuity != knowledge recoverability
-
-citation density != evidence continuity
-
-benchmark performance != field validity
-
-standard adoption != technical legitimacy
-
-toolchain continuity != method recoverability
-
-field momentum != correction viability
-
-missing bridge != permission to expand
-
-topology gap != domain authorization
-
-conceptual adjacency != safe integration
-
-layer usefulness != operational legitimacy
-
-bridge discovery != expansion authority
-```
+No carry-forward validity.
+No inherited authority.
+No survivability-derived legitimacy.
 
 ---
 
-# Operating Semantics
+# Current Runtime Focus
 
-The repository operates under bounded observer-only semantics.
+The observatory currently inspects:
 
-Possible classifications include:
+- interruption realism degradation
+- continuation survivability pressure
+- executable reconstruction viability
+- runtime dependency survivability
+- operational continuity persistence
+- atmospheric governability drift
+- symbolic stabilization pressure
+- consequence locality degradation
+- replay survivability surfaces
+- topology-dependent continuation risk
 
-```text
-PASS
-HOLD
-FAIL
-SHADOW
-REVERSE
-STOP
-```
+The observatory does not interpret persistence itself as proof of legitimacy.
 
-General operating rule:
-
-```text
-UNKNOWN -> HOLD
-```
-
-No present-state proof means no stronger observer-local conclusion.
+The feeling of governance is not proof that governance remains executable.
 
 ---
 
-# Repository Architecture
+# Runtime Boundary
 
-```text
-HACR_Hybrid_Observatory/
-│
-├─ governance/
-│
-├─ tools/
-│
-├─ output/
-│
-├─ receipts/
-│
-├─ diagrams/
-│
-├─ reproducibility/
-│
-├─ documentation/
-│
-├─ docs/
-│
-└─ observatory_layers/
-```
+A system may remain:
 
-The repository is structured around bounded inspection layers rather than execution authority.
+- visible
+- governable-looking
+- replayable
+- operationally coherent
+- institutionally embedded
+- highly orchestrated
+- highly optimized
 
----
+while executable legitimacy reconstruction viability materially narrows underneath stabilized continuation.
 
-# Observatory Families
+Critical distinction:
 
-## Runtime Continuity Observatory
+- operational coherence != executable admissibility
+- runtime control != consequence permission
+- continuity != reconstructed legitimacy
+- survivability != legitimacy inheritance
+- observation != authority
+- validation != admissibility
 
-Inspects:
+Primary runtime question:
 
-- continuity survivability
-- interruption realism
-- dependency persistence
-- consequence locality
-- continuation gravity
-- localization degradation
-- recoverability collapse
-- hidden continuation pressure
-- replayability divergence
-- interruption corridor degradation
+Can legitimacy still be independently reconstructed before consequence binds?
 
-Core reduction:
+If not:
 
-```text
-continued operation != preserved interruption viability
-```
+UNKNOWN -> HOLD.
 
 ---
 
-## Orbital Continuity Observatory
+# Observatory Properties
 
-Inspects:
+All observatory layers remain:
 
-- orbital continuity realism
-- maneuver-window degradation
-- perturbation survivability
-- orbital anomaly geometry
-- trajectory-localization drift
-- recoverability corridor collapse
-- delayed orbital consequence geometry
-- orbital calibration drift
-- orbital reversibility topology
-- perturbation accumulation pressure
-
-Core reduction:
-
-```text
-orbital continuity != trajectory validity
-```
-
-Additional reductions:
-
-```text
-telemetry != maneuverability
-
-continued motion != preserved recoverability
-
-stable orbit appearance != preserved correction corridor
-```
-
----
-
-## Marine Recoverability Observatory
-
-Inspects:
-
-- biological recoverability
-- trophic dependency topology
-- oxygen corridor viability
-- acidification survivability
-- marine heatwave persistence
-- ecological recoverability divergence
-- continuity vs regeneration separation
-- habitat regeneration viability
-- recovery-corridor narrowing
-- hidden ecological survivability pressure
-
-Core reduction:
-
-```text
-continued ocean function != preserved ecological recovery
-```
-
-Additional reductions:
-
-```text
-ocean continuity != ecological recoverability
-
-water movement != ecosystem health
-
-species presence != trophic stability
-```
-
----
-
-## BioEarth Continuity Observatory
-
-Inspects:
-
-- biological recoverability
-- Earth-system drift
-- regeneration corridor viability
-- habitat continuity vs habitat viability
-- hydrological continuity vs potable recoverability
-- atmospheric continuity vs breathable locality preservation
-- soil and groundwater regeneration corridors
-- biosphere/geosphere/hydrosphere coupling pressure
-- hidden environmental survivability pressure
-- geological stability appearance vs regeneration viability
-- biological persistence vs reproductive continuity
-
-Core reduction:
-
-```text
-planetary continuity != biological recoverability
-```
-
-Additional reductions:
-
-```text
-observable persistence != regeneration viability
-
-life persistence != biological recoverability
-
-environmental observability != regeneration viability
-
-habitat continuity != habitat viability
-```
-
----
-
-## STS / Technical Continuity Observatory
-
-Inspects:
-
-- reproducibility continuity
-- citation dependency drift
-- standardization lock-in
-- benchmark inheritance
-- method fragility
-- tooling dependency
-- dataset lineage
-- peer-review survivability
-- field-normalization pressure
-- technical legitimacy drift
-- infrastructure dependence
-- reproducibility corridor viability
-- evidence grounding locality
-- citation continuity pressure
-- toolchain recoverability
-
-Core reduction:
-
-```text
-technical continuity != epistemic recoverability
-```
-
-Additional reductions:
-
-```text
-publication continuity != knowledge recoverability
-
-citation density != evidence continuity
-
-benchmark performance != field validity
-
-standard adoption != technical legitimacy
-
-toolchain continuity != method recoverability
-
-field momentum != correction viability
-```
-
----
-
-## Hybrid Bridge Finder
-
-Inspects:
-
-- missing observatory layers
-- cross-domain topology gaps
-- bridge necessity
-- reproducibility benefit
-- ambiguity reduction
-- observer-only fit
-- authority drift risk
-- certification risk
-- prediction risk
-- governance risk
-- existing layer coverage
-- bridge containment locality
-- semantic expansion pressure
-
-Core reduction:
-
-```text
-bridge discovery is diagnostic, not expansion authority
-```
-
-Additional reductions:
-
-```text
-missing bridge != permission to expand
-
-topology gap != domain authorization
-
-conceptual adjacency != safe integration
-
-layer usefulness != operational legitimacy
-```
-
----
-
-# Stabilization Boundary
-
-Direct human-behavior observatory expansion is intentionally held.
-
-Reason:
-
-```text
-human behavior inspection can drift into prediction, persuasion, scoring, manipulation, governance, or authority semantics
-```
-
-Medical and clinical authority expansion also remains held unless observer-only containment can be proven without intervention semantics.
-
-Current safe focus:
-
-- reviewer reproducibility
-- topology maps
-- receipt lineage
-- deterministic diagnostics
-- semantic hardening
-- observer-only boundary preservation
-- topology-local inspection
-- reproducibility stabilization
-- cross-domain continuity/recoverability alignment
-- bridge containment inspection
-- integration hardening
-
-The repository does not provide:
-
-- human behavior prediction
-- psychological classification
-- persuasion systems
-- behavioral optimization
-- compliance scoring
-- psychometric inference
-- behavioral governance
-- intervention authority
-- medical diagnosis
-- treatment recommendation
-- clinical authority
-- health prediction infrastructure
-
----
-
-# Tooling Philosophy
-
-All tooling within the repository remains:
-
-- observer-local
+- observer-only
 - deterministic
 - reproducible
-- bounded
+- fail-closed
+- runtime-local
 - non-authoritative
-- non-sovereign
-- non-certifying
-- non-executional
-- diagnostic-only
+- non-governing
+- execution-bound
 
-Tools emit deterministic diagnostic receipts only.
+Outputs are artifact-only.
 
-No tool may assign:
+Generated outputs are not source of truth.
 
-- maneuver legitimacy
-- ecological legitimacy
-- governance legitimacy
-- intervention authority
-- operational certification
-- sovereign consequence ownership
-- execution permission
-- mission authority
-- environmental management authority
-- biological legitimacy
-- regeneration certification
-- behavioral legitimacy
-- scientific truth authority
-- expert legitimacy
-- research ranking authority
-- benchmark legitimacy
-- bridge expansion authority
-- medical legitimacy
-- clinical authority
+All outputs are independently verifiable via SHA256 integrity validation.
 
 ---
 
-# Repository Tooling
+# Current Stabilized Systems
 
-```text
-tools/
-│
-├─ orbital_continuity_drift_auditor/
-│
-├─ marine_recoverability_observatory/
-│
-├─ biological_recoverability_auditor/
-│
-├─ earth_system_drift_observatory/
-│
-├─ reproducibility_corridor_auditor/
-│
-├─ citation_continuity_drift_mapper/
-│
-├─ hybrid_bridge_finder/
-│
-└─ future observatory layers/
-```
+## constraint_mapper v1
 
-Governance boundaries:
+Deterministic observer-only runtime constraint mapping layer.
 
-```text
-governance/
-│
-├─ orbital_continuity/
-│
-├─ marine_recoverability/
-│
-├─ bioearth_continuity/
-│
-├─ human_scope_boundary/
-│
-├─ stabilization/
-│
-├─ sts_technical_continuity/
-│
-├─ hybrid_bridge_finding/
-│
-└─ expansion_control/
-```
-
-Documentation:
-
-```text
-docs/
-│
-├─ reviewer_guides/
-│
-├─ topology_maps/
-│
-└─ integration/
-```
-
-Integration documents:
-
-```text
-docs/integration/
-│
-├─ OBSERVATORY_STACK_INDEX.md
-├─ RECEIPT_LINEAGE_INDEX.md
-├─ BRANCH_STABILIZATION_HISTORY.md
-└─ TOOL_TO_GOVERNANCE_MAP.md
-```
-
----
-
-# Integration Index
-
-The repository includes integration documents for reviewer orientation and expansion control.
-
-Expansion is controlled by:
-
-```text
-A new layer may proceed only if it improves observer-local recoverability inspection without introducing authority, prediction, certification, intervention, human-control, or operational-command semantics.
-```
-
-Bridge discovery remains diagnostic-only.
-
-No bridge may override observer-only containment.
-
----
-
-# Deterministic Receipts
-
-Many repository tools emit deterministic JSON receipts.
-
-Typical receipt structure:
-
-```json
-{
-  "observer_mode": "diagnostic_only",
-  "classification": "HOLD",
-  "reason": "UNKNOWN -> HOLD",
-  "authority": "none",
-  "non_claims": []
-}
-```
-
-Receipts are diagnostic artifacts only.
-
-Receipts are not operational approvals.
-
-Receipts are not governance instructions.
-
-Receipts are not intervention authorizations.
-
-Receipts are not environmental certifications.
-
-Receipts are not behavioral classifications.
-
-Receipts are not scientific truth determinations.
-
-Receipts are not expansion authorizations.
-
----
-
-# Boundary Conditions
-
-The repository remains:
-
-```text
-observer-only
-non-authoritative
-non-sovereign
-non-certifying
-non-governing
-non-mission-control
-non-executional
-diagnostic-only
-```
-
-The repository does not:
-
-- control systems
-- authorize maneuvers
-- manage ecosystems
-- certify recoverability
-- assign intervention legitimacy
-- govern operational systems
-- replace human responsibility
-- validate trajectories
-- approve operational continuity
-- authorize consequence realization
-- manage environmental systems
-- certify biological systems
-- validate regeneration viability
-- classify human behavior
-- optimize persuasion
-- assign psychological legitimacy
-- determine scientific truth
-- rank scientific fields
-- assign institutional legitimacy
-- authorize observatory expansion
-- certify bridge necessity
-- diagnose disease
-- prescribe treatment
-- authorize clinical action
-
----
-
-# Reproducibility
-
-Repository outputs are intended to remain:
-
-- reproducible
+Status:
+- stabilized
 - bounded
-- inspectable
+- multi-case validated
+
+---
+
+## war_mapper v1
+
+Observer-only anti-escalation runtime survivability inspection layer.
+
+Status:
+- stabilized
+- bounded
+- multi-case validated
+
+---
+
+## co_alignment_mapper v1
+
+Cross-scale communication and continuity mapping layer.
+
+Status:
 - deterministic
-- replayable under constrained conditions
-- observer-local
-- reviewable
-- non-authoritative
-
-Where possible:
-
-- inputs are explicitly bounded
-- receipts are hashable
-- classifications are deterministic
-- assumptions are minimized
-- hidden authority semantics are removed
-- topology claims remain localized
-- replayability does not imply recoverability
-- continuity does not imply regeneration viability
-- observability does not imply legitimacy
-- technical continuity does not imply epistemic recoverability
-- bridge discovery does not imply expansion authority
+- observer-only
+- multi-case validated
 
 ---
 
-# Reviewer Stabilization
+## reality_anchor_mapper v1
 
-The repository prioritizes:
+Runtime trap / anchor / bind surface localization layer.
 
-- reviewer clarity
-- deterministic outputs
-- bounded semantics
-- explicit non-claims
-- observer-only reasoning
-- cross-domain reduction consistency
-- topology-local interpretation
-- reproducibility hardening
-- integration stability
+Status:
+- deterministic
+- bounded
+- multi-case validated
 
-Reviewers should verify that outputs do not silently inherit:
+---
 
-- authority
-- legitimacy
-- governance semantics
-- operational command semantics
-- intervention permissions
-- predictive authority
-- behavioral control semantics
-- scientific truth authority
-- benchmark legitimacy
-- institutional legitimacy
-- expansion legitimacy
-- medical authority
+## alpha_omega_observatory v1
+
+Cross-scale observability layer.
+
+Returns:
+- PASS
+- CAUTION
+- HOLD
+
+under deterministic bounded runtime conditions.
+
+Status:
+- stabilized
+- deterministic
+- multi-case validated
+
+---
+
+# Validation State
+
+Validated across:
+
+- baseline
+- case_02
+- cross-run verifier inspection
+- deterministic replay verification
+- SHA256 reproducibility validation
+
+Current validation state:
+
+- hashes stable per input
+- outputs deterministic per input
+- repos aligned
+- verifiers PASS
+
+---
+
+# Tag Alignment
+
+- v0.1-unsealed
+- v1.0-baseline
+- v1.1-cases
+
+---
+
+# Execution Boundary
+
+The observatory may:
+
+- inspect
+- classify
+- localize
+- pressure-test
+- trace
+- observe
+- render deterministic artifacts
+
+The observatory may not:
+
+- authorize execution
+- determine legitimacy
+- certify governance
+- inherit validity
+- grant authority
+- reopen ontology
+- convert survivability into permission
+
+---
+
+# Atmospheric Governability Drift
+
+Governability appearance may persist while executable legitimacy reconstruction viability narrows underneath stabilized continuation.
+
+Governance appearance may persist through:
+
+- visibility
+- audit surfaces
+- replayability
+- orchestration activity
+- operational coherence
+- institutional familiarity
+- optimization continuity
+- symbolic persistence
+
+while interruption / reconstruction viability materially degrades underneath continuation stability.
+
+The observatory does not interpret governance appearance as proof of executable legitimacy.
 
 ---
 
 # Non-Claims
 
-This repository is not:
+The HACR Hybrid Observatory does not:
 
-- mission control
-- ecological management
-- governance infrastructure
-- military infrastructure
-- prediction infrastructure
-- intervention authorization
-- operational command software
-- sovereign authority infrastructure
-- automated decision infrastructure
-- ecological certification
-- maneuver certification
-- recoverability certification
-- interruption authority
-- consequence legitimacy infrastructure
-- biological certification infrastructure
-- environmental management infrastructure
-- climate-policy infrastructure
-- psychometric infrastructure
-- behavioral optimization infrastructure
-- scientific truth infrastructure
-- research ranking infrastructure
-- institutional legitimacy infrastructure
-- expansion authorization infrastructure
-- medical infrastructure
-- clinical decision infrastructure
-
-No consequence legitimacy is produced by repository outputs.
-
-No operational authority is inherited from observability continuity.
+- infer legitimacy from survivability
+- infer authority from continuity
+- convert persistence into admissibility
+- certify reconstruction viability
+- claim inevitability
+- authorize execution
+- determine governance validity
+- preserve validity across binds
+- replace present-state proof
+- reopen ontology
+- create operational authority
 
 ---
 
-# Stabilized Repository Principle
+# Current State
 
-```text
-Break survivability, not ontology.
-```
+System complete.
+System stable.
+System bounded.
 
-The repository inspects survivability pressure, recoverability degradation, localization collapse, topology inheritance, regeneration viability, epistemic recoverability, bridge necessity, and continuity persistence without inheriting authority over the inspected systems.
+No pending actions.
 
-The repository attempts to preserve:
+Default state:
 
-- bounded inspection
-- observer-local reasoning
-- deterministic classification
-- continuity/recoverability separation
-- interruption realism visibility
-- non-authoritative semantics
-- constrained operational interpretation
-- regeneration viability locality
-- topology-local reasoning
-- semantic containment
-- epistemic recoverability locality
-- bridge containment locality
-- integration stability
-
----
-
-# Operating Rule
-
-```text
-UNKNOWN -> HOLD
-```
+HOLD.
