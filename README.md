@@ -1,267 +1,369 @@
 # HACR Hybrid Observatory
 
-## Observer-Only Runtime Continuity Inspection
-
-The HACR Hybrid Observatory is a deterministic, observer-only runtime inspection framework for analyzing survivability pressure, interruption realism degradation, continuity persistence, reconstruction viability, and execution-bound admissibility conditions under bounded operational conditions.
-
-The observatory does not govern systems.
-The observatory does not authorize execution.
-The observatory does not determine legitimacy.
-The observatory does not replace bind-time proof.
-
-UNKNOWN -> HOLD.
+Observer-only runtime continuity inspection.
 
 ---
 
-# Core Invariant
+## Core Purpose
 
-No present-state proof -> no bind -> no effect.
+The HACR Hybrid Observatory is a bounded observability framework for inspecting:
 
-Execution admissibility must be independently reconstructed at bind.
+* runtime continuity
+* interruption realism
+* dependency persistence
+* recoverability degradation
+* topology-scoped operational pressure
+* inheritance drift
+* replay divergence
+* hidden continuation pressure
+* operational reconvergence behavior
 
-No carry-forward validity.
-No inherited authority.
-No survivability-derived legitimacy.
+under deterministic and reproducible conditions.
 
----
+The repository focuses on:
 
-# Current Runtime Focus
-
-The observatory currently inspects:
-
-- interruption realism degradation
-- continuation survivability pressure
-- executable reconstruction viability
-- runtime dependency survivability
-- operational continuity persistence
-- atmospheric governability drift
-- symbolic stabilization pressure
-- consequence locality degradation
-- replay survivability surfaces
-- topology-dependent continuation risk
-
-The observatory does not interpret persistence itself as proof of legitimacy.
-
-The feeling of governance is not proof that governance remains executable.
+* bounded runtime diagnostics
+* topology-local inspection
+* reproducibility-oriented review
+* operational interoperability
+* deterministic replay framing
+* observer-local analysis
+* explicit NON_CLAIMS architecture
 
 ---
 
-# Runtime Boundary
+## What This Is NOT
 
-A system may remain:
+The observatory does NOT:
 
-- visible
-- governable-looking
-- replayable
-- operationally coherent
-- institutionally embedded
-- highly orchestrated
-- highly optimized
+* govern
+* authorize
+* certify
+* optimize
+* rank humans
+* control behavior
+* enforce policy
+* provide legitimacy
+* replace human judgment
+* predict futures
+* execute intervention authority
+* provide operational command
 
-while executable legitimacy reconstruction viability materially narrows underneath stabilized continuation.
+The repository intentionally avoids:
 
-Critical distinction:
-
-- operational coherence != executable admissibility
-- runtime control != consequence permission
-- continuity != reconstructed legitimacy
-- survivability != legitimacy inheritance
-- observation != authority
-- validation != admissibility
-
-Primary runtime question:
-
-Can legitimacy still be independently reconstructed before consequence binds?
-
-If not:
-
-UNKNOWN -> HOLD.
+* governance expansion
+* semantic inflation
+* ontology centralization
+* behavioral scoring
+* psychometric inference
+* sovereign execution routing
+* autonomous action authority
+* optimization absolutism
 
 ---
 
-# Observatory Properties
+## Core Operating Constraint
 
-All observatory layers remain:
+```text
+UNKNOWN -> HOLD
+```
 
-- observer-only
-- deterministic
-- reproducible
-- fail-closed
-- runtime-local
-- non-authoritative
-- non-governing
-- execution-bound
-
-Outputs are artifact-only.
-
-Generated outputs are not source of truth.
-
-All outputs are independently verifiable via SHA256 integrity validation.
+No proof -> no bind -> no effect-capable path -> no effect.
 
 ---
 
-# Current Stabilized Systems
+## Core Design Philosophy
 
-## constraint_mapper v1
+Small enough to inspect.
 
-Deterministic observer-only runtime constraint mapping layer.
+Bounded enough to falsify.
 
-Status:
-- stabilized
-- bounded
-- multi-case validated
+Deterministic enough to reproduce.
 
----
-
-## war_mapper v1
-
-Observer-only anti-escalation runtime survivability inspection layer.
-
-Status:
-- stabilized
-- bounded
-- multi-case validated
+External enough to independently review.
 
 ---
 
-## co_alignment_mapper v1
+# Core Reductions
 
-Cross-scale communication and continuity mapping layer.
+```text
+continuity != legitimacy
 
-Status:
-- deterministic
-- observer-only
-- multi-case validated
+coherence != correctness
 
----
+observability != authority
 
-## reality_anchor_mapper v1
+replayability != grounding
 
-Runtime trap / anchor / bind surface localization layer.
+continued operation != preserved recoverability
 
-Status:
-- deterministic
-- bounded
-- multi-case validated
+visibility != governance
+
+capability != wisdom
+```
 
 ---
 
-## alpha_omega_observatory v1
+# Repository Structure
 
-Cross-scale observability layer.
+```text
+HACR_Hybrid_Observatory/
 
-Returns:
-- PASS
-- CAUTION
-- HOLD
-
-under deterministic bounded runtime conditions.
-
-Status:
-- stabilized
-- deterministic
-- multi-case validated
-
----
-
-# Validation State
-
-Validated across:
-
-- baseline
-- case_02
-- cross-run verifier inspection
-- deterministic replay verification
-- SHA256 reproducibility validation
-
-Current validation state:
-
-- hashes stable per input
-- outputs deterministic per input
-- repos aligned
-- verifiers PASS
+├── governance/
+├── tools/
+├── outputs/
+├── receipts/
+├── diagrams/
+├── docs/
+├── reproducibility/
+├── observatory_layers/
+├── diagnostics/
+└── artifacts/
+```
 
 ---
 
-# Tag Alignment
+# Public Orientation
 
-- v0.1-unsealed
-- v1.0-baseline
-- v1.1-cases
+## START HERE
 
----
+* docs/public_orientation/START_HERE.md
 
-# Execution Boundary
+## Boundedness
 
-The observatory may:
+* docs/boundedness/WHY_BOUNDEDNESS_MATTERS.md
 
-- inspect
-- classify
-- localize
-- pressure-test
-- trace
-- observe
-- render deterministic artifacts
+## Cross-Domain Translation
 
-The observatory may not:
+* docs/cross_domain_translation/CROSS_DOMAIN_TRANSLATION_INDEX.md
 
-- authorize execution
-- determine legitimacy
-- certify governance
-- inherit validity
-- grant authority
-- reopen ontology
-- convert survivability into permission
+## Recoverability
+
+* docs/recoverability/SMALL_BUSINESS_RECOVERABILITY.md
 
 ---
 
-# Atmospheric Governability Drift
+# Observatory Families
 
-Governability appearance may persist while executable legitimacy reconstruction viability narrows underneath stabilized continuation.
+## Runtime Continuity Observatory
 
-Governance appearance may persist through:
+Inspects:
 
-- visibility
-- audit surfaces
-- replayability
-- orchestration activity
-- operational coherence
-- institutional familiarity
-- optimization continuity
-- symbolic persistence
+* continuity survivability
+* interruption realism
+* dependency persistence
+* continuation gravity
+* localization degradation
+* recoverability collapse
+* replayability divergence
+* interruption corridor degradation
 
-while interruption / reconstruction viability materially degrades underneath continuation stability.
+Core reduction:
 
-The observatory does not interpret governance appearance as proof of executable legitimacy.
-
----
-
-# Non-Claims
-
-The HACR Hybrid Observatory does not:
-
-- infer legitimacy from survivability
-- infer authority from continuity
-- convert persistence into admissibility
-- certify reconstruction viability
-- claim inevitability
-- authorize execution
-- determine governance validity
-- preserve validity across binds
-- replace present-state proof
-- reopen ontology
-- create operational authority
+```text
+continued operation != preserved interruption viability
+```
 
 ---
 
-# Current State
+## Orbital Continuity Observatory
 
-System complete.
-System stable.
-System bounded.
+Inspects:
 
-No pending actions.
+* orbital continuity realism
+* maneuver-window degradation
+* perturbation survivability
+* orbital anomaly geometry
+* recovery corridor collapse
+* orbital calibration drift
 
-Default state:
+Core reduction:
 
-HOLD.
+```text
+orbital continuity != trajectory validity
+```
+
+---
+
+## Marine Recoverability Observatory
+
+Inspects:
+
+* biological recoverability
+* trophic dependency topology
+* oxygen corridor viability
+* habitat regeneration viability
+* ecological survivability pressure
+
+Core reduction:
+
+```text
+ocean continuity != ecological recoverability
+```
+
+---
+
+## BioEarth Continuity Observatory
+
+Inspects:
+
+* Earth-system drift
+* regeneration corridor viability
+* atmospheric continuity
+* hydrological recoverability
+* biosphere/geosphere coupling pressure
+
+Core reduction:
+
+```text
+planetary continuity != biological recoverability
+```
+
+---
+
+## STS / Technical Continuity Observatory
+
+Inspects:
+
+* reproducibility continuity
+* citation dependency drift
+* benchmark inheritance
+* method fragility
+* tooling dependency
+* peer-review survivability
+* technical legitimacy drift
+
+Core reduction:
+
+```text
+technical continuity != epistemic recoverability
+```
+
+---
+
+## Hybrid Bridge Finder
+
+Inspects:
+
+* cross-domain topology gaps
+* bridge necessity
+* ambiguity reduction
+* observer-only fit
+* authority drift risk
+* governance expansion risk
+* semantic expansion pressure
+
+Core reduction:
+
+```text
+bridge discovery is diagnostic, not expansion authority
+```
+
+---
+
+# Cross-Domain Translation Layer
+
+The observatory includes bounded interoperability mappings between:
+
+* infrastructure engineering
+* distributed systems
+* AI/runtime orchestration
+* reliability engineering
+* organizational operations
+* audit/review environments
+
+Purpose:
+
+reduce operational communication drift between teams describing similar runtime pressure surfaces using incompatible language.
+
+The translation layer does NOT attempt:
+
+* ontology unification
+* semantic centralization
+* disciplinary replacement
+* governance authority
+
+Its purpose is bounded operational interoperability only.
+
+---
+
+# Reproducibility
+
+The observatory prioritizes:
+
+* deterministic outputs
+* replayable inspection conditions
+* reproducible receipts
+* bounded review surfaces
+* independently reviewable artifacts
+
+Outputs should remain:
+
+* inspectable
+* falsifiable
+* externally reviewable
+* operationally bounded
+
+---
+
+# Human Consequence Boundary
+
+The observatory recognizes that:
+
+* systems affect humans
+* continuity affects societies
+* infrastructure affects ecosystems
+* technological persistence affects future recoverability
+
+The repository does NOT attempt to govern humans.
+
+However, it intentionally preserves:
+
+* uncertainty visibility
+* recoverability awareness
+* interruption realism
+* bounded interpretation
+* consequence visibility
+
+without collapsing into behavioral authority.
+
+---
+
+# NON_CLAIMS
+
+The HACR Hybrid Observatory does NOT claim:
+
+* objective truth determination
+* institutional legitimacy
+* policy authority
+* behavioral correctness
+* future prediction
+* sovereign execution rights
+* operational governance superiority
+
+The repository remains:
+
+observer-local,
+bounded,
+diagnostic,
+and reproducibility-oriented.
+
+---
+
+# Stabilization Boundary
+
+Direct human-behavior observatory expansion is intentionally held.
+
+Total observability is intentionally rejected.
+
+Observer locality is intentionally preserved.
+
+Bounded inspection is intentional.
+
+---
+
+# Final Constraint
+
+```text
+Break survivability, not ontology.
+```
