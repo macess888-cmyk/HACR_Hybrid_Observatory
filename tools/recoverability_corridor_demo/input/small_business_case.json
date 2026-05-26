@@ -1,0 +1,9 @@
+{
+  "business_name": "Local Distribution Cooperative",
+  "supplier_concentration": 0.82,
+  "manual_compensation": true,
+  "staff_redundancy": 0.31,
+  "dependency_fragility": 0.77,
+  "visible_operational_status": "stable",
+  "interruption_recovery_window_days": 2
+}
