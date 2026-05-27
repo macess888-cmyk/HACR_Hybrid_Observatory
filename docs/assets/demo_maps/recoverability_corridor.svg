@@ -1,0 +1,56 @@
+<svg width="1200" height="700" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title {
+      font: bold 30px Arial, sans-serif;
+      fill: #ffffff;
+    }
+    .subtitle {
+      font: 18px Arial, sans-serif;
+      fill: #cfd8ff;
+    }
+    .label {
+      font: 18px Arial, sans-serif;
+      fill: #ffffff;
+    }
+    .small {
+      font: 15px Arial, sans-serif;
+      fill: #c8c8c8;
+    }
+    .metric {
+      font: bold 22px Arial, sans-serif;
+      fill: #ffffff;
+    }
+  </style>
+
+  <rect width="100%" height="100%" fill="#0b1020"/>
+
+  <text x="50" y="60" class="title">Recoverability Corridor Visualization</text>
+  <text x="50" y="98" class="subtitle">Observer-only operational inspection | deterministic demo output</text>
+
+  <rect x="50" y="130" width="1100" height="90" rx="22" fill="#151d33" stroke="#2d3a5f" stroke-width="2"/>
+  <text x="80" y="165" class="label">Case</text>
+  <text x="80" y="198" class="metric">Local Distribution Cooperative</text>
+
+  <text x="50" y="280" class="label">Recoverability Corridor</text>
+  <rect x="50" y="305" width="1000" height="70" rx="18" fill="#1e2a44"/>
+  <rect x="50" y="305" width="240" height="70" rx="18" fill="#ff453a"/>
+  <text x="1070" y="350" class="metric">0.24</text>
+
+  <text x="50" y="425" class="metric">RECOVERABILITY CRITICAL</text>
+
+  <rect x="50" y="465" width="330" height="105" rx="16" fill="#151d33" stroke="#2d3a5f"/>
+  <text x="75" y="505" class="label">Supplier Concentration</text>
+  <text x="75" y="545" class="metric">0.82</text>
+
+  <rect x="435" y="465" width="330" height="105" rx="16" fill="#151d33" stroke="#2d3a5f"/>
+  <text x="460" y="505" class="label">Staff Redundancy</text>
+  <text x="460" y="545" class="metric">0.31</text>
+
+  <rect x="820" y="465" width="330" height="105" rx="16" fill="#151d33" stroke="#2d3a5f"/>
+  <text x="845" y="505" class="label">Dependency Fragility</text>
+  <text x="845" y="545" class="metric">0.77</text>
+
+  <text x="50" y="620" class="small">Visible operational status: stable</text>
+  <text x="50" y="645" class="small">Interruption recovery window: 2 days</text>
+  <text x="50" y="670" class="small">Core reduction: visible continuity != preserved recoverability</text>
+</svg>
