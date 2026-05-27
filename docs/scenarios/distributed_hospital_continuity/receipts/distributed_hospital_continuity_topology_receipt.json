@@ -1,0 +1,26 @@
+{
+  "scenario_key": "distributed_hospital_continuity",
+  "scenario_id": "distributed_hospital_continuity_case_v1",
+  "scenario_type": "distributed_healthcare_continuity",
+  "generated_at_utc": "2026-05-27T21:00:08.105869+00:00",
+  "observer_only": true,
+  "non_authoritative": true,
+  "input_path": "scenarios\\distributed_hospital_continuity\\json\\distributed_hospital_continuity_case_v1.json",
+  "output_path": "scenarios\\distributed_hospital_continuity\\svg\\distributed_hospital_continuity_topology.svg",
+  "svg_sha256": "19583bf3f4271cb580409a8b5d5e80c34795dc5c778b43651b9f01458f9ebc90",
+  "node_count": 6,
+  "edge_count": 7,
+  "svg_features": {
+    "native_node_tooltips": true,
+    "native_edge_tooltips": true,
+    "hover_node_emphasis": true,
+    "deterministic_svg_output": true
+  },
+  "non_claims": {
+    "not_predictive": true,
+    "not_governance": true,
+    "not_authorization": true,
+    "not_certification": true,
+    "not_operator_replacement": true
+  }
+}

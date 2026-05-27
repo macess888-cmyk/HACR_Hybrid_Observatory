@@ -1,0 +1,100 @@
+{
+  "scenario_id": "frame_004_backup_recoverability_reassertion",
+  "scenario_type": "continuity_replay_frame",
+  "observer_mode": true,
+  "non_authoritative": true,
+  "nodes": [
+    {
+      "id": "Identity",
+      "type": "access_control",
+      "state": "strained"
+    },
+    {
+      "id": "EndpointFleet",
+      "type": "device_surface",
+      "state": "degraded"
+    },
+    {
+      "id": "BackupVault",
+      "type": "recovery_asset",
+      "state": "operational"
+    },
+    {
+      "id": "SOC",
+      "type": "monitoring_team",
+      "state": "partial"
+    },
+    {
+      "id": "NetworkCore",
+      "type": "connectivity_layer",
+      "state": "operational"
+    },
+    {
+      "id": "CloudApps",
+      "type": "business_service",
+      "state": "partial"
+    }
+  ],
+  "edges": [
+    {
+      "source": "Identity",
+      "target": "CloudApps",
+      "dependency": "critical"
+    },
+    {
+      "source": "EndpointFleet",
+      "target": "Identity",
+      "dependency": "high"
+    },
+    {
+      "source": "SOC",
+      "target": "EndpointFleet",
+      "dependency": "high"
+    },
+    {
+      "source": "NetworkCore",
+      "target": "CloudApps",
+      "dependency": "high"
+    },
+    {
+      "source": "BackupVault",
+      "target": "CloudApps",
+      "dependency": "medium"
+    },
+    {
+      "source": "SOC",
+      "target": "Identity",
+      "dependency": "medium"
+    },
+    {
+      "source": "BackupVault",
+      "target": "EndpointFleet",
+      "dependency": "medium"
+    }
+  ],
+  "continuity_pressure": {
+    "identity_dependency": 0.84,
+    "endpoint_degradation": 0.82,
+    "restore_path_visibility": 0.61
+  },
+  "recoverability_state": {
+    "interruptibility": "partially preserved",
+    "localization_visibility": "partial",
+    "recovery_corridor": "visible but constrained"
+  },
+  "shadow_dependencies": [
+    "external_identity_provider",
+    "cloud_admin_console",
+    "third_party_edr_management",
+    "offsite_backup_connectivity",
+    "incident_communications_channel"
+  ],
+  "non_claims": {
+    "not_predictive": true,
+    "not_simulation_authority": true,
+    "not_operational_guidance": true,
+    "observer_only": true
+  },
+  "replay_frame": true,
+  "replay_description": "Backup recoverability partially reasserts visibility without authorizing recovery."
+}

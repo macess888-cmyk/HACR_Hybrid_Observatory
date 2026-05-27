@@ -1,0 +1,51 @@
+{
+  "delta_id": "frame_002_endpoint_pressure_increase__to__frame_003_recovery_path_visibility_loss",
+  "before_frame": "tools\\continuity_replay_engine\\frames\\frame_002_endpoint_pressure_increase.json",
+  "after_frame": "tools\\continuity_replay_engine\\frames\\frame_003_recovery_path_visibility_loss.json",
+  "observer_only": true,
+  "non_authoritative": true,
+  "pressure_delta": {
+    "endpoint_degradation": {
+      "before": 0.91,
+      "after": 0.92,
+      "delta": 0.01
+    },
+    "identity_dependency": {
+      "before": 0.89,
+      "after": 0.91,
+      "delta": 0.02
+    },
+    "restore_path_visibility": {
+      "before": 0.43,
+      "after": 0.29,
+      "delta": -0.14
+    }
+  },
+  "node_state_transitions": {
+    "BackupVault": {
+      "before": "operational",
+      "after": "strained"
+    }
+  },
+  "recoverability_delta": {
+    "interruptibility": {
+      "before": "narrowing",
+      "after": "constrained"
+    },
+    "localization_visibility": {
+      "before": "partial",
+      "after": "degraded"
+    },
+    "recovery_corridor": {
+      "before": "narrowing",
+      "after": "fragile"
+    }
+  },
+  "non_claims": {
+    "not_predictive": true,
+    "not_scoring": true,
+    "not_operational_guidance": true,
+    "not_authorization": true,
+    "observer_only": true
+  }
+}

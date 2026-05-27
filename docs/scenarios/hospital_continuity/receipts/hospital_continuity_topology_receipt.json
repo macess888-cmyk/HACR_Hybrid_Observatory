@@ -1,0 +1,26 @@
+{
+  "scenario_key": "hospital_continuity",
+  "scenario_id": "hospital_continuity_case_v1",
+  "scenario_type": "hospital_operational_continuity",
+  "generated_at_utc": "2026-05-27T21:00:08.105869+00:00",
+  "observer_only": true,
+  "non_authoritative": true,
+  "input_path": "scenarios\\hospital_continuity\\json\\hospital_continuity_case_v1.json",
+  "output_path": "scenarios\\hospital_continuity\\svg\\hospital_continuity_topology.svg",
+  "svg_sha256": "3d7c471b56e79fc96477f132e0cd29dcb8c955cf5dfd6c36950ab98da6ffb1fe",
+  "node_count": 5,
+  "edge_count": 4,
+  "svg_features": {
+    "native_node_tooltips": true,
+    "native_edge_tooltips": true,
+    "hover_node_emphasis": true,
+    "deterministic_svg_output": true
+  },
+  "non_claims": {
+    "not_predictive": true,
+    "not_governance": true,
+    "not_authorization": true,
+    "not_certification": true,
+    "not_operator_replacement": true
+  }
+}

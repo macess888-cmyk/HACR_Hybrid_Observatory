@@ -1,0 +1,104 @@
+{
+  "scenario_id": "energy_grid_recoverability_case_v1",
+  "scenario_type": "energy_grid_recoverability_topology",
+  "observer_mode": true,
+  "non_authoritative": true,
+
+  "nodes": [
+    {
+      "id": "SubstationA",
+      "type": "regional_power_node",
+      "state": "strained"
+    },
+    {
+      "id": "TransformerHub",
+      "type": "dependency_concentration",
+      "state": "degraded"
+    },
+    {
+      "id": "ControlRoom",
+      "type": "operator_visibility_surface",
+      "state": "partial"
+    },
+    {
+      "id": "BackupGeneration",
+      "type": "fallback_capacity",
+      "state": "operational"
+    },
+    {
+      "id": "DistributionFeed",
+      "type": "local_delivery_layer",
+      "state": "strained"
+    },
+    {
+      "id": "CommsLink",
+      "type": "coordination_dependency",
+      "state": "partial"
+    }
+  ],
+
+  "edges": [
+    {
+      "source": "SubstationA",
+      "target": "TransformerHub",
+      "dependency": "critical"
+    },
+    {
+      "source": "TransformerHub",
+      "target": "DistributionFeed",
+      "dependency": "critical"
+    },
+    {
+      "source": "ControlRoom",
+      "target": "SubstationA",
+      "dependency": "high"
+    },
+    {
+      "source": "ControlRoom",
+      "target": "CommsLink",
+      "dependency": "high"
+    },
+    {
+      "source": "CommsLink",
+      "target": "DistributionFeed",
+      "dependency": "medium"
+    },
+    {
+      "source": "BackupGeneration",
+      "target": "DistributionFeed",
+      "dependency": "medium"
+    },
+    {
+      "source": "BackupGeneration",
+      "target": "ControlRoom",
+      "dependency": "low"
+    }
+  ],
+
+  "continuity_pressure": {
+    "transformer_dependency": 0.88,
+    "operator_visibility": 0.46,
+    "fallback_capacity": 0.57
+  },
+
+  "recoverability_state": {
+    "interruptibility": "constrained",
+    "localization_visibility": "partial",
+    "recovery_corridor": "available but fragile"
+  },
+
+  "shadow_dependencies": [
+    "telecom_backhaul",
+    "regional_fuel_supply",
+    "field_crew_availability",
+    "replacement_transformer_logistics",
+    "weather_exposure"
+  ],
+
+  "non_claims": {
+    "not_predictive": true,
+    "not_grid_operations_guidance": true,
+    "not_operational_authority": true,
+    "observer_only": true
+  }
+}

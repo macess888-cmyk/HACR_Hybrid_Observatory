@@ -1,0 +1,103 @@
+{
+  "scenario_id": "distributed_hospital_continuity_case_v1",
+  "scenario_type": "distributed_healthcare_continuity",
+  "observer_mode": true,
+  "non_authoritative": true,
+
+  "nodes": [
+    {
+      "id": "RegionalER",
+      "type": "critical_care_hub",
+      "state": "operational"
+    },
+    {
+      "id": "ClinicA",
+      "type": "local_care_site",
+      "state": "operational"
+    },
+    {
+      "id": "ClinicB",
+      "type": "local_care_site",
+      "state": "strained"
+    },
+    {
+      "id": "SharedEMR",
+      "type": "digital_records",
+      "state": "partial"
+    },
+    {
+      "id": "PharmacyNet",
+      "type": "distributed_supply",
+      "state": "strained"
+    },
+    {
+      "id": "StaffPool",
+      "type": "mobile_staff_capacity",
+      "state": "operational"
+    }
+  ],
+
+  "edges": [
+    {
+      "source": "RegionalER",
+      "target": "SharedEMR",
+      "dependency": "high"
+    },
+    {
+      "source": "ClinicA",
+      "target": "SharedEMR",
+      "dependency": "medium"
+    },
+    {
+      "source": "ClinicB",
+      "target": "SharedEMR",
+      "dependency": "medium"
+    },
+    {
+      "source": "PharmacyNet",
+      "target": "RegionalER",
+      "dependency": "high"
+    },
+    {
+      "source": "StaffPool",
+      "target": "ClinicA",
+      "dependency": "medium"
+    },
+    {
+      "source": "StaffPool",
+      "target": "ClinicB",
+      "dependency": "high"
+    },
+    {
+      "source": "ClinicA",
+      "target": "ClinicB",
+      "dependency": "low"
+    }
+  ],
+
+  "continuity_pressure": {
+    "regional_load": 0.64,
+    "dependency_visibility": 0.58,
+    "manual_fallback_capacity": 0.52
+  },
+
+  "recoverability_state": {
+    "interruptibility": "partially preserved",
+    "localization_visibility": "distributed",
+    "recovery_corridor": "available but uneven"
+  },
+
+  "shadow_dependencies": [
+    "shared_cloud_records",
+    "regional_transport_availability",
+    "cross-site staffing coordination",
+    "third_party_pharmacy_routing"
+  ],
+
+  "non_claims": {
+    "not_predictive": true,
+    "not_medical_guidance": true,
+    "not_operational_authority": true,
+    "observer_only": true
+  }
+}

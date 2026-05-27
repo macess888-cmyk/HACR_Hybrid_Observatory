@@ -1,0 +1,82 @@
+{
+  "scenario_id": "hospital_continuity_case_v1",
+  "scenario_type": "hospital_operational_continuity",
+  "observer_mode": true,
+  "non_authoritative": true,
+
+  "nodes": [
+    {
+      "id": "ER",
+      "type": "critical_care",
+      "state": "operational"
+    },
+    {
+      "id": "EMR",
+      "type": "digital_records",
+      "state": "degraded"
+    },
+    {
+      "id": "BackupPower",
+      "type": "infrastructure",
+      "state": "operational"
+    },
+    {
+      "id": "Pharmacy",
+      "type": "supply_dependency",
+      "state": "strained"
+    },
+    {
+      "id": "Staffing",
+      "type": "human_operational_capacity",
+      "state": "degrading"
+    }
+  ],
+
+  "edges": [
+    {
+      "source": "ER",
+      "target": "EMR",
+      "dependency": "high"
+    },
+    {
+      "source": "ER",
+      "target": "Staffing",
+      "dependency": "critical"
+    },
+    {
+      "source": "ER",
+      "target": "BackupPower",
+      "dependency": "critical"
+    },
+    {
+      "source": "Pharmacy",
+      "target": "ER",
+      "dependency": "high"
+    }
+  ],
+
+  "continuity_pressure": {
+    "staffing_load": 0.82,
+    "dependency_visibility": 0.44,
+    "manual_fallback_capacity": 0.37
+  },
+
+  "recoverability_state": {
+    "interruptibility": "narrowing",
+    "localization_visibility": "partial",
+    "recovery_corridor": "constrained"
+  },
+
+  "shadow_dependencies": [
+    "regional_supply_chain",
+    "telecom_provider",
+    "external_cloud_authentication"
+  ],
+
+  "non_claims": {
+    "not_predictive": true,
+    "not_medical_guidance": true,
+    "not_operational_authority": true,
+    "observer_only": true
+  }
+}

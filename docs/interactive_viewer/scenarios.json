@@ -1,0 +1,28 @@
+{
+  "scenarios": [
+    {
+      "id": "hospital_continuity",
+      "label": "Hospital Continuity",
+      "svg": "../scenarios/hospital_continuity/svg/hospital_continuity_topology.svg",
+      "json": "../scenarios/hospital_continuity/json/hospital_continuity_case_v1.json"
+    },
+    {
+      "id": "distributed_hospital_continuity",
+      "label": "Distributed Hospital Continuity",
+      "svg": "../scenarios/distributed_hospital_continuity/svg/distributed_hospital_continuity_topology.svg",
+      "json": "../scenarios/distributed_hospital_continuity/json/distributed_hospital_continuity_case_v1.json"
+    },
+    {
+      "id": "centralized_vs_distributed_healthcare",
+      "label": "Centralized vs Distributed Comparison",
+      "svg": "../comparison/svg/centralized_vs_distributed_healthcare.svg",
+      "json": "../comparison/receipts/centralized_vs_distributed_healthcare_receipt.json"
+    },
+    {
+      "id": "regional_supply_chain",
+      "label": "Regional Supply Chain",
+      "svg": "../assets/demo_maps/regional_supply_chain_topology.svg",
+      "json": "../tools/continuity_drift_visualizer/input/regional_supply_chain_case.json"
+    }
+  ]
+}

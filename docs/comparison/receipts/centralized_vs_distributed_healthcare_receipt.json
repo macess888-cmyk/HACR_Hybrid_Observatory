@@ -1,0 +1,20 @@
+{
+  "comparison_id": "centralized_vs_distributed_healthcare",
+  "generated_at_utc": "2026-05-27T04:30:48.119209+00:00",
+  "observer_only": true,
+  "non_authoritative": true,
+  "inputs": {
+    "centralized_svg": "scenarios\\hospital_continuity\\svg\\hospital_continuity_topology.svg",
+    "distributed_svg": "scenarios\\distributed_hospital_continuity\\svg\\distributed_hospital_continuity_topology.svg"
+  },
+  "output": "comparison\\svg\\centralized_vs_distributed_healthcare.svg",
+  "output_sha256": "3ef0230cd1f4999702c360a8e305dcf6fda8bb413f04b35ce5552a7521d3b576",
+  "non_claims": {
+    "not_predictive": true,
+    "not_scoring": true,
+    "not_optimization": true,
+    "not_authorization": true,
+    "not_certification": true,
+    "not_operator_replacement": true
+  }
+}

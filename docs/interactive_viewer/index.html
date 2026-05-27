@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>HACR Hybrid Observatory — Interactive Viewer</title>
+  <link rel="stylesheet" href="observatory.css" />
+</head>
+<body>
+  <header>
+    <h1>HACR Hybrid Observatory</h1>
+    <p>Observer-only bounded deterministic operational continuity inspection.</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label>
+        Scenario
+        <select id="scenarioSelect"></select>
+      </label>
+
+      <button id="loadButton">Load Scenario</button>
+      <button id="openButton">Open SVG</button>
+
+      <a id="downloadJson" class="buttonLink" href="#" download>
+        Download JSON
+      </a>
+
+      <a id="downloadReceipt" class="buttonLink" href="#" download>
+        Download Receipt
+      </a>
+    </section>
+
+    <section class="toggleBar">
+      <label><input type="checkbox" id="fitToggle" checked /> Fit view</label>
+      <label><input type="checkbox" id="borderToggle" checked /> Viewer border</label>
+      <label><input type="checkbox" id="claimToggle" checked /> Show non-claim</label>
+      <label><input type="checkbox" id="notesToggle" checked /> Show notes</label>
+
+      <button id="zoomOutButton">− Zoom</button>
+      <button id="zoomResetButton">Reset</button>
+      <button id="zoomInButton">+ Zoom</button>
+    </section>
+
+    <section class="toggleBar">
+      <span class="toggleLabel">View mode:</span>
+      <button id="normalViewButton">Normal</button>
+      <button id="focusViewButton">Focus</button>
+      <button id="softViewButton">Soft</button>
+    </section>
+
+    <section class="toggleBar">
+      <span class="toggleLabel">Replay:</span>
+      <button onclick="firstReplayFrame()">First</button>
+      <button onclick="previousReplayFrame()">Previous</button>
+      <button onclick="loadReplayFrame()">Load Replay</button>
+      <button onclick="nextReplayFrame()">Next</button>
+      <button onclick="lastReplayFrame()">Last</button>
+      <button onclick="playReplay()">Play</button>
+      <button onclick="pauseReplay()">Pause</button>
+    </section>
+
+    <section class="toggleBar">
+      <span class="toggleLabel">Delta:</span>
+      <button onclick="firstDeltaFrame()">First</button>
+      <button onclick="previousDeltaFrame()">Previous</button>
+      <button onclick="loadDeltaFrame()">Load Delta</button>
+      <button onclick="nextDeltaFrame()">Next</button>
+      <button onclick="lastDeltaFrame()">Last</button>
+    </section>
+
+    <section class="workspace" id="workspace">
+      <section class="viewer viewNormal" id="viewerBox">
+        <iframe id="svgFrame"></iframe>
+      </section>
+
+      <aside class="sidePanel" id="sidePanel">
+        <h2>Operational Notes</h2>
+
+        <div id="notesBox">
+          Observer-only operational notes will appear here.
+        </div>
+
+        <div class="panelDivider"></div>
+
+        <h3>Observatory Boundaries</h3>
+
+        <ul>
+          <li>observer-only</li>
+          <li>bounded</li>
+          <li>deterministic</li>
+          <li>non-authoritative</li>
+          <li>externally reviewable</li>
+        </ul>
+
+        <div class="panelDivider"></div>
+
+        <h3>Current Operational Reduction</h3>
+
+        <p class="reductionText">
+          visible continuity != preserved recoverability
+        </p>
+
+        <div class="panelDivider"></div>
+
+        <h3>Replay / Delta Boundary</h3>
+
+        <ul>
+          <li>replay frames are deterministic artifacts</li>
+          <li>delta overlays are deterministic artifacts</li>
+          <li>frame traversal is not prediction</li>
+          <li>delta visibility is not scoring</li>
+          <li>continuity evolution remains observer-only</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="nonclaims" id="nonClaimBox">
+      <strong>NON-CLAIM:</strong>
+      This viewer does not predict, govern, authorize, certify,
+      score, optimize, or replace operators.
+      It provides bounded deterministic observability only.
+    </section>
+  </main>
+
+  <script src="scenario_notes.js"></script>
+  <script src="observatory.js"></script>
+  <script src="replay_viewer.js"></script>
+  <script src="delta_viewer.js"></script>
+</body>
+</html>

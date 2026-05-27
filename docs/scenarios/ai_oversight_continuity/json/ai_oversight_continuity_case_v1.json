@@ -1,0 +1,105 @@
+{
+  "scenario_id": "ai_oversight_continuity_case_v1",
+  "scenario_type": "ai_oversight_continuity_topology",
+  "observer_mode": true,
+  "non_authoritative": true,
+
+  "nodes": [
+    {
+      "id": "Operator",
+      "type": "human_oversight_surface",
+      "state": "strained"
+    },
+    {
+      "id": "PolicyGate",
+      "type": "execution_policy_boundary",
+      "state": "operational"
+    },
+    {
+      "id": "ModelService",
+      "type": "automated_decision_component",
+      "state": "operational"
+    },
+    {
+      "id": "AuditLog",
+      "type": "observability_record",
+      "state": "partial"
+    },
+    {
+      "id": "FallbackPath",
+      "type": "manual_recovery_route",
+      "state": "degrading"
+    },
+    {
+      "id": "ExternalAPI",
+      "type": "third_party_dependency",
+      "state": "strained"
+    }
+  ],
+
+  "edges": [
+    {
+      "source": "Operator",
+      "target": "PolicyGate",
+      "dependency": "critical"
+    },
+    {
+      "source": "PolicyGate",
+      "target": "ModelService",
+      "dependency": "critical"
+    },
+    {
+      "source": "ModelService",
+      "target": "ExternalAPI",
+      "dependency": "high"
+    },
+    {
+      "source": "ModelService",
+      "target": "AuditLog",
+      "dependency": "high"
+    },
+    {
+      "source": "Operator",
+      "target": "FallbackPath",
+      "dependency": "high"
+    },
+    {
+      "source": "FallbackPath",
+      "target": "PolicyGate",
+      "dependency": "medium"
+    },
+    {
+      "source": "AuditLog",
+      "target": "Operator",
+      "dependency": "medium"
+    }
+  ],
+
+  "continuity_pressure": {
+    "oversight_visibility": 0.48,
+    "dependency_opacity": 0.74,
+    "fallback_viability": 0.34
+  },
+
+  "recoverability_state": {
+    "interruptibility": "narrowing",
+    "localization_visibility": "partial",
+    "recovery_corridor": "constrained"
+  },
+
+  "shadow_dependencies": [
+    "model_provider_runtime",
+    "external_api_policy_change",
+    "audit_pipeline_retention",
+    "operator_attention_bandwidth",
+    "fallback_procedure_currency"
+  ],
+
+  "non_claims": {
+    "not_predictive": true,
+    "not_ai_safety_claim": true,
+    "not_governance_authority": true,
+    "not_operational_authority": true,
+    "observer_only": true
+  }
+}

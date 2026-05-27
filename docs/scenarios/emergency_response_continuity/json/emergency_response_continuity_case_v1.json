@@ -1,0 +1,104 @@
+{
+  "scenario_id": "emergency_response_continuity_case_v1",
+  "scenario_type": "emergency_response_continuity_topology",
+  "observer_mode": true,
+  "non_authoritative": true,
+
+  "nodes": [
+    {
+      "id": "Dispatch",
+      "type": "coordination_center",
+      "state": "strained"
+    },
+    {
+      "id": "AmbulanceFleet",
+      "type": "mobile_response_capacity",
+      "state": "partial"
+    },
+    {
+      "id": "HospitalIntake",
+      "type": "receiving_capacity",
+      "state": "strained"
+    },
+    {
+      "id": "RadioComms",
+      "type": "field_communication_layer",
+      "state": "operational"
+    },
+    {
+      "id": "RoadAccess",
+      "type": "mobility_dependency",
+      "state": "degraded"
+    },
+    {
+      "id": "MutualAid",
+      "type": "fallback_response_capacity",
+      "state": "operational"
+    }
+  ],
+
+  "edges": [
+    {
+      "source": "Dispatch",
+      "target": "AmbulanceFleet",
+      "dependency": "critical"
+    },
+    {
+      "source": "AmbulanceFleet",
+      "target": "HospitalIntake",
+      "dependency": "critical"
+    },
+    {
+      "source": "Dispatch",
+      "target": "RadioComms",
+      "dependency": "high"
+    },
+    {
+      "source": "RadioComms",
+      "target": "AmbulanceFleet",
+      "dependency": "high"
+    },
+    {
+      "source": "RoadAccess",
+      "target": "AmbulanceFleet",
+      "dependency": "critical"
+    },
+    {
+      "source": "MutualAid",
+      "target": "Dispatch",
+      "dependency": "medium"
+    },
+    {
+      "source": "MutualAid",
+      "target": "HospitalIntake",
+      "dependency": "medium"
+    }
+  ],
+
+  "continuity_pressure": {
+    "dispatch_load": 0.79,
+    "route_degradation": 0.84,
+    "fallback_coordination": 0.55
+  },
+
+  "recoverability_state": {
+    "interruptibility": "constrained",
+    "localization_visibility": "partial",
+    "recovery_corridor": "available but narrowing"
+  },
+
+  "shadow_dependencies": [
+    "regional_weather_conditions",
+    "fuel_availability",
+    "interagency_radio_compatibility",
+    "hospital_bed_visibility",
+    "road_closure_updates"
+  ],
+
+  "non_claims": {
+    "not_predictive": true,
+    "not_emergency_guidance": true,
+    "not_operational_authority": true,
+    "observer_only": true
+  }
+}

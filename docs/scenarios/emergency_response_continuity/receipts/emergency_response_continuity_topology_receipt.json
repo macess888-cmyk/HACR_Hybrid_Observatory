@@ -1,0 +1,26 @@
+{
+  "scenario_key": "emergency_response_continuity",
+  "scenario_id": "emergency_response_continuity_case_v1",
+  "scenario_type": "emergency_response_continuity_topology",
+  "generated_at_utc": "2026-05-27T21:00:08.121927+00:00",
+  "observer_only": true,
+  "non_authoritative": true,
+  "input_path": "scenarios\\emergency_response_continuity\\json\\emergency_response_continuity_case_v1.json",
+  "output_path": "scenarios\\emergency_response_continuity\\svg\\emergency_response_continuity_topology.svg",
+  "svg_sha256": "545988dab8dc589e98c37932feba3e6f1e482602b4d5d97eff2468daf6a6feb2",
+  "node_count": 6,
+  "edge_count": 7,
+  "svg_features": {
+    "native_node_tooltips": true,
+    "native_edge_tooltips": true,
+    "hover_node_emphasis": true,
+    "deterministic_svg_output": true
+  },
+  "non_claims": {
+    "not_predictive": true,
+    "not_governance": true,
+    "not_authorization": true,
+    "not_certification": true,
+    "not_operator_replacement": true
+  }
+}

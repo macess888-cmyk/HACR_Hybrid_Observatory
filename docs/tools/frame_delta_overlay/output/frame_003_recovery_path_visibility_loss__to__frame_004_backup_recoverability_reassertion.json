@@ -1,0 +1,55 @@
+{
+  "delta_id": "frame_003_recovery_path_visibility_loss__to__frame_004_backup_recoverability_reassertion",
+  "before_frame": "tools\\continuity_replay_engine\\frames\\frame_003_recovery_path_visibility_loss.json",
+  "after_frame": "tools\\continuity_replay_engine\\frames\\frame_004_backup_recoverability_reassertion.json",
+  "observer_only": true,
+  "non_authoritative": true,
+  "pressure_delta": {
+    "endpoint_degradation": {
+      "before": 0.92,
+      "after": 0.82,
+      "delta": -0.1
+    },
+    "identity_dependency": {
+      "before": 0.91,
+      "after": 0.84,
+      "delta": -0.07
+    },
+    "restore_path_visibility": {
+      "before": 0.29,
+      "after": 0.61,
+      "delta": 0.32
+    }
+  },
+  "node_state_transitions": {
+    "BackupVault": {
+      "before": "strained",
+      "after": "operational"
+    },
+    "CloudApps": {
+      "before": "strained",
+      "after": "partial"
+    }
+  },
+  "recoverability_delta": {
+    "interruptibility": {
+      "before": "constrained",
+      "after": "partially preserved"
+    },
+    "localization_visibility": {
+      "before": "degraded",
+      "after": "partial"
+    },
+    "recovery_corridor": {
+      "before": "fragile",
+      "after": "visible but constrained"
+    }
+  },
+  "non_claims": {
+    "not_predictive": true,
+    "not_scoring": true,
+    "not_operational_guidance": true,
+    "not_authorization": true,
+    "observer_only": true
+  }
+}
