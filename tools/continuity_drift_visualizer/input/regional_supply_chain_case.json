@@ -1,0 +1,74 @@
+{
+  "case_id": "regional_supply_chain_case_001",
+  "case_name": "Regional Supply Chain Continuity Drift Demo",
+  "observer_mode": "continuity_drift_visualization",
+  "claim_scope": "diagnostic_only",
+  "visible_operational_status": "stable",
+
+  "time_steps": [
+    {
+      "step": 1,
+      "label": "Baseline",
+      "primary_supplier_recoverability": 0.62,
+      "delivery_route_recoverability": 0.58,
+      "manual_coordination_recoverability": 0.55
+    },
+    {
+      "step": 2,
+      "label": "Pressure Accumulation",
+      "primary_supplier_recoverability": 0.44,
+      "delivery_route_recoverability": 0.39,
+      "manual_coordination_recoverability": 0.41
+    },
+    {
+      "step": 3,
+      "label": "Recoverability Critical",
+      "primary_supplier_recoverability": 0.31,
+      "delivery_route_recoverability": 0.28,
+      "manual_coordination_recoverability": 0.35
+    }
+  ],
+
+  "nodes": [
+    { "id": "local_businesses", "label": "Local Businesses", "type": "operator", "continuity_pressure": 0.68, "recoverability": 0.42, "dependency_exposure": 0.71 },
+    { "id": "primary_supplier", "label": "Primary Supplier", "type": "supplier", "continuity_pressure": 0.82, "recoverability": 0.31, "dependency_exposure": 0.88 },
+    { "id": "backup_supplier", "label": "Backup Supplier", "type": "supplier", "continuity_pressure": 0.44, "recoverability": 0.63, "dependency_exposure": 0.39 },
+    { "id": "delivery_route", "label": "Delivery Route", "type": "logistics", "continuity_pressure": 0.79, "recoverability": 0.28, "dependency_exposure": 0.81 },
+    { "id": "manual_coordination", "label": "Manual Coordination", "type": "human_compensation", "continuity_pressure": 0.86, "recoverability": 0.35, "dependency_exposure": 0.74 },
+    { "id": "customer_demand", "label": "Customer Demand", "type": "demand_surface", "continuity_pressure": 0.61, "recoverability": 0.52, "dependency_exposure": 0.46 }
+  ],
+
+  "edges": [
+    { "from": "primary_supplier", "to": "local_businesses", "relationship": "core_supply_dependency", "strength": 0.89, "interruption_fragility": 0.82 },
+    { "from": "backup_supplier", "to": "local_businesses", "relationship": "alternate_supply_path", "strength": 0.36, "interruption_fragility": 0.41 },
+    { "from": "delivery_route", "to": "local_businesses", "relationship": "logistics_dependency", "strength": 0.84, "interruption_fragility": 0.78 },
+    { "from": "manual_coordination", "to": "local_businesses", "relationship": "human_stabilization_layer", "strength": 0.77, "interruption_fragility": 0.69 },
+    { "from": "customer_demand", "to": "local_businesses", "relationship": "demand_pressure", "strength": 0.62, "interruption_fragility": 0.48 }
+  ],
+
+  "shadow_dependencies": [
+    { "from": "manual_coordination", "to": "primary_supplier", "relationship": "undocumented_workaround", "visibility": 0.22, "risk": 0.81 },
+    { "from": "delivery_route", "to": "backup_supplier", "relationship": "hidden_logistics_constraint", "visibility": 0.31, "risk": 0.74 }
+  ],
+
+  "human_oversight": {
+    "interruption_authority": 0.38,
+    "decision_visibility": 0.44,
+    "manual_recovery_capacity": 0.29
+  },
+
+  "core_reductions": [
+    "visible continuity != preserved recoverability",
+    "manual compensation != structural resilience",
+    "distributed appearance != distributed survivability",
+    "backup path existence != recovery path viability"
+  ],
+
+  "non_claims": [
+    "not prediction",
+    "not business advice",
+    "not operational command",
+    "not governance authority",
+    "observer-only diagnostic visualization"
+  ]
+}

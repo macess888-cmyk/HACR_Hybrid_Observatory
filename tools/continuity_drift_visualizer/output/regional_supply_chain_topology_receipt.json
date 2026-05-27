@@ -1,0 +1,16 @@
+{
+  "case_id": "regional_supply_chain_case_001",
+  "case_name": "Regional Supply Chain Continuity Drift Demo",
+  "generated_at_utc": "2026-05-27T00:34:37.302996+00:00",
+  "output_file": "C:\\Users\\maces\\Desktop\\HACR_Hybrid_Observatory\\tools\\continuity_drift_visualizer\\output\\regional_supply_chain_topology.svg",
+  "sha256": "aa8b45d7baf5543f616f4333a4aa2e22cd0110d80b1462369d3f71e37a6a1dd8",
+  "claim_scope": "diagnostic_only",
+  "authority": "observer_only",
+  "non_claims": [
+    "not prediction",
+    "not business advice",
+    "not operational command",
+    "not governance authority",
+    "observer-only diagnostic visualization"
+  ]
+}
