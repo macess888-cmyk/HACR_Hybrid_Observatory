@@ -1,0 +1,37 @@
+{
+  "delta_overlay_receipt_id": "cyber_recoverability_frame_delta_overlay_v1",
+  "generated_at_utc": "2026-05-27T22:00:37.350175+00:00",
+  "observer_only": true,
+  "non_authoritative": true,
+  "delta_count": 3,
+  "deltas": [
+    {
+      "delta_id": "frame_001_baseline_visibility__to__frame_002_endpoint_pressure_increase",
+      "delta_json": "tools\\frame_delta_overlay\\output\\frame_001_baseline_visibility__to__frame_002_endpoint_pressure_increase.json",
+      "delta_svg": "tools\\frame_delta_overlay\\output\\frame_001_baseline_visibility__to__frame_002_endpoint_pressure_increase.svg",
+      "delta_json_sha256": "f4cf5789d2ac48a460ac9fd6649713270ae7d8954b0ebad9fef4627092ba2b13",
+      "delta_svg_sha256": "1dd983eeefd6944cc0cdcf67538fe2e1a6b918fd987ef059b53d898a38708552"
+    },
+    {
+      "delta_id": "frame_002_endpoint_pressure_increase__to__frame_003_recovery_path_visibility_loss",
+      "delta_json": "tools\\frame_delta_overlay\\output\\frame_002_endpoint_pressure_increase__to__frame_003_recovery_path_visibility_loss.json",
+      "delta_svg": "tools\\frame_delta_overlay\\output\\frame_002_endpoint_pressure_increase__to__frame_003_recovery_path_visibility_loss.svg",
+      "delta_json_sha256": "2a185d5cbc1f8a81f1f059611bedf2436fcf56ee1086f8c11c83a0d054a431a3",
+      "delta_svg_sha256": "629d2c9a88765c04c5f1e8a4cd22f54bae66794deff322cf0b1c566585c9f691"
+    },
+    {
+      "delta_id": "frame_003_recovery_path_visibility_loss__to__frame_004_backup_recoverability_reassertion",
+      "delta_json": "tools\\frame_delta_overlay\\output\\frame_003_recovery_path_visibility_loss__to__frame_004_backup_recoverability_reassertion.json",
+      "delta_svg": "tools\\frame_delta_overlay\\output\\frame_003_recovery_path_visibility_loss__to__frame_004_backup_recoverability_reassertion.svg",
+      "delta_json_sha256": "651d3290ee00343f67ee5f5ec9c613e4a2ad955f9e7b5c7df1027341358d6100",
+      "delta_svg_sha256": "f6f46f8de7d93145d20a5fb6e185f54fe34e8b272b12dddf8282ec1d719539d6"
+    }
+  ],
+  "non_claims": {
+    "not_predictive": true,
+    "not_scoring": true,
+    "not_operational_guidance": true,
+    "not_authorization": true,
+    "not_certification": true
+  }
+}

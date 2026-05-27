@@ -1,77 +1,169 @@
-<svg width="1400" height="1040" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820">
+<defs>
   <style>
-    .title { font: bold 32px Arial, sans-serif; fill: #ffffff; }
-    .subtitle { font: 17px Arial, sans-serif; fill: #cfd8ff; }
-    .label { font: bold 15px Arial, sans-serif; fill: #ffffff; }
-    .small { font: 12px Arial, sans-serif; fill: #d0d0d0; }
-    .metric { font: bold 13px Arial, sans-serif; fill: #ffffff; }
+    .node-inspection:hover circle {
+      stroke-width: 5;
+      opacity: 0.28;
+    }
   </style>
 
-  <rect width="100%" height="100%" fill="#0b1020"/>
+  <marker id="arrowhead"
+          markerWidth="10"
+          markerHeight="10"
+          refX="8"
+          refY="3"
+          orient="auto"
+          markerUnits="strokeWidth">
+    <path d="M0,0 L0,6 L9,3 z"
+          fill="#64748b"
+          opacity="0.65" />
+  </marker>
+</defs>
+<rect width="1200" height="820" fill="#f8fafc" />
+<g class="layer-grid">
+<line x1="0" y1="0" x2="0" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="80" y1="0" x2="80" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="160" y1="0" x2="160" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="240" y1="0" x2="240" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="320" y1="0" x2="320" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="400" y1="0" x2="400" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="480" y1="0" x2="480" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="560" y1="0" x2="560" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="640" y1="0" x2="640" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="720" y1="0" x2="720" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="800" y1="0" x2="800" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="880" y1="0" x2="880" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="960" y1="0" x2="960" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="1040" y1="0" x2="1040" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="1120" y1="0" x2="1120" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="1200" y1="0" x2="1200" y2="820" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="0" y1="0" x2="1200" y2="0" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="0" y1="80" x2="1200" y2="80" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="0" y1="160" x2="1200" y2="160" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="0" y1="240" x2="1200" y2="240" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="0" y1="320" x2="1200" y2="320" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="0" y1="400" x2="1200" y2="400" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="0" y1="480" x2="1200" y2="480" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="0" y1="560" x2="1200" y2="560" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="0" y1="640" x2="1200" y2="640" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="0" y1="720" x2="1200" y2="720" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="0" y1="800" x2="1200" y2="800" stroke="#64748b" stroke-width="1" opacity="0.02" />
+<line x1="0" y1="880" x2="1200" y2="880" stroke="#64748b" stroke-width="1" opacity="0.02" />
+</g>
+<g class="layer-title layer-text">
+<text x="600.0" y="48.0" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" text-anchor="middle" fill="#0f172a">Regional Supply Chain Continuity Topology</text>
+<text x="600.0" y="78.0" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#475569">Observer-only bounded deterministic operational continuity inspection</text>
+</g>
+<g class="layer-panels layer-text">
+<rect x="40" y="100" width="310" height="250" rx="18" fill="#ffffff" stroke="#cbd5e1" />
+<text x="195.0" y="132.0" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle" fill="#0f172a">Continuity Pressure</text>
+<text x="195.0" y="180.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#0f172a">Recoverability State</text>
+</g>
+<g class="layer-panels layer-shadow layer-text">
+<rect x="850" y="100" width="310" height="250" rx="18" fill="#ffffff" stroke="#cbd5e1" />
+<text x="1005.0" y="132.0" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle" fill="#0f172a">Shadow Dependencies</text>
+<text x="880.0" y="170.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#475569">• manual_coordination → primary_supplier ...</text>
+<text x="880.0" y="198.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#475569">• delivery_route → backup_supplier — hidd...</text>
+</g>
+<g class="layer-panels layer-text">
+<rect x="40" y="525" width="310" height="210" rx="18" fill="#ffffff" stroke="#cbd5e1" />
+<text x="195.0" y="555.0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#0f172a">Topology Legend</text>
+<circle cx="68" cy="587" r="10" fill="#22c55e" opacity="0.35" stroke="#22c55e" stroke-width="2" />
+<text x="90.0" y="592.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#475569">Operational</text>
+<circle cx="68" cy="615" r="10" fill="#f97316" opacity="0.35" stroke="#f97316" stroke-width="2" />
+<text x="90.0" y="620.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#475569">Strained</text>
+<circle cx="68" cy="643" r="10" fill="#ef4444" opacity="0.35" stroke="#ef4444" stroke-width="2" />
+<text x="90.0" y="648.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#475569">Degrading</text>
+<line x1="58.0" y1="679.0" x2="92.0" y2="679.0" stroke="#22c55e" stroke-width="4" opacity="0.35" stroke-dasharray="7,5"></line>
+<text x="105.0" y="684.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#475569">Recoverability Corridor</text>
+<line x1="58.0" y1="707.0" x2="92.0" y2="707.0" stroke="#8b5cf6" stroke-width="3" opacity="0.35" stroke-dasharray="7,5"></line>
+<text x="105.0" y="712.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#475569">Shadow Dependency Visibility</text>
+</g>
+<g class="layer-panels layer-text">
+<rect x="850" y="525" width="310" height="210" rx="18" fill="#ffffff" stroke="#cbd5e1" />
+<text x="1005.0" y="555.0" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#0f172a">Scenario Metadata</text>
+<text x="870.0" y="587.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#475569">scenario id: unknown</text>
+<text x="870.0" y="609.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#475569">scenario domain: continuity observability</text>
+<text x="870.0" y="631.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#475569">render mode: deterministic</text>
+<text x="870.0" y="653.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#475569">observer-only: true</text>
+<text x="870.0" y="675.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#475569">receipt generation: enabled</text>
+<text x="870.0" y="697.0" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#475569">topology type: continuity observability</text>
+</g>
+<g class="layer-corridor layer-text">
+<polygon points="600.0,135.0 825.2,265.0 825.2,525.0 600.0,655.0 374.8,525.0 374.8,265.0" fill="#22c55e" fill-opacity="0.05" stroke="#22c55e" stroke-width="5" stroke-dasharray="10,7" opacity="0.18"><title>Recoverability corridor: bounded visibility field only. Not a prediction or guarantee.</title></polygon>
+<text x="600.0" y="615.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#22c55e">Recoverability Corridor</text>
+</g>
+<g class="layer-edges">
 
-  <text x="50" y="55" class="title">Continuity Drift Topology Renderer</text>
-  <text x="50" y="88" class="subtitle">Observer-only dependency and recoverability visualization | deterministic demo output</text>
-  <text x="50" y="125" class="small">Case: Regional Supply Chain Continuity Drift Demo</text>
-  <text x="50" y="148" class="small">Visible operational status: stable</text>
-<circle cx="700.0" cy="460.0" r="330" fill="none" stroke="#7aa2ff" stroke-width="1" opacity="0.08"/>
-<circle cx="700.0" cy="460.0" r="250" fill="none" stroke="#7aa2ff" stroke-width="1" opacity="0.1"/>
-<circle cx="700.0" cy="460.0" r="170" fill="none" stroke="#7aa2ff" stroke-width="1" opacity="0.12"/>
-<line x1="946.817240078565" y1="317.5" x2="700.0" y2="175.0" stroke="#ff453a" stroke-width="6.45" opacity="0.65"/>
-<line x1="946.817240078565" y1="602.5" x2="700.0" y2="175.0" stroke="#35c759" stroke-width="3.8" opacity="0.65"/>
-<line x1="700.0" y1="745.0" x2="700.0" y2="175.0" stroke="#ff453a" stroke-width="6.2" opacity="0.65"/>
-<line x1="453.18275992143504" y1="602.5000000000001" x2="700.0" y2="175.0" stroke="#ff9f0a" stroke-width="5.85" opacity="0.65"/>
-<line x1="453.18275992143504" y1="317.5" x2="700.0" y2="175.0" stroke="#35c759" stroke-width="5.1" opacity="0.65"/>
-<line x1="453.18275992143504" y1="602.5000000000001" x2="946.817240078565" y2="317.5" stroke="#bf5cff" stroke-width="6.050000000000001" opacity="0.655" stroke-dasharray="9 7"/>
-<text x="700.0" y="460.00000000000006" class="small" text-anchor="middle" fill="#d8b4ff">shadow:undocumented_workaround V:0.22</text>
-<line x1="700.0" y1="745.0" x2="946.817240078565" y2="602.5" stroke="#bf5cff" stroke-width="5.7" opacity="0.62" stroke-dasharray="9 7"/>
-<text x="823.4086200392825" y="673.75" class="small" text-anchor="middle" fill="#d8b4ff">shadow:hidden_logistics_constraint V:0.31</text>
-<circle cx="700.0" cy="175.0" r="58.6" fill="#151d33" stroke="#ff9f0a" stroke-width="4"/>
-<text x="700.0" y="167.0" class="label" text-anchor="middle">Local Businesses</text>
-<text x="700.0" y="190.0" class="metric" text-anchor="middle">R:0.42 D:0.71</text>
-<circle cx="946.817240078565" cy="317.5" r="61.4" fill="#151d33" stroke="#ff453a" stroke-width="4"/>
-<text x="946.817240078565" y="309.5" class="label" text-anchor="middle">Primary Supplier</text>
-<text x="946.817240078565" y="332.5" class="metric" text-anchor="middle">R:0.31 D:0.88</text>
-<circle cx="946.817240078565" cy="602.5" r="53.8" fill="#151d33" stroke="#35c759" stroke-width="4"/>
-<text x="946.817240078565" y="594.5" class="label" text-anchor="middle">Backup Supplier</text>
-<text x="946.817240078565" y="617.5" class="metric" text-anchor="middle">R:0.63 D:0.39</text>
-<circle cx="700.0" cy="745.0" r="60.8" fill="#151d33" stroke="#ff453a" stroke-width="4"/>
-<text x="700.0" y="737.0" class="label" text-anchor="middle">Delivery Route</text>
-<text x="700.0" y="760.0" class="metric" text-anchor="middle">R:0.28 D:0.81</text>
-<circle cx="453.18275992143504" cy="602.5000000000001" r="62.2" fill="#151d33" stroke="#ff9f0a" stroke-width="4"/>
-<text x="453.18275992143504" y="594.5000000000001" class="label" text-anchor="middle">Manual Coordination</text>
-<text x="453.18275992143504" y="617.5000000000001" class="metric" text-anchor="middle">R:0.35 D:0.74</text>
-<circle cx="453.18275992143504" cy="317.5" r="57.2" fill="#151d33" stroke="#ff9f0a" stroke-width="4"/>
-<text x="453.18275992143504" y="309.5" class="label" text-anchor="middle">Customer Demand</text>
-<text x="453.18275992143504" y="332.5" class="metric" text-anchor="middle">R:0.52 D:0.46</text>
-
-  <circle cx="700.0" cy="460.0" r="86" fill="#111827" stroke="#7aa2ff" stroke-width="3"/>
-  <text x="700.0" y="448.0" class="label" text-anchor="middle">VISIBLE</text>
-  <text x="700.0" y="472.0" class="label" text-anchor="middle">CONTINUITY</text>
-  <text x="700.0" y="496.0" class="small" text-anchor="middle">may mask pressure</text>
-<rect x="40" y="780" width="420" height="155" rx="16" fill="#151d33" stroke="#2d3a5f"/>
-<text x="65" y="815" class="label">Drift Progression</text>
-<text x="65" y="845" class="small">Baseline</text>
-<rect x="210" y="833" width="220" height="14" rx="7" fill="#25314f"/>
-<rect x="210" y="833" width="128" height="14" rx="7" fill="#35c759"/>
-<text x="65" y="877" class="small">Pressure Accumulation</text>
-<rect x="210" y="865" width="220" height="14" rx="7" fill="#25314f"/>
-<rect x="210" y="865" width="90" height="14" rx="7" fill="#ff9f0a"/>
-<text x="65" y="909" class="small">Recoverability Critical</text>
-<rect x="210" y="897" width="220" height="14" rx="7" fill="#25314f"/>
-<rect x="210" y="897" width="68" height="14" rx="7" fill="#ff453a"/>
-  <rect x="500" y="780" width="390" height="155" rx="16" fill="#151d33" stroke="#2d3a5f"/>
-  <text x="525" y="815" class="label">Human Oversight Boundary</text>
-  <text x="525" y="850" class="small">Interruption authority: 0.38</text>
-  <text x="525" y="875" class="small">Decision visibility: 0.44</text>
-  <text x="525" y="900" class="small">Manual recovery capacity: 0.29</text>
-  <text x="750" y="885" class="metric" fill="#ff9f0a">Score 0.37</text>
-
-  <rect x="930" y="780" width="420" height="155" rx="16" fill="#151d33" stroke="#2d3a5f"/>
-  <text x="955" y="815" class="label">Core Reductions</text>
-<text x="955" y="845" class="small">- visible continuity != preserved recoverability</text>
-<text x="955" y="869" class="small">- manual compensation != structural resilience</text>
-<text x="955" y="893" class="small">- distributed appearance != distributed survivability</text>
-<text x="955" y="917" class="small">- backup path existence != recovery path viability</text>
-
-  <text x="50" y="1015" class="small">Purple dashed edges = shadow dependencies / low-visibility hidden coupling</text>
+</g>
+<g class="layer-shadow layer-text">
+<text x="600.0" y="762.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#475569">Dashed boundary: shadow dependencies are visible but non-authoritative</text>
+<line x1="390.0" y1="784.0" x2="810.0" y2="784.0" stroke="#8b5cf6" stroke-width="3" opacity="0.35" stroke-dasharray="7,5"></line>
+</g>
+<g class="layer-nodes layer-text">
+<g class="node-inspection">
+<title>Node: local_businesses
+Type: operator
+State: unknown
+Observer-only continuity visibility</title>
+<circle cx="600.0" cy="135.0" r="46" fill="#94a3b8" opacity="0.18" stroke="#94a3b8" stroke-width="3" />
+<text x="600.0" y="129.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#0f172a">local_businesses</text>
+<text x="600.0" y="149.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#475569">operator</text>
+<text x="600.0" y="165.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#475569">unknown</text>
+</g>
+<g class="node-inspection">
+<title>Node: primary_supplier
+Type: supplier
+State: unknown
+Observer-only continuity visibility</title>
+<circle cx="825.2" cy="265.0" r="46" fill="#94a3b8" opacity="0.18" stroke="#94a3b8" stroke-width="3" />
+<text x="825.2" y="259.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#0f172a">primary_supplier</text>
+<text x="825.2" y="279.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#475569">supplier</text>
+<text x="825.2" y="295.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#475569">unknown</text>
+</g>
+<g class="node-inspection">
+<title>Node: backup_supplier
+Type: supplier
+State: unknown
+Observer-only continuity visibility</title>
+<circle cx="825.2" cy="525.0" r="46" fill="#94a3b8" opacity="0.18" stroke="#94a3b8" stroke-width="3" />
+<text x="825.2" y="519.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#0f172a">backup_supplier</text>
+<text x="825.2" y="539.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#475569">supplier</text>
+<text x="825.2" y="555.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#475569">unknown</text>
+</g>
+<g class="node-inspection">
+<title>Node: delivery_route
+Type: logistics
+State: unknown
+Observer-only continuity visibility</title>
+<circle cx="600.0" cy="655.0" r="46" fill="#94a3b8" opacity="0.18" stroke="#94a3b8" stroke-width="3" />
+<text x="600.0" y="649.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#0f172a">delivery_route</text>
+<text x="600.0" y="669.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#475569">logistics</text>
+<text x="600.0" y="685.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#475569">unknown</text>
+</g>
+<g class="node-inspection">
+<title>Node: manual_coordination
+Type: human_compensation
+State: unknown
+Observer-only continuity visibility</title>
+<circle cx="374.8" cy="525.0" r="46" fill="#94a3b8" opacity="0.18" stroke="#94a3b8" stroke-width="3" />
+<text x="374.8" y="519.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#0f172a">manual_coordination</text>
+<text x="374.8" y="539.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#475569">human compensation</text>
+<text x="374.8" y="555.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#475569">unknown</text>
+</g>
+<g class="node-inspection">
+<title>Node: customer_demand
+Type: demand_surface
+State: unknown
+Observer-only continuity visibility</title>
+<circle cx="374.8" cy="265.0" r="46" fill="#94a3b8" opacity="0.18" stroke="#94a3b8" stroke-width="3" />
+<text x="374.8" y="259.0" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#0f172a">customer_demand</text>
+<text x="374.8" y="279.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#475569">demand surface</text>
+<text x="374.8" y="295.0" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#475569">unknown</text>
+</g>
+</g>
+<g class="layer-footer layer-text">
+<text x="600.0" y="788.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#475569">NON-CLAIM: This does not predict, govern, authorize, certify, or replace operators.</text>
+<text x="600.0" y="808.0" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#475569">Visible continuity does not prove preserved recoverability.</text>
+</g>
 </svg>

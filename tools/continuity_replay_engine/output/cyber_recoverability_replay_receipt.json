@@ -1,0 +1,40 @@
+{
+  "replay_id": "cyber_recoverability_continuity_replay_v1",
+  "generated_at_utc": "2026-05-27T21:39:01.889863+00:00",
+  "base_case": "scenarios\\cyber_recoverability\\json\\cyber_recoverability_case_v1.json",
+  "observer_only": true,
+  "non_authoritative": true,
+  "frame_count": 4,
+  "frames": [
+    {
+      "frame_json": "tools\\continuity_replay_engine\\frames\\frame_001_baseline_visibility.json",
+      "frame_svg": "tools\\continuity_replay_engine\\output\\frame_001_baseline_visibility.svg",
+      "frame_json_sha256": "9a3bf7e8bd8d5d7e5d7db07ddf356dcfcef6c8c88fcce1e13f7c81f4dc78e982",
+      "frame_svg_sha256": "8c679aacdc30c374de68a30a0c6c904f7af855d4b8503a2283e39c3f348aeee4"
+    },
+    {
+      "frame_json": "tools\\continuity_replay_engine\\frames\\frame_002_endpoint_pressure_increase.json",
+      "frame_svg": "tools\\continuity_replay_engine\\output\\frame_002_endpoint_pressure_increase.svg",
+      "frame_json_sha256": "0b6dc823e3a5e59eb017c9ed76af9636fa7845288ce22386427946e4138b4672",
+      "frame_svg_sha256": "c4762cac1894ffba07abebae4c1a9ba607f2ce4b366268c93492c86436fe337c"
+    },
+    {
+      "frame_json": "tools\\continuity_replay_engine\\frames\\frame_003_recovery_path_visibility_loss.json",
+      "frame_svg": "tools\\continuity_replay_engine\\output\\frame_003_recovery_path_visibility_loss.svg",
+      "frame_json_sha256": "91fc34b1de548a0f177f17a0a31b9bccc664c1db4ed54d59c6b18cb9b964236a",
+      "frame_svg_sha256": "072858febb49425a92c69f6997e0d1ace2a5b252c63fe7cbc0316ef51f52fce1"
+    },
+    {
+      "frame_json": "tools\\continuity_replay_engine\\frames\\frame_004_backup_recoverability_reassertion.json",
+      "frame_svg": "tools\\continuity_replay_engine\\output\\frame_004_backup_recoverability_reassertion.svg",
+      "frame_json_sha256": "63069b440fac1cab47a6cdcc9a43f3b672e4abfab2ba7cd3981c88a969972ccf",
+      "frame_svg_sha256": "90a6a5d3edbac2fe141ba5effd37d507e9497eb38ab13b8fcded73c1130d01ea"
+    }
+  ],
+  "non_claims": {
+    "not_predictive": true,
+    "not_simulation_authority": true,
+    "not_operational_guidance": true,
+    "not_certification": true
+  }
+}

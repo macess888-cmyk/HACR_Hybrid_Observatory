@@ -1,0 +1,42 @@
+{
+  "delta_id": "frame_001_baseline_visibility__to__frame_002_endpoint_pressure_increase",
+  "before_frame": "tools\\continuity_replay_engine\\frames\\frame_001_baseline_visibility.json",
+  "after_frame": "tools\\continuity_replay_engine\\frames\\frame_002_endpoint_pressure_increase.json",
+  "observer_only": true,
+  "non_authoritative": true,
+  "pressure_delta": {
+    "endpoint_degradation": {
+      "before": 0.78,
+      "after": 0.91,
+      "delta": 0.13
+    },
+    "identity_dependency": {
+      "before": 0.86,
+      "after": 0.89,
+      "delta": 0.03
+    },
+    "restore_path_visibility": {
+      "before": 0.51,
+      "after": 0.43,
+      "delta": -0.08
+    }
+  },
+  "node_state_transitions": {},
+  "recoverability_delta": {
+    "interruptibility": {
+      "before": "constrained",
+      "after": "narrowing"
+    },
+    "recovery_corridor": {
+      "before": "available but narrow",
+      "after": "narrowing"
+    }
+  },
+  "non_claims": {
+    "not_predictive": true,
+    "not_scoring": true,
+    "not_operational_guidance": true,
+    "not_authorization": true,
+    "observer_only": true
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "scenario_key": "energy_grid_recoverability",
+  "scenario_id": "energy_grid_recoverability_case_v1",
+  "scenario_type": "energy_grid_recoverability_topology",
+  "generated_at_utc": "2026-05-27T21:00:08.121927+00:00",
+  "observer_only": true,
+  "non_authoritative": true,
+  "input_path": "scenarios\\energy_grid_recoverability\\json\\energy_grid_recoverability_case_v1.json",
+  "output_path": "scenarios\\energy_grid_recoverability\\svg\\energy_grid_recoverability_topology.svg",
+  "svg_sha256": "0fc7a8799305da2a571801d1eae879e9b07bb5fa2d5b4298729af90d99beb4e4",
+  "node_count": 6,
+  "edge_count": 7,
+  "svg_features": {
+    "native_node_tooltips": true,
+    "native_edge_tooltips": true,
+    "hover_node_emphasis": true,
+    "deterministic_svg_output": true
+  },
+  "non_claims": {
+    "not_predictive": true,
+    "not_governance": true,
+    "not_authorization": true,
+    "not_certification": true,
+    "not_operator_replacement": true
+  }
+}
