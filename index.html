@@ -124,6 +124,14 @@
       margin-bottom: 0;
     }
 
+    .demo-img {
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: #0b1020;
+      margin-top: 12px;
+    }
+
     .reduction {
       font-size: 1.3rem;
       font-weight: 800;
@@ -251,15 +259,33 @@
     <section>
       <h2>Public Demonstrators</h2>
       <p>
-        The observatory now includes bounded operational demo layers for inspecting where visible continuity
+        The observatory includes bounded operational demo layers for inspecting where visible continuity
         may mask hidden recoverability pressure.
       </p>
 
       <div class="grid">
         <div class="card">
-          <h3>Recoverability Corridor Demo</h3>
-          <p>Visualizes recoverability scoring, dependency fragility, and stable-looking operation under narrowing recovery capacity.</p>
+          <h3>Recoverability Corridor</h3>
+          <img
+            class="demo-img"
+            src="assets/demo_maps/recoverability_corridor.svg"
+            alt="Recoverability corridor visualization"
+          />
+          <p>Shows visible continuity versus recoverability pressure.</p>
         </div>
+
+        <div class="card">
+          <h3>Continuity Drift Topology</h3>
+          <img
+            class="demo-img"
+            src="assets/demo_maps/regional_supply_chain_topology.svg"
+            alt="Regional supply chain continuity topology map"
+          />
+          <p>Shows dependency pressure, shadow coupling, drift progression, and oversight boundaries.</p>
+        </div>
+      </div>
+
+      <div class="grid">
         <div class="card">
           <h3>Continuity Drift Visualizer</h3>
           <p>Renders topology maps showing dependency pressure, shadow coupling, drift progression, and oversight boundaries.</p>
