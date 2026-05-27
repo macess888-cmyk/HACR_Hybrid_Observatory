@@ -1,0 +1,77 @@
+<svg width="1400" height="900" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 32px Arial, sans-serif; fill: #ffffff; }
+    .subtitle { font: 17px Arial, sans-serif; fill: #cfd8ff; }
+    .label { font: bold 15px Arial, sans-serif; fill: #ffffff; }
+    .small { font: 12px Arial, sans-serif; fill: #d0d0d0; }
+    .metric { font: bold 13px Arial, sans-serif; fill: #ffffff; }
+  </style>
+
+  <rect width="100%" height="100%" fill="#0b1020"/>
+
+  <text x="50" y="55" class="title">Continuity Drift Topology Renderer</text>
+  <text x="50" y="88" class="subtitle">Observer-only dependency and recoverability visualization | deterministic demo output</text>
+  <text x="50" y="125" class="small">Case: Regional Supply Chain Continuity Drift Demo</text>
+  <text x="50" y="148" class="small">Visible operational status: stable</text>
+<circle cx="700.0" cy="470.0" r="330" fill="none" stroke="#7aa2ff" stroke-width="1" opacity="0.08"/>
+<circle cx="700.0" cy="470.0" r="250" fill="none" stroke="#7aa2ff" stroke-width="1" opacity="0.1"/>
+<circle cx="700.0" cy="470.0" r="170" fill="none" stroke="#7aa2ff" stroke-width="1" opacity="0.12"/>
+<line x1="946.817240078565" y1="327.5" x2="700.0" y2="185.0" stroke="#ff453a" stroke-width="6.45" opacity="0.65"/>
+<line x1="946.817240078565" y1="612.5" x2="700.0" y2="185.0" stroke="#35c759" stroke-width="3.8" opacity="0.65"/>
+<line x1="700.0" y1="755.0" x2="700.0" y2="185.0" stroke="#ff453a" stroke-width="6.2" opacity="0.65"/>
+<line x1="453.18275992143504" y1="612.5000000000001" x2="700.0" y2="185.0" stroke="#ff9f0a" stroke-width="5.85" opacity="0.65"/>
+<line x1="453.18275992143504" y1="327.5" x2="700.0" y2="185.0" stroke="#35c759" stroke-width="5.1" opacity="0.65"/>
+<line x1="453.18275992143504" y1="612.5000000000001" x2="946.817240078565" y2="327.5" stroke="#bf5cff" stroke-width="6.050000000000001" opacity="0.655" stroke-dasharray="9 7"/>
+<text x="700.0" y="470.00000000000006" class="small" text-anchor="middle" fill="#d8b4ff">shadow:undocumented_workaround V:0.22</text>
+<line x1="700.0" y1="755.0" x2="946.817240078565" y2="612.5" stroke="#bf5cff" stroke-width="5.7" opacity="0.62" stroke-dasharray="9 7"/>
+<text x="823.4086200392825" y="683.75" class="small" text-anchor="middle" fill="#d8b4ff">shadow:hidden_logistics_constraint V:0.31</text>
+<circle cx="700.0" cy="185.0" r="58.6" fill="#151d33" stroke="#ff9f0a" stroke-width="4"/>
+<text x="700.0" y="177.0" class="label" text-anchor="middle">Local Businesses</text>
+<text x="700.0" y="200.0" class="metric" text-anchor="middle">R:0.42 D:0.71</text>
+<circle cx="946.817240078565" cy="327.5" r="61.4" fill="#151d33" stroke="#ff453a" stroke-width="4"/>
+<text x="946.817240078565" y="319.5" class="label" text-anchor="middle">Primary Supplier</text>
+<text x="946.817240078565" y="342.5" class="metric" text-anchor="middle">R:0.31 D:0.88</text>
+<circle cx="946.817240078565" cy="612.5" r="53.8" fill="#151d33" stroke="#35c759" stroke-width="4"/>
+<text x="946.817240078565" y="604.5" class="label" text-anchor="middle">Backup Supplier</text>
+<text x="946.817240078565" y="627.5" class="metric" text-anchor="middle">R:0.63 D:0.39</text>
+<circle cx="700.0" cy="755.0" r="60.8" fill="#151d33" stroke="#ff453a" stroke-width="4"/>
+<text x="700.0" y="747.0" class="label" text-anchor="middle">Delivery Route</text>
+<text x="700.0" y="770.0" class="metric" text-anchor="middle">R:0.28 D:0.81</text>
+<circle cx="453.18275992143504" cy="612.5000000000001" r="62.2" fill="#151d33" stroke="#ff9f0a" stroke-width="4"/>
+<text x="453.18275992143504" y="604.5000000000001" class="label" text-anchor="middle">Manual Coordination</text>
+<text x="453.18275992143504" y="627.5000000000001" class="metric" text-anchor="middle">R:0.35 D:0.74</text>
+<circle cx="453.18275992143504" cy="327.5" r="57.2" fill="#151d33" stroke="#ff9f0a" stroke-width="4"/>
+<text x="453.18275992143504" y="319.5" class="label" text-anchor="middle">Customer Demand</text>
+<text x="453.18275992143504" y="342.5" class="metric" text-anchor="middle">R:0.52 D:0.46</text>
+
+  <circle cx="700.0" cy="470.0" r="86" fill="#111827" stroke="#7aa2ff" stroke-width="3"/>
+  <text x="700.0" y="458.0" class="label" text-anchor="middle">VISIBLE</text>
+  <text x="700.0" y="482.0" class="label" text-anchor="middle">CONTINUITY</text>
+  <text x="700.0" y="506.0" class="small" text-anchor="middle">may mask pressure</text>
+<rect x="40" y="700" width="420" height="155" rx="16" fill="#151d33" stroke="#2d3a5f"/>
+<text x="65" y="735" class="label">Drift Progression</text>
+<text x="65" y="765" class="small">Baseline</text>
+<rect x="210" y="753" width="220" height="14" rx="7" fill="#25314f"/>
+<rect x="210" y="753" width="128" height="14" rx="7" fill="#35c759"/>
+<text x="65" y="797" class="small">Pressure Accumulation</text>
+<rect x="210" y="785" width="220" height="14" rx="7" fill="#25314f"/>
+<rect x="210" y="785" width="90" height="14" rx="7" fill="#ff9f0a"/>
+<text x="65" y="829" class="small">Recoverability Critical</text>
+<rect x="210" y="817" width="220" height="14" rx="7" fill="#25314f"/>
+<rect x="210" y="817" width="68" height="14" rx="7" fill="#ff453a"/>
+  <rect x="500" y="700" width="390" height="155" rx="16" fill="#151d33" stroke="#2d3a5f"/>
+  <text x="525" y="735" class="label">Human Oversight Boundary</text>
+  <text x="525" y="770" class="small">Interruption authority: 0.38</text>
+  <text x="525" y="795" class="small">Decision visibility: 0.44</text>
+  <text x="525" y="820" class="small">Manual recovery capacity: 0.29</text>
+  <text x="750" y="805" class="metric" fill="#ff9f0a">Score 0.37</text>
+
+  <rect x="930" y="700" width="420" height="155" rx="16" fill="#151d33" stroke="#2d3a5f"/>
+  <text x="955" y="735" class="label">Core Reductions</text>
+<text x="955" y="765" class="small">- visible continuity != preserved recoverability</text>
+<text x="955" y="789" class="small">- manual compensation != structural resilience</text>
+<text x="955" y="813" class="small">- distributed appearance != distributed survivability</text>
+<text x="955" y="837" class="small">- backup path existence != recovery path viability</text>
+
+  <text x="50" y="880" class="small">Purple dashed edges = shadow dependencies / low-visibility hidden coupling</text>
+</svg>
