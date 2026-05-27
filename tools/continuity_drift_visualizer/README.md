@@ -1,53 +1,27 @@
 # Continuity Drift Visualizer
 
-## Purpose
-
-Visualize hidden continuity pressure accumulating underneath stable operational systems.
+Observer-only continuity topology and recoverability pressure renderer.
 
 ---
 
-# Inputs
+# Purpose
 
-- operational states
-- dependency relationships
-- interruption pathways
-- recovery windows
-- replay persistence indicators
-- hidden coupling indicators
+The Continuity Drift Visualizer exists to help make operational pressure more inspectable under deterministic and reproducible conditions.
 
----
+The renderer visualizes how systems may remain visibly operationally coherent while:
 
-# Outputs
+- interruption viability narrows
+- recoverability degrades
+- dependency concentration increases
+- hidden coupling accumulates
+- localization capability weakens
+- human oversight corridors narrow
 
-- continuity pressure maps
-- recoverability corridor maps
-- dependency concentration indicators
-- localization narrowing indicators
-- interruption survivability overlays
+under stable-looking continuation itself.
 
 ---
 
-# Example Operational Interpretation
+# Core Reduction
 
-A system may remain:
-
-- operational
-- measurable
-- stable-looking
-
-while interruption viability and recoverability progressively degrade underneath continuation itself.
-
-The visualizer exists to help localize those asymmetries under bounded and inspectable conditions.
-
----
-
-# Boundary Constraint
-
-Observer-only inspection.
-
-The tool does NOT:
-- govern
-- authorize
-- predict
-- optimize
-- replace operators
+```text
+visible continuity != preserved recoverability
