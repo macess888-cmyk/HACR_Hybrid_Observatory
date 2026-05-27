@@ -160,6 +160,10 @@ HACR_Hybrid_Observatory/
 
 * docs/topology_atlas/PUBLIC_OBSERVATORY_TOPOLOGY.md
 
+## Website Demo Surface
+
+* docs/website/WEBSITE_DEMO_SURFACE.md
+
 ---
 
 # Observatory Families
