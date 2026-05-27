@@ -41,9 +41,9 @@ def edge_color(fragility):
     return "#35c759"
 
 
-def build_layout(nodes, width=1400, height=900):
+def build_layout(nodes, width=1400, height=1040):
     center_x = width / 2
-    center_y = height / 2 + 20
+    center_y = height / 2 - 60
     radius = 285
     positions = {}
 
@@ -61,7 +61,8 @@ def build_drift_panel(time_steps):
         return ""
 
     x = 40
-    y = 700
+    y = 780
+
     parts = [
         f'<rect x="{x}" y="{y}" width="420" height="155" rx="16" fill="#151d33" stroke="#2d3a5f"/>',
         f'<text x="{x + 25}" y="{y + 35}" class="label">Drift Progression</text>'
@@ -92,7 +93,7 @@ def build_human_oversight_panel(oversight):
         return ""
 
     x = 500
-    y = 700
+    y = 780
 
     interruption = clamp(oversight.get("interruption_authority", 0))
     visibility = clamp(oversight.get("decision_visibility", 0))
@@ -113,7 +114,7 @@ def build_human_oversight_panel(oversight):
 
 def build_svg(case):
     width = 1400
-    height = 900
+    height = 1040
 
     nodes = case.get("nodes", [])
     edges = case.get("edges", [])
@@ -140,9 +141,12 @@ def build_svg(case):
   <text x="50" y="148" class="small">Visible operational status: {case.get("visible_operational_status", "unknown")}</text>
 ''')
 
+    center_x = width / 2
+    center_y = height / 2 - 60
+
     for r, opacity in [(330, 0.08), (250, 0.10), (170, 0.12)]:
         svg_parts.append(
-            f'<circle cx="{width/2}" cy="{height/2 + 20}" r="{r}" fill="none" stroke="#7aa2ff" stroke-width="1" opacity="{opacity}"/>\n'
+            f'<circle cx="{center_x}" cy="{center_y}" r="{r}" fill="none" stroke="#7aa2ff" stroke-width="1" opacity="{opacity}"/>\n'
         )
 
     for edge in edges:
@@ -183,6 +187,7 @@ def build_svg(case):
 
         mid_x = (x1 + x2) / 2
         mid_y = (y1 + y2) / 2
+
         svg_parts.append(
             f'<text x="{mid_x}" y="{mid_y}" class="small" text-anchor="middle" fill="#d8b4ff">'
             f'shadow:{edge.get("relationship", "hidden_dependency")} V:{visibility}</text>\n'
@@ -212,27 +217,27 @@ def build_svg(case):
         )
 
     svg_parts.append(f'''
-  <circle cx="{width/2}" cy="{height/2 + 20}" r="86" fill="#111827" stroke="#7aa2ff" stroke-width="3"/>
-  <text x="{width/2}" y="{height/2 + 8}" class="label" text-anchor="middle">VISIBLE</text>
-  <text x="{width/2}" y="{height/2 + 32}" class="label" text-anchor="middle">CONTINUITY</text>
-  <text x="{width/2}" y="{height/2 + 56}" class="small" text-anchor="middle">may mask pressure</text>
+  <circle cx="{center_x}" cy="{center_y}" r="86" fill="#111827" stroke="#7aa2ff" stroke-width="3"/>
+  <text x="{center_x}" y="{center_y - 12}" class="label" text-anchor="middle">VISIBLE</text>
+  <text x="{center_x}" y="{center_y + 12}" class="label" text-anchor="middle">CONTINUITY</text>
+  <text x="{center_x}" y="{center_y + 36}" class="small" text-anchor="middle">may mask pressure</text>
 ''')
 
     svg_parts.append(build_drift_panel(case.get("time_steps", [])))
     svg_parts.append(build_human_oversight_panel(case.get("human_oversight", {})))
 
     svg_parts.append('''
-  <rect x="930" y="700" width="420" height="155" rx="16" fill="#151d33" stroke="#2d3a5f"/>
-  <text x="955" y="735" class="label">Core Reductions</text>
+  <rect x="930" y="780" width="420" height="155" rx="16" fill="#151d33" stroke="#2d3a5f"/>
+  <text x="955" y="815" class="label">Core Reductions</text>
 ''')
 
-    y = 765
+    y = 845
     for reduction in reductions[:4]:
         svg_parts.append(f'<text x="955" y="{y}" class="small">- {reduction}</text>\n')
         y += 24
 
     svg_parts.append('''
-  <text x="50" y="880" class="small">Purple dashed edges = shadow dependencies / low-visibility hidden coupling</text>
+  <text x="50" y="1015" class="small">Purple dashed edges = shadow dependencies / low-visibility hidden coupling</text>
 ''')
 
     svg_parts.append("</svg>")
