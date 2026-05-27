@@ -1,0 +1,48 @@
+{
+  "case_id": "cyber_incident_recoverability_001",
+  "case_name": "Cyber Incident Recoverability Demo",
+  "visible_operational_status": "online",
+  "observer_mode": "continuity_drift_visualization",
+  "claim_scope": "diagnostic_only",
+
+  "nodes": [
+    { "id": "production_systems", "label": "Production Systems", "type": "runtime", "continuity_pressure": 0.83, "recoverability": 0.41, "dependency_exposure": 0.79 },
+    { "id": "identity_provider", "label": "Identity Provider", "type": "auth_dependency", "continuity_pressure": 0.79, "recoverability": 0.33, "dependency_exposure": 0.86 },
+    { "id": "logging_pipeline", "label": "Logging Pipeline", "type": "visibility_layer", "continuity_pressure": 0.62, "recoverability": 0.46, "dependency_exposure": 0.61 },
+    { "id": "incident_response", "label": "Incident Response", "type": "human_response", "continuity_pressure": 0.71, "recoverability": 0.37, "dependency_exposure": 0.72 },
+    { "id": "backup_restore", "label": "Backup Restore", "type": "recovery_path", "continuity_pressure": 0.58, "recoverability": 0.52, "dependency_exposure": 0.64 }
+  ],
+
+  "edges": [
+    { "from": "identity_provider", "to": "production_systems", "relationship": "access_dependency", "strength": 0.88, "interruption_fragility": 0.83 },
+    { "from": "logging_pipeline", "to": "incident_response", "relationship": "visibility_dependency", "strength": 0.72, "interruption_fragility": 0.69 },
+    { "from": "backup_restore", "to": "production_systems", "relationship": "restore_path", "strength": 0.59, "interruption_fragility": 0.57 },
+    { "from": "incident_response", "to": "production_systems", "relationship": "containment_response", "strength": 0.66, "interruption_fragility": 0.73 }
+  ],
+
+  "shadow_dependencies": [
+    { "from": "identity_provider", "to": "incident_response", "relationship": "lockout_response_dependency", "visibility": 0.25, "risk": 0.84 },
+    { "from": "logging_pipeline", "to": "production_systems", "relationship": "visibility_assumed_as_control", "visibility": 0.29, "risk": 0.77 }
+  ],
+
+  "human_oversight": {
+    "interruption_authority": 0.46,
+    "decision_visibility": 0.36,
+    "manual_recovery_capacity": 0.34
+  },
+
+  "core_reductions": [
+    "system online != incident recoverability",
+    "logging visibility != containment authority",
+    "backup existence != restore viability",
+    "access continuity != response capability"
+  ],
+
+  "non_claims": [
+    "not cybersecurity certification",
+    "not incident response advice",
+    "not prediction",
+    "not operational command",
+    "observer-only diagnostic visualization"
+  ]
+}

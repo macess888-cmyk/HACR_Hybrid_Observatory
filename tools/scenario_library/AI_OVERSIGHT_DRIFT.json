@@ -1,0 +1,48 @@
+{
+  "case_id": "ai_oversight_drift_001",
+  "case_name": "AI Oversight Drift Demo",
+  "visible_operational_status": "stable",
+  "observer_mode": "continuity_drift_visualization",
+  "claim_scope": "diagnostic_only",
+
+  "nodes": [
+    { "id": "ai_recommendation_layer", "label": "AI Recommendation Layer", "type": "ai_system", "continuity_pressure": 0.84, "recoverability": 0.46, "dependency_exposure": 0.78 },
+    { "id": "human_review_layer", "label": "Human Review Layer", "type": "human_oversight", "continuity_pressure": 0.72, "recoverability": 0.34, "dependency_exposure": 0.69 },
+    { "id": "approval_workflow", "label": "Approval Workflow", "type": "process", "continuity_pressure": 0.79, "recoverability": 0.38, "dependency_exposure": 0.74 },
+    { "id": "audit_logs", "label": "Audit Logs", "type": "evidence_surface", "continuity_pressure": 0.58, "recoverability": 0.67, "dependency_exposure": 0.41 },
+    { "id": "operator_judgment", "label": "Operator Judgment", "type": "contextual_layer", "continuity_pressure": 0.66, "recoverability": 0.31, "dependency_exposure": 0.72 }
+  ],
+
+  "edges": [
+    { "from": "ai_recommendation_layer", "to": "approval_workflow", "relationship": "recommendation_flow", "strength": 0.86, "interruption_fragility": 0.71 },
+    { "from": "human_review_layer", "to": "approval_workflow", "relationship": "review_gate", "strength": 0.51, "interruption_fragility": 0.76 },
+    { "from": "approval_workflow", "to": "audit_logs", "relationship": "evidence_capture", "strength": 0.62, "interruption_fragility": 0.44 },
+    { "from": "operator_judgment", "to": "human_review_layer", "relationship": "contextual_interpretation", "strength": 0.49, "interruption_fragility": 0.79 }
+  ],
+
+  "shadow_dependencies": [
+    { "from": "ai_recommendation_layer", "to": "human_review_layer", "relationship": "automation_bias_pressure", "visibility": 0.28, "risk": 0.82 },
+    { "from": "approval_workflow", "to": "operator_judgment", "relationship": "rubber_stamp_drift", "visibility": 0.24, "risk": 0.86 }
+  ],
+
+  "human_oversight": {
+    "interruption_authority": 0.34,
+    "decision_visibility": 0.41,
+    "manual_recovery_capacity": 0.32
+  },
+
+  "core_reductions": [
+    "AI capability != operational responsibility",
+    "auditability != human oversight",
+    "recommendation flow != accountable decision",
+    "visible review != preserved interruption authority"
+  ],
+
+  "non_claims": [
+    "not prediction",
+    "not compliance certification",
+    "not governance authority",
+    "not operational command",
+    "observer-only diagnostic visualization"
+  ]
+}

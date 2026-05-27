@@ -1,0 +1,48 @@
+{
+  "case_id": "hospital_recoverability_001",
+  "case_name": "Hospital Recoverability Pressure Demo",
+  "visible_operational_status": "stable",
+  "observer_mode": "continuity_drift_visualization",
+  "claim_scope": "diagnostic_only",
+
+  "nodes": [
+    { "id": "clinical_staff", "label": "Clinical Staff", "type": "human_layer", "continuity_pressure": 0.88, "recoverability": 0.29, "dependency_exposure": 0.82 },
+    { "id": "triage_system", "label": "Triage System", "type": "workflow", "continuity_pressure": 0.76, "recoverability": 0.43, "dependency_exposure": 0.68 },
+    { "id": "bed_capacity", "label": "Bed Capacity", "type": "resource", "continuity_pressure": 0.81, "recoverability": 0.36, "dependency_exposure": 0.77 },
+    { "id": "supply_inventory", "label": "Supply Inventory", "type": "dependency", "continuity_pressure": 0.64, "recoverability": 0.48, "dependency_exposure": 0.59 },
+    { "id": "manual_coordination", "label": "Manual Coordination", "type": "human_compensation", "continuity_pressure": 0.86, "recoverability": 0.27, "dependency_exposure": 0.84 }
+  ],
+
+  "edges": [
+    { "from": "clinical_staff", "to": "triage_system", "relationship": "clinical_execution", "strength": 0.84, "interruption_fragility": 0.82 },
+    { "from": "bed_capacity", "to": "triage_system", "relationship": "capacity_constraint", "strength": 0.78, "interruption_fragility": 0.74 },
+    { "from": "supply_inventory", "to": "clinical_staff", "relationship": "resource_dependency", "strength": 0.63, "interruption_fragility": 0.58 },
+    { "from": "manual_coordination", "to": "triage_system", "relationship": "informal_recovery_layer", "strength": 0.81, "interruption_fragility": 0.86 }
+  ],
+
+  "shadow_dependencies": [
+    { "from": "manual_coordination", "to": "clinical_staff", "relationship": "hidden_workload_absorption", "visibility": 0.19, "risk": 0.88 },
+    { "from": "clinical_staff", "to": "bed_capacity", "relationship": "untracked_capacity_substitution", "visibility": 0.27, "risk": 0.79 }
+  ],
+
+  "human_oversight": {
+    "interruption_authority": 0.42,
+    "decision_visibility": 0.39,
+    "manual_recovery_capacity": 0.25
+  },
+
+  "core_reductions": [
+    "visible care continuity != preserved clinical recoverability",
+    "manual coordination != structural resilience",
+    "staff endurance != sustainable capacity",
+    "audit visibility != interruption realism"
+  ],
+
+  "non_claims": [
+    "not medical advice",
+    "not clinical certification",
+    "not prediction",
+    "not operational command",
+    "observer-only diagnostic visualization"
+  ]
+}
