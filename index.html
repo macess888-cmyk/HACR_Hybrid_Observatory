@@ -1,268 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HACR Hybrid Observatory</title>
-
   <style>
+    :root {
+      --bg: #080c16;
+      --panel: #111827;
+      --panel-2: #151d33;
+      --text: #f4f7fb;
+      --muted: #b8c2d6;
+      --accent: #7aa2ff;
+      --green: #35c759;
+      --orange: #ff9f0a;
+      --red: #ff453a;
+      --purple: #bf5cff;
+      --border: #2d3a5f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      background-color: #0b0f14;
-      color: #d7e2f0;
-      font-family: Arial, sans-serif;
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(122, 162, 255, 0.16), transparent 35%),
+        radial-gradient(circle at top right, rgba(191, 92, 255, 0.10), transparent 32%),
+        var(--bg);
+      color: var(--text);
       line-height: 1.6;
     }
 
-    h1, h2, h3 {
-      color: #7dd3fc;
+    a {
+      color: var(--accent);
+      text-decoration: none;
     }
 
-    code {
-      background: #111827;
-      padding: 2px 5px;
-      border-radius: 4px;
-      color: #93c5fd;
+    a:hover {
+      text-decoration: underline;
     }
 
-    .section {
-      margin-bottom: 50px;
-      border-bottom: 1px solid #1e293b;
-      padding-bottom: 30px;
+    header {
+      padding: 64px 22px 42px;
+      max-width: 1100px;
+      margin: 0 auto;
     }
 
-    .hold {
-      color: #facc15;
-      font-weight: bold;
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.8rem;
+      margin-bottom: 14px;
     }
 
-    .pass {
-      color: #22c55e;
-      font-weight: bold;
+    h1 {
+      font-size: clamp(2.3rem, 6vw, 4.6rem);
+      line-height: 1.05;
+      margin: 0 0 20px;
     }
 
-    .fail {
-      color: #ef4444;
-      font-weight: bold;
+    h2 {
+      font-size: clamp(1.55rem, 3vw, 2.2rem);
+      margin-top: 0;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+    }
+
+    .lead {
+      font-size: 1.22rem;
+      color: var(--muted);
+      max-width: 860px;
+    }
+
+    .constraint {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(17, 24, 39, 0.72);
+      color: var(--text);
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 22px 70px;
+    }
+
+    section {
+      background: rgba(17, 24, 39, 0.82);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 28px;
+      margin: 22px 0;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .reduction {
+      font-size: 1.3rem;
+      font-weight: 800;
+      padding: 18px;
+      border-radius: 18px;
+      background: #0e1425;
+      border: 1px solid var(--border);
+      margin-top: 16px;
+    }
+
+    .muted {
+      color: var(--muted);
     }
 
     ul {
       padding-left: 20px;
     }
 
-    .boundary {
-      background: #111827;
-      border-left: 4px solid #38bdf8;
-      padding: 20px;
-      margin-top: 20px;
-      margin-bottom: 20px;
+    li {
+      margin: 7px 0;
     }
 
-    .warning {
-      background: #1e1b0f;
-      border-left: 4px solid #facc15;
-      padding: 20px;
-      margin-top: 20px;
-      margin-bottom: 20px;
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
     }
+
+    .pill {
+      border: 1px solid var(--border);
+      background: #0e1425;
+      color: var(--muted);
+      padding: 8px 11px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+    }
+
+    .legend {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .legend-item {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: var(--muted);
+    }
+
+    .dot {
+      width: 13px;
+      height: 13px;
+      border-radius: 999px;
+      display: inline-block;
+    }
+
+    .green { background: var(--green); }
+    .orange { background: var(--orange); }
+    .red { background: var(--red); }
+    .purple { background: var(--purple); }
 
     .footer {
-      margin-top: 80px;
-      opacity: 0.7;
-      font-size: 0.9em;
+      color: var(--muted);
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.95rem;
     }
 
-    a {
-      color: #7dd3fc;
+    code {
+      color: #d8e4ff;
+      background: #0e1425;
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 6px;
     }
   </style>
 </head>
 
 <body>
-
-  <h1>HACR Hybrid Observatory</h1>
-
-  <p>
-    Observer-only runtime continuity inspection framework for survivability pressure,
-    executable reconstruction viability, interruption realism degradation,
-    and bind-local admissibility analysis under bounded deterministic conditions.
-  </p>
-
-  <div class="boundary">
-    <p><strong>No present-state proof -> no bind -> no effect.</strong></p>
-
-    <p>
-      Execution admissibility must be independently reconstructed at bind.
+  <header>
+    <div class="eyebrow">Observer-only runtime continuity inspection</div>
+    <h1>HACR Hybrid Observatory</h1>
+    <p class="lead">
+      A bounded observability framework for inspecting where visible continuity may mask
+      recoverability pressure, dependency persistence, interruption fragility, or localization degradation
+      underneath stable-looking systems.
     </p>
+    <div class="constraint">UNKNOWN → HOLD</div>
+  </header>
 
-    <p>
-      No carry-forward validity.
-      No inherited authority.
-      No survivability-derived legitimacy.
-    </p>
+  <main>
+    <section>
+      <h2>Core Reduction</h2>
+      <div class="reduction">visible continuity != preserved recoverability</div>
+      <p class="muted">
+        A system may remain operational, measurable, reviewable, reproducible, and governable-looking
+        while the practical ability to interrupt, recover, or localize failure progressively narrows underneath.
+      </p>
+    </section>
 
-    <p>
-      <strong>
-        The feeling of governance is not proof that governance remains executable.
-      </strong>
-    </p>
-  </div>
+    <section>
+      <h2>What The Observatory Inspects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Continuity Pressure</h3>
+          <p>Where systems keep operating while hidden strain accumulates beneath visible stability.</p>
+        </div>
+        <div class="card">
+          <h3>Recoverability Corridors</h3>
+          <p>Whether interruption, recovery, refusal, or correction pathways remain reachable.</p>
+        </div>
+        <div class="card">
+          <h3>Dependency Persistence</h3>
+          <p>Where survivability concentrates through suppliers, workflows, infrastructure, or hidden coupling.</p>
+        </div>
+        <div class="card">
+          <h3>Human Oversight Boundaries</h3>
+          <p>Whether decision visibility, interruption authority, and manual recovery capacity remain intact.</p>
+        </div>
+      </div>
+    </section>
 
-  <div class="section">
-    <h2>Current Runtime Focus</h2>
+    <section>
+      <h2>Public Demonstrators</h2>
+      <p>
+        The observatory now includes bounded operational demo layers for inspecting where visible continuity
+        may mask hidden recoverability pressure.
+      </p>
 
-    <ul>
-      <li>interruption realism degradation</li>
-      <li>continuation survivability pressure</li>
-      <li>runtime dependency survivability</li>
-      <li>executable reconstruction viability</li>
-      <li>consequence locality degradation</li>
-      <li>symbolic stabilization pressure</li>
-      <li>replay survivability surfaces</li>
-      <li>topology-dependent continuation risk</li>
-      <li>atmospheric governability drift</li>
-    </ul>
+      <div class="grid">
+        <div class="card">
+          <h3>Recoverability Corridor Demo</h3>
+          <p>Visualizes recoverability scoring, dependency fragility, and stable-looking operation under narrowing recovery capacity.</p>
+        </div>
+        <div class="card">
+          <h3>Continuity Drift Visualizer</h3>
+          <p>Renders topology maps showing dependency pressure, shadow coupling, drift progression, and oversight boundaries.</p>
+        </div>
+        <div class="card">
+          <h3>Scenario Library</h3>
+          <p>Includes supply chain continuity, AI oversight drift, hospital recoverability pressure, and cyber incident recoverability.</p>
+        </div>
+      </div>
 
-    <div class="warning">
-      Governability appearance may persist while executable legitimacy reconstruction
-      viability materially narrows underneath stabilized continuation.
-    </div>
+      <p class="muted">
+        Outputs remain observer-only, deterministic, diagnostic-only, reproducible, and non-authoritative.
+      </p>
+    </section>
 
-    <p>
-      Systems may remain:
-    </p>
+    <section>
+      <h2>How To Read The Maps</h2>
+      <p>
+        Continuity topology maps visualize dependency pressure and recoverability narrowing without claiming prediction,
+        certification, governance authority, or operational command.
+      </p>
 
-    <ul>
-      <li>visible</li>
-      <li>replayable</li>
-      <li>highly orchestrated</li>
-      <li>operationally coherent</li>
-      <li>institutionally embedded</li>
-      <li>optimization-stable</li>
-      <li>governable-looking</li>
-    </ul>
+      <div class="legend">
+        <div class="legend-item"><span class="dot green"></span> Green: recoverability more stable</div>
+        <div class="legend-item"><span class="dot orange"></span> Orange: recoverability narrowing</div>
+        <div class="legend-item"><span class="dot red"></span> Red: recoverability critical</div>
+        <div class="legend-item"><span class="dot purple"></span> Purple dashed paths: shadow dependencies or hidden coupling</div>
+      </div>
 
-    <p>
-      while interruption / reconstruction viability quietly degrades underneath continuation stability.
-    </p>
-  </div>
+      <p class="muted">
+        Center continuity may appear stable while outer dependency, recovery, or oversight paths degrade.
+      </p>
+    </section>
 
-  <div class="section">
-    <h2>Critical Distinctions</h2>
+    <section>
+      <h2>Current Demo Surfaces</h2>
+      <ul>
+        <li><code>tools/recoverability_corridor_demo/</code></li>
+        <li><code>tools/continuity_drift_visualizer/</code></li>
+        <li><code>tools/scenario_library/</code></li>
+        <li><code>docs/public_demos/PUBLIC_DEMO_OVERVIEW.md</code></li>
+        <li><code>docs/map_reading_guides/HOW_TO_READ_CONTINUITY_TOPOLOGY_MAPS.md</code></li>
+      </ul>
+    </section>
 
-    <ul>
-      <li>validation != admissibility</li>
-      <li>runtime control != consequence permission</li>
-      <li>continuity != reconstructed legitimacy</li>
-      <li>survivability != legitimacy inheritance</li>
-      <li>observation != authority</li>
-      <li>process != legitimacy</li>
-      <li>correctness != authority</li>
-    </ul>
-  </div>
+    <section>
+      <h2>What This Is Not</h2>
+      <div class="pill-row">
+        <span class="pill">not prediction</span>
+        <span class="pill">not certification</span>
+        <span class="pill">not governance authority</span>
+        <span class="pill">not operational command</span>
+        <span class="pill">not human replacement</span>
+        <span class="pill">not total observability</span>
+      </div>
+    </section>
 
-  <div class="section">
-    <h2>Current Stabilized Systems</h2>
+    <section>
+      <h2>Repository</h2>
+      <p>
+        Review the source, tools, demo cases, and documentation here:
+      </p>
+      <p>
+        <a href="https://github.com/macess888-cmyk/HACR_Hybrid_Observatory">
+          HACR Hybrid Observatory GitHub Repository
+        </a>
+      </p>
+    </section>
 
-    <h3>constraint_mapper v1</h3>
-    <p>Observer-only runtime constraint mapping layer.</p>
-
-    <h3>war_mapper v1</h3>
-    <p>Observer-only anti-escalation survivability inspection layer.</p>
-
-    <h3>co_alignment_mapper v1</h3>
-    <p>Cross-scale deterministic communication continuity mapper.</p>
-
-    <h3>reality_anchor_mapper v1</h3>
-    <p>Runtime trap / anchor / bind localization layer.</p>
-
-    <h3>alpha_omega_observatory v1</h3>
-    <p>
-      Cross-scale observability layer returning:
-      <span class="pass">PASS</span>,
-      <span class="hold">HOLD</span>,
-      or
-      <span class="fail">CAUTION</span>
-      under deterministic bounded runtime conditions.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Validation State</h2>
-
-    <ul>
-      <li>baseline validated</li>
-      <li>case_02 validated</li>
-      <li>deterministic replay validated</li>
-      <li>SHA256 reproducibility validated</li>
-      <li>verifier alignment PASS</li>
-      <li>hashes stable per input</li>
-      <li>repos synchronized and aligned</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Execution Boundary</h2>
-
-    <p>The observatory may:</p>
-
-    <ul>
-      <li>inspect</li>
-      <li>classify</li>
-      <li>localize</li>
-      <li>trace</li>
-      <li>pressure-test</li>
-      <li>render deterministic artifacts</li>
-    </ul>
-
-    <p>The observatory may not:</p>
-
-    <ul>
-      <li>authorize execution</li>
-      <li>determine legitimacy</li>
-      <li>grant authority</li>
-      <li>inherit validity</li>
-      <li>convert survivability into permission</li>
-      <li>reopen ontology</li>
-      <li>replace bind-time proof</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Non-Claims</h2>
-
-    <ul>
-      <li>does not infer legitimacy from survivability</li>
-      <li>does not infer authority from continuity</li>
-      <li>does not convert persistence into admissibility</li>
-      <li>does not certify reconstruction viability</li>
-      <li>does not claim inevitability</li>
-      <li>does not authorize execution</li>
-      <li>does not determine governance validity</li>
-      <li>does not create operational authority</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Current State</h2>
-
-    <p>
-      System complete.<br>
-      System stable.<br>
-      System bounded.
-    </p>
-
-    <p class="hold">
-      Default State: HOLD
-    </p>
-  </div>
+    <section>
+      <h2>Final Constraint</h2>
+      <div class="reduction">Break survivability, not ontology.</div>
+      <p class="muted">
+        When interruption viability, recoverability integrity, or localization capability cannot be sufficiently bounded,
+        the observatory resolves toward HOLD rather than certainty.
+      </p>
+    </section>
+  </main>
 
   <div class="footer">
-    HACR Hybrid Observatory —
-    Observer-only deterministic runtime continuity inspection.
+    HACR Hybrid Observatory · bounded inspection · deterministic demos · observer-only outputs
   </div>
-
 </body>
 </html>
