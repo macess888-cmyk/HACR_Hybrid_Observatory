@@ -65,6 +65,30 @@
     </section>
 
     <section class="toggleBar">
+      <span class="toggleLabel">Relationships:</span>
+
+      <button onclick="showRelationshipOverview()">
+        Overview
+      </button>
+
+      <button onclick="loadRelationshipGroup('human_oversight_visibility')">
+        Human Oversight
+      </button>
+
+      <button onclick="loadRelationshipGroup('dependency_concentration')">
+        Dependency
+      </button>
+
+      <button onclick="loadRelationshipGroup('fallback_corridor_visibility')">
+        Fallback Corridors
+      </button>
+
+      <button onclick="loadRelationshipGroup('shadow_dependency_pressure')">
+        Shadow Dependencies
+      </button>
+    </section>
+
+    <section class="toggleBar">
       <label><input type="checkbox" id="fitToggle" checked /> Fit view</label>
       <label><input type="checkbox" id="borderToggle" checked /> Viewer border</label>
       <label><input type="checkbox" id="claimToggle" checked /> Show non-claim</label>
@@ -161,5 +185,6 @@
   <script src="replay_viewer.js"></script>
   <script src="delta_viewer.js"></script>
   <script src="atlas/atlas_navigation.js"></script>
+  <script src="relationships/relationship_map.js"></script>
 </body>
 </html>
