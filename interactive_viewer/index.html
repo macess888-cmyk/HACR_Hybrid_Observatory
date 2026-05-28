@@ -158,6 +158,16 @@
       <button onclick="lastHeatmapFrame()">Last</button>
     </section>
 
+    <section class="toggleBar">
+      <span class="toggleLabel">Timeline:</span>
+
+      <button onclick="firstTimelineEvent()">First</button>
+      <button onclick="previousTimelineEvent()">Previous</button>
+      <button onclick="loadContinuityTimeline()">Load Timeline</button>
+      <button onclick="nextTimelineEvent()">Next</button>
+      <button onclick="lastTimelineEvent()">Last</button>
+    </section>
+
     <section class="workspace" id="workspace">
       <section class="viewer viewNormal" id="viewerBox">
         <iframe id="svgFrame"></iframe>
@@ -224,5 +234,6 @@
   <script src="field_dynamics/continuity_field_dynamics.js"></script>
   <script src="synchronized_playback/synchronized_playback.js"></script>
   <script src="heatmaps/continuity_heatmap.js"></script>
+  <script src="timeline/continuity_timeline.js"></script>
 </body>
 </html>
