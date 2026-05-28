@@ -34,34 +34,13 @@
       <span class="toggleLabel">Atlas:</span>
 
       <button onclick="showAtlasOverview()">Overview</button>
-
-      <button onclick="loadAtlasDomain('healthcare')">
-        Healthcare
-      </button>
-
-      <button onclick="loadAtlasDomain('cyber')">
-        Cyber
-      </button>
-
-      <button onclick="loadAtlasDomain('ai_oversight')">
-        AI Oversight
-      </button>
-
-      <button onclick="loadAtlasDomain('energy')">
-        Energy
-      </button>
-
-      <button onclick="loadAtlasDomain('emergency')">
-        Emergency
-      </button>
-
-      <button onclick="loadAtlasDomain('supply_chain')">
-        Supply Chain
-      </button>
-
-      <button onclick="loadAtlasDomain('comparison')">
-        Comparison
-      </button>
+      <button onclick="loadAtlasDomain('healthcare')">Healthcare</button>
+      <button onclick="loadAtlasDomain('cyber')">Cyber</button>
+      <button onclick="loadAtlasDomain('ai_oversight')">AI Oversight</button>
+      <button onclick="loadAtlasDomain('energy')">Energy</button>
+      <button onclick="loadAtlasDomain('emergency')">Emergency</button>
+      <button onclick="loadAtlasDomain('supply_chain')">Supply Chain</button>
+      <button onclick="loadAtlasDomain('comparison')">Comparison</button>
     </section>
 
     <section class="toggleBar">
@@ -116,6 +95,7 @@
 
     <section class="toggleBar">
       <span class="toggleLabel">Replay:</span>
+
       <button onclick="firstReplayFrame()">First</button>
       <button onclick="previousReplayFrame()">Previous</button>
       <button onclick="loadReplayFrame()">Load Replay</button>
@@ -127,6 +107,7 @@
 
     <section class="toggleBar">
       <span class="toggleLabel">Delta:</span>
+
       <button onclick="firstDeltaFrame()">First</button>
       <button onclick="previousDeltaFrame()">Previous</button>
       <button onclick="loadDeltaFrame()">Load Delta</button>
@@ -138,44 +119,54 @@
       <span class="toggleLabel">Temporal Drift:</span>
 
       <button onclick="firstTemporalDriftFrame()">First</button>
-
-      <button onclick="previousTemporalDriftFrame()">
-        Previous
-      </button>
-
-      <button onclick="loadTemporalCorridorDrift()">
-        Load Drift
-      </button>
-
-      <button onclick="nextTemporalDriftFrame()">
-        Next
-      </button>
-
-      <button onclick="lastTemporalDriftFrame()">
-        Last
-      </button>
+      <button onclick="previousTemporalDriftFrame()">Previous</button>
+      <button onclick="loadTemporalCorridorDrift()">Load Drift</button>
+      <button onclick="nextTemporalDriftFrame()">Next</button>
+      <button onclick="lastTemporalDriftFrame()">Last</button>
     </section>
 
     <section class="toggleBar">
       <span class="toggleLabel">Field Dynamics:</span>
 
-      <button onclick="firstContinuityFieldFrame()">
+      <button onclick="firstContinuityFieldFrame()">First</button>
+      <button onclick="previousContinuityFieldFrame()">Previous</button>
+      <button onclick="loadContinuityFieldDynamics()">Load Field</button>
+      <button onclick="nextContinuityFieldFrame()">Next</button>
+      <button onclick="lastContinuityFieldFrame()">Last</button>
+    </section>
+
+    <section class="toggleBar">
+      <span class="toggleLabel">Synchronized Playback:</span>
+
+      <button onclick="firstSynchronizedFrame()">
         First
       </button>
 
-      <button onclick="previousContinuityFieldFrame()">
+      <button onclick="previousSynchronizedFrame()">
         Previous
       </button>
 
-      <button onclick="loadContinuityFieldDynamics()">
-        Load Field
+      <button onclick="loadSynchronizedReplay()">
+        Replay
       </button>
 
-      <button onclick="nextContinuityFieldFrame()">
+      <button onclick="loadSynchronizedDelta()">
+        Delta
+      </button>
+
+      <button onclick="loadSynchronizedTemporalDrift()">
+        Drift
+      </button>
+
+      <button onclick="loadSynchronizedFieldDynamics()">
+        Field
+      </button>
+
+      <button onclick="nextSynchronizedFrame()">
         Next
       </button>
 
-      <button onclick="lastContinuityFieldFrame()">
+      <button onclick="lastSynchronizedFrame()">
         Last
       </button>
     </section>
@@ -244,5 +235,6 @@
   <script src="corridors/corridor_geometry.js"></script>
   <script src="temporal_drift/temporal_corridor_drift.js"></script>
   <script src="field_dynamics/continuity_field_dynamics.js"></script>
+  <script src="synchronized_playback/synchronized_playback.js"></script>
 </body>
 </html>
