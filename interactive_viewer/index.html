@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HACR Hybrid Observatory — v24.2 Zoom-Aware Observability Scaling</title>
+<title>HACR Hybrid Observatory — v24.3 Deterministic Observability Receipts</title>
 
 <style>
 :root{
@@ -85,13 +85,19 @@ font-size:12px;
 color:var(--muted);
 }
 
-button,select,input[type=range]{
+button,select,input,textarea{
 background:var(--panel2);
 color:var(--text);
 border:1px solid var(--line);
 border-radius:8px;
 padding:7px 9px;
 font-size:12px;
+}
+
+textarea{
+width:100%;
+min-height:80px;
+resize:vertical;
 }
 
 button:hover,select:hover{
@@ -109,7 +115,7 @@ display:grid;
 grid-template-columns:1.35fr .65fr;
 gap:12px;
 padding:12px 16px;
-height:calc(100vh - 160px);
+height:calc(100vh - 165px);
 }
 
 .viewer{
@@ -132,8 +138,8 @@ background:#101c3f;
 
 .viewerBody{
 flex:1;
-position:relative;
 overflow:hidden;
+position:relative;
 }
 
 svg{
@@ -182,26 +188,6 @@ font-size:11px;
 color:var(--muted);
 }
 
-.kgrid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:8px;
-}
-
-.k{
-padding:8px;
-border:1px solid var(--line);
-border-radius:10px;
-background:#0f1731;
-}
-
-.k b{
-display:block;
-margin-bottom:5px;
-font-size:12px;
-color:var(--text);
-}
-
 .timeline{
 display:flex;
 align-items:end;
@@ -231,7 +217,6 @@ background:var(--warn);
 fill:#1a2c60;
 stroke:#8db8ff;
 stroke-width:2;
-transition:.2s;
 }
 
 .node.hot{
@@ -244,14 +229,10 @@ fill:#1f4f3c;
 stroke:#9fffc4;
 }
 
-.node.cluster{
-stroke-width:4;
-}
-
 .edge{
 stroke:#6475b4;
 stroke-width:2;
-opacity:.58;
+opacity:.55;
 }
 
 .label{
@@ -259,13 +240,11 @@ fill:#eef3ff;
 font-size:12px;
 text-anchor:middle;
 pointer-events:none;
-transition:.2s;
 }
 
 .heat{
 fill:#ff9b9b;
 opacity:.12;
-transition:.2s;
 }
 
 .basin{
@@ -274,27 +253,22 @@ stroke:#9fffc4;
 stroke-width:2;
 stroke-dasharray:7 6;
 opacity:.45;
-transition:.2s;
-}
-
-.elastic{
-fill:none;
-stroke:#ffd27a;
-stroke-width:2;
-opacity:.65;
-stroke-dasharray:4 8;
-transition:.2s;
-}
-
-.cursor{
-stroke:#ffd27a;
-stroke-width:2;
-stroke-dasharray:6 6;
 }
 
 .annotation{
 fill:#ffe7a6;
 font-size:11px;
+}
+
+.receipt{
+font-family:monospace;
+font-size:11px;
+white-space:pre-wrap;
+padding:10px;
+border-radius:10px;
+background:#0c1428;
+border:1px solid var(--line);
+overflow:auto;
 }
 
 footer{
@@ -332,14 +306,14 @@ width:100%;
 
 <header>
 
-<h1>HACR Hybrid Observatory — v24.2 Zoom-Aware Observability Scaling</h1>
+<h1>HACR Hybrid Observatory — v24.3 Deterministic Observability Receipts</h1>
 
 <div class="sub">
-Adaptive synchronized continuity-field observability scaling environment.
+Persistent synchronized observability infrastructure.
 </div>
 
 <div class="boundary">
-OBSERVABILITY ONLY · NON-PREDICTIVE · NON-GOVERNING · NON-AUTHORITATIVE · NO RECOVERABILITY CERTIFICATION
+OBSERVABILITY ONLY · REPRODUCIBILITY != AUTHORITY · NON-PREDICTIVE · NON-GOVERNING · NO OPERATIONAL CERTIFICATION
 </div>
 
 </header>
@@ -348,8 +322,9 @@ OBSERVABILITY ONLY · NON-PREDICTIVE · NON-GOVERNING · NON-AUTHORITATIVE · NO
 
 <div class="group">
 <label>Session</label>
-<button onclick="downloadState()">Export State</button>
-<button onclick="downloadSession()">Export Receipt v2</button>
+<button onclick="exportReceipt()">Receipt v3</button>
+<button onclick="exportSession()">Export Session</button>
+<button onclick="importSession()">Import Session</button>
 <button onclick="openSvg()">Open SVG</button>
 </div>
 
@@ -370,11 +345,7 @@ OBSERVABILITY ONLY · NON-PREDICTIVE · NON-GOVERNING · NON-AUTHORITATIVE · NO
 
 <div class="group">
 
-<label>Synchronization</label>
-
-<button id="syncBtn" class="active" onclick="toggleSync()">
-LOCKED
-</button>
+<label>Replay</label>
 
 <input
 type="range"
@@ -396,43 +367,18 @@ Play
 
 <div class="group">
 
-<label>Zoom</label>
+<label>Bookmarks</label>
 
-<button onclick="zoomIn()">+</button>
-<button onclick="zoomOut()">−</button>
-<button onclick="resetView()">Reset</button>
-
-</div>
-
-<div class="group">
-
-<label>Adaptive Geometry</label>
-
-<button id="basinBtn" class="active" onclick="toggleBasins()">
-Basins
-</button>
-
-<button id="elasticBtn" class="active" onclick="toggleElasticity()">
-Elasticity
-</button>
-
-<button id="clusterBtn" class="active" onclick="toggleClusters()">
-Clusters
-</button>
+<button onclick="saveBookmark()">Save</button>
+<button onclick="loadBookmark()">Restore</button>
 
 </div>
 
 <div class="group">
 
-<label>Observer</label>
+<label>Observer Notes</label>
 
-<button id="annBtn" class="active" onclick="toggleAnnotations()">
-Annotations
-</button>
-
-<button id="boundBtn" class="active" onclick="toggleBoundary()">
-Boundary
-</button>
+<button onclick="saveAnnotation()">Save Note</button>
 
 </div>
 
@@ -445,7 +391,7 @@ Boundary
 <div class="viewerHead">
 
 <b id="viewerTitle">
-Zoom-Aware Observability Scaling
+Deterministic Observability Receipts
 </b>
 
 <span id="stateLine" class="sub">
@@ -467,35 +413,13 @@ frame 0 · synchronized
 <section class="panel">
 
 <div class="panelHead">
-<b>Synchronization Integrity</b>
-<span class="badge">visibility only</span>
+<b>Observability Receipt</b>
+<span class="badge">deterministic</span>
 </div>
 
 <div class="panelBody">
 
-<div class="kgrid">
-
-<div class="k">
-<b>Replay</b>
-<span id="rState">aligned</span>
-</div>
-
-<div class="k">
-<b>Delta</b>
-<span id="dState">aligned</span>
-</div>
-
-<div class="k">
-<b>Drift</b>
-<span id="tState">aligned</span>
-</div>
-
-<div class="k">
-<b>Heatmap</b>
-<span id="hState">aligned</span>
-</div>
-
-</div>
+<div id="receiptBox" class="receipt"></div>
 
 </div>
 
@@ -504,13 +428,15 @@ frame 0 · synchronized
 <section class="panel">
 
 <div class="panelHead">
-<b>Adaptive Scaling</b>
-<span class="badge">bounded</span>
+<b>Observer Annotation</b>
+<span class="badge">local only</span>
 </div>
 
-<div class="panelBody" id="geometryText">
+<div class="panelBody">
 
-Adaptive visibility scaling active.
+<textarea id="annotationInput">
+Observer annotations remain observational only.
+</textarea>
 
 </div>
 
@@ -519,7 +445,7 @@ Adaptive visibility scaling active.
 <section class="panel">
 
 <div class="panelHead">
-<b>Continuity Timeline</b>
+<b>Timeline</b>
 <span class="badge">non-causal chronology</span>
 </div>
 
@@ -536,21 +462,6 @@ Adaptive visibility scaling active.
 <section class="panel">
 
 <div class="panelHead">
-<b>Observer Notes</b>
-<span class="badge">local only</span>
-</div>
-
-<div class="panelBody" id="notes">
-
-Observer annotations remain detached from operational authority.
-
-</div>
-
-</section>
-
-<section class="panel">
-
-<div class="panelHead">
 <b>NON-CLAIMS</b>
 <span class="badge">containment</span>
 </div>
@@ -558,15 +469,11 @@ Observer annotations remain detached from operational authority.
 <div class="panelBody">
 
 <p>
-<b>visible continuity != preserved recoverability</b>
+<b>reproducibility != authority</b>
 </p>
 
 <p>
-Correlated visibility does not establish causality, prediction, recoverability, or operational truth.
-</p>
-
-<p>
-Synchronization improves visibility coherence only.
+Persistent observability does not establish governance legitimacy, operational truth, recoverability certification, or execution authority.
 </p>
 
 </div>
@@ -579,8 +486,8 @@ Synchronization improves visibility coherence only.
 
 <footer>
 
-Bounded deterministic observability only.
-Synchronized visibility does not create synchronized authority.
+Deterministic visibility only.
+Persistent observability remains non-authoritative.
 
 </footer>
 
@@ -588,27 +495,15 @@ Synchronized visibility does not create synchronized authority.
 
 const svg=document.getElementById("svg");
 
-let sync=true;
+let frame=0;
 let playing=false;
 let timer=null;
-let frame=0;
-
 let focus="Overview";
 
-let annotations=true;
-let boundaryVisible=true;
-
-let basins=true;
-let elasticity=true;
-let clusters=true;
-
-let zoom=1;
-let centerX=0;
-let centerY=0;
+let bookmark=null;
+let annotationStore="";
 
 const scenario={
-
-name:"Zoom-Aware Observability Scaling",
 
 nodes:[
 
@@ -618,8 +513,7 @@ nodes:[
 {id:"drift",x:760,y:185,label:"Temporal Drift",type:"hot"},
 {id:"field",x:725,y:370,label:"Field Dynamics",type:"hot"},
 {id:"heat",x:510,y:462,label:"Heatmap",type:"hot"},
-{id:"timeline",x:280,y:438,label:"Timeline",type:"ok"},
-{id:"boundary",x:150,y:320,label:"Observer Boundary",type:"ok"}
+{id:"timeline",x:280,y:438,label:"Timeline",type:"ok"}
 
 ],
 
@@ -631,48 +525,38 @@ edges:[
 ["drift","field"],
 ["field","heat"],
 ["heat","timeline"],
-["timeline","boundary"],
-["boundary","topology"],
-["replay","timeline"],
-["delta","heat"],
-["drift","heat"]
+["replay","timeline"]
 
 ],
 
 frames:[
 
 {
-label:"Frame 0",
 heat:22,
 event:"Baseline synchronized topology visible."
 },
 
 {
-label:"Frame 1",
 heat:35,
 event:"Replay-linked chronology emerges."
 },
 
 {
-label:"Frame 2",
 heat:49,
 event:"Adaptive basin migration visible."
 },
 
 {
-label:"Frame 3",
 heat:65,
-event:"Corridor elasticity deformation visible."
+event:"Elasticity deformation visible."
 },
 
 {
-label:"Frame 4",
 heat:83,
 event:"Continuity intensity concentration visible."
 },
 
 {
-label:"Frame 5",
 heat:58,
 event:"Synchronization coherence stabilized."
 }
@@ -688,99 +572,33 @@ svg.innerHTML="";
 const f=scenario.frames[frame];
 
 viewerTitle.textContent=
-`${scenario.name} · ${focus}`;
+`Deterministic Observability Receipts · ${focus}`;
 
 stateLine.textContent=
-`frame ${frame} · ${sync?'synchronized':'free'} · zoom ${zoom.toFixed(2)}x`;
+`frame ${frame} · synchronized`;
 
 timelineText.textContent=f.event;
 
-geometryText.innerHTML=`
-Zoom-aware scaling:
-active
-<br><br>
-Current zoom:
-${zoom.toFixed(2)}x
-<br><br>
-Adaptive label density:
-${zoom<0.8?'compressed':'expanded'}
-`;
-
 renderTimeline();
+renderReceipt();
 
-rState.textContent=sync?"aligned":"free";
-dState.textContent=sync?"aligned":"free";
-tState.textContent=sync?"aligned":"free";
-hState.textContent=sync?"aligned":"free";
-
-const g=make("g",{
-transform:`translate(${centerX} ${centerY}) scale(${zoom})`
-});
+const g=make("g");
 
 svg.appendChild(g);
-
-const opacityScale=Math.max(.18,.7-(zoom*.15));
 
 g.appendChild(make("circle",{
 cx:530,
 cy:315,
 r:70+(f.heat*2),
-class:"heat",
-style:`opacity:${opacityScale*.2}`
+class:"heat"
 }));
-
-if(basins){
 
 g.appendChild(make("ellipse",{
 cx:515,
 cy:310,
 rx:250-(frame*12),
 ry:160-(frame*7),
-class:"basin",
-style:`opacity:${opacityScale}`
-}));
-
-g.appendChild(make("ellipse",{
-cx:610,
-cy:365,
-rx:130+(frame*8),
-ry:70+(frame*5),
-class:"basin",
-style:`opacity:${opacityScale*.85}`
-}));
-
-}
-
-if(elasticity){
-
-g.appendChild(make("path",{
-d:`
-M 210 260
-Q ${420+(frame*20)} ${180-(frame*12)}
-650 320
-`,
-class:"elastic",
-style:`opacity:${opacityScale}`
-}));
-
-g.appendChild(make("path",{
-d:`
-M 280 420
-Q ${500-(frame*18)} ${520+(frame*10)}
-760 390
-`,
-class:"elastic",
-style:`opacity:${opacityScale*.9}`
-}));
-
-}
-
-g.appendChild(make("line",{
-x1:90,
-y1:90,
-x2:920,
-y2:540,
-class:"cursor"
+class:"basin"
 }));
 
 for(const [a,b] of scenario.edges){
@@ -795,8 +613,7 @@ x1:n1.x,
 y1:n1.y,
 x2:n2.x,
 y2:n2.y,
-class:"edge",
-style:`opacity:${opacityScale}`
+class:"edge"
 }));
 
 }
@@ -805,59 +622,28 @@ for(const n of scenario.nodes){
 
 if(!visible(n.id)) continue;
 
-let cls=`node ${n.type}`;
-
-if(clusters && (
-n.id==="drift" ||
-n.id==="field" ||
-n.id==="heat"
-)){
-cls+=" cluster";
-}
-
 g.appendChild(make("circle",{
 cx:n.x,
 cy:n.y,
-r:zoom<0.75?34:42,
-class:cls
+r:42,
+class:`node ${n.type}`
 }));
-
-if(zoom>.65){
 
 g.appendChild(make("text",{
 x:n.x,
 y:n.y+4,
-class:"label",
-style:`opacity:${zoom<0.85?.55:1}`
+class:"label"
 },n.label));
 
 }
 
-}
-
-if(annotations && zoom>.7){
-
-g.appendChild(make("text",{
-x:520,
-y:565,
-class:"annotation"
-},
-"Adaptive geometry remains observational only."
-));
-
-}
-
-if(boundaryVisible){
-
 g.appendChild(make("text",{
 x:500,
-y:600,
+y:590,
 class:"annotation"
 },
-"OBSERVABILITY ONLY · NON-PREDICTIVE · NON-AUTHORITATIVE"
+"REPRODUCIBILITY != AUTHORITY"
 ));
-
-}
 
 }
 
@@ -872,15 +658,15 @@ return true;
 
 const map={
 
-Topology:["topology","boundary"],
+Topology:["topology"],
 
-Replay:["replay","timeline","boundary"],
+Replay:["replay","timeline"],
 
 Drift:["delta","drift","field"],
 
 Heatmap:["heat","field","delta"],
 
-Timeline:["timeline","replay","heat","boundary"]
+Timeline:["timeline","replay","heat"]
 
 };
 
@@ -905,6 +691,34 @@ b.onclick=()=>setFrame(i);
 timeline.appendChild(b);
 
 });
+
+}
+
+function renderReceipt(){
+
+const payload={
+
+version:"v24.3",
+
+timestamp:new Date().toISOString(),
+
+frame,
+focus,
+
+deterministic:true,
+observer_only:true,
+
+non_claims:[
+"reproducibility != authority",
+"no prediction",
+"no governance",
+"no operational certification"
+]
+
+};
+
+receiptBox.textContent=
+JSON.stringify(payload,null,2);
 
 }
 
@@ -962,128 +776,93 @@ clearInterval(timer);
 
 }
 
-function toggleSync(){
-
-sync=!sync;
-
-syncBtn.textContent=
-sync?"LOCKED":"FREE";
-
-syncBtn.classList.toggle("active",sync);
-
-render();
-
-}
-
 function setFocus(v){
 
 focus=v;
 
-if(v==="Topology"){
-centerX=120;
-centerY=40;
-zoom=1.2;
+render();
+
 }
 
-if(v==="Drift"){
-centerX=-80;
-centerY=-30;
-zoom=1.25;
+function exportReceipt(){
+
+download(
+"observability_receipt_v3.json",
+receiptBox.textContent
+);
+
 }
 
-if(v==="Heatmap"){
-centerX=-30;
-centerY=-80;
-zoom=1.2;
+function exportSession(){
+
+const payload={
+
+version:"v24.3",
+
+frame,
+focus,
+
+annotation:
+annotationInput.value,
+
+bookmark,
+
+observer_only:true
+
+};
+
+download(
+"serialized_observability_session.json",
+JSON.stringify(payload,null,2)
+);
+
 }
 
-if(v==="Timeline"){
-centerX=80;
-centerY=-70;
-zoom=1.1;
+function importSession(){
+
+alert(
+"Import pipeline placeholder ready for deterministic restoration layer."
+);
+
 }
 
-if(v==="Overview"||v==="Synchronized"){
-resetView();
+function saveBookmark(){
+
+bookmark={
+
+frame,
+focus
+
+};
+
+alert(
+"Bookmark saved."
+);
+
 }
+
+function loadBookmark(){
+
+if(!bookmark) return;
+
+frame=bookmark.frame;
+focus=bookmark.focus;
+
+focusSelect.value=focus;
+frameSlider.value=frame;
 
 render();
 
 }
 
-function zoomIn(){
+function saveAnnotation(){
 
-zoom=Math.min(2.5,zoom+.15);
+annotationStore=
+annotationInput.value;
 
-render();
-
-}
-
-function zoomOut(){
-
-zoom=Math.max(.5,zoom-.15);
-
-render();
-
-}
-
-function resetView(){
-
-zoom=1;
-centerX=0;
-centerY=0;
-
-render();
-
-}
-
-function toggleAnnotations(){
-
-annotations=!annotations;
-
-annBtn.classList.toggle("active",annotations);
-
-render();
-
-}
-
-function toggleBoundary(){
-
-boundaryVisible=!boundaryVisible;
-
-boundBtn.classList.toggle("active",boundaryVisible);
-
-render();
-
-}
-
-function toggleBasins(){
-
-basins=!basins;
-
-basinBtn.classList.toggle("active",basins);
-
-render();
-
-}
-
-function toggleElasticity(){
-
-elasticity=!elasticity;
-
-elasticBtn.classList.toggle("active",elasticity);
-
-render();
-
-}
-
-function toggleClusters(){
-
-clusters=!clusters;
-
-clusterBtn.classList.toggle("active",clusters);
-
-render();
+alert(
+"Observer annotation stored locally."
+);
 
 }
 
@@ -1097,65 +876,6 @@ const blob=new Blob(
 window.open(
 URL.createObjectURL(blob),
 "_blank"
-);
-
-}
-
-function downloadState(){
-
-download(
-"observatory_state_v24_2.json",
-
-JSON.stringify({
-
-version:"v24.2",
-frame,
-focus,
-zoom,
-sync,
-basins,
-elasticity,
-clusters,
-observer_only:true
-
-},null,2)
-
-);
-
-}
-
-async function downloadSession(){
-
-download(
-"observability_receipt_v2.json",
-
-JSON.stringify({
-
-version:"v24.2",
-
-receipt_type:
-"HACR observability receipt v2",
-
-frame,
-focus,
-zoom,
-sync,
-
-adaptive_scaling:true,
-deterministic:true,
-observer_only:true,
-
-non_claims:[
-"no prediction",
-"no governance",
-"no authority",
-"no certification",
-"no operational control",
-"no causality proof"
-]
-
-},null,2)
-
 );
 
 }
