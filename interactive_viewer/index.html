@@ -31,6 +31,40 @@
     </section>
 
     <section class="toggleBar">
+      <span class="toggleLabel">Atlas:</span>
+
+      <button onclick="showAtlasOverview()">Overview</button>
+
+      <button onclick="loadAtlasDomain('healthcare')">
+        Healthcare
+      </button>
+
+      <button onclick="loadAtlasDomain('cyber')">
+        Cyber
+      </button>
+
+      <button onclick="loadAtlasDomain('ai_oversight')">
+        AI Oversight
+      </button>
+
+      <button onclick="loadAtlasDomain('energy')">
+        Energy
+      </button>
+
+      <button onclick="loadAtlasDomain('emergency')">
+        Emergency
+      </button>
+
+      <button onclick="loadAtlasDomain('supply_chain')">
+        Supply Chain
+      </button>
+
+      <button onclick="loadAtlasDomain('comparison')">
+        Comparison
+      </button>
+    </section>
+
+    <section class="toggleBar">
       <label><input type="checkbox" id="fitToggle" checked /> Fit view</label>
       <label><input type="checkbox" id="borderToggle" checked /> Viewer border</label>
       <label><input type="checkbox" id="claimToggle" checked /> Show non-claim</label>
@@ -126,5 +160,6 @@
   <script src="observatory.js"></script>
   <script src="replay_viewer.js"></script>
   <script src="delta_viewer.js"></script>
+  <script src="atlas/atlas_navigation.js"></script>
 </body>
 </html>
