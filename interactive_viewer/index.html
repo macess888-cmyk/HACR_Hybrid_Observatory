@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HACR Hybrid Observatory — v24.1 Adaptive Continuity Geometry</title>
+<title>HACR Hybrid Observatory — v24.2 Zoom-Aware Observability Scaling</title>
 
 <style>
 :root{
@@ -109,7 +109,7 @@ display:grid;
 grid-template-columns:1.35fr .65fr;
 gap:12px;
 padding:12px 16px;
-height:calc(100vh - 155px);
+height:calc(100vh - 160px);
 }
 
 .viewer{
@@ -219,6 +219,7 @@ min-width:4px;
 background:var(--accent);
 opacity:.35;
 border-radius:4px 4px 0 0;
+transition:.2s;
 }
 
 .bar.active{
@@ -253,22 +254,18 @@ stroke-width:2;
 opacity:.58;
 }
 
-.edge.focus{
-stroke:#ffd27a;
-stroke-width:4;
-opacity:1;
-}
-
 .label{
 fill:#eef3ff;
 font-size:12px;
 text-anchor:middle;
 pointer-events:none;
+transition:.2s;
 }
 
 .heat{
 fill:#ff9b9b;
 opacity:.12;
+transition:.2s;
 }
 
 .basin{
@@ -277,6 +274,7 @@ stroke:#9fffc4;
 stroke-width:2;
 stroke-dasharray:7 6;
 opacity:.45;
+transition:.2s;
 }
 
 .elastic{
@@ -285,6 +283,7 @@ stroke:#ffd27a;
 stroke-width:2;
 opacity:.65;
 stroke-dasharray:4 8;
+transition:.2s;
 }
 
 .cursor{
@@ -296,10 +295,6 @@ stroke-dasharray:6 6;
 .annotation{
 fill:#ffe7a6;
 font-size:11px;
-}
-
-.hidden{
-display:none!important;
 }
 
 footer{
@@ -337,10 +332,10 @@ width:100%;
 
 <header>
 
-<h1>HACR Hybrid Observatory — v24.1 Adaptive Continuity Geometry</h1>
+<h1>HACR Hybrid Observatory — v24.2 Zoom-Aware Observability Scaling</h1>
 
 <div class="sub">
-Adaptive synchronized continuity-field observability environment.
+Adaptive synchronized continuity-field observability scaling environment.
 </div>
 
 <div class="boundary">
@@ -354,7 +349,7 @@ OBSERVABILITY ONLY · NON-PREDICTIVE · NON-GOVERNING · NON-AUTHORITATIVE · NO
 <div class="group">
 <label>Session</label>
 <button onclick="downloadState()">Export State</button>
-<button onclick="downloadSession()">Export Session</button>
+<button onclick="downloadSession()">Export Receipt v2</button>
 <button onclick="openSvg()">Open SVG</button>
 </div>
 
@@ -375,7 +370,7 @@ OBSERVABILITY ONLY · NON-PREDICTIVE · NON-GOVERNING · NON-AUTHORITATIVE · NO
 
 <div class="group">
 
-<label>Synchronization Spine</label>
+<label>Synchronization</label>
 
 <button id="syncBtn" class="active" onclick="toggleSync()">
 LOCKED
@@ -396,6 +391,16 @@ oninput="setFrame(+this.value)"
 <button id="playBtn" onclick="togglePlay()">
 Play
 </button>
+
+</div>
+
+<div class="group">
+
+<label>Zoom</label>
+
+<button onclick="zoomIn()">+</button>
+<button onclick="zoomOut()">−</button>
+<button onclick="resetView()">Reset</button>
 
 </div>
 
@@ -440,7 +445,7 @@ Boundary
 <div class="viewerHead">
 
 <b id="viewerTitle">
-Adaptive Continuity Geometry
+Zoom-Aware Observability Scaling
 </b>
 
 <span id="stateLine" class="sub">
@@ -499,14 +504,13 @@ frame 0 · synchronized
 <section class="panel">
 
 <div class="panelHead">
-<b>Adaptive Geometry</b>
+<b>Adaptive Scaling</b>
 <span class="badge">bounded</span>
 </div>
 
 <div class="panelBody" id="geometryText">
 
-Adaptive continuity geometry visible.
-No recoverability guarantee implied.
+Adaptive visibility scaling active.
 
 </div>
 
@@ -598,9 +602,13 @@ let basins=true;
 let elasticity=true;
 let clusters=true;
 
+let zoom=1;
+let centerX=0;
+let centerY=0;
+
 const scenario={
 
-name:"Adaptive Continuity Geometry",
+name:"Zoom-Aware Observability Scaling",
 
 nodes:[
 
@@ -683,19 +691,19 @@ viewerTitle.textContent=
 `${scenario.name} · ${focus}`;
 
 stateLine.textContent=
-`frame ${frame} · ${sync?'synchronized':'free'}`;
+`frame ${frame} · ${sync?'synchronized':'free'} · zoom ${zoom.toFixed(2)}x`;
 
 timelineText.textContent=f.event;
 
 geometryText.innerHTML=`
-Elasticity visibility:
-${elasticity?'enabled':'disabled'}
+Zoom-aware scaling:
+active
 <br><br>
-Basin migration visibility:
-${basins?'enabled':'disabled'}
+Current zoom:
+${zoom.toFixed(2)}x
 <br><br>
-Adaptive clustering:
-${clusters?'enabled':'disabled'}
+Adaptive label density:
+${zoom<0.8?'compressed':'expanded'}
 `;
 
 renderTimeline();
@@ -705,15 +713,20 @@ dState.textContent=sync?"aligned":"free";
 tState.textContent=sync?"aligned":"free";
 hState.textContent=sync?"aligned":"free";
 
-const g=make("g");
+const g=make("g",{
+transform:`translate(${centerX} ${centerY}) scale(${zoom})`
+});
 
 svg.appendChild(g);
+
+const opacityScale=Math.max(.18,.7-(zoom*.15));
 
 g.appendChild(make("circle",{
 cx:530,
 cy:315,
 r:70+(f.heat*2),
-class:"heat"
+class:"heat",
+style:`opacity:${opacityScale*.2}`
 }));
 
 if(basins){
@@ -723,7 +736,8 @@ cx:515,
 cy:310,
 rx:250-(frame*12),
 ry:160-(frame*7),
-class:"basin"
+class:"basin",
+style:`opacity:${opacityScale}`
 }));
 
 g.appendChild(make("ellipse",{
@@ -731,7 +745,8 @@ cx:610,
 cy:365,
 rx:130+(frame*8),
 ry:70+(frame*5),
-class:"basin"
+class:"basin",
+style:`opacity:${opacityScale*.85}`
 }));
 
 }
@@ -744,7 +759,8 @@ M 210 260
 Q ${420+(frame*20)} ${180-(frame*12)}
 650 320
 `,
-class:"elastic"
+class:"elastic",
+style:`opacity:${opacityScale}`
 }));
 
 g.appendChild(make("path",{
@@ -753,7 +769,8 @@ M 280 420
 Q ${500-(frame*18)} ${520+(frame*10)}
 760 390
 `,
-class:"elastic"
+class:"elastic",
+style:`opacity:${opacityScale*.9}`
 }));
 
 }
@@ -778,7 +795,8 @@ x1:n1.x,
 y1:n1.y,
 x2:n2.x,
 y2:n2.y,
-class:"edge"
+class:"edge",
+style:`opacity:${opacityScale}`
 }));
 
 }
@@ -800,19 +818,24 @@ cls+=" cluster";
 g.appendChild(make("circle",{
 cx:n.x,
 cy:n.y,
-r:42,
+r:zoom<0.75?34:42,
 class:cls
 }));
+
+if(zoom>.65){
 
 g.appendChild(make("text",{
 x:n.x,
 y:n.y+4,
-class:"label"
+class:"label",
+style:`opacity:${zoom<0.85?.55:1}`
 },n.label));
 
 }
 
-if(annotations){
+}
+
+if(annotations && zoom>.7){
 
 g.appendChild(make("text",{
 x:520,
@@ -929,7 +952,7 @@ frameSlider.value=frame;
 
 render();
 
-},900);
+},950);
 
 }else{
 
@@ -955,6 +978,60 @@ render();
 function setFocus(v){
 
 focus=v;
+
+if(v==="Topology"){
+centerX=120;
+centerY=40;
+zoom=1.2;
+}
+
+if(v==="Drift"){
+centerX=-80;
+centerY=-30;
+zoom=1.25;
+}
+
+if(v==="Heatmap"){
+centerX=-30;
+centerY=-80;
+zoom=1.2;
+}
+
+if(v==="Timeline"){
+centerX=80;
+centerY=-70;
+zoom=1.1;
+}
+
+if(v==="Overview"||v==="Synchronized"){
+resetView();
+}
+
+render();
+
+}
+
+function zoomIn(){
+
+zoom=Math.min(2.5,zoom+.15);
+
+render();
+
+}
+
+function zoomOut(){
+
+zoom=Math.max(.5,zoom-.15);
+
+render();
+
+}
+
+function resetView(){
+
+zoom=1;
+centerX=0;
+centerY=0;
 
 render();
 
@@ -1027,13 +1104,14 @@ URL.createObjectURL(blob),
 function downloadState(){
 
 download(
-"observatory_state_v24_1.json",
+"observatory_state_v24_2.json",
 
 JSON.stringify({
 
-version:"v24.1",
+version:"v24.2",
 frame,
 focus,
+zoom,
 sync,
 basins,
 elasticity,
@@ -1046,23 +1124,24 @@ observer_only:true
 
 }
 
-function downloadSession(){
+async function downloadSession(){
 
 download(
-"session_export_v24_1.json",
+"observability_receipt_v2.json",
 
 JSON.stringify({
 
-version:"v24.1",
+version:"v24.2",
 
-session_type:
-"HACR adaptive continuity geometry session",
+receipt_type:
+"HACR observability receipt v2",
 
 frame,
 focus,
+zoom,
 sync,
 
-adaptive_geometry:true,
+adaptive_scaling:true,
 deterministic:true,
 observer_only:true,
 
