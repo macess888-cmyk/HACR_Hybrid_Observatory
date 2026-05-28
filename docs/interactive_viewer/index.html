@@ -134,6 +134,28 @@
       <button onclick="lastDeltaFrame()">Last</button>
     </section>
 
+    <section class="toggleBar">
+      <span class="toggleLabel">Temporal Drift:</span>
+
+      <button onclick="firstTemporalDriftFrame()">First</button>
+
+      <button onclick="previousTemporalDriftFrame()">
+        Previous
+      </button>
+
+      <button onclick="loadTemporalCorridorDrift()">
+        Load Drift
+      </button>
+
+      <button onclick="nextTemporalDriftFrame()">
+        Next
+      </button>
+
+      <button onclick="lastTemporalDriftFrame()">
+        Last
+      </button>
+    </section>
+
     <section class="workspace" id="workspace">
       <section class="viewer viewNormal" id="viewerBox">
         <iframe id="svgFrame"></iframe>
@@ -196,5 +218,6 @@
   <script src="relationships/relationship_map.js"></script>
   <script src="relationship_graph/relationship_graph.js"></script>
   <script src="corridors/corridor_geometry.js"></script>
+  <script src="temporal_drift/temporal_corridor_drift.js"></script>
 </body>
 </html>
