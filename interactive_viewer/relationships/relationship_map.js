@@ -71,7 +71,7 @@ function showRelationshipOverview() {
   notesBox.textContent =
     "Topology Relationship Mapping\n\n" +
     relationshipSummaryText() +
-    "\n\nRelationship mapping is observer-only. It exposes shared continuity pressure surfaces without scoring, predicting, authorizing, or certifying any scenario.";
+    "\n\nRelationship mapping is observer-only. It exposes shared continuity pressure surfaces without scoring, predicting, authorizing, certifying, or governing any scenario.";
 }
 
 function loadRelationshipGroup(groupId) {
@@ -85,18 +85,62 @@ function loadRelationshipGroup(groupId) {
 
   if (scenarioSelect) {
     scenarioSelect.value = firstScenario;
-    loadScenario();
+
+    if (typeof loadScenario === "function") {
+      loadScenario();
+    }
   }
+
+  const scenarioLines = group.scenarios
+    .map((scenario) => "• " + scenario)
+    .join("\n");
 
   if (notesBox) {
     notesBox.textContent =
       group.label +
       "\n\n" +
       group.description +
-      "\n\nLoaded first related scenario:\n" +
+      "\n\nLoaded scenario:\n" +
       firstScenario +
       "\n\nRelated scenarios:\n" +
-      group.scenarios.join("\n") +
+      scenarioLines +
       "\n\nRelationship traversal remains observer-only and non-authoritative.";
   }
+}
+
+function relationshipGroupsForScenario(scenarioId) {
+  return relationshipGroups.filter((group) =>
+    group.scenarios.includes(scenarioId)
+  );
+}
+
+function relationshipContextText(scenarioId) {
+  const groups = relationshipGroupsForScenario(scenarioId);
+
+  if (!groups.length) {
+    return "No mapped relationship groups.";
+  }
+
+  return groups
+    .map((group) => {
+      return (
+        group.label +
+        ": " +
+        group.description
+      );
+    })
+    .join("\n\n");
+}
+
+function appendRelationshipContext(scenarioId) {
+  if (!notesBox) {
+    return;
+  }
+
+  const existing = notesBox.textContent || "";
+
+  notesBox.textContent =
+    existing +
+    "\n\n--- Relationship Context ---\n\n" +
+    relationshipContextText(scenarioId);
 }
