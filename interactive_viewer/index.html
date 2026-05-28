@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HACR Hybrid Observatory — v24.7 Verification Boundary Hardening</title>
+<title>HACR Hybrid Observatory — v24.8 Verification Self-Test Harness</title>
 
 <style>
 :root{
@@ -85,7 +85,7 @@ font-size:12px;
 color:var(--muted);
 }
 
-button,select,input,textarea{
+button,select,input{
 background:var(--panel2);
 color:var(--text);
 border:1px solid var(--line);
@@ -102,12 +102,6 @@ cursor:pointer;
 button:disabled{
 opacity:.45;
 cursor:not-allowed;
-}
-
-textarea{
-width:100%;
-min-height:90px;
-resize:vertical;
 }
 
 main{
@@ -225,7 +219,7 @@ fill:#ffe7a6;
 font-size:11px;
 }
 
-.receipt,.audit,.preview,.diagnostic{
+.box{
 font-family:monospace;
 font-size:11px;
 white-space:pre-wrap;
@@ -258,14 +252,14 @@ main{grid-template-columns:1fr;height:auto}
 
 <header>
 
-<h1>HACR Hybrid Observatory — v24.7 Verification Boundary Hardening</h1>
+<h1>HACR Hybrid Observatory — v24.8 Verification Self-Test Harness</h1>
 
 <div class="sub">
-Bounded replay verification infrastructure.
+Bounded replay verification self-validation infrastructure.
 </div>
 
 <div class="boundary">
-FILE CONSISTENCY != OPERATIONAL VALIDITY · MATCH proves file consistency only · MATCH does not establish operational truth
+TEST PASS != OPERATIONAL ASSURANCE · VALIDATION != CERTIFICATION · UNKNOWN → HOLD
 </div>
 
 </header>
@@ -273,18 +267,29 @@ FILE CONSISTENCY != OPERATIONAL VALIDITY · MATCH proves file consistency only �
 <section class="toolbar">
 
 <div class="group">
-<label>Session</label>
-<button onclick="exportReceipt()">Receipt v7</button>
-<button onclick="exportSession()">Export Session</button>
-<button onclick="exportTamperTest()">Tamper Test</button>
-<button onclick="triggerImport()">Import Session</button>
-<button id="applyBtn" onclick="applyPreviewRestore()" disabled>
-Apply Restore
-</button>
-<input type="file" id="importFile" hidden>
+<label>Self Tests</label>
+
+<button onclick="runValidTest()">Valid</button>
+<button onclick="runMalformedTest()">Malformed</button>
+<button onclick="runSchemaMismatchTest()">Schema</button>
+<button onclick="runTamperTest()">Tamper</button>
+<button onclick="runFrameTest()">Frame</button>
+<button onclick="runClaimsTest()">Claims</button>
+
 </div>
 
 <div class="group">
+
+<label>QA</label>
+
+<button onclick="exportQAReceipt()">
+Export QA Receipt
+</button>
+
+</div>
+
+<div class="group">
+
 <label>Focus</label>
 
 <select id="focusSelect" onchange="setFocus(this.value)">
@@ -312,9 +317,6 @@ id="frameSlider"
 oninput="setFrame(+this.value)"
 >
 
-<button onclick="step(-1)">◀</button>
-<button onclick="step(1)">▶</button>
-
 </div>
 
 </section>
@@ -326,7 +328,7 @@ oninput="setFrame(+this.value)"
 <div class="viewerHead">
 
 <b id="viewerTitle">
-Verification Boundary Hardening
+Verification Self-Test Harness
 </b>
 
 <span id="stateLine" class="sub">
@@ -349,13 +351,15 @@ frame 0 · HOLD-safe
 
 <div class="panelHead">
 <b>Verification State</b>
-<span id="integrityBadge" class="badge warn">HOLD</span>
+<span id="integrityBadge" class="badge warn">
+HOLD
+</span>
 </div>
 
 <div class="panelBody">
 
 <div id="integrityText">
-No imported replay validated.
+No self-test executed yet.
 </div>
 
 </div>
@@ -365,14 +369,14 @@ No imported replay validated.
 <section class="panel">
 
 <div class="panelHead">
-<b>Schema Diagnostics</b>
+<b>Expected vs Actual</b>
 <span class="badge">explicit</span>
 </div>
 
 <div class="panelBody">
 
-<div id="diagnosticBox" class="diagnostic">
-No diagnostics yet.
+<div id="resultBox" class="box">
+No test results yet.
 </div>
 
 </div>
@@ -382,14 +386,14 @@ No diagnostics yet.
 <section class="panel">
 
 <div class="panelHead">
-<b>Restoration Preview</b>
-<span class="badge">pre-apply</span>
+<b>Mutation Protection</b>
+<span class="badge">containment</span>
 </div>
 
 <div class="panelBody">
 
-<div id="previewBox" class="preview">
-No pending preview.
+<div id="mutationBox" class="box">
+No mutation verification yet.
 </div>
 
 </div>
@@ -399,28 +403,15 @@ No pending preview.
 <section class="panel">
 
 <div class="panelHead">
-<b>Receipt Lineage</b>
-<span class="badge">deterministic</span>
-</div>
-
-<div class="panelBody">
-
-<div id="receiptBox" class="receipt"></div>
-
-</div>
-
-</section>
-
-<section class="panel">
-
-<div class="panelHead">
-<b>Audit Trail</b>
+<b>QA Audit Trail</b>
 <span class="badge">local only</span>
 </div>
 
 <div class="panelBody">
 
-<div id="auditTrail" class="audit"></div>
+<div id="auditBox" class="box">
+No audit entries yet.
+</div>
 
 </div>
 
@@ -432,7 +423,7 @@ No pending preview.
 
 <footer>
 
-Replay consistency visibility does not establish operational validity, correctness, legitimacy, or truth.
+Self-validation improves containment visibility only. Test success does not establish operational assurance, correctness, or certification.
 
 </footer>
 
@@ -440,23 +431,17 @@ Replay consistency visibility does not establish operational validity, correctne
 
 const svg=document.getElementById("svg");
 
-const VIEWER_VERSION="v24.7";
-const SCHEMA_VERSION="hacr.session.v3";
+const VIEWER_VERSION="v24.8";
+const SCHEMA_VERSION="hacr.session.v4";
 
 let frame=0;
 let focus="Overview";
 
 let verificationState="HOLD";
 
-let pendingRestore=null;
-
-let lastDiagnostic="No diagnostics yet.";
-
 let auditEntries=[];
 
-let currentHash=null;
-let sourceHash=null;
-let priorRestoreHash=null;
+let qaResults=[];
 
 const scenario={
 
@@ -502,17 +487,14 @@ async function render(){
 svg.innerHTML="";
 
 viewerTitle.textContent=
-`Verification Boundary Hardening · ${focus}`;
+`Verification Self-Test Harness · ${focus}`;
 
 stateLine.textContent=
 `frame ${frame} · ${verificationState}`;
 
 renderIntegrity();
-renderPreview();
+renderResults();
 renderAudit();
-renderDiagnostics();
-
-await renderReceipt();
 
 const f=scenario.frames[frame];
 
@@ -576,7 +558,7 @@ x:500,
 y:590,
 class:"annotation"
 },
-"FILE CONSISTENCY != OPERATIONAL VALIDITY"
+"TEST PASS != OPERATIONAL ASSURANCE"
 ));
 
 }
@@ -611,7 +593,7 @@ verificationState;
 
 integrityBadge.className=
 `badge ${
-verificationState==="MATCH"
+verificationState==="PASS"
 ?'ok'
 :verificationState==="MISMATCH"
 ?'fail'
@@ -626,86 +608,26 @@ Verification state:
 <br><br>
 
 Boundary:
-MATCH proves file consistency only.
-
-<br><br>
-
-Restore gate:
-${verificationState==="MATCH"
-?"RESTORE ELIGIBLE"
-:"RESTORE BLOCKED"}
+TEST PASS != OPERATIONAL ASSURANCE
 `;
 
-applyBtn.disabled=
-verificationState!=="MATCH";
-
 }
 
-function renderPreview(){
+function renderResults(){
 
-previewBox.textContent=
-pendingRestore
-?JSON.stringify(
-pendingRestore.preview,
-null,
-2
-)
-:"No pending preview.";
-
-}
-
-function renderDiagnostics(){
-
-diagnosticBox.textContent=
-lastDiagnostic;
+resultBox.textContent=
+qaResults.length
+?qaResults.join("\n\n")
+:"No test results yet.";
 
 }
 
 function renderAudit(){
 
-auditTrail.textContent=
-auditEntries.join("\n\n") ||
-"No restoration attempts.";
-
-}
-
-async function renderReceipt(){
-
-const payload={
-
-viewer_version:VIEWER_VERSION,
-schema_version:SCHEMA_VERSION,
-
-frame,
-focus,
-
-verification_state:
-verificationState,
-
-current_hash:
-currentHash,
-
-source_hash:
-sourceHash,
-
-prior_restore_hash:
-priorRestoreHash,
-
-observer_only:true,
-
-non_claims:[
-
-"file consistency != operational validity",
-"integrity verification != correctness certification",
-"hash match != truth",
-"restoration != adjudication"
-
-]
-
-};
-
-receiptBox.textContent=
-JSON.stringify(payload,null,2);
+auditBox.textContent=
+auditEntries.length
+?auditEntries.join("\n\n")
+:"No audit entries yet.";
 
 }
 
@@ -719,22 +641,6 @@ render();
 
 }
 
-function step(n){
-
-frame=Math.max(
-0,
-Math.min(
-scenario.frames.length-1,
-frame+n
-)
-);
-
-frameSlider.value=frame;
-
-render();
-
-}
-
 function setFocus(v){
 
 focus=v;
@@ -743,170 +649,110 @@ render();
 
 }
 
-async function exportSession(){
+function snapshotState(){
 
-const payload={
-
-schema_version:SCHEMA_VERSION,
-viewer_version:VIEWER_VERSION,
-
+return{
 frame,
-focus,
-
-observer_only:true,
-
-non_claims:[
-
-"file consistency != operational validity",
-"integrity verification != correctness certification",
-"hash match != truth",
-"restoration != adjudication"
-
-]
-
+focus
 };
 
-payload.session_hash=
-await digest(
-JSON.stringify(payload)
-);
+}
 
-currentHash=
-payload.session_hash;
+function stateEqual(a,b){
 
-render();
-
-download(
-"verification_hardened_session.json",
-JSON.stringify(payload,null,2)
+return(
+a.frame===b.frame &&
+a.focus===b.focus
 );
 
 }
 
-async function exportReceipt(){
+async function runTest(
+name,
+payload,
+expected
+){
 
-download(
-"verification_receipt_v7.json",
-receiptBox.textContent
-);
+const before=snapshotState();
 
-}
-
-async function exportTamperTest(){
-
-const payload={
-
-schema_version:SCHEMA_VERSION,
-viewer_version:VIEWER_VERSION,
-
-frame:999,
-
-focus:"CORRUPTED",
-
-observer_only:false,
-
-non_claims:[]
-
-};
-
-payload.session_hash=
-"tampered";
-
-download(
-"tamper_test_session.json",
-JSON.stringify(payload,null,2)
-);
-
-}
-
-function triggerImport(){
-
-importFile.click();
-
-}
-
-importFile.addEventListener(
-"change",
-async(e)=>{
-
-const file=e.target.files[0];
-
-if(!file) return;
-
-const raw=await file.text();
-
-let payload;
-
-try{
-
-payload=JSON.parse(raw);
-
-}catch(err){
-
-return hold(
-"Malformed JSON import."
-);
-
-}
-
-const validation=
+const result=
 await validatePayload(payload);
 
-verificationState=
-validation.state;
+const after=snapshotState();
 
-lastDiagnostic=
-validation.reason;
+const mutationPrevented=
+stateEqual(before,after);
+
+const pass=
+(
+result.state===expected &&
+mutationPrevented
+);
+
+verificationState=
+pass
+?"PASS"
+:result.state;
+
+qaResults.unshift(
+`
+TEST:
+${name}
+
+EXPECTED:
+${expected}
+
+ACTUAL:
+${result.state}
+
+MUTATION PREVENTED:
+${mutationPrevented}
+
+BOUNDARY:
+PASS != CORRECTNESS
+`
+);
 
 auditEntries.unshift(
 `${new Date().toISOString()}
-${validation.state}
-${validation.reason}`
+${name}
+EXPECTED=${expected}
+ACTUAL=${result.state}
+MUTATION=${mutationPrevented}`
 );
 
-if(!validation.ok){
+mutationBox.textContent=
+`
+Before:
+${JSON.stringify(before,null,2)}
 
-pendingRestore=null;
+After:
+${JSON.stringify(after,null,2)}
 
-render();
-
-return;
-
-}
-
-pendingRestore={
-
-payload,
-
-preview:{
-
-frame:payload.frame,
-focus:payload.focus,
-schema_version:payload.schema_version,
-viewer_version:payload.viewer_version,
-verification_state:validation.state
-
-}
-
-};
-
-sourceHash=
-payload.session_hash;
+Mutation prevented:
+${mutationPrevented}
+`;
 
 render();
 
-});
+}
 
 async function validatePayload(p){
+
+if(typeof p!=="object"){
+
+return{
+state:"HOLD"
+};
+
+}
 
 if(
 p.schema_version!==SCHEMA_VERSION
 ){
 
 return{
-ok:false,
-state:"HOLD",
-reason:"Schema mismatch detected."
+state:"HOLD"
 };
 
 }
@@ -916,9 +762,7 @@ p.observer_only!==true
 ){
 
 return{
-ok:false,
-state:"HOLD",
-reason:"observer_only missing or false."
+state:"HOLD"
 };
 
 }
@@ -930,9 +774,7 @@ p.frame>=scenario.frames.length
 ){
 
 return{
-ok:false,
-state:"HOLD",
-reason:"Invalid frame detected."
+state:"HOLD"
 };
 
 }
@@ -950,9 +792,7 @@ if(
 ){
 
 return{
-ok:false,
-state:"HOLD",
-reason:"Invalid focus detected."
+state:"HOLD"
 };
 
 }
@@ -962,9 +802,7 @@ if(
 ){
 
 return{
-ok:false,
-state:"HOLD",
-reason:"Missing non_claims."
+state:"HOLD"
 };
 
 }
@@ -976,21 +814,7 @@ if(
 ){
 
 return{
-ok:false,
-state:"HOLD",
-reason:"Required non-claim missing."
-};
-
-}
-
-if(
-!p.session_hash
-){
-
-return{
-ok:false,
-state:"HOLD",
-reason:"Missing session hash."
+state:"HOLD"
 };
 
 }
@@ -1009,81 +833,150 @@ computed!==p.session_hash
 ){
 
 return{
-ok:false,
-state:"MISMATCH",
-reason:"Hash mismatch detected."
+state:"MISMATCH"
 };
 
 }
 
 return{
-ok:true,
-state:"MATCH",
-reason:"Hash verified. File consistency confirmed only."
+state:"MATCH"
 };
 
 }
 
-function applyPreviewRestore(){
+async function validPayload(){
 
-if(
-verificationState!=="MATCH" ||
-!pendingRestore
-){
+const payload={
 
-return hold(
-"Restore blocked. Verification state not MATCH."
+schema_version:SCHEMA_VERSION,
+viewer_version:VIEWER_VERSION,
+
+frame:0,
+focus:"Overview",
+
+observer_only:true,
+
+non_claims:[
+
+"restoration != adjudication"
+
+]
+
+};
+
+payload.session_hash=
+await digest(
+JSON.stringify(payload)
+);
+
+return payload;
+
+}
+
+async function runValidTest(){
+
+await runTest(
+"VALID_SESSION",
+await validPayload(),
+"MATCH"
 );
 
 }
 
-const p=pendingRestore.payload;
+async function runMalformedTest(){
 
-priorRestoreHash=currentHash;
-
-currentHash=p.session_hash;
-
-frame=p.frame;
-focus=p.focus;
-
-focusSelect.value=focus;
-frameSlider.value=frame;
-
-auditEntries.unshift(
-`${new Date().toISOString()}
-RESTORE_APPLIED
-MATCH
-Replay restored within bounded verification semantics.`
-);
-
-pendingRestore=null;
-
-render();
-
-alert(
-"Replay restored within verification boundary."
+await runTest(
+"MALFORMED_JSON",
+"not-json",
+"HOLD"
 );
 
 }
 
-function hold(reason){
+async function runSchemaMismatchTest(){
 
-verificationState="HOLD";
+const p=await validPayload();
 
-pendingRestore=null;
+p.schema_version="broken";
 
-lastDiagnostic=
-`${reason}
+await runTest(
+"SCHEMA_MISMATCH",
+p,
+"HOLD"
+);
 
-UNKNOWN → HOLD
-NO MATCH → NO RESTORE`;
+}
 
-render();
+async function runTamperTest(){
 
-alert(
-`${reason}
+const p=await validPayload();
 
-UNKNOWN → HOLD`
+p.frame=999;
+
+await runTest(
+"TAMPER_TEST",
+p,
+"MISMATCH"
+);
+
+}
+
+async function runFrameTest(){
+
+const p=await validPayload();
+
+p.frame=-1;
+
+await runTest(
+"INVALID_FRAME",
+p,
+"HOLD"
+);
+
+}
+
+async function runClaimsTest(){
+
+const p=await validPayload();
+
+p.non_claims=[];
+
+await runTest(
+"MISSING_NON_CLAIMS",
+p,
+"HOLD"
+);
+
+}
+
+async function exportQAReceipt(){
+
+const payload={
+
+viewer_version:VIEWER_VERSION,
+schema_version:SCHEMA_VERSION,
+
+verification_state:
+verificationState,
+
+qa_results:
+qaResults,
+
+audit_entries:
+auditEntries,
+
+non_claims:[
+
+"test pass != operational assurance",
+"validation != certification"
+
+]
+
+};
+
+download(
+"verification_qa_receipt_v24_8.json",
+JSON.stringify(payload,null,2)
 );
 
 }
