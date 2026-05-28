@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HACR Hybrid Observatory — v24.3 Deterministic Observability Receipts</title>
+<title>HACR Hybrid Observatory — v24.4 Deterministic Session Restoration</title>
 
 <style>
 :root{
@@ -96,11 +96,11 @@ font-size:12px;
 
 textarea{
 width:100%;
-min-height:80px;
+min-height:90px;
 resize:vertical;
 }
 
-button:hover,select:hover{
+button:hover{
 border-color:var(--accent);
 cursor:pointer;
 }
@@ -138,8 +138,8 @@ background:#101c3f;
 
 .viewerBody{
 flex:1;
-overflow:hidden;
 position:relative;
+overflow:hidden;
 }
 
 svg{
@@ -205,7 +205,6 @@ min-width:4px;
 background:var(--accent);
 opacity:.35;
 border-radius:4px 4px 0 0;
-transition:.2s;
 }
 
 .bar.active{
@@ -306,14 +305,14 @@ width:100%;
 
 <header>
 
-<h1>HACR Hybrid Observatory — v24.3 Deterministic Observability Receipts</h1>
+<h1>HACR Hybrid Observatory — v24.4 Deterministic Session Restoration</h1>
 
 <div class="sub">
-Persistent synchronized observability infrastructure.
+Deterministic replay restoration infrastructure.
 </div>
 
 <div class="boundary">
-OBSERVABILITY ONLY · REPRODUCIBILITY != AUTHORITY · NON-PREDICTIVE · NON-GOVERNING · NO OPERATIONAL CERTIFICATION
+OBSERVABILITY ONLY · RESTORATION != ADJUDICATION · REPRODUCIBILITY != AUTHORITY · NON-GOVERNING
 </div>
 
 </header>
@@ -322,10 +321,11 @@ OBSERVABILITY ONLY · REPRODUCIBILITY != AUTHORITY · NON-PREDICTIVE · NON-GOVE
 
 <div class="group">
 <label>Session</label>
-<button onclick="exportReceipt()">Receipt v3</button>
+<button onclick="exportReceipt()">Receipt v4</button>
 <button onclick="exportSession()">Export Session</button>
-<button onclick="importSession()">Import Session</button>
+<button onclick="triggerImport()">Import Session</button>
 <button onclick="openSvg()">Open SVG</button>
+<input type="file" id="importFile" hidden>
 </div>
 
 <div class="group">
@@ -374,14 +374,6 @@ Play
 
 </div>
 
-<div class="group">
-
-<label>Observer Notes</label>
-
-<button onclick="saveAnnotation()">Save Note</button>
-
-</div>
-
 </section>
 
 <main>
@@ -391,7 +383,7 @@ Play
 <div class="viewerHead">
 
 <b id="viewerTitle">
-Deterministic Observability Receipts
+Deterministic Session Restoration
 </b>
 
 <span id="stateLine" class="sub">
@@ -413,7 +405,7 @@ frame 0 · synchronized
 <section class="panel">
 
 <div class="panelHead">
-<b>Observability Receipt</b>
+<b>Restoration Receipt</b>
 <span class="badge">deterministic</span>
 </div>
 
@@ -437,6 +429,10 @@ frame 0 · synchronized
 <textarea id="annotationInput">
 Observer annotations remain observational only.
 </textarea>
+
+<button onclick="saveAnnotation()">
+Persist Annotation
+</button>
 
 </div>
 
@@ -469,11 +465,11 @@ Observer annotations remain observational only.
 <div class="panelBody">
 
 <p>
-<b>reproducibility != authority</b>
+<b>restoration != adjudication</b>
 </p>
 
 <p>
-Persistent observability does not establish governance legitimacy, operational truth, recoverability certification, or execution authority.
+Replay restoration does not establish operational truth, governance legitimacy, causality certification, or execution authority.
 </p>
 
 </div>
@@ -486,8 +482,7 @@ Persistent observability does not establish governance legitimacy, operational t
 
 <footer>
 
-Deterministic visibility only.
-Persistent observability remains non-authoritative.
+Persistent replay restoration remains observational only.
 
 </footer>
 
@@ -501,7 +496,13 @@ let timer=null;
 let focus="Overview";
 
 let bookmark=null;
-let annotationStore="";
+
+let annotationStore=
+localStorage.getItem("hacr_annotation") ||
+"Observer annotations remain observational only.";
+
+document.getElementById("annotationInput").value=
+annotationStore;
 
 const scenario={
 
@@ -572,7 +573,7 @@ svg.innerHTML="";
 const f=scenario.frames[frame];
 
 viewerTitle.textContent=
-`Deterministic Observability Receipts · ${focus}`;
+`Deterministic Session Restoration · ${focus}`;
 
 stateLine.textContent=
 `frame ${frame} · synchronized`;
@@ -642,7 +643,7 @@ x:500,
 y:590,
 class:"annotation"
 },
-"REPRODUCIBILITY != AUTHORITY"
+"RESTORATION != ADJUDICATION"
 ));
 
 }
@@ -698,19 +699,22 @@ function renderReceipt(){
 
 const payload={
 
-version:"v24.3",
+version:"v24.4",
 
 timestamp:new Date().toISOString(),
 
 frame,
 focus,
 
+annotation_present:
+annotationInput.value.length>0,
+
 deterministic:true,
 observer_only:true,
 
 non_claims:[
+"restoration != adjudication",
 "reproducibility != authority",
-"no prediction",
 "no governance",
 "no operational certification"
 ]
@@ -787,7 +791,7 @@ render();
 function exportReceipt(){
 
 download(
-"observability_receipt_v3.json",
+"observability_receipt_v4.json",
 receiptBox.textContent
 );
 
@@ -797,7 +801,7 @@ function exportSession(){
 
 const payload={
 
-version:"v24.3",
+version:"v24.4",
 
 frame,
 focus,
@@ -807,24 +811,88 @@ annotationInput.value,
 
 bookmark,
 
-observer_only:true
+observer_only:true,
+
+non_claims:[
+"restoration != adjudication",
+"reproducibility != authority"
+]
 
 };
 
 download(
-"serialized_observability_session.json",
+"serialized_restoration_session.json",
 JSON.stringify(payload,null,2)
 );
 
 }
 
-function importSession(){
+function triggerImport(){
+
+document
+.getElementById("importFile")
+.click();
+
+}
+
+document
+.getElementById("importFile")
+.addEventListener("change",async(e)=>{
+
+const file=e.target.files[0];
+
+if(!file) return;
+
+const text=await file.text();
+
+try{
+
+const payload=JSON.parse(text);
+
+if(payload.frame!==undefined){
+
+frame=payload.frame;
+
+frameSlider.value=frame;
+
+}
+
+if(payload.focus){
+
+focus=payload.focus;
+
+focusSelect.value=focus;
+
+}
+
+if(payload.annotation){
+
+annotationInput.value=
+payload.annotation;
+
+}
+
+if(payload.bookmark){
+
+bookmark=payload.bookmark;
+
+}
+
+render();
 
 alert(
-"Import pipeline placeholder ready for deterministic restoration layer."
+"Deterministic replay session restored."
+);
+
+}catch(err){
+
+alert(
+"Session restoration failed."
 );
 
 }
+
+});
 
 function saveBookmark(){
 
@@ -853,6 +921,10 @@ frameSlider.value=frame;
 
 render();
 
+alert(
+"Bookmark restored."
+);
+
 }
 
 function saveAnnotation(){
@@ -860,8 +932,13 @@ function saveAnnotation(){
 annotationStore=
 annotationInput.value;
 
+localStorage.setItem(
+"hacr_annotation",
+annotationStore
+);
+
 alert(
-"Observer annotation stored locally."
+"Observer annotation persisted locally."
 );
 
 }
