@@ -1,239 +1,348 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>HACR Hybrid Observatory — Interactive Viewer</title>
-  <link rel="stylesheet" href="observatory.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>HACR Hybrid Observatory — Interactive Viewer</title>
+<style>
+:root{
+  --bg:#0b1020;--panel:#111936;--panel2:#162044;--text:#eef3ff;--muted:#a9b5d6;
+  --line:#33406d;--accent:#8fb7ff;--warn:#ffd27a;--hold:#ff9f9f;--ok:#9fffc2;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+header{padding:18px 20px;border-bottom:1px solid var(--line);background:#0d1430;position:sticky;top:0;z-index:10}
+h1{margin:0 0 6px;font-size:22px}
+.small{color:var(--muted);font-size:13px}
+.boundary{
+  margin-top:10px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;
+  background:#101a3b;color:var(--warn);font-size:12px;font-weight:700;letter-spacing:.04em
+}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;padding:12px 20px;border-bottom:1px solid var(--line);background:#0e1633}
+.group{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.group label{font-size:12px;color:var(--muted);margin-right:2px}
+button,select,input[type="range"]{
+  background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:9px;
+  padding:7px 9px;font-size:12px
+}
+button:hover,select:hover{border-color:var(--accent);cursor:pointer}
+button.active{background:#25437a;border-color:var(--accent)}
+main{display:grid;grid-template-columns:1.35fr .65fr;gap:14px;padding:14px 20px}
+.viewer,.side,.panel{border:1px solid var(--line);border-radius:14px;background:var(--panel);overflow:hidden}
+.viewer-head,.panel-head{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line);background:#101a3b}
+.viewer-body{height:620px;position:relative;overflow:hidden}
+svg{width:100%;height:100%;display:block;background:radial-gradient(circle at 50% 40%,#17224b,#0b1020 70%)}
+.side{display:flex;flex-direction:column;gap:0}
+.panel{margin:0 0 12px 0}
+.panel-body{padding:12px;color:var(--muted);font-size:13px;line-height:1.45}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kv{padding:8px;border:1px solid var(--line);border-radius:10px;background:#0f1735}
+.kv b{display:block;color:var(--text);font-size:12px;margin-bottom:4px}
+.badge{display:inline-block;padding:4px 7px;border-radius:999px;border:1px solid var(--line);font-size:11px;color:var(--muted);margin:2px}
+.timeline{display:flex;gap:4px;align-items:end;height:70px;padding:8px;border:1px solid var(--line);border-radius:10px;background:#0f1735}
+.bar{flex:1;background:var(--accent);opacity:.45;border-radius:4px 4px 0 0;min-width:4px}
+.bar.active{opacity:1;background:var(--warn)}
+.note{color:var(--warn)}
+.hidden{display:none!important}
+footer{padding:14px 20px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
+.node{fill:#172c63;stroke:#8fb7ff;stroke-width:2}
+.node.hot{fill:#5d2b38;stroke:#ff9f9f}
+.node.ok{fill:#1d4a3a;stroke:#9fffc2}
+.edge{stroke:#6475b4;stroke-width:2;opacity:.65}
+.edge.focus{stroke:#ffd27a;stroke-width:4;opacity:.95}
+.label{fill:#eef3ff;font-size:12px;text-anchor:middle;pointer-events:none}
+.heat{fill:#ff9f9f;opacity:.18}
+.cursorLine{stroke:#ffd27a;stroke-width:2;stroke-dasharray:6 6}
+@media(max-width:1000px){main{grid-template-columns:1fr}.viewer-body{height:520px}}
+</style>
 </head>
 <body>
-  <header>
-    <h1>HACR Hybrid Observatory</h1>
-    <p>Observer-only bounded deterministic operational continuity inspection.</p>
-  </header>
+<header>
+  <h1>HACR Hybrid Observatory</h1>
+  <div class="small">Observer-only bounded deterministic operational continuity inspection.</div>
+  <div class="boundary">OBSERVABILITY ONLY · NON-PREDICTIVE · NON-GOVERNING · NON-AUTHORITATIVE · NO RECOVERABILITY CERTIFICATION</div>
+</header>
 
-  <main>
-    <section class="controls">
-      <label>
-        Scenario
-        <select id="scenarioSelect"></select>
-      </label>
+<section class="toolbar">
+  <div class="group">
+    <label>Scenario</label>
+    <input id="fileInput" type="file" accept=".json" class="hidden">
+    <button onclick="fileInput.click()">Load Scenario</button>
+    <button onclick="openSvg()">Open SVG</button>
+    <button onclick="downloadJSON()">Download JSON</button>
+    <button onclick="downloadReceipt()">Download Receipt</button>
+  </div>
 
-      <button id="loadButton">Load Scenario</button>
-      <button id="openButton">Open SVG</button>
+  <div class="group">
+    <label>Focus Mode</label>
+    <select id="focusMode" onchange="setFocusMode(this.value)">
+      <option>Overview</option><option>Topology</option><option>Replay</option><option>Drift</option>
+      <option>Heatmap</option><option>Timeline</option><option>Synchronized</option>
+    </select>
+  </div>
 
-      <a id="downloadJson" class="buttonLink" href="#" download>
-        Download JSON
-      </a>
+  <div class="group">
+    <label>Sync Lock</label>
+    <button id="syncBtn" class="active" onclick="toggleSync()">ON</button>
+    <label>Global Frame</label>
+    <input id="frameSlider" type="range" min="0" max="5" value="0" oninput="setFrame(+this.value)">
+    <button onclick="step(-1)">Previous</button>
+    <button onclick="step(1)">Next</button>
+    <button id="playBtn" onclick="togglePlay()">Play</button>
+  </div>
 
-      <a id="downloadReceipt" class="buttonLink" href="#" download>
-        Download Receipt
-      </a>
+  <div class="group">
+    <label>Atlas</label>
+    <button onclick="setAtlas('Overview')">Overview</button>
+    <button onclick="setAtlas('Healthcare')">Healthcare</button>
+    <button onclick="setAtlas('Cyber')">Cyber</button>
+    <button onclick="setAtlas('AI Oversight')">AI Oversight</button>
+    <button onclick="setAtlas('Energy')">Energy</button>
+    <button onclick="setAtlas('Emergency')">Emergency</button>
+    <button onclick="setAtlas('Supply Chain')">Supply Chain</button>
+  </div>
+
+  <div class="group">
+    <label>Relationships</label>
+    <button onclick="setRelationship('Overview')">Overview</button>
+    <button onclick="setRelationship('Human Oversight')">Human Oversight</button>
+    <button onclick="setRelationship('Dependency')">Dependency</button>
+    <button onclick="setRelationship('Fallback Corridors')">Fallback Corridors</button>
+    <button onclick="setRelationship('Shadow Dependencies')">Shadow Dependencies</button>
+  </div>
+
+  <div class="group">
+    <label>View</label>
+    <button onclick="zoom*=1.12;render()">+</button>
+    <button onclick="zoom/=1.12;render()">−</button>
+    <button onclick="zoom=1;panX=0;panY=0;render()">Reset</button>
+    <button id="notesBtn" class="active" onclick="toggleNotes()">Show notes</button>
+  </div>
+</section>
+
+<main>
+  <section class="viewer">
+    <div class="viewer-head">
+      <b id="viewerTitle">Synchronized Continuity Field</b>
+      <span class="small" id="stateLine">frame 0 · sync locked · overview</span>
+    </div>
+    <div class="viewer-body">
+      <svg id="svg" viewBox="0 0 1000 620" role="img" aria-label="HACR synchronized observability viewer"></svg>
+    </div>
+  </section>
+
+  <aside class="side">
+    <section class="panel" id="notesPanel">
+      <div class="panel-head"><b>Operational Notes</b><span class="badge">observer-only</span></div>
+      <div class="panel-body" id="notes">
+        Observer-only operational notes will appear here.
+      </div>
     </section>
 
-    <section class="toggleBar">
-      <span class="toggleLabel">Atlas:</span>
-
-      <button onclick="showAtlasOverview()">Overview</button>
-      <button onclick="loadAtlasDomain('healthcare')">Healthcare</button>
-      <button onclick="loadAtlasDomain('cyber')">Cyber</button>
-      <button onclick="loadAtlasDomain('ai_oversight')">AI Oversight</button>
-      <button onclick="loadAtlasDomain('energy')">Energy</button>
-      <button onclick="loadAtlasDomain('emergency')">Emergency</button>
-      <button onclick="loadAtlasDomain('supply_chain')">Supply Chain</button>
-      <button onclick="loadAtlasDomain('comparison')">Comparison</button>
-    </section>
-
-    <section class="toggleBar">
-      <span class="toggleLabel">Relationships:</span>
-
-      <button onclick="showRelationshipOverview()">
-        Overview
-      </button>
-
-      <button onclick="loadRelationshipGroup('human_oversight_visibility')">
-        Human Oversight
-      </button>
-
-      <button onclick="loadRelationshipGroup('dependency_concentration')">
-        Dependency
-      </button>
-
-      <button onclick="loadRelationshipGroup('fallback_corridor_visibility')">
-        Fallback Corridors
-      </button>
-
-      <button onclick="loadRelationshipGroup('shadow_dependency_pressure')">
-        Shadow Dependencies
-      </button>
-
-      <button onclick="loadRelationshipGraph()">
-        Relationship Graph
-      </button>
-
-      <button onclick="loadCorridorGeometry()">
-        Corridor Geometry
-      </button>
-    </section>
-
-    <section class="toggleBar">
-      <label><input type="checkbox" id="fitToggle" checked /> Fit view</label>
-      <label><input type="checkbox" id="borderToggle" checked /> Viewer border</label>
-      <label><input type="checkbox" id="claimToggle" checked /> Show non-claim</label>
-      <label><input type="checkbox" id="notesToggle" checked /> Show notes</label>
-
-      <button id="zoomOutButton">− Zoom</button>
-      <button id="zoomResetButton">Reset</button>
-      <button id="zoomInButton">+ Zoom</button>
-    </section>
-
-    <section class="toggleBar">
-      <span class="toggleLabel">View mode:</span>
-      <button id="normalViewButton">Normal</button>
-      <button id="focusViewButton">Focus</button>
-      <button id="softViewButton">Soft</button>
-    </section>
-
-    <section class="toggleBar">
-      <span class="toggleLabel">Replay:</span>
-
-      <button onclick="firstReplayFrame()">First</button>
-      <button onclick="previousReplayFrame()">Previous</button>
-      <button onclick="loadReplayFrame()">Load Replay</button>
-      <button onclick="nextReplayFrame()">Next</button>
-      <button onclick="lastReplayFrame()">Last</button>
-      <button onclick="playReplay()">Play</button>
-      <button onclick="pauseReplay()">Pause</button>
-    </section>
-
-    <section class="toggleBar">
-      <span class="toggleLabel">Delta:</span>
-
-      <button onclick="firstDeltaFrame()">First</button>
-      <button onclick="previousDeltaFrame()">Previous</button>
-      <button onclick="loadDeltaFrame()">Load Delta</button>
-      <button onclick="nextDeltaFrame()">Next</button>
-      <button onclick="lastDeltaFrame()">Last</button>
-    </section>
-
-    <section class="toggleBar">
-      <span class="toggleLabel">Temporal Drift:</span>
-
-      <button onclick="firstTemporalDriftFrame()">First</button>
-      <button onclick="previousTemporalDriftFrame()">Previous</button>
-      <button onclick="loadTemporalCorridorDrift()">Load Drift</button>
-      <button onclick="nextTemporalDriftFrame()">Next</button>
-      <button onclick="lastTemporalDriftFrame()">Last</button>
-    </section>
-
-    <section class="toggleBar">
-      <span class="toggleLabel">Field Dynamics:</span>
-
-      <button onclick="firstContinuityFieldFrame()">First</button>
-      <button onclick="previousContinuityFieldFrame()">Previous</button>
-      <button onclick="loadContinuityFieldDynamics()">Load Field</button>
-      <button onclick="nextContinuityFieldFrame()">Next</button>
-      <button onclick="lastContinuityFieldFrame()">Last</button>
-    </section>
-
-    <section class="toggleBar">
-      <span class="toggleLabel">Synchronized Playback:</span>
-
-      <button onclick="firstSynchronizedFrame()">First</button>
-      <button onclick="previousSynchronizedFrame()">Previous</button>
-      <button onclick="loadSynchronizedReplay()">Replay</button>
-      <button onclick="loadSynchronizedDelta()">Delta</button>
-      <button onclick="loadSynchronizedTemporalDrift()">Drift</button>
-      <button onclick="loadSynchronizedFieldDynamics()">Field</button>
-      <button onclick="nextSynchronizedFrame()">Next</button>
-      <button onclick="lastSynchronizedFrame()">Last</button>
-    </section>
-
-    <section class="toggleBar">
-      <span class="toggleLabel">Heatmap:</span>
-
-      <button onclick="firstHeatmapFrame()">First</button>
-      <button onclick="previousHeatmapFrame()">Previous</button>
-      <button onclick="loadContinuityHeatmap()">Load Heatmap</button>
-      <button onclick="nextHeatmapFrame()">Next</button>
-      <button onclick="lastHeatmapFrame()">Last</button>
-    </section>
-
-    <section class="toggleBar">
-      <span class="toggleLabel">Timeline:</span>
-
-      <button onclick="firstTimelineEvent()">First</button>
-      <button onclick="previousTimelineEvent()">Previous</button>
-      <button onclick="loadContinuityTimeline()">Load Timeline</button>
-      <button onclick="nextTimelineEvent()">Next</button>
-      <button onclick="lastTimelineEvent()">Last</button>
-    </section>
-
-    <section class="workspace" id="workspace">
-      <section class="viewer viewNormal" id="viewerBox">
-        <iframe id="svgFrame"></iframe>
-      </section>
-
-      <aside class="sidePanel" id="sidePanel">
-        <h2>Operational Notes</h2>
-
-        <div id="notesBox">
-          Observer-only operational notes will appear here.
+    <section class="panel">
+      <div class="panel-head"><b>Synchronization Integrity</b><span class="badge">visibility only</span></div>
+      <div class="panel-body">
+        <div class="grid">
+          <div class="kv"><b>Replay</b><span id="replayState">aligned</span></div>
+          <div class="kv"><b>Delta</b><span id="deltaState">aligned</span></div>
+          <div class="kv"><b>Drift</b><span id="driftState">aligned</span></div>
+          <div class="kv"><b>Heatmap</b><span id="heatState">aligned</span></div>
         </div>
-
-        <div class="panelDivider"></div>
-
-        <h3>Observatory Boundaries</h3>
-
-        <ul>
-          <li>observer-only</li>
-          <li>bounded</li>
-          <li>deterministic</li>
-          <li>non-authoritative</li>
-          <li>externally reviewable</li>
-        </ul>
-
-        <div class="panelDivider"></div>
-
-        <h3>Current Operational Reduction</h3>
-
-        <p class="reductionText">
-          visible continuity != preserved recoverability
-        </p>
-
-        <div class="panelDivider"></div>
-
-        <h3>Replay / Delta Boundary</h3>
-
-        <ul>
-          <li>replay frames are deterministic artifacts</li>
-          <li>delta overlays are deterministic artifacts</li>
-          <li>frame traversal is not prediction</li>
-          <li>delta visibility is not scoring</li>
-          <li>continuity evolution remains observer-only</li>
-        </ul>
-      </aside>
+      </div>
     </section>
 
-    <section class="nonclaims" id="nonClaimBox">
-      <strong>NON-CLAIM:</strong>
-      This viewer does not predict, govern, authorize, certify,
-      score, optimize, or replace operators.
-      It provides bounded deterministic observability only.
+    <section class="panel" id="heatPanel">
+      <div class="panel-head"><b>Continuity Heatmap Surface</b><span class="badge">intensity visibility only</span></div>
+      <div class="panel-body">
+        <div id="heatReadout">No frame selected.</div>
+      </div>
     </section>
-  </main>
 
-  <script src="scenario_notes.js"></script>
-  <script src="observatory.js"></script>
-  <script src="replay_viewer.js"></script>
-  <script src="delta_viewer.js"></script>
-  <script src="atlas/atlas_navigation.js"></script>
-  <script src="relationships/relationship_map.js"></script>
-  <script src="relationship_graph/relationship_graph.js"></script>
-  <script src="corridors/corridor_geometry.js"></script>
-  <script src="temporal_drift/temporal_corridor_drift.js"></script>
-  <script src="field_dynamics/continuity_field_dynamics.js"></script>
-  <script src="synchronized_playback/synchronized_playback.js"></script>
-  <script src="heatmaps/continuity_heatmap.js"></script>
-  <script src="timeline/continuity_timeline.js"></script>
+    <section class="panel" id="timelinePanel">
+      <div class="panel-head"><b>Continuity Timeline / Event Trace</b><span class="badge">non-causal chronology</span></div>
+      <div class="panel-body">
+        <div class="timeline" id="timeline"></div>
+        <p id="timelineText"></p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><b>Observatory Boundaries</b><span class="badge">NON-CLAIMS</span></div>
+      <div class="panel-body">
+        <div class="note">visible continuity != preserved recoverability</div>
+        <p>This viewer does not predict, govern, authorize, certify, score, optimize, prove causality, or replace operators.</p>
+        <p>Correlated visibility does not establish operational truth.</p>
+      </div>
+    </section>
+  </aside>
+</main>
+
+<footer>
+  Bounded deterministic observability only. Synchronization improves visibility coherence only.
+</footer>
+
+<script>
+let zoom=1,panX=0,panY=0,frame=0,playing=false,syncLock=true,focusMode="Overview";
+let atlas="Overview",relationship="Overview",timer=null;
+
+let scenario={
+  name:"Synchronized Continuity Field — v22",
+  nodes:[
+    {id:"topology",label:"Static Topology",x:160,y:130,type:"ok"},
+    {id:"replay",label:"Replay Traversal",x:360,y:110,type:"ok"},
+    {id:"delta",label:"Delta Evolution",x:560,y:130,type:"ok"},
+    {id:"drift",label:"Temporal Drift",x:760,y:170,type:"hot"},
+    {id:"field",label:"Field Dynamics",x:720,y:360,type:"hot"},
+    {id:"heatmap",label:"Heatmap Surface",x:510,y:455,type:"hot"},
+    {id:"timeline",label:"Timeline Trace",x:285,y:430,type:"ok"},
+    {id:"boundary",label:"Observer Boundary",x:145,y:315,type:"ok"}
+  ],
+  edges:[
+    ["topology","replay"],["replay","delta"],["delta","drift"],["drift","field"],
+    ["field","heatmap"],["heatmap","timeline"],["timeline","boundary"],["boundary","topology"],
+    ["replay","timeline"],["delta","heatmap"],["drift","heatmap"]
+  ],
+  frames:[
+    {label:"Frame 0 — baseline topology visible",heat:22,event:"Baseline topology loaded. No recoverability claim."},
+    {label:"Frame 1 — replay traversal begins",heat:35,event:"Replay-linked visibility begins. Traversal is not prediction."},
+    {label:"Frame 2 — delta surface appears",heat:48,event:"Delta evolution visible. Delta is not scoring."},
+    {label:"Frame 3 — corridor contraction pressure visible",heat:67,event:"Temporal drift pressure visible. No causal proof claim."},
+    {label:"Frame 4 — heat concentration propagates",heat:81,event:"Heat intensity visible only. No operational instruction."},
+    {label:"Frame 5 — synchronized field coherence inspected",heat:58,event:"Synchronized visibility remains observer-only."}
+  ]
+};
+
+const svg=document.getElementById("svg");
+const fileInput=document.getElementById("fileInput");
+
+fileInput.addEventListener("change",async e=>{
+  const file=e.target.files[0]; if(!file)return;
+  try{
+    scenario=JSON.parse(await file.text());
+    frame=0;
+    document.getElementById("frameSlider").max=(scenario.frames?.length||1)-1;
+    render();
+  }catch(err){alert("Could not load scenario JSON.");}
+});
+
+function setFocusMode(v){focusMode=v;render();}
+function setAtlas(v){atlas=v;notes(`Atlas set to ${v}. Atlas visibility is contextual only.`);render();}
+function setRelationship(v){relationship=v;notes(`Relationship lens set to ${v}. Relationship visibility is not operational authority.`);render();}
+function toggleSync(){syncLock=!syncLock;syncBtn.textContent=syncLock?"ON":"OFF";syncBtn.classList.toggle("active",syncLock);render();}
+function toggleNotes(){notesPanel.classList.toggle("hidden");notesBtn.classList.toggle("active");}
+function step(n){setFrame(Math.max(0,Math.min((scenario.frames?.length||1)-1,frame+n)));}
+function setFrame(n){frame=n;frameSlider.value=frame;render();}
+function togglePlay(){
+  playing=!playing; playBtn.textContent=playing?"Pause":"Play";
+  if(playing){timer=setInterval(()=>step(frame>=(scenario.frames.length-1)?-frame:1),900);}
+  else clearInterval(timer);
+}
+function notes(t){document.getElementById("notes").innerHTML=t;}
+function activeFrame(){return scenario.frames?.[frame]||{label:"Frame",heat:0,event:"No event."};}
+
+function visibleNode(id){
+  if(focusMode==="Overview"||focusMode==="Synchronized")return true;
+  const map={
+    Topology:["topology","boundary"],
+    Replay:["replay","timeline","boundary"],
+    Drift:["drift","delta","field"],
+    Heatmap:["heatmap","field","delta"],
+    Timeline:["timeline","replay","heatmap","boundary"]
+  };
+  return (map[focusMode]||[]).includes(id);
+}
+
+function render(){
+  const f=activeFrame();
+  viewerTitle.textContent=`${scenario.name || "HACR Hybrid Observatory"} · ${focusMode}`;
+  stateLine.textContent=`frame ${frame} · sync ${syncLock?"locked":"free"} · atlas ${atlas} · ${relationship}`;
+  frameSlider.max=(scenario.frames?.length||1)-1;
+  heatReadout.textContent=`${f.label}: intensity ${f.heat}. Intensity visibility only.`;
+  timelineText.textContent=f.event;
+  replayState.textContent=syncLock?"aligned":"free";
+  deltaState.textContent=syncLock?"aligned":"free";
+  driftState.textContent=syncLock?"aligned":"free";
+  heatState.textContent=syncLock?"aligned":"free";
+
+  renderTimeline();
+  svg.innerHTML="";
+  const g=el("g",{transform:`translate(${panX} ${panY}) scale(${zoom})`});
+  svg.appendChild(g);
+
+  const heatRadius=70+(f.heat||0)*2.1;
+  g.appendChild(el("circle",{cx:560,cy:315,r:heatRadius,class:"heat"}));
+  g.appendChild(el("line",{x1:80,y1:80,x2:920,y2:540,class:"cursorLine"}));
+
+  for(const [a,b] of scenario.edges||[]){
+    const n1=scenario.nodes.find(n=>n.id===a), n2=scenario.nodes.find(n=>n.id===b);
+    if(!n1||!n2||!visibleNode(a)||!visibleNode(b))continue;
+    const cls=(relationship!=="Overview" && (a.includes("drift")||b.includes("heatmap")||b.includes("timeline")))?"edge focus":"edge";
+    g.appendChild(el("line",{x1:n1.x,y1:n1.y,x2:n2.x,y2:n2.y,class:cls}));
+  }
+
+  for(const n of scenario.nodes||[]){
+    if(!visibleNode(n.id))continue;
+    const c=el("circle",{cx:n.x,cy:n.y,r:42,class:`node ${n.type||""}`});
+    g.appendChild(c);
+    g.appendChild(el("text",{x:n.x,y:n.y+4,class:"label"},n.label));
+  }
+
+  const label=el("text",{x:500,y:590,class:"label"},
+    "Synchronized visibility does not create synchronized authority.");
+  g.appendChild(label);
+}
+
+function renderTimeline(){
+  const t=document.getElementById("timeline"); t.innerHTML="";
+  (scenario.frames||[]).forEach((fr,i)=>{
+    const b=document.createElement("div");
+    b.className="bar"+(i===frame?" active":"");
+    b.style.height=Math.max(10,fr.heat||20)+"%";
+    b.title=fr.event||fr.label;
+    b.onclick=()=>setFrame(i);
+    t.appendChild(b);
+  });
+}
+
+function el(name,attrs={},text){
+  const e=document.createElementNS("http://www.w3.org/2000/svg",name);
+  for(const k in attrs)e.setAttribute(k,attrs[k]);
+  if(text)e.textContent=text;
+  return e;
+}
+
+function openSvg(){
+  const blob=new Blob([svg.outerHTML],{type:"image/svg+xml"});
+  window.open(URL.createObjectURL(blob),"_blank");
+}
+function downloadJSON(){
+  download("observatory_state_v22.json",JSON.stringify({
+    scenario,frame,focusMode,syncLock,atlas,relationship,
+    non_claim:"bounded deterministic observability only"
+  },null,2));
+}
+async function downloadReceipt(){
+  const payload=JSON.stringify({scenario,frame,focusMode,syncLock,atlas,relationship});
+  const hash=await sha256(payload);
+  download("observatory_receipt_v22.json",JSON.stringify({
+    receipt_type:"HACR synchronized observability receipt",
+    observer_only:true,
+    frame,focusMode,syncLock,atlas,relationship,
+    sha256:hash,
+    non_claims:["no prediction","no governance","no authority","no certification","no causality proof","no operational control"]
+  },null,2));
+}
+function download(name,text){
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([text],{type:"application/json"}));
+  a.download=name;a.click();
+}
+async function sha256(text){
+  const buf=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(text));
+  return [...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,"0")).join("");
+}
+
+render();
+</script>
 </body>
 </html>
