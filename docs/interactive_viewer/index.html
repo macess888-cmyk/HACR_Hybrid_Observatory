@@ -138,37 +138,24 @@
     <section class="toggleBar">
       <span class="toggleLabel">Synchronized Playback:</span>
 
-      <button onclick="firstSynchronizedFrame()">
-        First
-      </button>
+      <button onclick="firstSynchronizedFrame()">First</button>
+      <button onclick="previousSynchronizedFrame()">Previous</button>
+      <button onclick="loadSynchronizedReplay()">Replay</button>
+      <button onclick="loadSynchronizedDelta()">Delta</button>
+      <button onclick="loadSynchronizedTemporalDrift()">Drift</button>
+      <button onclick="loadSynchronizedFieldDynamics()">Field</button>
+      <button onclick="nextSynchronizedFrame()">Next</button>
+      <button onclick="lastSynchronizedFrame()">Last</button>
+    </section>
 
-      <button onclick="previousSynchronizedFrame()">
-        Previous
-      </button>
+    <section class="toggleBar">
+      <span class="toggleLabel">Heatmap:</span>
 
-      <button onclick="loadSynchronizedReplay()">
-        Replay
-      </button>
-
-      <button onclick="loadSynchronizedDelta()">
-        Delta
-      </button>
-
-      <button onclick="loadSynchronizedTemporalDrift()">
-        Drift
-      </button>
-
-      <button onclick="loadSynchronizedFieldDynamics()">
-        Field
-      </button>
-
-      <button onclick="nextSynchronizedFrame()">
-        Next
-      </button>
-
-      <button onclick="lastSynchronizedFrame()">
-        Last
-      </button>
+      <button onclick="firstHeatmapFrame()">First</button>
+      <button onclick="previousHeatmapFrame()">Previous</button>
+      <button onclick="loadContinuityHeatmap()">Load Heatmap</button>
+      <button onclick="nextHeatmapFrame()">Next</button>
+      <button onclick="lastHeatmapFrame()">Last</button>
     </section>
 
     <section class="workspace" id="workspace">
@@ -236,5 +223,6 @@
   <script src="temporal_drift/temporal_corridor_drift.js"></script>
   <script src="field_dynamics/continuity_field_dynamics.js"></script>
   <script src="synchronized_playback/synchronized_playback.js"></script>
+  <script src="heatmaps/continuity_heatmap.js"></script>
 </body>
 </html>
