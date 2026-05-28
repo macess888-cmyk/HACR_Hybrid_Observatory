@@ -1,348 +1,890 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>HACR Hybrid Observatory — Interactive Viewer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HACR Hybrid Observatory — v23</title>
+
 <style>
 :root{
-  --bg:#0b1020;--panel:#111936;--panel2:#162044;--text:#eef3ff;--muted:#a9b5d6;
-  --line:#33406d;--accent:#8fb7ff;--warn:#ffd27a;--hold:#ff9f9f;--ok:#9fffc2;
+--bg:#09101f;
+--panel:#101933;
+--panel2:#162449;
+--line:#31436e;
+--text:#eef3ff;
+--muted:#9eb0d8;
+--accent:#8db8ff;
+--warn:#ffd27a;
+--hot:#ff9b9b;
+--ok:#9fffc4;
 }
+
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
-header{padding:18px 20px;border-bottom:1px solid var(--line);background:#0d1430;position:sticky;top:0;z-index:10}
-h1{margin:0 0 6px;font-size:22px}
-.small{color:var(--muted);font-size:13px}
+
+body{
+margin:0;
+background:var(--bg);
+color:var(--text);
+font-family:Arial,Helvetica,sans-serif;
+overflow:hidden;
+}
+
+header{
+padding:16px 18px;
+border-bottom:1px solid var(--line);
+background:#0d1734;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+h1{
+margin:0 0 5px;
+font-size:22px;
+}
+
+.sub{
+font-size:13px;
+color:var(--muted);
+}
+
 .boundary{
-  margin-top:10px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;
-  background:#101a3b;color:var(--warn);font-size:12px;font-weight:700;letter-spacing:.04em
+margin-top:10px;
+padding:8px 10px;
+border-radius:10px;
+border:1px solid var(--line);
+background:#121f43;
+color:var(--warn);
+font-size:11px;
+font-weight:bold;
+letter-spacing:.05em;
 }
-.toolbar{display:flex;flex-wrap:wrap;gap:8px;padding:12px 20px;border-bottom:1px solid var(--line);background:#0e1633}
-.group{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
-.group label{font-size:12px;color:var(--muted);margin-right:2px}
-button,select,input[type="range"]{
-  background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:9px;
-  padding:7px 9px;font-size:12px
+
+.toolbar{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+padding:10px 16px;
+border-bottom:1px solid var(--line);
+background:#0f1836;
 }
-button:hover,select:hover{border-color:var(--accent);cursor:pointer}
-button.active{background:#25437a;border-color:var(--accent)}
-main{display:grid;grid-template-columns:1.35fr .65fr;gap:14px;padding:14px 20px}
-.viewer,.side,.panel{border:1px solid var(--line);border-radius:14px;background:var(--panel);overflow:hidden}
-.viewer-head,.panel-head{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line);background:#101a3b}
-.viewer-body{height:620px;position:relative;overflow:hidden}
-svg{width:100%;height:100%;display:block;background:radial-gradient(circle at 50% 40%,#17224b,#0b1020 70%)}
-.side{display:flex;flex-direction:column;gap:0}
-.panel{margin:0 0 12px 0}
-.panel-body{padding:12px;color:var(--muted);font-size:13px;line-height:1.45}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.kv{padding:8px;border:1px solid var(--line);border-radius:10px;background:#0f1735}
-.kv b{display:block;color:var(--text);font-size:12px;margin-bottom:4px}
-.badge{display:inline-block;padding:4px 7px;border-radius:999px;border:1px solid var(--line);font-size:11px;color:var(--muted);margin:2px}
-.timeline{display:flex;gap:4px;align-items:end;height:70px;padding:8px;border:1px solid var(--line);border-radius:10px;background:#0f1735}
-.bar{flex:1;background:var(--accent);opacity:.45;border-radius:4px 4px 0 0;min-width:4px}
-.bar.active{opacity:1;background:var(--warn)}
-.note{color:var(--warn)}
-.hidden{display:none!important}
-footer{padding:14px 20px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
-.node{fill:#172c63;stroke:#8fb7ff;stroke-width:2}
-.node.hot{fill:#5d2b38;stroke:#ff9f9f}
-.node.ok{fill:#1d4a3a;stroke:#9fffc2}
-.edge{stroke:#6475b4;stroke-width:2;opacity:.65}
-.edge.focus{stroke:#ffd27a;stroke-width:4;opacity:.95}
-.label{fill:#eef3ff;font-size:12px;text-anchor:middle;pointer-events:none}
-.heat{fill:#ff9f9f;opacity:.18}
-.cursorLine{stroke:#ffd27a;stroke-width:2;stroke-dasharray:6 6}
-@media(max-width:1000px){main{grid-template-columns:1fr}.viewer-body{height:520px}}
+
+.group{
+display:flex;
+gap:6px;
+align-items:center;
+padding:8px;
+border:1px solid var(--line);
+border-radius:12px;
+background:var(--panel);
+}
+
+.group label{
+font-size:12px;
+color:var(--muted);
+}
+
+button,select,input[type=range]{
+background:var(--panel2);
+color:var(--text);
+border:1px solid var(--line);
+border-radius:8px;
+padding:7px 9px;
+font-size:12px;
+}
+
+button:hover,select:hover{
+border-color:var(--accent);
+cursor:pointer;
+}
+
+button.active{
+background:#26457e;
+border-color:var(--accent);
+}
+
+main{
+display:grid;
+grid-template-columns:1.35fr .65fr;
+gap:12px;
+padding:12px 16px;
+height:calc(100vh - 150px);
+}
+
+.viewer{
+background:var(--panel);
+border:1px solid var(--line);
+border-radius:14px;
+overflow:hidden;
+display:flex;
+flex-direction:column;
+}
+
+.viewerHead{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 12px;
+border-bottom:1px solid var(--line);
+background:#101c3f;
+}
+
+.viewerBody{
+flex:1;
+position:relative;
+overflow:hidden;
+}
+
+svg{
+width:100%;
+height:100%;
+display:block;
+background:
+radial-gradient(circle at 50% 45%,#17254f,#09101f 70%);
+}
+
+.side{
+display:flex;
+flex-direction:column;
+gap:12px;
+overflow:auto;
+}
+
+.panel{
+background:var(--panel);
+border:1px solid var(--line);
+border-radius:14px;
+overflow:hidden;
+}
+
+.panelHead{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 12px;
+border-bottom:1px solid var(--line);
+background:#101c3f;
+}
+
+.panelBody{
+padding:12px;
+font-size:13px;
+line-height:1.45;
+color:var(--muted);
+}
+
+.badge{
+padding:4px 8px;
+border-radius:999px;
+border:1px solid var(--line);
+font-size:11px;
+color:var(--muted);
+}
+
+.timeline{
+display:flex;
+align-items:end;
+gap:4px;
+height:80px;
+padding:8px;
+background:#101833;
+border:1px solid var(--line);
+border-radius:10px;
+}
+
+.bar{
+flex:1;
+min-width:4px;
+background:var(--accent);
+opacity:.35;
+border-radius:4px 4px 0 0;
+}
+
+.bar.active{
+opacity:1;
+background:var(--warn);
+}
+
+.kgrid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:8px;
+}
+
+.k{
+padding:8px;
+border:1px solid var(--line);
+border-radius:10px;
+background:#0f1731;
+}
+
+.k b{
+display:block;
+margin-bottom:5px;
+color:var(--text);
+font-size:12px;
+}
+
+.node{
+fill:#1a2c60;
+stroke:#8db8ff;
+stroke-width:2;
+}
+
+.node.hot{
+fill:#5a2a38;
+stroke:#ff9b9b;
+}
+
+.node.ok{
+fill:#1f4f3c;
+stroke:#9fffc4;
+}
+
+.edge{
+stroke:#6475b4;
+stroke-width:2;
+opacity:.6;
+}
+
+.edge.focus{
+stroke:#ffd27a;
+stroke-width:4;
+opacity:1;
+}
+
+.label{
+fill:#eef3ff;
+font-size:12px;
+text-anchor:middle;
+pointer-events:none;
+}
+
+.heat{
+fill:#ff9b9b;
+opacity:.14;
+}
+
+.cursor{
+stroke:#ffd27a;
+stroke-width:2;
+stroke-dasharray:6 6;
+}
+
+.annotation{
+fill:#ffe7a6;
+font-size:11px;
+}
+
+.hidden{
+display:none!important;
+}
+
+footer{
+padding:10px 16px;
+border-top:1px solid var(--line);
+font-size:12px;
+color:var(--muted);
+background:#0d1734;
+}
+
+@media(max-width:1000px){
+main{
+grid-template-columns:1fr;
+height:auto;
+overflow:auto;
+}
+body{
+overflow:auto;
+}
+}
 </style>
 </head>
+
 <body>
+
 <header>
-  <h1>HACR Hybrid Observatory</h1>
-  <div class="small">Observer-only bounded deterministic operational continuity inspection.</div>
-  <div class="boundary">OBSERVABILITY ONLY · NON-PREDICTIVE · NON-GOVERNING · NON-AUTHORITATIVE · NO RECOVERABILITY CERTIFICATION</div>
+<h1>HACR Hybrid Observatory — v23</h1>
+<div class="sub">
+Synchronized continuity-field observability environment.
+</div>
+
+<div class="boundary">
+OBSERVABILITY ONLY · NON-PREDICTIVE · NON-GOVERNING · NON-AUTHORITATIVE · NO RECOVERABILITY CERTIFICATION
+</div>
 </header>
 
 <section class="toolbar">
-  <div class="group">
-    <label>Scenario</label>
-    <input id="fileInput" type="file" accept=".json" class="hidden">
-    <button onclick="fileInput.click()">Load Scenario</button>
-    <button onclick="openSvg()">Open SVG</button>
-    <button onclick="downloadJSON()">Download JSON</button>
-    <button onclick="downloadReceipt()">Download Receipt</button>
-  </div>
 
-  <div class="group">
-    <label>Focus Mode</label>
-    <select id="focusMode" onchange="setFocusMode(this.value)">
-      <option>Overview</option><option>Topology</option><option>Replay</option><option>Drift</option>
-      <option>Heatmap</option><option>Timeline</option><option>Synchronized</option>
-    </select>
-  </div>
+<div class="group">
+<label>Scenario</label>
+<button onclick="loadScenario()">Load</button>
+<button onclick="downloadState()">Export State</button>
+<button onclick="downloadSession()">Export Session</button>
+<button onclick="openSvg()">Open SVG</button>
+</div>
 
-  <div class="group">
-    <label>Sync Lock</label>
-    <button id="syncBtn" class="active" onclick="toggleSync()">ON</button>
-    <label>Global Frame</label>
-    <input id="frameSlider" type="range" min="0" max="5" value="0" oninput="setFrame(+this.value)">
-    <button onclick="step(-1)">Previous</button>
-    <button onclick="step(1)">Next</button>
-    <button id="playBtn" onclick="togglePlay()">Play</button>
-  </div>
+<div class="group">
+<label>Focus</label>
+<select id="focus" onchange="setFocus(this.value)">
+<option>Overview</option>
+<option>Topology</option>
+<option>Replay</option>
+<option>Drift</option>
+<option>Heatmap</option>
+<option>Timeline</option>
+<option>Synchronized</option>
+</select>
+</div>
 
-  <div class="group">
-    <label>Atlas</label>
-    <button onclick="setAtlas('Overview')">Overview</button>
-    <button onclick="setAtlas('Healthcare')">Healthcare</button>
-    <button onclick="setAtlas('Cyber')">Cyber</button>
-    <button onclick="setAtlas('AI Oversight')">AI Oversight</button>
-    <button onclick="setAtlas('Energy')">Energy</button>
-    <button onclick="setAtlas('Emergency')">Emergency</button>
-    <button onclick="setAtlas('Supply Chain')">Supply Chain</button>
-  </div>
+<div class="group">
+<label>Synchronization</label>
+<button id="syncBtn" class="active" onclick="toggleSync()">LOCKED</button>
+<input type="range" min="0" max="5" value="0" id="frameSlider" oninput="setFrame(+this.value)">
+<button onclick="step(-1)">◀</button>
+<button onclick="step(1)">▶</button>
+<button id="playBtn" onclick="togglePlay()">Play</button>
+</div>
 
-  <div class="group">
-    <label>Relationships</label>
-    <button onclick="setRelationship('Overview')">Overview</button>
-    <button onclick="setRelationship('Human Oversight')">Human Oversight</button>
-    <button onclick="setRelationship('Dependency')">Dependency</button>
-    <button onclick="setRelationship('Fallback Corridors')">Fallback Corridors</button>
-    <button onclick="setRelationship('Shadow Dependencies')">Shadow Dependencies</button>
-  </div>
+<div class="group">
+<label>Atlas</label>
+<button onclick="setAtlas('Overview')">Overview</button>
+<button onclick="setAtlas('Cyber')">Cyber</button>
+<button onclick="setAtlas('Healthcare')">Healthcare</button>
+<button onclick="setAtlas('Energy')">Energy</button>
+</div>
 
-  <div class="group">
-    <label>View</label>
-    <button onclick="zoom*=1.12;render()">+</button>
-    <button onclick="zoom/=1.12;render()">−</button>
-    <button onclick="zoom=1;panX=0;panY=0;render()">Reset</button>
-    <button id="notesBtn" class="active" onclick="toggleNotes()">Show notes</button>
-  </div>
+<div class="group">
+<label>Relationship</label>
+<button onclick="setRelationship('Overview')">Overview</button>
+<button onclick="setRelationship('Dependency')">Dependency</button>
+<button onclick="setRelationship('Fallback')">Fallback</button>
+<button onclick="setRelationship('Shadow')">Shadow</button>
+</div>
+
+<div class="group">
+<label>Observer</label>
+<button onclick="toggleAnnotations()" id="annBtn" class="active">Annotations</button>
+<button onclick="toggleBoundary()">Boundary Layer</button>
+</div>
+
 </section>
 
 <main>
-  <section class="viewer">
-    <div class="viewer-head">
-      <b id="viewerTitle">Synchronized Continuity Field</b>
-      <span class="small" id="stateLine">frame 0 · sync locked · overview</span>
-    </div>
-    <div class="viewer-body">
-      <svg id="svg" viewBox="0 0 1000 620" role="img" aria-label="HACR synchronized observability viewer"></svg>
-    </div>
-  </section>
 
-  <aside class="side">
-    <section class="panel" id="notesPanel">
-      <div class="panel-head"><b>Operational Notes</b><span class="badge">observer-only</span></div>
-      <div class="panel-body" id="notes">
-        Observer-only operational notes will appear here.
-      </div>
-    </section>
+<section class="viewer">
 
-    <section class="panel">
-      <div class="panel-head"><b>Synchronization Integrity</b><span class="badge">visibility only</span></div>
-      <div class="panel-body">
-        <div class="grid">
-          <div class="kv"><b>Replay</b><span id="replayState">aligned</span></div>
-          <div class="kv"><b>Delta</b><span id="deltaState">aligned</span></div>
-          <div class="kv"><b>Drift</b><span id="driftState">aligned</span></div>
-          <div class="kv"><b>Heatmap</b><span id="heatState">aligned</span></div>
-        </div>
-      </div>
-    </section>
+<div class="viewerHead">
+<b id="viewerTitle">Synchronized Continuity Field</b>
+<span id="stateLine" class="sub">frame 0 · synchronized</span>
+</div>
 
-    <section class="panel" id="heatPanel">
-      <div class="panel-head"><b>Continuity Heatmap Surface</b><span class="badge">intensity visibility only</span></div>
-      <div class="panel-body">
-        <div id="heatReadout">No frame selected.</div>
-      </div>
-    </section>
+<div class="viewerBody">
+<svg id="svg" viewBox="0 0 1000 620"></svg>
+</div>
 
-    <section class="panel" id="timelinePanel">
-      <div class="panel-head"><b>Continuity Timeline / Event Trace</b><span class="badge">non-causal chronology</span></div>
-      <div class="panel-body">
-        <div class="timeline" id="timeline"></div>
-        <p id="timelineText"></p>
-      </div>
-    </section>
+</section>
 
-    <section class="panel">
-      <div class="panel-head"><b>Observatory Boundaries</b><span class="badge">NON-CLAIMS</span></div>
-      <div class="panel-body">
-        <div class="note">visible continuity != preserved recoverability</div>
-        <p>This viewer does not predict, govern, authorize, certify, score, optimize, prove causality, or replace operators.</p>
-        <p>Correlated visibility does not establish operational truth.</p>
-      </div>
-    </section>
-  </aside>
+<aside class="side">
+
+<section class="panel">
+<div class="panelHead">
+<b>Synchronization Integrity</b>
+<span class="badge">visibility only</span>
+</div>
+
+<div class="panelBody">
+
+<div class="kgrid">
+<div class="k"><b>Replay</b><span id="rState">aligned</span></div>
+<div class="k"><b>Delta</b><span id="dState">aligned</span></div>
+<div class="k"><b>Drift</b><span id="tState">aligned</span></div>
+<div class="k"><b>Heatmap</b><span id="hState">aligned</span></div>
+</div>
+
+</div>
+</section>
+
+<section class="panel">
+<div class="panelHead">
+<b>Continuity Heatmap</b>
+<span class="badge">intensity only</span>
+</div>
+
+<div class="panelBody">
+<div id="heatText">No frame selected.</div>
+</div>
+</section>
+
+<section class="panel">
+<div class="panelHead">
+<b>Continuity Timeline</b>
+<span class="badge">non-causal chronology</span>
+</div>
+
+<div class="panelBody">
+
+<div class="timeline" id="timeline"></div>
+
+<p id="timelineText"></p>
+
+</div>
+</section>
+
+<section class="panel">
+<div class="panelHead">
+<b>Observer Notes</b>
+<span class="badge">local only</span>
+</div>
+
+<div class="panelBody" id="notes">
+Observer annotations remain detached from operational authority.
+</div>
+</section>
+
+<section class="panel">
+<div class="panelHead">
+<b>NON-CLAIMS</b>
+<span class="badge">containment</span>
+</div>
+
+<div class="panelBody">
+
+<p>
+visible continuity != preserved recoverability
+</p>
+
+<p>
+Correlated visibility does not establish causality, prediction, recoverability, or operational truth.
+</p>
+
+<p>
+Synchronization improves visibility coherence only.
+</p>
+
+</div>
+</section>
+
+</aside>
+
 </main>
 
 <footer>
-  Bounded deterministic observability only. Synchronization improves visibility coherence only.
+Bounded deterministic observability only.
 </footer>
 
 <script>
-let zoom=1,panX=0,panY=0,frame=0,playing=false,syncLock=true,focusMode="Overview";
-let atlas="Overview",relationship="Overview",timer=null;
-
-let scenario={
-  name:"Synchronized Continuity Field — v22",
-  nodes:[
-    {id:"topology",label:"Static Topology",x:160,y:130,type:"ok"},
-    {id:"replay",label:"Replay Traversal",x:360,y:110,type:"ok"},
-    {id:"delta",label:"Delta Evolution",x:560,y:130,type:"ok"},
-    {id:"drift",label:"Temporal Drift",x:760,y:170,type:"hot"},
-    {id:"field",label:"Field Dynamics",x:720,y:360,type:"hot"},
-    {id:"heatmap",label:"Heatmap Surface",x:510,y:455,type:"hot"},
-    {id:"timeline",label:"Timeline Trace",x:285,y:430,type:"ok"},
-    {id:"boundary",label:"Observer Boundary",x:145,y:315,type:"ok"}
-  ],
-  edges:[
-    ["topology","replay"],["replay","delta"],["delta","drift"],["drift","field"],
-    ["field","heatmap"],["heatmap","timeline"],["timeline","boundary"],["boundary","topology"],
-    ["replay","timeline"],["delta","heatmap"],["drift","heatmap"]
-  ],
-  frames:[
-    {label:"Frame 0 — baseline topology visible",heat:22,event:"Baseline topology loaded. No recoverability claim."},
-    {label:"Frame 1 — replay traversal begins",heat:35,event:"Replay-linked visibility begins. Traversal is not prediction."},
-    {label:"Frame 2 — delta surface appears",heat:48,event:"Delta evolution visible. Delta is not scoring."},
-    {label:"Frame 3 — corridor contraction pressure visible",heat:67,event:"Temporal drift pressure visible. No causal proof claim."},
-    {label:"Frame 4 — heat concentration propagates",heat:81,event:"Heat intensity visible only. No operational instruction."},
-    {label:"Frame 5 — synchronized field coherence inspected",heat:58,event:"Synchronized visibility remains observer-only."}
-  ]
-};
 
 const svg=document.getElementById("svg");
-const fileInput=document.getElementById("fileInput");
 
-fileInput.addEventListener("change",async e=>{
-  const file=e.target.files[0]; if(!file)return;
-  try{
-    scenario=JSON.parse(await file.text());
-    frame=0;
-    document.getElementById("frameSlider").max=(scenario.frames?.length||1)-1;
-    render();
-  }catch(err){alert("Could not load scenario JSON.");}
-});
+let sync=true;
+let playing=false;
+let timer=null;
+let frame=0;
+let focus="Overview";
+let annotations=true;
+let boundaryVisible=true;
+let atlas="Overview";
+let relationship="Overview";
 
-function setFocusMode(v){focusMode=v;render();}
-function setAtlas(v){atlas=v;notes(`Atlas set to ${v}. Atlas visibility is contextual only.`);render();}
-function setRelationship(v){relationship=v;notes(`Relationship lens set to ${v}. Relationship visibility is not operational authority.`);render();}
-function toggleSync(){syncLock=!syncLock;syncBtn.textContent=syncLock?"ON":"OFF";syncBtn.classList.toggle("active",syncLock);render();}
-function toggleNotes(){notesPanel.classList.toggle("hidden");notesBtn.classList.toggle("active");}
-function step(n){setFrame(Math.max(0,Math.min((scenario.frames?.length||1)-1,frame+n)));}
-function setFrame(n){frame=n;frameSlider.value=frame;render();}
-function togglePlay(){
-  playing=!playing; playBtn.textContent=playing?"Pause":"Play";
-  if(playing){timer=setInterval(()=>step(frame>=(scenario.frames.length-1)?-frame:1),900);}
-  else clearInterval(timer);
+const scenario={
+
+name:"Synchronized Continuity Field",
+
+nodes:[
+{id:"topology",x:160,y:140,label:"Topology",type:"ok"},
+{id:"replay",x:350,y:120,label:"Replay",type:"ok"},
+{id:"delta",x:560,y:145,label:"Delta",type:"ok"},
+{id:"drift",x:760,y:185,label:"Temporal Drift",type:"hot"},
+{id:"field",x:720,y:370,label:"Field Dynamics",type:"hot"},
+{id:"heat",x:510,y:460,label:"Heatmap",type:"hot"},
+{id:"timeline",x:280,y:440,label:"Timeline",type:"ok"},
+{id:"boundary",x:150,y:320,label:"Observer Boundary",type:"ok"}
+],
+
+edges:[
+["topology","replay"],
+["replay","delta"],
+["delta","drift"],
+["drift","field"],
+["field","heat"],
+["heat","timeline"],
+["timeline","boundary"],
+["boundary","topology"],
+["replay","timeline"],
+["delta","heat"]
+],
+
+frames:[
+
+{
+label:"Frame 0",
+heat:22,
+event:"Baseline synchronized topology visible."
+},
+
+{
+label:"Frame 1",
+heat:35,
+event:"Replay-linked chronology emerges."
+},
+
+{
+label:"Frame 2",
+heat:49,
+event:"Delta evolution visible."
+},
+
+{
+label:"Frame 3",
+heat:65,
+event:"Temporal corridor contraction pressure visible."
+},
+
+{
+label:"Frame 4",
+heat:83,
+event:"Continuity intensity concentration visible."
+},
+
+{
+label:"Frame 5",
+heat:58,
+event:"Synchronization coherence stabilized."
 }
-function notes(t){document.getElementById("notes").innerHTML=t;}
-function activeFrame(){return scenario.frames?.[frame]||{label:"Frame",heat:0,event:"No event."};}
 
-function visibleNode(id){
-  if(focusMode==="Overview"||focusMode==="Synchronized")return true;
-  const map={
-    Topology:["topology","boundary"],
-    Replay:["replay","timeline","boundary"],
-    Drift:["drift","delta","field"],
-    Heatmap:["heatmap","field","delta"],
-    Timeline:["timeline","replay","heatmap","boundary"]
-  };
-  return (map[focusMode]||[]).includes(id);
-}
+]
+
+};
 
 function render(){
-  const f=activeFrame();
-  viewerTitle.textContent=`${scenario.name || "HACR Hybrid Observatory"} · ${focusMode}`;
-  stateLine.textContent=`frame ${frame} · sync ${syncLock?"locked":"free"} · atlas ${atlas} · ${relationship}`;
-  frameSlider.max=(scenario.frames?.length||1)-1;
-  heatReadout.textContent=`${f.label}: intensity ${f.heat}. Intensity visibility only.`;
-  timelineText.textContent=f.event;
-  replayState.textContent=syncLock?"aligned":"free";
-  deltaState.textContent=syncLock?"aligned":"free";
-  driftState.textContent=syncLock?"aligned":"free";
-  heatState.textContent=syncLock?"aligned":"free";
 
-  renderTimeline();
-  svg.innerHTML="";
-  const g=el("g",{transform:`translate(${panX} ${panY}) scale(${zoom})`});
-  svg.appendChild(g);
+svg.innerHTML="";
 
-  const heatRadius=70+(f.heat||0)*2.1;
-  g.appendChild(el("circle",{cx:560,cy:315,r:heatRadius,class:"heat"}));
-  g.appendChild(el("line",{x1:80,y1:80,x2:920,y2:540,class:"cursorLine"}));
+const f=scenario.frames[frame];
 
-  for(const [a,b] of scenario.edges||[]){
-    const n1=scenario.nodes.find(n=>n.id===a), n2=scenario.nodes.find(n=>n.id===b);
-    if(!n1||!n2||!visibleNode(a)||!visibleNode(b))continue;
-    const cls=(relationship!=="Overview" && (a.includes("drift")||b.includes("heatmap")||b.includes("timeline")))?"edge focus":"edge";
-    g.appendChild(el("line",{x1:n1.x,y1:n1.y,x2:n2.x,y2:n2.y,class:cls}));
-  }
+viewerTitle.textContent=`${scenario.name} · ${focus}`;
 
-  for(const n of scenario.nodes||[]){
-    if(!visibleNode(n.id))continue;
-    const c=el("circle",{cx:n.x,cy:n.y,r:42,class:`node ${n.type||""}`});
-    g.appendChild(c);
-    g.appendChild(el("text",{x:n.x,y:n.y+4,class:"label"},n.label));
-  }
+stateLine.textContent=`frame ${frame} · ${sync?'synchronized':'free'} · ${atlas}`;
 
-  const label=el("text",{x:500,y:590,class:"label"},
-    "Synchronized visibility does not create synchronized authority.");
-  g.appendChild(label);
+heatText.textContent=`${f.label}: intensity ${f.heat}. Intensity visibility only.`;
+
+timelineText.textContent=f.event;
+
+renderTimeline();
+
+const g=make("g",{});
+
+svg.appendChild(g);
+
+g.appendChild(make("circle",{
+cx:530,
+cy:315,
+r:70+(f.heat*2),
+class:"heat"
+}));
+
+g.appendChild(make("line",{
+x1:90,
+y1:90,
+x2:920,
+y2:540,
+class:"cursor"
+}));
+
+for(const [a,b] of scenario.edges){
+
+const n1=scenario.nodes.find(n=>n.id===a);
+const n2=scenario.nodes.find(n=>n.id===b);
+
+if(!visible(n1.id)||!visible(n2.id)) continue;
+
+g.appendChild(make("line",{
+x1:n1.x,
+y1:n1.y,
+x2:n2.x,
+y2:n2.y,
+class:relationship!=="Overview"?"edge focus":"edge"
+}));
+
+}
+
+for(const n of scenario.nodes){
+
+if(!visible(n.id)) continue;
+
+g.appendChild(make("circle",{
+cx:n.x,
+cy:n.y,
+r:42,
+class:`node ${n.type}`
+}));
+
+g.appendChild(make("text",{
+x:n.x,
+y:n.y+4,
+class:"label"
+},n.label));
+
+}
+
+if(annotations){
+
+g.appendChild(make("text",{
+x:540,
+y:565,
+class:"annotation"
+},
+"Synchronized visibility does not create synchronized authority."
+));
+
+}
+
+if(boundaryVisible){
+
+g.appendChild(make("text",{
+x:500,
+y:600,
+class:"annotation"
+},
+"OBSERVABILITY ONLY · NON-PREDICTIVE · NON-AUTHORITATIVE"
+));
+
+}
+
+}
+
+function visible(id){
+
+if(focus==="Overview"||focus==="Synchronized") return true;
+
+const map={
+
+Topology:["topology","boundary"],
+
+Replay:["replay","timeline"],
+
+Drift:["delta","drift","field"],
+
+Heatmap:["heat","field"],
+
+Timeline:["timeline","replay","heat"]
+
+};
+
+return (map[focus]||[]).includes(id);
+
 }
 
 function renderTimeline(){
-  const t=document.getElementById("timeline"); t.innerHTML="";
-  (scenario.frames||[]).forEach((fr,i)=>{
-    const b=document.createElement("div");
-    b.className="bar"+(i===frame?" active":"");
-    b.style.height=Math.max(10,fr.heat||20)+"%";
-    b.title=fr.event||fr.label;
-    b.onclick=()=>setFrame(i);
-    t.appendChild(b);
-  });
+
+timeline.innerHTML="";
+
+scenario.frames.forEach((f,i)=>{
+
+const b=document.createElement("div");
+
+b.className=`bar ${i===frame?'active':''}`;
+
+b.style.height=Math.max(10,f.heat)+"%";
+
+b.onclick=()=>setFrame(i);
+
+timeline.appendChild(b);
+
+});
+
 }
 
-function el(name,attrs={},text){
-  const e=document.createElementNS("http://www.w3.org/2000/svg",name);
-  for(const k in attrs)e.setAttribute(k,attrs[k]);
-  if(text)e.textContent=text;
-  return e;
+function setFrame(n){
+
+frame=n;
+
+frameSlider.value=n;
+
+render();
+
+}
+
+function step(n){
+
+frame=Math.max(0,Math.min(scenario.frames.length-1,frame+n));
+
+frameSlider.value=frame;
+
+render();
+
+}
+
+function togglePlay(){
+
+playing=!playing;
+
+playBtn.textContent=playing?"Pause":"Play";
+
+if(playing){
+
+timer=setInterval(()=>{
+
+frame=(frame+1)%scenario.frames.length;
+frameSlider.value=frame;
+render();
+
+},900);
+
+}else{
+
+clearInterval(timer);
+
+}
+
+}
+
+function toggleSync(){
+
+sync=!sync;
+
+syncBtn.textContent=sync?"LOCKED":"FREE";
+
+syncBtn.classList.toggle("active",sync);
+
+render();
+
+}
+
+function setFocus(v){
+
+focus=v;
+
+render();
+
+}
+
+function setAtlas(v){
+
+atlas=v;
+
+notes.innerHTML=`Atlas visibility set to ${v}. Atlas linkage remains observational only.`;
+
+render();
+
+}
+
+function setRelationship(v){
+
+relationship=v;
+
+notes.innerHTML=`Relationship mode: ${v}. Relationship visibility does not establish operational dependency truth.`;
+
+render();
+
+}
+
+function toggleAnnotations(){
+
+annotations=!annotations;
+
+annBtn.classList.toggle("active",annotations);
+
+render();
+
+}
+
+function toggleBoundary(){
+
+boundaryVisible=!boundaryVisible;
+
+render();
+
+}
+
+function loadScenario(){
+
+alert("Scenario loading placeholder ready for future deterministic import pipeline.");
+
 }
 
 function openSvg(){
-  const blob=new Blob([svg.outerHTML],{type:"image/svg+xml"});
-  window.open(URL.createObjectURL(blob),"_blank");
+
+const blob=new Blob([svg.outerHTML],{type:"image/svg+xml"});
+
+window.open(URL.createObjectURL(blob),"_blank");
+
 }
-function downloadJSON(){
-  download("observatory_state_v22.json",JSON.stringify({
-    scenario,frame,focusMode,syncLock,atlas,relationship,
-    non_claim:"bounded deterministic observability only"
-  },null,2));
+
+function downloadState(){
+
+download("observatory_state_v23.json",JSON.stringify({
+
+frame,
+focus,
+sync,
+atlas,
+relationship,
+observer_only:true
+
+},null,2));
+
 }
-async function downloadReceipt(){
-  const payload=JSON.stringify({scenario,frame,focusMode,syncLock,atlas,relationship});
-  const hash=await sha256(payload);
-  download("observatory_receipt_v22.json",JSON.stringify({
-    receipt_type:"HACR synchronized observability receipt",
-    observer_only:true,
-    frame,focusMode,syncLock,atlas,relationship,
-    sha256:hash,
-    non_claims:["no prediction","no governance","no authority","no certification","no causality proof","no operational control"]
-  },null,2));
+
+function downloadSession(){
+
+download("session_export_v23.json",JSON.stringify({
+
+session_type:"HACR synchronized observability session",
+
+frame,
+focus,
+sync,
+atlas,
+relationship,
+
+non_claims:[
+"no prediction",
+"no governance",
+"no authority",
+"no certification",
+"no operational control"
+],
+
+deterministic:true,
+observer_only:true
+
+},null,2));
+
 }
+
 function download(name,text){
-  const a=document.createElement("a");
-  a.href=URL.createObjectURL(new Blob([text],{type:"application/json"}));
-  a.download=name;a.click();
+
+const a=document.createElement("a");
+
+a.href=URL.createObjectURL(new Blob([text],{type:"application/json"}));
+
+a.download=name;
+
+a.click();
+
 }
-async function sha256(text){
-  const buf=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(text));
-  return [...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,"0")).join("");
+
+function make(name,attrs={},text){
+
+const e=document.createElementNS("http://www.w3.org/2000/svg",name);
+
+for(const k in attrs){
+
+e.setAttribute(k,attrs[k]);
+
+}
+
+if(text) e.textContent=text;
+
+return e;
+
 }
 
 render();
+
 </script>
+
 </body>
 </html>
