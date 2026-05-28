@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HACR Hybrid Observatory — v24.6 Hash Verification & Tamper Visibility</title>
+<title>HACR Hybrid Observatory — v24.7 Verification Boundary Hardening</title>
 
 <style>
 :root{
@@ -99,6 +99,11 @@ border-color:var(--accent);
 cursor:pointer;
 }
 
+button:disabled{
+opacity:.45;
+cursor:not-allowed;
+}
+
 textarea{
 width:100%;
 min-height:90px;
@@ -173,30 +178,6 @@ font-size:11px;
 .warn{color:var(--warn)}
 .fail{color:var(--hot)}
 
-.timeline{
-display:flex;
-align-items:end;
-gap:4px;
-height:78px;
-padding:8px;
-border-radius:10px;
-border:1px solid var(--line);
-background:#101833;
-}
-
-.bar{
-flex:1;
-min-width:4px;
-background:var(--accent);
-opacity:.35;
-border-radius:4px 4px 0 0;
-}
-
-.bar.active{
-opacity:1;
-background:var(--warn);
-}
-
 .node{
 fill:#1a2c60;
 stroke:#8db8ff;
@@ -244,7 +225,7 @@ fill:#ffe7a6;
 font-size:11px;
 }
 
-.receipt{
+.receipt,.audit,.preview,.diagnostic{
 font-family:monospace;
 font-size:11px;
 white-space:pre-wrap;
@@ -254,28 +235,6 @@ background:#0c1428;
 border:1px solid var(--line);
 overflow:auto;
 max-height:220px;
-}
-
-.audit{
-font-family:monospace;
-font-size:11px;
-white-space:pre-wrap;
-background:#0c1428;
-padding:8px;
-border-radius:10px;
-border:1px solid var(--line);
-max-height:180px;
-overflow:auto;
-}
-
-.preview{
-padding:10px;
-border-radius:10px;
-background:#0c1428;
-border:1px solid var(--line);
-font-family:monospace;
-font-size:11px;
-white-space:pre-wrap;
 }
 
 footer{
@@ -299,14 +258,14 @@ main{grid-template-columns:1fr;height:auto}
 
 <header>
 
-<h1>HACR Hybrid Observatory — v24.6 Hash Verification & Tamper Visibility</h1>
+<h1>HACR Hybrid Observatory — v24.7 Verification Boundary Hardening</h1>
 
 <div class="sub">
-Integrity-bounded replay verification infrastructure.
+Bounded replay verification infrastructure.
 </div>
 
 <div class="boundary">
-HASH MATCH != TRUTH · INTEGRITY != CORRECTNESS · MISMATCH → HOLD · UNKNOWN → HOLD
+FILE CONSISTENCY != OPERATIONAL VALIDITY · MATCH proves file consistency only · MATCH does not establish operational truth
 </div>
 
 </header>
@@ -315,10 +274,13 @@ HASH MATCH != TRUTH · INTEGRITY != CORRECTNESS · MISMATCH → HOLD · UNKNOWN 
 
 <div class="group">
 <label>Session</label>
-<button onclick="exportReceipt()">Receipt v6</button>
+<button onclick="exportReceipt()">Receipt v7</button>
 <button onclick="exportSession()">Export Session</button>
+<button onclick="exportTamperTest()">Tamper Test</button>
 <button onclick="triggerImport()">Import Session</button>
-<button onclick="applyPreviewRestore()">Apply Restore</button>
+<button id="applyBtn" onclick="applyPreviewRestore()" disabled>
+Apply Restore
+</button>
 <input type="file" id="importFile" hidden>
 </div>
 
@@ -353,10 +315,6 @@ oninput="setFrame(+this.value)"
 <button onclick="step(-1)">◀</button>
 <button onclick="step(1)">▶</button>
 
-<button id="playBtn" onclick="togglePlay()">
-Play
-</button>
-
 </div>
 
 </section>
@@ -368,7 +326,7 @@ Play
 <div class="viewerHead">
 
 <b id="viewerTitle">
-Hash Verification & Tamper Visibility
+Verification Boundary Hardening
 </b>
 
 <span id="stateLine" class="sub">
@@ -390,14 +348,31 @@ frame 0 · HOLD-safe
 <section class="panel">
 
 <div class="panelHead">
-<b>Integrity Verification</b>
+<b>Verification State</b>
 <span id="integrityBadge" class="badge warn">HOLD</span>
 </div>
 
 <div class="panelBody">
 
 <div id="integrityText">
-No imported session validated.
+No imported replay validated.
+</div>
+
+</div>
+
+</section>
+
+<section class="panel">
+
+<div class="panelHead">
+<b>Schema Diagnostics</b>
+<span class="badge">explicit</span>
+</div>
+
+<div class="panelBody">
+
+<div id="diagnosticBox" class="diagnostic">
+No diagnostics yet.
 </div>
 
 </div>
@@ -414,7 +389,7 @@ No imported session validated.
 <div class="panelBody">
 
 <div id="previewBox" class="preview">
-No pending restoration preview.
+No pending preview.
 </div>
 
 </div>
@@ -424,7 +399,7 @@ No pending restoration preview.
 <section class="panel">
 
 <div class="panelHead">
-<b>Receipt</b>
+<b>Receipt Lineage</b>
 <span class="badge">deterministic</span>
 </div>
 
@@ -451,34 +426,13 @@ No pending restoration preview.
 
 </section>
 
-<section class="panel">
-
-<div class="panelHead">
-<b>Observer Annotation</b>
-<span class="badge">local only</span>
-</div>
-
-<div class="panelBody">
-
-<textarea id="annotationInput">
-Observer annotations remain observational only.
-</textarea>
-
-<button onclick="saveAnnotation()">
-Persist Annotation
-</button>
-
-</div>
-
-</section>
-
 </aside>
 
 </main>
 
 <footer>
 
-Integrity verification improves reproducibility visibility only. It does not establish correctness, legitimacy, or truth.
+Replay consistency visibility does not establish operational validity, correctness, legitimacy, or truth.
 
 </footer>
 
@@ -486,23 +440,23 @@ Integrity verification improves reproducibility visibility only. It does not est
 
 const svg=document.getElementById("svg");
 
-const VIEWER_VERSION="v24.6";
-const SCHEMA_VERSION="hacr.session.v2";
+const VIEWER_VERSION="v24.7";
+const SCHEMA_VERSION="hacr.session.v3";
 
 let frame=0;
 let focus="Overview";
 
+let verificationState="HOLD";
+
 let pendingRestore=null;
 
-let verificationState="HOLD";
+let lastDiagnostic="No diagnostics yet.";
 
 let auditEntries=[];
 
-let annotationStore=
-localStorage.getItem("hacr_annotation") ||
-"Observer annotations remain observational only.";
-
-annotationInput.value=annotationStore;
+let currentHash=null;
+let sourceHash=null;
+let priorRestoreHash=null;
 
 const scenario={
 
@@ -532,31 +486,33 @@ edges:[
 
 frames:[
 
-{heat:22,event:"Baseline synchronized topology visible."},
-{heat:35,event:"Replay-linked chronology emerges."},
-{heat:49,event:"Adaptive basin migration visible."},
-{heat:65,event:"Elasticity deformation visible."},
-{heat:83,event:"Continuity intensity concentration visible."},
-{heat:58,event:"Synchronization coherence stabilized."}
+{heat:22},
+{heat:35},
+{heat:49},
+{heat:65},
+{heat:83},
+{heat:58}
 
 ]
 
 };
 
-function render(){
+async function render(){
 
 svg.innerHTML="";
 
 viewerTitle.textContent=
-`Hash Verification & Tamper Visibility · ${focus}`;
+`Verification Boundary Hardening · ${focus}`;
 
 stateLine.textContent=
 `frame ${frame} · ${verificationState}`;
 
-renderReceipt();
-renderAudit();
 renderIntegrity();
 renderPreview();
+renderAudit();
+renderDiagnostics();
+
+await renderReceipt();
 
 const f=scenario.frames[frame];
 
@@ -620,7 +576,7 @@ x:500,
 y:590,
 class:"annotation"
 },
-"HASH MATCH != TRUTH · INTEGRITY != CORRECTNESS"
+"FILE CONSISTENCY != OPERATIONAL VALIDITY"
 ));
 
 }
@@ -637,13 +593,9 @@ return true;
 const map={
 
 Topology:["topology"],
-
 Replay:["replay","timeline"],
-
 Drift:["delta","drift","field"],
-
 Heatmap:["heat","field","delta"],
-
 Timeline:["timeline","replay","heat"]
 
 };
@@ -652,32 +604,10 @@ return (map[focus]||[]).includes(id);
 
 }
 
-function renderReceipt(){
-
-receiptBox.textContent=
-JSON.stringify({
-
-viewer_version:VIEWER_VERSION,
-schema_version:SCHEMA_VERSION,
-frame,
-focus,
-verification_state:verificationState,
-pending_restore:!!pendingRestore,
-observer_only:true,
-
-non_claims:[
-"integrity verification != correctness certification",
-"hash match != truth",
-"restoration != adjudication"
-]
-
-},null,2);
-
-}
-
 function renderIntegrity(){
 
-integrityBadge.textContent=verificationState;
+integrityBadge.textContent=
+verificationState;
 
 integrityBadge.className=
 `badge ${
@@ -696,29 +626,38 @@ Verification state:
 <br><br>
 
 Boundary:
-integrity verification != correctness certification
+MATCH proves file consistency only.
 
 <br><br>
 
-Failure behavior:
-UNKNOWN → HOLD
+Restore gate:
+${verificationState==="MATCH"
+?"RESTORE ELIGIBLE"
+:"RESTORE BLOCKED"}
 `;
+
+applyBtn.disabled=
+verificationState!=="MATCH";
 
 }
 
 function renderPreview(){
 
-if(!pendingRestore){
-
 previewBox.textContent=
-"No pending restoration preview.";
-
-return;
+pendingRestore
+?JSON.stringify(
+pendingRestore.preview,
+null,
+2
+)
+:"No pending preview.";
 
 }
 
-previewBox.textContent=
-JSON.stringify(pendingRestore.preview,null,2);
+function renderDiagnostics(){
+
+diagnosticBox.textContent=
+lastDiagnostic;
 
 }
 
@@ -726,7 +665,47 @@ function renderAudit(){
 
 auditTrail.textContent=
 auditEntries.join("\n\n") ||
-"No restoration attempts yet.";
+"No restoration attempts.";
+
+}
+
+async function renderReceipt(){
+
+const payload={
+
+viewer_version:VIEWER_VERSION,
+schema_version:SCHEMA_VERSION,
+
+frame,
+focus,
+
+verification_state:
+verificationState,
+
+current_hash:
+currentHash,
+
+source_hash:
+sourceHash,
+
+prior_restore_hash:
+priorRestoreHash,
+
+observer_only:true,
+
+non_claims:[
+
+"file consistency != operational validity",
+"integrity verification != correctness certification",
+"hash match != truth",
+"restoration != adjudication"
+
+]
+
+};
+
+receiptBox.textContent=
+JSON.stringify(payload,null,2);
 
 }
 
@@ -764,34 +743,6 @@ render();
 
 }
 
-function togglePlay(){
-
-playing=!playing;
-
-playBtn.textContent=
-playing?"Pause":"Play";
-
-if(playing){
-
-timer=setInterval(()=>{
-
-frame=
-(frame+1)%scenario.frames.length;
-
-frameSlider.value=frame;
-
-render();
-
-},950);
-
-}else{
-
-clearInterval(timer);
-
-}
-
-}
-
 async function exportSession(){
 
 const payload={
@@ -802,15 +753,15 @@ viewer_version:VIEWER_VERSION,
 frame,
 focus,
 
-annotation:
-annotationInput.value,
-
 observer_only:true,
 
 non_claims:[
+
+"file consistency != operational validity",
 "integrity verification != correctness certification",
 "hash match != truth",
 "restoration != adjudication"
+
 ]
 
 };
@@ -820,8 +771,13 @@ await digest(
 JSON.stringify(payload)
 );
 
+currentHash=
+payload.session_hash;
+
+render();
+
 download(
-"integrity_verified_session.json",
+"verification_hardened_session.json",
 JSON.stringify(payload,null,2)
 );
 
@@ -830,8 +786,35 @@ JSON.stringify(payload,null,2)
 async function exportReceipt(){
 
 download(
-"observability_receipt_v6.json",
+"verification_receipt_v7.json",
 receiptBox.textContent
+);
+
+}
+
+async function exportTamperTest(){
+
+const payload={
+
+schema_version:SCHEMA_VERSION,
+viewer_version:VIEWER_VERSION,
+
+frame:999,
+
+focus:"CORRUPTED",
+
+observer_only:false,
+
+non_claims:[]
+
+};
+
+payload.session_hash=
+"tampered";
+
+download(
+"tamper_test_session.json",
+JSON.stringify(payload,null,2)
 );
 
 }
@@ -860,20 +843,32 @@ payload=JSON.parse(raw);
 
 }catch(err){
 
-hold(
+return hold(
 "Malformed JSON import."
 );
-
-return;
 
 }
 
 const validation=
 await validatePayload(payload);
 
+verificationState=
+validation.state;
+
+lastDiagnostic=
+validation.reason;
+
+auditEntries.unshift(
+`${new Date().toISOString()}
+${validation.state}
+${validation.reason}`
+);
+
 if(!validation.ok){
 
-hold(validation.reason);
+pendingRestore=null;
+
+render();
 
 return;
 
@@ -887,23 +882,16 @@ preview:{
 
 frame:payload.frame,
 focus:payload.focus,
-viewer_version:payload.viewer_version,
 schema_version:payload.schema_version,
-hash_state:validation.hash_state
+viewer_version:payload.viewer_version,
+verification_state:validation.state
 
 }
 
 };
 
-verificationState=
-validation.hash_state;
-
-auditEntries.unshift(
-`${new Date().toISOString()}
-PREVIEW
-${validation.hash_state}
-${validation.reason}`
-);
+sourceHash=
+payload.session_hash;
 
 render();
 
@@ -917,8 +905,8 @@ p.schema_version!==SCHEMA_VERSION
 
 return{
 ok:false,
-reason:"Schema mismatch.",
-hash_state:"HOLD"
+state:"HOLD",
+reason:"Schema mismatch detected."
 };
 
 }
@@ -929,20 +917,80 @@ p.observer_only!==true
 
 return{
 ok:false,
-reason:"observer_only missing.",
-hash_state:"HOLD"
+state:"HOLD",
+reason:"observer_only missing or false."
 };
 
 }
 
 if(
-!Number.isInteger(p.frame)
+!Number.isInteger(p.frame) ||
+p.frame<0 ||
+p.frame>=scenario.frames.length
 ){
 
 return{
 ok:false,
-reason:"Invalid frame.",
-hash_state:"HOLD"
+state:"HOLD",
+reason:"Invalid frame detected."
+};
+
+}
+
+if(
+![
+"Overview",
+"Topology",
+"Replay",
+"Drift",
+"Heatmap",
+"Timeline",
+"Synchronized"
+].includes(p.focus)
+){
+
+return{
+ok:false,
+state:"HOLD",
+reason:"Invalid focus detected."
+};
+
+}
+
+if(
+!Array.isArray(p.non_claims)
+){
+
+return{
+ok:false,
+state:"HOLD",
+reason:"Missing non_claims."
+};
+
+}
+
+if(
+!p.non_claims.includes(
+"restoration != adjudication"
+)
+){
+
+return{
+ok:false,
+state:"HOLD",
+reason:"Required non-claim missing."
+};
+
+}
+
+if(
+!p.session_hash
+){
+
+return{
+ok:false,
+state:"HOLD",
+reason:"Missing session hash."
 };
 
 }
@@ -956,30 +1004,22 @@ await digest(
 JSON.stringify(clone)
 );
 
-if(!p.session_hash){
+if(
+computed!==p.session_hash
+){
 
 return{
 ok:false,
-reason:"Missing session hash.",
-hash_state:"HOLD"
-};
-
-}
-
-if(computed!==p.session_hash){
-
-return{
-ok:false,
-reason:"Hash mismatch detected.",
-hash_state:"MISMATCH"
+state:"MISMATCH",
+reason:"Hash mismatch detected."
 };
 
 }
 
 return{
 ok:true,
-reason:"Hash verification matched.",
-hash_state:"MATCH"
+state:"MATCH",
+reason:"Hash verified. File consistency confirmed only."
 };
 
 }
@@ -987,19 +1027,21 @@ hash_state:"MATCH"
 function applyPreviewRestore(){
 
 if(
-!pendingRestore ||
-verificationState!=="MATCH"
+verificationState!=="MATCH" ||
+!pendingRestore
 ){
 
-hold(
-"Restore blocked. Verification not MATCH."
+return hold(
+"Restore blocked. Verification state not MATCH."
 );
-
-return;
 
 }
 
 const p=pendingRestore.payload;
+
+priorRestoreHash=currentHash;
+
+currentHash=p.session_hash;
 
 frame=p.frame;
 focus=p.focus;
@@ -1007,18 +1049,11 @@ focus=p.focus;
 focusSelect.value=focus;
 frameSlider.value=frame;
 
-if(p.annotation){
-
-annotationInput.value=
-p.annotation;
-
-}
-
 auditEntries.unshift(
 `${new Date().toISOString()}
 RESTORE_APPLIED
 MATCH
-Deterministic replay restored.`
+Replay restored within bounded verification semantics.`
 );
 
 pendingRestore=null;
@@ -1026,7 +1061,7 @@ pendingRestore=null;
 render();
 
 alert(
-"Integrity-bounded replay restored."
+"Replay restored within verification boundary."
 );
 
 }
@@ -1037,33 +1072,18 @@ verificationState="HOLD";
 
 pendingRestore=null;
 
-auditEntries.unshift(
-`${new Date().toISOString()}
-HOLD
-${reason}`
-);
+lastDiagnostic=
+`${reason}
+
+UNKNOWN → HOLD
+NO MATCH → NO RESTORE`;
 
 render();
 
 alert(
 `${reason}
+
 UNKNOWN → HOLD`
-);
-
-}
-
-function saveAnnotation(){
-
-annotationStore=
-annotationInput.value;
-
-localStorage.setItem(
-"hacr_annotation",
-annotationStore
-);
-
-alert(
-"Observer annotation persisted locally."
 );
 
 }
@@ -1083,20 +1103,6 @@ return Array
 .from(new Uint8Array(hash))
 .map(b=>b.toString(16).padStart(2,"0"))
 .join("");
-
-}
-
-function openSvg(){
-
-const blob=new Blob(
-[svg.outerHTML],
-{type:"image/svg+xml"}
-);
-
-window.open(
-URL.createObjectURL(blob),
-"_blank"
-);
 
 }
 
