@@ -1,0 +1,164 @@
+{
+  "schema_version": "v1.0",
+  "topology_type": "bounded_semantic_observability_topology",
+  "observer_posture": "observer_only",
+  "authority_posture": "non_authoritative",
+  "runtime_semantics": {
+    "bounded": true,
+    "deterministic": true,
+    "replay_local": true,
+    "synchronization_local": true,
+    "externally_reviewable": true,
+    "unknown_hold": true
+  },
+  "repository_regions": [
+    {
+      "id": "boundary_layer",
+      "label": "Boundary Layer",
+      "path": "governance/boundaries/",
+      "region_type": "semantic_containment",
+      "preserves": [
+        "boundedness",
+        "uncertainty",
+        "observer_limitation",
+        "semantic_restraint"
+      ],
+      "rejects": [
+        "authority_inheritance",
+        "governance_drift",
+        "certainty_extraction",
+        "convergence_authority"
+      ]
+    },
+    {
+      "id": "runtime_reduction_layer",
+      "label": "Runtime Reduction Layer",
+      "path": "governance/runtime_reductions/",
+      "region_type": "deterministic_compression",
+      "preserves": [
+        "runtime_invariants",
+        "replay_readability",
+        "hold_locality"
+      ],
+      "rejects": [
+        "runtime_inflation",
+        "semantic_fragmentation"
+      ]
+    },
+    {
+      "id": "reviewer_traversability_layer",
+      "label": "Reviewer Traversability Layer",
+      "path": "governance/reviewer_traversability/",
+      "region_type": "navigation_infrastructure",
+      "preserves": [
+        "reviewer_survivability",
+        "coherence",
+        "readability"
+      ],
+      "rejects": [
+        "reviewer_overload",
+        "topology_opacity"
+      ]
+    },
+    {
+      "id": "semantic_topology_layer",
+      "label": "Semantic Topology Layer",
+      "path": "governance/semantic_topology/",
+      "region_type": "self_observability",
+      "preserves": [
+        "semantic_visibility",
+        "topology_readability",
+        "pressure_awareness"
+      ],
+      "rejects": [
+        "semantic_totalization",
+        "interpretive_authority"
+      ]
+    },
+    {
+      "id": "verification_layer",
+      "label": "Verification Layer",
+      "path": "governance/verification/",
+      "region_type": "bounded_verification",
+      "preserves": [
+        "verification_visibility",
+        "deterministic_reviewability"
+      ],
+      "rejects": [
+        "verification_as_truth",
+        "verification_as_authority"
+      ]
+    }
+  ],
+  "semantic_corridors": [
+    {
+      "id": "observability_to_authority",
+      "source": "observability",
+      "target": "authority",
+      "risk_type": "authority_inheritance",
+      "interrupted_by": [
+        "OBSERVER_BOUNDARY",
+        "NON_INHERITANCE_BOUNDARY",
+        "BOUNDARY_HUMILITY"
+      ]
+    },
+    {
+      "id": "replay_to_legitimacy",
+      "source": "replay",
+      "target": "legitimacy",
+      "risk_type": "semantic_legitimacy_transfer",
+      "interrupted_by": [
+        "REALITY_BOUNDARY",
+        "TRUST_BOUNDARY",
+        "EVIDENCE_BOUNDARY"
+      ]
+    },
+    {
+      "id": "synchronization_to_truth",
+      "source": "synchronization",
+      "target": "truth",
+      "risk_type": "certainty_inheritance",
+      "interrupted_by": [
+        "ONTOLOGY_BOUNDARY",
+        "NON_CONVERGENCE_BOUNDARY",
+        "NON_RESOLUTION_BOUNDARY"
+      ]
+    },
+    {
+      "id": "continuity_to_governance",
+      "source": "continuity",
+      "target": "governance",
+      "risk_type": "governance_semantic_drift",
+      "interrupted_by": [
+        "CONTINUITY_BOUNDARY",
+        "TERMINATION_BOUNDARY",
+        "NON_OWNERSHIP_BOUNDARY"
+      ]
+    }
+  ],
+  "render_targets": [
+    "semantic_geography",
+    "pressure_corridors",
+    "semantic_density_heatmaps",
+    "boundary_shells",
+    "reviewer_traversal_maps",
+    "continuity_corridors",
+    "synchronization_topology"
+  ],
+  "render_safety_constraints": {
+    "no_governance_visualization": true,
+    "no_command_center_semantics": true,
+    "no_operational_authority": true,
+    "no_predictive_legitimacy": true,
+    "observer_only_visibility": true
+  },
+  "canonical_invariants": [
+    "OBSERVABILITY != AUTHORITY",
+    "REPLAY != REALITY",
+    "CONTINUITY != GOVERNANCE",
+    "SYNCHRONIZATION != TRUTH",
+    "PERSISTENCE != OWNERSHIP",
+    "STABILIZATION != LEGITIMACY",
+    "UNKNOWN -> HOLD"
+  ]
+}
