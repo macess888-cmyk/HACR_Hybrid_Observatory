@@ -3,325 +3,55 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HACR Hybrid Observatory — v24.4 Deterministic Session Restoration</title>
+<title>HACR Hybrid Observatory — v24.5 Restoration Integrity Hardening</title>
 
 <style>
 :root{
---bg:#07101d;
---panel:#101933;
---panel2:#16254c;
---line:#33466f;
---text:#eef3ff;
---muted:#a8b8db;
---accent:#8db8ff;
---warn:#ffd27a;
---hot:#ff9b9b;
---ok:#9fffc4;
+--bg:#07101d;--panel:#101933;--panel2:#16254c;--line:#33466f;
+--text:#eef3ff;--muted:#a8b8db;--accent:#8db8ff;--warn:#ffd27a;
+--hot:#ff9b9b;--ok:#9fffc4;
 }
-
 *{box-sizing:border-box}
-
-body{
-margin:0;
-background:var(--bg);
-color:var(--text);
-font-family:Arial,Helvetica,sans-serif;
-overflow:hidden;
-}
-
-header{
-padding:16px 18px;
-border-bottom:1px solid var(--line);
-background:#0d1734;
-position:sticky;
-top:0;
-z-index:50;
-}
-
-h1{
-margin:0 0 5px;
-font-size:22px;
-}
-
-.sub{
-font-size:13px;
-color:var(--muted);
-}
-
-.boundary{
-margin-top:10px;
-padding:8px 10px;
-border-radius:10px;
-border:1px solid var(--line);
-background:#122043;
-color:var(--warn);
-font-size:11px;
-font-weight:bold;
-letter-spacing:.05em;
-}
-
-.toolbar{
-display:flex;
-flex-wrap:wrap;
-gap:8px;
-padding:10px 16px;
-border-bottom:1px solid var(--line);
-background:#0f1836;
-}
-
-.group{
-display:flex;
-flex-wrap:wrap;
-gap:6px;
-align-items:center;
-padding:8px;
-border:1px solid var(--line);
-border-radius:12px;
-background:var(--panel);
-}
-
-.group label{
-font-size:12px;
-color:var(--muted);
-}
-
-button,select,input,textarea{
-background:var(--panel2);
-color:var(--text);
-border:1px solid var(--line);
-border-radius:8px;
-padding:7px 9px;
-font-size:12px;
-}
-
-textarea{
-width:100%;
-min-height:90px;
-resize:vertical;
-}
-
-button:hover{
-border-color:var(--accent);
-cursor:pointer;
-}
-
-button.active{
-background:#274782;
-border-color:var(--accent);
-}
-
-main{
-display:grid;
-grid-template-columns:1.35fr .65fr;
-gap:12px;
-padding:12px 16px;
-height:calc(100vh - 165px);
-}
-
-.viewer{
-background:var(--panel);
-border:1px solid var(--line);
-border-radius:14px;
-overflow:hidden;
-display:flex;
-flex-direction:column;
-}
-
-.viewerHead{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:10px 12px;
-border-bottom:1px solid var(--line);
-background:#101c3f;
-}
-
-.viewerBody{
-flex:1;
-position:relative;
-overflow:hidden;
-}
-
-svg{
-width:100%;
-height:100%;
-display:block;
-background:
-radial-gradient(circle at 50% 45%,#182754,#07101d 70%);
-}
-
-.side{
-display:flex;
-flex-direction:column;
-gap:12px;
-overflow:auto;
-}
-
-.panel{
-background:var(--panel);
-border:1px solid var(--line);
-border-radius:14px;
-overflow:hidden;
-}
-
-.panelHead{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:10px 12px;
-border-bottom:1px solid var(--line);
-background:#101c3f;
-}
-
-.panelBody{
-padding:12px;
-font-size:13px;
-line-height:1.45;
-color:var(--muted);
-}
-
-.badge{
-padding:4px 8px;
-border-radius:999px;
-border:1px solid var(--line);
-font-size:11px;
-color:var(--muted);
-}
-
-.timeline{
-display:flex;
-align-items:end;
-gap:4px;
-height:78px;
-padding:8px;
-border-radius:10px;
-border:1px solid var(--line);
-background:#101833;
-}
-
-.bar{
-flex:1;
-min-width:4px;
-background:var(--accent);
-opacity:.35;
-border-radius:4px 4px 0 0;
-}
-
-.bar.active{
-opacity:1;
-background:var(--warn);
-}
-
-.node{
-fill:#1a2c60;
-stroke:#8db8ff;
-stroke-width:2;
-}
-
-.node.hot{
-fill:#5a2a38;
-stroke:#ff9b9b;
-}
-
-.node.ok{
-fill:#1f4f3c;
-stroke:#9fffc4;
-}
-
-.edge{
-stroke:#6475b4;
-stroke-width:2;
-opacity:.55;
-}
-
-.label{
-fill:#eef3ff;
-font-size:12px;
-text-anchor:middle;
-pointer-events:none;
-}
-
-.heat{
-fill:#ff9b9b;
-opacity:.12;
-}
-
-.basin{
-fill:none;
-stroke:#9fffc4;
-stroke-width:2;
-stroke-dasharray:7 6;
-opacity:.45;
-}
-
-.annotation{
-fill:#ffe7a6;
-font-size:11px;
-}
-
-.receipt{
-font-family:monospace;
-font-size:11px;
-white-space:pre-wrap;
-padding:10px;
-border-radius:10px;
-background:#0c1428;
-border:1px solid var(--line);
-overflow:auto;
-}
-
-footer{
-padding:10px 16px;
-border-top:1px solid var(--line);
-background:#0d1734;
-font-size:12px;
-color:var(--muted);
-}
-
-@media(max-width:1000px){
-
-body{
-overflow:auto;
-}
-
-main{
-grid-template-columns:1fr;
-height:auto;
-}
-
-.viewerBody{
-height:520px;
-}
-
-.group{
-width:100%;
-}
-
-}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;overflow:hidden}
+header{padding:16px 18px;border-bottom:1px solid var(--line);background:#0d1734;position:sticky;top:0;z-index:50}
+h1{margin:0 0 5px;font-size:22px}.sub{font-size:13px;color:var(--muted)}
+.boundary{margin-top:10px;padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:#122043;color:var(--warn);font-size:11px;font-weight:bold;letter-spacing:.05em}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;padding:10px 16px;border-bottom:1px solid var(--line);background:#0f1836}
+.group{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.group label{font-size:12px;color:var(--muted)}
+button,select,input,textarea{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-size:12px}
+textarea{width:100%;min-height:90px;resize:vertical}
+button:hover{border-color:var(--accent);cursor:pointer}button.active{background:#274782;border-color:var(--accent)}
+main{display:grid;grid-template-columns:1.35fr .65fr;gap:12px;padding:12px 16px;height:calc(100vh - 165px)}
+.viewer,.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.viewer{display:flex;flex-direction:column}.viewerHead,.panelHead{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line);background:#101c3f}
+.viewerBody{flex:1;position:relative;overflow:hidden}
+svg{width:100%;height:100%;display:block;background:radial-gradient(circle at 50% 45%,#182754,#07101d 70%)}
+.side{display:flex;flex-direction:column;gap:12px;overflow:auto}.panelBody{padding:12px;font-size:13px;line-height:1.45;color:var(--muted)}
+.badge{padding:4px 8px;border-radius:999px;border:1px solid var(--line);font-size:11px;color:var(--muted)}
+.badge.ok{color:var(--ok)}.badge.hold{color:var(--warn)}.badge.fail{color:var(--hot)}
+.timeline{display:flex;align-items:end;gap:4px;height:78px;padding:8px;border-radius:10px;border:1px solid var(--line);background:#101833}
+.bar{flex:1;min-width:4px;background:var(--accent);opacity:.35;border-radius:4px 4px 0 0}.bar.active{opacity:1;background:var(--warn)}
+.node{fill:#1a2c60;stroke:#8db8ff;stroke-width:2}.node.hot{fill:#5a2a38;stroke:#ff9b9b}.node.ok{fill:#1f4f3c;stroke:#9fffc4}
+.edge{stroke:#6475b4;stroke-width:2;opacity:.55}.label{fill:#eef3ff;font-size:12px;text-anchor:middle;pointer-events:none}
+.heat{fill:#ff9b9b;opacity:.12}.basin{fill:none;stroke:#9fffc4;stroke-width:2;stroke-dasharray:7 6;opacity:.45}
+.annotation{fill:#ffe7a6;font-size:11px}.receipt{font-family:monospace;font-size:11px;white-space:pre-wrap;padding:10px;border-radius:10px;background:#0c1428;border:1px solid var(--line);overflow:auto}
+footer{padding:10px 16px;border-top:1px solid var(--line);background:#0d1734;font-size:12px;color:var(--muted)}
+@media(max-width:1000px){body{overflow:auto}main{grid-template-columns:1fr;height:auto}.viewerBody{height:520px}.group{width:100%}}
 </style>
 </head>
 
 <body>
-
 <header>
-
-<h1>HACR Hybrid Observatory — v24.4 Deterministic Session Restoration</h1>
-
-<div class="sub">
-Deterministic replay restoration infrastructure.
-</div>
-
-<div class="boundary">
-OBSERVABILITY ONLY · RESTORATION != ADJUDICATION · REPRODUCIBILITY != AUTHORITY · NON-GOVERNING
-</div>
-
+<h1>HACR Hybrid Observatory — v24.5 Restoration Integrity Hardening</h1>
+<div class="sub">Integrity-bounded deterministic restoration infrastructure.</div>
+<div class="boundary">OBSERVABILITY ONLY · UNKNOWN → HOLD · RESTORATION INTEGRITY != OPERATIONAL TRUTH · RESTORATION != ADJUDICATION</div>
 </header>
 
 <section class="toolbar">
-
 <div class="group">
 <label>Session</label>
-<button onclick="exportReceipt()">Receipt v4</button>
+<button onclick="exportReceipt()">Receipt v5</button>
 <button onclick="exportSession()">Export Session</button>
 <button onclick="triggerImport()">Import Session</button>
 <button onclick="openSvg()">Open SVG</button>
@@ -330,184 +60,101 @@ OBSERVABILITY ONLY · RESTORATION != ADJUDICATION · REPRODUCIBILITY != AUTHORIT
 
 <div class="group">
 <label>Focus</label>
-
 <select id="focusSelect" onchange="setFocus(this.value)">
-<option>Overview</option>
-<option>Topology</option>
-<option>Replay</option>
-<option>Drift</option>
-<option>Heatmap</option>
-<option>Timeline</option>
-<option>Synchronized</option>
+<option>Overview</option><option>Topology</option><option>Replay</option><option>Drift</option><option>Heatmap</option><option>Timeline</option><option>Synchronized</option>
 </select>
-
 </div>
 
 <div class="group">
-
 <label>Replay</label>
-
-<input
-type="range"
-min="0"
-max="5"
-value="0"
-id="frameSlider"
-oninput="setFrame(+this.value)"
->
-
+<input type="range" min="0" max="5" value="0" id="frameSlider" oninput="setFrame(+this.value)">
 <button onclick="step(-1)">◀</button>
 <button onclick="step(1)">▶</button>
-
-<button id="playBtn" onclick="togglePlay()">
-Play
-</button>
-
+<button id="playBtn" onclick="togglePlay()">Play</button>
 </div>
 
 <div class="group">
-
 <label>Bookmarks</label>
-
 <button onclick="saveBookmark()">Save</button>
 <button onclick="loadBookmark()">Restore</button>
-
 </div>
-
 </section>
 
 <main>
-
 <section class="viewer">
-
 <div class="viewerHead">
-
-<b id="viewerTitle">
-Deterministic Session Restoration
-</b>
-
-<span id="stateLine" class="sub">
-frame 0 · synchronized
-</span>
-
+<b id="viewerTitle">Restoration Integrity Hardening</b>
+<span id="stateLine" class="sub">frame 0 · HOLD-safe</span>
 </div>
-
 <div class="viewerBody">
-
 <svg id="svg" viewBox="0 0 1000 620"></svg>
-
 </div>
-
 </section>
 
 <aside class="side">
-
 <section class="panel">
-
 <div class="panelHead">
-<b>Restoration Receipt</b>
-<span class="badge">deterministic</span>
+<b>Restoration Integrity</b>
+<span id="integrityBadge" class="badge hold">HOLD</span>
 </div>
-
 <div class="panelBody">
-
-<div id="receiptBox" class="receipt"></div>
-
+<div id="integrityText">No imported session restored. Current state is local runtime visibility only.</div>
 </div>
-
 </section>
 
 <section class="panel">
-
-<div class="panelHead">
-<b>Observer Annotation</b>
-<span class="badge">local only</span>
-</div>
-
-<div class="panelBody">
-
-<textarea id="annotationInput">
-Observer annotations remain observational only.
-</textarea>
-
-<button onclick="saveAnnotation()">
-Persist Annotation
-</button>
-
-</div>
-
+<div class="panelHead"><b>Receipt</b><span class="badge">deterministic</span></div>
+<div class="panelBody"><div id="receiptBox" class="receipt"></div></div>
 </section>
 
 <section class="panel">
-
-<div class="panelHead">
-<b>Timeline</b>
-<span class="badge">non-causal chronology</span>
-</div>
-
+<div class="panelHead"><b>Observer Annotation</b><span class="badge">local only</span></div>
 <div class="panelBody">
+<textarea id="annotationInput">Observer annotations remain observational only.</textarea>
+<button onclick="saveAnnotation()">Persist Annotation</button>
+</div>
+</section>
 
+<section class="panel">
+<div class="panelHead"><b>Timeline</b><span class="badge">non-causal chronology</span></div>
+<div class="panelBody">
 <div class="timeline" id="timeline"></div>
-
 <p id="timelineText"></p>
-
 </div>
-
 </section>
 
 <section class="panel">
-
-<div class="panelHead">
-<b>NON-CLAIMS</b>
-<span class="badge">containment</span>
-</div>
-
+<div class="panelHead"><b>NON-CLAIMS</b><span class="badge">containment</span></div>
 <div class="panelBody">
-
-<p>
-<b>restoration != adjudication</b>
-</p>
-
-<p>
-Replay restoration does not establish operational truth, governance legitimacy, causality certification, or execution authority.
-</p>
-
+<p><b>restoration integrity != operational truth</b></p>
+<p>Validated restoration only confirms schema-bounded replay visibility. It does not certify correctness, causality, governance legitimacy, recoverability, or execution authority.</p>
 </div>
-
 </section>
-
 </aside>
-
 </main>
 
-<footer>
-
-Persistent replay restoration remains observational only.
-
-</footer>
+<footer>Invalid or unknown restoration input fails closed: UNKNOWN → HOLD.</footer>
 
 <script>
-
 const svg=document.getElementById("svg");
+
+const VIEWER_VERSION="v24.5";
+const SCHEMA_VERSION="hacr.session.v1";
 
 let frame=0;
 let playing=false;
 let timer=null;
 let focus="Overview";
-
 let bookmark=null;
+let restorationStatus="HOLD";
+let lastSessionHash=null;
+let lastRestoreSummary="No imported session restored. Current state is local runtime visibility only.";
 
-let annotationStore=
-localStorage.getItem("hacr_annotation") ||
-"Observer annotations remain observational only.";
-
-document.getElementById("annotationInput").value=
-annotationStore;
+let annotationStore=localStorage.getItem("hacr_annotation") || "Observer annotations remain observational only.";
+annotationInput.value=annotationStore;
 
 const scenario={
-
 nodes:[
-
 {id:"topology",x:150,y:140,label:"Topology",type:"ok"},
 {id:"replay",x:345,y:115,label:"Replay",type:"ok"},
 {id:"delta",x:555,y:145,label:"Delta",type:"ok"},
@@ -515,485 +162,263 @@ nodes:[
 {id:"field",x:725,y:370,label:"Field Dynamics",type:"hot"},
 {id:"heat",x:510,y:462,label:"Heatmap",type:"hot"},
 {id:"timeline",x:280,y:438,label:"Timeline",type:"ok"}
-
 ],
-
-edges:[
-
-["topology","replay"],
-["replay","delta"],
-["delta","drift"],
-["drift","field"],
-["field","heat"],
-["heat","timeline"],
-["replay","timeline"]
-
-],
-
+edges:[["topology","replay"],["replay","delta"],["delta","drift"],["drift","field"],["field","heat"],["heat","timeline"],["replay","timeline"]],
 frames:[
-
-{
-heat:22,
-event:"Baseline synchronized topology visible."
-},
-
-{
-heat:35,
-event:"Replay-linked chronology emerges."
-},
-
-{
-heat:49,
-event:"Adaptive basin migration visible."
-},
-
-{
-heat:65,
-event:"Elasticity deformation visible."
-},
-
-{
-heat:83,
-event:"Continuity intensity concentration visible."
-},
-
-{
-heat:58,
-event:"Synchronization coherence stabilized."
-}
-
+{heat:22,event:"Baseline synchronized topology visible."},
+{heat:35,event:"Replay-linked chronology emerges."},
+{heat:49,event:"Adaptive basin migration visible."},
+{heat:65,event:"Elasticity deformation visible."},
+{heat:83,event:"Continuity intensity concentration visible."},
+{heat:58,event:"Synchronization coherence stabilized."}
 ]
-
 };
 
 function render(){
-
 svg.innerHTML="";
-
 const f=scenario.frames[frame];
-
-viewerTitle.textContent=
-`Deterministic Session Restoration · ${focus}`;
-
-stateLine.textContent=
-`frame ${frame} · synchronized`;
-
+viewerTitle.textContent=`Restoration Integrity Hardening · ${focus}`;
+stateLine.textContent=`frame ${frame} · ${restorationStatus}`;
 timelineText.textContent=f.event;
-
 renderTimeline();
+renderIntegrity();
 renderReceipt();
 
 const g=make("g");
-
 svg.appendChild(g);
 
-g.appendChild(make("circle",{
-cx:530,
-cy:315,
-r:70+(f.heat*2),
-class:"heat"
-}));
-
-g.appendChild(make("ellipse",{
-cx:515,
-cy:310,
-rx:250-(frame*12),
-ry:160-(frame*7),
-class:"basin"
-}));
+g.appendChild(make("circle",{cx:530,cy:315,r:70+(f.heat*2),class:"heat"}));
+g.appendChild(make("ellipse",{cx:515,cy:310,rx:250-(frame*12),ry:160-(frame*7),class:"basin"}));
 
 for(const [a,b] of scenario.edges){
-
 const n1=scenario.nodes.find(n=>n.id===a);
 const n2=scenario.nodes.find(n=>n.id===b);
-
-if(!visible(n1.id)||!visible(n2.id)) continue;
-
-g.appendChild(make("line",{
-x1:n1.x,
-y1:n1.y,
-x2:n2.x,
-y2:n2.y,
-class:"edge"
-}));
-
+if(!visible(n1.id)||!visible(n2.id))continue;
+g.appendChild(make("line",{x1:n1.x,y1:n1.y,x2:n2.x,y2:n2.y,class:"edge"}));
 }
 
 for(const n of scenario.nodes){
-
-if(!visible(n.id)) continue;
-
-g.appendChild(make("circle",{
-cx:n.x,
-cy:n.y,
-r:42,
-class:`node ${n.type}`
-}));
-
-g.appendChild(make("text",{
-x:n.x,
-y:n.y+4,
-class:"label"
-},n.label));
-
+if(!visible(n.id))continue;
+g.appendChild(make("circle",{cx:n.x,cy:n.y,r:42,class:`node ${n.type}`}));
+g.appendChild(make("text",{x:n.x,y:n.y+4,class:"label"},n.label));
 }
 
-g.appendChild(make("text",{
-x:500,
-y:590,
-class:"annotation"
-},
-"RESTORATION != ADJUDICATION"
-));
-
+g.appendChild(make("text",{x:500,y:590,class:"annotation"},"RESTORATION INTEGRITY != OPERATIONAL TRUTH"));
 }
 
 function visible(id){
-
-if(
-focus==="Overview" ||
-focus==="Synchronized"
-){
-return true;
-}
-
+if(focus==="Overview"||focus==="Synchronized")return true;
 const map={
-
 Topology:["topology"],
-
 Replay:["replay","timeline"],
-
 Drift:["delta","drift","field"],
-
 Heatmap:["heat","field","delta"],
-
 Timeline:["timeline","replay","heat"]
-
 };
-
 return (map[focus]||[]).includes(id);
-
 }
 
 function renderTimeline(){
-
 timeline.innerHTML="";
-
 scenario.frames.forEach((f,i)=>{
-
 const b=document.createElement("div");
-
 b.className=`bar ${i===frame?'active':''}`;
-
 b.style.height=Math.max(10,f.heat)+"%";
-
 b.onclick=()=>setFrame(i);
-
 timeline.appendChild(b);
-
 });
-
 }
 
-function renderReceipt(){
-
-const payload={
-
-version:"v24.4",
-
+function currentReceiptPayload(){
+return{
+viewer_version:VIEWER_VERSION,
+schema_version:SCHEMA_VERSION,
 timestamp:new Date().toISOString(),
-
 frame,
 focus,
-
-annotation_present:
-annotationInput.value.length>0,
-
+bookmark,
+annotation_present:annotationInput.value.length>0,
+restoration_status:restorationStatus,
+last_session_hash:lastSessionHash,
 deterministic:true,
 observer_only:true,
-
 non_claims:[
+"restoration integrity != operational truth",
 "restoration != adjudication",
 "reproducibility != authority",
 "no governance",
-"no operational certification"
+"no operational certification",
+"no causality proof"
 ]
-
 };
-
-receiptBox.textContent=
-JSON.stringify(payload,null,2);
-
 }
 
-function setFrame(n){
-
-frame=n;
-
-frameSlider.value=n;
-
-render();
-
+function renderReceipt(){
+receiptBox.textContent=JSON.stringify(currentReceiptPayload(),null,2);
 }
 
-function step(n){
-
-frame=Math.max(
-0,
-Math.min(
-scenario.frames.length-1,
-frame+n
-)
-);
-
-frameSlider.value=frame;
-
-render();
-
+function renderIntegrity(){
+integrityBadge.textContent=restorationStatus;
+integrityBadge.className="badge "+(restorationStatus==="RESTORED"?"ok":restorationStatus==="HOLD"?"hold":"fail");
+integrityText.innerHTML=`
+${lastRestoreSummary}
+<br><br>
+Session hash:
+${lastSessionHash||"none"}
+<br><br>
+Boundary:
+restoration integrity != operational truth
+`;
 }
+
+function setFrame(n){frame=n;frameSlider.value=n;render()}
+function step(n){setFrame(Math.max(0,Math.min(scenario.frames.length-1,frame+n)))}
 
 function togglePlay(){
-
 playing=!playing;
-
-playBtn.textContent=
-playing?"Pause":"Play";
-
+playBtn.textContent=playing?"Pause":"Play";
 if(playing){
-
-timer=setInterval(()=>{
-
-frame=
-(frame+1)%scenario.frames.length;
-
-frameSlider.value=frame;
-
-render();
-
-},950);
-
-}else{
-
-clearInterval(timer);
-
+timer=setInterval(()=>{frame=(frame+1)%scenario.frames.length;frameSlider.value=frame;render()},950);
+}else clearInterval(timer);
 }
 
+function setFocus(v){focus=v;render()}
+
+async function exportReceipt(){
+download("observability_receipt_v5.json",JSON.stringify(currentReceiptPayload(),null,2));
 }
 
-function setFocus(v){
-
-focus=v;
-
-render();
-
-}
-
-function exportReceipt(){
-
-download(
-"observability_receipt_v4.json",
-receiptBox.textContent
-);
-
-}
-
-function exportSession(){
-
+async function exportSession(){
 const payload={
-
-version:"v24.4",
-
+schema_version:SCHEMA_VERSION,
+viewer_version:VIEWER_VERSION,
 frame,
 focus,
-
-annotation:
-annotationInput.value,
-
+annotation:annotationInput.value,
 bookmark,
-
 observer_only:true,
-
-non_claims:[
-"restoration != adjudication",
-"reproducibility != authority"
-]
-
+non_claims:["restoration integrity != operational truth","restoration != adjudication","reproducibility != authority"]
 };
-
-download(
-"serialized_restoration_session.json",
-JSON.stringify(payload,null,2)
-);
-
+payload.session_hash=await digest(JSON.stringify(payload));
+download("integrity_bounded_restoration_session.json",JSON.stringify(payload,null,2));
 }
 
-function triggerImport(){
+function triggerImport(){importFile.click()}
 
-document
-.getElementById("importFile")
-.click();
-
-}
-
-document
-.getElementById("importFile")
-.addEventListener("change",async(e)=>{
-
+importFile.addEventListener("change",async(e)=>{
 const file=e.target.files[0];
-
-if(!file) return;
-
+if(!file)return;
 const text=await file.text();
 
-try{
+let payload;
+try{payload=JSON.parse(text)}
+catch(err){
+holdImport("Invalid JSON. Import failed closed. Current state preserved.");
+return;
+}
 
-const payload=JSON.parse(text);
+const validation=validateSession(payload);
+if(!validation.ok){
+holdImport(validation.reason);
+return;
+}
 
-if(payload.frame!==undefined){
+const importedHash=await digest(JSON.stringify({
+schema_version:payload.schema_version,
+viewer_version:payload.viewer_version,
+frame:payload.frame,
+focus:payload.focus,
+annotation:payload.annotation,
+bookmark:payload.bookmark,
+observer_only:payload.observer_only,
+non_claims:payload.non_claims
+}));
 
 frame=payload.frame;
-
+focus=payload.focus;
+focusSelect.value=focus;
 frameSlider.value=frame;
 
-}
-
-if(payload.focus){
-
-focus=payload.focus;
-
-focusSelect.value=focus;
-
-}
-
-if(payload.annotation){
-
-annotationInput.value=
-payload.annotation;
-
+if(typeof payload.annotation==="string"){
+annotationInput.value=payload.annotation;
 }
 
 if(payload.bookmark){
-
 bookmark=payload.bookmark;
-
 }
 
+lastSessionHash=payload.session_hash||importedHash;
+restorationStatus="RESTORED";
+lastRestoreSummary=`Session restored within schema boundary. Frame ${frame}, focus ${focus}. Restoration is observational only.`;
 render();
-
-alert(
-"Deterministic replay session restored."
-);
-
-}catch(err){
-
-alert(
-"Session restoration failed."
-);
-
-}
-
+alert("Integrity-bounded session restored.");
 });
 
+function validateSession(p){
+if(p.schema_version!==SCHEMA_VERSION)return{ok:false,reason:"Schema mismatch. UNKNOWN → HOLD. Current state preserved."};
+if(p.observer_only!==true)return{ok:false,reason:"observer_only flag missing or false. UNKNOWN → HOLD. Current state preserved."};
+if(!Number.isInteger(p.frame)||p.frame<0||p.frame>=scenario.frames.length)return{ok:false,reason:"Invalid frame. UNKNOWN → HOLD. Current state preserved."};
+if(!["Overview","Topology","Replay","Drift","Heatmap","Timeline","Synchronized"].includes(p.focus))return{ok:false,reason:"Invalid focus. UNKNOWN → HOLD. Current state preserved."};
+if(!Array.isArray(p.non_claims)||!p.non_claims.includes("restoration != adjudication"))return{ok:false,reason:"Required non-claim missing. UNKNOWN → HOLD. Current state preserved."};
+return{ok:true};
+}
+
+function holdImport(reason){
+restorationStatus="HOLD";
+lastRestoreSummary=reason;
+render();
+alert(reason);
+}
+
 function saveBookmark(){
-
-bookmark={
-
-frame,
-focus
-
-};
-
-alert(
-"Bookmark saved."
-);
-
+bookmark={frame,focus};
+alert("Bookmark saved.");
+render();
 }
 
 function loadBookmark(){
-
-if(!bookmark) return;
-
+if(!bookmark)return;
 frame=bookmark.frame;
 focus=bookmark.focus;
-
 focusSelect.value=focus;
 frameSlider.value=frame;
-
 render();
-
-alert(
-"Bookmark restored."
-);
-
+alert("Bookmark restored.");
 }
 
 function saveAnnotation(){
-
-annotationStore=
-annotationInput.value;
-
-localStorage.setItem(
-"hacr_annotation",
-annotationStore
-);
-
-alert(
-"Observer annotation persisted locally."
-);
-
+annotationStore=annotationInput.value;
+localStorage.setItem("hacr_annotation",annotationStore);
+alert("Observer annotation persisted locally.");
+render();
 }
 
 function openSvg(){
-
-const blob=new Blob(
-[svg.outerHTML],
-{type:"image/svg+xml"}
-);
-
-window.open(
-URL.createObjectURL(blob),
-"_blank"
-);
-
+const blob=new Blob([svg.outerHTML],{type:"image/svg+xml"});
+window.open(URL.createObjectURL(blob),"_blank");
 }
 
 function download(name,text){
-
 const a=document.createElement("a");
-
-a.href=
-URL.createObjectURL(
-new Blob([text],{
-type:"application/json"
-})
-);
-
+a.href=URL.createObjectURL(new Blob([text],{type:"application/json"}));
 a.download=name;
-
 a.click();
+}
 
+async function digest(text){
+const data=new TextEncoder().encode(text);
+const hash=await crypto.subtle.digest("SHA-256",data);
+return Array.from(new Uint8Array(hash)).map(b=>b.toString(16).padStart(2,"0")).join("");
 }
 
 function make(name,attrs={},text){
-
-const e=document.createElementNS(
-"http://www.w3.org/2000/svg",
-name
-);
-
-for(const k in attrs){
-e.setAttribute(k,attrs[k]);
-}
-
-if(text) e.textContent=text;
-
+const e=document.createElementNS("http://www.w3.org/2000/svg",name);
+for(const k in attrs)e.setAttribute(k,attrs[k]);
+if(text)e.textContent=text;
 return e;
-
 }
 
 render();
-
 </script>
-
 </body>
 </html>
