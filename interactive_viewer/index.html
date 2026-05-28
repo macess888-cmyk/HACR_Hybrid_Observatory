@@ -156,6 +156,30 @@
       </button>
     </section>
 
+    <section class="toggleBar">
+      <span class="toggleLabel">Field Dynamics:</span>
+
+      <button onclick="firstContinuityFieldFrame()">
+        First
+      </button>
+
+      <button onclick="previousContinuityFieldFrame()">
+        Previous
+      </button>
+
+      <button onclick="loadContinuityFieldDynamics()">
+        Load Field
+      </button>
+
+      <button onclick="nextContinuityFieldFrame()">
+        Next
+      </button>
+
+      <button onclick="lastContinuityFieldFrame()">
+        Last
+      </button>
+    </section>
+
     <section class="workspace" id="workspace">
       <section class="viewer viewNormal" id="viewerBox">
         <iframe id="svgFrame"></iframe>
@@ -219,5 +243,6 @@
   <script src="relationship_graph/relationship_graph.js"></script>
   <script src="corridors/corridor_geometry.js"></script>
   <script src="temporal_drift/temporal_corridor_drift.js"></script>
+  <script src="field_dynamics/continuity_field_dynamics.js"></script>
 </body>
 </html>
