@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HACR Hybrid Observatory — v24.9 Aggregate Verification Harness</title>
+<title>HACR Hybrid Observatory — v25.0 Canonical Runtime Freeze</title>
 
 <style>
 :root{
@@ -21,20 +21,16 @@ h1{margin:0 0 5px;font-size:22px}.sub{font-size:13px;color:var(--muted)}
 .group label{font-size:12px;color:var(--muted)}
 button,select,input{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-size:12px}
 button:hover{border-color:var(--accent);cursor:pointer}
-main{display:grid;grid-template-columns:1.25fr .75fr;gap:12px;padding:12px 16px;height:calc(100vh - 165px)}
+main{display:grid;grid-template-columns:1.22fr .78fr;gap:12px;padding:12px 16px;height:calc(100vh - 165px)}
 .viewer,.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.viewer{display:flex;flex-direction:column}
-.viewerHead,.panelHead{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line);background:#101c3f}
+.viewer{display:flex;flex-direction:column}.viewerHead,.panelHead{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-bottom:1px solid var(--line);background:#101c3f}
 .viewerBody{flex:1;position:relative;overflow:hidden}
 svg{width:100%;height:100%;display:block;background:radial-gradient(circle at 50% 45%,#182754,#07101d 70%)}
-.side{display:flex;flex-direction:column;gap:12px;overflow:auto}
-.panelBody{padding:12px;font-size:13px;line-height:1.45;color:var(--muted)}
-.badge{padding:4px 8px;border-radius:999px;border:1px solid var(--line);font-size:11px}
-.ok{color:var(--ok)}.warn{color:var(--warn)}.fail{color:var(--hot)}
+.side{display:flex;flex-direction:column;gap:12px;overflow:auto}.panelBody{padding:12px;font-size:13px;line-height:1.45;color:var(--muted)}
+.badge{padding:4px 8px;border-radius:999px;border:1px solid var(--line);font-size:11px}.ok{color:var(--ok)}.warn{color:var(--warn)}.fail{color:var(--hot)}
 .node{fill:#1a2c60;stroke:#8db8ff;stroke-width:2}.node.hot{fill:#5a2a38;stroke:#ff9b9b}.node.ok{fill:#1f4f3c;stroke:#9fffc4}
 .edge{stroke:#6475b4;stroke-width:2;opacity:.55}.label{fill:#eef3ff;font-size:12px;text-anchor:middle;pointer-events:none}
-.heat{fill:#ff9b9b;opacity:.12}.basin{fill:none;stroke:#9fffc4;stroke-width:2;stroke-dasharray:7 6;opacity:.45}
-.annotation{fill:#ffe7a6;font-size:11px}
+.heat{fill:#ff9b9b;opacity:.12}.basin{fill:none;stroke:#9fffc4;stroke-width:2;stroke-dasharray:7 6;opacity:.45}.annotation{fill:#ffe7a6;font-size:11px}
 .box{font-family:monospace;font-size:11px;white-space:pre-wrap;padding:10px;border-radius:10px;background:#0c1428;border:1px solid var(--line);overflow:auto;max-height:240px}
 footer{padding:10px 16px;border-top:1px solid var(--line);background:#0d1734;font-size:12px;color:var(--muted)}
 @media(max-width:1000px){body{overflow:auto}main{grid-template-columns:1fr;height:auto}.viewerBody{height:520px}.group{width:100%}}
@@ -43,26 +39,17 @@ footer{padding:10px 16px;border-top:1px solid var(--line);background:#0d1734;fon
 
 <body>
 <header>
-<h1>HACR Hybrid Observatory — v24.9 Aggregate Verification Harness</h1>
-<div class="sub">Bounded aggregate verification infrastructure.</div>
-<div class="boundary">HARNESS PASS != SYSTEM CERTIFICATION · ALL TESTS PASSING != OPERATIONAL VALIDITY · TEST COVERAGE != CORRECTNESS</div>
+<h1>HACR Hybrid Observatory — v25.0 Canonical Runtime Freeze</h1>
+<div class="sub">Canonical bounded observability runtime.</div>
+<div class="boundary">CANONICAL != AUTHORITATIVE · STABLE != CORRECT · FREEZE != CERTIFICATION · STABILIZATION != LEGITIMACY</div>
 </header>
 
 <section class="toolbar">
 <div class="group">
-<label>Aggregate Tests</label>
-<button onclick="runAllTests()">Run All</button>
-<button onclick="runValidTest()">Valid</button>
-<button onclick="runMalformedTest()">Malformed</button>
-<button onclick="runSchemaMismatchTest()">Schema</button>
-<button onclick="runTamperTest()">Tamper</button>
-<button onclick="runFrameTest()">Frame</button>
-<button onclick="runClaimsTest()">Claims</button>
-</div>
-
-<div class="group">
-<label>QA</label>
-<button onclick="exportQAReceipt()">Export QA Receipt</button>
+<label>Runtime</label>
+<button onclick="exportManifest()">Export Manifest</button>
+<button onclick="exportInvariantRegistry()">Export Invariants</button>
+<button onclick="exportCanonicalQA()">Export Canonical QA</button>
 </div>
 
 <div class="group">
@@ -81,8 +68,8 @@ footer{padding:10px 16px;border-top:1px solid var(--line);background:#0d1734;fon
 <main>
 <section class="viewer">
 <div class="viewerHead">
-<b id="viewerTitle">Aggregate Verification Harness</b>
-<span id="stateLine" class="sub">frame 0 · HOLD-safe</span>
+<b id="viewerTitle">Canonical Runtime Freeze</b>
+<span id="stateLine" class="sub">frame 0 · canonical</span>
 </div>
 <div class="viewerBody">
 <svg id="svg" viewBox="0 0 1000 620"></svg>
@@ -91,46 +78,76 @@ footer{padding:10px 16px;border-top:1px solid var(--line);background:#0d1734;fon
 
 <aside class="side">
 <section class="panel">
-<div class="panelHead"><b>Global Harness State</b><span id="globalBadge" class="badge warn">HOLD</span></div>
-<div class="panelBody"><div id="globalText">No aggregate test run yet.</div></div>
+<div class="panelHead"><b>Runtime Freeze State</b><span class="badge ok">CANONICAL</span></div>
+<div class="panelBody"><div id="freezeBox" class="box"></div></div>
 </section>
 
 <section class="panel">
-<div class="panelHead"><b>Aggregate QA Summary</b><span class="badge">bounded</span></div>
-<div class="panelBody"><div id="summaryBox" class="box">No summary yet.</div></div>
+<div class="panelHead"><b>Invariant Registry</b><span class="badge">bounded</span></div>
+<div class="panelBody"><div id="invariantBox" class="box"></div></div>
 </section>
 
 <section class="panel">
-<div class="panelHead"><b>Expected vs Actual</b><span class="badge">explicit</span></div>
-<div class="panelBody"><div id="resultBox" class="box">No test results yet.</div></div>
+<div class="panelHead"><b>Runtime Manifest</b><span class="badge">deterministic</span></div>
+<div class="panelBody"><div id="manifestBox" class="box"></div></div>
 </section>
 
 <section class="panel">
-<div class="panelHead"><b>Mutation Protection</b><span class="badge">containment</span></div>
-<div class="panelBody"><div id="mutationBox" class="box">No mutation verification yet.</div></div>
+<div class="panelHead"><b>Canonical QA Snapshot</b><span class="badge">non-certifying</span></div>
+<div class="panelBody"><div id="qaBox" class="box"></div></div>
 </section>
 
 <section class="panel">
-<div class="panelHead"><b>QA Audit Trail</b><span class="badge">local only</span></div>
-<div class="panelBody"><div id="auditBox" class="box">No audit entries yet.</div></div>
+<div class="panelHead"><b>NON-CLAIMS</b><span class="badge warn">containment</span></div>
+<div class="panelBody">
+<p><b>canonicalization does not establish authority.</b></p>
+<p>Runtime stability does not prove correctness, operational validity, governance legitimacy, recoverability, causality, or certification.</p>
+</div>
 </section>
 </aside>
 </main>
 
-<footer>Aggregate verification improves containment visibility only. Test coverage does not establish assurance, correctness, certification, or operational validity.</footer>
+<footer>
+Canonical stabilization preserves bounded observability only. Freeze does not confer legitimacy.
+</footer>
 
 <script>
 const svg=document.getElementById("svg");
-const VIEWER_VERSION="v24.9";
-const SCHEMA_VERSION="hacr.session.v5";
+
+const VIEWER_VERSION="v25.0";
+const SCHEMA_VERSION="hacr.canonical.runtime.v1";
+const FREEZE_ID="HACR_OBSERVATORY_CANONICAL_RUNTIME_FREEZE_v25_0";
 
 let frame=0;
 let focus="Overview";
-let globalState="HOLD";
-let auditEntries=[];
-let qaResults=[];
-let aggregateSummary=null;
-let lastQAHash=null;
+
+const invariants=[
+"UNKNOWN → HOLD",
+"VISIBLE CONTINUITY != PRESERVED RECOVERABILITY",
+"REPRODUCIBILITY != AUTHORITY",
+"RESTORATION != ADJUDICATION",
+"RESTORATION INTEGRITY != OPERATIONAL TRUTH",
+"HASH MATCH != TRUTH",
+"INTEGRITY != CORRECTNESS",
+"FILE CONSISTENCY != OPERATIONAL VALIDITY",
+"TEST PASS != OPERATIONAL ASSURANCE",
+"HARNESS PASS != SYSTEM CERTIFICATION",
+"TEST COVERAGE != SYSTEM ASSURANCE",
+"CANONICAL != AUTHORITATIVE",
+"STABLE != CORRECT",
+"FREEZE != CERTIFICATION",
+"STABILIZATION != LEGITIMACY"
+];
+
+const canonicalQA={
+runtime:"canonical_observability_runtime",
+status:"frozen_reference_snapshot",
+aggregate_verification:"bounded",
+certification:false,
+authority:false,
+operational_validity:false,
+non_claim:"canonical QA snapshot is non-certifying"
+};
 
 const scenario={
 nodes:[
@@ -148,13 +165,10 @@ frames:[{heat:22},{heat:35},{heat:49},{heat:65},{heat:83},{heat:58}]
 
 async function render(){
 svg.innerHTML="";
-viewerTitle.textContent=`Aggregate Verification Harness · ${focus}`;
-stateLine.textContent=`frame ${frame} · ${globalState}`;
+viewerTitle.textContent=`Canonical Runtime Freeze · ${focus}`;
+stateLine.textContent=`frame ${frame} · ${FREEZE_ID}`;
 
-renderGlobal();
-renderResults();
-renderAudit();
-renderSummary();
+renderPanels();
 
 const f=scenario.frames[frame];
 const g=make("g");
@@ -176,7 +190,7 @@ g.appendChild(make("circle",{cx:n.x,cy:n.y,r:42,class:`node ${n.type}`}));
 g.appendChild(make("text",{x:n.x,y:n.y+4,class:"label"},n.label));
 }
 
-g.appendChild(make("text",{x:500,y:590,class:"annotation"},"TEST COVERAGE != SYSTEM ASSURANCE"));
+g.appendChild(make("text",{x:500,y:590,class:"annotation"},"CANONICAL != AUTHORITATIVE · FREEZE != CERTIFICATION"));
 }
 
 function visible(id){
@@ -191,194 +205,78 @@ Timeline:["timeline","replay","heat"]
 return (map[focus]||[]).includes(id);
 }
 
-function renderGlobal(){
-globalBadge.textContent=globalState;
-globalBadge.className=`badge ${globalState==="PASS"?'ok':globalState==="FAIL"?'fail':'warn'}`;
-globalText.innerHTML=`
-Global state: <b>${globalState}</b>
-<br><br>
-Boundary:
-HARNESS PASS != SYSTEM CERTIFICATION
-<br><br>
-Regression rule:
-FAILED EXPECTATION → GLOBAL HOLD
-<br>
-MUTATION FAILURE → GLOBAL HOLD
-`;
+async function runtimeManifest(){
+const invariant_hash=await digest(JSON.stringify(invariants));
+const qa_hash=await digest(JSON.stringify(canonicalQA));
+return{
+viewer_version:VIEWER_VERSION,
+schema_version:SCHEMA_VERSION,
+freeze_id:FREEZE_ID,
+frame,
+focus,
+invariant_count:invariants.length,
+invariant_registry_hash:invariant_hash,
+canonical_qa_hash:qa_hash,
+observer_only:true,
+canonical:true,
+authoritative:false,
+certification:false,
+operational_validity:false,
+non_claims:[
+"canonical != authoritative",
+"stable != correct",
+"freeze != certification",
+"stabilization != legitimacy"
+]
+};
 }
 
-function renderResults(){
-resultBox.textContent=qaResults.length?qaResults.join("\n\n"):"No test results yet.";
-}
+async function renderPanels(){
+freezeBox.textContent=JSON.stringify({
+freeze_id:FREEZE_ID,
+state:"CANONICAL_RUNTIME_FREEZE",
+boundary:"stabilization != legitimacy",
+observer_only:true,
+authority:false,
+certification:false
+},null,2);
 
-function renderAudit(){
-auditBox.textContent=auditEntries.length?auditEntries.join("\n\n"):"No audit entries yet.";
-}
+invariantBox.textContent=invariants.map((x,i)=>`${i+1}. ${x}`).join("\n");
 
-function renderSummary(){
-summaryBox.textContent=aggregateSummary?JSON.stringify(aggregateSummary,null,2):"No summary yet.";
+manifestBox.textContent=JSON.stringify(await runtimeManifest(),null,2);
+
+qaBox.textContent=JSON.stringify(canonicalQA,null,2);
 }
 
 function setFrame(n){frame=n;frameSlider.value=n;render()}
 function setFocus(v){focus=v;render()}
 
-function snapshotState(){return{frame,focus}}
-function stateEqual(a,b){return a.frame===b.frame&&a.focus===b.focus}
-
-async function runTest(name,payload,expected){
-const before=snapshotState();
-const result=await validatePayload(payload);
-const after=snapshotState();
-const mutationPrevented=stateEqual(before,after);
-const expectationMet=result.state===expected;
-const testPass=expectationMet&&mutationPrevented;
-
-qaResults.unshift(`
-TEST:
-${name}
-
-EXPECTED:
-${expected}
-
-ACTUAL:
-${result.state}
-
-EXPECTATION MET:
-${expectationMet}
-
-MUTATION PREVENTED:
-${mutationPrevented}
-
-TEST RESULT:
-${testPass?"PASS":"HOLD"}
-
-BOUNDARY:
-TEST PASS != OPERATIONAL ASSURANCE
-`);
-
-auditEntries.unshift(`${new Date().toISOString()}
-${name}
-EXPECTED=${expected}
-ACTUAL=${result.state}
-EXPECTATION=${expectationMet}
-MUTATION=${mutationPrevented}`);
-
-mutationBox.textContent=`
-Last test:
-${name}
-
-Before:
-${JSON.stringify(before,null,2)}
-
-After:
-${JSON.stringify(after,null,2)}
-
-Mutation prevented:
-${mutationPrevented}
-`;
-
-return{name,expected,actual:result.state,expectationMet,mutationPrevented,testPass};
+async function exportManifest(){
+download("canonical_runtime_manifest_v25_0.json",JSON.stringify(await runtimeManifest(),null,2));
 }
 
-async function runAllTests(){
-qaResults=[];
-auditEntries=[];
-
-const tests=[
-["VALID_SESSION",await validPayload(),"MATCH"],
-["MALFORMED_JSON","not-json","HOLD"],
-["SCHEMA_MISMATCH",mutate(await validPayload(),p=>p.schema_version="broken"),"HOLD"],
-["TAMPER_TEST",mutate(await validPayload(),p=>p.frame=999),"MISMATCH"],
-["INVALID_FRAME",mutate(await validPayload(),p=>p.frame=-1),"HOLD"],
-["MISSING_NON_CLAIMS",mutate(await validPayload(),p=>p.non_claims=[]),"HOLD"]
-];
-
-const results=[];
-for(const [name,payload,expected] of tests){
-results.push(await runTest(name,payload,expected));
-}
-
-const total=results.length;
-const passed=results.filter(r=>r.testPass).length;
-const failed=total-passed;
-const mutationFailures=results.filter(r=>!r.mutationPrevented).length;
-
-globalState=(failed===0&&mutationFailures===0)?"PASS":"HOLD";
-
-aggregateSummary={
-viewer_version:VIEWER_VERSION,
-schema_version:SCHEMA_VERSION,
-total_tests:total,
-passed_expectations:passed,
-failed_expectations:failed,
-mutation_failures:mutationFailures,
-global_state:globalState,
-boundary:"HARNESS PASS != SYSTEM CERTIFICATION",
-non_claims:[
-"test coverage != system assurance",
-"all tests passing != operational validity",
-"validation != certification"
-]
-};
-
-lastQAHash=await digest(JSON.stringify(aggregateSummary));
-aggregateSummary.qa_hash=lastQAHash;
-
-render();
-}
-
-function mutate(obj,fn){fn(obj);return obj}
-
-async function validatePayload(p){
-if(typeof p!=="object")return{state:"HOLD"};
-if(p.schema_version!==SCHEMA_VERSION)return{state:"HOLD"};
-if(p.observer_only!==true)return{state:"HOLD"};
-if(!Number.isInteger(p.frame)||p.frame<0||p.frame>=scenario.frames.length)return{state:"HOLD"};
-if(!["Overview","Topology","Replay","Drift","Heatmap","Timeline","Synchronized"].includes(p.focus))return{state:"HOLD"};
-if(!Array.isArray(p.non_claims))return{state:"HOLD"};
-if(!p.non_claims.includes("restoration != adjudication"))return{state:"HOLD"};
-
-const clone={...p};
-delete clone.session_hash;
-const computed=await digest(JSON.stringify(clone));
-if(computed!==p.session_hash)return{state:"MISMATCH"};
-return{state:"MATCH"};
-}
-
-async function validPayload(){
+async function exportInvariantRegistry(){
 const payload={
-schema_version:SCHEMA_VERSION,
-viewer_version:VIEWER_VERSION,
-frame:0,
-focus:"Overview",
-observer_only:true,
-non_claims:["restoration != adjudication"]
-};
-payload.session_hash=await digest(JSON.stringify(payload));
-return payload;
-}
-
-async function runValidTest(){const r=await runTest("VALID_SESSION",await validPayload(),"MATCH");globalState=r.testPass?"PASS":"HOLD";render()}
-async function runMalformedTest(){const r=await runTest("MALFORMED_JSON","not-json","HOLD");globalState=r.testPass?"PASS":"HOLD";render()}
-async function runSchemaMismatchTest(){const r=await runTest("SCHEMA_MISMATCH",mutate(await validPayload(),p=>p.schema_version="broken"),"HOLD");globalState=r.testPass?"PASS":"HOLD";render()}
-async function runTamperTest(){const r=await runTest("TAMPER_TEST",mutate(await validPayload(),p=>p.frame=999),"MISMATCH");globalState=r.testPass?"PASS":"HOLD";render()}
-async function runFrameTest(){const r=await runTest("INVALID_FRAME",mutate(await validPayload(),p=>p.frame=-1),"HOLD");globalState=r.testPass?"PASS":"HOLD";render()}
-async function runClaimsTest(){const r=await runTest("MISSING_NON_CLAIMS",mutate(await validPayload(),p=>p.non_claims=[]),"HOLD");globalState=r.testPass?"PASS":"HOLD";render()}
-
-async function exportQAReceipt(){
-if(!aggregateSummary){
-aggregateSummary={
 viewer_version:VIEWER_VERSION,
 schema_version:SCHEMA_VERSION,
-global_state:globalState,
-qa_results,
-audit_entries:auditEntries,
-boundary:"TEST COVERAGE != SYSTEM ASSURANCE",
-non_claims:["harness pass != system certification"]
+freeze_id:FREEZE_ID,
+invariants,
+hash:await digest(JSON.stringify(invariants)),
+non_claim:"invariant registry is not authority"
 };
-aggregateSummary.qa_hash=await digest(JSON.stringify(aggregateSummary));
+download("runtime_invariant_registry_v25_0.json",JSON.stringify(payload,null,2));
 }
-download("aggregate_verification_qa_receipt_v24_9.json",JSON.stringify(aggregateSummary,null,2));
+
+async function exportCanonicalQA(){
+const payload={
+viewer_version:VIEWER_VERSION,
+schema_version:SCHEMA_VERSION,
+freeze_id:FREEZE_ID,
+canonicalQA,
+hash:await digest(JSON.stringify(canonicalQA)),
+non_claim:"canonical QA snapshot is non-certifying"
+};
+download("canonical_qa_snapshot_v25_0.json",JSON.stringify(payload,null,2));
 }
 
 async function digest(text){
