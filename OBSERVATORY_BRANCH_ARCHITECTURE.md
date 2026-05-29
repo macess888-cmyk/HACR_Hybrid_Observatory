@@ -29,16 +29,6 @@ Topology
 → Continuity Ecology
 → Temporal Ecology
 
-Observer Objects:
-
-- topology
-- corridors
-- pressure
-- weather
-- climate
-- ecology
-- temporal ecology
-
 ---
 
 # Branch 2 — Historical Visibility
@@ -55,15 +45,6 @@ Persistence Ecology
 → Memory Landscape
 → Memory Surface
 → Memory Terrain
-
-Observer Objects:
-
-- persistence fields
-- basins
-- landscapes
-- surfaces
-- terrain
-- historical visibility
 
 ---
 
@@ -83,17 +64,6 @@ Skeleton
 → Anchor Attractor
 → Reduction Horizon
 → Visibility Extinction Boundary
-
-Observer Objects:
-
-- skeletons
-- invariants
-- fixed points
-- anchors
-- basins
-- attractors
-- horizons
-- extinction boundaries
 
 ---
 
