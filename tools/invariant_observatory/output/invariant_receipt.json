@@ -1,0 +1,10 @@
+{
+  "title": "Invariant Observatory Demo",
+  "visibility_invariants": 2,
+  "connectivity_invariants": 1,
+  "observer_mode": true,
+  "prediction": false,
+  "routing": false,
+  "causality_certification": false,
+  "svg_sha256": "a4f9e3b28f8dc31592e466918be21351d41bbfec64e1ee71b354bdbbad915faa"
+}

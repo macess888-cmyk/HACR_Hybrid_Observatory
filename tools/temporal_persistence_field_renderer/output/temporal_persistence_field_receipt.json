@@ -1,0 +1,8 @@
+{
+  "title": "Temporal Persistence Field Demo",
+  "regions": 4,
+  "observer_mode": true,
+  "prediction": false,
+  "causality_certification": false,
+  "svg_sha256": "7d63ce98c2431d3d3754c4b363186d29dbe2f04b601814caa3da742f494e2ff4"
+}

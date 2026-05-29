@@ -1,0 +1,9 @@
+{
+  "title": "Continuity Memory Surface Demo",
+  "regions": 4,
+  "corridors": 6,
+  "observer_mode": true,
+  "prediction": false,
+  "causality_certification": false,
+  "svg_sha256": "062c062c51950374092b0da0ebae9259577c91c482938f8d50fc21b7a3b956bd"
+}

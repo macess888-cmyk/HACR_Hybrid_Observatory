@@ -1,0 +1,9 @@
+{
+  "title": "Terrain Flow Network Demo",
+  "regions": 4,
+  "flow_corridors": 6,
+  "observer_mode": true,
+  "prediction": false,
+  "causality_certification": false,
+  "svg_sha256": "3e213622f4e224baacef6bcb317bd8b589c1eb049d0a87be8a7d59f8498a1459"
+}

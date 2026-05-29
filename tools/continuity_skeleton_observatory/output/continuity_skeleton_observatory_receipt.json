@@ -1,0 +1,14 @@
+{
+  "title": "Continuity Skeleton Observatory Demo",
+  "total_epochs": 3,
+  "regions": 4,
+  "corridors": 6,
+  "visibility_invariants": 3,
+  "observer_mode": true,
+  "prediction": false,
+  "causality_certification": false,
+  "routing": false,
+  "governance_authority": false,
+  "report_sha256": "93acf1303b4eead2e3d4c2d388b01196cde550724437dab508671d43bc2975ef",
+  "svg_sha256": "a4805375feeb4fe308704b6baa4aecf7ace2198fd59a4c85ba538835c62f6a8c"
+}

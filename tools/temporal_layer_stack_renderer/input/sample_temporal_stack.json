@@ -1,0 +1,108 @@
+{
+  "title": "Temporal Layer Stack Demo",
+  "epochs": [
+    {
+      "id": "epoch_001",
+      "label": "Initial Observation",
+      "regions": [
+        {
+          "name": "Documentation",
+          "x": 180,
+          "y": 180,
+          "radius": 55,
+          "status": "VISIBLE"
+        },
+        {
+          "name": "Tooling",
+          "x": 420,
+          "y": 240,
+          "radius": 60,
+          "status": "VISIBLE"
+        }
+      ]
+    },
+    {
+      "id": "epoch_002",
+      "label": "Review Expansion",
+      "regions": [
+        {
+          "name": "Documentation",
+          "x": 200,
+          "y": 170,
+          "radius": 60,
+          "status": "PERSISTENT"
+        },
+        {
+          "name": "Tooling",
+          "x": 450,
+          "y": 250,
+          "radius": 70,
+          "status": "SHIFTED"
+        },
+        {
+          "name": "Governance",
+          "x": 680,
+          "y": 320,
+          "radius": 50,
+          "status": "VISIBLE"
+        }
+      ]
+    },
+    {
+      "id": "epoch_003",
+      "label": "Ecology Formation",
+      "regions": [
+        {
+          "name": "Documentation",
+          "x": 220,
+          "y": 160,
+          "radius": 65,
+          "status": "PERSISTENT"
+        },
+        {
+          "name": "Tooling",
+          "x": 500,
+          "y": 270,
+          "radius": 80,
+          "status": "PERSISTENT"
+        },
+        {
+          "name": "Governance",
+          "x": 710,
+          "y": 330,
+          "radius": 65,
+          "status": "PERSISTENT"
+        },
+        {
+          "name": "Boundary Layer",
+          "x": 420,
+          "y": 500,
+          "radius": 75,
+          "status": "VISIBLE"
+        }
+      ]
+    }
+  ],
+  "replay_trajectories": [
+    {
+      "from_epoch": "epoch_001",
+      "to_epoch": "epoch_002",
+      "region": "Documentation"
+    },
+    {
+      "from_epoch": "epoch_002",
+      "to_epoch": "epoch_003",
+      "region": "Documentation"
+    },
+    {
+      "from_epoch": "epoch_001",
+      "to_epoch": "epoch_002",
+      "region": "Tooling"
+    },
+    {
+      "from_epoch": "epoch_002",
+      "to_epoch": "epoch_003",
+      "region": "Tooling"
+    }
+  ]
+}

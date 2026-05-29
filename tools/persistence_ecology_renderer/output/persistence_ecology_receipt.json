@@ -1,0 +1,9 @@
+{
+  "title": "Persistence Ecology Demo",
+  "regions": 4,
+  "corridors": 6,
+  "observer_mode": true,
+  "prediction": false,
+  "causality_certification": false,
+  "svg_sha256": "745901aa885055f82f5f22382454df44b187733d5eb620ea714c001889055fa5"
+}

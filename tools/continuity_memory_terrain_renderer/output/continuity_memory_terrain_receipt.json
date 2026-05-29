@@ -1,0 +1,9 @@
+{
+  "title": "Continuity Memory Terrain Demo",
+  "regions": 4,
+  "corridors": 6,
+  "observer_mode": true,
+  "prediction": false,
+  "causality_certification": false,
+  "svg_sha256": "fcc3b45006a3e6d079daaa13dae0c81a561f7384112fc364fa56b92df90db850"
+}

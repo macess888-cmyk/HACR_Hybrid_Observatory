@@ -1,0 +1,9 @@
+{
+  "title": "Terrain Ridge Network Demo",
+  "regions": 4,
+  "ridge_connections": 6,
+  "observer_mode": true,
+  "prediction": false,
+  "causality_certification": false,
+  "svg_sha256": "dc24fadf3eda8640db5dc0dc0fdc9f064764f4ff341531989234e18672dc437e"
+}

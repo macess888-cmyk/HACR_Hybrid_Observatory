@@ -1,0 +1,9 @@
+{
+  "title": "Persistence Basin Demo",
+  "regions": 4,
+  "corridors": 6,
+  "observer_mode": true,
+  "prediction": false,
+  "causality_certification": false,
+  "svg_sha256": "4509fce7d9b53d9f212205b1e707202965afdc75c8d4d120e64896b50f3c3185"
+}

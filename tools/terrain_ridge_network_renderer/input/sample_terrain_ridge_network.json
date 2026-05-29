@@ -1,0 +1,17 @@
+{
+  "title": "Terrain Ridge Network Demo",
+  "epochs": [
+    {
+      "id": "epoch_001",
+      "regions": ["Documentation", "Tooling"]
+    },
+    {
+      "id": "epoch_002",
+      "regions": ["Documentation", "Tooling", "Governance"]
+    },
+    {
+      "id": "epoch_003",
+      "regions": ["Documentation", "Tooling", "Governance", "Boundary Layer"]
+    }
+  ]
+}

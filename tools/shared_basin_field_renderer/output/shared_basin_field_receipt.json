@@ -1,0 +1,9 @@
+{
+  "title": "Shared Basin Field Demo",
+  "regions": 4,
+  "shared_fields": 6,
+  "observer_mode": true,
+  "prediction": false,
+  "causality_certification": false,
+  "svg_sha256": "628debc75dfdb23e8d80d719a40196c8dcb24764f409c6c62ae96682a39a4fff"
+}

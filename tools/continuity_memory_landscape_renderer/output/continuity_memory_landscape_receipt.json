@@ -1,0 +1,9 @@
+{
+  "title": "Continuity Memory Landscape Demo",
+  "regions": 4,
+  "corridors": 6,
+  "observer_mode": true,
+  "prediction": false,
+  "causality_certification": false,
+  "svg_sha256": "9c4f13e03203de53f4ed4f11b2c08700088ce72d51929d856256cfbb612d3440"
+}

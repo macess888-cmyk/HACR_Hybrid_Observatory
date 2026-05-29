@@ -1,0 +1,10 @@
+{
+  "title": "Temporal Layer Stack Demo",
+  "epochs": 3,
+  "replay_trajectories": 4,
+  "observer_mode": true,
+  "prediction": false,
+  "causality_certification": false,
+  "status": "VISIBLE",
+  "svg_sha256": "18d9b13cd152ee30302669fa9c63047afd22e2b3cbf7d7f0b0815baa7139c0e6"
+}
