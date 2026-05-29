@@ -2,21 +2,24 @@
 
 Observer-only runtime continuity inspection.
 
-The HACR Hybrid Observatory is a repository of observer-only observability, reduction, continuity, and boundary-preservation tooling designed to support visibility into structural persistence, interruption realism, dependency formation, reduction stability, environmental observability, and temporal observability.
+The HACR Hybrid Observatory is a repository of observer-only observability, reduction, continuity, boundary-preservation, environmental visibility, and temporal observability tooling designed to support visibility into structural persistence, interruption realism, dependency formation, reduction-stable artifacts, and reviewable continuity environments.
 
 UNKNOWN → HOLD.
 
 ---
 
-# Purpose
+# What Is This Repository?
 
 The repository exists to support:
 
 * observer-only inspection
 * continuity visibility
+* structural persistence analysis
 * reduction observability
 * interruption realism
 * dependency formation visibility
+* environmental observability
+* temporal observability
 * architectural reviewability
 * reproducibility
 
@@ -26,14 +29,54 @@ The repository does not provide:
 * operational authorization
 * execution control
 * prediction
+* forecasting
 * certification
 * enforcement legitimacy
+* execution capability
 
 ---
 
-# Repository Orientation
+# Recommended Review Path
 
-The repository currently operates across four observer-visible dimensions:
+For a first-time reviewer:
+
+```text
+README.md
+↓
+docs/REPOSITORY_MAP.md
+↓
+docs/OBSERVATORY_FRAMEWORK.md
+↓
+docs/OBSERVATORY_DIMENSIONS.md
+↓
+docs/OBSERVATORY_EVOLUTION.md
+↓
+docs/canonical/START_HERE_CANONICAL.md
+↓
+docs/canonical/CANONICAL_TRAVERSAL_INDEX.md
+↓
+governance/boundaries/README.md
+↓
+governance/SEMANTIC_COMPRESSION.md
+↓
+governance/TEMPORAL_OBSERVABILITY.md
+↓
+governance/TEMPORAL_CONTAINMENT.md
+↓
+docs/TEMPORAL_LAYER_STACK.md
+↓
+tools/semantic_topology_renderer/RENDERER_EVOLUTION.md
+```
+
+Purpose:
+
+Understand what the repository is, how it is organized, what it does not claim, and how observability evolved from structure visibility toward temporal visibility.
+
+---
+
+# Observatory Framework
+
+The repository currently operates across four observer-visible dimensions.
 
 ## Structure
 
@@ -49,6 +92,8 @@ Examples:
 * corridors
 * dependencies
 
+---
+
 ## Dynamics
 
 Question:
@@ -62,6 +107,8 @@ Examples:
 * dependency movement
 * pressure visibility
 * reduction paths
+
+---
 
 ## Environment
 
@@ -77,6 +124,8 @@ Examples:
 * continuity terrain
 * environmental observability
 
+---
+
 ## Time
 
 Question:
@@ -87,45 +136,9 @@ Examples:
 
 * replay windows
 * temporal ecology
+* temporal layer stacks
 * observation epochs
 * historical visibility
-* replay trajectories
-
----
-
-# Recommended Reviewer Path
-
-New reviewers should follow:
-
-README.md
-
-↓
-
-docs/OBSERVATORY_DIMENSIONS.md
-
-↓
-
-docs/OBSERVATORY_EVOLUTION.md
-
-↓
-
-docs/canonical/START_HERE_CANONICAL.md
-
-↓
-
-docs/canonical/CANONICAL_TRAVERSAL_INDEX.md
-
-↓
-
-governance/boundaries/README.md
-
-↓
-
-governance/SEMANTIC_COMPRESSION.md
-
-↓
-
-governance/TEMPORAL_OBSERVABILITY.md
 
 ---
 
@@ -163,14 +176,15 @@ Continuity Ecology
 
 Temporal Ecology
 
-This progression represents increasing observer-visible environmental visibility.
+↓
 
-It does not represent:
+Temporal Layer Stack
 
-* prediction
-* authority
-* governance control
-* execution capability
+This progression represents increasing observer-visible environmental and temporal visibility.
+
+It does not represent increasing authority.
+
+It does not represent increasing execution capability.
 
 ---
 
@@ -178,24 +192,32 @@ It does not represent:
 
 The repository has stabilized into:
 
-* canonical architecture
 * repository coherence architecture
+* canonical architecture
 * boundary architecture
+* reduction architecture
 * semantic topology architecture
 * continuity ecology visibility
 * temporal observability visibility
+* temporal layer stack architecture
 
 The repository should be interpreted as:
 
-Observer-Only Continuity Observability
+```text
+Observer-Only Continuity Observability Infrastructure
+```
 
 rather than:
 
+```text
 Governance Infrastructure
+```
 
 or:
 
+```text
 Execution Infrastructure
+```
 
 ---
 
@@ -207,6 +229,7 @@ All repository outputs remain:
 * non-authoritative
 * non-governing
 * non-executing
+* non-predictive
 
 Visibility does not imply authority.
 
@@ -216,4 +239,7 @@ Replay visibility does not imply prediction.
 
 Historical visibility does not imply future-state certainty.
 
+Temporal visibility does not imply forecasting.
+
 UNKNOWN → HOLD.
+
