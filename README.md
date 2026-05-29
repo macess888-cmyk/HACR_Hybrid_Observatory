@@ -38,18 +38,21 @@ The repository does not:
 # Reviewer Start Here
 
 Recommended review sequence:
-
-1. START_HERE.md
-2. docs/REPOSITORY_MAP.md
-3. docs/OBSERVATORY_FRAMEWORK.md
-4. docs/OBSERVATORY_DIMENSIONS.md
-5. docs/OBSERVATORY_EVOLUTION.md
-6. docs/canonical/START_HERE_CANONICAL.md
-7. docs/canonical/CANONICAL_TRAVERSAL_INDEX.md
-8. governance/boundaries/README.md
-9. governance/TEMPORAL_OBSERVABILITY.md
-10. docs/TEMPORAL_LAYER_STACK.md
-11. tools/semantic_topology_renderer/RENDERER_EVOLUTION.md
+1.  START_HERE.md
+2.  README.md
+3.  docs/REPOSITORY_MAP.md
+4.  docs/OBSERVATORY_FRAMEWORK.md
+5.  docs/OBSERVATORY_DIMENSIONS.md
+6.  docs/OBSERVATORY_EVOLUTION.md
+7.  docs/canonical/START_HERE_CANONICAL.md
+8.  docs/canonical/CANONICAL_TRAVERSAL_INDEX.md
+9.  docs/canonical/CANONICAL_BOUNDARY_INDEX.md
+10. governance/boundaries/README.md
+11. governance/SEMANTIC_COMPRESSION.md
+12. governance/TEMPORAL_OBSERVABILITY.md
+13. governance/TEMPORAL_CONTAINMENT.md
+14. docs/TEMPORAL_LAYER_STACK.md
+15. tools/semantic_topology_renderer/RENDERER_EVOLUTION.md
 
 These documents explain what the repository is, how it is organized, what it does not claim, and how reviewer traversal moves from structure visibility toward temporal observability.
 
