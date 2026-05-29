@@ -1,0 +1,10 @@
+{
+  "title": "Anchor Basin Observatory Demo",
+  "anchors": 2,
+  "connectivity_anchors": 1,
+  "observer_mode": true,
+  "prediction": false,
+  "routing": false,
+  "causality_certification": false,
+  "svg_sha256": "2c104e1f358ae3ecd4219b2a274aa7c8a7b02b971ca2b62480aa107f3719f52a"
+}
