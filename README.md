@@ -2,407 +2,219 @@
 
 Observer-only runtime continuity inspection.
 
----
+The HACR Hybrid Observatory is a repository of observer-only observability, reduction, continuity, and boundary-preservation tooling designed to support visibility into structural persistence, interruption realism, dependency formation, and reduction-stable artifacts.
 
-# Core Purpose
-
-The HACR Hybrid Observatory is a bounded observability framework for inspecting:
-
-* runtime continuity
-* interruption realism
-* dependency persistence
-* recoverability degradation
-* inheritance drift
-* replay survivability
-* topology-scoped operational pressure
-* hidden continuation pressure
-* operational reconvergence behavior
-
-under deterministic and reproducible conditions.
-
-The observatory prioritizes:
-
-* bounded runtime diagnostics
-* observer-local inspection
-* topology-scoped analysis
-* reproducibility-oriented review
-* deterministic replay framing
-* operational interoperability
-* explicit NON_CLAIMS architecture
+UNKNOWN → HOLD.
 
 ---
 
-# What This Is NOT
+# Repository Purpose
 
-The observatory does NOT:
+The repository exists to support:
 
+* observer-only inspection
+* continuity visibility
+* structural persistence analysis
+* reduction observability
+* reproducibility
+* architectural reviewability
+
+The repository does not:
+
+* predict
 * govern
+* route
 * authorize
-* certify
-* optimize
-* rank humans
-* control behavior
-* predict futures
-* enforce policy
-* replace human judgment
-* provide legitimacy
-* execute intervention authority
-* provide operational command
-* function as sovereign infrastructure
-
-The repository intentionally avoids:
-
-* governance expansion
-* semantic inflation
-* ontology centralization
-* behavioral scoring
-* psychometric inference
-* autonomous action authority
-* optimization absolutism
-* total observability architectures
+* certify causality
+* operationally manage systems
 
 ---
 
-# Core Operating Constraint
+# Reviewer Start Here
 
-```text
-UNKNOWN -> HOLD
-```
+Recommended review sequence:
 
-No proof -> no bind -> no effect-capable path -> no effect.
+1. START_HERE.md
+2. REPOSITORY_ARCHITECTURE.md
+3. governance/REPOSITORY_COHERENCE_MODEL.md
+4. governance/BOUNDARY_ARCHITECTURE.md
+5. CANONICAL_BOUNDARY_INDEX.md
+6. governance/REVIEWER_TRAVERSAL_PATHS.md
+7. OBSERVATORY_ARCHITECTURE.md
 
----
-
-# Core Design Philosophy
-
-Small enough to inspect.
-
-Bounded enough to falsify.
-
-Deterministic enough to reproduce.
-
-External enough to independently review.
+These documents explain what the repository is, how it is organized, and how the major architectural branches relate.
 
 ---
 
-# Core Reductions
+# Primary Architectural Layers
 
-```text
-continuity != legitimacy
+## Observability Layer
 
-coherence != correctness
+Observer-only inspection systems.
 
-observability != authority
+Questions:
 
-visibility != governance
+* What remains visible?
+* What survives interruption?
+* What structures persist?
+* What continuity remains observable?
 
-continuation != recoverability
+Examples:
 
-manual compensation != resilience
-
-replayability != grounding
-
-capability != wisdom
-```
-
----
-
-# Repository Structure
-
-```text
-HACR_Hybrid_Observatory/
-
-├── governance/
-├── tools/
-├── outputs/
-├── receipts/
-├── diagrams/
-├── docs/
-├── observatory_layers/
-├── diagnostics/
-├── reproducibility/
-└── artifacts/
-```
+* Hybrid Observatory
+* Failure Formation Locator
+* Runtime Continuity Tools
+* Dependency Observatories
 
 ---
 
-# Public Orientation
+## Visualization Layer
 
-## START HERE
+Observer-visible rendering systems.
 
-* docs/public_orientation/START_HERE.md
+Examples:
 
-## Why Boundedness Matters
-
-* docs/boundedness/WHY_BOUNDEDNESS_MATTERS.md
-
-## Cross-Domain Translation
-
-* docs/cross_domain_translation/CROSS_DOMAIN_TRANSLATION_INDEX.md
-
-## Small Business Recoverability
-
-* docs/recoverability/SMALL_BUSINESS_RECOVERABILITY.md
-
-## Failure Patterns
-
-* docs/failure_patterns/OBSERVED_FAILURE_PATTERNS.md
-
-## Boundary Constraints
-
-* docs/boundaries/BOUNDARY_CONSTRAINTS.md
-
-## Demo Cases
-
-* docs/demo_cases/RECOVERABILITY_DEMO_CASE.md
-
-## Public Topology Atlas
-
-* docs/topology_atlas/PUBLIC_OBSERVATORY_TOPOLOGY.md
-
-## Website Demo Surface
-
-* docs/website/WEBSITE_DEMO_SURFACE.md
-
----
-
-# Observatory Families
-
-## Runtime Continuity Observatory
-
-Inspects:
-
-* interruption realism
-* continuation survivability
-* dependency persistence
-* localization degradation
-* recoverability collapse
-* replay divergence
-* continuation gravity
-* interruption corridor degradation
-
-Core reduction:
-
-```text
-continued operation != preserved interruption viability
-```
-
----
-
-## Orbital Continuity Observatory
-
-Inspects:
-
-* maneuver-window degradation
-* orbital recoverability
-* perturbation survivability
-* orbital anomaly geometry
-* calibration drift
-* trajectory pressure
-
-Core reduction:
-
-```text
-orbital continuity != trajectory validity
-```
-
----
-
-## Marine Recoverability Observatory
-
-Inspects:
-
-* biological recoverability
-* oxygen corridor viability
-* trophic dependency topology
-* ecological survivability pressure
-* habitat regeneration viability
-
-Core reduction:
-
-```text
-ocean continuity != ecological recoverability
-```
-
----
-
-## BioEarth Continuity Observatory
-
-Inspects:
-
-* Earth-system drift
-* biosphere/geosphere coupling pressure
-* hydrological recoverability
-* atmospheric continuity
-* regeneration corridor viability
-
-Core reduction:
-
-```text
-planetary continuity != biological recoverability
-```
-
----
-
-## STS / Technical Continuity Observatory
-
-Inspects:
-
-* reproducibility continuity
-* benchmark inheritance
-* citation dependency drift
-* tooling fragility
-* technical legitimacy drift
-* peer-review survivability
-
-Core reduction:
-
-```text
-technical continuity != epistemic recoverability
-```
-
----
-
-## Hybrid Bridge Finder
-
-Inspects:
-
-* cross-domain topology gaps
-* interoperability pressure
-* ambiguity reduction
-* observer-only fit
-* semantic expansion pressure
-* governance drift risk
-
-Core reduction:
-
-```text
-bridge discovery is diagnostic, not expansion authority
-```
-
----
-
-# Cross-Domain Translation Layer
-
-The observatory includes bounded interoperability mappings between:
-
-* infrastructure engineering
-* distributed systems
-* AI/runtime orchestration
-* reliability engineering
-* organizational operations
-* audit/review environments
+* Topology Renderers
+* Surface Renderers
+* Terrain Renderers
+* Basin Renderers
+* Interactive Viewers
 
 Purpose:
 
-reduce operational communication drift between teams describing similar runtime pressure surfaces using incompatible language.
-
-The translation layer does NOT attempt:
-
-* ontology unification
-* semantic centralization
-* disciplinary replacement
-* governance authority
-
-Its purpose is bounded operational interoperability only.
+Transform observability outputs into reviewable structures.
 
 ---
 
-# Observed Failure Patterns
+## Governance Layer
 
-The observatory repeatedly localizes several recurring operational asymmetries:
+Boundary preservation and interpretation containment.
 
-* visible continuity != preserved recoverability
-* coherence != grounding
-* continuation != legitimacy
-* replayability != correctness
-* visibility != executable governance
-* manual compensation != structural resilience
+Examples:
 
-The observatory does not eliminate these pressures.
+* NON_CLAIMS
+* ENGINEERING_LIMITATIONS
+* Boundary Library
+* Boundary Architecture
 
-It localizes them under bounded and reproducible inspection conditions.
+Purpose:
+
+Preserve observer-only interpretation boundaries.
 
 ---
 
-# Human Consequence Boundary
+## Reduction Layer
 
-The observatory recognizes that:
+Progressive structural reduction observatories.
 
-* systems affect humans
-* continuity affects societies
-* infrastructure affects ecosystems
-* technological persistence affects future recoverability
+Reduction Lineage:
 
-The repository does NOT attempt to govern humans.
+Epoch
 
-It intentionally preserves:
+↓
 
-* uncertainty visibility
-* recoverability awareness
-* interruption realism
+Persistence
+
+↓
+
+Skeleton
+
+↓
+
+Invariant
+
+↓
+
+Fixed Point
+
+↓
+
+Anchor
+
+↓
+
+Anchor Basin
+
+↓
+
+Anchor Attractor
+
+↓
+
+Reduction Horizon
+
+↓
+
+Visibility Extinction Boundary
+
+↓
+
+Reduction Residue
+
+↓
+
+Irreducible Core
+
+Purpose:
+
+Observe structures surviving successive reduction stages.
+
+---
+
+## Navigation Layer
+
+Repository review infrastructure.
+
+Examples:
+
+* Repository Architecture
+* Repository Coherence Model
+* Reviewer Traversal Paths
+* Canonical Boundary Index
+
+Purpose:
+
+Support reviewer orientation and repository intelligibility.
+
+---
+
+# Repository Characteristics
+
+The repository emphasizes:
+
+* observer-only operation
+* reproducibility
 * bounded interpretation
-* consequence visibility
+* architectural clarity
+* reviewer accessibility
+* non-authoritative outputs
 
-without collapsing into behavioral authority.
+Outputs are intended for inspection and review.
+
+Outputs are not intended to function as execution authority.
 
 ---
 
 # Reproducibility
 
-The observatory prioritizes:
+The repository favors deterministic artifacts, reviewable outputs, documented assumptions, and reproducible inspection pathways.
 
-* deterministic outputs
-* replayable inspection conditions
-* reproducible receipts
-* bounded review surfaces
-* externally inspectable artifacts
-
-Outputs should remain:
-
-* falsifiable
-* inspectable
-* reproducible
-* operationally bounded
-* independently reviewable
+Reviewers are encouraged to inspect source code, documentation, example inputs, example outputs, and generated receipts.
 
 ---
 
-# NON_CLAIMS
+# Boundary
 
-The HACR Hybrid Observatory does NOT claim:
+This repository is descriptive.
 
-* objective truth determination
-* institutional legitimacy
-* policy authority
-* behavioral correctness
-* future prediction
-* sovereign execution rights
-* operational governance superiority
+It is not predictive.
 
-The repository remains:
+It is not prescriptive.
 
-observer-local,
-bounded,
-diagnostic,
-and reproducibility-oriented.
+It is not governance authority.
 
----
+It is not execution authority.
 
-# Stabilization Boundary
+It is an observer-only architectural observability repository.
 
-Direct human-behavior observatory expansion is intentionally held.
-
-Total observability is intentionally rejected.
-
-Observer-locality is intentionally preserved.
-
-Bounded inspection is intentional.
-
----
-
-# Final Constraint
-
-```text
-Break survivability, not ontology.
-```
+UNKNOWN → HOLD.
