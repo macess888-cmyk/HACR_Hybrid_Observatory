@@ -1,323 +1,327 @@
-# HACR Hybrid Observatory — Reviewer Traversal Paths
+# Reviewer Traversal Paths
 
 ## Purpose
 
-This file defines canonical traversal paths through the HACR Hybrid Observatory repository.
+This document provides recommended traversal paths through the repository.
 
-The repository has reached semantic density levels where:
+Different reviewers often arrive with different objectives.
 
-* unrestricted traversal
-* uncontrolled exploration
-* non-canonical entry
-* unsynchronized onboarding
+Some reviewers are interested in observability.
 
-can produce:
+Some reviewers are interested in boundaries.
 
-* reviewer overload
-* semantic fragmentation
-* topology opacity
-* interpretive drift
+Some reviewers are interested in reproducibility.
 
-This file exists to:
+Some reviewers are interested in reduction architecture.
 
-* stabilize onboarding
-* reduce traversal overload
-* improve reviewer survivability
-* preserve semantic coherence
-* improve architectural readability
+This document provides structured entry points.
 
-This file does not:
-
-* establish authority
-* determine correct interpretation
-* enforce canonical thought
-* replace repository exploration
-* govern reviewer conclusions
-
-Core invariant:
-
-```text id="5k1tqn"
-traversal guidance != interpretive authority
-```
+UNKNOWN → HOLD.
 
 ---
 
-# Canonical Traversal Model
-
-The repository should be traversed as:
-
-```text id="mfjlwm"
-bounded continuity observability topology
-```
-
-not:
-
-* disconnected essays
-* isolated theories
-* governance declarations
-* unrestricted semantic expansion
-
-Traversal exists to preserve:
-
-* coherence
-* readability
-* synchronization
-* boundedness
-* reviewer survivability
-
----
-
-# 5-Minute Traversal Path
+# Quick Orientation Path (5 Minutes)
 
 Purpose:
-rapid orientation.
 
-Recommended order:
+Understand repository intent and scope.
 
-```text id="8l7rqp"
-START_HERE_CANONICAL.md
-→ governance/SEMANTIC_COMPRESSION.md
-→ governance/REPOSITORY_COHERENCE_MODEL.md
-→ governance/boundaries/README.md
-→ governance/runtime_reductions/RUNTIME_REDUCTION_INDEX.md
-```
+Recommended Path:
 
-Outcome:
-basic repository orientation.
+START_HERE
 
-This path preserves:
+↓
 
-* bounded introduction
-* semantic compression
-* topology awareness
+NON_CLAIMS
 
-without requiring:
+↓
 
-* deep runtime traversal
-* topology specialization
-* interruption-realism familiarity
+OBSERVATORY_ARCHITECTURE
+
+↓
+
+REPOSITORY_COHERENCE_MODEL
+
+Questions Answered:
+
+* What is this repository?
+* What does it do?
+* What does it not do?
 
 ---
 
-# Public Traversal Path
+# Observatory Review Path (15–30 Minutes)
 
 Purpose:
-safe public understanding.
 
-Recommended order:
+Understand observer-only observability architecture.
 
-```text id="7m4uxk"
-START_HERE_CANONICAL.md
-→ NON_CLAIMS.md
-→ governance/SEMANTIC_COMPRESSION.md
-→ governance/boundaries/README.md
-→ governance/OBSERVATORY_VS_ENFORCEMENT_SYSTEMS.md
-→ governance/field_observability/
-```
+Recommended Path:
 
-Outcome:
-bounded public interpretation.
+START_HERE
 
-This path preserves:
+↓
 
-* observer-only posture
-* non-governance understanding
-* bounded observability framing
+OBSERVATORY_ARCHITECTURE
 
-while reducing:
+↓
 
-* authority misinterpretation
-* governance inheritance
-* institutional over-reading
+OUTPUT_SEMANTICS
+
+↓
+
+Selected Observatory Tools
+
+↓
+
+Sample Outputs
+
+Questions Answered:
+
+* What is being observed?
+* What outputs are generated?
+* How are observations represented?
 
 ---
 
-# Scientific Traversal Path
+# Reproducibility Review Path
 
 Purpose:
-continuity observability interpretation.
 
-Recommended order:
+Understand deterministic reproduction.
 
-```text id="4k6nvd"
-governance/SEMANTIC_COMPRESSION.md
-→ governance/runtime_reductions/
-→ governance/topology_receipt_schema/
-→ governance/corridor_observability/
-→ governance/field_observability/
-→ governance/transformation_survivability/
-```
+Recommended Path:
 
-Outcome:
-continuity-field observability understanding.
+REPRODUCIBILITY
 
-This path preserves:
+↓
 
-* replay-local interpretation
-* topology readability
-* bounded scientific analogy
+ENGINEERING_LIMITATIONS
 
-without implying:
+↓
 
-* operational equivalence
-* predictive authority
-* governance legitimacy
+Sample Inputs
+
+↓
+
+Sample Outputs
+
+↓
+
+Receipts
+
+Questions Answered:
+
+* Can outputs be reproduced?
+* Can reviewers verify results?
+* Are outputs deterministic?
 
 ---
 
-# Engineering Traversal Path
+# Boundary Review Path
 
 Purpose:
-deterministic replay and observability understanding.
 
-Recommended order:
+Understand repository boundaries and interpretation constraints.
 
-```text id="7w3ufo"
-START_HERE_CANONICAL.md
-→ governance/runtime_reductions/
-→ governance/topology_receipt_schema/
-→ governance/traversability/
-→ governance/reviewer_traversability/
-→ governance/runtime_human_reachability/
-```
+Recommended Path:
 
-Outcome:
-runtime architecture understanding.
+BOUNDARY_ARCHITECTURE
 
-This path preserves:
+↓
 
-* deterministic reduction understanding
-* replay readability
-* topology traversal clarity
+CANONICAL_BOUNDARY_INDEX
 
-without implying:
+↓
 
-* operational deployment authority
-* governance certification
-* execution legitimacy
+Boundary Library
+
+↓
+
+NON_CLAIMS
+
+Questions Answered:
+
+* What boundaries exist?
+* Why do they exist?
+* What distinctions are being preserved?
 
 ---
 
-# Interruption Realism Traversal Path
+# Reduction Review Path
 
 Purpose:
-hostile-runtime and continuation asymmetry understanding.
 
-Recommended order:
+Understand reduction observability architecture.
 
-```text id="v7f1mt"
-governance/runtime_human_reachability/
-→ governance/hostile_runtime_locality/
-→ governance/runtime_arrival_realism/
-→ governance/traversability_realism/
-→ governance/continuation_acceleration/
-→ governance/dependency_gravity/
-```
+Recommended Path:
 
-Outcome:
-interruption realism understanding.
+Reduction Branch Architecture
 
-This path preserves:
+↓
 
-* continuation asymmetry visibility
-* interruption reachability realism
-* survivability pressure awareness
+Reduction Branch Overview Renderer
 
-without implying:
+↓
 
-* operational inevitability
-* predictive authority
-* governance intervention
+Reduction Residue Observatory
+
+↓
+
+Irreducible Core Observatory
+
+↓
+
+REDUCTION_ARCHITECTURE
+
+Questions Answered:
+
+* How does reduction progress?
+* What remains after reduction?
+* What survives the reduction lineage?
 
 ---
 
-# Boundary Traversal Path
+# Visualization Review Path
 
 Purpose:
-semantic containment understanding.
 
-Recommended order:
+Understand rendering and visualization systems.
 
-```text id="5w8sxb"
-governance/boundaries/README.md
-→ governance/boundaries/REALITY_BOUNDARY.md
-→ governance/boundaries/ONTOLOGY_BOUNDARY.md
-→ governance/boundaries/NON_CLOSURE_BOUNDARY.md
-→ governance/boundaries/BOUNDARY_HUMILITY.md
-→ governance/boundaries/NON_CONVERGENCE_BOUNDARY.md
-→ governance/boundaries/NON_RESOLUTION_BOUNDARY.md
-```
+Recommended Path:
 
-Outcome:
-semantic containment understanding.
+Viewer Documentation
 
-This path preserves:
+↓
 
-* bounded interpretation
-* uncertainty admissibility
-* observer limitation
-* anti-authority containment
+Topology Renderers
 
----
+↓
 
-# Reviewer Survivability Principles
+Surface Renderers
 
-All traversal paths should preserve:
+↓
 
-* bounded entry complexity
-* replay-local understanding
-* synchronization-local readability
-* semantic restraint
-* uncertainty admissibility
-* observer-only posture
+Terrain Renderers
 
-Traversal should avoid:
+↓
 
-* unrestricted semantic expansion
-* unsynchronized topology jumping
-* premature abstraction stacking
-* governance reinterpretation
-* convergence mythology
+Overview Renderers
+
+Questions Answered:
+
+* How are structures rendered?
+* How are outputs visualized?
+* How does reviewability remain visible?
 
 ---
 
-# Semantic Density Stabilization
+# Governance Review Path
 
-The repository stabilizes reviewer survivability through:
+Purpose:
 
-* compression
-* routing
-* topology organization
-* semantic layering
-* bounded traversal
-* canonical entry sequencing
+Understand repository constraints and interpretation limits.
 
-The repository destabilizes reviewer survivability through:
+Recommended Path:
 
-* unrestricted expansion
-* uncontrolled terminology accumulation
-* unsynchronized traversal
-* topology fragmentation
-* semantic overlap
+NON_CLAIMS
+
+↓
+
+ENGINEERING_LIMITATIONS
+
+↓
+
+SEMANTIC_SCOPE_LIMITER
+
+↓
+
+BOUNDARY_ARCHITECTURE
+
+↓
+
+Boundary Library
+
+Questions Answered:
+
+* What claims are being avoided?
+* What limits are imposed?
+* How is observer-only operation preserved?
 
 ---
 
-# Final Traversal Compression
+# Full Repository Review
 
-Canonical traversal exists to preserve:
+Purpose:
 
-```text id="m5w2qe"
-clarity per semantic unit
-```
+Comprehensive repository understanding.
 
-while maintaining:
+Recommended Path:
 
-```text id="ah29rb"
-observer-only
-bounded
-deterministic
-externally reviewable
-non-authoritative
-```
+START_HERE
 
-UNKNOWN → HOLD
+↓
+
+REPOSITORY_COHERENCE_MODEL
+
+↓
+
+OBSERVATORY_ARCHITECTURE
+
+↓
+
+BOUNDARY_ARCHITECTURE
+
+↓
+
+CANONICAL_BOUNDARY_INDEX
+
+↓
+
+Reduction Architecture
+
+↓
+
+Viewer Documentation
+
+↓
+
+Sample Outputs
+
+↓
+
+REPRODUCIBILITY
+
+Questions Answered:
+
+* How do repository components relate?
+* How do observatories, boundaries, renderers, and reduction systems connect?
+* How is coherence maintained?
+
+---
+
+# Reviewer Guidance
+
+Not every reviewer needs to traverse every branch.
+
+Reviewers may select the path most relevant to their objective.
+
+The repository is intended to support multiple independent review paths while preserving observer-only operation.
+
+---
+
+# Boundary
+
+This document is a navigational aid.
+
+It is not governance.
+
+It is not certification.
+
+It is not prediction.
+
+It is not authority.
+
+It is a reviewer traversal map.
+
+UNKNOWN → HOLD.

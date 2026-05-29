@@ -1,419 +1,319 @@
-# HACR Hybrid Observatory — Repository Coherence Model
+# Repository Coherence Model
 
 ## Purpose
 
-This file defines the semantic topology structure of the HACR Hybrid Observatory repository.
+The Repository Coherence Model provides a high-level architectural description of the HACR Hybrid Observatory repository.
 
-The repository is no longer treated as:
+Its purpose is to explain how major repository components relate to one another while preserving observer-only operation.
 
-* isolated documentation
-* disconnected tooling
-* feature accumulation
-* governance expansion
+The model is descriptive.
 
-The repository is treated as:
+It is not predictive.
 
-```text
-bounded continuity observability ecosystem infrastructure
-```
+It is not prescriptive.
 
-under observer-only containment semantics.
+It is not governance authority.
 
-This file exists to:
-
-* stabilize semantic topology
-* preserve repository coherence
-* reduce interpretive fragmentation
-* improve reviewer traversability
-* preserve architectural readability
-* prevent uncontrolled semantic expansion
-
-This file does not:
-
-* establish governance authority
-* certify repository correctness
-* operationalize observability
-* replace repository documentation
-* establish institutional legitimacy
-
-Core invariant:
-
-```text
-repository structure != governance structure
-```
+UNKNOWN → HOLD.
 
 ---
 
-# Canonical Repository Regions
+# Repository Objective
 
-The repository stabilizes into the following canonical semantic regions.
+The repository exists to support:
+
+* observer-only inspection
+* bounded visibility
+* continuity observability
+* structural reviewability
+* reproducibility
+* interpretation containment
+
+The repository does not exist to:
+
+* authorize execution
+* govern outcomes
+* certify causality
+* optimize decisions
+* route actions
+* predict future states
 
 ---
 
-# 1. Boundary Layer
+# Primary Architectural Layers
 
-Path:
+The repository contains four major architectural layers.
 
-```text
-governance/boundaries/
-```
+## Layer 1 — Observatory Layer
 
 Purpose:
-preserve observer-only containment semantics.
 
-Function:
-prevent:
+Generate observer-visible artifacts.
 
-* authority inheritance
-* governance drift
-* convergence mythology
-* certainty extraction
-* semantic escalation
+Questions:
 
-This region stabilizes:
-
-* boundedness
-* interpretive restraint
-* uncertainty admissibility
-* semantic containment
-
-Core reduction:
-
-```text
-observability without authority inheritance
-```
-
----
-
-# 2. Runtime Reduction Layer
-
-Path:
-
-```text
-governance/runtime_reductions/
-```
-
-Purpose:
-compress runtime semantics into deterministic reductions.
-
-Function:
-preserve:
-
-* canonical runtime invariants
-* replay reductions
-* HOLD-localization
-* semantic compression stability
-
-This region stabilizes:
-
-* coherence
-* reviewer readability
-* runtime compression
-* deterministic traversal
-
-Core reduction:
-
-```text
-deterministic replay reduction infrastructure
-```
-
----
-
-# 3. Runtime Human Reachability Layer
-
-Path:
-
-```text
-governance/runtime_human_reachability/
-```
-
-Purpose:
-observe human-runtime interruption asymmetry.
-
-Function:
-preserve visibility into:
-
-* interruption reachability
-* synchronization exhaustion
-* continuation acceleration
-* corridor narrowing
-* human traversability degradation
-* recovery fragmentation
-
-This region stabilizes:
-
-* interruption realism
-* human reachability visibility
-* continuation asymmetry observability
-
-Core reduction:
-
-```text
-human interruption reachability observability
-```
-
----
-
-# 4. Reviewer Traversability Layer
-
-Path:
-
-```text
-governance/reviewer_traversability/
-```
-
-Purpose:
-preserve reviewer accessibility under semantic scale.
-
-Function:
-preserve:
-
-* reviewability
-* semantic traversability
-* bounded onboarding complexity
-* topology discoverability
-
-This region stabilizes:
-
-* reviewer survivability
-* traversal coherence
-* semantic density management
-
-Core reduction:
-
-```text
-bounded reviewer traversal infrastructure
-```
-
----
-
-# 5. Runtime Topology Layer
+* What remains visible?
+* What survives interruption?
+* What structures persist?
+* What continuity remains observable?
 
 Examples:
 
-```text
-governance/topology_receipt_schema/
-governance/traversability/
-governance/corridor_observability/
-```
+* Hybrid Observatory
+* Failure Formation Locator
+* Continuity Observatories
+* Dependency Observatories
+* Runtime Inspection Tools
 
-Purpose:
-preserve topology readability.
+Output:
 
-Function:
-preserve:
-
-* replay traversal visibility
-* synchronization topology
-* continuity geometry
-* deformation visibility
-* corridor inspection
-
-This region stabilizes:
-
-* continuity-field readability
-* topology coherence
-* replay traversal clarity
-
-Core reduction:
-
-```text
-continuity topology observability
-```
+Observer-visible artifacts.
 
 ---
 
-# 6. Pressure Field Layer
+## Layer 2 — Visualization Layer
+
+Purpose:
+
+Render observatory outputs into reviewable structures.
+
+Questions:
+
+* How can visibility be rendered?
+* How can continuity be inspected?
+* How can persistence become reviewable?
 
 Examples:
 
-```text
-governance/observer_pressure/
-governance/runtime_trust_drift/
-governance/semantic_cooling/
-governance/visibility_exposure/
-```
+* Basin Renderers
+* Terrain Renderers
+* Surface Renderers
+* Topology Renderers
+* Interactive Viewer Systems
 
-Purpose:
-observe semantic and operational pressure accumulation.
+Output:
 
-Function:
-preserve visibility into:
-
-* pressure deformation
-* trust drift
-* exposure accumulation
-* observer amplification
-* semantic heating/cooling
-
-This region stabilizes:
-
-* field observability
-* semantic pressure awareness
-* continuity deformation visibility
-
-Core reduction:
-
-```text
-continuity-pressure field observability
-```
+Visual review surfaces.
 
 ---
 
-# 7. Survivability Realism Layer
+## Layer 3 — Governance Layer
+
+Purpose:
+
+Preserve repository boundaries.
+
+Questions:
+
+* What claims are being made?
+* What claims are not being made?
+* What limits preserve observer-only operation?
 
 Examples:
 
-```text
-governance/hostile_runtime_locality/
-governance/runtime_arrival_realism/
-governance/traversability_realism/
-```
+* NON_CLAIMS
+* ENGINEERING_LIMITATIONS
+* BOUNDARY_ARCHITECTURE
+* CANONICAL_BOUNDARY_INDEX
+* Boundary Library
+
+Output:
+
+Interpretation containment.
+
+---
+
+## Layer 4 — Reduction Layer
 
 Purpose:
-preserve interruption realism.
 
-Function:
-preserve visibility into:
+Observe structures surviving progressive reduction.
 
-* executable interruption
-* continuation survivability
-* reconstruction locality
-* destabilization asymmetry
-* operational reachability
+Question:
 
-This region stabilizes:
+What remains after successive reduction stages?
 
-* hostile-runtime realism
-* continuation realism
-* interruption viability visibility
+Reduction Lineage:
 
-Core reduction:
+Epoch
 
-```text
-interruption realism observability
-```
+↓
 
----
+Persistence
 
-# Repository Structural Compression
+↓
 
-The repository compresses into:
+Skeleton
 
-```text
-Boundary Layer
-→ Runtime Reductions
-→ Runtime Reachability
-→ Traversability
-→ Topology
-→ Pressure Fields
-→ Survivability Realism
-```
+↓
 
-This forms:
+Invariant
 
-```text
-bounded continuity observability topology
-```
+↓
 
-under observer-only semantics.
+Fixed Point
 
----
+↓
 
-# Structural Interaction Model
+Anchor
 
-The repository operates as:
+↓
 
-```text
-interacting semantic pressure fields
-```
+Anchor Basin
 
-not:
+↓
 
-* isolated essays
-* governance declarations
-* institutional frameworks
-* operational orchestration systems
+Anchor Attractor
 
-Each region:
+↓
 
-* constrains the others
-* stabilizes interpretation
-* prevents semantic inflation
-* preserves boundedness
+Reduction Horizon
 
-No region independently establishes:
+↓
 
-* legitimacy
-* authority
-* governance correctness
-* operational truth
+Visibility Extinction Boundary
+
+↓
+
+Reduction Residue
+
+↓
+
+Irreducible Core
+
+Output:
+
+Reduction-stable observer-visible artifacts.
 
 ---
 
-# Semantic Failure Modes
+# Architectural Relationships
 
-The repository destabilizes when:
+The repository operates through the interaction of these layers.
 
-* observability becomes governance
-* replay becomes authority
-* synchronization becomes truth
-* continuity becomes legitimacy
-* persistence becomes ownership
-* scale becomes semantic opacity
+Observatory Layer
 
-The repository stabilizes through:
+↓
 
-* compression
-* canonical routing
-* reviewer traversability
-* semantic restraint
-* bounded terminology
-* observer-only posture
+Visualization Layer
+
+↓
+
+Reviewer Visibility
+
+while remaining bounded by:
+
+Governance Layer
+
+and supported by:
+
+Reduction Layer
+
+No layer replaces another.
+
+Visualization is not observability.
+
+Observability is not governance.
+
+Governance is not authority.
+
+Reduction is not prediction.
 
 ---
 
-# Canonical Repository Reduction
+# Reviewer Traversal Model
 
-The HACR Hybrid Observatory repository is:
+A reviewer may traverse the repository through multiple paths.
 
-```text
-bounded deterministic continuity observability ecosystem infrastructure
-under observer-only containment semantics
-```
+## Observatory Path
 
-The repository preserves:
+START_HERE
 
-* continuity visibility
-* replay readability
-* synchronization awareness
-* uncertainty admissibility
+↓
+
+OBSERVATORY_ARCHITECTURE
+
+↓
+
+Observatory Tools
+
+## Visualization Path
+
+Viewer
+
+↓
+
+Renderers
+
+↓
+
+Outputs
+
+## Boundary Path
+
+BOUNDARY_ARCHITECTURE
+
+↓
+
+CANONICAL_BOUNDARY_INDEX
+
+↓
+
+Boundary Library
+
+## Reduction Path
+
+Reduction Branch Architecture
+
+↓
+
+Reduction Residue
+
+↓
+
+Irreducible Core
+
+---
+
+# Repository Invariants
+
+The following repository invariants apply across all layers:
+
+* observer-only operation
+* reproducibility
 * bounded interpretation
-* semantic restraint
-
-The repository rejects:
-
-* governance authority
-* operational legitimacy
-* ownership inheritance
-* convergence authority
-* certainty extraction
-* institutional totalization
+* visibility preservation
+* authority separation
+* non-certification
 
 ---
 
-# Final Coherence Compression
+# Coherence Principle
 
-The repository remains:
+Repository coherence is achieved when:
 
-```text
-observer-only
-bounded
-deterministic
-replay-local
-synchronization-local
-externally reviewable
-non-authoritative
-```
+* observatories remain observer-only
+* renderers remain visualization-only
+* governance remains boundary-focused
+* reduction remains observational
+* boundaries remain distinguishable
 
-UNKNOWN → HOLD
+Coherence degrades when responsibilities collapse across layers.
+
+---
+
+# Repository Boundary
+
+This model is an architectural description.
+
+It is not a prediction.
+
+It is not a certification.
+
+It is not governance authority.
+
+It is not execution authorization.
+
+It is an observer-only coherence map.
+
+UNKNOWN → HOLD.
