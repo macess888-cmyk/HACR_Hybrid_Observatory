@@ -36,6 +36,112 @@ The repository does not provide:
 
 ---
 
+# Why This Exists
+
+Many systems fail long before visible failure occurs.
+
+Dependencies accumulate.
+
+Recovery paths narrow.
+
+Interruption viability degrades.
+
+Operational assumptions drift away from runtime reality.
+
+Yet these changes often remain difficult to observe until consequence becomes visible.
+
+The HACR Hybrid Observatory exists to support visibility into those observer-visible conditions.
+
+The repository does not attempt to govern systems, authorize actions, predict outcomes, or certify correctness.
+
+Instead, it focuses on a simpler question:
+
+```text
+What remains observable as continuity, dependencies, environments, and histories evolve?
+```
+
+The goal is not control.
+
+The goal is visibility.
+
+Observer-only visibility into structures, relationships, environments, and temporal changes that may otherwise remain difficult to inspect.
+
+UNKNOWN → HOLD.
+
+---
+
+# Where And When
+
+The HACR Hybrid Observatory focuses on observer-visible conditions at the point they can be inspected.
+
+Where:
+
+```text
+structures
+dependencies
+continuity paths
+environments
+historical states
+```
+
+become observable.
+
+When:
+
+```text
+continuity evolves
+dependencies accumulate
+environments change
+interruption viability degrades
+historical visibility becomes reviewable
+```
+
+The repository does not attempt to reconstruct every possible past state or predict every possible future state.
+
+Instead, it focuses on reviewable observer-visible conditions that exist within accessible inspection horizons.
+
+The objective is not complete knowledge.
+
+The objective is bounded visibility.
+
+UNKNOWN → HOLD.
+
+---
+
+# Who
+
+The HACR Hybrid Observatory is intended for reviewers interested in observer-visible continuity, dependency formation, interruption realism, reduction observability, environmental visibility, and temporal observability.
+
+Examples may include:
+
+* engineers
+* architects
+* researchers
+* auditors
+* reviewers
+* operators
+* students
+* observers of complex systems
+
+The repository is designed for inspection and review.
+
+It is not designed to function as:
+
+* governance authority
+* execution authority
+* operational command infrastructure
+* certification infrastructure
+
+Participation does not require adoption of any particular methodology, governance model, operational framework, or implementation strategy.
+
+The repository exists to support visibility.
+
+Interpretation remains external to the repository.
+
+UNKNOWN → HOLD.
+
+---
+
 # Recommended Review Path
 
 For a first-time reviewer:
@@ -50,6 +156,8 @@ docs/OBSERVATORY_FRAMEWORK.md
 docs/OBSERVATORY_DIMENSIONS.md
 ↓
 docs/OBSERVATORY_EVOLUTION.md
+↓
+docs/REPOSITORY_EVOLUTION.md
 ↓
 docs/canonical/START_HERE_CANONICAL.md
 ↓
@@ -193,6 +301,7 @@ It does not represent increasing execution capability.
 The repository has stabilized into:
 
 * repository coherence architecture
+* repository evolution architecture
 * canonical architecture
 * boundary architecture
 * reduction architecture
