@@ -1,0 +1,9 @@
+{
+  "title": "Anchor Attractor Observatory Demo",
+  "classification": "ANCHOR_ATTRACTOR",
+  "observer_mode": true,
+  "prediction": false,
+  "routing": false,
+  "causality_certification": false,
+  "svg_sha256": "55efd44e3694c0b3c98236c607d4e15329ba48dbdb8d2fe6e0024026c25fac08"
+}
