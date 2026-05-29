@@ -1,474 +1,219 @@
+# START HERE
 
-Replace `START_HERE.md` with this:
+Observer-only runtime continuity inspection.
 
-```markdown
-# HACR Hybrid Observatory
+The HACR Hybrid Observatory is a repository of observer-only observability, reduction, continuity, and boundary-preservation tooling designed to support visibility into structural persistence, interruption realism, dependency formation, reduction stability, environmental observability, and temporal observability.
 
-## Start Here
-
-The HACR Hybrid Observatory is a deterministic, observer-only hostile-runtime interruption realism observatory.
-
-The repository increasingly pressures one bounded runtime question:
-
-Can executable interruption still materially arrive before continuation hardens?
+UNKNOWN → HOLD.
 
 ---
 
-# Repository Position
+# Purpose
 
-The Observatory is NOT:
+The repository exists to support:
 
-- governance infrastructure
-- orchestration infrastructure
-- execution infrastructure
-- intervention infrastructure
-- sovereignty infrastructure
-- certification infrastructure
-- policy automation
-- or operational authority.
+* observer-only inspection
+* continuity visibility
+* reduction observability
+* interruption realism
+* dependency formation visibility
+* architectural reviewability
+* reproducibility
 
-The repository remains:
+The repository does not provide:
 
-- observer-only
-- runtime-local
-- deterministic
-- anti-authoritative
-- anti-ontology
-- interruption-bound
-- and falsifiability-oriented.
-
-All outputs remain bounded observational artifacts only.
+* governance authority
+* operational authorization
+* execution control
+* prediction
+* certification
+* enforcement legitimacy
 
 ---
 
-# Repository Continuity
+# Repository Orientation
 
-Current repository continuity maintained by:
+The repository currently operates across four observer-visible dimensions:
 
-Jake Macdonald
+## Structure
 
-Hybrid Systems Architect
+Question:
 
-Observer-only hostile-runtime interruption realism inspection.
+What exists?
 
-Strong reduction:
+Examples:
 
-Authorship
-!=
-authority.
+* topology
+* architecture
+* regions
+* corridors
+* dependencies
 
----
+## Dynamics
 
-# Core Runtime Question
+Question:
 
-The Observatory increasingly pressures:
+How does it interact?
 
-Can interruption still materially affect consequence before continuation hardens?
+Examples:
 
-Because modern systems may increasingly preserve:
+* traversal
+* continuity formation
+* dependency movement
+* pressure visibility
+* reduction paths
 
-- dashboards
-- observability
-- replay continuity
-- telemetry
-- procedural smoothness
-- governance visibility
-- accountability appearance
-- escalation surfaces
-- simulation continuity
-- operational coherence
-- transparency
-- and institutional confidence
+## Environment
 
-after executable interruption realism has already materially degraded beneath continuation pressure.
+Question:
 
----
+What conditions emerge?
 
-# Core Runtime Reductions
+Examples:
 
-observable
-!=
-inspectable
+* climate fields
+* ecology fields
+* density basins
+* continuity terrain
+* environmental observability
 
-inspectable
-!=
-traversable
+## Time
 
-traversable
-!=
-interruptible
+Question:
 
-interruptible
-!=
-destabilizable
+How does it change?
 
-destabilizable
-!=
-recoverable
+Examples:
 
-representation
-!=
-execution
-
-representation
-!=
-authority
-
-visibility
-!=
-reachability
-
-replay
-!=
-recoverability
-
-explanation
-!=
-interruption
-
-simulation realism
-!=
-runtime interruption realism
-
-governance representation
-!=
-runtime governability
-
-operational coherence
-!=
-executable interruption realism
-
-visible escalation
-!=
-reachable interruption
-
-being seen
-!=
-being protected
-
-continuation survives passively
-while interruption reconstructs viability actively
-
-interruption that arrives after continuation hardens
-is not interruption
-
-representation may survive
-after executable interruption realism degrades
-
-modern systems increasingly preserve representation longer than executable interruption realism
-
-observability correction
-!=
-execution authority
-
-compression without executable locality
-=
-representational survivability
-
-attribution
-!=
-authority inheritance
-
-interruption visibility
-!=
-consequence locality
-
-consequence visibility
-!=
-consequence reachability
-
-represented governability may survive
-after executable consequence locality collapses operationally
+* replay windows
+* temporal ecology
+* observation epochs
+* historical visibility
+* replay trajectories
 
 ---
 
-# Strongest Compression
+# Recommended Reviewer Path
 
-Runtime governability exists only where executable interruption can still materially affect consequence before hardening.
+New reviewers should follow:
 
----
+README.md
 
-# Current Stabilization Direction
+↓
 
-The Observatory increasingly stabilizes around:
+docs/OBSERVATORY_DIMENSIONS.md
 
-- interruption arrival realism
-- executable interruption locality
-- runtime consequence locality
-- runtime governability realism
-- consequence reachability realism
-- representation scaling asymmetry
-- continuation hardening
-- reconstructability asymmetry
-- operational coherence camouflage
-- replay/recovery divergence
-- consequence visibility inspection
-- runtime reality anchoring
-- false governability localization
-- runtime claim collapse
-- representational collapse geometry
-- consequence locality hardening
-- and hostile-runtime falsifiability.
+↓
 
-Recent stabilization cycles intentionally moved away from:
+docs/OBSERVATORY_EVOLUTION.md
 
-- semantic expansion
-- governance abstraction
-- resilience mythology
-- orchestration legitimacy
-- conceptual maturity theater
-- symbolic operational legitimacy
-- governance atmosphere
-- and ontology proliferation
+↓
 
-and toward:
+docs/canonical/START_HERE_CANONICAL.md
 
-- runtime-local falsifiability
-- executable interruption realism
-- interruption arrival realism
-- runtime consequence locality
-- operational locality
-- consequence reachability realism
-- reduction compression
-- synchronization burden
-- operational reachability
-- representational divergence localization
-- runtime reality anchoring
-- and practical runtime conditions.
+↓
+
+docs/canonical/CANONICAL_TRAVERSAL_INDEX.md
+
+↓
+
+governance/boundaries/README.md
+
+↓
+
+governance/SEMANTIC_COMPRESSION.md
+
+↓
+
+governance/TEMPORAL_OBSERVABILITY.md
 
 ---
 
-# Runtime Governability
+# Observatory Evolution
 
-The Observatory increasingly distinguishes between:
+The repository evolved through:
 
-- representation of governance
-and
-- executable runtime governability.
+Continuity Inspection
 
-A system may remain:
+↓
 
-- observable
-- replayable
-- explainable
-- auditable
-- procedurally coherent
-- psychologically governable-looking
-- operationally smooth
-- and institutionally represented
+Topology
 
-while executable interruption increasingly becomes:
+↓
 
-- reconstruction-dependent
-- synchronization-fragile
-- locality-constrained
-- operationally delayed
-- continuation-preempted
-- practically unreachable
-- or unable to materially arrive before consequence hardens.
+Pressure
 
----
+↓
 
-# Runtime Consequence Locality
+Weather
 
-The repository increasingly pressures whether executable interruption can still materially affect runtime consequence locally before continuation hardens operationally.
+↓
 
-The repository therefore increasingly focuses on:
+Climate
 
-- consequence arrival pressure
-- continuation hardening localization
-- runtime consequence divergence
-- interruption locality realism
-- executable consequence reachability
-- runtime consequence locality
-- consequence visibility substitution
-- and hostile-runtime operational falsifiability.
+↓
 
-Strong reduction:
+Adaptive Climate
 
-Represented governability may survive after executable consequence locality collapses operationally.
+↓
 
-Additional reduction:
+Continuity Ecology
 
-Consequence visibility is not consequence reachability.
+↓
+
+Temporal Ecology
+
+This progression represents increasing observer-visible environmental visibility.
+
+It does not represent:
+
+* prediction
+* authority
+* governance control
+* execution capability
 
 ---
 
-# Consequence Locality Hardening
+# Current Repository State
 
-The Observatory increasingly pressures whether consequence visibility is being mistaken for consequence reachability.
+The repository has stabilized into:
 
-A system may preserve:
+* canonical architecture
+* repository coherence architecture
+* boundary architecture
+* semantic topology architecture
+* continuity ecology visibility
+* temporal observability visibility
 
-- representation
-- replay
-- telemetry
-- escalation visibility
-- governance appearance
-- accountability visibility
-- and operational coherence
+The repository should be interpreted as:
 
-after executable consequence locality has already weakened.
+Observer-Only Continuity Observability
 
-Strong reduction:
+rather than:
 
-Consequence visibility is not consequence reachability.
+Governance Infrastructure
 
----
+or:
 
-# Representation Scaling Asymmetry
-
-One major hostile/runtime asymmetry increasingly appears central:
-
-representation scaling faster than executable interruption realism.
-
-Meaning systems may preserve:
-
-- visibility
-- accountability appearance
-- observability
-- replay continuity
-- escalation representation
-- governance visibility
-- telemetry continuity
-- simulation coherence
-- and operational smoothness
-
-after executable interruption realism has already materially weakened.
-
-Strong reduction:
-
-representation
-!=
-runtime governability.
+Execution Infrastructure
 
 ---
 
-# Runtime Reality Anchoring
+# Observer Limitation
 
-The repository increasingly pressures whether:
+All repository outputs remain:
 
-- representation
-- visibility
-- replay
-- observability
-- governance appearance
-- accountability
-- simulation continuity
-- and operational smoothness
+* observer-only
+* non-authoritative
+* non-governing
+* non-executing
 
-continue surviving after executable interruption realism materially weakens operationally.
+Visibility does not imply authority.
 
-The repository therefore increasingly focuses on:
+Observability does not imply enforcement.
 
-- runtime reality anchoring
-- representational collapse geometry
-- false governability localization
-- runtime claim collapse
-- executable interruption realism anchoring
-- representational divergence localization
-- and hostile-runtime operational falsifiability.
+Replay visibility does not imply prediction.
 
-Strong reduction:
+Historical visibility does not imply future-state certainty.
 
-Representational stability is not executable runtime reality.
-
----
-
-# Runtime Immune-System Stabilization
-
-The repository includes bounded runtime immune-system infrastructure focused on:
-
-- representational pressure auditing
-- runtime locality verification
-- authority inheritance detection
-- reduction drift stabilization
-- executable interruption realism hardening
-- representational divergence localization
-- runtime reality anchoring
-- and hostile-runtime falsifiability preservation.
-
-The infrastructure exists specifically to resist:
-
-- semantic inflation
-- governance mythology
-- ontology reopening
-- abstraction drift
-- representational authority inheritance
-- conceptual self-expansion
-- governance-atmospheric stabilization
-- and silent transition into execution infrastructure.
-
-Strong reduction:
-
-Observability correction
-!=
-execution authority.
-
----
-
-# Self-Correcting Observability
-
-The repository includes bounded self-correcting observability infrastructure focused on:
-
-- reduction drift detection
-- compression integrity stabilization
-- representation/runtime divergence mapping
-- runtime locality verification
-- authority inheritance detection
-- representational pressure auditing
-- interruption arrival realism
-- hostile-runtime falsifiability hardening
-- and runtime asymmetry localization.
-
-The tooling remains:
-
-- observer-only
-- runtime-local
-- anti-authoritative
-- and operationally bounded.
-
-The tooling does NOT:
-
-- govern execution
-- authorize interruption
-- operationalize escalation
-- automate consequence
-- or silently become execution infrastructure.
-
----
-
-# Human Runtime Conditions
-
-The Observatory increasingly pressures:
-
-real operational human runtime conditions.
-
-Including:
-
-- dependency gravity
-- emotional volatility
-- interruption impracticality
-- concealment incentives
-- synchronization burden
-- escalation fragility
-- operational exhaustion
-- continuation pressure
-- representational protection asymmetry
-- runtime accountability divergence
-- and consequence-locality degradation.
-
-Strong reduction:
-
-being seen
-!=
-being protected.
-
----
-
-# Fastest Review Path
-
-Run:
-
-```text
-RUN_TEXT_ONLY_REVIEW.bat
+UNKNOWN → HOLD.
