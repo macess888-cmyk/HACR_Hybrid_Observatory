@@ -1,0 +1,10 @@
+{
+  "title": "Anchor Field Observatory Demo",
+  "anchors": 2,
+  "connectivity_anchors": 1,
+  "observer_mode": true,
+  "prediction": false,
+  "routing": false,
+  "causality_certification": false,
+  "svg_sha256": "0cd1587c9ca6b5bb026f195e56fa5acd0efde103d5d4d0b544b249bcdbf653e5"
+}

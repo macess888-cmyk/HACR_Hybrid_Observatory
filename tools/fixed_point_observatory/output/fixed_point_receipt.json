@@ -1,0 +1,12 @@
+{
+  "title": "Fixed Point Observatory Demo",
+  "total_epochs": 3,
+  "fixed_points": 2,
+  "fixed_connectivity": 1,
+  "observer_mode": true,
+  "prediction": false,
+  "routing": false,
+  "causality_certification": false,
+  "report_sha256": "460d9873137c9451dede8b118fa0734f223b07cad4b1c18bf691c9e00620a642",
+  "svg_sha256": "697bc3fb5924554ae10a7d6499db5968dfaf35bc4bc4f823810bc49cfcdfba90"
+}
