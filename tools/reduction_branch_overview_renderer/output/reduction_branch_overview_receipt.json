@@ -1,0 +1,10 @@
+{
+  "title": "Reduction Branch Overview",
+  "layers": 9,
+  "observer_mode": true,
+  "prediction": false,
+  "routing": false,
+  "causality_certification": false,
+  "governance_authority": false,
+  "svg_sha256": "55ed0bde9fabeefcc01f46d619f9b8f393388257d9038c420acc3fe00b014f0b"
+}
