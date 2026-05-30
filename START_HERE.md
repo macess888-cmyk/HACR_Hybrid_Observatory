@@ -2,7 +2,11 @@
 
 Observer-only runtime continuity inspection.
 
-The HACR Hybrid Observatory is a repository of observer-only observability, reduction, continuity, boundary-preservation, environmental visibility, and temporal observability tooling designed to support visibility into structural persistence, interruption realism, dependency formation, reduction-stable artifacts, and reviewable continuity environments.
+The HACR Hybrid Observatory is an observer-only signal localization, inspectability preservation, continuity observability, environmental observability, temporal observability, and formation visibility infrastructure.
+
+The Observatory operates within a broader signal ecology.
+
+Its purpose is to preserve visibility into evolving formations without crossing into interpretation, authority, decision, action, or consequence.
 
 UNKNOWN → HOLD.
 
@@ -13,13 +17,13 @@ UNKNOWN → HOLD.
 The repository exists to support:
 
 * observer-only inspection
+* signal localization
+* inspectability preservation
 * continuity visibility
 * structural persistence analysis
-* reduction observability
-* interruption realism
-* dependency formation visibility
 * environmental observability
 * temporal observability
+* reduction observability
 * architectural reviewability
 * reproducibility
 
@@ -34,85 +38,187 @@ The repository does not provide:
 * enforcement legitimacy
 * execution capability
 
+The repository preserves visibility.
+
+Interpretation remains external.
+
+UNKNOWN → HOLD.
+
+---
+
+# Core Architecture
+
+Reality
+
+↓
+
+Signals
+
+↓
+
+Signal Ecology
+
+↓
+
+Observatory
+
+↓
+
+Formation Visibility
+
+↓
+
+External Interpretation
+
+↓
+
+Decision
+
+↓
+
+Action
+
+↓
+
+Consequence
+
+The Observatory stops at formation visibility.
+
+Interpretation, authority, decision, action, and consequence remain outside the Observatory.
+
+UNKNOWN → HOLD.
+
 ---
 
 # Why This Exists
 
-Many systems fail long before visible failure occurs.
+Many formations emerge long before visible consequence appears.
 
-Dependencies accumulate.
+Signals accumulate.
+
+Signals weaken.
+
+Signals normalize.
+
+Signals disappear.
+
+Signals become reconstructable.
+
+Dependencies form.
 
 Recovery paths narrow.
 
 Interruption viability degrades.
 
-Operational assumptions drift away from runtime reality.
+Environmental conditions evolve.
 
-Yet these changes often remain difficult to observe until consequence becomes visible.
+Yet many of these conditions remain difficult to localize until consequence becomes visible.
 
-The HACR Hybrid Observatory exists to support visibility into those observer-visible conditions.
-
-The repository does not attempt to govern systems, authorize actions, predict outcomes, or certify correctness.
-
-Instead, it focuses on a simpler question:
-
-```text
-What remains observable as continuity, dependencies, environments, and histories evolve?
-```
+The Observatory exists to preserve visibility into those formations while they remain inspectable.
 
 The goal is not control.
 
+The goal is not authority.
+
 The goal is visibility.
 
-Observer-only visibility into structures, relationships, environments, and temporal changes that may otherwise remain difficult to inspect.
+Observer-only visibility into formations, relationships, environments, temporal conditions, and signal ecologies that may otherwise become difficult to localize.
 
 UNKNOWN → HOLD.
 
 ---
 
-# Where And When
+# Signal Ecology
 
-The HACR Hybrid Observatory focuses on observer-visible conditions at the point they can be inspected.
+Signal ecology is the environment in which signals exist and evolve.
 
-Where:
+Signals may:
 
-```text
-structures
-dependencies
-continuity paths
-environments
-historical states
-```
+* emerge
+* persist
+* amplify
+* attenuate
+* localize
+* normalize
+* disappear
+* reconstruct
+* become novel
 
-become observable.
+Signal ecology is adaptive and dynamic.
 
-When:
+The Observatory does not govern signal ecology.
 
-```text
-continuity evolves
-dependencies accumulate
-environments change
-interruption viability degrades
-historical visibility becomes reviewable
-```
-
-The repository does not attempt to reconstruct every possible past state or predict every possible future state.
-
-Instead, it focuses on reviewable observer-visible conditions that exist within accessible inspection horizons.
-
-The objective is not complete knowledge.
-
-The objective is bounded visibility.
+The Observatory localizes signals within signal ecology.
 
 UNKNOWN → HOLD.
 
 ---
 
-# Who
+# What The Observatory Preserves
 
-The HACR Hybrid Observatory is intended for reviewers interested in observer-visible continuity, dependency formation, interruption realism, reduction observability, environmental visibility, and temporal observability.
+The Observatory preserves:
 
-Examples may include:
+## Signal Localization
+
+The ability to determine where signals and formations are occurring.
+
+---
+
+## Inspectability Preservation
+
+The ability to examine, verify, correlate, contextualize, and reconstruct observable traces.
+
+---
+
+## Localization Preservation
+
+The ability for future observers to localize signals as conditions evolve.
+
+---
+
+## Distinction Preservation
+
+The ability for meaningful distinctions to remain observable and localizable.
+
+---
+
+## Formation Visibility
+
+The ability for emerging formations to remain visible and inspectable.
+
+---
+
+# What The Observatory Does Not Do
+
+The Observatory does not:
+
+* interpret
+* govern
+* authorize
+* execute
+* optimize
+* prescribe
+* certify causality
+* make decisions
+* perform actions
+
+Signal is not interpretation.
+
+Localization is not meaning.
+
+Visibility is not authority.
+
+Inspectability is not control.
+
+Formation visibility is not decision support.
+
+UNKNOWN → HOLD.
+
+---
+
+# Who Is This For?
+
+The repository is intended for:
 
 * engineers
 * architects
@@ -127,16 +233,14 @@ The repository is designed for inspection and review.
 
 It is not designed to function as:
 
-* governance authority
-* execution authority
-* operational command infrastructure
+* governance infrastructure
+* execution infrastructure
 * certification infrastructure
+* operational command infrastructure
 
-Participation does not require adoption of any particular methodology, governance model, operational framework, or implementation strategy.
+Participation does not require adoption of any specific governance model, methodology, architecture, or implementation strategy.
 
 The repository exists to support visibility.
-
-Interpretation remains external to the repository.
 
 UNKNOWN → HOLD.
 
@@ -144,189 +248,143 @@ UNKNOWN → HOLD.
 
 # Recommended Review Path
 
-For a first-time reviewer:
+For first-time reviewers:
 
-```text
 README.md
+
 ↓
+
+docs/SIGNAL_ECOLOGY_ARCHITECTURE.md
+
+↓
+
 docs/REPOSITORY_MAP.md
+
 ↓
+
 docs/OBSERVATORY_FRAMEWORK.md
+
 ↓
+
 docs/OBSERVATORY_DIMENSIONS.md
+
 ↓
+
 docs/OBSERVATORY_EVOLUTION.md
+
 ↓
+
 docs/REPOSITORY_EVOLUTION.md
+
 ↓
+
 docs/canonical/START_HERE_CANONICAL.md
+
 ↓
+
 docs/canonical/CANONICAL_TRAVERSAL_INDEX.md
+
 ↓
+
+docs/canonical/CANONICAL_BOUNDARY_INDEX.md
+
+↓
+
+governance/SIGNAL_ECOLOGY_BOUNDARY.md
+
+↓
+
 governance/boundaries/README.md
+
 ↓
+
 governance/SEMANTIC_COMPRESSION.md
+
 ↓
+
 governance/TEMPORAL_OBSERVABILITY.md
+
 ↓
+
 governance/TEMPORAL_CONTAINMENT.md
-↓
-docs/TEMPORAL_LAYER_STACK.md
-↓
-tools/semantic_topology_renderer/RENDERER_EVOLUTION.md
-```
 
 Purpose:
 
-Understand what the repository is, how it is organized, what it does not claim, and how observability evolved from structure visibility toward temporal visibility.
+Understand:
+
+* what the repository is
+* what it is not
+* how observability evolved
+* how signal ecology fits into the architecture
+* where the Observatory boundary exists
 
 ---
 
-# Observatory Framework
+# Observatory Dimensions
 
 The repository currently operates across four observer-visible dimensions.
 
 ## Structure
 
-Question:
-
 What exists?
-
-Examples:
-
-* topology
-* architecture
-* regions
-* corridors
-* dependencies
 
 ---
 
 ## Dynamics
 
-Question:
-
 How does it interact?
-
-Examples:
-
-* traversal
-* continuity formation
-* dependency movement
-* pressure visibility
-* reduction paths
 
 ---
 
 ## Environment
 
-Question:
-
 What conditions emerge?
-
-Examples:
-
-* climate fields
-* ecology fields
-* density basins
-* continuity terrain
-* environmental observability
 
 ---
 
 ## Time
 
-Question:
-
 How does it change?
 
-Examples:
-
-* replay windows
-* temporal ecology
-* temporal layer stacks
-* observation epochs
-* historical visibility
+These dimensions provide observer-visible visibility into formations without converting visibility into authority.
 
 ---
 
-# Observatory Evolution
-
-The repository evolved through:
-
-Continuity Inspection
-
-↓
-
-Topology
-
-↓
-
-Pressure
-
-↓
-
-Weather
-
-↓
-
-Climate
-
-↓
-
-Adaptive Climate
-
-↓
-
-Continuity Ecology
-
-↓
-
-Temporal Ecology
-
-↓
-
-Temporal Layer Stack
-
-This progression represents increasing observer-visible environmental and temporal visibility.
-
-It does not represent increasing authority.
-
-It does not represent increasing execution capability.
-
----
-
-# Current Repository State
-
-The repository has stabilized into:
-
-* repository coherence architecture
-* repository evolution architecture
-* canonical architecture
-* boundary architecture
-* reduction architecture
-* semantic topology architecture
-* continuity ecology visibility
-* temporal observability visibility
-* temporal layer stack architecture
+# Current Repository Interpretation
 
 The repository should be interpreted as:
 
-```text
-Observer-Only Continuity Observability Infrastructure
-```
+Observer-Only Signal Localization and Inspectability Preservation Infrastructure.
 
-rather than:
+Not:
 
-```text
-Governance Infrastructure
-```
+Governance Infrastructure.
 
-or:
+Not:
 
-```text
-Execution Infrastructure
-```
+Execution Infrastructure.
+
+Not:
+
+Prediction Infrastructure.
+
+UNKNOWN → HOLD.
+
+---
+
+# Current Research Question
+
+Does preserving inspectability preserve future localization capacity, or can observability structures themselves gradually shape which future distinctions remain localizable?
+
+This question remains observational.
+
+It does not authorize intervention.
+
+It does not authorize governance.
+
+It does not authorize execution.
+
+UNKNOWN → HOLD.
 
 ---
 
@@ -335,6 +393,7 @@ Execution Infrastructure
 All repository outputs remain:
 
 * observer-only
+* non-interpreting
 * non-authoritative
 * non-governing
 * non-executing
@@ -344,11 +403,10 @@ Visibility does not imply authority.
 
 Observability does not imply enforcement.
 
-Replay visibility does not imply prediction.
-
-Historical visibility does not imply future-state certainty.
+Historical visibility does not imply prediction.
 
 Temporal visibility does not imply forecasting.
 
-UNKNOWN → HOLD.
+Signal localization does not imply meaning.
 
+UNKNOWN → HOLD.
