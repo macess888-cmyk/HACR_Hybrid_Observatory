@@ -1,261 +1,540 @@
-# Formation Preconditions
+# Material Consequence Observatory — Formation Preconditions
 
-Status: Experimental
-
-Purpose:
-
-This document records an observed inspection surface that emerged during public pressure testing of the Material Consequence Observatory.
-
-The observation originated from a recurring question:
-
-Can a condition remain visible, measurable, and apparently stable after the conditions required for that condition to emerge have already disappeared?
-
-If so, divergence may occur before representation drift, before integrity loss becomes measurable, and potentially before consequence itself becomes visible.
+Status: Experimental v0.3
+Mode: Observer-only inspection
+Control posture: UNKNOWN → HOLD
 
 ---
 
-# The Formation Question
+# Purpose
 
-Most inspection frameworks ask:
+The Formation Preconditions layer exists to inspect conditions that must remain true for an observable condition to continue being produced.
 
-Does the representation correspond to the condition?
+The observatory originally focused on:
 
-This work introduces an earlier question:
+Condition
+↓
+Interaction
+↓
+Consequence
 
-Do the formation conditions still exist?
+Public review pressure repeatedly revealed a deeper layer.
 
-Because a condition may remain observable long after the conditions that generated it have degraded, disappeared, or become unrecoverable.
+Many systems continue exhibiting a condition after the structures producing that condition have already degraded.
 
----
-
-# Formation Preconditions
-
-Definition:
-
-Formation Preconditions are the enabling conditions required for a condition, capability, structure, or function to emerge and continue emerging.
-
-Examples include:
-
-* environmental conditions
-* supporting infrastructure
-* organizational capabilities
-* resource availability
-* trust relationships
-* ecological dependencies
-* governance conditions
-* substrate integrity
-
-The exact form varies by domain.
-
-The inspection question remains constant.
+This document records that layer.
 
 ---
 
-# Condition ≠ Formation Preconditions
+# Core Distinction
 
-## Observed Form
+## Condition ≠ Formation Preconditions
 
-A condition remains visible and measurable while the conditions required for its formation progressively degrade.
+A condition may remain visible while the prerequisites required to continue producing that condition have already degraded.
 
-## Examples
+Examples:
 
-### Ecological Systems
+Trust remains visible.
+Trust ecology degrades.
 
-A forest remains standing.
+Capability remains visible.
+Coordination degrades.
 
-Soil health has already collapsed.
+Governance remains visible.
+Authority localization degrades.
 
-The forest condition persists temporarily.
+Confidence remains visible.
+Reality contact degrades.
 
-The formation conditions no longer do.
+The observatory therefore distinguishes:
 
----
+Observed Condition
+≠
+Formation Preconditions
 
-### Organizations
-
-Performance remains stable.
-
-Institutional knowledge exits.
-
-Key personnel leave.
-
-Coordination structures weaken.
-
-Performance continues.
-
-Formation conditions degrade.
+Status: PRIMARY FORMATION INVARIANT
 
 ---
 
-### Infrastructure
+# Formation Geometry
 
-Service remains operational.
+Candidate geometry:
 
-Maintenance capability declines.
-
-Replacement capacity disappears.
-
-Supply chains weaken.
-
-Continuity remains visible.
-
-Formation conditions deteriorate.
-
----
-
-### Governance
-
-Authority remains recognized.
-
-Legitimacy erodes.
-
-Trust declines.
-
-Institutional support weakens.
-
-The visible condition remains.
-
-Its formation conditions no longer do.
-
----
-
-# Why This Matters
-
-Many failure geometries appear late.
-
-Formation-precondition degradation may appear earlier.
-
-This suggests an inspection sequence:
-
+Reality Constraints
+↓
+Admissibility
+↓
+Formation Ecology
+↓
 Formation Preconditions
 ↓
 Condition
 ↓
-Representation
+Interaction
+↓
+Stress
+↓
+Divergence
 ↓
 Consequence
 ↓
-Persistence
+Representation
 ↓
+Receipt
+
+This geometry remains under active pressure.
+
+Architecture freeze:
+HOLD.
+
+---
+
+# Formation Ecology
+
+Formation Preconditions rarely exist independently.
+
+Most emerge from a broader supporting ecology.
+
+The observatory therefore distinguishes:
+
+Formation Ecology
+↓
+Formation Preconditions
+↓
+Condition
+
+The ecology may degrade long before the condition becomes visibly unstable.
+
+Examples:
+
+* maintenance cultures
+* review cultures
+* accountability structures
+* trust networks
+* renewal processes
+* contradiction pathways
+* ownership chains
+* coordination structures
+
+Status: ACTIVE RESEARCH
+
+---
+
+# Formation Failure Pattern
+
+Repeated review-cycle finding:
+
+Visible failure is often not the earliest failure.
+
+Observed sequence:
+
+Formation Ecology Failure
+↓
+Formation Preconditions Degrade
+↓
+Condition Persists
+↓
+Stress Accumulates
+↓
+Visible Failure Appears
+
+Examples:
+
+Certificate expires.
+Inventory failed earlier.
+
+Governance collapses.
+Authority conditions degraded earlier.
+
+Capability disappears.
+Coordination degraded earlier.
+
+Confidence drifts.
+Reality contact weakened earlier.
+
+Status: ACTIVE SURVIVOR
+
+---
+
+# Formation Preconditions by Domain
+
+## Trust
+
+Trust depends upon:
+
+* inventory visibility
+* ownership clarity
+* renewal processes
+* maintenance discipline
+* review mechanisms
+
+Trust
+≠
+Certificate
+
+Trust
+≠
+Representation of Trust
+
+Trust
+depends on:
+Trust Ecology
+
+---
+
+## Governance
+
+Governance depends upon:
+
+* authority localization
+* escalation pathways
+* accountability structures
+* review discipline
+* admissibility conditions
+
+Governance
+≠
+Policy
+
+Governance
+≠
+Documentation
+
+Governance
+depends on:
+Governance Preconditions
+
+---
+
+## Capability
+
+Capability depends upon:
+
+* coordination
+* alignment
+* maintenance
+* continuity
+* coherence
+
+Capability
+≠
+Coherence
+
+Visible capability may survive after coherence begins degrading.
+
+---
+
+## Accountability
+
+Accountability depends upon:
+
+* responsibility localization
+* authority traceability
+* consequence attribution
+* review pathways
+
+Compliance
+≠
+Accountability
+
+Accountability may disappear while compliance remains visible.
+
+---
+
+## Recoverability
+
+Recoverability depends upon:
+
+* rollback pathways
+* alternative futures
+* redundancy
+* retained options
+
+Reviewability
+≠
 Recoverability
 
-If true, formation inspection may reveal failure trajectories before traditional indicators become visible.
+The ability to review a failure does not imply the ability to recover from it.
 
 ---
 
-# Relationship To Existing Geometries
+## Confidence
 
-Formation Preconditions are not currently considered a stabilized geometry.
+Confidence depends upon:
 
-They may instead represent an upstream inspection layer.
+* contradiction exposure
+* external grounding
+* correction pathways
+* uncertainty preservation
 
-For example:
+Confidence
+≠
+Verification
 
-Presence ≠ Integrity
+Consensus
+≠
+Coherence
 
-may emerge because
-
-Formation Preconditions ≠ Condition
-
-occurred earlier.
-
----
-
-Symptom ≠ Condition
-
-may emerge because
-
-Formation Preconditions ≠ Condition
-
-occurred earlier.
+A system may become increasingly confident while progressively losing contact with reality.
 
 ---
 
-Continuity ≠ Health
+# Recursive Formation Failure
 
-may emerge because
+A recurring public-review finding:
 
-Formation Preconditions ≠ Condition
+Systems can become self-reinforcing.
 
-occurred earlier.
+Pattern:
 
----
+Interpretation
+↓
+Repetition
+↓
+Confidence
+↓
+Authority
+↓
+Further Repetition
 
-Representation ≠ Reality Condition
+This loop may generate:
 
-may emerge because
+* consensus
+* confidence
+* stability
 
-Formation Preconditions ≠ Condition
+without improving:
 
-occurred earlier.
+* accuracy
+* admissibility
+* grounding
+* reality correspondence
 
----
+Candidate invariant:
 
-# Alternative Interpretation
+Consensus
+≠
+Coherence
 
-An alternative interpretation is that formation-precondition divergence is not a separate geometry.
-
-Instead it may be:
-
-the earliest detectable stage of all divergence geometries.
-
-This remains unresolved.
-
-Additional pressure testing required.
-
----
-
-# Candidate Inspection Questions
-
-When inspecting a condition:
-
-1. Is the condition observable?
-
-2. Is the condition stable?
-
-3. Do the formation conditions still exist?
-
-4. Can the condition continue emerging?
-
-5. If interrupted, can the condition be re-formed?
-
-6. Are the formation conditions recoverable?
-
-7. Are the formation conditions represented anywhere?
+Status: ACTIVE SURVIVOR
 
 ---
 
-# Current Status
+# Formation and Authority
 
-Observed across:
+A recurring governance finding:
 
-* governance discussions
-* organizational systems
-* infrastructure analysis
-* ecological examples
-* consequence inspection
-* public review cycle discussions
+Authority itself has formation conditions.
 
-The pattern appears repeatedly.
+Authority depends upon:
 
-However:
+* legitimacy
+* localization
+* accountability
+* reviewability
+* continued recognition
 
-The ontology remains unresolved.
+Therefore:
 
-Possible interpretations:
+Authority
+≠
+Authority Preconditions
 
-A. New divergence geometry.
+Authorization
+≠
+Governance
 
-B. Upstream causal layer.
+Authorization
+≠
+Judgment
 
-C. Formation observability layer.
+Status: ACTIVE SURVIVOR
 
-D. Earliest detectable divergence surface.
+---
 
-Status:
+# Formation and Transition
 
-UNDER PRESSURE TEST
+A recurring pressure finding:
 
-Not stabilized.
+Many failures emerge during transitions.
 
-UNKNOWN → HOLD.
+Not during occupancy.
+
+Therefore:
+
+Configuration
+≠
+Transition
+
+Formation Preconditions influence:
+
+Condition A
+↓
+Interaction
+↓
+Stress
+↓
+Transition
+↓
+Condition B
+
+How formation degradation propagates into transition failure remains an open research area.
+
+Status: PRIMARY RESEARCH FRONTIER
+
+---
+
+# Condition-Producing Structures
+
+A major review-cycle survivor:
+
+Observed Condition
+≠
+Condition-Producing Structure
+
+Examples:
+
+Presence
+≠
+Integrity
+
+Certificate
+≠
+Trust
+
+Capability
+≠
+Coherence
+
+Compliance
+≠
+Accountability
+
+Confidence
+≠
+Verification
+
+Consensus
+≠
+Coherence
+
+Reviewability
+≠
+Recoverability
+
+The observatory increasingly treats condition-producing structures as primary inspection objects.
+
+Status: PROMOTED CANDIDATE INVARIANT
+
+---
+
+# Failure Visibility
+
+A recurring pattern across domains:
+
+The first visible failure is often not the first failure.
+
+Candidate sequence:
+
+Reality Contact Failure
+↓
+Formation Failure
+↓
+Transition Failure
+↓
+Condition Failure
+↓
+Consequence Visibility
+
+Therefore:
+
+Visible Failure
+≠
+Earliest Failure
+
+Status: PROMOTED CANDIDATE INVARIANT
+
+---
+
+# Open Questions
+
+## Formation Ecology
+
+What structures produce formation preconditions?
+
+How do formation ecologies emerge?
+
+How do they degrade?
+
+---
+
+## Transition Emergence
+
+How does:
+
+Condition A
+↓
+
+Interaction
+↓
+
+Stress
+↓
+
+Transition
+↓
+
+Condition B
+
+occur?
+
+---
+
+## Recursive Closure
+
+How can a system distinguish:
+
+stabilization
+
+from
+
+recursive self-reinforcement?
+
+---
+
+## Reality Contact
+
+Can a system still be corrected by reality?
+
+Can contradiction still influence confidence?
+
+Can correction occur faster than reinforcement?
+
+---
+
+# Current Assessment
+
+Stable:
+
+* Condition ≠ Formation Preconditions
+* Observed Condition ≠ Condition-Producing Structure
+* Visible Failure ≠ Earliest Failure
+* Capability ≠ Coherence
+* Compliance ≠ Accountability
+* Confidence ≠ Verification
+* Consensus ≠ Coherence
+* Reviewability ≠ Recoverability
+
+Under Pressure:
+
+* Formation Ecology
+* Authority Preconditions
+* Transition Emergence
+* Recursive Closure
+* Reality Contact Preservation
+
+Architecture Freeze:
+
+HOLD
+
+UNKNOWN → HOLD
