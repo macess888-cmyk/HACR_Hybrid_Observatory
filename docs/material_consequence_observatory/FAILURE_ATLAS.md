@@ -1,149 +1,259 @@
-# FAILURE_ATLAS
+# Failure Atlas
 
-## Status
+Status: Experimental
 
-Experimental v0.1
+Purpose:
 
-Observed Failure Geometry Registry
+The Failure Atlas records recurring divergence geometries observed across materials, systems, organizations, governance structures, infrastructure, and decision environments.
 
----
+These are not claims about truth.
 
-# Purpose
+They are inspection patterns.
 
-This document records recurring divergence geometries observed during inspection.
+The purpose is not prediction.
 
-These are not claims.
-
-These are not laws.
-
-These are observed patterns that have survived multiple inspection traversals.
+The purpose is to help identify situations where visible conditions may diverge from the properties they appear to represent.
 
 ---
 
 # Presence ≠ Integrity
 
-Observed when:
+## Observed Form
 
-* iron corrosion
-* structural degradation
-* infrastructure aging
+An object, system, institution, or process remains present while its integrity progressively degrades.
 
-Pattern:
+## Examples
 
-```text
-Object Remains
-↓
-Condition Changes
-↓
-Integrity Diverges
-```
+* Corroded structural steel
+* Aging infrastructure
+* Legacy software systems
+* Institutional trust erosion
 
-Question:
+## Inspection Question
 
-> Can an object remain visible while integrity weakens?
+Does continued presence imply preserved integrity?
 
 ---
 
 # Symptom ≠ Condition
 
-Observed when:
+## Observed Form
 
-* mold growth
-* contamination indicators
-* ecosystem stress markers
+Visible symptoms appear, disappear, or change while the underlying condition remains unchanged.
 
-Pattern:
+## Examples
 
-```text
-Visible Symptom
-↓
-Removal
-↓
-Underlying Condition Persists
-```
+* Temporary performance recovery
+* Symptom suppression in healthcare
+* Surface-level governance fixes
+* Operational workarounds
 
-Question:
+## Inspection Question
 
-> Can symptoms disappear while causes remain?
+Is the observed symptom the condition itself, or only evidence of it?
 
 ---
 
 # Continuity ≠ Health
 
-Observed when:
+## Observed Form
 
-* organizations
-* institutions
-* operational systems
+A system continues operating while health progressively degrades.
 
-Pattern:
+## Examples
 
-```text
-System Continues
-↓
-Dependencies Accumulate
-↓
-Health Degrades
-```
+* Infrastructure degradation
+* Organizational burnout
+* Ecological decline
+* Technical debt accumulation
 
-Question:
+## Inspection Question
 
-> Can continuity mask degradation?
+Does continued operation imply continued health?
 
 ---
 
 # Persistence ≠ Function
 
-Observed when:
+## Observed Form
 
-* plastic persistence
-* legacy systems
-* abandoned infrastructure
+An object, process, or institution persists while its original function progressively degrades or disappears.
 
-Pattern:
+## Examples
 
-```text
-Object Persists
-↓
-Original Function Ends
-↓
-Material Remains
-```
+* Legacy governance structures
+* Dormant technical systems
+* Persistent organizational processes
+* Long-lived infrastructure with degraded utility
 
-Question:
+## Inspection Question
 
-> Can persistence outlive usefulness?
+Does persistence imply preserved function?
 
 ---
 
 # Representation ≠ Reality Condition
 
-Observed across multiple domains.
+## Observed Form
 
-Pattern:
+Representations remain stable while the underlying reality condition changes.
 
-```text
-Representation
-↓
-Appears Stable
-↓
-Underlying Condition Changes
-```
+## Examples
 
-Question:
+* Dashboards masking degradation
+* Metrics disconnected from reality
+* Reporting lag
+* Stale operational models
 
-> Does representation still correspond to reality?
+## Inspection Question
+
+Does the representation still correspond to the condition it claims to represent?
 
 ---
 
-# Failure Atlas Reduction
+# Capability ≠ Coherence
 
-Current candidate survivor:
+## Observed Form
 
-```text
-Visible Persistence
-≠
-Preserved Condition
-```
+Resources, personnel, authority, and strategic intent remain present while the system progressively loses the ability to coordinate itself coherently.
+
+## Examples
+
+* Governance recursion
+* Approval-layer expansion
+* Organizational fragmentation
+* Transformation stagnation
+
+## Inspection Question
+
+Can the system still move coherently through itself?
+
+## Source
+
+Public review cycle – enterprise governance discussions.
+
+---
+
+# Compliance ≠ Accountability
+
+## Observed Form
+
+Formal requirements are satisfied while responsibility, attribution, contestability, or traceability progressively degrade.
+
+## Examples
+
+* Certification without accountability
+* Regulatory compliance without explainability
+* Auditability without responsibility preservation
+* Procedural success with unclear ownership
+
+## Inspection Question
+
+If consequence occurs, can responsibility still be localized?
+
+## Source
+
+Public review cycle – AI governance discussions.
+
+---
+
+# Hesitation ≠ Recoverability
+
+## Observed Form
+
+Review, escalation, delay, or hesitation remain available after materially different futures have already become impossible.
+
+## Examples
+
+* Late-stage intervention
+* Irrecoverable infrastructure degradation
+* Escalation after operational lock-in
+* Governance review after consequence commitment
+
+## Inspection Question
+
+Does hesitation still preserve alternative futures?
+
+## Source
+
+Public review cycle – decision admissibility and interruption discussions.
+
+---
+
+# Intent ≠ Execution
+
+## Observed Form
+
+Authorized intent remains stable while operational interpretation progressively diverges during execution.
+
+## Examples
+
+* Policy implementation drift
+* Organizational translation layers
+* Multi-agent execution chains
+* Delegated authority systems
+
+## Inspection Question
+
+Does execution still correspond to originating intent?
+
+## Source
+
+Public review cycle – governance and authority discussions.
+
+---
+
+# Reviewability ≠ Recoverability
+
+## Observed Form
+
+A condition remains reviewable, observable, or auditable while recovery of materially different outcomes becomes impossible.
+
+## Examples
+
+* Post-failure investigations
+* Irreversible operational transitions
+* Historical reconstruction
+* Consequence-localized review
+
+## Inspection Question
+
+Can the system still change outcome, or only explain outcome?
+
+## Source
+
+Public review cycle – interruption and recoverability discussions.
+
+---
+
+# Candidate Geometry Layer
+
+The following geometries have surfaced repeatedly but require additional pressure testing before promotion.
+
+* Condition ≠ Formation Preconditions
+* Oversight ≠ Attribution
+* Observation ≠ Authority
+* Training ≠ Control
+* Governance Activity ≠ Governance Coherence
+* Decision Capability ≠ Decision Admissibility
+* Certification ≠ Responsibility Preservation
+
+Status:
+
+Observed.
+
+Not stabilized.
+
+Additional counterexamples and failure cases required.
+
+---
+
+# Notes
+
+The geometries recorded here are inspection tools.
+
+They are not assertions of inevitability.
+
+A geometry remains admissible only while it survives repeated pressure testing across multiple domains.
 
 UNKNOWN → HOLD.

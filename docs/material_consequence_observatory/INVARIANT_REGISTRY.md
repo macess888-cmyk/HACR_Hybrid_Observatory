@@ -1,105 +1,235 @@
-# INVARIANT_REGISTRY
+# Invariant Registry
 
-## Status
+Status: Experimental
 
-Experimental v0.1
+Purpose:
 
-Observed Survivors Registry
+This registry records reductions that have survived repeated pressure testing across multiple domains.
 
----
+These are not treated as universal truths.
 
-# Purpose
+They are observed survivors.
 
-This registry records reductions that have survived repeated pressure, traversal, and inspection.
+A pattern enters this registry only after appearing repeatedly across independent examples, domains, and review cycles.
 
-These are not truths.
+Inclusion in this registry does not imply permanence.
 
-These are not guarantees.
-
-These are observations that have remained stable under current review.
+All entries remain subject to revision, rejection, or removal.
 
 ---
 
-# Continuity ≠ Recoverability
+# Registry Criteria
 
-Observed within HACR.
+A pattern should satisfy most of the following:
 
-A system may continue operating while becoming increasingly difficult to restore.
+* observed across multiple domains
+* survives counterexample pressure
+* survives reviewer challenge
+* remains explanatory after abstraction
+* preserves distinction under transformation
 
----
-
-# Visible Persistence ≠ Preserved Condition
-
-Observed within Material Consequence Observatory.
-
-Visibility alone does not guarantee condition preservation.
+Patterns that remain speculative belong in the Failure Atlas or Candidate Geometry layer.
 
 ---
 
-# Representation ≠ Reality Condition
+# Stabilized Survivors
+
+## Presence ≠ Integrity
 
 Observed across:
 
-* material systems
+* materials
 * infrastructure
 * organizations
-* research systems
-* AI systems
+* governance systems
 
-Representation may remain stable while reality changes.
-
----
-
-# Symptom ≠ Condition
-
-Observed within biological and environmental inspections.
-
-Removing symptoms does not necessarily remove causes.
+A thing may remain present while its integrity progressively degrades.
 
 ---
 
-# Persistence ≠ Function
+## Symptom ≠ Condition
 
-Observed within long-duration consequence pathways.
+Observed across:
 
-Persistence does not guarantee continued utility.
+* healthcare
+* infrastructure
+* governance
+* operational systems
 
----
-
-# Calibration ≠ Grounding
-
-Observed within AI and reference-preservation discussions.
-
-Calibration may preserve coherence without preserving reference.
+Visible symptoms do not necessarily identify the underlying condition.
 
 ---
 
-# Success ≠ Reference Preservation
+## Continuity ≠ Health
 
-Observed within research-system inspection.
+Observed across:
 
-Successful continuation does not guarantee preservation of the original object of inquiry.
+* infrastructure
+* institutions
+* ecosystems
+* organizations
 
----
-
-# Registry Boundary
-
-The registry is descriptive.
-
-It is not normative.
-
-Invariants remain subject to future falsification.
+Continued operation does not imply preserved health.
 
 ---
 
-# Current Candidate Survivor
+## Persistence ≠ Function
+
+Observed across:
+
+* technical systems
+* governance structures
+* organizations
+* material systems
+
+Persistence does not imply preserved function.
+
+---
+
+## Representation ≠ Reality Condition
+
+Observed across:
+
+* dashboards
+* reporting systems
+* governance
+* forecasting
+* operational environments
+
+Representations may remain stable while underlying conditions change.
+
+---
+
+# Emerging Cross-Domain Survivors
+
+These patterns have survived significant pressure but require additional review before promotion to the stabilized layer.
+
+---
+
+## Capability ≠ Coherence
+
+Observed across:
+
+* organizations
+* governance
+* execution systems
+
+Resources, authority, and intent may remain while coherent execution degrades.
+
+Status:
+
+UNDER REVIEW
+
+---
+
+## Compliance ≠ Accountability
+
+Observed across:
+
+* governance discussions
+* regulatory environments
+* AI oversight discussions
+
+Formal compliance may persist while responsibility localization degrades.
+
+Status:
+
+UNDER REVIEW
+
+---
+
+## Reviewability ≠ Recoverability
+
+Observed across:
+
+* governance
+* consequence analysis
+* interruption analysis
+
+A condition may remain reviewable after alternative futures disappear.
+
+Status:
+
+UNDER REVIEW
+
+---
+
+## Intent ≠ Execution
+
+Observed across:
+
+* organizational systems
+* delegated authority chains
+* governance architectures
+
+Execution may diverge from originating intent.
+
+Status:
+
+UNDER REVIEW
+
+---
+
+# Candidate Layer
+
+Patterns observed repeatedly but not yet sufficiently pressure tested.
+
+* Condition ≠ Formation Preconditions
+* Observation ≠ Authority
+* Oversight ≠ Attribution
+* Training ≠ Control
+* Governance Activity ≠ Governance Coherence
+* Decision Capability ≠ Decision Admissibility
+* Certification ≠ Responsibility Preservation
+* Ownership ≠ Control
+* Procurement ≠ Capability
+
+Status:
+
+Candidate
+
+Additional pressure testing required.
+
+---
+
+# Current Working Compression
+
+The strongest reduction presently supported by the registry is:
 
 ```text
-Representation
+Apparent State
 ≠
-Reality Condition
+Load-Bearing State
 ```
 
-This invariant currently appears across the largest number of inspected domains.
+Observed Form:
+
+What appears present, healthy, compliant, operational, accountable, coherent, or stable may differ from the property actually carrying that condition.
+
+This reduction remains provisional.
+
+Additional pressure testing required.
+
+---
+
+# Registry Discipline
+
+The purpose of this registry is not expansion.
+
+The purpose is compression.
+
+A smaller registry containing durable distinctions is preferred over a larger registry containing weak distinctions.
+
+Observed
+
+≠
+
+Established
+
+Established
+
+≠
+
+Permanent
 
 UNKNOWN → HOLD.
