@@ -14,7 +14,7 @@ UNKNOWN → HOLD.
 
 ---
 
-## DP_0001
+# DP_0001
 
 Question:
 
@@ -22,17 +22,31 @@ Can observation exist without distinction?
 
 Pressure:
 
-To observe an object, signal, event, or condition, some separation appears necessary.
+Observation appears to require separation.
 
-Observation may already require distinction.
+Signal from background.
+
+Object from environment.
+
+Event from non-event.
+
+Without distinction, observation may collapse into undifferentiated experience.
+
+Provisional Result:
+
+OBSERVATION APPEARS TO REQUIRE DISTINCTION
 
 Status:
 
-ACTIVE
+SURVIVING
+
+Promotion:
+
+NONE
 
 ---
 
-## DP_0002
+# DP_0002
 
 Question:
 
@@ -42,45 +56,67 @@ Pressure:
 
 A distinction may merely separate.
 
-A determination may additionally localize, identify, or classify.
+A determination appears to additionally identify, localize, classify, or establish.
 
-Possible result:
+Examples:
 
-Distinction survives without determination.
+Light / Dark
+
+Inside / Outside
+
+Signal / Noise
+
+These distinctions appear possible before determination.
+
+Provisional Result:
+
+DISTINCTION APPEARS CAPABLE OF EXISTING WITHOUT DETERMINATION
 
 Status:
 
-ACTIVE
+SURVIVING
+
+Promotion:
+
+NONE
 
 ---
 
-## DP_0003
+# DP_0003
 
 Question:
 
-Can distinction be reduced?
+Can distinction be reduced to difference?
 
 Pressure:
 
-If distinction reduces to something deeper, distinction is not primitive.
+Difference appears descriptive.
 
-Search for:
+Distinction appears operative.
 
-Relation
+Difference may exist without being recognized.
 
-Difference
+Distinction appears to require separation.
 
-Boundary
+Potential Result:
 
-Separation
+Difference may be insufficient replacement.
+
+Provisional Result:
+
+NO SUCCESSFUL REDUCTION
 
 Status:
 
 ACTIVE
 
+Promotion:
+
+NONE
+
 ---
 
-## DP_0004
+# DP_0004
 
 Question:
 
@@ -88,17 +124,35 @@ Does every determination require distinction?
 
 Pressure:
 
-Attempt counterexamples.
+To determine X:
 
-Search for determination without prior separation.
+X must be distinguished from:
+
+not-X
+
+background
+
+alternative candidates
+
+competing interpretations
+
+No counterexample currently identified.
+
+Provisional Result:
+
+DETERMINATION APPEARS DEPENDENT ON DISTINCTION
 
 Status:
 
-ACTIVE
+SURVIVING
+
+Promotion:
+
+NONE
 
 ---
 
-## DP_0005
+# DP_0005
 
 Question:
 
@@ -106,7 +160,17 @@ Can standing emerge directly from distinction?
 
 Pressure:
 
-If yes:
+Current pathway:
+
+Observation
+↓
+Distinction
+↓
+Determination
+↓
+Standing
+
+Attempt shortcut:
 
 Observation
 ↓
@@ -114,18 +178,220 @@ Distinction
 ↓
 Standing
 
-may bypass determination.
+Problem:
+
+Standing appears to require some determination of what possesses standing.
+
+Provisional Result:
+
+NO DIRECT PATH ESTABLISHED
 
 Status:
 
 ACTIVE
 
+Promotion:
+
+NONE
+
 ---
 
-Freeze Status
+# DP_0006
+
+Question:
+
+Can distinction exist without boundaries?
+
+Pressure:
+
+Many distinctions appear boundary-bearing.
+
+Inside / Outside
+
+Before / After
+
+Signal / Noise
+
+However some distinctions appear gradient-like.
+
+Potential attack remains active.
+
+Provisional Result:
+
+UNRESOLVED
+
+Status:
+
+ACTIVE
+
+Promotion:
+
+NONE
+
+---
+
+# DP_0007
+
+Question:
+
+Can distinction be reduced to relation?
+
+Pressure:
+
+A relation requires at least two differentiated entities.
+
+Distinction may be required before relation.
+
+Possible inversion:
+
+Distinction
+↓
+Relation
+
+rather than:
+
+Relation
+↓
+Distinction
+
+Provisional Result:
+
+RELATION DOES NOT CURRENTLY REPLACE DISTINCTION
+
+Status:
+
+ACTIVE
+
+Promotion:
+
+NONE
+
+---
+
+# DP_0008
+
+Question:
+
+Can distinction be reduced to separation?
+
+Pressure:
+
+Separation appears close to distinction.
+
+Potential equivalence surface identified.
+
+Question:
+
+Are distinction and separation identical?
+
+Or is separation one realization of distinction?
+
+Provisional Result:
+
+OPEN
+
+Status:
+
+ACTIVE
+
+Promotion:
+
+NONE
+
+---
+
+# DP_0009
+
+Question:
+
+Can distinction be reduced to boundary?
+
+Pressure:
+
+Boundary may represent stabilized distinction.
+
+If true:
+
+Distinction
+↓
+Boundary
+
+rather than:
+
+Boundary
+↓
+Distinction
+
+Provisional Result:
+
+BOUNDARY MAY BE DOWNSTREAM
+
+Status:
+
+ACTIVE
+
+Promotion:
+
+NONE
+
+---
+
+# DP_0010
+
+Question:
+
+What currently survives pressure?
+
+Current strongest geometry:
+
+Observation
+↓
+Distinction
+↓
+Determination
+↓
+Standing
+↓
+Authority
+↓
+Action
+↓
+Consequence
+
+Pressure Results:
+
+Observation appears dependent on distinction.
+
+Determination appears dependent on distinction.
+
+Standing appears dependent on determination.
+
+Authority appears dependent on standing.
+
+Provisional Result:
+
+DISTINCTION CURRENTLY EMERGES AS STRONGEST CANDIDATE PRIMITIVE
+
+Status:
+
+UNDER PRESSURE
+
+Promotion:
+
+NONE
+
+---
+
+# CURRENT STATUS
 
 No primitive established.
 
-Pressure continues.
+Distinction survives current attacks.
+
+Further attacks required.
+
+No inheritance authorized.
+
+No promotion authorized.
 
 UNKNOWN → HOLD.
