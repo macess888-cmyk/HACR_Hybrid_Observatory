@@ -8,7 +8,7 @@ Purpose:
 
 Determine what pressure actually is.
 
-Pressure appears repeatedly throughout the repository.
+Pressure appears throughout the repository.
 
 Pressure currently lacks localization.
 
@@ -36,7 +36,7 @@ PRESSURE APPEARS REVELATORY
 
 Status:
 
-ACTIVE
+SURVIVING
 
 Promotion:
 
@@ -54,17 +54,17 @@ Pressure:
 
 Pressure may eliminate candidates.
 
-Elimination does not automatically establish standing.
+Elimination does not establish standing.
 
 Pressure appears to support standing assessment.
 
 Provisional Result:
 
-PRESSURE DOES NOT CURRENTLY APPEAR TO CREATE STANDING
+PRESSURE DOES NOT CURRENTLY CREATE STANDING
 
 Status:
 
-ACTIVE
+SURVIVING
 
 Promotion:
 
@@ -86,8 +86,6 @@ Pressure
 ↓
 Determination
 
-Example:
-
 Competing candidates are differentiated through challenge.
 
 Provisional Result:
@@ -96,7 +94,7 @@ PRESSURE MAY OPERATE BEFORE DETERMINATION
 
 Status:
 
-ACTIVE
+SURVIVING
 
 Promotion:
 
@@ -118,9 +116,7 @@ Pressure
 ↓
 Standing
 
-Example:
-
-A determination survives or fails review.
+Determinations survive or fail review.
 
 Provisional Result:
 
@@ -128,7 +124,7 @@ PRESSURE MAY OPERATE AFTER DETERMINATION
 
 Status:
 
-ACTIVE
+SURVIVING
 
 Promotion:
 
@@ -144,7 +140,47 @@ Is pressure a step or a recurring process?
 
 Pressure:
 
+Current evidence:
+
 Observation
+↓
+Pressure
+↓
+Determination
+
+and
+
+Determination
+↓
+Pressure
+↓
+Standing
+
+and
+
+Standing
+↓
+Pressure
+↓
+Authority
+
+Observation:
+
+Pressure appears repeatedly at multiple layers.
+
+Pressure is not localized to a single position.
+
+Pressure appears to operate wherever survivability is evaluated.
+
+Provisional Result:
+
+PRESSURE MAY BE RECURSIVE
+
+Potential Geometry:
+
+Observation
+↓
+Distinction
 ↓
 Pressure
 ↓
@@ -157,18 +193,14 @@ Standing
 Pressure
 ↓
 Authority
-
-Potential observation:
-
-Pressure appears at multiple layers.
-
-Provisional Result:
-
-PRESSURE MAY BE RECURSIVE
+↓
+Action
+↓
+Consequence
 
 Status:
 
-ACTIVE
+STRONGEST CURRENT RESULT
 
 Promotion:
 
@@ -186,11 +218,11 @@ Pressure:
 
 Diagnostic pressure reveals structure.
 
-Destructive pressure changes structure.
+Destructive pressure modifies structure.
 
-Question:
+Observation:
 
-When does pressure stop revealing and start modifying?
+Pressure may require boundary discipline.
 
 Provisional Result:
 
@@ -222,11 +254,17 @@ Standing
 
 without pressure.
 
-Question:
+Observation:
 
-Can standing still be justified?
+Standing becomes difficult to justify.
+
+Candidates remain largely undifferentiated.
 
 Provisional Result:
+
+PRESSURE APPEARS NECESSARY FOR DIFFERENTIATION
+
+Status:
 
 ACTIVE
 
@@ -236,14 +274,72 @@ NONE
 
 ---
 
-# CURRENT STATUS
+# PLT_0008
 
-Pressure localized as active research object.
+Question:
+
+What is the common function behind all pressure?
+
+Observed roles:
+
+Reveal
+
+Differentiate
+
+Challenge
+
+Attack
+
+Test
+
+Assess Survivability
+
+Question:
+
+Are these separate functions?
+
+Or manifestations of one deeper function?
+
+Provisional Result:
+
+OPEN
+
+Status:
+
+ACTIVE
+
+Promotion:
+
+NONE
+
+---
+
+# CURRENT STRONGEST HYPOTHESIS
+
+Pressure is not a step.
+
+Pressure is a recurring survivability mechanism.
+
+Pressure appears wherever standing is evaluated.
+
+Status:
+
+UNDER PRESSURE
+
+Promotion:
+
+NONE
+
+---
+
+# CURRENT STATUS
 
 No definition established.
 
 No primitive established.
 
-Pressure continues.
+Pressure remains under localization.
+
+Recursive pressure hypothesis active.
 
 UNKNOWN → HOLD.
