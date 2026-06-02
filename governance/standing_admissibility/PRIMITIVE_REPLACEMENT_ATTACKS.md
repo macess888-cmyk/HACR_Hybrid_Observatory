@@ -30,15 +30,37 @@ Difference
 
 Attack:
 
-Can all distinction be reduced to difference?
+Can distinction be reduced to difference?
 
-Question:
+Pressure:
 
-Is distinction merely recognized difference?
+Difference may exist without recognition.
 
-Result:
+A field may contain variation before any observer, detector, or system separates that variation into usable distinctions.
 
-ACTIVE
+Difference appears descriptive.
+
+Distinction appears operative.
+
+Difference may be present.
+
+Distinction appears to transform difference into separation.
+
+Observation:
+
+Difference alone does not appear sufficient to support observation, determination, standing, or authority.
+
+Provisional Result:
+
+DIFFERENCE DOES NOT CURRENTLY REPLACE DISTINCTION
+
+Status:
+
+SURVIVING ATTACK
+
+Promotion:
+
+NONE
 
 ---
 
@@ -52,15 +74,33 @@ Attack:
 
 Can distinction be reduced to boundary formation?
 
+Pressure:
+
+Boundary appears more stable than distinction.
+
+However a boundary may require prior differentiation.
+
 Question:
 
-Does boundary generate distinction?
+Does boundary create distinction?
 
-Or does distinction generate boundary?
+Or does distinction create boundary?
 
-Result:
+Observation:
+
+Many boundaries appear to be stabilized distinctions.
+
+Provisional Result:
+
+BOUNDARY MAY BE DOWNSTREAM OF DISTINCTION
+
+Status:
 
 ACTIVE
+
+Promotion:
+
+NONE
 
 ---
 
@@ -74,13 +114,29 @@ Attack:
 
 Can relation exist before distinction?
 
-Question:
+Pressure:
 
-Must entities already be distinguished before relation exists?
+Relations appear to require entities.
 
-Result:
+Entities appear to require differentiation.
+
+Differentiation appears distinction-like.
+
+Observation:
+
+Relation may depend upon distinction.
+
+Provisional Result:
+
+RELATION DOES NOT CURRENTLY REPLACE DISTINCTION
+
+Status:
 
 ACTIVE
+
+Promotion:
+
+NONE
 
 ---
 
@@ -94,13 +150,29 @@ Attack:
 
 Can identity generate distinction?
 
-Question:
+Pressure:
 
-Must distinction already exist before identity becomes meaningful?
+Identity requires something to be identified.
 
-Result:
+Identification appears to require separation.
+
+Separation appears distinction-like.
+
+Observation:
+
+Identity may depend upon distinction.
+
+Provisional Result:
+
+IDENTITY DOES NOT CURRENTLY REPLACE DISTINCTION
+
+Status:
 
 ACTIVE
+
+Promotion:
+
+NONE
 
 ---
 
@@ -112,15 +184,37 @@ Difference + Boundary
 
 Attack:
 
-Can distinction be decomposed into smaller components?
+Can distinction be decomposed?
+
+Pressure:
+
+Potential decomposition:
+
+Difference
+↓
+Boundary
+↓
+Distinction
 
 Question:
 
 Is distinction merely compressed structure?
 
-Result:
+Observation:
+
+No successful decomposition established.
+
+Provisional Result:
+
+DECOMPOSITION ATTACK UNRESOLVED
+
+Status:
 
 ACTIVE
+
+Promotion:
+
+NONE
 
 ---
 
@@ -134,13 +228,31 @@ Attack:
 
 Can constraints generate distinction?
 
+Pressure:
+
+Constraints separate permissible from impermissible states.
+
 Question:
 
-Does distinction emerge from permitted versus prohibited states?
+Does distinction emerge from constraint?
 
-Result:
+Or must distinction already exist to define constraints?
+
+Observation:
+
+Constraint appears dependent upon distinction.
+
+Provisional Result:
+
+CONSTRAINT DOES NOT CURRENTLY REPLACE DISTINCTION
+
+Status:
 
 ACTIVE
+
+Promotion:
+
+NONE
 
 ---
 
@@ -154,15 +266,31 @@ Attack:
 
 Can variation produce distinction?
 
+Pressure:
+
+Variation appears observable only after differentiation.
+
 Question:
 
-Does change create distinction?
+Does variation generate distinction?
 
-Or must distinction already exist to detect variation?
+Or does distinction make variation observable?
 
-Result:
+Observation:
+
+Variation may depend upon distinction.
+
+Provisional Result:
+
+VARIATION DOES NOT CURRENTLY REPLACE DISTINCTION
+
+Status:
 
 ACTIVE
+
+Promotion:
+
+NONE
 
 ---
 
@@ -176,13 +304,27 @@ Attack:
 
 Can structure exist before distinction?
 
-Question:
+Pressure:
 
-Can structure be defined without differentiated components?
+Structure appears to require components.
 
-Result:
+Components appear to require differentiation.
+
+Observation:
+
+Structure may depend upon distinction.
+
+Provisional Result:
+
+STRUCTURE DOES NOT CURRENTLY REPLACE DISTINCTION
+
+Status:
 
 ACTIVE
+
+Promotion:
+
+NONE
 
 ---
 
@@ -202,9 +344,31 @@ Question:
 
 Is reality more primitive than distinction?
 
-Result:
+Pressure:
+
+Reality may exist independently of distinction.
+
+However distinction may be required for observation of reality.
+
+Potential split:
+
+Ontological Reality
+
+vs
+
+Observable Reality
+
+Provisional Result:
+
+REALITY ATTACK REMAINS OPEN
+
+Status:
 
 ACTIVE
+
+Promotion:
+
+NONE
 
 ---
 
@@ -216,22 +380,96 @@ Question:
 
 What survives after all replacement attempts?
 
-Possible outcomes:
+Current Results:
 
-Distinction survives.
+Difference fails.
 
-Replacement survives.
+Relation fails.
 
-Multiple candidates survive.
+Identity fails.
 
-Everything collapses.
+Constraint fails.
 
-Result:
+Variation fails.
+
+Structure fails.
+
+Boundary unresolved.
+
+Reality unresolved.
+
+Decomposition unresolved.
+
+Observation:
+
+Distinction remains strongest surviving candidate.
+
+Provisional Result:
+
+DISTINCTION REMAINS UNDER PRESSURE
+
+Status:
 
 ACTIVE
 
 Promotion:
 
 NONE
+
+---
+
+# CURRENT STRONGEST CANDIDATE GEOMETRY
+
+Observation
+↓
+Distinction
+↓
+Determination
+↓
+Standing
+↓
+Authority
+↓
+Action
+↓
+Consequence
+
+Status:
+
+UNPROVEN
+
+UNDER PRESSURE
+
+---
+
+# CURRENT OPEN QUESTIONS
+
+Can distinction distinguish itself?
+
+Can distinction emerge from continuity?
+
+Can distinction exist without boundaries?
+
+Can distinction be decomposed?
+
+Can boundary replace distinction?
+
+Can reality replace distinction?
+
+What survives if distinction collapses?
+
+---
+
+# CURRENT STATUS
+
+No primitive established.
+
+No primitive promoted.
+
+No primitive inherited.
+
+Distinction survives first replacement attacks.
+
+Further pressure required.
 
 UNKNOWN → HOLD.
