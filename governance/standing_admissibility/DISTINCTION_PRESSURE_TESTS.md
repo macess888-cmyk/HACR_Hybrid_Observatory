@@ -8,6 +8,14 @@ Purpose:
 
 Determine whether distinction is more primitive than determination.
 
+Apply pressure.
+
+Attempt reduction.
+
+Attempt replacement.
+
+Attempt collapse.
+
 No promotion without survivability.
 
 UNKNOWN → HOLD.
@@ -34,7 +42,7 @@ Without distinction, observation may collapse into undifferentiated experience.
 
 Provisional Result:
 
-OBSERVATION APPEARS TO REQUIRE DISTINCTION
+OBSERVATION APPEARS DEPENDENT ON DISTINCTION
 
 Status:
 
@@ -94,17 +102,13 @@ Difference appears descriptive.
 
 Distinction appears operative.
 
-Difference may exist without being recognized.
+Difference may exist without recognition.
 
-Distinction appears to require separation.
-
-Potential Result:
-
-Difference may be insufficient replacement.
+Distinction appears to require active separation.
 
 Provisional Result:
 
-NO SUCCESSFUL REDUCTION
+NO SUCCESSFUL REDUCTION IDENTIFIED
 
 Status:
 
@@ -180,7 +184,7 @@ Standing
 
 Problem:
 
-Standing appears to require some determination of what possesses standing.
+Standing appears to require determination of what possesses standing.
 
 Provisional Result:
 
@@ -238,17 +242,17 @@ Can distinction be reduced to relation?
 
 Pressure:
 
-A relation requires at least two differentiated entities.
+A relation appears to require differentiated entities.
 
-Distinction may be required before relation.
+Distinction may be necessary before relation.
 
-Possible inversion:
+Possible sequence:
 
 Distinction
 ↓
 Relation
 
-rather than:
+instead of:
 
 Relation
 ↓
@@ -276,15 +280,15 @@ Can distinction be reduced to separation?
 
 Pressure:
 
-Separation appears close to distinction.
+Separation appears extremely close to distinction.
 
-Potential equivalence surface identified.
+Possible equivalence surface identified.
 
 Question:
 
 Are distinction and separation identical?
 
-Or is separation one realization of distinction?
+Or is separation merely one realization of distinction?
 
 Provisional Result:
 
@@ -310,7 +314,7 @@ Pressure:
 
 Boundary may represent stabilized distinction.
 
-If true:
+Possible sequence:
 
 Distinction
 ↓
@@ -342,7 +346,7 @@ Question:
 
 What currently survives pressure?
 
-Current strongest geometry:
+Current geometry:
 
 Observation
 ↓
@@ -382,16 +386,250 @@ NONE
 
 ---
 
-# CURRENT STATUS
+# DP_0011
+
+Question:
+
+Can distinction distinguish itself?
+
+Pressure:
+
+If distinction is primitive, distinction must be distinguishable from not-distinction.
+
+Question:
+
+Does distinction require a prior distinction to distinguish itself?
+
+Potential failure:
+
+Distinction
+↓
+Distinction
+↓
+Distinction
+
+Infinite regress.
+
+Potential survival:
+
+Distinction possesses self-applicability.
+
+Provisional Result:
+
+SELF-REFERENCE ATTACK ACTIVE
+
+Status:
+
+ACTIVE
+
+Promotion:
+
+NONE
+
+---
+
+# DP_0012
+
+Question:
+
+Can distinction emerge from continuity?
+
+Pressure:
+
+Imagine a continuous field.
+
+No categories.
+
+No boundaries.
+
+No separations.
+
+Can distinction emerge later?
+
+If yes:
+
+Distinction may not be primitive.
+
+Potential candidates:
+
+Difference
+
+Variation
+
+Constraint
+
+Structure
+
+Provisional Result:
+
+CONTINUITY ATTACK ACTIVE
+
+Status:
+
+ACTIVE
+
+Promotion:
+
+NONE
+
+---
+
+# DP_0013
+
+Question:
+
+Can reality exist without distinction?
+
+Pressure:
+
+If reality exists before distinction:
+
+Reality
+↓
+Distinction
+
+then distinction is not primitive.
+
+If distinction is necessary for any observable reality:
+
+Distinction strengthens.
+
+Provisional Result:
+
+UNRESOLVED
+
+Status:
+
+ACTIVE
+
+Promotion:
+
+NONE
+
+---
+
+# DP_0014
+
+Question:
+
+Is distinction merely compressed boundary formation?
+
+Pressure:
+
+Current possibility:
+
+Distinction
+↓
+Boundary
+
+Attack:
+
+Boundary
+↓
+Distinction
+
+Attempt reversal.
+
+Provisional Result:
+
+BOUNDARY REVERSAL ATTACK ACTIVE
+
+Status:
+
+ACTIVE
+
+Promotion:
+
+NONE
+
+---
+
+# DP_0015
+
+Question:
+
+What survives if distinction collapses?
+
+Pressure:
+
+Remove distinction.
+
+Attempt reconstruction.
+
+Candidates:
+
+Observation
+↓
+Determination
+
+Observation
+↓
+Boundary
+↓
+Determination
+
+Observation
+↓
+Relation
+↓
+Determination
+
+If reconstruction succeeds:
+
+Distinction weakens.
+
+If reconstruction fails:
+
+Distinction strengthens.
+
+Provisional Result:
+
+COLLAPSE TEST ACTIVE
+
+Status:
+
+ACTIVE
+
+Promotion:
+
+NONE
+
+---
+
+# CURRENT STRONGEST GEOMETRY
+
+Observation
+↓
+Distinction ?
+↓
+Determination
+↓
+Standing
+↓
+Authority
+↓
+Action
+↓
+Consequence
+
+Question mark retained.
 
 No primitive established.
 
-Distinction survives current attacks.
+No primitive inherited.
 
-Further attacks required.
+No primitive promoted.
 
-No inheritance authorized.
+---
 
-No promotion authorized.
+# CURRENT STATUS
+
+Distinction survives first-generation attacks.
+
+Second-generation attacks active.
+
+Further reduction required.
+
+Pressure continues.
 
 UNKNOWN → HOLD.
