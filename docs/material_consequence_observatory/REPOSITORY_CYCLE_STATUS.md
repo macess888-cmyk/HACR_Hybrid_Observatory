@@ -1,653 +1,361 @@
-# Material Consequence Observatory — Repository Cycle Status
+# REPOSITORY CYCLE STATUS
 
-Status: Repository Cycle Status v1.0
+## HACR HYBRID OBSERVATORY
 
-Mode: Observer-only inspection
+### Repository Status
 
-Control posture:
+ACTIVE
+
+### Observatory Posture
+
+Observer-only runtime continuity inspection.
+
+The Observatory does not determine.
+
+The Observatory does not authorize.
+
+The Observatory does not execute.
+
+The Observatory localizes visibility conditions prior to interpretation and consequence.
+
+Core posture:
 
 UNKNOWN → HOLD
 
 ---
 
-# Purpose
+# CURRENT CANONICAL ARCHITECTURE
 
-This document records the state of the Material Consequence Observatory at the completion of the current research cycle.
-
-The objective is not theory expansion.
-
-The objective is repository localization.
-
-Question:
-
-What currently exists?
-
-What currently survives?
-
-What remains unknown?
-
----
-
-# Cycle Summary
-
-The repository completed a full methodological cycle:
-
-```text
-Observation
-↓
-Reduction
-↓
-Competition
-↓
-Transfer
-↓
-Discrimination
-↓
-Information Gain
-↓
-Replacement
-↓
-Phase Transition Review
-```
-
-Assessment:
-
-CURRENT CYCLE COMPLETE
-
----
-
-# Architectural Status
-
-Canonical Repository Compression:
-
-```text
 Reality
+
 ↓
+
 Signals
+
 ↓
+
 Signal Ecology
+
 ↓
+
 Observatory
+
 ↓
+
 Formation Visibility
-```
 
-Boundary:
+||
 
-```text
-Interpretation
+BOUNDARY
+
+||
+
+External Interpretation
+
 ↓
+
 Decision
+
 ↓
+
 Action
+
 ↓
+
 Consequence
-```
-
-Status:
-
-STABLE
 
 ---
 
-# Failure Ecology Status
+# CANONICAL REDUCTIONS
 
-Primary Focus:
+Signal ≠ Interpretation
 
-```text
-Material Consequence Formation
-```
+Localization ≠ Meaning
 
-Current Compression:
+Visibility ≠ Authority
 
-```text
-Coupling
-↓
-Visibility
-↓
-Preservation
-↓
-Consequence
-```
+Inspectability ≠ Control
 
-Status:
+Observation ≠ Authority
 
-MATURE
+Candidate ≠ Standing
 
----
+Standing ≠ Authority
 
-# Survivability Ecology Status
+Failure ≠ Replacement
 
-Primary Focus:
+Unknown ≠ Error
 
-```text
-Recovery Capability
-```
+Continuity ≠ Legitimacy
 
-Current Compression:
+Memory ≠ Storage
 
-```text
-Localization
-↓
-Review
-↓
-Adaptation
-↓
-Recovery
-```
+Execution ≠ Admissibility
 
-Status:
+Governance ≠ Permission
 
-STRONG
+Representation ≠ Reality
+
+Preservation ≠ Continuity
 
 ---
 
-# Continuation Research Status
+# CURRENT RESEARCH STATUS
 
-Primary Focus:
+## Stabilized
 
-```text
-Continuation Capability
-```
-
-Current Compression:
-
-```text
-Localization
-↓
-Adaptation
-↓
-Continuation
-```
-
-Refined Compression:
-
-```text
-Sufficient Localization
-↓
-Adaptation
-↓
-Continuation
-```
+### Signal Ecology
 
 Status:
 
-ACTIVE
+STABILIZED
+
+Focus:
+
+How signals form, interact, accumulate, distort, suppress, amplify, and create observable formations.
 
 ---
 
-# Transfer Research Status
-
-Primary Focus:
-
-```text
-Cross-Branch Reduction Survival
-```
-
-Current Candidate:
-
-```text
-Localization
-↓
-Review
-↓
-Adaptation
-↓
-Preservation
-```
+### Standing Admissibility
 
 Status:
 
-UNDER PRESSURE
+STABILIZED EXPLORATION
+
+Focus:
+
+How candidates acquire standing.
+
+Primary survivors:
+
+Observation ≠ Authority
+
+Candidate ≠ Standing
+
+Standing ≠ Authority
+
+Failure ≠ Replacement
+
+Unknown ≠ Error
+
+Result:
+
+No primitive established.
+
+No invariant established.
+
+Research preserved.
 
 ---
 
-# Survivor Landscape
-
-Current survivor field:
-
-```text
-Coupling
-
-Localization
-
-Review
-
-Adaptation
-
-Preservation
-```
-
-Status:
-
-PROVISIONAL
-
-No survivor granted permanence.
-
----
-
-# Survivor Competition Status
-
-Primary Competition:
-
-```text
-Adaptation
-
-vs
-
-Preservation
-```
+### Authority Localization
 
 Status:
 
 ACTIVE
 
----
+Focus:
 
-Secondary Competition:
+Where authority actually binds.
 
-```text
-Coupling
+Observed reduction:
 
-vs
+Claimed authority ≠ Operational authority
 
-Transfer Survivors
-```
-
-Status:
-
-EMERGING
+Operational authority ≠ Consequence ownership
 
 ---
 
-# Survivor Ranking
-
-Current Ranking:
-
-Rank 1
-
-```text
-Adaptation
-```
-
-Reason:
-
-Strongest direct historical support.
-
----
-
-Rank 2
-
-```text
-Preservation
-```
-
-Reason:
-
-Strongest transfer support.
-
----
-
-Rank 3
-
-```text
-Coupling
-```
-
-Reason:
-
-Potential explanatory depth.
-
----
-
-Rank 4
-
-```text
-Review
-```
-
-Reason:
-
-Mechanistic importance.
-
----
-
-Rank 5
-
-```text
-Localization
-```
-
-Reason:
-
-Repeatedly pressured.
-
----
-
-Assessment:
-
-PROVISIONAL
-
----
-
-# Discrimination Status
-
-Current repository focus:
-
-```text
-Ranking-changing observations.
-```
-
-rather than:
-
-```text
-Additional supporting observations.
-```
+### Runtime Governance
 
 Status:
 
 ACTIVE
 
----
+Focus:
 
-# Highest Information Gain Targets
+Conditions required before action may bind consequence.
 
-Priority 1
+Observed reduction:
 
-```text
-Continuation
-without
-Adaptation
-```
+A gate before action is not governance.
 
----
+Governance must establish:
 
-Priority 2
+* scope
+* evidence
+* authority
+* refusal
+* escalation
+* consequence ownership
 
-```text
-Continuation
-without
-Preservation
-```
+before consequence may bind.
 
 ---
 
-Priority 3
-
-```text
-Preservation
-without
-Adaptation
-```
-
----
-
-Priority 4
-
-```text
-Adaptation
-without
-Localization
-```
-
----
-
-Priority 5
-
-```text
-Recovery
-without
-Review
-```
-
----
-
-# Replacement Pressure Status
-
-Current replacement question:
-
-```text
-What observation
-
-would justify
-
-replacing
-
-the current survivor field?
-```
+### Inheritance And Drift
 
 Status:
 
 ACTIVE
 
+Focus:
+
+How continuity becomes inherited.
+
+Observed reduction:
+
+Anomaly ≠ Drift
+
+Drift begins when anomaly becomes inherited continuity.
+
+Continuity ≠ Legitimacy
+
 ---
 
-# Stable Repository Assets
-
-Architecture
-
-Failure Ecology
-
-Survivability Ecology
-
-Continuation Research Framework
-
-Transfer Methodology
-
-Competition Methodology
-
-Discrimination Methodology
-
-Replacement Methodology
+### Memory Governance
 
 Status:
 
-STABLE
+ACTIVE
+
+Focus:
+
+Memory as continuity infrastructure.
+
+Observed reduction:
+
+Memory write = continuity event.
+
+Memory is not passive storage.
+
+Durable memory becomes behavioral infrastructure.
 
 ---
 
-# Open Competitions
+# ACTIVE EXPLORATION
 
-Competition A
-
-```text
-Adaptation
-
-vs
-
-Preservation
-```
-
----
-
-Competition B
-
-```text
-Independent Survivors
-
-vs
-
-Dependency Chain
-```
-
-Potential Chain:
-
-```text
-Coupling
-↓
-Localization
-↓
-Review
-↓
-Adaptation
-↓
-Preservation
-```
+## Signal Surfacer
 
 Status:
 
-UNRESOLVED
+EXPLORATORY
+
+Purpose:
+
+Observer-only signal inspection framework.
+
+Focus:
+
+* Hidden signal localization
+* Signal concealment classification
+* Fragmentation detection
+* Suppression detection
+* Distortion detection
+* Transmission analysis
+* Receiver visibility analysis
+* Reality-coupling inspection
+
+Core Question:
+
+What disappeared between source and consequence?
+
+Primary Reduction:
+
+Visible Signal ≠ Load-Bearing Signal
+
+Representation ≠ Reality Coupling
+
+Concealment Classes:
+
+* Open Concealment
+* Structural Concealment
+* Fragmentation
+* Suppression
+* Distortion
+* Potential Obfuscation
+
+Intent Policy:
+
+Intent is never determined.
+
+Intent remains hypothesis.
+
+Observed effects are localized.
+
+Intent hypotheses remain bounded by evidence.
+
+Current Status:
+
+No primitive established.
+
+No invariant established.
+
+Research preserved.
+
+UNKNOWN → HOLD
 
 ---
 
-# Open Unknowns
+# CURRENT OBSERVATORY FRONTIER
 
-Unknown 1
+What is allowed to continue?
 
-```text
-Which survivor
+Associated questions:
 
-best explains
-
-the other survivors?
-```
-
----
-
-Unknown 2
-
-```text
-Are current survivors
-
-independent
-
-or dependent?
-```
+* What is considered valid?
+* How does validity persist?
+* How is validity inherited?
+* How is drift formed?
+* How is drift detected?
+* How is recovery initiated?
+* How does authority remain attached?
+* How does responsibility remain attached?
+* How does reality coupling degrade?
+* How does representation diverge from load-bearing reality?
 
 ---
 
-Unknown 3
+# BOOK CONVERGENCE
 
-```text
-What observation
+Facts vs Philosophy
 
-would immediately
+Current reduction:
 
-change survivor rankings?
-```
+The central problem is no longer merely:
 
----
+"What is true?"
 
-Unknown 4
+The emerging problem is:
 
-```text
-What observation
+"What survives transition?"
 
-would require
+and
 
-a new survivor field?
-```
+"Does what survives still refer to its origin?"
 
 ---
 
-# Most Important Repository Observation
+# REPOSITORY CONDITION
 
-The repository appears to have transitioned from:
+Architecture Stable: YES
 
-```text
-Phenomenon Research
-```
+Boundary Stable: YES
 
-to:
+Purpose Stable: YES
 
-```text
-Explanation Research
-```
+Canonical Reductions Stable: YES
 
-Current focus:
+Research Active: YES
 
-```text
-How explanations survive pressure.
-```
+External Review Ready: YES
 
-Status:
+Primitive Established: NO
 
-OBSERVED
+Invariant Established: NO
 
-Further pressure required.
+UNKNOWN remains admissible.
 
----
-
-# Repository Position
-
-No final theory promoted.
-
-No survivor granted immunity.
-
-No reduction considered complete.
-
-All explanatory structures remain subject to:
-
-```text
-Pressure
-
-Competition
-
-Replacement
-```
-
----
-
-# Current Assessment
-
-Architecture:
-
-COMPLETE
-
-Failure Ecology:
-
-MATURE
-
-Survivability Ecology:
-
-STRONG
-
-Continuation Research:
-
-ACTIVE
-
-Transfer Research:
-
-ACTIVE
-
-Competition Research:
-
-ACTIVE
-
-Discrimination Research:
-
-ACTIVE
-
-Replacement Research:
-
-ACTIVE
-
-Current Cycle:
-
-COMPLETE
-
----
-
-# Cycle Closing Observation
-
-The most important artifact produced during this cycle may not be any individual survivor.
-
-It may be the repository's ability to:
-
-```text
-Generate explanations
-
-Pressure explanations
-
-Compare explanations
-
-Replace explanations
-```
-
-without requiring explanatory permanence.
-
-Status:
-
-RECORDED
+Pressure before Promotion.
 
 UNKNOWN → HOLD
