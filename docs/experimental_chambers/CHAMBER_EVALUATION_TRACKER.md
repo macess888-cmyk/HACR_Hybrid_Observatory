@@ -154,10 +154,6 @@ The same inheritance-continuation geometry appeared independently in:
 * Safety Architecture
 * SPDX State Transition Analysis
 
-This does not establish an invariant.
-
-However, repeated appearance across unrelated domains suggests a potential candidate invariant requiring additional pressure testing.
-
 Candidate Invariant:
 
 Was this valid?
@@ -298,5 +294,236 @@ NOT ESTABLISHED
 Promotion:
 
 NONE
+
+UNKNOWN → HOLD
+
+---
+
+# Evaluation Cycle 003
+
+Session:
+
+Recognition
+→ Object Qualification
+→ Admissibility
+→ Continuation Right
+→ Execution Boundary
+
+Candidate Chamber:
+
+Mathematical Chamber
+
+Question Under Review:
+
+Does formalization provide unique observability beyond geometry?
+
+Observed Structure:
+
+Observed State
+↓
+Recognition
+↓
+Object Qualification
+↓
+Admissibility
+↓
+Continuation Right
+↓
+Execution Boundary
+↓
+Execution
+
+Candidate Formal Relations:
+
+Recognized(s)
+
+Qualified(s)
+
+Admissible(s)
+
+ContinuationAllowed(s)
+
+Executable(s)
+
+Candidate Continuation Predicate:
+
+ValidContinuation(
+σ_previous,
+σ_current
+)
+
+Unique Signal Found?
+
+Y
+
+Redundant With Existing Chamber?
+
+N
+
+New Failure Class Found?
+
+Y
+
+Failure Candidate:
+
+Undefined Transition
+
+Examples:
+
+Recognized(s) = true
+
+Qualified(s) = false
+
+Admissible(s) evaluated anyway
+
+or
+
+ContinuationAllowed(s) = true
+
+ValidContinuation(
+σ_previous,
+σ_current
+)
+
+undefined
+
+Description:
+
+A transition exists geometrically but lacks formal definition.
+
+New Localization Method Found?
+
+Y
+
+Localization Candidate:
+
+Predicate Localization
+
+Method:
+
+Localize failures to predicates, transition rules, proof obligations, and undefined state relations.
+
+Independent Survivability?
+
+Y
+
+Pressure Result:
+
+SURVIVED
+
+Status:
+
+HOLD
+
+Notes:
+
+Unlike the Geometric Chamber, which localizes corridors and boundaries, the Mathematical Chamber localizes:
+
+* Undefined predicates
+* Undefined transitions
+* Missing proof obligations
+* Contradictory formal states
+* Non-composable relations
+
+Candidate Formal Reduction:
+
+Recognized(s)
+→ Qualified(s)
+→ Admissible(s)
+→ ContinuationAllowed(s)
+→ Executable(s)
+
+Candidate Continuation Relation:
+
+ValidContinuation(
+σ_previous,
+σ_current
+)
+
+This does not establish correctness.
+
+It establishes a formal inspection surface.
+
+Invariant Status:
+
+NOT ESTABLISHED
+
+Promotion:
+
+NONE
+
+UNKNOWN → HOLD
+
+---
+
+# Chamber Survivability Summary
+
+Variant / Invariant Chamber
+
+Result:
+
+SURVIVED
+
+Contribution:
+
+Cross-domain persistence analysis
+
+Status:
+
+HOLD
+
+---
+
+Geometric Chamber
+
+Result:
+
+SURVIVED
+
+Contribution:
+
+Boundary and corridor localization
+
+Status:
+
+HOLD
+
+---
+
+Mathematical Chamber
+
+Result:
+
+SURVIVED
+
+Contribution:
+
+Predicate and transition localization
+
+Status:
+
+HOLD
+
+---
+
+Overall Assessment
+
+All three chambers currently provide distinct inspection surfaces.
+
+No promotion recommended.
+
+Additional independent sessions required.
+
+Authority:
+
+NONE
+
+Promotion:
+
+NONE
+
+Invariant Status:
+
+NOT ESTABLISHED
 
 UNKNOWN → HOLD
