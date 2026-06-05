@@ -386,24 +386,145 @@ UNKNOWN → HOLD
 
 # Case Study 04 — Xerox PARC
 
-Status:
+Question:
 
-PLACEHOLDER
+Can breakthrough discoveries successfully transition from investigation into widespread execution?
 
-Primary Pressure Surface:
+Background:
+
+Unlike Galileo, Darwin, and Bell Labs, Xerox PARC is not primarily a question about whether investigation occurred.
+
+Investigation clearly occurred.
+
+Multiple influential discoveries emerged from the environment.
+
+The research question becomes:
+
+What happens when investigability succeeds but execution remains limited?
+
+Investigability Status:
+
+Appears Strong
+
+Observed Conditions:
+
+Present:
+
+* Significant exploratory freedom.
+* Strong concentration of technical talent.
+* Multiple breakthrough discoveries.
+* Ability to investigate future possibilities.
+* Research environment supportive of experimentation.
+
+Protected Conditions:
+
+* Time for experimentation.
+* Technical autonomy.
+* Exploratory research environment.
+* Relative freedom from immediate execution requirements.
+
+Potential Failure Modes:
 
 Transition Failure
 
-Research Questions:
+Question
+↓
+Investigation
+↓
+Evaluation
+↓
+No Effective Transition
 
-* Did investigability succeed?
-* Did evaluation fail?
-* Did execution fail?
-* What happened between discovery and adoption?
+Effect:
+
+Findings remain localized despite successful investigation.
+
+Execution Decoupling
+
+Question
+↓
+Investigation
+↓
+Evaluation
+↓
+Execution Deferred
+
+Effect:
+
+Discoveries exist without broad operational adoption.
+
+Institutional Misalignment
+
+Question
+↓
+Investigation
+↓
+Organization
+
+Effect:
+
+The institution fails to operationalize its own discoveries.
+
+Observations:
+
+Xerox PARC appears to introduce a new pressure surface.
+
+Galileo pressures:
+
+Investigability
+vs
+Authority
+
+Darwin pressures:
+
+Investigability
+vs
+Time
+
+Bell Labs pressures:
+
+Investigability
+vs
+Institutional Conditions
+
+Xerox PARC pressures:
+
+Investigability
+vs
+Execution
+
+The case suggests that successful investigation does not necessarily imply successful execution.
+
+Investigation may survive.
+
+Evaluation may occur.
+
+Execution may still fail.
+
+This raises an important question:
+
+Can a system preserve investigability while repeatedly failing to realize the value produced by investigation?
+
+Candidate Relevance:
+
+Protected Investigability may explain part of the case if:
+
+* investigation remained active,
+* examination remained protected,
+* discoveries emerged,
+* transition into execution became the dominant constraint.
 
 Current Assessment:
 
 OPEN
+
+Further historical review required.
+
+No conclusion established.
+
+Research continues.
+
+UNKNOWN → HOLD
 
 ---
 
@@ -422,10 +543,78 @@ Research Questions:
 * Can investigability survive without centralized authority?
 * Can distributed review preserve examination?
 * What failure modes emerge from decentralization?
+* Does public visibility strengthen or weaken investigability?
+* Can resource constraints coexist with strong examination?
 
 Current Assessment:
 
 OPEN
+
+---
+
+# Cross-Case Observations
+
+Status:
+
+RESEARCH
+
+No conclusion established.
+
+Current cases do not primarily demonstrate absence of investigability.
+
+Instead, current cases demonstrate pressures acting upon investigation after investigation exists.
+
+Observed Pressure Surfaces:
+
+Galileo
+→ Authority
+
+Darwin
+→ Time
+
+Bell Labs
+→ Institutional Conditions
+
+Xerox PARC
+→ Execution
+
+Observed Pattern:
+
+Question
+↓
+Investigation
+↓
+Pressure
+↓
+Evaluation / Execution Constraint
+
+Observed Compression Sources:
+
+Authority
+
+Premature Commitment
+
+Commercial Pressure
+
+Institutional Capture
+
+Resource Constraints
+
+Execution Decoupling
+
+Research Question:
+
+Is Protected Investigability the primary object?
+
+Or are these cases revealing a deeper object concerning compression, redirection, delay, capture, or disconnection of examination after investigation already exists?
+
+Current Assessment:
+
+OPEN
+
+Research continues.
+
+UNKNOWN → HOLD
 
 ---
 
@@ -445,6 +634,12 @@ OPEN
 
 7. Does transition failure explain more outcomes than investigability failure?
 
+8. Does examination compression explain more outcomes than investigability failure?
+
+9. Can investigation remain healthy while evaluation or execution repeatedly fail?
+
+10. Are the dominant pressures different expressions of a common compression geometry?
+
 ---
 
 # Candidate Failure Modes Across Cases
@@ -461,11 +656,21 @@ Consequence Coupling
 
 Premature Evaluation
 
+Institutional Capture
+
+Commercial Compression
+
+Resource Dependency
+
 Transition Failure
 
 Evaluation Failure
 
 Execution Failure
+
+Execution Decoupling
+
+Institutional Misalignment
 
 Additional failure modes may be added as research progresses.
 
@@ -476,6 +681,20 @@ Additional failure modes may be added as research progresses.
 Case Study Program:
 ACTIVE
 
+Completed Cases:
+
+Galileo
+
+Darwin
+
+Bell Labs
+
+Xerox PARC
+
+Remaining Cases:
+
+Open Source
+
 Object Qualification:
 ACTIVE
 
@@ -485,11 +704,31 @@ NONE
 Architecture Impact:
 NONE
 
-Strongest Emerging Failure Mode:
+Strongest Emerging Pattern:
+
+Examination Compression
+
+Strongest Emerging Failure Modes:
+
 Consequence Coupling
 
-Strongest Open Question:
-Investigability → Evaluation
+Premature Evaluation
+
+Institutional Capture
+
+Transition Failure
+
+Execution Decoupling
+
+Strongest Open Questions:
+
+Protected Investigability
+vs
+Examination Compression
+
+Investigability
+→ Evaluation
+→ Execution
 
 Research Continues
 
