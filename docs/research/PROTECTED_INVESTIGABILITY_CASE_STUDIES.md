@@ -256,24 +256,131 @@ UNKNOWN → HOLD
 
 # Case Study 03 — Bell Labs
 
-Status:
+Question:
 
-PLACEHOLDER
+What conditions produce sustained discovery and innovation over long periods of time?
 
-Primary Pressure Surface:
+Background:
 
-Institution
+Unlike Galileo and Darwin, Bell Labs is not primarily a question about authority or time.
 
-Research Questions:
+The Bell Labs case introduces a different pressure surface:
 
-* What conditions protected long-term inquiry?
-* Did Bell Labs preserve investigability?
-* What institutional conditions supported examination?
-* What eventually weakened those conditions?
+Institutional Conditions.
+
+The question becomes:
+
+Can an institution create and preserve conditions that allow meaningful investigation to persist across generations?
+
+Investigability Status:
+
+Appears Strong
+
+Observed Conditions:
+
+Present:
+
+* Long-term research horizons.
+* Relative insulation from immediate commercial pressures.
+* Stable funding environment.
+* Multi-disciplinary collaboration.
+* High concentration of technical expertise.
+* Ability to pursue exploratory questions before immediate application.
+
+Protected Conditions:
+
+* Time for inquiry.
+* Resources for investigation.
+* Freedom to revise direction.
+* Cross-disciplinary examination.
+* Delayed pressure for immediate execution.
+
+Potential Failure Modes:
+
+Institutional Capture
+
+Question
+↓
+Institutional Objective
+↓
+Restricted Examination
+
+Effect:
+
+Inquiry becomes subordinate to predefined outcomes.
+
+Commercial Compression
+
+Question
+↓
+Immediate Business Requirement
+↓
+Evaluation
+
+Effect:
+
+Investigability contracts before sufficient exploration occurs.
+
+Resource Dependency
+
+Question
+↓
+Funding Constraint
+↓
+Reduced Examination
+
+Effect:
+
+Potential inquiry paths become inaccessible.
+
+Observations:
+
+Bell Labs appears to differ significantly from both Galileo and Darwin.
+
+Galileo pressures:
+
+Investigability
+vs
+Authority
+
+Darwin pressures:
+
+Investigability
+vs
+Time
+
+Bell Labs pressures:
+
+Investigability
+vs
+Institutional Conditions
+
+The Bell Labs case suggests that investigability may depend not only on individual investigators, but also on environmental conditions that preserve examination over time.
+
+This raises a new question:
+
+Can investigability survive if institutional conditions deteriorate?
+
+Candidate Relevance:
+
+Protected Investigability may explain part of the case if:
+
+* inquiry remained active,
+* investigation could continue before commitment,
+* exploratory paths remained available,
+* evaluation occurred after meaningful examination.
 
 Current Assessment:
 
 OPEN
+
+Further historical review required.
+
+No conclusion established.
+
+Research continues.
+
+UNKNOWN → HOLD
 
 ---
 
