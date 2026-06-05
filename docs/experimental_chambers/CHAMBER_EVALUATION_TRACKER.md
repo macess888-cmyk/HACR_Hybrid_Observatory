@@ -12,9 +12,13 @@ Purpose:
 
 Evaluate candidate chambers under repeated pressure before any Observatory promotion decision.
 
+Observed Utility ≠ Architectural Promotion
+
+UNKNOWN → HOLD
+
 ---
 
-## Evaluation Template
+# Evaluation Template
 
 Session:
 
@@ -163,6 +167,129 @@ Is this still valid to inherit?
 May this continue?
 ≠
 May this execute?
+
+Invariant Status:
+
+NOT ESTABLISHED
+
+Promotion:
+
+NONE
+
+UNKNOWN → HOLD
+
+---
+
+# Evaluation Cycle 002
+
+Session:
+
+Recognition
+→ Object Qualification
+→ Admissibility
+→ Continuation Right
+→ Execution Boundary
+
+Candidate Chamber:
+
+Geometric Chamber
+
+Question Under Review:
+
+Is the governance sequence a corridor geometry or merely a process sequence?
+
+Observed Structure:
+
+Observed State
+↓
+Recognition
+↓
+Object Qualification
+↓
+Admissibility
+↓
+Continuation Right
+↓
+Execution Boundary
+↓
+Execution
+
+Unique Signal Found?
+
+Y
+
+Redundant With Existing Chamber?
+
+N
+
+New Failure Class Found?
+
+Y
+
+Failure Candidate:
+
+Boundary Collapse
+
+Examples:
+
+Recognition = Admissibility
+
+Qualification = Permission
+
+Continuation = Execution
+
+Observation = Authority
+
+Description:
+
+Previously distinct governance surfaces merge into a single decision surface, removing containment and traceability.
+
+New Localization Method Found?
+
+Y
+
+Localization Candidate:
+
+Corridor Localization
+
+Method:
+
+Identify load-bearing transitions and determine where authority may legitimately transfer.
+
+Independent Survivability?
+
+Y
+
+Pressure Result:
+
+SURVIVED
+
+Status:
+
+HOLD
+
+Notes:
+
+The chamber appears capable of identifying boundary collapse failures not explicitly localized by existing chambers.
+
+Current Candidate Geometries:
+
+* State-Inheritance Boundary
+* Qualification Boundary
+* Admissibility Boundary
+* Continuation Boundary
+* Execution Boundary
+* Authority Boundary
+
+Candidate Geometric Reduction:
+
+Observed State
+→ Recognition
+→ Object Qualification
+→ Admissibility
+→ Continuation Right
+→ Execution Boundary
+→ Execution
 
 Invariant Status:
 
