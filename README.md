@@ -1,425 +1,342 @@
 # HACR Hybrid Observatory
 
-Observer-only runtime continuity inspection.
-
-The HACR Hybrid Observatory is an observer-only continuity observability infrastructure focused on signal localization, inspectability preservation, continuity visibility, environmental visibility, temporal visibility, and formation visibility.
-
-The Observatory operates within a broader signal ecology.
-
-Its purpose is to preserve visibility into evolving formations without crossing into interpretation, authority, decision, action, or consequence.
-
-UNKNOWN → HOLD.
+Observer-Only Continuity Observability Infrastructure
 
 ---
 
-# Repository Purpose
+## Purpose
 
-The repository exists to support:
+The HACR Hybrid Observatory is an observer-only research environment focused on continuity, interruption, recoverability, dependency formation, transition dynamics, and architectural observability.
 
-* observer-only inspection
-* signal localization
-* inspectability preservation
-* continuity visibility
-* structural persistence analysis
-* environmental observability
-* temporal observability
-* reduction observability
-* reproducibility
-* architectural reviewability
+The repository does not grant authority.
 
-The repository also explores signal ecology:
+The repository does not make governance decisions.
 
-* how signals emerge
-* how signals persist
-* how signals amplify
-* how signals attenuate
-* how signals normalize
-* how signals disappear
-* how signals become reconstructable
-* how new distinctions become observable
+The repository does not determine admissibility.
 
-The repository does not:
+The repository does not grant continuation rights.
 
-* predict
-* forecast
-* govern
-* route
-* authorize
-* certify causality
-* operationally manage systems
-* provide execution authority
+The repository exists to inspect conditions, distinctions, relationships, and transition structures that may be forming, evolving, coupling, decoupling, stabilizing, or diverging before visible consequence emerges.
 
 ---
 
-# Core Chain
+## Core Question
 
-Reality
+Can important operational properties diverge before visible consequence emerges?
 
-↓
+Examples:
 
-Signals
+```text
+continuous ≠ legitimate
 
-↓
+coherent ≠ recoverable
 
-Signal Ecology
+operational ≠ interruptible
 
-↓
+visible ≠ enforceable
 
-Observatory
+survivable ≠ resilient
+```
 
-↓
+---
 
-Formation Visibility
+## Observatory Boundary
 
-↓
+The Observatory localizes signals.
 
-External Interpretation
+The Observatory does not authorize action.
 
-↓
+```text
+Signal
+≠
+Interpretation
 
+Interpretation
+≠
 Decision
 
-↓
+Decision
+≠
+Authority
 
-Action
+Authority
+≠
+Execution
+```
 
-↓
+Current operating posture:
 
+```text
+UNKNOWN → HOLD
+```
+
+---
+
+## Current Research Areas
+
+### Continuity & Recoverability
+
+Inspection of interruption, reconstruction, replayability, recoverability, and continuity structures.
+
+### Dependency Formation
+
+Inspection of how dependencies emerge, stabilize, drift, weaken, or disappear.
+
+### Relationship Persistence
+
+Inspection of continuity links without granting authority, admissibility, or permission.
+
+### Replay Gap
+
+Inspection of reconstructability.
+
+Question:
+
+```text
+Can we reconstruct how we arrived here?
+```
+
+### Promotion Dynamics
+
+Inspection of how useful properties may become treated as categories through reliance, expectation, dependency, deference, and authority attribution.
+
+---
+
+## Current Active Corridor
+
+### Reconstruction Corridor v0.1
+
+Status:
+
+```text
+STABLE
+
+Cycle 001 Complete
+Cycle 002 Complete
+Cycle 003 Complete
+Cycle 004 Complete
+Cycle 005 Complete
+Cycle 006 Complete
+
+UNKNOWN → HOLD
+```
+
+Current focus:
+
+```text
+Transition Dynamics
+
+Promotion Pressure
+
+Authority Attribution
+
+Dependency Formation
+
+Burden Localization
+```
+
+---
+
+## Core Reductions
+
+```text
+Property Reality
+≠
+Category Transition
+
+Recognition
+≠
+Promotion
+
+Trust
+≠
+Authority
+
+Forecast
+≠
+Decision
+
+Text
+≠
+Law
+
+Capital
+≠
+Deployment
+
+Potential
+≠
 Consequence
 
-The Observatory stops at formation visibility.
-
-Interpretation, authority, decision, action, and consequence remain external.
-
----
-
-# Reviewer Start Here
-
-Recommended review sequence:
-
-1. START_HERE.md
-2. README.md
-3. docs/REPOSITORY_MAP.md
-4. docs/OBSERVATORY_FRAMEWORK.md
-5. docs/OBSERVATORY_DIMENSIONS.md
-6. docs/OBSERVATORY_EVOLUTION.md
-7. docs/SIGNAL_ECOLOGY_ARCHITECTURE.md
-8. docs/canonical/START_HERE_CANONICAL.md
-9. docs/canonical/CANONICAL_TRAVERSAL_INDEX.md
-10. docs/canonical/CANONICAL_BOUNDARY_INDEX.md
-11. governance/boundaries/README.md
-12. governance/SIGNAL_ECOLOGY_BOUNDARY.md
-13. governance/SEMANTIC_COMPRESSION.md
-14. governance/TEMPORAL_OBSERVABILITY.md
-15. governance/TEMPORAL_CONTAINMENT.md
+Useful
+≠
+Authoritative
+```
 
 ---
 
-# Observatory Framework
+## Promotion Dynamics
 
-The repository currently operates across four observer-visible dimensions.
+Current candidate structure:
 
-## Structure
-
-Question:
-
-What exists?
-
-Examples:
-
-* topology
-* architecture
-* regions
-* corridors
-* dependencies
-
----
-
-## Dynamics
-
-Question:
-
-How does it interact?
-
-Examples:
-
-* traversal
-* continuity formation
-* dependency movement
-* pressure visibility
-* signal movement
-
----
-
-## Environment
-
-Question:
-
-What conditions emerge?
-
-Examples:
-
-* ecology fields
-* climate fields
-* continuity terrain
-* density basins
-* environmental visibility
-
----
-
-## Time
-
-Question:
-
-How does it change?
-
-Examples:
-
-* replay windows
-* temporal ecology
-* temporal layer stacks
-* observation epochs
-* historical visibility
-
----
-
-# Signal Ecology Layer
-
-Signal ecology is the environment in which signals exist and evolve.
-
-Signals may:
-
-* emerge
-* persist
-* amplify
-* attenuate
-* localize
-* normalize
-* disappear
-* reconstruct
-* become novel
-
-Questions:
-
-* What signals remain visible?
-* What signals are weakening?
-* What signals have normalized into the background?
-* What signals have become difficult to localize?
-* What formations remain inspectable?
-
-Boundary:
-
-Signal is not interpretation.
-
-Localization is not meaning.
-
-Visibility is not authority.
-
----
-
-# Primary Architectural Layers
-
-## Observability Layer
-
-Observer-only inspection systems.
-
-Questions:
-
-* What remains visible?
-* What survives interruption?
-* What structures persist?
-* What continuity remains observable?
-
----
-
-## Signal Ecology Layer
-
-Observer-visible signal environments.
-
-Questions:
-
-* How do signals evolve?
-* What remains localizable?
-* What remains distinguishable?
-* What becomes reconstructable?
-
----
-
-## Visualization Layer
-
-Observer-visible rendering systems.
-
-Purpose:
-
-Transform observability outputs into reviewable structures.
-
----
-
-## Governance Layer
-
-Boundary preservation and interpretation containment.
-
-Purpose:
-
-Preserve observer-only interpretation boundaries.
-
----
-
-## Reduction Layer
-
-Progressive structural reduction observatories.
-
-Reduction Lineage:
-
-Epoch
-
+```text
+Property
 ↓
-
-Persistence
-
+Recognition
 ↓
-
-Skeleton
-
+Reliance
 ↓
-
-Invariant
-
+Expectation
 ↓
-
-Fixed Point
-
+Dependency
+══════════════════
+Promotion Pressure
+══════════════════
 ↓
-
-Anchor
-
+Deference
 ↓
+Authority Attribution
+```
 
-Anchor Basin
+Current status:
 
-↓
+```text
+No primitive established.
 
-Anchor Attractor
+No invariant established.
 
-↓
-
-Reduction Horizon
-
-↓
-
-Visibility Extinction Boundary
-
-↓
-
-Reduction Residue
-
-↓
-
-Irreducible Core
-
-Purpose:
-
-Observe structures surviving successive reduction stages.
+Observation continues.
+```
 
 ---
 
-## Navigation Layer
+## Burden Localization Review
 
-Repository review infrastructure.
+Current candidate:
 
-Purpose:
+```text
+Property Recognized
+↓
+Promotion Pressure Present
+↓
+Burden Exists
+↓
+No Responsible Authority Localized
+↓
+Transition Does Not Occur
+↓
+HOLD
+```
 
-Support reviewer orientation and repository intelligibility.
+Current distinction family:
 
----
+```text
+Recognition
+≠
+Promotion
 
-# What The Observatory Preserves
+Burden
+≠
+Burden Localization
 
-The Observatory preserves:
+Burden Localization
+≠
+Burden Discharge
+```
 
-* signal localization
-* inspectability
-* localization capacity
-* distinction visibility
-* formation visibility
+Status:
 
-The Observatory does not preserve authority.
-
-The Observatory does not preserve interpretation.
-
-The Observatory does not preserve decision-making capability.
-
----
-
-# Repository Characteristics
-
-The repository emphasizes:
-
-* observer-only operation
-* inspectability preservation
-* continuity visibility
-* environmental visibility
-* temporal visibility
-* bounded interpretation
-* reproducibility
-* architectural clarity
-* reviewer accessibility
-* non-authoritative outputs
-
-Outputs are intended for inspection and review.
-
-Outputs are not intended to function as execution authority.
+```text
+ACTIVE REVIEW
+UNKNOWN → HOLD
+```
 
 ---
 
-# Reproducibility
+## Architectural Separations
 
-The repository favors:
+```text
+Observation
+≠
+Authority
 
-* deterministic artifacts
-* reviewable outputs
-* documented assumptions
-* reproducible inspection pathways
-* bounded observer-visible interpretations
+Recognition
+≠
+Admissibility
 
-Reviewers are encouraged to inspect:
+Admissibility
+≠
+Continuation Right
 
-* source code
-* documentation
-* example inputs
-* example outputs
-* generated receipts
-* renderer lineage
-* architectural evolution
+Continuation Right
+≠
+Execution
+
+Memory
+≠
+Permission
+
+Relationship
+≠
+Permission
+
+Existence
+≠
+Permission
+```
 
 ---
 
-# Boundary
+## Repository Position
 
-This repository is descriptive.
+The Observatory remains:
 
-It is not predictive.
+* Observer-only
+* Non-authoritative
+* Non-governing
+* Inspection-focused
+* Due-diligence oriented
 
-It is not prescriptive.
+The repository explores inspection surfaces.
 
-It is not governance authority.
+The repository does not grant permission surfaces.
 
-It is not execution authority.
+---
 
-It is not certification authority.
+## Current Status
 
-Signal is not interpretation.
+Repository State:
 
-Localization is not meaning.
+```text
+STABLE
+```
 
-Visibility is not authority.
+Research Status:
 
-Inspectability is not control.
+```text
+ACTIVE
+```
 
-Formation visibility is not decision support.
+Primitive Status:
 
-The repository should be interpreted as:
+```text
+NONE ESTABLISHED
+```
 
-Observer-Only Signal Localization and Inspectability Preservation Infrastructure.
+Invariant Status:
 
-UNKNOWN → HOLD.
+```text
+NONE ESTABLISHED
+```
+
+Canonical Promotion:
+
+```text
+NOT JUSTIFIED
+```
+
+Operating State:
+
+```text
+UNKNOWN → HOLD
+```
