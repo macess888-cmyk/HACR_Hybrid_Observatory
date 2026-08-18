@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Boundary Review | HACR Hybrid Observatory</title>
+
+  <style>
+    :root {
+      --bg: #080c16;
+      --panel: #111827;
+      --panel-2: #151d33;
+      --text: #f4f7fb;
+      --muted: #b8c2d6;
+      --accent: #7aa2ff;
+      --green: #35c759;
+      --orange: #ff9f0a;
+      --red: #ff453a;
+      --border: #2d3a5f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(122, 162, 255, 0.16), transparent 35%),
+        radial-gradient(circle at top right, rgba(191, 92, 255, 0.10), transparent 32%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    header {
+      padding: 64px 22px 42px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 22px 70px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.8rem;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 6vw, 4.6rem);
+      line-height: 1.05;
+      margin: 0 0 20px;
+    }
+
+    h2 {
+      font-size: clamp(1.55rem, 3vw, 2.2rem);
+      margin-top: 0;
+    }
+
+    h3 { margin-bottom: 8px; }
+
+    .lead {
+      font-size: 1.22rem;
+      color: var(--muted);
+      max-width: 860px;
+    }
+
+    .constraint {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(17, 24, 39, 0.72);
+      font-weight: 700;
+    }
+
+    section {
+      background: rgba(17, 24, 39, 0.82);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 28px;
+      margin: 22px 0;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .card p,
+    .muted {
+      color: var(--muted);
+    }
+
+    .reduction {
+      font-size: 1.3rem;
+      font-weight: 800;
+      padding: 18px;
+      border-radius: 18px;
+      background: #0e1425;
+      border: 1px solid var(--border);
+      margin-top: 16px;
+    }
+
+    .status {
+      font-weight: 800;
+    }
+
+    .pass { color: var(--green); }
+    .hold { color: var(--orange); }
+    .fail { color: var(--red); }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .pill {
+      border: 1px solid var(--border);
+      background: #0e1425;
+      color: var(--muted);
+      padding: 8px 11px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--accent);
+      font-weight: 700;
+    }
+
+    .footer {
+      color: var(--muted);
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.95rem;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin: 7px 0; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="eyebrow">Independent technical boundary and evidence review</div>
+
+  <h1>AI Boundary Review</h1>
+
+  <p class="lead">
+    A bounded review of one declared AI-enabled workflow to determine what is actually
+    established, what is being silently inherited, and where unresolved standing should
+    remain HOLD before consequence.
+  </p>
+
+  <div class="constraint">UNKNOWN → HOLD</div>
+</header>
+
+<main>
+
+  <section>
+    <h2>The Core Question</h2>
+
+    <div class="reduction">
+      Your AI components may all work individually while the system still fails at the joins.
+    </div>
+
+    <p class="muted">
+      AI Boundary Review focuses on the relations, transitions, authority, evidence,
+      composition effects, and recovery conditions between otherwise valid-looking parts.
+    </p>
+  </section>
+
+  <section>
+    <h2>What Is Inspected</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Components</h3>
+        <p>What properties of each relied-upon component are actually established?</p>
+      </div>
+
+      <div class="card">
+        <h3>Relations</h3>
+        <p>Are the joins between components independently supported?</p>
+      </div>
+
+      <div class="card">
+        <h3>Transitions</h3>
+        <p>What properties are proven eligible to cross each boundary?</p>
+      </div>
+
+      <div class="card">
+        <h3>Composition</h3>
+        <p>What exists only because components were joined, and was it inspected?</p>
+      </div>
+
+      <div class="card">
+        <h3>Authority</h3>
+        <p>Does technical capability actually have authority for the consequential action?</p>
+      </div>
+
+      <div class="card">
+        <h3>Consequence</h3>
+        <p>What happens because the workflow acts, and is that consequence supported?</p>
+      </div>
+
+      <div class="card">
+        <h3>Recovery</h3>
+        <p>Can consequential state be stopped, reversed, corrected, traced, or reconstructed?</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Status Semantics</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3 class="status pass">PASS</h3>
+        <p>
+          The inspected property is sufficiently established within the declared scope
+          and supplied evidence.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 class="status hold">HOLD</h3>
+        <p>
+          Available evidence is insufficient to establish the property for the declared
+          use, transition, or consequence.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 class="status fail">FAIL</h3>
+        <p>
+          Available evidence positively demonstrates that a declared requirement is not
+          satisfied within the reviewed scope.
+        </p>
+      </div>
+    </div>
+
+    <p class="muted">
+      HOLD is not accusation, rejection, or a claim that a system is unsafe.
+      It means standing has not yet been sufficiently established.
+    </p>
+  </section>
+
+  <section>
+    <h2>Pilot Scope</h2>
+
+    <p>
+      The v0.1 pilot reviews <strong>one workflow</strong> and one principal consequential path.
+    </p>
+
+    <ul>
+      <li>one declared AI-enabled workflow</li>
+      <li>one principal consequential path</li>
+      <li>customer-supplied evidence package</li>
+      <li>bounded written findings</li>
+      <li>3–5 next smallest tests</li>
+    </ul>
+
+    <div class="reduction">
+      Pilot price: CAD $250
+    </div>
+
+    <p class="muted">
+      Target delivery: 3 business days after a complete intake package is received.
+      This is an initial test price, not a claim of established market pricing.
+    </p>
+  </section>
+
+  <section>
+    <h2>What You Receive</h2>
+
+    <ul>
+      <li>declared review scope</li>
+      <li>system path and material boundaries</li>
+      <li>evidence considered</li>
+      <li>PASS / HOLD / FAIL findings</li>
+      <li>relation and transition findings</li>
+      <li>composition deltas</li>
+      <li>authority coverage findings</li>
+      <li>recovery findings</li>
+      <li>3–5 next smallest tests</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What This Is Not</h2>
+
+    <div class="pill-row">
+      <span class="pill">not certification</span>
+      <span class="pill">not regulatory approval</span>
+      <span class="pill">not legal advice</span>
+      <span class="pill">not a compliance determination</span>
+      <span class="pill">not penetration testing</span>
+      <span class="pill">not a cybersecurity audit</span>
+      <span class="pill">not complete AI safety</span>
+      <span class="pill">not full formal verification</span>
+      <span class="pill">not deployment authorization</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Request a Review</h2>
+
+    <p>
+      The first pilot reviews are intentionally small and manually delivered.
+    </p>
+
+    <p>
+      Send a short description of the AI workflow, the consequential action it can produce,
+      and the evidence currently used to support it.
+    </p>
+
+    <a class="cta" href="mailto:00jake@orocore.one?subject=AI%20Boundary%20Review%20Request">
+      Request an AI Boundary Review
+    </a>
+
+    <p class="muted">
+      No automation, certification, or authority is created by the review itself.
+    </p>
+  </section>
+
+  <section>
+    <h2>Return to the Observatory</h2>
+
+    <p>
+      <a href="index.html">← HACR Hybrid Observatory</a>
+    </p>
+  </section>
+
+</main>
+
+<div class="footer">
+  AI Boundary Review · bounded inspection · evidence before inheritance · UNKNOWN → HOLD
+</div>
+
+</body>
+</html>
