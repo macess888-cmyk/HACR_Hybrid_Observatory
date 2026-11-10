@@ -100,6 +100,14 @@ Can we reconstruct how we arrived here?
 
 Inspection of how useful properties may become treated as categories through reliance, expectation, dependency, deference, and authority attribution.
 
+### Evidence Freshness
+
+A bounded observer-side extension is documented in:
+
+[EVIDENCE FRESHNESS EXTENSION 001](EVIDENCE_FRESHNESS_EXTENSION_001.md)
+
+It makes current evidence standing across time and material change explicit while preserving the Observatory's non-authoritative boundary.
+
 ---
 
 ## Current Active Corridor
